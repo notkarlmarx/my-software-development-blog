@@ -4,7 +4,7 @@
 	{{ partial "index/introduction.html" . }}
 
 	<div class="catalogue">
-		{{ range (.Paginate .Site.RegularPages).Pages }}
+		{{ range where .Paginator.Pages "Section" "blog" }}
 			{{ .Render "summary" }}
 		{{ end }}
 	</div>

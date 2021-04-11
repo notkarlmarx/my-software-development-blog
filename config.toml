@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://sharp-lumiere-e4ea17.netlify.app/"
 languageCode = "nl-NL"
 title = "notkarlmarx"
 theme = "tale" 

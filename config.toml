@@ -1,0 +1,32 @@
+baseURL = "http://example.org/"
+languageCode = "nl-NL"
+title = "notkarlmarx"
+theme = "tale" 
+defaultContentLanguage = "nl"
+disqusShortname = "disqus-example"
+[params]
+  commentoEnable = true
+  Author = "Karl van Heijster"
+[author]
+  name = "Karl van Heijster"
+[taxonomies]
+  tag = "tags"
+[menu]
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    title = "Blog"
+    url = "/blog/"
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    title = "Tags"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "Over mij"
+    title = "Over mij"
+    url = "/about/"
+    weight = 3

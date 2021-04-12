@@ -3,7 +3,7 @@ languageCode = "nl-NL"
 title = "notkarlmarx"
 theme = "tale" 
 defaultContentLanguage = "nl"
-disqusShortname = "disqus-example"
+disqusShortname = "notkarlmarx"
 [params]
   commentoEnable = true
   Author = "Karl van Heijster"

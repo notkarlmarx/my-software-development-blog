@@ -1,7 +1,7 @@
 ---
 title: "Over mij"
 date: 2021-04-09T15:54:15+02:00
-draft: true
+draft: false
 ---
 
 Mijn naam is Karl van Heijster. (Mijn naam is niet Karl Marx.)

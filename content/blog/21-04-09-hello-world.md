@@ -1,7 +1,7 @@
 ---
 title: "Hello World"
 date: 2021-04-09T15:54:15+02:00
-draft: true
+draft: false
 comments: true
 tags: ["hello world"]
 ---

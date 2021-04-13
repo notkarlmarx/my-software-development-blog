@@ -4,7 +4,7 @@ date: 2021-04-09T15:54:15+02:00
 draft: false
 ---
 
-{{<figure src="/images/profile-picture.jpg" width="500" height="500" alt="Profielfoto">}}
+{{<figure src="/images/profile-picture.jpg" width="300" height="300" alt="Profielfoto">}}
 
 
 Mijn naam is Karl van Heijster. (Mijn naam is niet Karl Marx.)

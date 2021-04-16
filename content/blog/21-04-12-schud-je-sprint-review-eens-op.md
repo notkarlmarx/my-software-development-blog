@@ -3,7 +3,7 @@ title: "Schud Je Sprint Review Eens Op"
 date: 2021-04-12T15:17:13+02:00
 draft: false
 comments: true
-tags: ["Scrum", "Sprint Review"]
+tags: ["scrum", "sprint review"]
 ---
 
 Vraagt iemand in je team - je Scrum Master, je Product Owner, 

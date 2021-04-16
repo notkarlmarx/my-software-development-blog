@@ -1,6 +1,6 @@
-baseURL = "https://notkarlmarx.netlify.app/"
+baseURL = "https://dotkarl.netlify.app/"
 languageCode = "nl-NL"
-title = "notkarlmarx"
+title = "dotkarl"
 theme = "tale" 
 defaultContentLanguage = "nl"
 disqusShortname = "notkarlmarx"

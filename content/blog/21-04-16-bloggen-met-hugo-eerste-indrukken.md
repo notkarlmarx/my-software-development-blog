@@ -1,7 +1,7 @@
 ---
 title: "Bloggen Met Hugo: Eerste Indrukken"
 date: 2021-04-16T10:44:36+02:00
-draft: true
+draft: false
 comments: true
 tags: ["bloggen", "gatsby", "hugo", "static site generator"]
 ---

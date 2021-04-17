@@ -3,7 +3,7 @@ title: "Bloggen Met Hugo: Eerste Indrukken"
 date: 2021-04-16T10:44:36+02:00
 draft: false
 comments: true
-tags: ["bloggen", "gatsby", "hugo", "static site generator"]
+tags: ["bloggen", "dotkarl", "gatsby", "hugo", "leermoment", "static site generator"]
 ---
 
 Soms is het goed om je af te vragen hoe je hier gekomen bent.

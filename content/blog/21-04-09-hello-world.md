@@ -7,4 +7,3 @@ tags: ["hello world"]
 ---
 
 Het heeft er dan toch alle schijn van dat ik een blog heb opgezet met hulp van Static Site Generator Hugo. "Hello World" ben je dan verplicht als eerste te zeggen. Dus bij dezen: "Hello World."
-

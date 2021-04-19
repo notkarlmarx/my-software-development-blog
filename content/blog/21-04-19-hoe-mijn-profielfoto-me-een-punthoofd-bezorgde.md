@@ -1,7 +1,7 @@
 ---
 title: "Hoe Mijn Punthoofd Me Een Punthoofd Bezorgde"
-date: 2021-04-16T16:33:41+02:00
-draft: true
+date: 2021-04-19T07:45:11+02:00
+draft: false
 comments: true
 tags: ["dotkarl", "hugo", "image processing", "leermoment", "web development"]
 ---

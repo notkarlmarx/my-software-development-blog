@@ -1,7 +1,7 @@
 ---
 title: "Neem Afscheid Van Helpers"
 date: 2021-04-23T10:03:25+02:00
-draft: true
+draft: false
 comments: true
 tags: ["classes", "clean code", "leermoment", "naamgeving",]
 ---

@@ -1,6 +1,13 @@
 {{if (isset .Params "tags") }}
     <strong>Tags:</strong>
-    {{ range (.GetTerms "tags") }}
-        <span><a href="{{ .Permalink }}">{{lower .LinkTitle }}</a> </span>
+    {{ $tags := (.GetTerms "tags")}}
+    {{ $len := (len $tags)}}
+    {{ range $index, $element := $tags }}
+        <span>
+            <a href="{{ .Permalink }}">{{lower .LinkTitle }}</a>
+            {{ if ne (add $index 1) $len }}
+            |
+            {{ end }}
+        </span>
     {{ end }}
 {{ end }}

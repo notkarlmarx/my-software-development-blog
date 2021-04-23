@@ -64,15 +64,11 @@ De principes zijn als volgt:
 
 - Het ***Single-responsibility* principe**: een software-entiteit moet maar één reden hebben om te worden aangepast. Met andere woorden: elke software-entiteit moet precies één verantwoordelijkheid hebben.
 
-
 - Het ***Open-closed* principe**: software-entiteiten moeten open staan voor uitbreiding, maar gesloten zijn voor aanpassing. Met andere woorden: een wijziging van de ene class moet niet tot gevolg hebben dat een andere class moet worden aangepast om te blijven werken.
-
 
 - Het **Liskov substitutie principe**: objecten in een programma zouden vervangbaar moeten zijn door instanties van hun subtypes zonder dat de juiste werking van het programma beïnvloed wordt.
 
-
 - Het **Interface segregatie principe**: het hebben van veel cliënt-specifieke interfaces valt te verkiezen boven het hebben van één algemene interface. Met andere woorden: een class zou nooit verplicht moeten zijn bepaalde methods te moeten implementeren als gevolg van het implementeren van een interface, als hij deze niet hoeft te gebruiken.
-
 
 - Het ***Dependency inversion* principe**: wees afhankelijk van abstracties (bijvoorbeeld interfaces, maar ook baseclasses), niet van concrete implementaties.
 

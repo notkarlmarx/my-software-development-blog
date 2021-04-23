@@ -99,8 +99,6 @@ Mijn eerste ervaringen met Hugo zijn positief. *[Hier een grap over onze ministe
 
 - **Wees niet bang om technieken uit te proberen waar je geen ervaring mee hebt.** Misschien valt het allemaal wel mee! Zoals gezegd is werken met Hugo betrekkelijk eenvoudig. Daar waar ik Go nodig had, volstond een eenvoudige Google-search om het antwoord te vinden.
 
-
 - **Begin eenvoudig.** Schuif de meer geavanceerde features vooruit. (En "geavanceerd" betekent niet: ingewikkeld. Het aanpassen van tekstkleur is geavanceerd ten opzichte van het überhaupt hebben van tekst.) Het is belangrijker een werkende app te hebben dan een app die helemaal naar je wens is. Als je op iets stuit wat je later anders of beter wil doen, zet dit dan op je backlog. Deze feature kun je later oppakken en aftikken.
-
 
 - **Hou je doel voor ogen.** Is het doel: werken met deze techniek? Nee? Probeer dan een andere techniek. Wees niet bang om te schrappen - en hoe eerder, hoe liever. Want hoe minder tijd je hebt besteed aan een oplossing voor een probleem, hoe meer je aan die oplossing gehecht raakt. Je had in dat uur waarin je NPM-issues Googlede ook een werkende Hugo-blog de lucht in kunnen slingeren - waarvan akte.

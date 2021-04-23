@@ -6,10 +6,16 @@ draft: false
 {{<figure src="/images/profile-picture.jpg" width="300" alt="Profielfoto">}}
 
 
-Mijn naam is Karl van Heijster. Sinds 2017 ben ik werkzaam als softwareontwikkelaar.
+Mijn naam is Karl van Heijster. Sinds 2017 ben ik werkzaam als softwareontwikkelaar. Ik ben te vinden op [LinkedIn](https://www.linkedin.com/in/karl-van-heijster-833503aa/) en [GitHub](https://github.com/notkarlmarx).
 
 
-Ik word enthousiast van het continu en stapsgewijs verbeteren van mijzelf als ontwikkelaar en de dingen om mij heen. Dat geldt zowel voor code (ik hou van schone code, geen grap: ik krijg er oprecht warme gevoelens van) als voor het hele proces daar omheen. 
+Ik word enthousiast van het continue en stapsgewijze verbetering. 
+
+
+Dat geldt bijvoorbeeld voor de code die ik schrijf (en herschrijf!). Ik hou van schone code. Geen grap: ik krijg er oprecht warme gevoelens van. 
+
+
+Maar het geldt ook voor het hele proces daaromheen. Denk aan het analyseren van de wensen en behoeften van je gebruikers en opstellen van functionele eisen, of het verbreden en verdiepen van technische en domeinspecifieke kennis, of Scrum.
 
 
 Op deze blog houd ik twee keer per week enkele van mijn observaties over de softwareontwikkelpraktijk bij. 

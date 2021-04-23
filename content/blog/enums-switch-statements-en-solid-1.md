@@ -3,7 +3,7 @@ title: "Enums, Switch Statements en SOLID - Deel 1"
 date: 2021-04-20T18:59:08+02:00
 draft: true
 comments: true
-tags: ["clean code", "SOLID", "refactoren"]
+tags: ["clean code", "enums", "interface segregatie principe", "liskov substitutie principe", "open-closed principe", "single-responsibility principe", "SOLID", "switch statements", "refactoren"]
 ---
 
 # Inleiding en SOLID principes
@@ -18,7 +18,7 @@ Laten we positief blijven en van het eerste uitgaan.
 ## De code
 
 
-Het ging om een [switch statement](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/switch) rond een [enum](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum). Dit is denk ik een patroon dat elke ontwikkelaar wel ergens op een onbewaakt moment geïmplementeerd heeft. Sterker nog, als ik me niet vergis was ik zelf verantwoordelijk voor de oorspronkelijke implementatie van dat patroon in de class in kwestie.
+Het ging om een [switch statement](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/switch) rond een [enum](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum). Dit is denk ik een patroon dat elke ontwikkelaar wel ergens op een onbewaakt moment geïmplementeerd heeft. Sterker nog, als ik me het goed herinner was ik zelf verantwoordelijk voor de oorspronkelijke implementatie van dat patroon in de [class](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/classes) in kwestie.
 
 
 Ik zou het patroon met veel woorden uit kunnen leggen, maar de onderstaande code snippet - een versimpelde versie van de code die ik in het wild tegenkwam - illustreert de boel denk ik heel aardig:
@@ -56,7 +56,7 @@ Eenvoudig genoeg, dunkt me. Waarom bleef deze code dan door mijn hoofd spoken?
 ## SOLID
 
 
-Om dat te kunnen snappen, moet je iets weten over [SOLID](https://en.wikipedia.org/wiki/SOLID). De letters in SOLID staan elk voor een ontwerpprincipe voor [objectgeörienteerde](https://en.wikipedia.org/wiki/Object-oriented_programming) code. Door deze principes te volgen, schrijf je als het ware automatisch code die makkelijker te onderhouden is. Afwijken is op eigen risico!
+Om dat te kunnen snappen, moet je iets weten over [SOLID](https://en.wikipedia.org/wiki/SOLID). De letters in SOLID staan elk voor een ontwerpprincipe voor [objectgeörienteerde](https://en.wikipedia.org/wiki/Object-oriented_programming) code. Door deze principes te volgen, schrijf je als het ware automatisch code die makkelijker te onderhouden is. Afwijken is dus op eigen risico!
 
 
 De principes zijn als volgt:
@@ -68,7 +68,7 @@ De principes zijn als volgt:
 
 - Het **Liskov substitutie principe**: objecten in een programma zouden vervangbaar moeten zijn door instanties van hun subtypes zonder dat de juiste werking van het programma beïnvloed wordt.
 
-- Het **Interface segregatie principe**: het hebben van veel cliënt-specifieke interfaces valt te verkiezen boven het hebben van één algemene interface. Met andere woorden: een class zou nooit verplicht moeten zijn bepaalde methods te moeten implementeren als gevolg van het implementeren van een interface, als hij deze niet hoeft te gebruiken.
+- Het **Interface segregatie principe**: het hebben van veel cliënt-specifieke interfaces valt te verkiezen boven het hebben van één algemene interface. Met andere woorden: een class zou nooit verplicht moeten zijn bepaalde methods te moeten implementeren als gevolg van de implementatie van een interface, als hij deze niet hoeft te gebruiken.
 
 - Het ***Dependency inversion* principe**: wees afhankelijk van abstracties (bijvoorbeeld interfaces, maar ook baseclasses), niet van concrete implementaties.
 
@@ -92,4 +92,10 @@ Wie nog niet helemaal overtuigd is van de waarde van SOLID, of wie er graag meer
 {{<youtube id="5RwhyZnVRS8" title="Design Patterns: Single Responsibility Principle Explained Practically in C# (The S in SOLID)" >}}
 
 
-En wie écht niet kan wachten, kan de [code op GitHub](https://github.com/notkarlmarx/RefactorExercises/blob/master/RefactorExercises/EnumSwitch/Original/ClaimsHelper.cs) bekijken.
+De code is [via GitHub](https://github.com/notkarlmarx/RefactorExercises/blob/master/RefactorExercises/EnumSwitch/Original/ClaimsHelper.cs) te bekijken en binnen te halen. Wees niet bang om zelf met de class te spelen en te bekijken hoe je 'm wat meer in lijn met de SOLID-principes kan brengen!
+
+
+## Meer in deze reeks
+
+1. **Inleiding en SOLID principes**
+2. [Het *Single-Responsibility* principe](/blog/enums-switch-statements-en-solid-2)

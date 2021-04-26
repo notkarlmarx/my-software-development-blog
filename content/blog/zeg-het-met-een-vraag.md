@@ -1,7 +1,7 @@
 ---
 title: "Zeg Het Met Een Vraag"
-date: 2021-04-18T10:26:33+02:00
-draft: true
+date: 2021-04-26T08:08:27+02:00
+draft: false
 comments: true
 tags: ["leermoment", "scrum", "sprint retrospective"]
 ---

@@ -9,7 +9,7 @@ tags: ["clean code", "dependency inversion principe", "enums", "single-responsib
 # Het *Dependency inversion* principe
 
 
-[Vorige week](/blog/enums-switch-statements-en-solid-1) refactorde ik [een stuk code](https://github.com/notkarlmarx/RefactorExercises/blob/master/RefactorExercises/EnumSwitch/Refactored/V01/ClaimsHelper.cs) om meer in lijn te zijn met het [*Single-Responsiblity* principe](https://en.wikipedia.org/wiki/Single-responsibility_principle). 
+[Vorige week](/blog/enums-switch-statements-en-solid-2) refactorde ik [een stuk code](https://github.com/notkarlmarx/RefactorExercises/blob/master/RefactorExercises/EnumSwitch/Refactored/V01/ClaimsHelper.cs) om meer in lijn te zijn met het [*Single-Responsiblity* principe](https://en.wikipedia.org/wiki/Single-responsibility_principle). 
 
 
 Ik abstraheerde logica die oorspronkelijk in onderstaande switch-statement zat, naar aparte classes. Dat zorgde ervoor dat de oorspronkelijke class een reden minder had om gewijzigd te worden (of drie drie redenen minder, afhankelijk van hoe je het bekijkt). Anders gezegd: door code te verhuizen, bracht ik het aantal verantwoordelijkheden van de oorspronkelijke class terug. 
@@ -69,7 +69,7 @@ De oorspronkelijke method hoeft zich alleen nog maar te bekommeren om het verkri
 Maar helemaal zijn we er nog niet. De `ClaimsHelper` heeft via `GetClaimProvider()` op dit moment nog weet van de concrete implementaties die er van `IGetClaim` bestaan. Hij moet ook wel, lijkt het, want hoe kan `GetClaimsForUser()` ooit de juiste claims aan de rechten van de gebruiker koppelen? Dat bekijken we volgende week. 
 
 
-Wie tot die tijd graag zelf wil experimenteren, kan de code [via GitHub](https://github.com/notkarlmarx/RefactorExercises/blob/master/RefactorExercises/EnumSwitch/Refactored/V01/ClaimsHelper.cs) binnenhalen.
+Wie tot die tijd graag zelf wil experimenteren, kan de code [via GitHub](https://github.com/notkarlmarx/RefactorExercises/blob/master/RefactorExercises/EnumSwitch/Refactored/V02/ClaimsHelper.cs) binnenhalen.
 
 
 ## Meer in deze reeks

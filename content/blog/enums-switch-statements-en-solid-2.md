@@ -9,7 +9,7 @@ tags: ["clean code", "enums", "single-responsibility principe", "SOLID", "switch
 # Het *Single-Responsibility* principe
 
 
-[Vorige week](/blog/enums-switch-statements-en-solid-1) liet ik een stuk code zien dat op verschillende manieren de SOLID-principes schond. Deze week gaan we een eerste stap zetten deze code te refactoren om hem wat makkelijker onderhoudbaar te maken. 
+[Vorige week](/blog/enums-switch-statements-en-solid-1) liet ik [een stuk code](https://github.com/notkarlmarx/RefactorExercises/blob/master/RefactorExercises/EnumSwitch/Original/ClaimsHelper.cs) zien dat op verschillende manieren de SOLID-principes schond. Deze week gaan we een eerste stap zetten deze code te refactoren om hem wat makkelijker onderhoudbaar te maken. 
 
 
 We beginnen ons SOLID-avontuur met de S van [*Single-Responsiblity* principe](https://en.wikipedia.org/wiki/Single-responsibility_principle) (SRP). Het SRP stelt dat een software-entiteit moet maar één reden hebben om te worden aangepast, of, met andere woorden, precies één verantwoordelijkheid hebben.

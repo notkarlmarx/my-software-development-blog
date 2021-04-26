@@ -92,13 +92,31 @@ De code komt er dus als volgt uit te zien (voor de leesbaarheid heb ik irrelevan
 {{< gist notkarlmarx 8d1b1346a9b21306e5f128fbd5602fec "ClaimsHelper.cs">}}
 
 
+Maar hoewel de oorspronkelijke method nu minder verantwoordelijkheden heeft, kan dit niet gezegd worden voor de class. Deze bevindt zich in zekere zin op hetzelfde niveau als voorheen. Elke keer als een claim voor een bepaald recht (`Permission`) wordt gewijzigd, moeten we onze `ClaimsHelper` aanpassen.
+
+
+Zou het niet fijn zijn als we deze wijzigingen door konden voeren zonder dat we de `ClaimsHelper` aan hoeven te passen?
+
+
+De opdracht is duidelijk: de code die nu in de methods `GetReadClaim()`, `GetWriteClaim()` en `GetDeleteClaim()` zit, moet de `ClaimsHelper` uit. We kunnen voor alle drie een aparte class aanmaken met hun respectievelijke methods. De class voor leesrechten zou er bijvoorbeeld als volgt uit kunnen zien:
+
+
+{{< gist notkarlmarx 9d8b1caf8ffff8de065db008ed423305 "ReadClaimProvider.cs">}}
+
+
+En `GetClaimsForUser()` zouden we dan als volgt kunnen omschrijven:
+
+
+{{< gist notkarlmarx 298febaae1df87132c832bf067a7be9c "ClaimsHelper.cs">}}
+
+
+Dit is opnieuw een stap in de goede richting! `ClaimsHelper` als geheel heeft een verantwoordelijkheid minder. Elke keer als de inhoud van een claim wordt aangepast, hoeft die wijziging alleen maar doorgevoerd te worden in de bijbehorende class. 
+
+
 ## *What's next?*
 
 
-We hebben een stap in de goede richting gezet, maar de winst is bescheiden. `GetClaimsForUser()` hoeft niet meer aangepast te worden wanneer één of meerdere claims moeten worden aangepast, maar de class als geheel nog wel. 
-
-
-Er moet dus een manier gezocht worden om de `ClaimsHelper` te isoleren deze wijziging. Hoe? Dat bespreken we volgende week. Voor wie tot die tijd graag zelf wil experimenteren, kan de code [via GitHub](https://github.com/notkarlmarx/RefactorExercises/blob/master/RefactorExercises/EnumSwitch/Refactored/V01/ClaimsHelper.cs) binnenhalen.
+Helemaal solide is de code echter nog niet. De logica in `GetClaimsForUser()` bevat veel herhaling en is afhankelijk van de concrete implementatie van de classes die we aanroepen. Hoe we dat netter kunnen oplossen, bespreken we volgende week. Voor wie tot die tijd graag zelf wil experimenteren, kan de code [via GitHub](https://github.com/notkarlmarx/RefactorExercises/blob/master/RefactorExercises/EnumSwitch/Refactored/V01/ClaimsHelper.cs) binnenhalen.
 
 
 ## Meer in deze reeks

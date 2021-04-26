@@ -4,6 +4,7 @@ date: 2021-04-26T08:08:27+02:00
 draft: false
 comments: true
 tags: ["leermoment", "scrum", "sprint retrospective"]
+summary: "Onze Scrum Master deed iets heel slims, de afgelopen Sprint Retrospective. In plaats van het team te vragen de zaken te formuleren die goed gingen of beter konden, vroeg hij ons een vraag formuleren, waar ons oorspronkelijke punt een antwoord op is. Kun je bedenken waarom dit zo slim is?"
 ---
 
 Tijdens een [Sprint Retrospective](https://www.scrum.org/resources/what-is-a-sprint-retrospective) blik je als team terug op de afgelopen [Sprint](https://www.scrum.org/resources/what-is-a-sprint-in-scrum). Je bespreekt met je teamgenoten wat er goed ging en wat er beter kan, en je zet actiepunten uit om die verbetering in de praktijk te brengen.

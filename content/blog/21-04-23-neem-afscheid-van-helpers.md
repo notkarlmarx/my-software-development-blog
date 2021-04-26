@@ -3,7 +3,8 @@ title: "Neem Afscheid Van Helpers"
 date: 2021-04-23T10:03:25+02:00
 draft: false
 comments: true
-tags: ["classes", "clean code", "leermoment", "naamgeving",]
+tags: ["classes", "clean code", "leermoment", "naamgeving"]
+summary: "Onlangs had ik het genoegen een nieuwe feature toe te mogen voegen in een class van meer dan 1000 regels code, genaamd de `ResourceHelper`. Hoe die class zo enorm uit de hand heeft kunnen lopen? Het begint, geloof ik, bij de naam..."
 ---
 
 Onlangs had ik het genoegen een nieuwe feature toe te mogen voegen in de [*legacy code*](https://en.wikipedia.org/wiki/Legacy_code) die mijn team en ik nu al ruim een jaar uit de deur proberen te werken. Het is een rotklusje, maar een noodzakelijk kwaad tot ons gloednieuwe project die moloch daadwerkelijk kan vervangen. 

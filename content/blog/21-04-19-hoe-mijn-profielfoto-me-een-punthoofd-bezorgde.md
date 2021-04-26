@@ -4,6 +4,10 @@ date: 2021-04-19T07:45:11+02:00
 draft: false
 comments: true
 tags: ["dotkarl", "hugo", "image processing", "leermoment", "web development"]
+summary: "Op deze blog bevindt zich op dit moment één afbeelding. Het is een afbeelding van mijn hoofd. Best een aardige afbeelding, al zeg ik het zelf (maar misschien ben ik bevooroordeeld). 
+
+
+Ik ben een goed uur uur met die afbeelding bezig geweest. Laat me je vertellen waarom."
 ---
 
 Op deze blog bevindt zich op dit moment één afbeelding, [hier zo](/about). Het is een afbeelding van mijn hoofd. 

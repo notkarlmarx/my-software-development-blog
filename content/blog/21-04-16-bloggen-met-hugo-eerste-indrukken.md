@@ -4,6 +4,7 @@ date: 2021-04-16T10:44:36+02:00
 draft: false
 comments: true
 tags: ["bloggen", "dotkarl", "gatsby", "hugo", "leermoment", "static site generator"]
+summary: "Soms is het goed om je af te vragen hoe je hier gekomen bent."
 ---
 
 Soms is het goed om je af te vragen hoe je hier gekomen bent.

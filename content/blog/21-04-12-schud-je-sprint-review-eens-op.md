@@ -4,6 +4,7 @@ date: 2021-04-12T15:17:13+02:00
 draft: false
 comments: true
 tags: ["leermoment", "scrum", "sprint review"]
+summary: "Vraagt iemand in je team - je Scrum Master, je Product Owner, jij zelf, misschien - wel eens: was dit een geslaagde Sprint Review? Of, belangrijker misschien nog: waarom doen we dit nu eigenlijk? En wat is dan het antwoord daarop?"
 ---
 
 Vraagt iemand in je team - je Scrum Master, je Product Owner, jij zelf, misschien - wel eens: was dit een geslaagde Sprint Review? Of, belangrijker misschien nog: waarom doen we dit nu eigenlijk? En wat is dan het antwoord daarop?

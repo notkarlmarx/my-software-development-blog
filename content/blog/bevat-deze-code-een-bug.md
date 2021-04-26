@@ -1,5 +1,5 @@
 ---
-title: "Is Dit Een Bug of Een Feature?"
+title: "Bevat Deze Code Een Bug?"
 date: 2021-04-24T20:37:36+02:00
 draft: true
 comments: true
@@ -36,7 +36,7 @@ Bestaat er een meerkeuzevraag waarbij de kandidaat maximaal 0 antwoorden mag gev
 Een strikvraag? Is het eigenlijke antwoord dan: alle antwoorden zijn fout? Zou dat dan niet één van de antwoordopties moeten zijn? (Antwoord: [nee](https://www.rcpch.ac.uk/sites/default/files/rcpch/HTWQ/none_of_the_above_or_all_of_the_above.html).) Maar wacht, dat kan het niet zijn, want de kandidaat kan in *ex hypothesi* precies 0 antwoordmogelijkheden aankruisen. Hij of zij zou de vraag dus altijd goed hebben: een waardeloze strikvraag. 
 
 
-Of zou het een voorbeeldvraag kunnen zijn, een vraag die niet bedoeld is om in te vullen? Maar waarvan is het dan een voorbeeld, van een MC of een MR?
+Zou het dan een voorbeeldvraag kunnen zijn, eentje die niet bedoeld is om in te vullen? Maar waarvan is het dan een voorbeeld, van een MC of een MR?
 
 
 (Ik heb filosofie gestudeerd voordat ik de softwareontwikkeling inrolde, is dat duidelijk?)
@@ -51,7 +51,7 @@ Het uiteindelijk antwoord bevond zich in minder esoterische sferen. Het was een 
 Dus nee, de bovenstaande code bevat geen bug.
 
 
-Tijd om over te gaan tot de orde van de dag.
+De softwareontwikkelaar neemt dit ter kennisgeving aan en gaat over tot de orde van de dag.
 
 
 ## De oplossing
@@ -60,7 +60,7 @@ Tijd om over te gaan tot de orde van de dag.
 ...of toch niet?
 
 
-Ik had het bij dat antwoord kunnen laten, natuurlijk. Maar ik ken mezelf: ik heb het geheugen van een zeef en de filosofische inslag is er na zoveel jaren programmeren nog steeds niet uit. Dus wanneer ik de volgende keer - misschien niet volgende maand, maar volgend jaar zeker wel - opnieuw dit stuk code voor mijn neus zou krijgen, zou ik dezelfde vraag aan mijn collega's stellen. 
+Ik had het bij dat antwoord kunnen laten, natuurlijk. Maar ik ken mezelf: wanneer ik de volgende keer - misschien niet volgende maand, maar volgend jaar zeker wel - opnieuw dit stuk code voor mijn neus zou krijgen, zou ik dezelfde vraag aan mijn collega's stellen. 
 
 
 En tot ze me een antwoord zouden geven, zou ik mezelf gek maken in een poging er chocola van te maken.

@@ -6,10 +6,13 @@ comments: true
 tags: ["boeken", "clean code", "software architectuur"]
 ---
 
-2020 was in nogal wat opzichten... laten we zeggen: een bewogen jaar. Maar aan de andere kant: wat was er veel tijd om te lezen! December vorig jaar - lijstjestijd! - zette ik de vijf beste boeken die ik dat jaar had gelezen [op een rijtje](https://www.linkedin.com/in/karl-van-heijster-833503aa/detail/recent-activity/shares/) (inclusief vijf eervolle vermeldingen). 
+2020 was in nogal wat opzichten... laten we zeggen: een bewogen jaar. Maar aan de andere kant: wat was er veel tijd om te lezen! December vorig jaar - *lijstjestijd!* - zette ik de vijf beste boeken die ik dat jaar had gelezen [op een rijtje](https://www.linkedin.com/in/karl-van-heijster-833503aa/detail/recent-activity/shares/) (inclusief vijf eervolle vermeldingen). 
 
 
 Omdat het wat mij betreft het hele jaar door lijstjestijd is, presenteer ik bij dezen in herhaling: de beste boeken over software ontwikkeling die ik in 2020 las.
+
+
+## Top 5
 
 
 ### 1. Robert C. Martin - [*Clean Code: A Handbook of Agile Software Craftsmanship*](https://www.pearson.com/us/higher-education/program/Martin-Clean-Code-A-Handbook-of-Agile-Software-Craftsmanship/PGM63937.html)

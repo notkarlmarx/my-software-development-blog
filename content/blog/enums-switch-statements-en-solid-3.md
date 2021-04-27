@@ -3,7 +3,7 @@ title: "Enums, Switch Statements en SOLID - Deel 3"
 date: 2021-04-23T18:20:48+02:00
 draft: true
 comments: true
-tags: ["clean code", "dependency inversion principe", "enums", "single-responsibility principe", "SOLID", "switch statements", "refactoren"]
+tags: ["clean code", "dependency inversion principe", "enums", "refactoren", "single-responsibility principe", "SOLID", "switch statements"]
 ---
 
 # Het *Dependency inversion* principe
@@ -18,7 +18,7 @@ Ik abstraheerde logica die oorspronkelijk in onderstaande switch-statement zat, 
 Het resultaat was een stapje in de richting van beter leesbare en onderhoudbare code.
 
 
-{{< gist notkarlmarx 298febaae1df87132c832bf067a7be9c "ClaimsHelper.cs">}}
+{{< gist notkarlmarx 8d1b1346a9b21306e5f128fbd5602fec "ClaimsHelperV02.cs">}}
 
 
 De logica in `GetClaimsForUser()` bevat echter nog veel repetitie en is afhankelijk van de concrete implementatie van de classes die we aanroepen. Om dat probleem aan te pakken, kunnen we gebruik maken van een ander SOLID-principe: het *Dependency inversion* principe.
@@ -45,7 +45,7 @@ In wezen doen ze alle drie hetzelfde, namelijk: de claim teruggeven die bij de `
 Onze eerder geschetste `ReadClaimProvider` hoeven we maar minimaal aan te passen om aan deze interface te kunnen voldoen:
 
 
-{{< gist notkarlmarx 6ad02f71ae563e2a665badcd988d1d4f "ReadClaimProvider.cs">}}
+{{< gist notkarlmarx bedb39a5b877fd1fdbc9508e745e8b4f "ReadClaimProvider.cs">}}
 
 
 Nu we tegen een interface aan kunnen programmeren, hoeft de `ClaimsHelper` niet meer te weten van concrete methods die de claim van elk individueel recht teruggaven. Hij hoeft alleen maar te weten dat hij met een class te maken heeft die `IGetClaim` implementeert en daar de method `GetClaim()` van aan te roepen.
@@ -54,7 +54,7 @@ Nu we tegen een interface aan kunnen programmeren, hoeft de `ClaimsHelper` niet 
 De `ClaimsHelper` komt er nu als volgt uit te zien:
 
 
-{{< gist notkarlmarx 8cc39148d7b0165c9ad9d58399b7f640 "ClaimsHelper.cs">}}
+{{< gist notkarlmarx bedb39a5b877fd1fdbc9508e745e8b4f "ClaimsHelper.cs">}}
 
 
 Zoals je ziet, is `GetClaimsForUser()` een stuk opgeschoond. Omdat we niet meer afhankelijk zijn van concrete implementaties, hebben we het oorspronkelijke switch-statement uit de method kunnen abstraheren naar zijn eigen helpermethod met een [switch-expressie](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/switch-expression). 

@@ -3,7 +3,7 @@ title: "Enums, Switch Statements en SOLID - Deel 2"
 date: 2021-04-23T13:49:53+02:00
 draft: true
 comments: true
-tags: ["clean code", "enums", "single-responsibility principe", "SOLID", "switch statements", "refactoren"]
+tags: ["clean code", "enums", "refactoren", "single-responsibility principe", "SOLID", "switch statements"]
 ---
 
 # Het *Single-Responsibility* principe
@@ -89,7 +89,7 @@ We zouden een nieuwe method kunnen schrijven met daarin opnieuw een switch-state
 De code komt er dus als volgt uit te zien (voor de leesbaarheid heb ik irrelevante zaken als de [class-declaratie](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/classes#declaring-classes) weggelaten):
 
 
-{{< gist notkarlmarx 8d1b1346a9b21306e5f128fbd5602fec "ClaimsHelper.cs">}}
+{{< gist notkarlmarx 8d1b1346a9b21306e5f128fbd5602fec "ClaimsHelperV01.cs">}}
 
 
 Maar hoewel de oorspronkelijke method nu minder verantwoordelijkheden heeft, kan dit niet gezegd worden voor de class. Deze bevindt zich in zekere zin op hetzelfde niveau als voorheen. Elke keer als een claim voor een bepaald recht (`Permission`) wordt gewijzigd, moeten we onze `ClaimsHelper` aanpassen.
@@ -101,13 +101,13 @@ Zou het niet fijn zijn als we deze wijzigingen door konden voeren zonder dat we 
 De opdracht is duidelijk: de code die nu in de methods `GetReadClaim()`, `GetWriteClaim()` en `GetDeleteClaim()` zit, moet de `ClaimsHelper` uit. We kunnen voor alle drie een aparte class aanmaken met hun respectievelijke methods. De class voor leesrechten zou er bijvoorbeeld als volgt uit kunnen zien:
 
 
-{{< gist notkarlmarx 9d8b1caf8ffff8de065db008ed423305 "ReadClaimProvider.cs">}}
+{{< gist notkarlmarx 8d1b1346a9b21306e5f128fbd5602fec "ReadClaimProvider.cs">}}
 
 
 En `GetClaimsForUser()` zouden we dan als volgt kunnen omschrijven:
 
 
-{{< gist notkarlmarx 298febaae1df87132c832bf067a7be9c "ClaimsHelper.cs">}}
+{{< gist notkarlmarx 8d1b1346a9b21306e5f128fbd5602fec "ClaimsHelperV02.cs">}}
 
 
 Dit is opnieuw een stap in de goede richting! `ClaimsHelper` als geheel heeft een verantwoordelijkheid minder. Elke keer als de inhoud van een claim wordt aangepast, hoeft die wijziging alleen maar doorgevoerd te worden in de bijbehorende class. 

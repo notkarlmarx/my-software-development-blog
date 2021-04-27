@@ -3,7 +3,7 @@ title: "Enums, Switch Statements en SOLID - Deel 4"
 date: 2021-04-26T20:52:07+02:00
 draft: true
 comments: true
-tags: []
+tags: ["clean code", "dependency inversion principe", "enums", "open-closed principe", "refactoren", "reflection", "single-responsibility principe", "SOLID", "switch statements"]
 summary: ""
 ---
 
@@ -28,7 +28,7 @@ Helemaal weg zijn de concrete implementaties echter nog niet. De method `GetClai
 ## Open voor uitbreiding, gesloten voor aanpassing
 
 
-Wat is het gevolg hiervan? Elke keer als er een nieuwe waarde aan de enum wordt toegevoegd, dan moet `GetClaimProvider()` en dus ook de `ClaimsHelper` worden aangepast. Stel dat we een bewerkingsrechten (`Edit`) toe willen voegen, dan moet de switch-expression in `GetClaimProvider()` worden uitgebreid met een extra conditie. Een ontwikkelaar die dat nalaat krijgt vroeg of laat een `NotSupportedException` om zijn oren.
+Wat is het gevolg hiervan? Elke keer als er een nieuwe waarde aan de enum wordt toegevoegd, dan moet `GetClaimProvider()` en dus ook de `ClaimsHelper` worden aangepast. Stel dat we een bewerkingsrechten (bijvoorbeeld `Edit`) toe willen voegen, dan moet de switch-expression in `GetClaimProvider()` worden uitgebreid met een extra conditie. Een ontwikkelaar die dat nalaat krijgt vroeg of laat een `NotSupportedException` om zijn oren.
 
 
 In de softwareontwikkeling zeggen we dan: de `ClaimsHelper` schendt het *Open-closed* principe. Dit stelt dat software-entiteiten open moeten staan voor uitbreiding, maar gesloten voor aanpassing. Met andere woorden: een wijziging in het ene deel van de code - de `Permissions` - moet niet tot gevolg hebben dat een andere class - de `ClaimsHelper` - moet worden aangepast om te blijven werken.
@@ -43,4 +43,54 @@ In de softwareontwikkeling zeggen we dan: de `ClaimsHelper` schendt het *Open-cl
 Het eerste wat we kunnen doen, is `GetClaimProvider()` verhuizen naar zijn eigen class. Dit is een stap in de goede richting: de `ClaimsHelper` is dan in elk geval niet meer afhankelijk van `Permissions`. Maar het probleem is natuurlijk alleen maar verplaatst. Onze nieuwe class, laten we hem de `ClaimProviderFactory` noemen, is dat namelijk nog steeds wel. Dat is het probleem dat we op moeten zien te lossen.
 
 
-C# kent gelukkig een handige feature die ons hier uit de brand kan helpen: [Reflection](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection).
+C# kent gelukkig een handige feature die ons hier uit de brand kan helpen: [*Reflection*](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection). Elk object dat je gebruikt of aanmaakt in je code, heeft bepaalde eigenschappen. Deze informatie over het object - de metadata - is in principe gewoon beschikbaar voor jou als ontwikkelaar. In .NET krijg je er toegang toe via het [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type?view=net-5.0) van een object. De classes in de namespace [System.Reflection](https://docs.microsoft.com/en-us/dotnet/api/system.reflection?view=net-5.0) stellen je in staat om de informatie van het Type uit te vragen.
+
+
+## Een oplossing
+
+
+Om onze code te laten voldoen aan het *Open-closed* principe, moeten we er middels Reflection achter zien te komen welke classes er allemaal zijn die `IProvideClaims` implementeren. Vervolgens moeten we eracher zien te komen welke van die classes bij welke `Permission` hoort.
+
+
+De simpelste manier om een `Permission` aan zo'n class te koppelen, is door de interface aan te passen met een [property](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties) van het type `Permission`. Die property moet [static](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/static) zijn, zodat deze uit te vragen is zonder dat we de class in kwestie hoeven te instantiëren.
+
+
+{{< gist notkarlmarx 6bffec16a479461005daae78756edf72 "IProvideClaims.cs">}}
+
+
+De geupdate concrete implementatie laat zich natuurlijk raden:
+
+
+{{< gist notkarlmarx 6bffec16a479461005daae78756edf72 "ReadClaimProvider.cs">}}
+
+
+We kunnen nu invulling geven aan onze `ClaimsProviderFactory`:
+
+
+{{< gist notkarlmarx 6bffec16a479461005daae78756edf72 "ClaimProviderFactory.cs">}}
+
+
+Zoals je ziet, heeft deze class op geen enkele manier weet van de concrete implementaties van `IProvideClaims`. Als de method `GetClaimProvider()` wordt aangeroepen, dan haalt bekijkt deze eerst welke classes er allemaal zijn die de interface implementeren. Vervolgens filtert hij de juiste class uit deze lijst door te kijken naar de property met de naam `Permission`. Als er een class bestaat met zo'n property en deze heeft de juiste waarde, dan creëert de method hier een instantie van en geeft deze terug. Bestaat deze niet, dan wordt er een `NotSupportedException` opgegooid.
+
+
+De `ClaimsHelper`, ten slotte, ziet er nu als volgt uit:
+
+
+{{< gist notkarlmarx 6bffec16a479461005daae78756edf72 "ClaimsHelper.cs">}}
+
+
+We kunnen onze enum nu vrijelijk aanpassen, zonder enige code in de `ClaimsHelper` of de `ClaimProviderFactory` aan te hoeven passen. Het enige wat we moeten doen - als we geen Exceptions willen veroorzaken althans - is ervoor zorgen dat we een class toevoegen die `IProvideClaims` implementeert en de nieuwe `Permission` als property opneemt. 
+
+
+## *What's next?*
+
+
+Onze code is een stuk makkelijker onderhoudbaar geworden. Maar tegen welke prijs? Reflection is een relatief dure operatie, en onze code maakt er gebruik van, elke keer als deze de loop doorloopt. Volgende week bekijken we wat de performance impact van onze wijzigingen is, en wat we kunnen doen om deze zo klein mogelijk te houden.
+
+
+Wie tot die tijd graag zelf wil experimenteren, kan de code [via GitHub](https://github.com/notkarlmarx/RefactorExercises/tree/master/RefactorExercises/EnumSwitch/Refactored/V03) binnenhalen.
+
+
+## Meer in deze reeks
+
+...

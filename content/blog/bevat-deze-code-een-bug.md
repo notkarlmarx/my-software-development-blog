@@ -9,7 +9,7 @@ tags: ["clean code", "intentie van code", "leermoment", "refactoren"]
 Bevat deze code een bug?
 
 
-{{< gist notkarlmarx 4c7781c440167a12bcd2537875442a89 "ChoiceTypeChecker.cs">}}
+{{< gist notkarlmarx 4c7781c440167a12bcd2537875442a89 "OriginalChoiceTypeChecker.cs">}}
 
 
 Oké, misschien ga ik te snel. Even wat terminologie.
@@ -69,7 +69,7 @@ En tot ze me een antwoord zouden geven, zou ik mezelf gek maken in een poging er
 Ik besloot toch even aan de code te rommelen:
 
 
-{{< gist notkarlmarx 2a87ac6587d13b77f65b01b5c1681f43 "ChoiceTypeChecker.cs">}}
+{{< gist notkarlmarx 4c7781c440167a12bcd2537875442a89 "RefactoredChoiceTypeChecker.cs">}}
 
 
 Bevat deze code een bug? *Nee!*

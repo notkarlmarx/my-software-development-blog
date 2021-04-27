@@ -2,11 +2,28 @@
 <main>
     <h1>{{ .Title }}</h1>
 	<div class="catalogue">
-		<ul>
-			{{ range .Data.Terms.Alphabetical }}
-				<li><a href="{{ .Page.Permalink }}">{{ title .Page.Title }}</a> ({{ .Count }})</li>
+		{{ $type := .Type }}
+		{{ $page := .Site.GetPage $type }}
+		{{ $symbols := slice "0" "1" "2" "3" "4" "5" "6" "7" "8" "9" "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z" }}
+		{{ range $symbols }}
+			{{ $symbol := .}}
+			{{ $terms := slice}}
+
+			{{ range $page.Data.Terms.Alphabetical }}
+				{{ $term := .Name}}
+				{{ if hasPrefix $term $symbol }}
+					{{ $terms = $terms | append . }}
+				{{ end }}
 			{{ end }}
-		</ul>
+
+			{{ if gt $terms 0 }}
+				<h3 class="heading">{{ $symbol | upper }}</h2>
+					{{ range $terms }}
+						<a href="{{ .Page.Permalink }}">{{ title .Page.Title }}</a> ({{ .Count }})
+						<br/>
+					{{ end }}
+			{{ end }}
+		{{ end }}
 	</div>
 </main>
 

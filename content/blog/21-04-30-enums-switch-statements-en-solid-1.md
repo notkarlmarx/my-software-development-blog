@@ -1,7 +1,7 @@
 ---
 title: "Enums, Switch Statements en SOLID - Deel 1"
 date: 2021-04-20T18:59:08+02:00
-draft: true
+draft: false
 comments: true
 tags: ["clean code", "dependency inversion principe", "enums", "interface segregatie principe", "liskov substitutie principe", "open-closed principe", "refactoren", "single-responsibility principe", "SOLID", "switch statements"]
 ---

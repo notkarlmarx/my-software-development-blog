@@ -4,6 +4,7 @@ date: 2021-04-30T11:07:58+02:00
 draft: false
 comments: true
 tags: ["clean code", "dependency inversion principe", "enums", "interface segregatie principe", "liskov substitutie principe", "open-closed principe", "refactoren", "single-responsibility principe", "SOLID", "switch statements"]
+summary: "Onlangs stuitte ik op een stuk code dat ik de dagen erop maar niet uit mijn hoofd kreeg. (Ik ben er nog niet helemaal over uit of dat tekenend is voor mijn passie voor en/of professionaliteit als softwareontwikkelaar, of voor mijn langzame aftakeling gedurende de coronacrisis.) Het ging om een switch statement rond een enum. De komende weken zal ik deze code refactoren om aan SOLID principes te voldoen."
 ---
 
 # De casus

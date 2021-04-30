@@ -6,10 +6,10 @@ comments: true
 tags: ["clean code", "dependency inversion principe", "enums", "interface segregatie principe", "liskov substitutie principe", "open-closed principe", "refactoren", "single-responsibility principe", "SOLID", "switch statements"]
 ---
 
-# Inleiding en SOLID principes
+# De casus
 
 
-Onlangs stuitte ik op een stuk code dat ik de dagen erop maar niet uit mijn hoofd kreeg. Ik ben er nog niet helemaal over uit of dat tekenend is voor mijn passie of professionaliteit als softwareontwikkelaar, of voor mijn langzame aftakeling gedurende de coronacrisis.
+Onlangs stuitte ik op een stuk code dat ik de dagen erop maar niet uit mijn hoofd kreeg. Ik ben er nog niet helemaal over uit of dat tekenend is voor mijn passie voor en/of professionaliteit als softwareontwikkelaar, of voor mijn langzame aftakeling gedurende de coronacrisis.
 
 
 Laten we positief blijven en van het eerste uitgaan.
@@ -68,7 +68,7 @@ De principes zijn als volgt:
 
 - Het **Liskov substitutie principe**: objecten in een programma zouden vervangbaar moeten zijn door instanties van hun subtypes zonder dat de juiste werking van het programma beïnvloed wordt.
 
-- Het **Interface segregatie principe**: het hebben van veel cliënt-specifieke interfaces valt te verkiezen boven het hebben van één algemene interface. Met andere woorden: een class zou nooit verplicht moeten zijn bepaalde methods te moeten implementeren als gevolg van de implementatie van een interface, als hij deze niet hoeft te gebruiken.
+- Het **Interface segregatie principe**: het hebben van veel cliënt-specifieke interfaces valt te verkiezen boven het hebben van één algemene interface. Met andere woorden: een class zou nooit verplicht moeten zijn bepaalde methods te moeten implementeren als gevolg van de implementatie van een interface, als hij deze eigenlijk niet nodig heeft.
 
 - Het ***Dependency inversion* principe**: wees afhankelijk van abstracties (bijvoorbeeld interfaces, maar ook baseclasses), niet van concrete implementaties.
 
@@ -85,7 +85,7 @@ Kun je de manieren in kaart brengen waarop de `ClaimsHelper` niet aan SOLID-prin
 Welnu, dit opmerken is één ding. Het probleem verhelpen, dat is een heel ander verhaal. 
 
 
-De komende weken zal ik het bovenstaande stuk code stapsgewijs [refactoren](https://en.wikipedia.org/wiki/Code_refactoring) in een poging de code wat netter en beter uitbreidbaar te maken. Gedurende de refactorslag zullen een boel SOLID-principes voorbij komen, die hopelijk meteen hun waarde zullen bewijzen.
+De komende weken zal ik het bovenstaande stuk code stapsgewijs [refactoren](https://en.wikipedia.org/wiki/Code_refactoring) in een poging de code wat netter en beter uitbreidbaar te maken. Gedurende de refactorslag zullen drie van de vijf SOLID-principes voorbij komen, die hopelijk meteen hun waarde zullen bewijzen.
 
 
 Wie nog niet helemaal overtuigd is van de waarde van SOLID, of wie er graag meer over zou willen leren, kan ik de [video's van Tim Corey](https://www.youtube.com/channel/UC-ptWR16ITQyYOglXyQmpzw) aanraden. Deze, over het *single responsibility* principe is een goed begin:
@@ -97,5 +97,9 @@ De code is [via GitHub](https://github.com/notkarlmarx/RefactorExercises/blob/ma
 
 ## Meer in deze reeks
 
-1. **Inleiding en SOLID principes**
-2. [Het *Single-Responsibility* principe](/blog/enums-switch-statements-en-solid-2)
+1. **De casus**
+2. Het *Single-Responsibility* principe (binnenkort)
+3. Het *Dependency inversion* principe (binnenkort)
+4. Het *Open-closed* principe (binnenkort)
+5. SOLID en performance (binnenkort)
+6. Conclusie (binnenkort)

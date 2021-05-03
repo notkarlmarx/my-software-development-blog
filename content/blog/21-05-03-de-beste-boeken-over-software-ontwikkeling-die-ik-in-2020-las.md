@@ -1,9 +1,10 @@
 ---
 title: "De Beste Boeken Over Software Ontwikkeling Die Ik in 2020 Las"
-date: 2021-04-23T19:57:41+02:00
-draft: true
+date: 2021-05-03T08:46:29+02:00
+draft: false
 comments: true
 tags: ["boeken", "clean code", "software architectuur"]
+summary: "2020 was in nogal wat opzichten... laten we zeggen: een bewogen jaar. Maar aan de andere kant: wat was er veel tijd om te lezen! Dit zijn de vijf beste boeken over software ontwikkeling die ik het afgelopen jaar las (en vijf eervolle vermeldingen)."
 ---
 
 2020 was in nogal wat opzichten... laten we zeggen: een bewogen jaar. Maar aan de andere kant: wat was er veel tijd om te lezen! December vorig jaar - *lijstjestijd!* - zette ik de vijf beste boeken die ik dat jaar had gelezen [op een rijtje](https://www.linkedin.com/in/karl-van-heijster-833503aa/detail/recent-activity/shares/) (inclusief vijf eervolle vermeldingen). 
@@ -24,7 +25,7 @@ Ik overdrijf niet als ik zeg dat dit boek de manier waarop ik code schrijf, tota
 ### 2. Robert C. Martin - [*Clean Architecture: A Craftsman's Guide to Software Structure and Design*](https://www.pearson.com/us/higher-education/program/Martin-Clean-Architecture-A-Craftsman-s-Guide-to-Software-Structure-and-Design/PGM333762.html)
 
 
-Dat “Uncle Bob” zowel de eerste als tweede plek op deze lijst inneemt, voelt wat ongemakkelijk. Maar het is dubbel en dwars verdiend: de opvolger van *Clean Architecture* is (bijna!) net zo goed als het origineel. Martins boodschap is even indringend als belangrijk: elke beslissing die jij als ontwikkelaar maakt, is een architecturele beslissing. Zorg dus dat je weet wat je doet! Ik denk in elk geval wel twee keer na voordat ik mijn classes zomaar public maak.
+Dat “Uncle Bob” zowel de eerste als tweede plek op deze lijst inneemt, voelt wat ongemakkelijk. Maar het is dubbel en dwars verdiend: de opvolger van *Clean Code* is (bijna!) net zo goed als het origineel. Martins boodschap is even indringend als belangrijk: elke beslissing die jij als ontwikkelaar maakt, is een architecturele beslissing. Zorg dus dat je weet wat je doet! Ik denk in elk geval wel twee keer na voordat ik mijn classes zomaar public maak.
 
 
 ### 3. Jay Wengrow - [*A Common-Sense Guide to Data Structures and Algorithms* (2nd Edition)](https://pragprog.com/titles/jwdsal2/a-common-sense-guide-to-data-structures-and-algorithms-second-edition/)

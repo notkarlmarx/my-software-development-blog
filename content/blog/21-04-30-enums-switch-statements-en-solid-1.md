@@ -99,7 +99,7 @@ De code is [via GitHub](https://github.com/notkarlmarx/RefactorExercises/blob/ma
 ## Meer in deze reeks
 
 1. **De casus**
-2. Het *Single-Responsibility* principe (binnenkort)
+2. [Het *Single-Responsibility* principe](/blog/21-05-07-enums-switch-statements-en-solid-2/)
 3. Het *Dependency inversion* principe (binnenkort)
 4. Het *Open-closed* principe (binnenkort)
 5. SOLID en performance (binnenkort)

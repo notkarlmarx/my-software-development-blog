@@ -55,6 +55,9 @@ Om onze code te laten voldoen aan het *Open-closed* principe, moeten we er midde
 De simpelste manier om een `Permission` aan zo'n class te koppelen, is door de interface aan te passen met een [property](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties) van het type `Permission`. Die property moet [static](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/static) zijn, zodat deze uit te vragen is zonder dat we de class in kwestie hoeven te instantiëren.
 
 
+(Een alternatieve manier om een `Permission` te koppelen aan een ClaimProvider-class is middels het gebruik van [attributen](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/attributes/). Voor het punt dat van deze blog is het echter om het even welke van deze twee oplossingen gekozen wordt.)
+
+
 {{< gist notkarlmarx 6bffec16a479461005daae78756edf72 "IProvideClaims.cs">}}
 
 

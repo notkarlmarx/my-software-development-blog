@@ -3,17 +3,17 @@ title: "Wat Wil Je Zijn: Een Architect of Een Ontwikkelaar?"
 date: 2021-04-30T21:07:08+02:00
 draft: true
 comments: true
-tags: ["carrièrepad", "scrum", "software architectuur", "software ontwikkeling", "stakeholders"]
+tags: ["carrièrepad", "leermoment", "scrum", "software architect (rol)", "software architectuur", "software ontwikkeling", "stakeholders"]
 summary: "Mijn leidinggevende stelde me onlangs de vraag: “Wil je een softwarearchitect zijn of wil je een softwareontwikkelaar zijn die zich met architectuur bezighoudt?” Dat vond ik een confronterende vraag, omdat ik me tot dan toe nauwelijks gerealiseerd had dat er een verschil bestond tussen die opties. In deze blog onderscheid ik twee manieren waarop de rol van architect kan worden ingevuld binnen Scrum: als ontwikkelaar en als stakeholder."
 ---
 
 Mijn leidinggevende stelde me onlangs de vraag: “Wil je een softwarearchitect zijn of wil je een softwareontwikkelaar zijn die zich met architectuur bezighoudt?” 
 
 
-Dat vond ik een confronterende vraag, omdat ik me tot dan toe nauwelijks gerealiseerd had dat er een verschil bestond tussen die opties. 
+Dat vond ik een confronterende vraag, ondere andere omdat ik me tot dan toe nauwelijks gerealiseerd had dat er een verschil bestond tussen die opties. 
 
 
-## De architect als onderdeel van een Scrumteam
+## De architect als ontwikkelaar
 
 
 Het deed me beseffen dat mijn kennis over softwareontwikkeling sterk gekleurd wordt door mijn ervaring als ontwikkelaar in een Scrumteam. 
@@ -22,7 +22,7 @@ Het deed me beseffen dat mijn kennis over softwareontwikkeling sterk gekleurd wo
 Binnen die kennishorizon vallen een architect en een ontwikkelaar die zich heeft gespecialiseerd in architectuur samen. Hij (of zij, maar in mijn geval dus niet) is het teamlid dat de architectuur van de applicatie [stapsgewijs](https://dzone.com/articles/what-is-software-architecture-in-scrum) ontwerpt[^1], de architecturele integriteit ervan continu monitort en zijn teamleden elke keer opnieuw de juiste richting op manouvreert als deze onder druk staat.
 
 
-En ja, hij codeert. Als het op het ontwikkelen van nieuwe features aankomt, onderscheidt hij zich niet van de rest van het team. Al komt het in de praktijk wel vaker voor dat de architect-ontwikkelaar zich op de architectureel interessantere delen van de code focust.
+En ja, hij codeert. Als het op het ontwikkelen van nieuwe features aankomt, onderscheidt hij zich niet van de rest van het team. Al komt het in de praktijk wel vaker voor dat de architect-ontwikkelaar zich op de delen van de code focust die een grotere architecturele impact hebben.
 
 
 Maar het is belangrijk om in het achterhoofd te houden dat de architect-ontwikkelaar *in zijn eentje* niet verantwoordelijk is voor de architectuur van een applicatie. Die verantwoordelijkheid valt aan het team als geheel toe. Het is geen toeval dat Scrum de rol *architect* niet kent.
@@ -31,7 +31,7 @@ Maar het is belangrijk om in het achterhoofd te houden dat de architect-ontwikke
 ## De architect als stakeholder
 
 
-Maar dat is niet de enige manier waarop een softwarearchitect zich kan verhouden tot het Scrumteam - en de applicatie waar ze voor verantwoordelijk is. Een organisatie kan er ook voor kiezen de verantwoordelijkheid voor de architectuur van een applicatie te beleggen buiten het team. De softwarearchitect is in dat geval geen onderdeel van een Scrumteam, maar een stakeholder. Zijn belang is: de architecturele integriteit van de gekozen oplossing waarborgen.
+Maar dat is niet de enige manier waarop een softwarearchitect zich kan verhouden tot het Scrumteam - en de applicatie waar ze voor verantwoordelijk is. Een organisatie kan er ook voor kiezen de verantwoordelijkheid voor de architectuur van een applicatie te beleggen buiten het team. De softwarearchitect is in dat geval een stakeholder. Zijn belang is: de architecturele integriteit van de gekozen oplossing waarborgen.
 
 
 (Deze opzet zal, vermoed ik, vaker voorkomen binnen organisaties waar het aantal applicaties groter is dan het aantal softwareontwikkelaars met gedegen architecturele kennis en vaardigheden. Maar dit vermoeden zou het gevolg kunnen zijn van mijn *bias* als ontwikkelaar. Zou een architect zonder deze achtergrond hetzelfde vermoeden hebben?)
@@ -46,13 +46,13 @@ Dit doet iets met de invulling van de rol van softwarearchitect. De architect bo
 Het is niet zo dat de werkzaamheden tussen de architect-ontwikkelaar en de architect-stakeholder radicaal verschillen. 
 
 
-Ook als onderdeel van het team zal een architect oplossingen voor businessproblemen ontwerpen. Ook als onderdeel van het team zal hij deze middels *Proofs of Concept* (POCs) en architectuurdiagrammen presenteren aan de ontwikkelaars, en hen vragen erop te schieten. Misschien zou je dit het "harde", codegerelateerde gedeelte van zijn vak kunnen noemen.
+In beide invullingen zal een architect softwarematige oplossingen voor businessproblemen ontwerpen. Hij zal deze middels *Proofs of Concept* (POCs) en architectuurdiagrammen presenteren aan de ontwikkelaars, en hen vragen erop te schieten. Misschien zou je dit het "harde", codegerelateerde gedeelte van zijn vak kunnen noemen.
 
 
 Hij zal de Product Owner ervan moeten overtuigen tijd en geld vrij te (blijven) maken om de architecturele integriteit van een applicatie te blijven waarborgen. Hij zal de voor- en nadelen van de gekozen oplossing op een rij moeten zetten in een taal die de *business* begrijpt. Dat zou dan het "zachte", businessgerelateerde gedeelte van zijn vak zijn.
 
 
-Dit zijn een potentieel zeer interessante wisselwerkingen. De architect en het team respectievelijk de business leren tegelijkertijd van elkaar. Het Scrumteam kan hem wijzen op plekken waar de wal van een concrete implementatie zijn ontworpen schip keert. En de business kan hem wijzen op de manieren waarop hun belangen onvoldoende vertegenwoordigd zijn in de voorgestelde oplossing. 
+Dit zijn een potentieel zeer interessante wisselwerkingen. De architect en het team respectievelijk de business leren tegelijkertijd van elkaar. Het Scrumteam kan hem wijzen op plekken waar de wal van een concrete implementatie het schip van zijn ontwerp keert. En de business kan hem wijzen op de manieren waarop hun belangen onvoldoende vertegenwoordigd zijn in de voorgestelde oplossing. 
 
 
 Dat constante proces van inzicht vergaren is één van de dingen die me aanspreken in softwareontwikkeling in het algemeen en softwarearchitectuur in het bijzonder.
@@ -64,7 +64,7 @@ Dat constante proces van inzicht vergaren is één van de dingen die me aansprek
 Maar er is wel sprake van een accentverschuiving tussen de twee invullingen van de rol. 
 
 
-De architect-ontwikkelaar zal relatief meer code schrijven. Hij zal zich meer op één applicatie focussen. En dat is *by design* (no pun intended), want hij zit in één team. (De aanname daarbij is natuurlijk dat één team verantwoordelijke is voor één applicatie, wat niet altijd het geval is.)
+De architect-ontwikkelaar zal relatief meer code schrijven. Hij zal zich meer op één applicatie focussen. En dat is *by design* (no pun intended), want hij zit in één team. (Waarbij ik aanneem dat één team verantwoordelijk is voor één applicatie, wat niet altijd het geval is.)
 
 
 De architect-stakeholder zal relatief meer onderzoeken, meer ontwerpen en meer communiceren, zowel met de ontwikkelaars als met de business. Hij moet ook wel, want hij heeft meerdere applicaties in zijn portefuille, waar hij bovendien verder vanaf staat.
@@ -76,7 +76,10 @@ De architect-stakeholder zal relatief meer onderzoeken, meer ontwerpen en meer c
 Wil ik een softwarearchitect zijn of wil ik een softwareontwikkelaar zijn die zich met architectuur bezighoudt? 
 
 
-Ik moet bekennen dat ik op deze vraag nog geen antwoord heb. Het onderscheid architect-ontwikkelaar en architect-stakeholder biedt handvaten, maar geen doorslaggevende argumenten. (En het is belangrijk om te beseffen dat het onderscheid *slechts* handvaten biedt, want het valt niet één op één samen met het onderscheid dat mijn leidinggevende schetste.)
+Ik hou van code, en schone code bovendien. Wat dat betreft voel ik me sterk verwant met een architect-ontwikkelaar. Maar ik hou ook van de moeilijkheden van een constante afweging van tegengestelde belangen, en de manier waarop dat je steeds meer inzicht verschaft in een businessprobleem. In dat spel zie ik potentieel om te groeien.
+
+
+Dus, wat wordt het? Ik moet bekennen dat ik op deze vraag nog geen antwoord heb. Het onderscheid architect-ontwikkelaar en architect-stakeholder biedt handvaten, maar geen doorslaggevende argumenten. (En het is belangrijk om te beseffen dat het onderscheid *slechts* handvaten biedt, want het valt niet één op één samen met het onderscheid dat mijn leidinggevende schetste.) 
 
 
 Verwonderlijk hoeft dat niet te zijn, want de vraag is ingewikkeld genoeg om alleen in de praktijk te kunnen worden beantwoord. Pas als ik beide rollen aan den lijve heb ondervonden, bestaat er zekerheid over wat ik wil zijn - of misschien dan zelfs al blijk te zijn.

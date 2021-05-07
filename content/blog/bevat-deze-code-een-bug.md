@@ -4,6 +4,7 @@ date: 2021-04-24T20:37:36+02:00
 draft: true
 comments: true
 tags: ["clean code", "intentie van code", "leermoment", "refactoren"]
+summary: "Is een meerkeuzevraag waarbij je nul antwoorden in mag vullen van het type *Multiple Choice* of *Multiple Response* - of geen van beide?"
 ---
 
 Bevat deze code een bug?
@@ -81,4 +82,4 @@ Bevat deze code een bug? *Nee!*
 - **Stop niet bij werkende code.** Stop pas wanneer code de intentie weergeeft waarmee je hem geschreven hebt. (Of waarmee een ander hem geschreven heeft, zoals in het voorbeeld.) Wees je bewust van de momenten waarop code vragen bij je oproept. Zijn er manieren waarop je die vragen middels code kunt beantwoorden? Doe dat dan! Hoe minder dingen je je af hoeft te vragen tijdens het lezen van code, hoe sneller je nieuwe features kunt bouwen en waarde kunt leveren voor je eindgebruikers.
 
 
-[^1]: Goed, niet precies dit stuk code. Ik heb het geheel ietwat aangepast voor het voorbeeld. We zouden nooit het type van een interactie teruggeven als string, we zijn geen barbaren.
+[^1]: Goed, niet precies dit stuk code. Ik heb het geheel ietwat aangepast voor het voorbeeld. We zouden nooit het type van een interactie teruggeven als string, we zijn geen beesten.

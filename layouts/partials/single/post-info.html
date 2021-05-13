@@ -11,6 +11,6 @@
         <span>{{ i18n "on" }}&nbsp;</span><time datetime="{{ .PublishDate }}">{{ i18n "publishdate" . }}</time>
     {{- end }}
     <br>
-    <span>{{ i18n "readingTime" }} </span>{{ .ReadingTime }} {{ i18n "minutes" }} ({{ .WordCount }} {{ i18n "words" }})
+    <span>{{ i18n "readingTime" }}: </span>{{ .ReadingTime }} {{ cond (eq .ReadingTime 1) (i18n "minute") (i18n "minutes") }} ({{ .WordCount }} {{ i18n "words" }})
 </div>
 {{ end }}

@@ -1,8 +1,11 @@
+[minute]
+other = "minuut"
+
 [minutes]
 other = "minuten"
 
 [readingTime]
-other = "Geschatte leestijd:"
+other = "Leestijd"
 
 [words]
 other = "woorden"

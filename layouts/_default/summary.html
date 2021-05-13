@@ -7,6 +7,8 @@
         <p>
             {{ if isset .Params "summary" }}{{ .Params.Summary | markdownify }}{{ else }}{{ .Summary }}{{ end }}
         </p>
-        <span class="post-info">{{ i18n "readingTime" }} {{ .ReadingTime }} {{ i18n "minutes" }}</span>
+        <span class="post-info">
+            {{ i18n "readingTime" }}: {{ .ReadingTime }} {{ cond (eq .ReadingTime 1) (i18n "minute") (i18n "minutes") }}
+        </span>
     </div>
 </a>

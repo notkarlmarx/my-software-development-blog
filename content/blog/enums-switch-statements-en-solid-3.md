@@ -4,6 +4,7 @@ date: 2021-04-23T18:20:48+02:00
 draft: true
 comments: true
 tags: ["clean code", "dependency inversion principe", "enums", "refactoren", "single-responsibility principe", "SOLID", "switch statements"]
+summary: "Vorige week refactorde ik een switch statement rondom een enum aan de hand van het *Single-Responsibility* principe. Deze week zetten we onze refactorslag voort aan de hand van de D in SOLID: het *Dependency inversion* principe. Tijd om de interfaces van stal te halen!"
 ---
 
 # Het *Dependency inversion* principe

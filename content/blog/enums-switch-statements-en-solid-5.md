@@ -1,5 +1,5 @@
 ---
-title: "Enums Switch Statements en Solid 5"
+title: "Enums, Switch Statements en Solid - Deel 5"
 date: 2021-05-06T04:41:16+02:00
 draft: true
 comments: true

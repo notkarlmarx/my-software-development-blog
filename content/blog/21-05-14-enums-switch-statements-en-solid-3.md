@@ -1,7 +1,7 @@
 ---
 title: "Enums, Switch Statements en SOLID - Deel 3"
-date: 2021-04-23T18:20:48+02:00
-draft: true
+date: 2021-05-14T08:42:31+02:00
+draft: false
 comments: true
 tags: ["clean code", "dependency inversion principe", "enums", "refactoren", "single-responsibility principe", "SOLID", "switch statements"]
 summary: "Vorige week refactorde ik een switch statement rondom een enum aan de hand van het *Single-Responsibility* principe. Deze week zetten we onze refactorslag voort aan de hand van de D in SOLID: het *Dependency inversion* principe. Tijd om de interfaces van stal te halen!"
@@ -36,10 +36,13 @@ Dit principe stelt twee dingen.
 2. Abstracties moeten onafhankelijk zijn van details. Het is juist andersom: details, in de vorm van concrete implementaties, moeten afhankelijk zijn van abstracties.
 
 
-(Deze [karakterisering](https://linux.ime.usp.br/~joaomm/mac499/arquivos/referencias/oodmetrics.pdf) van het *Dependency inversion* principe is afkomstig van softwareguru [Robert "Uncle Bob" Martin](http://cleancoder.com/products), wiens [*Clean Code*](https://www.pearson.com/us/higher-education/program/Martin-Clean-Code-A-Handbook-of-Agile-Software-Craftsmanship/PGM63937.html) het [beste boek over softwareontwikkeling was dat ik vorig jaar las](/blog/21-05-03-de-beste-boeken-over-software-ontwikkeling-die-ik-in-2020-las). Maar ik zal niet liegen: voor deze blog baseer ik me gewoon op de [Wikipediapagina](https://en.wikipedia.org/wiki/Dependency_inversion_principle).)
+(Deze [karakterisering](https://linux.ime.usp.br/~joaomm/mac499/arquivos/referencias/oodmetrics.pdf) van het *Dependency inversion* principe is afkomstig van softwareguru [Robert "Uncle Bob" Martin](http://cleancoder.com/products), wiens [boeken ik van harte aanraad](/blog/21-05-03-de-beste-boeken-over-software-ontwikkeling-die-ik-in-2020-las). Maar ik zal niet liegen: voor deze blog baseer ik me gewoon op de [Wikipediapagina](https://en.wikipedia.org/wiki/Dependency_inversion_principle).)
 
 
 Dit zijn veel woorden om te zeggen: programmeer tegen een interface aan en niet tegen een concrete class. De reden daarvoor is simpel: als je tegen een interface aan programmeert, kun je de concrete implementatie aanpassen zonder de aanroepende code te hoeven wijzigen.
+
+
+Hoe verhoudt dit principe zich tot de code hierboven? We kunnen de `ClaimsHelper` zien als een module op hoger abstractieniveau, en de `Read`-, `Write`- en `DeleteClaimProvider` als modules op een lager abstractieniveau. Het probleem wordt dan meteen duidelijk: de eerste heeft nu een afhankelijkheid van de laatste drie.
 
 
 ## Drie classes, één abstractie
@@ -92,6 +95,3 @@ Wie tot die tijd graag zelf wil experimenteren, kan de code [via GitHub](https:/
 4. Het *Open-closed* principe (binnenkort)
 5. SOLID en performance (binnenkort)
 6. Conclusie (binnenkort)
-
-
-***TODO: Meer in deze reeks deel 1 en deel 2 aanpassen***

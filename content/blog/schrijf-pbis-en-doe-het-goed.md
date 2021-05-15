@@ -13,7 +13,7 @@ Het is niemands favoriete klus: [Product Backlog Items](https://www.scrum.org/re
 (Goed, een team kan natuurlijk wel in het wilde weg gaan coderen, maar ik betwijfel of een opdrachtgever daar geld voor neer zou willen leggen. Nog los van de vermoeiende, chaotische situatie die het voor het team zelf creëert.)
 
 
-## Schrijf PBI's
+# Schrijf PBI's
 
 
 Er bestaan vast en zeker ontwikkelaars die menen dat het aanmaken van PBI's niet hun taak (c.q. probleem) is. Volgens deze ontwikkelaars is het aanmaken van PBI's de verantwoordelijkheid van bijvoorbeeld een business- of informatieanalist. 
@@ -22,7 +22,7 @@ Er bestaan vast en zeker ontwikkelaars die menen dat het aanmaken van PBI's niet
 Helemaal onjuist is die veronderstelling niet, want het *is* ook de taak van een analist om PBI's aan te maken. Maar daar volgt niet uit dat het niet óók de taak van de ontwikkelaar is om dat te doen. 
 
 
-### De aard van jouw PBI's
+## De aard van jouw PBI's
 
 
 De aard van door ontwikkelaars geschreven PBI's zal doorgaans verschillen van die van de analist. Een analist zal PBI's schrijven waarin nieuwe features functioneel uitgewerkt worden. Een ontwikkelaar zal vaker technische PBI's schrijven, bijvoorbeeld voor het wegwerken van technische schuld of het doorvoeren van een architecturele wijziging die nieuwe features mogelijk maakt.
@@ -37,7 +37,7 @@ Het is aan de analist om de gewenste features helder te verwoorden, maar het is 
 Wie die *iemand* is? Drie keer raden.
 
 
-### Een kans
+## Een kans
 
 
 Daar kun je verbolgen over zijn, maar je kunt het ook zien als een kans. Jouw PBI's geven je namelijk de kans om je applicatie te vormen op een manier waar jij als ontwikkelaar profijt van hebt. Wat zal er met de technische schuld van je applicatie gebeuren, denk je, als jij geen PBI's schrijft om die weg te werken? 
@@ -46,13 +46,13 @@ Daar kun je verbolgen over zijn, maar je kunt het ook zien als een kans. Jouw PB
 Een ontwikkelaar die het nalaat zulke PBI's te schrijven, uit te werken en onder de aandacht van zijn Product Owner te brengen, bespaart zichzelf op korte termijn misschien wat moeite. Maar diegene maakt zijn eigen werk op lange termijn alleen maar moeilijker.
 
 
-## Doe het goed
+# Doe het goed
 
 
 De meeste ontwikkelaars vinden het helemaal niet leuk om PBI's te schrijven. Ze houden zich liever met code bezig. Helemaal verwonderlijk is dat ook niet. Als ze niets liever deden dan features uitwerken, dan waren ze wel analist geworden.
 
 
-### Wat slechte PBI's doen
+## Wat slechte PBI's doen
 
 
 Maar het wordt een probleem wanneer ze hun PBI's daarom afraffelen. Ik denk dat veel ontwikkelaars heus wel weten dat het schrijven van PBI's onder hun takenpakket valt, maar dat ze die verantwoordelijkheid liever niet hebben. Wat dan gebeurt, is dat ze hun individuele verantwoordelijkheid af proberen te wentelen op het team als geheel, tot nadeel van iedereen. 
@@ -64,7 +64,7 @@ Zulke ontwikkelaars werken hun PBI's minimaal uit en slingeren deze vervolgens d
 Denk je eens in hoeveel loonkosten je werkgever maakt wanneer je team dat ene PBI collectief uitwerkt dat je in je eentje in een halfuurtje voor had kunnen bereiden. Zou jij dat geld er zelf voor over hebben, als jij de baas zou zijn?
 
 
-### Zorg
+## Zorg
 
 
 Neem de tijd voor je PBI's. Behandel ze met evenveel zorg als dat je je code behandelt. (Als je nu denkt: *mooi!*, dan zijn onuitgewerkte PBI's waarschijnlijk de minste van je problemen.) Het is een investering die zich onmiddellijk terugbetaalt - voor je werkgever, maar vooral voor je team. 

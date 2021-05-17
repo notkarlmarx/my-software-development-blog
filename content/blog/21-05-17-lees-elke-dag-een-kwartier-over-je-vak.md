@@ -1,9 +1,13 @@
 ---
 title: "Lees Elke Dag Twee Kwartier Over Je Vak"
-date: 2021-04-18T10:50:15+02:00
-draft: true
+date: 2021-05-17T16:12:27+02:00
+draft: false
 comments: true
 tags: ["boeken", "zelfstudie"]
+summary: "Een treinreis van Nijmegen naar Arnhem duurt zo'n dertien minuten. In januari 2020 kwam ik erachter dat dat, als je elke dag twee keer dertien minuten leest, je binnen een paar dagen *De Aanslag* van Harry Mulisch uit kan hebben. 
+
+
+Toegegeven, een héél prettige leeservaring is dat niet. Maar je hoeft ook geen roman te lezen in de trein. Je zou ook een boek over software ontwikkeling kunnen lezen. Sterker nog, je zou een boek over software ontwikkeling *moeten* lezen in de trein."
 ---
 
 Een treinreis van Nijmegen naar Arnhem duurt zo'n dertien minuten. In januari 2020 kwam ik erachter dat dat, als je elke dag twee keer dertien minuten leest, je binnen een paar dagen *De Aanslag* van Harry Mulisch uit kan hebben.

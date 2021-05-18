@@ -10,10 +10,13 @@ summary: "Vorige week refactorde ik een switch statement rondom een enum aan de 
 # Het *Open-closed* principe
 
 
-[Vorige week](/blog/enums-switch-statements-en-solid-3) refactorde ik [een stuk code](https://github.com/notkarlmarx/RefactorExercises/blob/master/RefactorExercises/EnumSwitch/Refactored/V01/ClaimsHelper.cs) om meer in lijn te zijn met het [*Dependency inversion* principe](https://en.wikipedia.org/wiki/Dependency_inversion_principle). 
+[Vorige week](/blog/21-05-14-enums-switch-statements-en-solid-3) refactorde ik [een stuk code](https://github.com/notkarlmarx/RefactorExercises/blob/master/RefactorExercises/EnumSwitch/Refactored/V01/ClaimsHelper.cs) om meer in lijn te zijn met het [*Dependency inversion* principe](https://en.wikipedia.org/wiki/Dependency_inversion_principle). 
 
 
-De `ClaimsHelper`, de centrale class in onze oefening, was voor zijn implementatie afhankelijk van de concrete implementaties van drie classes. Ik observeerde dat die drie classes op een hoger abstractieniveau in wezen dezelfde functie vervulden: de claims van een bepaalde permission teruggeven. Die functionaliteit kon worden vertaald naar een interface. Dat maakte het mogelijk om de centrale method in onze class, `GetClaimsForUser()`, op te schonen. We konden deze method omschrijven om tegen de interface aan te praten, in plaats van de concrete implementaties. 
+De `ClaimsHelper`, de centrale class in onze oefening, was voor zijn implementatie afhankelijk van de concrete implementaties van drie classes. Ik observeerde dat die drie classes op een hoger abstractieniveau in wezen dezelfde functie vervulden: de claims van een bepaalde permission teruggeven. 
+
+
+Die functionaliteit kon worden vertaald naar een interface. Dat maakte het mogelijk om de centrale method in onze class, `GetClaimsForUser()`, op te schonen. We konden deze method omschrijven om tegen de interface aan te praten, in plaats van de concrete implementaties. 
 
 
 Het leverde de volgende code op:
@@ -102,4 +105,11 @@ Wie tot die tijd graag zelf wil experimenteren, kan de code [via GitHub](https:/
 
 ## Meer in deze reeks
 
-...
+1. [De casus](/blog/21-04-30-enums-switch-statements-en-solid-1)
+2. [Het *Single-Responsibility* principe](/blog/21-05-07-enums-switch-statements-en-solid-2)
+3. [Het *Dependency inversion* principe](/blog/21-05-14-enums-switch-statements-en-solid-3)
+4. **Het *Open-closed* principe**
+5. SOLID en performance (binnenkort)
+6. Conclusie (binnenkort)
+
+***TODO: AANPASSEN (OOK BIJ VORIGE BLOGS)***

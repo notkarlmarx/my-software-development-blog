@@ -66,7 +66,32 @@ V03 is daarentegen bijna acht keer langzamer dan de rest. *Ouch!*
 ## Langzaamaan steeds iets beter
 
 
-...
+In wat volgt zal ik de stappen laten zien die ik heb ondernomen in een poging de performance van de `ClaimsProviderFactory` te verbeteren. 
+
+
+Disclaimer: ondanks dat ik toch al een paar jaar programmeer, was refactoren op basis van performanceoverwegingen een relatief nieuwe ervaring voor me. Het viel me op dat ik me in mijn ontwikkeling als ontwikkelaar met name heb gefocust op het schrijven van leesbare en onderhoudbare code. 
+
+
+Performancevraagstukken hebben in mijn dagelijks ontwikkelwerk eigenlijk nauwelijks een rol gespeeld. Voor een deel is dat misschien geluk of luxe geweest. Maar het zegt denk ik ook iets over het belang van performance ten opzichte van lees- en onderhoudbaarheid. Deze eigenschappen van de code moeten op orde zijn vóórdat je kunt gaan optimaliseren voor performance.
+
+
+Dat gezegd hebbende, mijn eerste indruk was om de lijst `ClaimProviders` (of liever: de lijst van types die `IProvideClaims` implementeren) te vangen in een globale variabele. Deze lijst verschilt immers niet van aanroep tot aanroep en kan dus in het geheugen bewaard blijven.
+
+
+{{< gist notkarlmarx a5571b15998ff4b86de84d368152ff0b "ClaimProviderFactoryV04.cs">}}
+
+
+Maar helemaal tevreden over deze aanpak was ik niet. `_claimProviderTypes` heeft hier de functie van een instance variable, terwijl de class static is en dus geen instanties heeft. Dit ontwerp wil twee dingen tegelijkertijd. 
+
+
+(De class is overigens static, omdat de winst van het bewaren van de variabelen verloren gaat als er elke keer een nieuwe instantie van moet worden gemaakt. Althans, ik denk dat dat de reden is waarom ik hier een static class van heb gemaakt. Om eerlijk te zijn maakte ik die keuze met mijn onderbuik. Als ik onzin blijk te praten, dan hoor ik het graag.)
+
+
+Ik vroeg me af hoe ik de statische aard van de class kon rijmen met de noodzaak van een geïnstantieerde variabele. Het antwoord: het [singleton-patroon](https://en.wikipedia.org/wiki/Singleton_pattern).
+
+
+{{< gist notkarlmarx a5571b15998ff4b86de84d368152ff0b "ClaimProviderFactoryV05.cs">}}
+
 
 
 |              Method | Gemiddelde | Foutmarge | Standaarddeviatie |  Mediaan | 

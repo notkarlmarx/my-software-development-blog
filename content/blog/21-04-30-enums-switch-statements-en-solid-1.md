@@ -101,6 +101,6 @@ De code is [via GitHub](https://github.com/notkarlmarx/RefactorExercises/blob/ma
 1. **De casus**
 2. [Het *Single-Responsibility* principe](/blog/21-05-07-enums-switch-statements-en-solid-2/)
 3. [Het *Dependency inversion* principe](/blog/21-05-14-enums-switch-statements-en-solid-3)
-4. Het *Open-closed* principe (binnenkort)
+4. [Het *Open-closed* principe](/blog/21-05-21-enums-switch-statements-en-solid-4)
 5. SOLID en performance (binnenkort)
 6. Conclusie (binnenkort)

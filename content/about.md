@@ -3,7 +3,7 @@ title: "Over mij"
 draft: false
 ---
 
-{{<figure src="/images/profile-picture.jpg" width="300" alt="Profielfoto">}}
+{{<figure src="/images/profile-picture-sm.jpg" width="300" alt="Profielfoto">}}
 
 
 Mijn naam is Karl van Heijster. Sinds 2017 ben ik werkzaam als softwareontwikkelaar. Ik ben te vinden op [LinkedIn](https://www.linkedin.com/in/karl-van-heijster-833503aa/) en [GitHub](https://github.com/notkarlmarx).

@@ -13,7 +13,7 @@ Ik ben een goed uur uur met die afbeelding bezig geweest. Laat me je vertellen w
 Op deze blog bevindt zich op dit moment één afbeelding, [hier zo](/about). Het is een afbeelding van mijn hoofd. 
 
 
-{{<figure src="/images/profile-picture.jpg" width="300" alt="Mijn profielfoto, zoals te zien op de Over mij-pagina">}}
+{{<figure src="/images/profile-picture-sm.jpg" width="300" alt="Mijn profielfoto, zoals te zien op de Over mij-pagina">}}
 
 
 Best een aardige afbeelding, al zeg ik het zelf. Maar misschien ben ik bevooroordeeld.
@@ -36,7 +36,7 @@ Niet om ‘m daar te krijgen, hoor. Ik heb wel ‘ns wat documentatie in Markdow
 Maar dat leverde dit op:
 
 
-![Mijn profielfoto, maar dan net zo breed als de hele pagina](/images/profile-picture.jpg)
+![Mijn profielfoto, maar dan net zo breed als de hele pagina](/images/profile-picture-sm.jpg)
 
 
 Veel te groot! Dat kon en moest beter. 
@@ -49,14 +49,14 @@ Maar om dat voor elkaar te krijgen had ik iets langer voor nodig. Geen goed uur,
 
 
 ```html
-<figure src="/path/to-image.jpg" width="300" height="300" alt="alt text">
+<figure src="/path/to-image-sm.jpg" width="300" height="300" alt="alt text">
 ```
 
 
 Maar het probleem met die code is dat de afbeelding niet mooi schaalt. Als ik de breedte van mijn browser verklein, dan gaan de verhoudingen van de afbeelding op een gegeven moment goed uiteen lopen. 
 
 
-{{<figure src="/images/profile-picture.jpg" width="200" height="300" alt="Mijn profielfoto, met scheve verhoudingen">}}
+{{<figure src="/images/profile-picture-sm.jpg" width="200" height="300" alt="Mijn profielfoto, met scheve verhoudingen">}}
 
 
 Ik krijg er een punthoofd van, zou je kunnen zeggen.

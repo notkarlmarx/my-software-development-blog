@@ -1,7 +1,7 @@
 ---
 title: "De Architect, Het Team en De Business"
-date: 2021-05-15T11:16:25+02:00
-draft: true
+date: 2021-05-24T11:33:22+02:00
+draft: false
 comments: true
 tags: ["agile ontwikkeling", "empathie", "samenwerking", "software architect (rol)", "software ontwikkeling"]
 summary: "Ik vind dat een softwarearchitect mee moet draaien in een ontwikkelteam. Mijn leiddingevende is daar minder van overtuigd. 'Vind je dan ook dat een architect mee moet draaien met de business?' vroeg hij me tijdens een discussie - retorisch uiteraard. Maar toen ik erover nadacht, vroeg ik me af: waarom eigenlijk niet?"
@@ -67,7 +67,7 @@ Welke vergelijking je ook kiest, feit is dat een ontwikkelteam en een architect 
 ## En de business dan?
 
 
-Maar een architect moet niet alleen met het team samenwerken, wierp mijn leidinggevende tegen. Toen stelde hij een heel interessante vraag: "Vind je dan ook dat een architect met de business mee moet draaien?" 
+Maar een architect moet niet alleen met het ontwikkelteam samenwerken, wierp mijn leidinggevende tegen. Toen stelde hij een heel interessante vraag: "Vind je dan ook dat een architect met de business mee moet draaien?" 
 
 
 Mijn antwoord destijds was: ook die vergelijking loopt mank. De aard van de samenwerking is niet hetzelfde. De architect werkt met de business samen om hun wensen en behoeften in kaart te brengen en hun problemen op te lossen. De architect werkt met het team samen om die oplossing te realiseren.
@@ -79,19 +79,19 @@ Ik sta nog steeds achter dat antwoord, maar de conclusie die ik eraan verbind is
 ## Waarom niet?
 
 
-Maar nu vraag ik me af: waarom zou je eigenlijk *niet* met de business meedraaien? Een dagje meelopen met de mensen op de werkvloer is misschien wel de snelste manier om in kaart te brengen waar ze in hun dagelijkse werkzaamheden behoefte aan hebben.
+Maar nadat onze discussie was bezonken, vroeg ik me af: waarom zou je eigenlijk *niet* met de business meedraaien? Een dagje meelopen met de mensen op de werkvloer is misschien wel de snelste manier om in kaart te brengen waar ze in hun dagelijkse werkzaamheden behoefte aan hebben.
 
 
 En de argumenten lopen ruwweg parallel aan degene die ik hierboven heb genoemd. Ten eerste stelt het de architect in staat te monitoren of de bedachte oplossing wordt gebruikt zoals bedoeld. Ten tweede stelt het hem in staat te ervaren hoe goed zijn oplossing aansluit op het businessprobleem. En ten derde vergroot het de vertrouwensrelatie tussen de architect en de klant. 
 
 
-Sterker nog, waarom ophouden bij een architect? Waarom lopen we als ontwikkelaars eens in de zoveel tijd niet standaard een dagje mee met de gebruikers van onze software? Misschien hebben ontwikkelaars nog wel meer profijt van deze aanpak, want de problemen die gebruikers hebben met een applicatie bevinden zich vaak juist in de kleine details.
+Sterker nog, waarom ophouden bij een architect? Waarom lopen we als ontwikkelaars eens in de zoveel tijd niet standaard een dagje mee met de gebruikers van onze software? Misschien hebben ontwikkelaars nog wel meer profijt van deze aanpak, want de meest urgente (maar niet per se belangrijkste) problemen die gebruikers hebben met een applicatie bevinden zich vaak juist in de details.
 
 
 Ik kan me geen snellere (en meer confronterende) manier indenken om in te zien waar onze software te verbeteren valt en om empathie te krijgen voor onze eindgebruikers. 
 
 
-Want er zit een gat tussen het implementeren van *user stories* aan de hand van acceptatiecriteria en het daadwerkelijk gebruiken van software. Vaak genoeg heb ik meegemaakt dat een functionaliteit die op papier goed werkte, in de praktijk schuurde. Alleen kwamen we daar als team pas maanden, soms zelfs jaren na de implementatie van die feature achter.
+Want er zit een gat tussen het implementeren van *user stories* aan de hand van acceptatiecriteria en het daadwerkelijk gebruiken van software. Vaak genoeg heb ik meegemaakt dat een feature die op papier goed werkte, in de praktijk schuurde. Alleen kwamen we daar als team pas maanden, soms zelfs jaren na de implementatie van die functionaliteit achter.
 
 
 Als we aannemen dat één van de doelen van agile ontwikkeling het wegnemen van de barrières tussen IT en de business, waarom zou een architect of ontwikkelaar dan *niet* meelopen met de business?

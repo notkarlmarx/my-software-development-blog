@@ -3,14 +3,14 @@ title: "Enums, Switch Statements en Solid - Deel 5"
 date: 2021-05-06T04:41:16+02:00
 draft: true
 comments: true
-tags: []
-summary: ""
+tags: ["clean code", "enums", "performance", "refactoren", "SOLID", "switch statements"]
+summary: "De afgelopen weken heb ik een stuk switch statement rondom een enum gerefactord om meer in lijn te zijn met de SOLID-principes. Deze week kijken we naar de performance-impact van die wijzigingen op de code, en onderzoeken we of we die zo klein mogelijk kunnen houden. Spoiler: SOLID en performance hoeven elkaar niet te bijten!"
 ---
 
 # SOLID en performance
 
 
-Vorige week refactorde ik een stuk code om meer in lijn te zijn met het [*Open-closed* principe](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle). In plaats van een harde afhankelijkheid te coderen in de class die een ClaimProvider teruggeeft op basis van een `Permission`, gebruikten we [reflection](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection) om deze classes op [runtime](https://en.wikipedia.org/wiki/Runtime_(program_lifecycle_phase)) terug te geven.
+[Vorige week](/blog/21-05-21-enums-switch-statements-en-solid-4) refactorde ik een stuk code om meer in lijn te zijn met het [*Open-closed* principe](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle). In plaats van een harde afhankelijkheid te coderen in de class die een ClaimProvider teruggeeft op basis van een `Permission`, gebruikten we [reflection](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection) om deze classes op [runtime](https://en.wikipedia.org/wiki/Runtime_(program_lifecycle_phase)) terug te geven.
 
 
 De class die we daarvoor aanmaakten, was een flink stuk groter dan de oorspronkelijke method:
@@ -166,7 +166,30 @@ Dit is de eindstand:
 <br/>
 
 
-V06 is drie keer zo snel dan V05 en komt dicht in de buurt van V01!
+V06 is drie keer zo snel dan V05 en komt dicht in de buurt van V01! Het verschil tussen die twee is klein genoeg om in de praktijk onmerkbaar te zijn voor een eindgebruiker. 
 
+
+Het is ons gelukt: we hebben een stuk code gerefactord aan de hand van SOLID-principes, zonder een merkbare impact op performance te hebben. 
+
+
+## *What's next?*
+
+
+De voordelen van code die SOLID-principes volgt, zijn legio. En zoals we in deze blog hebben gezien, hoeven die principes maar nauwelijks impact te hebben op performance. Betekent dit dat je morgen meteen moet beginnen met het refactoren van je oude code? Dat is een vraag die ik volgende week zal behandelen.
+
+
+Wie de code vóór die tijd nog eens na wil lopen, kan terecht op [GitHub](https://github.com/notkarlmarx/RefactorExercises/tree/master/RefactorExercises/EnumSwitch).
+
+
+## Meer in deze reeks
+
+1. [De casus](/blog/21-04-30-enums-switch-statements-en-solid-1)
+2. [Het *Single-Responsibility* principe](/blog/21-05-07-enums-switch-statements-en-solid-2)
+3. [Het *Dependency inversion* principe](/blog/21-05-14-enums-switch-statements-en-solid-3)
+4. [Het *Open-closed* principe](/blog/21-05-21-enums-switch-statements-en-solid-4)
+5. **SOLID en performance**
+6. Conclusie (binnenkort)
+
+***TODO: Vorige blogs aanpassen***
 
 [^1]: Met dank aan [Nick Chapsas](https://www.youtube.com/channel/UCrkPsvLGln62OMZRO6K-llg), die de werking van het project in deze [video](https://www.youtube.com/watch?v=EWmufbVF2A4) beter uitlegt dan ik in tekst zou kunnen doen.

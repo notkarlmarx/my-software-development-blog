@@ -1,6 +1,6 @@
 main, 
 .nav-container,
-#disqus_thread {
+footer {
     max-width: 600px;
 }
 

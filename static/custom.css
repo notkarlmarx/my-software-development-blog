@@ -1,4 +1,6 @@
-main, .nav-container {
+main, 
+.nav-container,
+#disqus_thread {
     max-width: 600px;
 }
 

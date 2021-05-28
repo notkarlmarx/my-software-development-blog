@@ -126,5 +126,5 @@ Helemaal solide is de code echter nog niet. De logica in `GetClaimsForUser()` be
 2. **Het *Single-Responsibility* principe**
 3. [Het *Dependency inversion* principe](/blog/21-05-14-enums-switch-statements-en-solid-3)
 4. [Het *Open-closed* principe](/blog/21-05-21-enums-switch-statements-en-solid-4)
-5. SOLID en performance (binnenkort)
+5. [SOLID en performance](/blog/21-05-28-enums-switch-statements-en-solid-5)
 6. Conclusie (binnenkort)

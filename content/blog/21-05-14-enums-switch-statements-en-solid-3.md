@@ -93,5 +93,5 @@ Wie tot die tijd graag zelf wil experimenteren, kan de code [via GitHub](https:/
 2. [Het *Single-Responsibility* principe](/blog/21-05-07-enums-switch-statements-en-solid-2)
 3. **Het *Dependency inversion* principe**
 4. [Het *Open-closed* principe](/blog/21-05-21-enums-switch-statements-en-solid-4)
-5. SOLID en performance (binnenkort)
+5. [SOLID en performance](/blog/21-05-28-enums-switch-statements-en-solid-5)
 6. Conclusie (binnenkort)

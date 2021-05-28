@@ -1,7 +1,8 @@
 ---
-title: "Enums, Switch Statements en Solid - Deel 5"
-date: 2021-05-06T04:41:16+02:00
-draft: true
+title: "Enums, Switch Statements en SOLID - Deel 5"
+author: "Karl van Heijster"
+date: 2021-05-28T08:14:10+02:00
+draft: false
 comments: true
 tags: ["clean code", "enums", "performance", "refactoren", "SOLID", "switch statements"]
 summary: "De afgelopen weken heb ik een stuk switch statement rondom een enum gerefactord om meer in lijn te zijn met de SOLID-principes. Deze week kijken we naar de performance-impact van die wijzigingen op de code, en onderzoeken we of we die zo klein mogelijk kunnen houden. Spoiler: SOLID en performance hoeven elkaar niet te bijten!"
@@ -10,7 +11,7 @@ summary: "De afgelopen weken heb ik een stuk switch statement rondom een enum ge
 # SOLID en performance
 
 
-[Vorige week](/blog/21-05-21-enums-switch-statements-en-solid-4) refactorde ik een stuk code om meer in lijn te zijn met het [*Open-closed* principe](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle). In plaats van een harde afhankelijkheid te coderen in de class die een ClaimProvider teruggeeft op basis van een `Permission`, gebruikten we [reflection](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection) om deze classes op [runtime](https://en.wikipedia.org/wiki/Runtime_(program_lifecycle_phase)) terug te geven.
+[Vorige week](/blog/21-05-21-enums-switch-statements-en-solid-4) refactorde ik een stuk code om meer in lijn te zijn met het [*Open-closed* principe](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle). In plaats van een harde afhankelijkheid te coderen in de class die een ClaimProvider teruggeeft, gebruikten we [reflection](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection) om deze classes op [runtime](https://en.wikipedia.org/wiki/Runtime_(program_lifecycle_phase)) te vinden en terug te geven.
 
 
 De class die we daarvoor aanmaakten, was een flink stuk groter dan de oorspronkelijke method:
@@ -25,7 +26,7 @@ Maar het grootste probleem van deze class is niet het aantal regels code, want d
 Het op runtime-niveau uitvragen van de eigenschappen van een class is niet gratis. Er is relatief veel processorkracht voor nodig. En onze class is op dit moment zo opgezet dat deze dure operatie elke keer wordt uitgevoerd als een ClaimProvider wordt opgehaald. Voor één gebruiker met lees-, schrijf- en verwijderrechten zou deze method al drie keer worden aangeroepen. Dat is al drie keer een performance-penalty. 
 
 
-En stel je nu eens voor dat de `ClaimsHelper` wordt aangeroepen een een [foreach-loop](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/foreach-in) met 100 of 1.000 of misschien wel 10.000 gebruikers.
+Stel je nu eens voor dat de `ClaimsHelper` wordt aangeroepen een een [foreach-loop](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/foreach-in) met 100 of 1.000 of misschien wel 10.000 gebruikers. Oei.
 
 
 ## Langzamer, maar hoeveel langzamer?
@@ -34,7 +35,10 @@ En stel je nu eens voor dat de `ClaimsHelper` wordt aangeroepen een een [foreach
 Wat te doen? 
 
 
-Allereerst moeten we inzichtelijk maken hoe groot de performance penalty is die onze nieuwe opzet met zich meebrengt. Hiervoor gebruik ik een [open source](https://en.wikipedia.org/wiki/Open-source_model) project genaamd [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet).[^1] Deze tool roept de verschillende versies van `GetClaimsForUser()` aan die we in de loop van deze reeks hebben gemaakt, en houdt de snelheid en het geheugengebruik van elke implementatie bij.
+Allereerst moeten we inzichtelijk maken hoe groot de performance penalty is die onze nieuwe opzet met zich meebrengt. Hiervoor gebruik ik een [open source](https://en.wikipedia.org/wiki/Open-source_model) project genaamd [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet).[^1] Deze tool roept de verschillende versies van `GetClaimsForUser()` aan die we in de loop van deze reeks hebben gemaakt, en houdt de snelheid van elke implementatie bij. 
+
+
+(De applicatie kan ook het geheugengebruik bijhouden, maar dat laat ik voor deze blog buiten beschouwing. Wie daar toch benieuwd naar is, kan de [code via GitHub](https://github.com/notkarlmarx/RefactorExercises) binnenhalen en de tool zelf runnen. Het project is zodanig geconfigureerd dat het geheugengebruik automatisch mee wordt genomen in de analyse.)
 
 
 Het is belangrijk om over dit soort gegevens te beschikken vóórdat je gaat refactoren om de performance van je code te verbeteren. Dat reflection een impact heeft op de snelheid van je applicatie is aannemelijk, maar pas als je weet hoe groot die impact is, kun je een geïnformeerde keuze maken over de vraag of die refactorslag de moeite waard is. 
@@ -55,13 +59,13 @@ Onze tool levert de volgende informatie op, gesorteerd van de snelste implementa
 
 <br/>
 
-(V00 is de originele code. De oplopende versies zijn gerefactord: V01 op basis van het *Single responsibility* principe; V02 de op basis van het *Dependency inversion*-principe, en V03 op basis van het *Open closed*-principe.)
+(V00 is de [originele code](/blog/21-04-30-enums-switch-statements-en-solid-1). De oplopende versies zijn gerefactord: V01 op basis van het [*Single responsibility* principe](/blog/21-05-07-enums-switch-statements-en-solid-2); V02 de op basis van het [*Dependency inversion*-principe](/blog/21-05-14-enums-switch-statements-en-solid-3), en V03 op basis van het [*Open closed*-principe](/blog/21-05-21-enums-switch-statements-en-solid-4).)
 
 
 Zoals je ziet, ontlopen V01 en V02 van de `ClaimsHelper` het origineel nauwelijks. V02 lijkt zelfs nog iets sneller te zijn, maar dat verschil valt binnen de foutmarge en is dus verwaarloosbaar.
 
 
-V03 is daarentegen bijna acht keer langzamer dan de rest. *Ouch!*
+V03 is daarentegen bijna acht keer langzamer dan de rest. *Oei!*
 
 
 ## Langzaamaan steeds iets beter
@@ -70,13 +74,16 @@ V03 is daarentegen bijna acht keer langzamer dan de rest. *Ouch!*
 In wat volgt zal ik de stappen laten zien die ik heb ondernomen in een poging de performance van de `ClaimsProviderFactory` te verbeteren. 
 
 
-Maar eerst een disclaimer. Ondanks dat ik toch al een paar jaar programmeer, was refactoren op basis van performanceoverwegingen een relatief nieuwe ervaring voor me. Het viel me op dat ik me in mijn ontwikkeling als ontwikkelaar met name heb gefocust op het schrijven van leesbare en onderhoudbare code. 
+Maar eerst nog een kanttekening. Ondanks dat ik toch al een paar jaar programmeer, was refactoren op basis van performanceoverwegingen een relatief nieuwe ervaring voor me. Performancevraagstukken hebben in mijn dagelijks ontwikkelwerk eigenlijk nauwelijks een rol gespeeld. 
 
 
-Performancevraagstukken hebben in mijn dagelijks ontwikkelwerk eigenlijk nauwelijks een rol gespeeld. Voor een deel is dat misschien geluk of luxe geweest. Maar het zegt denk ik ook iets over het belang van performance ten opzichte van lees- en onderhoudbaarheid. Deze eigenschappen van de code moeten op orde zijn vóórdat je kunt gaan optimaliseren voor performance.
+Voor een deel is dat misschien geluk of luxe geweest. Maar het zegt denk ik ook iets over het belang van performance ten opzichte van lees- en onderhoudbaarheid. Deze eigenschappen van de code moeten op orde zijn vóórdat je kunt gaan optimaliseren voor performance.
 
 
-Dat gezegd hebbende, mijn eerste indruk was om de lijst `ClaimProviders` (of liever: de lijst van types die `IProvideClaims` implementeren) te vangen in een globale variabele. Deze lijst verschilt immers niet van aanroep tot aanroep en kan dus in het geheugen bewaard blijven.
+## Poging #1
+
+
+Dat gezegd hebbende, mijn eerste ingeving was om de lijst `ClaimProviders` (of liever: de lijst van types die `IProvideClaims` implementeren) te vangen in een globale variabele. Deze lijst verschilt immers niet van aanroep tot aanroep en kan dus in het geheugen bewaard blijven.
 
 
 {{< gist notkarlmarx a5571b15998ff4b86de84d368152ff0b "ClaimProviderFactoryV04.cs">}}
@@ -88,6 +95,9 @@ Maar helemaal tevreden over deze aanpak was ik niet. `_claimProviderTypes` heeft
 (De class is overigens static, omdat de winst van het bewaren van de variabelen verloren gaat als er elke keer een nieuwe instantie van moet worden gemaakt. Althans, ik denk dat dat de reden is waarom ik hier een static class van heb gemaakt. Om eerlijk te zijn maakte ik die keuze met mijn onderbuik. Als ik onzin blijk te praten, dan hoor ik het graag.)
 
 
+## Posing #2
+
+
 Ik vroeg me af hoe ik de statische aard van de class kon rijmen met de noodzaak van een geïnstantieerde variabele. Het antwoord: het [singleton-patroon](https://en.wikipedia.org/wiki/Singleton_pattern).
 
 
@@ -97,7 +107,7 @@ Ik vroeg me af hoe ik de statische aard van de class kon rijmen met de noodzaak 
 Met een singleton zorg je ervoor dat je aanroepende code telkens dezelfde instantie van een object aanroept. Dit is een ideaal patroon voor wanneer je de performance impact van de instantiatie een object wil beperken. 
 
 
-Voor deze specifieke use case is dit patroon zelfs misschien wat teveel van het goede. De complexiteit van de code neemt ten opzichte van de performancewinst (denk erom: we hebben het over nanoseconden) dusdanig toe, dat ik wel twee keer erover na zou denken om deze code in productie te nemen. Maar dit is een oefening in het opkrikken van performance, dus hier is het op zijn plek.
+Voor deze specifieke use case is dit patroon zelfs misschien wat teveel van het goede. De complexiteit van de code neemt ten opzichte van de performancewinst dusdanig toe (denk erom: we hebben het over nanoseconden), dat ik wel twee keer erover na zou denken om deze code in productie te nemen. Maar dit is een oefening in het opkrikken van performance, dus hier is het op zijn plek.
 
 
 ## Een tussenstand
@@ -130,6 +140,9 @@ Vrees niet: dat kunnen we! De truc zit 'm in het nagaan waar er reflection wordt
 
 
 `GetClaimProviderForPermission()` maakt echter ook gebruik van reflection, namelijk om de `Permission`-property uit te lezen. Deze method wordt nog steeds elke keer aangeroepen wanneer we een call naar `GetClaimProvider()` maken. Is dit echt nodig?
+
+
+## Poging #3
 
 
 Nou, nee. We kunnen de `ClaimProviders` en de bijbehorende `Permissions` bij de eerste aanroep van de singleton opslaan in een [dictionary](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-5.0). Deze kunnen we uitlezen wanneer we een `ClaimsProvider` nodig hebben, zonder gebruik te hoeven maken van reflection.
@@ -190,6 +203,5 @@ Wie de code vóór die tijd nog eens na wil lopen, kan terecht op [GitHub](https
 5. **SOLID en performance**
 6. Conclusie (binnenkort)
 
-***TODO: Vorige blogs aanpassen***
 
 [^1]: Met dank aan [Nick Chapsas](https://www.youtube.com/channel/UCrkPsvLGln62OMZRO6K-llg), die de werking van het project in deze [video](https://www.youtube.com/watch?v=EWmufbVF2A4) beter uitlegt dan ik in tekst zou kunnen doen.

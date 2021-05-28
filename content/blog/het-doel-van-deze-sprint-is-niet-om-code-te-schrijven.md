@@ -70,7 +70,7 @@ Wat daarnaast opviel, was hoe het gebruik van een agenda in [OneNote](https://ww
 Zo ontmoedigt een agenda het team om de Product Backlog te gebruiken als prioriteringsmechanisme. Eén van de redenen waarom we onze werkvoorraad maar niet op orde kregen, was omdat we PBI's inschatten die wel op de agenda van de Refinement terecht waren gekomen, maar (terecht of onterecht) een lage prioriteit hadden op de Product Backlog en dus snel weer uit ons zicht verdwenen.
 
 
-Daarnaast nodigt een agenda uit om punten te agenderen die niet bijdragen aan het doel van de Refinement bijdragen. Het doel van de Refinement is PBI's refinenen. Het doel is niet, om maar iets te noemen, het bespreken van organisatorische problemen.
+Daarnaast nodigt een agenda uit om punten te agenderen die niet bijdragen aan het doel van de Refinement. Het doel van de Refinement is PBI's refinenen. Het doel is niet, om maar iets te noemen, het bespreken van organisatorische problemen.
 
 
 ## Het resultaat

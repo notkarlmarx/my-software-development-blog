@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2021-05-21T11:47:14+02:00
 draft: true
 comments: true
-tags: ["dotkarl", "hugo", "leermoment", "thema's"]
+tags: ["dotkarl", "hugo", "leermoment", "thema's", "web development"]
 summary: "Ik ben aan het overwegen het thema van mijn blog te veranderen. Begrijp me niet verkeerd, het huidige thema is prachtig minimalistisch en ik ben er gek op. Maar het is zo... het eerste wat ik tegenkwam. Nu hoeft het eerste wat je tegenkomt niet per se iets slechts te zijn, maar ja, het is wel het eerste wat je tegenkwam. Snap je?
 
 

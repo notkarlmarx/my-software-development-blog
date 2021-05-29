@@ -5,7 +5,7 @@ date: 2021-05-28T12:37:05+02:00
 draft: true
 comments: true
 tags: ["boeken", "leermoment", "objectgeoriënteerd programmeren", "procedureel programmeren"]
-summary: "Onlangs las ik *The Object-Oriented Thought Process* van Matt Weisfeld (vijfde editie) Waarom lees ik, ruim vier jaar na mijn eerste regels C#, een inleiding in objectgeoriënteerd programmeren? Nou..."
+summary: "Onlangs las ik *The Object-Oriented Thought Process* van Matt Weisfeld (vijfde editie). Waarom lees ik, ruim vier jaar na mijn eerste regels C#, een inleiding in objectgeoriënteerd programmeren? Nou..."
 ---
 
 Onlangs las ik [*The Object-Oriented Thought Process*](https://www.oreilly.com/library/view/the-object-oriented-thought/9780135182130/) van Matt Weisfeld (vijfde (!) editie). Waarom lees ik, ruim vier jaar na mijn eerste regels C#, een inleiding in objectgeoriënteerd programmeren?

@@ -4,7 +4,7 @@ date: 2021-05-14T20:59:02+02:00
 draft: true
 comments: true
 tags: ["concentratie", "muziek", "the zone"]
-summary: ""
+summary: "Vandaag bespreek ik de muziek die ik het liefst luister onder het programmeren. En, minstens zo belangrijk, de vraag of het überhaupt wel verstandig is om muziek te luisteren onder het programmeren."
 ---
 
 Softwareguru Robert "*Uncle Bob*" Martin raadt het in [*The Clean Coder*](https://www.pearson.com/us/higher-education/program/Martin-Clean-Coder-The-A-Code-of-Conduct-for-Professional-Programmers/PGM8366.html) ontwikkelaars af om muziek te luisteren onder het programmeren. 

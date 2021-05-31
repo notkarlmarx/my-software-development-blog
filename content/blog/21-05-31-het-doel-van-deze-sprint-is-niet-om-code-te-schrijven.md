@@ -1,9 +1,10 @@
 ---
 title: "Het Doel Van Deze Sprint Is Niet Om Code Te Schrijven"
-date: 2021-04-26T15:04:43+02:00
-draft: true
+author: "Karl van Heijster"
+date: 2021-05-31T06:23:40+02:00
+draft: false
 comments: true
-tags: ["product backlog refinement", "scrum", "sprintdoel", "sprint planning"]
+tags: ["leermoment", "procesverbetering", "product backlog refinement", "scrum", "sprintdoel", "sprint planning"]
 summary: "Mijn team worstelt al een tijd met het voldoende gevuld krijgen van de Product Backlog. Dat heeft impact op onze Planning-sessies. Deze zijn lang en moeizaam, omdat we *last minute* PBI's inschatten om de komende Sprint maar gevuld te krijgen. We zijn het er al langere tijd over eens dat dit een onwenselijke situatie is. Toch krijgt het team maar niet voor elkaar dit aan te pakken. Maar misschien heb ik een manier gevonden."
 ---
 
@@ -37,13 +38,13 @@ Maar een Sprintdoel hoeft niet per se op de PBI's op je Product- of [Sprint Back
 ## Het proces
 
 
-Dankzij dit Sprintdoel heb ik drie gebieden kunnen identificeren waarin het team zich kon verbeteren.
+Dankzij dit voorstel heb ik drie gebieden kunnen identificeren waarin het team zich kon verbeteren.
 
 
 ### Oeverloze discussies
 
 
-Deze aanpak stelde ons in staat om een duidelijk doelen te stellen tijdens onze Refinements: schatten, schatten, schatten. 
+Het Sprintdoel stelde ons in staat om een duidelijk doelen te stellen tijdens onze Refinements: schatten, schatten, schatten. 
 
 
 Is een PBI niet voldoende uitgewerkt om in te schatten? Haal 'm van de agenda af en - hoppa! - door naar het volgende PBI. We hebben geen tijd om te lummelen, we zijn onze Product Backlog op orde aan het krijgen!
@@ -70,13 +71,13 @@ Wat daarnaast opviel, was hoe het gebruik van een agenda in [OneNote](https://ww
 Zo ontmoedigt een agenda het team om de Product Backlog te gebruiken als prioriteringsmechanisme. Eén van de redenen waarom we onze werkvoorraad maar niet op orde kregen, was omdat we PBI's inschatten die wel op de agenda van de Refinement terecht waren gekomen, maar (terecht of onterecht) een lage prioriteit hadden op de Product Backlog en dus snel weer uit ons zicht verdwenen.
 
 
-Daarnaast nodigt een agenda uit om punten te agenderen die niet bijdragen aan het doel van de Refinement. Het doel van de Refinement is PBI's refinenen. Het doel is niet, om maar iets te noemen, het bespreken van organisatorische problemen.
+Daarnaast nodigt een agenda uit om punten te agenderen die niet bijdragen aan het doel van de Refinement. Het doel van de Refinement is PBI's refinenen. Het doel is niet, om maar iets te noemen, het bespreken van organisatorische kwesties.
 
 
 ## Het resultaat
 
 
-De focus op het op orde krijgen van onze Product Backlog heeft het team in staat gesteld focus aan te brengen op een essentiële randvoorwaarde om code te kunnen schrijven: zorgen dat je weet wat je moet gaan bouwen. Daarnaast was het een ideale aanleiding om wat ingesleten gewoonten te herzien. Oeverloos discussies, een matige voorbereiding, en het gebruik van een agenda belemmerden de efficiëntie van onze Refinements.
+De focus op het op orde krijgen van onze Product Backlog heeft het team in staat gesteld focus aan te brengen op een essentiële randvoorwaarde om code te kunnen schrijven: zorgen dat je weet wat je moet gaan bouwen. Daarnaast was het een ideale aanleiding om wat ingesleten gewoonten te herzien. Oeverloze discussies, een matige voorbereiding, en het gebruik van een agenda belemmerden de efficiëntie van onze Refinements.
 
 
 Deze wetenschap is de eerste stap naar verbetering. Nu is het zaak om ervoor te zorgen dat het team niet terugvalt in oude gewoontes. En mocht dat wel gebeuren, dan weten we nu in elk geval dat het Sprintdoel een effectieve manier is om die onder de aandacht te kunnen brengen.

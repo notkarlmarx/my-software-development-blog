@@ -110,4 +110,4 @@ Wie tot die tijd graag zelf wil experimenteren, kan de code [via GitHub](https:/
 3. [Het *Dependency inversion* principe](/blog/21-05-14-enums-switch-statements-en-solid-3)
 4. **Het *Open-closed* principe**
 5. [SOLID en performance](/blog/21-05-28-enums-switch-statements-en-solid-5)
-6. Conclusie (binnenkort)
+6. [Conclusie](/blog/21-06-04-enums-switch-statements-en-solid-6)

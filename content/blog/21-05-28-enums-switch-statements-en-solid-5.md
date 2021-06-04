@@ -201,7 +201,7 @@ Wie de code vóór die tijd nog eens na wil lopen, kan terecht op [GitHub](https
 3. [Het *Dependency inversion* principe](/blog/21-05-14-enums-switch-statements-en-solid-3)
 4. [Het *Open-closed* principe](/blog/21-05-21-enums-switch-statements-en-solid-4)
 5. **SOLID en performance**
-6. Conclusie (binnenkort)
+6. [Conclusie](/blog/21-06-04-enums-switch-statements-en-solid-6)
 
 
 [^1]: Met dank aan [Nick Chapsas](https://www.youtube.com/channel/UCrkPsvLGln62OMZRO6K-llg), die de werking van het project in deze [video](https://www.youtube.com/watch?v=EWmufbVF2A4) beter uitlegt dan ik in tekst zou kunnen doen.

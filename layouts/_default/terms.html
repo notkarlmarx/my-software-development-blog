@@ -17,7 +17,7 @@
 			{{ end }}
 
 			{{ if gt $terms 0 }}
-				<h3 class="heading">{{ $symbol | upper }}</h2>
+				<h3 id="{{ $symbol | upper }}" class="heading">{{ $symbol | upper }}</h2>
 					{{ range $terms }}
 						<a href="{{ .Page.Permalink }}">{{ title .Page.Title }}</a> ({{ .Count }})
 						<br/>

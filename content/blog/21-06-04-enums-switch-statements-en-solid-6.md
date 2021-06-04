@@ -1,8 +1,8 @@
 ---
 title: "Enums, Switch Statemens en SOLID - Deel 6"
 author: "Karl van Heijster"
-date: 2021-05-24T12:20:26+02:00
-draft: true
+date: 2021-06-04T08:24:18+02:00
+draft: false
 comments: true
 tags: ["clean code", "enums", "refactoren", "SOLID", "switch statements"]
 summary: "De conclusie van onze refactorslag rondom een op een enum gebaseerd switch statement! Ik hoop de afgelopen weken aan te hebben getoond hoe het gebruik van SOLID-principes je code beter onderhoudbaar kan maken. Vandaag concluderen we met de vraag: moet je morgen meteen dit patroon uit je code base refactoren?"
@@ -16,7 +16,7 @@ De afgelopen weken heb ik een [stuk code](https://github.com/notkarlmarx/Refacto
 Zeker als het op nieuwe code aankomt, heb je geen excuus om SOLID niet mee te nemen in je ontwerpproces. Maar hoe zit het met bestaande code? Moet je alles laten vallen waar je mee bezig bent, en je bestaande code base onder handen nemen om alle enum-gebaseerde switch statements eruit te refactoren?
 
 
-## Wat je je af moet vragen voordat je gaat refactoren
+## Wat je je af moet vragen vóórdat je gaat refactoren
 
 
 Die vraag is moeilijk met een "ja" of "nee" te beantwoorden. Eigenlijk is het antwoord hier hetzelfde als altijd in softwareontwikkelland: [*it depends*](https://medium.com/swlh/the-golden-rule-of-software-engineering-9faaaab85e78). Ga voor jezelf de volgende punten eens na.
@@ -34,13 +34,13 @@ Zo nee, doe het dan alsjeblieft niet. Het aantal applicaties dat om zeep geholpe
 ### Verandert de code vaak? 
 
 
-Zo ja, doen! Als je veel in de code moet werken, dan is het de moeite waard om ervoor te zorgen dat deze zo makkelijk onderhoudbaar als mogelijk is. Bovendien kun je de refactoring dan meenemen tijdens het implementeren van een nieuwe feature. 
+Zo ja, doen! Als je veel in de code moet werken, dan is het de moeite waard om ervoor te zorgen dat deze zo onderhoudbaar mogelijk is. Bovendien hoef je voor deze refactorslag niet apart tijd voor vrij te maken, je kunt deze meenemen tijdens het implementeren van een nieuwe feature. 
 
 
 Let er wel op dat je dan altijd in twee stappen werkt: eerst refactoren en dan pas de nieuwe feature implementeren. Door beide tegelijkertijd te doen, maak je het jezelf - en je teamgenoten die je code zullen reviewen! - alleen maar moeilijker. (Je ziet: ook in het proces van software ontwikkelen bestaat er een *Single-Responsibility* principe!)
 
 
-Zo nee, laat het dan voor wat het is. Lelijke werkende code is aan het eind van de dag misschien lelijk, maar hij werkt wel. Zo lang de code geen ontwikkelaar in de weg zit, is het eenvoudigweg niet de moeite waard eraan te komen.
+Verandert de code echter niet of nauwelijks, laat het dan voor wat het is. Lelijke werkende code is aan het eind van de dag misschien lelijk, maar hij werkt wel. Zo lang de code geen ontwikkelaar in de weg zit, is het eenvoudigweg niet de moeite waard eraan te komen.
 
 
 ### Is de impact van de refactorslag groot? 
@@ -64,7 +64,7 @@ Zo ja, ruim dan absoluut tijd in om je code base continu op te schonen. Jijzelf,
 Nadert er echter een deadline, en kun je je Product Owner er met geen mogelijkheid van overtuigen dat refactoring zich op dit moment loont? Laat het voor nu dan wat het is. Focus je op dit moment op de belangrijkste zaken. 
 
 
-Je hoeft het daar echter niet bij te laten zitten. Breng ondertussen de impact en waarde van je voorgestelde refactorslag in kaart, zodat je je PO op een later moment kunt overtuigen om dit alsnog te prioriteren. [*Refactoring at Scale*](https://www.oreilly.com/library/view/refactoring-at-scale/9781492075523/) van Maude Lemaire is een uitstekend boek over alles wat bij grootschalige refactoring komt kijken.
+Je hoeft het daar echter niet bij te laten zitten. Breng ondertussen de impact en waarde van je voorgestelde refactorslag in kaart, zodat je je PO op een later moment kunt overtuigen om dit alsnog te prioriteren. Hoe je dat aanpakt? [*Refactoring at Scale*](https://www.oreilly.com/library/view/refactoring-at-scale/9781492075523/) van Maude Lemaire is een uitstekend boek over alles wat bij grootschalige refactoring komt kijken. 
 
 
 ## Nog één dingetje...
@@ -73,7 +73,7 @@ Je hoeft het daar echter niet bij te laten zitten. Breng ondertussen de impact e
 Daarmee komen we aan het eind van deze reeks blogs. Zoals altijd: wie de code in al haar iteraties nog eens na wil kijken, kan terecht op [GitHub](https://github.com/notkarlmarx/RefactorExercises).
 
 
-Er zit me alleen nog één dingetje dwars aan de uiteindelijke implementatie. En dat is die verdomde naam, `ClaimsHelper`, die ik (in aangepaste vorm) heb overgenomen uit onze eigen code base. Het valt misschien buiten het domein van de SOLID-principes, maar in hemelsnaam, [noem je classes geen `...Helper`](/blog/21-04-23-neem-afscheid-van-helpers/)! 
+Er zit me alleen nog één dingetje dwars aan de uiteindelijke implementatie. En dat is die verdomde naam, `ClaimsHelper`, die ik (in aangepaste vorm) heb overgenomen uit onze eigen code base. Het valt misschien buiten het domein van de SOLID-principes, maar in hemelsnaam... [noem je classes geen `...Helper`](/blog/21-04-23-neem-afscheid-van-helpers/)! 
 
 
 Heb jij een betere suggestie voor de naam van deze class?

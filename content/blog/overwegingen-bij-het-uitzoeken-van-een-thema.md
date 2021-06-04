@@ -29,7 +29,7 @@ Het enige wat ik zeker wist, was dat het thema van deze blog minimalistisch zou 
 Mijn hoop is dat de minimalistische presentatie uitnodigt om te focussen op de inhoud van de blog, want dat is waar het me om draait. *Less is more*, zeggen ze. In dit geval: *less* vorm en *more* inhoud.
 
 
-En ook: *less* onderhoud. Je bent en blijft immers een luie programmeur.
+En ook: *less* onderhoud. Dat is de luie programmeur in me.
 
 
 ## De zoektocht
@@ -46,7 +46,7 @@ Ook thema's die op de homepagina alleen de datum en titel van de blogs tonen, mo
 Wat ik ook niet wist, is hoe kieskeurig ik kan zijn, en hoe pietluttig de dingen zijn op basis waarvan ik een thema naar de prullenbak verwijs. 
 
 
-Hoe dan ook, twee thema's hebben de eerste schifting overleefd. In deze blog zal ik mijn ervaringen met de eerste beschrijven; mijn ervaringen met de tweede reserveer ik voor een andere keer. Gedurende de tweede schifting trok ik de thema's naar binnen en bekeek ik hoe goed ze standhielden met mijn eigen woorden.
+Hoe dan ook, twee thema's hebben de eerste schifting overleefd. In deze blog zal ik mijn ervaringen met de eerste beschrijven; mijn ervaringen met de tweede reserveer ik voor een andere keer. Gedurende de tweede schifting trok ik de thema's naar binnen en bekeek hoe goed ze standhielden zodra ze mijn eigen woorden moesten presenteren.
 
 
 ## *hello-friend*
@@ -76,13 +76,16 @@ De nul, bijvoorbeeld, die heeft zo'n streepje erdoorheen. Dat bevalt me niet, ni
 En dan heb ik het alleen nog maar over esthetiek. *hello-friend*s i18n is minimaal. De meeste woorden blijk ik handmatig te moeten vertalen in de `config.toml`. Dat is opvallend. Waarschijnlijk is i18n pas later als feature toegevoegd, en daarom niet consistent in het thema toegepast.
 
 
-Ik besluit dat te laten rusten en concentreer me op de tags. Die hashtags moeten weg, natuurlijk. En de tags zelf wil ik naar beneden verhuizen. Ik ben nog geen kwartier bezig en ik wil nu al dit thema customizen.
+Ik besluit dat voorlopig te laten rusten en concentreer me op de tags. Die hashtags moeten weg, natuurlijk. En de tags zelf wil ik naar beneden verhuizen. Ik ben nog geen kwartier bezig en ik wil nu al dit thema customizen.
 
 
 Als ik in de code duik, bekruipt me een ongemakkelijk gevoel. De HTML bezaaid met inline if-statements. Hier en daar breekt de boel op vreemde manieren af, midden in een span, bijvoorbeeld. De HTML is veelal ook niet uitgesplitst in *partial* bestanden, waardoor de code relatief moeilijk te hanteren is.
 
 
-Ik ben gestuit op een requirement waar ik van tevoren totaal niet bij stil had gestaan. Ik heb een thema nodig dat zodanig is geschreven dat ik ermee *wil* werken. Het tweaken van de layout moet leuk zijn: een eenvoudige wijziging moet onmiddellijk het resultaat opleveren dat ik verwacht. Maar prettig om te tweaken is *hello-friend* niet. Dat is de doorslaggevende reden om het thema af te wijzen. 
+Ik ben gestuit op een requirement waar ik van tevoren totaal niet bij stil had gestaan. Ik heb een thema nodig dat zodanig is geschreven dat ik ermee *wil* werken. Het tweaken van de layout moet leuk zijn: een eenvoudige wijziging moet onmiddellijk het resultaat opleveren dat ik verwacht. 
+
+
+Maar prettig om te tweaken is *hello-friend* niet. Dat is de doorslaggevende reden om het thema af te wijzen. 
 
 
 Let wel, ik schrijf deze blog *niet* om *hello-friend* af te zeiken. Het is een mooi thema. Het heeft niet voor niets de eerste schifting overleefd. Maar het past niet bij me, deels uit esthetische en deels uit codekwalitatieve overwegingen. Dat is mijn punt.
@@ -96,7 +99,7 @@ Ondanks dat *hello-friend* mijn huidige thema niet heeft kunnen vervangen, heb i
 
 - **Je waardeert pas wat je hebt als je het kwijt bent.** *tale* is op meerdere manieren een fantastisch thema. Wat ik bijvoorbeeld nooit echt heb gewaardeerd, totdat ik probeerde over te stappen naar *hello-friend* is dat de lijst met blogs geen *Lees meer*-knop heeft. De datum, de titel, het voorproefje: het maakt niet uit waar je klikt, je komt bij de blog in kwestie terecht. Dat is een subtiel maar sterk staaltje gebruikersgemak.
 
-  Maar vooral: het thema is met zorg uitgecodeerd. Het thema bevat zelfs lege HTML-files met alleen een stukje commentaar: *Dit is een placeholder. Creëer een bestand genaamd folder/filename.html in je eigen site om deze te overschrijven*. Ook dat is een stukje gebruikersgemak. Niet voor de lezer van de blog, maar de schrijver ervan, en dat verdient een compliment.
+  Maar vooral: het thema is met zorg uitgecodeerd. Het thema bevat zelfs lege HTML-files met alleen een stukje commentaar: *Dit is een placeholder. Creëer een bestand genaamd folder/filename.html in je eigen project om deze te overschrijven*. Ook dat is een stukje gebruikersgemak. Niet voor de lezer van de blog, maar de schrijver ervan, en dat verdient een compliment.
 
 - **Wees niet te streng voor stakeholders die niet weten wat ze willen.** Het is ook moeilijk om dat op voorhand te weten. Erger je niet, stel jezelf constructief op. Vind manieren om zo snel mogelijk de impliciete wensen en behoeften naar boven te halen.
 

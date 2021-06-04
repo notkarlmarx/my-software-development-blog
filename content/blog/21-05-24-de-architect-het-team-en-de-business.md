@@ -4,7 +4,7 @@ date: 2021-05-24T11:33:22+02:00
 draft: false
 comments: true
 tags: ["agile ontwikkeling", "empathie", "samenwerking", "software architect (rol)", "software ontwikkeling"]
-summary: "Ik vind dat een softwarearchitect mee moet draaien in een ontwikkelteam. Mijn leiddingevende is daar minder van overtuigd. 'Vind je dan ook dat een architect mee moet draaien met de business?' vroeg hij me tijdens een discussie - retorisch uiteraard. Maar toen ik erover nadacht, vroeg ik me af: waarom eigenlijk niet?"
+summary: "Ik vind dat een softwarearchitect mee moet draaien in een ontwikkelteam. Mijn leiddingevende is daar minder van overtuigd. \"Vind je dan ook dat een architect mee moet draaien met de business?\" vroeg hij me tijdens een discussie - retorisch uiteraard. Maar toen ik erover nadacht, vroeg ik me af: waarom eigenlijk niet?"
 ---
 
 Ik vind dat een architect mee moet draaien in een ontwikkelteam. Of liever: ik vond dat een architect mee moest draaien in een Scrumteam, [totdat ik erachter kwam dat er andere invullingen van de rol van architect bestonden dan als architect-ontwikkelaar](blog/21-05-10-wat-wil-je-zijn-een-architect-of-een-ontwikkelaar). 

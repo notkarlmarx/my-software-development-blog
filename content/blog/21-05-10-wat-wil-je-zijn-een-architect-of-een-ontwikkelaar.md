@@ -4,7 +4,7 @@ date: 2021-05-10T16:02:15+02:00
 draft: false
 comments: true
 tags: ["carrièrepad", "leermoment", "scrum", "software architect (rol)", "software architectuur", "software ontwikkeling", "stakeholders"]
-summary: "Mijn leidinggevende stelde me onlangs de vraag: “Wil je een softwarearchitect zijn of wil je een softwareontwikkelaar zijn die zich met architectuur bezighoudt?” Dat vond ik een confronterende vraag, omdat ik me tot dan toe nauwelijks gerealiseerd had dat er een verschil bestond tussen die opties. In deze blog onderscheid ik twee manieren waarop de rol van architect kan worden ingevuld binnen Scrum: als ontwikkelaar en als stakeholder."
+summary: "Mijn leidinggevende stelde me onlangs de vraag: \"Wil je een softwarearchitect zijn of wil je een softwareontwikkelaar zijn die zich met architectuur bezighoudt?\" Dat vond ik een confronterende vraag, omdat ik me tot dan toe nauwelijks gerealiseerd had dat er een verschil bestond tussen die opties. In deze blog onderscheid ik twee manieren waarop de rol van architect kan worden ingevuld binnen Scrum: als ontwikkelaar en als stakeholder."
 ---
 
 Mijn leidinggevende stelde me onlangs de vraag: “Wil je een softwarearchitect zijn of wil je een softwareontwikkelaar zijn die zich met architectuur bezighoudt?” 

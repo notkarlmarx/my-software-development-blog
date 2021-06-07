@@ -6,8 +6,9 @@ defaultContentLanguage = "nl"
 disqusShortname = "notkarlmarx"
 [params]
   commentoEnable = true
-  Author = "Karl van Heijster"
+  author = "Karl van Heijster"
   css = ["custom.css"]
+  description = "Software Ontwikkelen met Karl van Heijster"
 [author]
   name = "Karl van Heijster"
 [taxonomies]

@@ -46,7 +46,7 @@ Ook thema's die op de homepagina alleen de datum en titel van de blogs tonen, mo
 Wat ik ook niet wist, is hoe kieskeurig ik kan zijn, en hoe pietluttig de dingen zijn op basis waarvan ik een thema naar de prullenbak verwijs. 
 
 
-Hoe dan ook, twee thema's hebben de eerste schifting overleefd. In deze blog zal ik mijn ervaringen met de eerste beschrijven; mijn ervaringen met de tweede reserveer ik voor een andere keer. Gedurende de tweede schifting trok ik de thema's naar binnen en bekeek hoe goed ze standhielden zodra ze mijn eigen woorden moesten presenteren.
+Hoe dan ook, twee thema's hebben de eerste schifting overleefd. In deze blog zal ik mijn ervaringen met de eerste beschrijven; mijn ervaringen met de tweede reserveer ik voor een [andere keer](/blog/21-06-11-meer-overwegingen-bij-het-uitzoeken-van-een-thema/). Gedurende de tweede schifting trok ik de thema's naar binnen en bekeek hoe goed ze standhielden zodra ze mijn eigen woorden moesten presenteren.
 
 
 ## *hello-friend*

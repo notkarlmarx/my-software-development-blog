@@ -1,12 +1,15 @@
 ---
-title: "Mijn Eerste Pull Request"
+title: "Meer Overwegingen Bij Het Uitzoeken Van Een Thema"
 author: "Karl van Heijster"
-date: 2021-05-21T11:46:50+02:00
-draft: true
+date: 2021-06-11T09:04:21+02:00
+draft: false
 comments: true
-tags: []
-summary: ""
+tags: ["dotkarl", "hugo", "leermoment", "open source", "thema's", "web development"]
+summary: "Eerder schreef ik dat ik een nieuw thema voor deze blog wilde uitproberen. Mijn eerste keus bleek niet helemaal wat ik ervan gehoopt had. Gelukkig had ik een tweede keus achter de hand: *mini*, een thema dat zijn naam eer aandoet en me mijn eerste (bescheiden) stappen in de wereld van open source development deed zetten."
 ---
+
+# Of: Mijn Eerste Pull Request
+
 
 [Eerder](/blog/21-06-07-overwegingen-bij-het-uitzoeken-van-een-thema) schreef ik dat ik een nieuw thema voor deze blog wilde uitproberen. Mijn eerste keus, [*hello-friend*](https://themes.gohugo.io/hugo-theme-hello-friend/), bleek niet helemaal wat ik ervan gehoopt had. Gelukkig had ik een tweede keus achter de hand: [*mini*](https://themes.gohugo.io/hugo-theme-cactus-plus/), een thema dat zijn naam eer aandoet.
 
@@ -26,7 +29,7 @@ Deze keer, voordat ik keek hoe mijn blog in op z'n *mini*'s uit zou zien, keek i
 Maar ook hier geldt weer: je hebt niet lang nodig om erachter te komen wat je mist ten opzichte van wat je nu hebt. Geen [i18n](https://en.wikipedia.org/wiki/Internationalization_and_localization), bijvoorbeeld. Dat betekende dat ik zelf aan de slag moest gaan, als ik de taal van mijn blog consistent wilde houden. 
  
  
-Daarnaast... waarom breken die woorden zo raar af? 
+Maar daarnaast en vooral... waarom braken die woorden zo raar af?! 
 
 
 Wat blijkt: *mini* vult de regel gewoon uit tot het eind en gaat op de volgende regel vrolijk verder, einde van een woord of niet. Een vreselijke en onbegrijpelijke keuze, als je het mij vraagt. Het maakt van een mooi minimalistisch thema een ontzettende bende. 
@@ -35,10 +38,13 @@ Wat blijkt: *mini* vult de regel gewoon uit tot het eind en gaat op de volgende 
 (Maar ik zie dat de maker van het thema uit China komt. Misschien dat zijn keuze in het Chinees minder vreselijk en onbegrijpelijk is.)
 
 
+Opvallend genoeg was dit euvel me totaal niet opgevallen op *mini*'s demopagina. Ook hier geldt dus weer: [er gaapt een gat tussen een goede demo en een goede applicatie](/blog/21-06-07-overwegingen-bij-het-uitzoeken-van-een-thema/#lessen) (of in dit geval: een goed thema). Aan het begin en eind van de dag - en alles ertussenin - gaat er niets boven zelf aan de slag gaan met bepaalde code.
+
+
 ## Fix #1
 
 
-Dat ik besloot beide issues onmiddellijk aan te pakken, is tekenend voor mijn enthousiasme voor dit thema. 
+Dat ik besloot om beide issues onmiddellijk aan te pakken, is tekenend voor mijn enthousiasme voor dit thema. 
 
 
 Het afbreken van de woorden bleek met een [eenvoudige CSS-aanpassing](https://github.com/nodejh/hugo-theme-mini/pull/95/files) zó opgelost te zijn. Mijn eerste pull request op GitHub - en dus mijn eerste bijdrage aan de open source community - was daarmee is een feit! Twee regels code: zo bescheiden kan een begin zijn.
@@ -77,16 +83,19 @@ Hoe langer ik ernaar keek, hoe meer het lettertype me ook tegen ging staan. De g
 ## Conclusie
 
 
-Het antwoord is eigenlijk simpel: nee, weg ermee! *mini* was een serieuze concurrent van *tale*, dat moet gezegd worden, maar het kan er toch niet aan tippen.  Dus ja, *tale* blijft voorlopig. 
+Het antwoord is eigenlijk simpel: nee, weg ermee! *mini* was een serieuze concurrent van *tale*, dat moet gezegd worden, maar het kan er toch niet aan tippen. 
 
 
-Niet slecht voor het eerste wat ik tegenkwam, toch?
+Anders dan bij *hello-friend*, zijn de overwegingen hier voornamelijk van esthetische aard. Bovendien, ook nu weer word ik met de neus op de goede kanten van mijn huidige thema gedrukt, elke keer als ik naar een ander kijk. 
+
+
+Dus ja, *tale* blijft voorlopig. Niet slecht voor het eerste wat ik tegenkwam, toch?
 
 
 ## ...en die fixes dan?
 
 
-O ja, de fixes! Die staan nog [allebei open](https://github.com/nodejh/hugo-theme-mini/pulls). Net als een stuk of wat pull requests van de afgelopen drie jaar, zie ik nu ik er zo naar kijk. Laat dat dus de les zijn: 
+O ja, mijn fixes! Die staan nog [allebei open](https://github.com/nodejh/hugo-theme-mini/pulls). Net als een stuk of wat pull requests van de afgelopen drie jaar, zie ik nu ik er zo naar kijk. Laat dat dus de les zijn: 
 
 
 - **Ga na hoe actief een open source component wordt onderhouden, voordat je besluit 'm te gaan gebruiken!** Begrijp me niet verkeerd, een keer bijdragen aan een open source project is hoe dan ook aan te raden omdat het op zichzelf leerzaam is. Maar als je het component daadwerkelijk wil gebruiken, wees er dan zeker van dat je je verbindt aan iets wat met zijn tijd meegroeit.

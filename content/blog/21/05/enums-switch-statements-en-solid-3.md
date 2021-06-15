@@ -10,7 +10,7 @@ summary: "Vorige week refactorde ik een switch statement rondom een enum aan de 
 # Het *Dependency inversion* principe
 
 
-[Vorige week](/blog/21-05-07-enums-switch-statements-en-solid-2) refactorde ik [een stuk code](https://github.com/notkarlmarx/RefactorExercises/blob/master/RefactorExercises/EnumSwitch/Refactored/V01/ClaimsHelper.cs) om meer in lijn te zijn met het [*Single-Responsiblity* principe](https://en.wikipedia.org/wiki/Single-responsibility_principle). 
+[Vorige week](/blog/21/05/enums-switch-statements-en-solid-2) refactorde ik [een stuk code](https://github.com/notkarlmarx/RefactorExercises/blob/master/RefactorExercises/EnumSwitch/Refactored/V01/ClaimsHelper.cs) om meer in lijn te zijn met het [*Single-Responsiblity* principe](https://en.wikipedia.org/wiki/Single-responsibility_principle). 
 
 
 Ik abstraheerde logica die oorspronkelijk in onderstaande switch-statement zat, naar aparte classes. Dat zorgde ervoor dat de oorspronkelijke class een reden minder had om gewijzigd te worden (of drie drie redenen minder, afhankelijk van hoe je het bekijkt). Anders gezegd: door code te verhuizen, bracht ik het aantal verantwoordelijkheden van de oorspronkelijke class terug. 
@@ -36,7 +36,7 @@ Dit principe stelt twee dingen.
 2. Abstracties moeten onafhankelijk zijn van details. Het is juist andersom: details, in de vorm van concrete implementaties, moeten afhankelijk zijn van abstracties.
 
 
-(Deze [karakterisering](https://linux.ime.usp.br/~joaomm/mac499/arquivos/referencias/oodmetrics.pdf) van het *Dependency inversion* principe is afkomstig van softwareguru [Robert "Uncle Bob" Martin](http://cleancoder.com/products), wiens [boeken ik van harte aanraad](/blog/21-05-03-de-beste-boeken-over-software-ontwikkeling-die-ik-in-2020-las). Maar ik zal niet liegen: voor deze blog baseer ik me gewoon op de [Wikipediapagina](https://en.wikipedia.org/wiki/Dependency_inversion_principle).)
+(Deze [karakterisering](https://linux.ime.usp.br/~joaomm/mac499/arquivos/referencias/oodmetrics.pdf) van het *Dependency inversion* principe is afkomstig van softwareguru [Robert "Uncle Bob" Martin](http://cleancoder.com/products), wiens [boeken ik van harte aanraad](/blog/21/05/de-beste-boeken-over-software-ontwikkeling-die-ik-in-2020-las). Maar ik zal niet liegen: voor deze blog baseer ik me gewoon op de [Wikipediapagina](https://en.wikipedia.org/wiki/Dependency_inversion_principle).)
 
 
 Dit zijn veel woorden om te zeggen: programmeer tegen een interface aan en niet tegen een concrete class. De reden daarvoor is simpel: als je tegen een interface aan programmeert, kun je de concrete implementatie aanpassen zonder de aanroepende code te hoeven wijzigen.
@@ -89,9 +89,9 @@ Wie tot die tijd graag zelf wil experimenteren, kan de code [via GitHub](https:/
 
 ## Meer in deze reeks
 
-1. [De casus](/blog/21-04-30-enums-switch-statements-en-solid-1)
-2. [Het *Single-Responsibility* principe](/blog/21-05-07-enums-switch-statements-en-solid-2)
+1. [De casus](/blog/21/04/enums-switch-statements-en-solid-1)
+2. [Het *Single-Responsibility* principe](/blog/21/05/enums-switch-statements-en-solid-2)
 3. **Het *Dependency inversion* principe**
-4. [Het *Open-closed* principe](/blog/21-05-21-enums-switch-statements-en-solid-4)
-5. [SOLID en performance](/blog/21-05-28-enums-switch-statements-en-solid-5)
-6. [Conclusie](/blog/21-06-04-enums-switch-statements-en-solid-6)
+4. [Het *Open-closed* principe](/blog/21/05/enums-switch-statements-en-solid-4)
+5. [SOLID en performance](/blog/21/05/enums-switch-statements-en-solid-5)
+6. [Conclusie](/blog/21/06/enums-switch-statements-en-solid-6)

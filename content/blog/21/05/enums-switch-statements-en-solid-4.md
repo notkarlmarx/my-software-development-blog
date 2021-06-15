@@ -10,7 +10,7 @@ summary: "Vorige week refactorde ik een switch statement rondom een enum aan de 
 # Het *Open-closed* principe
 
 
-[Vorige week](/blog/21-05-14-enums-switch-statements-en-solid-3) refactorde ik [een stuk code](https://github.com/notkarlmarx/RefactorExercises/blob/master/RefactorExercises/EnumSwitch/Refactored/V01/ClaimsHelper.cs) om meer in lijn te zijn met het [*Dependency inversion* principe](https://en.wikipedia.org/wiki/Dependency_inversion_principle). 
+[Vorige week](/blog/21/05/enums-switch-statements-en-solid-3) refactorde ik [een stuk code](https://github.com/notkarlmarx/RefactorExercises/blob/master/RefactorExercises/EnumSwitch/Refactored/V01/ClaimsHelper.cs) om meer in lijn te zijn met het [*Dependency inversion* principe](https://en.wikipedia.org/wiki/Dependency_inversion_principle). 
 
 
 De `ClaimsHelper`, de centrale class in onze oefening, was voor zijn implementatie afhankelijk van de concrete implementaties van drie classes. Ik observeerde dat die drie classes op een hoger abstractieniveau in wezen dezelfde functie vervulden: de claims van een bepaalde permission teruggeven. 
@@ -37,7 +37,7 @@ Wat is het gevolg hiervan? Elke keer als er een nieuwe waarde aan de enum wordt 
 In de softwareontwikkeling zeggen we dan: de `ClaimsHelper` schendt het [*Open-closed* principe](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle). Dit stelt dat software-entiteiten open moeten staan voor uitbreiding, maar gesloten voor aanpassing. Met andere woorden: een wijziging in het ene deel van de code - de `Permissions` - moet niet tot gevolg hebben dat een andere class - de `ClaimsHelper` - moet worden aangepast om te blijven werken.
 
 
-(Vanuit het [*Dependency inversion* principe](/blog/21-05-14-enums-switch-statements-en-solid-3) geredeneerd zouden we zeggen: de class heeft een concrete afhankelijkheid naar `Permissions`. Vanuit het [*Single-responsibility* principe](/blog/21-05-07-enums-switch-statements-en-solid-2): de class heeft de verantwoordelijkheid kennis te nemen van de rechten in de applicatie. De SOLID-principes leggen elk hun eigen accent, maar hangen zoals je ziet wel met elkaar samen.)
+(Vanuit het [*Dependency inversion* principe](/blog/21/05/enums-switch-statements-en-solid-3) geredeneerd zouden we zeggen: de class heeft een concrete afhankelijkheid naar `Permissions`. Vanuit het [*Single-responsibility* principe](/blog/21/05/enums-switch-statements-en-solid-2): de class heeft de verantwoordelijkheid kennis te nemen van de rechten in de applicatie. De SOLID-principes leggen elk hun eigen accent, maar hangen zoals je ziet wel met elkaar samen.)
 
 
 ## Reflection
@@ -105,9 +105,9 @@ Wie tot die tijd graag zelf wil experimenteren, kan de code [via GitHub](https:/
 
 ## Meer in deze reeks
 
-1. [De casus](/blog/21-04-30-enums-switch-statements-en-solid-1)
-2. [Het *Single-Responsibility* principe](/blog/21-05-07-enums-switch-statements-en-solid-2)
-3. [Het *Dependency inversion* principe](/blog/21-05-14-enums-switch-statements-en-solid-3)
+1. [De casus](/blog/21/04/enums-switch-statements-en-solid-1)
+2. [Het *Single-Responsibility* principe](/blog/21/05/enums-switch-statements-en-solid-2)
+3. [Het *Dependency inversion* principe](/blog/21/05/enums-switch-statements-en-solid-3)
 4. **Het *Open-closed* principe**
-5. [SOLID en performance](/blog/21-05-28-enums-switch-statements-en-solid-5)
-6. [Conclusie](/blog/21-06-04-enums-switch-statements-en-solid-6)
+5. [SOLID en performance](/blog/21/05/enums-switch-statements-en-solid-5)
+6. [Conclusie](/blog/21/06/enums-switch-statements-en-solid-6)

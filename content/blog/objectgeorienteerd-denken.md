@@ -14,7 +14,7 @@ Onlangs las ik [*The Object-Oriented Thought Process*](https://www.oreilly.com/l
 ## Procedurele versus objectgeoriënteerde code
 
 
-Nou, het viel me op dat onze codebase hier en daar behoorlijk procedureel aandoet. Dat fenomeen uit zich met name in de [services](https://martinfowler.com/eaaCatalog/serviceLayer.html) en aanverwante helpers in onze [domeinlaag](https://docs.microsoft.com/en-us/windows/win32/cossdk/using-a-three-tier-architecture-model). (Waarom helpers, los van het procedurele aspect, geen goed idee zijn, zette ik al [eerder](/blog/21-04-23-neem-afscheid-van-helpers) uiteen.) Het is de taak van die classes om datgene wat vanuit de front-end naar de back-end wordt verstuurd, te transformeren waar nodig en door te geven aan de data access-laag. 
+Nou, het viel me op dat onze codebase hier en daar behoorlijk procedureel aandoet. Dat fenomeen uit zich met name in de [services](https://martinfowler.com/eaaCatalog/serviceLayer.html) en aanverwante helpers in onze [domeinlaag](https://docs.microsoft.com/en-us/windows/win32/cossdk/using-a-three-tier-architecture-model). (Waarom helpers, los van het procedurele aspect, geen goed idee zijn, zette ik al [eerder](/blog/21/04/neem-afscheid-van-helpers) uiteen.) Het is de taak van die classes om datgene wat vanuit de front-end naar de back-end wordt verstuurd, te transformeren waar nodig en door te geven aan de data access-laag. 
 
 
 Zo lang de transformatielogica minimaal is, is het verleidelijk om deze in een helpermethod in dezelfde class te houden. Verleidelijk en begrijpelijk, maar bepaald niet objectgeoriënteerd. Deze gewoonte leidt tot procedurele code die zich eenvoudig van boven naar beneden laat lezen.

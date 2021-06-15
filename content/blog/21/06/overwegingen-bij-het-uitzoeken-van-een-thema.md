@@ -11,7 +11,7 @@ summary: "Ik ben aan het overwegen het thema van mijn blog te veranderen. Begrij
 De afgelopen week ben ik dus op zoek gegaan naar een waardige vervanger."
 ---
 
-Ik ben aan het overwegen het thema van mijn blog te veranderen. Begrijp me niet verkeerd, [*tale*](https://themes.gohugo.io/tale-hugo/) is een prachtig minimalistisch thema en ik ben er gek op. Maar het is zo... [het eerste wat ik tegenkwam](/blog/21-04-16-bloggen-met-hugo-eerste-indrukken). Nu hoeft het eerste wat je tegenkomt niet per se iets slechts te zijn, maar ja, het is wel het eerste wat je tegenkwam. Snap je?
+Ik ben aan het overwegen het thema van mijn blog te veranderen. Begrijp me niet verkeerd, [*tale*](https://themes.gohugo.io/tale-hugo/) is een prachtig minimalistisch thema en ik ben er gek op. Maar het is zo... [het eerste wat ik tegenkwam](/blog/21/04/bloggen-met-hugo-eerste-indrukken). Nu hoeft het eerste wat je tegenkomt niet per se iets slechts te zijn, maar ja, het is wel het eerste wat je tegenkwam. Snap je?
 
 
 De afgelopen week ben ik dus op zoek gegaan naar een waardige vervanger.
@@ -46,7 +46,7 @@ Ook thema's die op de homepagina alleen de datum en titel van de blogs tonen, mo
 Wat ik ook niet wist, is hoe kieskeurig ik kan zijn, en hoe pietluttig de dingen zijn op basis waarvan ik een thema naar de prullenbak verwijs. 
 
 
-Hoe dan ook, twee thema's hebben de eerste schifting overleefd. In deze blog zal ik mijn ervaringen met de eerste beschrijven; mijn ervaringen met de tweede reserveer ik voor een [andere keer](/blog/21-06-11-meer-overwegingen-bij-het-uitzoeken-van-een-thema/). Gedurende de tweede schifting trok ik de thema's naar binnen en bekeek hoe goed ze standhielden zodra ze mijn eigen woorden moesten presenteren.
+Hoe dan ook, twee thema's hebben de eerste schifting overleefd. In deze blog zal ik mijn ervaringen met de eerste beschrijven; mijn ervaringen met de tweede reserveer ik voor een [andere keer](/blog/21/06/meer-overwegingen-bij-het-uitzoeken-van-een-thema/). Gedurende de tweede schifting trok ik de thema's naar binnen en bekeek hoe goed ze standhielden zodra ze mijn eigen woorden moesten presenteren.
 
 
 ## *hello-friend*

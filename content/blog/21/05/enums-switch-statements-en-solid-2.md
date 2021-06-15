@@ -10,7 +10,7 @@ summary: "Vorige week liet ik een stuk code zien dat op verschillende manieren d
 # Het *Single-Responsibility* principe
 
 
-[Vorige week](/blog/21-04-30-enums-switch-statements-en-solid-1) liet ik [een stuk code](https://github.com/notkarlmarx/RefactorExercises/blob/master/RefactorExercises/EnumSwitch/Original/ClaimsHelper.cs) zien dat op verschillende manieren de [SOLID-principes](https://en.wikipedia.org/wiki/SOLID) schond. Deze week gaan we een eerste stap zetten deze code te [refactoren](https://en.wikipedia.org/wiki/Code_refactoring) om hem wat makkelijker onderhoudbaar te maken. 
+[Vorige week](/blog/21/04/enums-switch-statements-en-solid-1) liet ik [een stuk code](https://github.com/notkarlmarx/RefactorExercises/blob/master/RefactorExercises/EnumSwitch/Original/ClaimsHelper.cs) zien dat op verschillende manieren de [SOLID-principes](https://en.wikipedia.org/wiki/SOLID) schond. Deze week gaan we een eerste stap zetten deze code te [refactoren](https://en.wikipedia.org/wiki/Code_refactoring) om hem wat makkelijker onderhoudbaar te maken. 
 
 
 We beginnen ons SOLID-avontuur met de S van [*Single-Responsiblity* principe](https://en.wikipedia.org/wiki/Single-responsibility_principle) (SRP). Het SRP stelt dat een software-entiteit moet maar één reden hebben om te worden aangepast, of, met andere woorden, precies één verantwoordelijkheid hebben.
@@ -122,9 +122,9 @@ Helemaal solide is de code echter nog niet. De logica in `GetClaimsForUser()` be
 
 ## Meer in deze reeks
 
-1. [De casus](/blog/21-04-30-enums-switch-statements-en-solid-1)
+1. [De casus](/blog/21/04/enums-switch-statements-en-solid-1)
 2. **Het *Single-Responsibility* principe**
-3. [Het *Dependency inversion* principe](/blog/21-05-14-enums-switch-statements-en-solid-3)
-4. [Het *Open-closed* principe](/blog/21-05-21-enums-switch-statements-en-solid-4)
-5. [SOLID en performance](/blog/21-05-28-enums-switch-statements-en-solid-5)
-6. [Conclusie](/blog/21-06-04-enums-switch-statements-en-solid-6)
+3. [Het *Dependency inversion* principe](/blog/21/05/enums-switch-statements-en-solid-3)
+4. [Het *Open-closed* principe](/blog/21/05/enums-switch-statements-en-solid-4)
+5. [SOLID en performance](/blog/21/05/enums-switch-statements-en-solid-5)
+6. [Conclusie](/blog/21/06/enums-switch-statements-en-solid-6)

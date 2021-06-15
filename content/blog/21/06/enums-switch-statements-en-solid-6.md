@@ -10,7 +10,7 @@ summary: "De conclusie van onze refactorslag rondom een op een enum gebaseerd sw
 
 # Conclusie
 
-De afgelopen weken heb ik een [stuk code](https://github.com/notkarlmarx/RefactorExercises/blob/master/RefactorExercises/EnumSwitch/Original/ClaimsHelper.cs) gerefactord om meer in lijn te zijn met [SOLID-principes](https://en.wikipedia.org/wiki/SOLID). Door gebruik te maken van [*Single-Responsiblity*](/blog/21-05-07-enums-switch-statements-en-solid-2), [*Dependency inversion*](/blog/21-05-14-enums-switch-statements-en-solid-3) en het [*Open-closed* principe](/blog/21-05-21-enums-switch-statements-en-solid-4), hebben we de code makkelijker onderhoudbaar gemaakt, zonder de [performance](/blog/21-05-28-enums-switch-statements-en-solid-5) van die code te hoeven offeren. De conclusie is dus duidelijk: verwerk de SOLID-principes in je code!
+De afgelopen weken heb ik een [stuk code](https://github.com/notkarlmarx/RefactorExercises/blob/master/RefactorExercises/EnumSwitch/Original/ClaimsHelper.cs) gerefactord om meer in lijn te zijn met [SOLID-principes](https://en.wikipedia.org/wiki/SOLID). Door gebruik te maken van [*Single-Responsiblity*](/blog/21/05/enums-switch-statements-en-solid-2), [*Dependency inversion*](/blog/21/05/enums-switch-statements-en-solid-3) en het [*Open-closed* principe](/blog/21/05/enums-switch-statements-en-solid-4), hebben we de code makkelijker onderhoudbaar gemaakt, zonder de [performance](/blog/21/05/enums-switch-statements-en-solid-5) van die code te hoeven offeren. De conclusie is dus duidelijk: verwerk de SOLID-principes in je code!
 
 
 Zeker als het op nieuwe code aankomt, heb je geen excuus om SOLID niet mee te nemen in je ontwerpproces. Maar hoe zit het met bestaande code? Moet je alles laten vallen waar je mee bezig bent, en je bestaande code base onder handen nemen om alle enum-gebaseerde switch statements eruit te refactoren?
@@ -73,7 +73,7 @@ Je hoeft het daar echter niet bij te laten zitten. Breng ondertussen de impact e
 Daarmee komen we aan het eind van deze reeks blogs. Zoals altijd: wie de code in al haar iteraties nog eens na wil kijken, kan terecht op [GitHub](https://github.com/notkarlmarx/RefactorExercises).
 
 
-Er zit me alleen nog één dingetje dwars aan de uiteindelijke implementatie. En dat is die verdomde naam, `ClaimsHelper`, die ik (in aangepaste vorm) heb overgenomen uit onze eigen code base. Het valt misschien buiten het domein van de SOLID-principes, maar in hemelsnaam... [noem je classes geen `...Helper`](/blog/21-04-23-neem-afscheid-van-helpers/)! 
+Er zit me alleen nog één dingetje dwars aan de uiteindelijke implementatie. En dat is die verdomde naam, `ClaimsHelper`, die ik (in aangepaste vorm) heb overgenomen uit onze eigen code base. Het valt misschien buiten het domein van de SOLID-principes, maar in hemelsnaam... [noem je classes geen `...Helper`](/blog/21/04/neem-afscheid-van-helpers/)! 
 
 
 Heb jij een betere suggestie voor de naam van deze class?
@@ -81,9 +81,9 @@ Heb jij een betere suggestie voor de naam van deze class?
 
 ## Meer in deze reeks
 
-1. [De casus](/blog/21-04-30-enums-switch-statements-en-solid-1)
-2. [Het *Single-Responsibility* principe](/blog/21-05-07-enums-switch-statements-en-solid-2)
-3. [Het *Dependency inversion* principe](/blog/21-05-14-enums-switch-statements-en-solid-3)
-4. [Het *Open-closed* principe](/blog/21-05-21-enums-switch-statements-en-solid-4)
-5. [SOLID en performance](/blog/21-05-28-enums-switch-statements-en-solid-5)
+1. [De casus](/blog/21/04/enums-switch-statements-en-solid-1)
+2. [Het *Single-Responsibility* principe](/blog/21/05/enums-switch-statements-en-solid-2)
+3. [Het *Dependency inversion* principe](/blog/21/05/enums-switch-statements-en-solid-3)
+4. [Het *Open-closed* principe](/blog/21/05/enums-switch-statements-en-solid-4)
+5. [SOLID en performance](/blog/21/05/enums-switch-statements-en-solid-5)
 6. **Conclusie**

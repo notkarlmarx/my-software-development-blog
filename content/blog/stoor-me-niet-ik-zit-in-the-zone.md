@@ -26,7 +26,7 @@ En dat is nu precies wat je niet wil.
 Die argumentatie is op het eerste gezicht ontzettend tegenintuïtief. Wie zich wel eens *in the zone* heeft bevonden, kan bevestigen dat zijn/haar productiviteit veel hoger ligt dan *outside the zone*. Gevoelsmatig is *the zone* precies waar je *in* wil zitten. 
 
 
-Dat is een breed gedragen standpunt. In [*Fundamentals of Software Architecture*](https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/) ([één van de beste boeken over software ontwikkeling die ik in 2020 las](blog/21-05-03-de-beste-boeken-over-software-ontwikkeling-die-ik-in-2020-las)) besteden auteurs Mark Richards en Neal Ford zelfs expliciet aandacht aan dit fenomeen wanneer ze advies geven over het inplannen van vergaderingen. Plan ze aan het begin van de ochtend of aan het eind van de middag, zeggen ze, want midden op de dag haal je ontwikkelaars uit *the zone*!
+Dat is een breed gedragen standpunt. In [*Fundamentals of Software Architecture*](https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/) ([één van de beste boeken over software ontwikkeling die ik in 2020 las](blog/21/05/de-beste-boeken-over-software-ontwikkeling-die-ik-in-2020-las)) besteden auteurs Mark Richards en Neal Ford zelfs expliciet aandacht aan dit fenomeen wanneer ze advies geven over het inplannen van vergaderingen. Plan ze aan het begin van de ochtend of aan het eind van de middag, zeggen ze, want midden op de dag haal je ontwikkelaars uit *the zone*!
 
 
 ## Op zoek naar de beste oplossing

@@ -11,7 +11,7 @@ summary: "Eerder schreef ik dat ik een nieuw thema voor deze blog wilde uitprobe
 # Of: Mijn Eerste Pull Request
 
 
-[Eerder](/blog/21-06-07-overwegingen-bij-het-uitzoeken-van-een-thema) schreef ik dat ik een nieuw thema voor deze blog wilde uitproberen. Mijn eerste keus, [*hello-friend*](https://themes.gohugo.io/hugo-theme-hello-friend/), bleek niet helemaal wat ik ervan gehoopt had. Gelukkig had ik een tweede keus achter de hand: [*mini*](https://themes.gohugo.io/hugo-theme-cactus-plus/), een thema dat zijn naam eer aandoet.
+[Eerder](/blog/21/06/overwegingen-bij-het-uitzoeken-van-een-thema) schreef ik dat ik een nieuw thema voor deze blog wilde uitproberen. Mijn eerste keus, [*hello-friend*](https://themes.gohugo.io/hugo-theme-hello-friend/), bleek niet helemaal wat ik ervan gehoopt had. Gelukkig had ik een tweede keus achter de hand: [*mini*](https://themes.gohugo.io/hugo-theme-cactus-plus/), een thema dat zijn naam eer aandoet.
 
 
 ## Eenvoud
@@ -38,7 +38,7 @@ Wat blijkt: *mini* vult de regel gewoon uit tot het eind en gaat op de volgende 
 (Maar ik zie dat de maker van het thema uit China komt. Misschien dat zijn keuze in het Chinees minder vreselijk en onbegrijpelijk is.)
 
 
-Opvallend genoeg was dit euvel me totaal niet opgevallen op *mini*'s demopagina. Ook hier geldt dus weer: [er gaapt een gat tussen een goede demo en een goede applicatie](/blog/21-06-07-overwegingen-bij-het-uitzoeken-van-een-thema/#lessen) (of in dit geval: een goed thema). Aan het begin en eind van de dag - en alles ertussenin - gaat er niets boven zelf aan de slag gaan met bepaalde code.
+Opvallend genoeg was dit euvel me totaal niet opgevallen op *mini*'s demopagina. Ook hier geldt dus weer: [er gaapt een gat tussen een goede demo en een goede applicatie](/blog/21/06/overwegingen-bij-het-uitzoeken-van-een-thema/#lessen) (of in dit geval: een goed thema). Aan het begin en eind van de dag - en alles ertussenin - gaat er niets boven zelf aan de slag gaan met bepaalde code.
 
 
 ## Fix #1

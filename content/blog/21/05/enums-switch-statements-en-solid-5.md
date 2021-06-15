@@ -11,7 +11,7 @@ summary: "De afgelopen weken heb ik een stuk switch statement rondom een enum ge
 # SOLID en performance
 
 
-[Vorige week](/blog/21-05-21-enums-switch-statements-en-solid-4) refactorde ik een stuk code om meer in lijn te zijn met het [*Open-closed* principe](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle). In plaats van een harde afhankelijkheid te coderen in de class die een ClaimProvider teruggeeft, gebruikten we [reflection](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection) om deze classes op [runtime](https://en.wikipedia.org/wiki/Runtime_(program_lifecycle_phase)) te vinden en terug te geven.
+[Vorige week](/blog/21/05/enums-switch-statements-en-solid-4) refactorde ik een stuk code om meer in lijn te zijn met het [*Open-closed* principe](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle). In plaats van een harde afhankelijkheid te coderen in de class die een ClaimProvider teruggeeft, gebruikten we [reflection](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection) om deze classes op [runtime](https://en.wikipedia.org/wiki/Runtime_(program_lifecycle_phase)) te vinden en terug te geven.
 
 
 De class die we daarvoor aanmaakten, was een flink stuk groter dan de oorspronkelijke method:
@@ -59,7 +59,7 @@ Onze tool levert de volgende informatie op, gesorteerd van de snelste implementa
 
 <br/>
 
-(V00 is de [originele code](/blog/21-04-30-enums-switch-statements-en-solid-1). De oplopende versies zijn gerefactord: V01 op basis van het [*Single responsibility* principe](/blog/21-05-07-enums-switch-statements-en-solid-2); V02 de op basis van het [*Dependency inversion*-principe](/blog/21-05-14-enums-switch-statements-en-solid-3), en V03 op basis van het [*Open closed*-principe](/blog/21-05-21-enums-switch-statements-en-solid-4).)
+(V00 is de [originele code](/blog/21/04/enums-switch-statements-en-solid-1). De oplopende versies zijn gerefactord: V01 op basis van het [*Single responsibility* principe](/blog/21/05/enums-switch-statements-en-solid-2); V02 de op basis van het [*Dependency inversion*-principe](/blog/21/05/enums-switch-statements-en-solid-3), en V03 op basis van het [*Open closed*-principe](/blog/21/05/enums-switch-statements-en-solid-4).)
 
 
 Zoals je ziet, ontlopen V01 en V02 van de `ClaimsHelper` het origineel nauwelijks. V02 lijkt zelfs nog iets sneller te zijn, maar dat verschil valt binnen de foutmarge en is dus verwaarloosbaar.
@@ -196,12 +196,12 @@ Wie de code vóór die tijd nog eens na wil lopen, kan terecht op [GitHub](https
 
 ## Meer in deze reeks
 
-1. [De casus](/blog/21-04-30-enums-switch-statements-en-solid-1)
-2. [Het *Single-Responsibility* principe](/blog/21-05-07-enums-switch-statements-en-solid-2)
-3. [Het *Dependency inversion* principe](/blog/21-05-14-enums-switch-statements-en-solid-3)
-4. [Het *Open-closed* principe](/blog/21-05-21-enums-switch-statements-en-solid-4)
+1. [De casus](/blog/21/04/enums-switch-statements-en-solid-1)
+2. [Het *Single-Responsibility* principe](/blog/21/05/enums-switch-statements-en-solid-2)
+3. [Het *Dependency inversion* principe](/blog/21/05/enums-switch-statements-en-solid-3)
+4. [Het *Open-closed* principe](/blog/21/05/enums-switch-statements-en-solid-4)
 5. **SOLID en performance**
-6. [Conclusie](/blog/21-06-04-enums-switch-statements-en-solid-6)
+6. [Conclusie](/blog/21/06/enums-switch-statements-en-solid-6)
 
 
 [^1]: Met dank aan [Nick Chapsas](https://www.youtube.com/channel/UCrkPsvLGln62OMZRO6K-llg), die de werking van het project in deze [video](https://www.youtube.com/watch?v=EWmufbVF2A4) beter uitlegt dan ik in tekst zou kunnen doen.

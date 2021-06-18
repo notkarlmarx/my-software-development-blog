@@ -1,16 +1,20 @@
 {{ if (eq .Section "blog") }}
 <div class="post-info">
-    <span>{{ i18n "writtenBy" }}</span>
-    {{- if .Params.Author }}
-        {{ .Params.Author }}
-    {{- else }}
-        {{ .Site.Author.name }}
-    {{- end }}
-
-    {{- if .PublishDate }}
-        <span>{{ i18n "on" }}&nbsp;</span><time datetime="{{ .PublishDate }}">{{ i18n "publishdate" . }}</time>
-    {{- end }}
-    <br>
-    <span>{{ i18n "readingTime" }}: </span>{{ .ReadingTime }} {{ cond (eq .ReadingTime 1) (i18n "minute") (i18n "minutes") }} ({{ .WordCount }} {{ i18n "words" }})
+    <span>
+        {{- if .Params.Author }}
+            {{ .Params.Author }}
+        {{- else }}
+            {{ .Site.Author.name }}
+        {{- end }}
+    </span> | 
+    <span>
+        <time datetime="{{ .PublishDate }}">{{ i18n "publishdate" . }}</time>
+    </span> |
+    <span>
+        {{ .ReadingTime }} {{ cond (eq .ReadingTime 1) (i18n "minute") (i18n "minutes") }}
+    </span> |
+    <span>
+        {{ .WordCount }} {{ i18n "words" }}
+    </span>
 </div>
 {{ end }}

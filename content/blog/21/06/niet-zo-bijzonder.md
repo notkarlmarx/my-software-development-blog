@@ -1,17 +1,20 @@
 ---
 title: "\"Niet Zo Bijzonder\""
 author: "Karl van Heijster"
-date: 2021-06-04T21:11:56+02:00
-draft: true
+date: 2021-06-18T08:05:14+02:00
+draft: false
 comments: true
-tags: ["documentatie", "leermoment", "motivatie", "waarde", "werkplezier"]
+tags: ["documentatie", "leermoment", "motivatie", "scrum", "waarde", "werkplezier"]
 summary: "Onze stagiair heeft onlangs een volledige Sprint besteed aan het op orde krijgen van haar documentatie. Tijdens de Sprint Review karakteriseerde ze die twee weken werk als \"niet zo bijzonder\". Ik kwam tegen die woorden in het verweer."
 ---
 
 Onze stagiair heeft onlangs een volledige Sprint besteed aan het op orde krijgen van haar documentatie.
 
 
-Dat was begrijpelijke en logische keuze. Ze had deadlines vanuit haar opleiding en een berg documentatie die nog niet helemaal op orde was. Het idee om twee weken lang features te specificeren in het Nederlands, in plaats van in C#, lag dus voor de hand.
+Dat was begrijpelijke en logische keuze. Ze had deadlines vanuit haar opleiding en een berg (of liever: een heuvel) documentatie die nog niet helemaal op orde was. Het idee om twee weken lang features te specificeren in het Nederlands, in plaats van in C#, lag dus voor de hand.
+
+
+## Waarde leveren
 
 
 Maar aan de andere kant ging deze keuze wel in tegen de kerngedachte van Scrum. Scrum dicteert dat er elke Sprint een werkend product op wordt geleverd. Daaruit volgt dat het schrijven van documentatie over verschillende Sprints uit gesmeerd dient te worden. Code en documentatie hebben beide hun plek binnen één en dezelfde Sprint.
@@ -38,7 +41,7 @@ Ten eerste verschilt de context waarbinnen onze stagiair opereert van die van ee
 Onze stagiair werkt bijvoorbeeld grotendeels in haar eentje aan een bepaalde feature, daar waar de rest van het team in, eh, teamverband werkt. Het team kan verantwoordelijkheden delen. De ene ontwikkelaar kan zich tijdens de Sprint op de code richten, en de andere op de documentatie. Die luxe heeft onze stagiair niet.
 
 
-Daarnaast heeft onze stagiair een heel ander belang bij het schrijven van documentatie. Het team schrijft veelal documentatie voor zichzelf (of liever: toekomstige iteraties van zichzelf). Maar onze stagiair schrijft documentatie voor de beoordelaars van haar afstudeerstage. 
+Daarnaast heeft onze stagiair een heel ander belang bij het schrijven van documentatie. Het team schrijft veelal documentatie voor zichzelf (of liever: toekomstige iteraties van zichzelf). Maar onze stagiair schrijft documentatie in de eerste instantie voor de beoordelaars van haar afstudeerstage. 
 
 
 Anders dan het team, heeft haar documentatie externe stakeholders. Je zou daarom kunnen stellen dat documentatie binnen de context van haar afstudeerstage een opleverbaar product is. Dat die stakeholders niet tijdens onze Sprint Reviews aanwezig zijn, is geen reden om dat product daarom als "niet bijzonder" of "niet interessant" te karakteriseren.
@@ -60,3 +63,9 @@ Minimaliseer dus nooit de waarde van je werk. Zeg nooit dat wat je hebt gedaan o
 
 
 En dat is best wel bijzonder.
+
+
+## Postscriptum
+
+
+Goed nieuws: onze stagiair is afgelopen woensdag geslaagd, met een 8,9 nog wel! Gefeliciteerd, meid! Die documentatiesprint heeft zich dubbel en dwars terugbetaald :-)

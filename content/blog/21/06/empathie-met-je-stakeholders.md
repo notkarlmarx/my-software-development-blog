@@ -1,8 +1,8 @@
 ---
 title: "Empathie Met Je Stakeholders"
 author: "Karl van Heijster"
-date: 2021-06-16T12:32:55+02:00
-draft: true
+date: 2021-06-21T07:52:19+02:00
+draft: false
 comments: true
 tags: ["boeken", "communicatie", "empathie", "software ontwikkeling", "stakeholders"]
 summary: "Software ontwikkelen is meer dan alleen code schrijven. Sterker nog, één van de leukste dingen aan het vak is het scala aan competenties dat erbij komt kijken - en de ontwikkelmogelijkheden (*no pun intended*) die dat met zich meebrengt. Zo las ik onlangs bijvoorbeeld *Articulating Design Decisions* van Tom Greever en vond daar een schat aan informatie in, ondanks dat ik geen designer ben."
@@ -35,13 +35,13 @@ Het is alsof de CEO er tijdens een meeting ineens op staat dat je een [event-ged
 ## Wat te doen?
 
 
-*Articulating Design Decisions* biedt een scala aan handige tips om dit soort situaties in goede banen te leiden. 
+*Articulating Design Decisions* biedt een breed palet aan handige tips om dit soort situaties in goede banen te leiden. 
 
 
 ### "Welk probleem los je op?"
 
 
-Een voorbeeld. Je kunt je stakeholder vragen: welk probleem probeer je nu op te lossen? Door hem ertoe te verleiden zijn gedachteproces bloot te geven, kun je als expert beter inspringen op zijn wensen en behoeften dan hij dat zelf kan. 
+Een voorbeeld. Je kunt je stakeholder vragen: welk probleem probeer je nu op te lossen? Door hem ertoe te verleiden zijn gedachteproces bloot te geven, kun je inspringen op zijn wensen en behoeften. En omdat je een professional bent (en hij maar een ervaringsexpert), kun je dat beter dan hij zelf. 
 
 
 Misschien kan die eenvoudige vraag het kwartje bij hem doen vallen dat er voor zijn oplossing überhaupt (nog) geen probleem bestaat.
@@ -71,7 +71,7 @@ Wat deze tips met elkaar gemeen hebben, is dat je je *inleeft in je stakeholder*
 Deze gewoonte is in de IT-wereld inmiddels redelijk ingeburgerd voor eindgebruikers. Maar het is schokkend om te zien hoe moeilijk designers en ontwikkelaars - ikzelf niet uitgezonderd - datzelfde empatisch vermogen wensen in te zetten voor de mensen die hun projecten financieren. 
 
 
-Dat terwijl het aan het eind van de dag zonneklaar is: software ontwikkelen is meer dan alleen code schrijven. Voor een geslaagd project, heb je de steun van je stakeholders nodig.  Ik kan *Articulating Design Decisions* dus aan elke designer én ontwikkelaar aanraden.
+Dat terwijl het aan het eind van de dag zonneklaar is: software ontwikkelen is meer dan alleen code schrijven. Voor een geslaagd project, heb je de steun van je stakeholders nodig. Ik kan *Articulating Design Decisions* dus aan elke designer én ontwikkelaar aanraden.
 
 
 [^1]: Of zij, natuurlijk. Maar voor het gemak houd ik in deze blog de mannelijke variant aan.

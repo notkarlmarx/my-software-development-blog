@@ -1,7 +1,7 @@
 ---
 title: "Schrijf PBI's - En Doe Het Goed"
-date: 2021-05-13T13:18:34+02:00
-draft: true
+date: 2021-06-25T13:50:31+02:00
+draft: false
 comments: true
 tags: ["product backlog items", "professionaliteit", "scrum", "software ontwikkelaar (rol)", "verantwoordelijkheid"]
 summary: "Het is niemands favoriete klus: Product Backlog Items (PBI's) aanmaken om de komende Sprints op te kunnen pakken. En toch, het is een onderdeel van je werk als ontwikkelaar. En een belangrijk onderdeel ook, want zonder goed opgezette PBI's kan een team helemaal niets."
@@ -19,7 +19,7 @@ Het is niemands favoriete klus: [Product Backlog Items](https://www.scrum.org/re
 Er bestaan vast en zeker ontwikkelaars die menen dat het aanmaken van PBI's niet hun taak (c.q. probleem) is. Volgens deze ontwikkelaars is het aanmaken van PBI's de verantwoordelijkheid van bijvoorbeeld een business- of informatieanalist. 
 
 
-Helemaal onjuist is die veronderstelling niet, want het *is* ook de taak van een analist om PBI's aan te maken. Maar daar volgt niet uit dat het niet óók de taak van de ontwikkelaar is om dat te doen. 
+Helemaal onjuist is die veronderstelling niet, want het *is* ook de taak van een analist om PBI's aan te maken. Maar daar volgt niet uit dat het niet *ook* de taak van de ontwikkelaar is om dat te doen. 
 
 
 ## De aard van jouw PBI's

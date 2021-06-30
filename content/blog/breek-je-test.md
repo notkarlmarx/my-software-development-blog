@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2021-06-18T17:09:14+02:00
 draft: true
 comments: true
-tags: ["boeken", "leermoment", "refactoring", "testen"]
+tags: ["boeken", "leermoment", "refactoren", "testen"]
 summary: "In Martin Fowlers *Refactoring* vond ik een interessante programmeertip: *breek je test.* Ja, dat lees je goed."
 ---
 

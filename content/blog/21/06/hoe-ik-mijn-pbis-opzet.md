@@ -4,7 +4,7 @@ date: 2021-06-28T08:45:22+02:00
 draft: false
 comments: true
 tags: ["product backlog items", "scrum"]
-summary: "Immitatie is de hoogste vorm van vlijerij, zegt men wel. En inderdaad, toen ik laatst zag dat onze stagiair de structuur van mijn PBI's had overgenomen, kon ik mezelf een gevoel van trots niet ontzeggen. Misschien is het een goed idee om uiteen te zetten hoe ik mijn PBI's opzet en waarom."
+summary: "Immitatie is de hoogste vorm van vlijerij, zegt men wel. En inderdaad, toen ik laatst zag dat onze stagiaire de structuur van mijn PBI's had overgenomen, kon ik mezelf een gevoel van trots niet ontzeggen. Misschien is het een goed idee om uiteen te zetten hoe ik mijn PBI's opzet en waarom."
 ---
 
 Immitatie is de hoogste vorm van vlijerij, zegt men wel. En inderdaad, toen ik laatst zag dat onze [stagiaire](/blog/21/06/niet-zo-bijzonder/) de structuur van mijn PBI's had overgenomen, kon ik mezelf een gevoel van trots niet ontzeggen. Misschien is het een goed idee om uiteen te zetten hoe ik mijn PBI's opzet en waarom.

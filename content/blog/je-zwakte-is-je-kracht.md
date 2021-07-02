@@ -5,7 +5,7 @@ date: 2021-06-24T05:52:47+02:00
 draft: true
 comments: true
 tags: ["carrièrepad", "diversiteit", "waarde"]
-summary: "De nicht van mijn vrouw heeft een PhD, een berg onderzoekservaring, uitstekende referenties - en geen baan. Commerciële onderzoeksbureaus wijzen haar zelfs af *vanwege* haar academische ervaring. Maar die achtergrond hoeft geen zwakte te zijn. Sterker nog, het is juist haar kracht."
+summary: "De nicht van mijn vrouw heeft een PhD, een berg onderzoekservaring, uitstekende referenties - en geen baan. Commerciële onderzoeksbureaus wijzen haar zelfs af *vanwege* haar academische achtergrond. Maar die achtergrond hoeft geen zwakte te zijn. Sterker nog, het is juist haar kracht."
 ---
 
 De nicht van mijn vrouw heeft een PhD, een berg onderzoekservaring, uitstekende referenties - en geen baan. 

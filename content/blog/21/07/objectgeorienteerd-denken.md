@@ -35,7 +35,7 @@ In Weisfelds boek hoopte ik wat handvaten te vinden om de procedurele elementen 
 Het beoogde publiek van *The Object-Oriented Thought Process* bestaat uit procedurele programmeurs die zich objectgeoriënteerde concepten eigen wil maken. Het grootste gedeelte van het boek is daarom gewijd aan het uitleggen van concepten als [*encapsulatie*](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)), [*inheritance*](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)), [*polymorfisme*](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)) en [*compositie*](https://en.wikipedia.org/wiki/Object_composition). De voorbeelden die Weisfeld daarvoor gebruikt, zijn ontleend aan het dagelijks leven: stel dat je een hond of een auto objectgeoriënteerd uit zou moeten programmeren, hoe zou dat er dan uitzien?
 
 
-Dat ik van huis uit een objectgeoriënteerde programmeur ben, was desondanks geen belemmering om van het boek te leren. Opvallend genoeg zijn het niet de vier bovengenoemde concepten die mij de uitweg wezen uit de onze procedurele services. Wat me op het juiste spoor zette, is een gedachtegang die het hele boek door zo nadrukkelijk op de voorgrond aanwezig is, dat je hem haast over het hoofd zou zien: *het gaat om objecten*.
+Dat ik van huis uit een objectgeoriënteerde programmeur ben, was desondanks geen belemmering om van het boek te leren. Opvallend genoeg zijn het niet de vier bovengenoemde concepten die mij de uitweg wezen uit onze procedurele services. Wat me op het juiste spoor zette, is een gedachtegang die het hele boek door zo nadrukkelijk op de voorgrond aanwezig is, dat je hem haast over het hoofd zou zien: *het gaat om objecten*.
 
 
 ## Een verzameling helpermethods, of...?
@@ -53,13 +53,10 @@ Ik kon al deze methods in één klap naar een [static](https://docs.microsoft.co
 ## Wat is dit voor object?
 
 
-De objectgeoriënteerde denkstap zit hem in het feit dat ik me nu afvroeg wat voor *object* ik zojuist geschapen had. Ik besloot: een `ItemSearcher`. En omdat die class in vrijwel elke method dezelfde informatie gebruikte, kon ik dat statische wel van de class afhalen, en daar [instance variables](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/variables#instance-variables) van maken.
+De objectgeoriënteerde denkstap zit hem in het feit dat ik me nu afvroeg wat voor *object* ik zojuist geschapen had. Ik besloot: een `ItemSearcher`. En omdat die class in vrijwel elke method dezelfde informatie gebruikte, kon ik dat statische wel van de class afhalen, en de method-parameters omzetten naar [instance variables](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/variables#instance-variables).
 
 
-Deze strategie betaalde zich onmiddellijk uit. Middels compositie kon ik deze class ook uitbreiden met diverse `SearchStrategies`, al naar gelang de zoekcriteria. Het maakte de code leesbaarder, meer uitgesplitst, beter testbaar, en... mooier. 
-
-
-Gewoon: mooier. Zoals ik zei: het is deels een smaakdingetje.
+Deze strategie betaalde zich onmiddellijk uit. Middels compositie kon ik deze class ook uitbreiden met diverse `SearchStrategies`, al naar gelang de zoekcriteria. Het maakte de code leesbaarder, meer uitgesplitst, beter testbaar, en... mooier. Gewoon: mooier. (Zoals ik zei: het is deels een smaakdingetje.)
 
 
 Goed, en daarom lees ik, ruim vier jaar na mijn eerste regels C#, een inleiding in objectgeoriënteerd programmeren.

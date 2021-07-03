@@ -1,0 +1,18 @@
+{{ $blogcount := len (where .Site.RegularPages "Section" "!=" "") }}
+
+{{ $scratch := newScratch }}
+{{ range (where .Site.RegularPages "Type" "in" (slice "blog")) }}
+    {{ $scratch.Add "wordcount" .WordCount }}
+{{ end }}
+
+{{ $wordcount := $scratch.Get "wordcount" }}
+
+<p>
+    Totaal aantal blogs: {{ $blogcount }}.
+</p>
+<p>
+    Totaal aantal woorden: {{ lang.NumFmt 0 $wordcount "- , ." }}.
+</p>
+<p>
+    Gemiddeld aantal woorden per blog: {{ lang.NumFmt 0 (div $wordcount $blogcount) "- , ." }}.
+</p>

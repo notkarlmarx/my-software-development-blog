@@ -1,5 +1,5 @@
 ---
-title: "SQL Perikelen"
+title: "Eenvoudige SQL Versus Performante SQL"
 author: "Karl van Heijster"
 date: 2021-06-11T09:47:25+02:00
 draft: true

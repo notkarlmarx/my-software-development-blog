@@ -8,7 +8,7 @@ tags: ["muziek", "productiviteit", "the zone"]
 summary: "Softwareguru Robert \"*Uncle Bob*\" Martin raadt het in *The Clean Coder* ontwikkelaars af om muziek te luisteren onder het programmeren. Muziek zorgt er namelijk voor dat je *in the zone* raakt. Je bereikt dan een gemoedstoestand waarin de code automatisch uit je vingers lijkt te vloeien. En dat is nu precies wat je niet wil."
 ---
 
-Softwareguru Robert "*Uncle Bob*" Martin raadt het in [*The Clean Coder*](https://www.pearson.com/us/higher-education/program/Martin-Clean-Coder-The-A-Code-of-Conduct-for-Professional-Programmers/PGM8366.html) ontwikkelaars af om muziek te luisteren onder het programmeren. 
+Softwareguru [Robert "*Uncle Bob*" Martin](http://cleancoder.com/products) raadt het in [*The Clean Coder*](https://www.pearson.com/us/higher-education/program/Martin-Clean-Coder-The-A-Code-of-Conduct-for-Professional-Programmers/PGM8366.html) ontwikkelaars af om muziek te luisteren onder het programmeren. 
 
 
 Waarom? Muziek zorgt ervoor dat je *in the zone* raakt. Je bereikt dan een gemoedstoestand waarin de code automatisch uit je vingers lijkt te vloeien. Daar waar je normaliter zit te zwoegen op algoritmen en class-designs, lijkt de volgende regel nu volkomen vanzelfsprekend te volgen op de vorige. 

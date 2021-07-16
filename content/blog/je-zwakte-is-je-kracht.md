@@ -35,7 +35,7 @@ Dat vond ik een vreemde redenering. Het feit dat ze academisch geschoold is, kun
 ## Is filosofie een handicap?
 
 
-Toch heb ik wel begrip voor het standpunt van mijn nicht. Toen ik in de ICT begon, zag ik mijn eigen vooropleiding, filosofie, ook als mijn zwakke punt. Daar waar mijn collega's bestonden uit professionele programmeurs, worstelde ik aanvankelijk nog met de simpelste stukken code. En omdat mijn team een *legacy*-applicatie onderhield, waren er maar zelden simpele stukken code.
+Toch heb ik wel begrip voor het standpunt van mijn nicht. Toen ik in de ICT begon, zag ik mijn eigen vooropleiding, filosofie, ook als mijn zwakke punt. Daar waar mijn collega's bestonden uit professionele programmeurs, worstelde ik aanvankelijk nog met de simpelste stukken code. En omdat mijn team een twaalf jaar oude *legacy*-applicatie onderhield, waren er maar zelden simpele stukken code.
 
 
 Maar naarmate ik meer ervaring opdeed in mijn werkveld, kwam ik tot de conclusie dat mijn filosofische achtergrond *juist* mijn sterke kant was. Juist die opleiding heeft me in staat gesteld om mijn mening helder te kunnen verwoorden, ontsporende discussies op een goed spoor te brengen, en relatief eenvoudig de conceptuele kaders van een businessprobleem in kaart te kunnen brengen.
@@ -44,7 +44,7 @@ Maar naarmate ik meer ervaring opdeed in mijn werkveld, kwam ik tot de conclusie
 Bovendien, dankzij mijn opleiding heb ik een bredere blik op het vakgebied dan mijn collega's. Deze hebben veelal een bias hebben voor techniek, en meestal: de nieuwste techniek. 
 
 
-Dat is een probleem waar veel softwareontwikkelaars mee worstelen. Ze interesseren zich in eerste instantie voor de technologie, en in tweede instantie voor het probleem dat ze ermee op willen lossen. Als filosoof vind ik problemen juist interessanter dan oplossingen. Ironisch genoeg is precies dát hetgene wat me staalt stelt om eenvoudige oplossingen te vinden.
+Dat is een probleem waar veel softwareontwikkelaars mee worstelen. Ze interesseren zich in eerste instantie voor de technologie, en in tweede instantie voor het probleem dat ze ermee op willen lossen. Als filosoof vind ik problemen juist interessanter dan oplossingen.[^1] Ironisch genoeg is precies dát hetgene wat me staalt stelt om eenvoudige oplossingen te vinden.
 
 
 ## Wat voeg je toe?
@@ -60,3 +60,6 @@ Het feit dat je *dit* (nog) niet kan, is alleen maar een zwakte vanuit het persp
 
 
 En daarom zou je mijn nicht dus aan moeten nemen.
+
+
+[^1]: Je kunt je afvragen of dat de reden is waarom filosofen zo weinig problemen oplossen. Als liefhebber van het werk van [Wittgenstein](https://plato.stanford.edu/entries/wittgenstein/#LateNatuPhil), hanteer ik een alternatieve hypothese.

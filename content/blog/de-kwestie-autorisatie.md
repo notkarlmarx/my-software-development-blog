@@ -5,7 +5,7 @@ date: 2021-07-04T10:23:40+02:00
 draft: true
 comments: true
 tags: ["agile ontwikkeling", "incrementele ontwikkeling", "iteratieve ontwikkeling", "software architectuur", "software ontwikkeling", "waarde"]
-summary: ""
+summary: "Op een gegeven moment begon onze autorisatiecode uit de klauwen te lopen. Het aantal checks op de front end was niet meer op één hand te tellen. Om deze situatie het hoofd te kunnen bieden, hadden we als ontwikkelteam een opdracht meegegeven aan onze Product Owner: teken een functionele opzet uit voor een autorisatiematrix. Hij ging anderhalve week ondergronds met onze informatie-analist. Toen hij het eindresultaat eindelijk kon presenteren aan het team, leidde hij zijn verhaal in met de woorden: \"We gaan jullie meenemen.\" Dit was een slecht teken."
 ---
 
 # Of: Incrementele Versus Iteratieve Ontwikkeling In De Praktijk

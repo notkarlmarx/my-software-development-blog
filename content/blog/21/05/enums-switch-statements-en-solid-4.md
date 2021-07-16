@@ -22,7 +22,7 @@ Die functionaliteit kon worden vertaald naar een interface. Dat maakte het mogel
 Het leverde de volgende code op:
 
 
-{{< gist notkarlmarx bedb39a5b877fd1fdbc9508e745e8b4f "ClaimsHelper.cs">}}
+{{< gist dotkarl bedb39a5b877fd1fdbc9508e745e8b4f "ClaimsHelper.cs">}}
 
 
 Helemaal weg zijn de concrete implementaties echter nog niet. De method `GetClaimProvider()` heeft weet van de `Read`-, `Write`- en `DeleteClaimProvider`. 
@@ -64,19 +64,19 @@ De simpelste manier om een `Permission` aan zo'n class te koppelen, is door de i
 (Een alternatieve manier om een `Permission` te koppelen aan een ClaimProvider-class is middels het gebruik van [attributen](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/attributes/). Voor het punt dat van deze blog is het echter om het even welke van deze twee oplossingen gekozen wordt.)
 
 
-{{< gist notkarlmarx 6bffec16a479461005daae78756edf72 "IProvideClaims.cs">}}
+{{< gist dotkarl 6bffec16a479461005daae78756edf72 "IProvideClaims.cs">}}
 
 
 De geupdate concrete implementatie laat zich natuurlijk raden:
 
 
-{{< gist notkarlmarx 6bffec16a479461005daae78756edf72 "ReadClaimProvider.cs">}}
+{{< gist dotkarl 6bffec16a479461005daae78756edf72 "ReadClaimProvider.cs">}}
 
 
 We kunnen nu invulling geven aan onze `ClaimsProviderFactory`:
 
 
-{{< gist notkarlmarx 6bffec16a479461005daae78756edf72 "ClaimProviderFactory.cs">}}
+{{< gist dotkarl 6bffec16a479461005daae78756edf72 "ClaimProviderFactory.cs">}}
 
 
 Zoals je ziet, heeft deze class op geen enkele manier weet van de concrete implementaties van `IProvideClaims`. 
@@ -88,7 +88,7 @@ Als de method `GetClaimProvider()` wordt aangeroepen, dan haalt bekijkt deze eer
 De `ClaimsHelper`, ten slotte, ziet er nu als volgt uit:
 
 
-{{< gist notkarlmarx 6bffec16a479461005daae78756edf72 "ClaimsHelper.cs">}}
+{{< gist dotkarl 6bffec16a479461005daae78756edf72 "ClaimsHelper.cs">}}
 
 
 We kunnen onze enum nu vrijelijk aanpassen, zonder enige code in de `ClaimsHelper` of de `ClaimProviderFactory` aan te hoeven passen. Het enige wat we moeten doen - als we geen exceptions willen veroorzaken althans - is ervoor zorgen dat we een class toevoegen die `IProvideClaims` implementeert en de nieuwe `Permission` als property opneemt. 

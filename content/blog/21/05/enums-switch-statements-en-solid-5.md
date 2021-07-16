@@ -17,7 +17,7 @@ summary: "De afgelopen weken heb ik een stuk switch statement rondom een enum ge
 De class die we daarvoor aanmaakten, was een flink stuk groter dan de oorspronkelijke method:
 
 
-{{< gist notkarlmarx 6bffec16a479461005daae78756edf72 "ClaimProviderFactory.cs">}}
+{{< gist dotkarl 6bffec16a479461005daae78756edf72 "ClaimProviderFactory.cs">}}
 
 
 Maar het grootste probleem van deze class is niet het aantal regels code, want dat is met 29 regels nog altijd zeer bescheiden. Het grootste probleem is de performance-impact die de keuze voor reflection met zich meebrengt. 
@@ -86,7 +86,7 @@ Voor een deel is dat misschien geluk of luxe geweest. Maar het zegt denk ik ook 
 Dat gezegd hebbende, mijn eerste ingeving was om de lijst `ClaimProviders` (of liever: de lijst van types die `IProvideClaims` implementeren) te vangen in een globale variabele. Deze lijst verschilt immers niet van aanroep tot aanroep en kan dus in het geheugen bewaard blijven.
 
 
-{{< gist notkarlmarx a5571b15998ff4b86de84d368152ff0b "ClaimProviderFactoryV04.cs">}}
+{{< gist dotkarl a5571b15998ff4b86de84d368152ff0b "ClaimProviderFactoryV04.cs">}}
 
 
 Maar helemaal tevreden over deze aanpak was ik niet. `_claimProviderTypes` heeft hier de functie van een instance variable, terwijl de class static is en dus geen instanties heeft. Dit ontwerp wil twee dingen tegelijkertijd. 
@@ -101,7 +101,7 @@ Maar helemaal tevreden over deze aanpak was ik niet. `_claimProviderTypes` heeft
 Ik vroeg me af hoe ik de statische aard van de class kon rijmen met de noodzaak van een geïnstantieerde variabele. Het antwoord: het [singleton-patroon](https://en.wikipedia.org/wiki/Singleton_pattern).
 
 
-{{< gist notkarlmarx a5571b15998ff4b86de84d368152ff0b "ClaimProviderFactoryV05.cs">}}
+{{< gist dotkarl a5571b15998ff4b86de84d368152ff0b "ClaimProviderFactoryV05.cs">}}
 
 
 Met een singleton zorg je ervoor dat je aanroepende code telkens dezelfde instantie van een object aanroept. Dit is een ideaal patroon voor wanneer je de performance impact van de instantiatie een object wil beperken. 
@@ -154,7 +154,7 @@ Qua performance is een dictionary een goede keuze. Deze heeft namelijk een waard
 De uiteindelijke implementatie is als volgt:
 
 
-{{< gist notkarlmarx a5571b15998ff4b86de84d368152ff0b "ClaimProviderFactoryV06.cs">}}
+{{< gist dotkarl a5571b15998ff4b86de84d368152ff0b "ClaimProviderFactoryV06.cs">}}
 
 
 ## De eindstand

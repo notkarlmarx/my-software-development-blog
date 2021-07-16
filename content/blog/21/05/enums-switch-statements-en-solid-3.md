@@ -19,7 +19,7 @@ Ik abstraheerde logica die oorspronkelijk in onderstaande switch-statement zat, 
 Het resultaat was een stapje in de richting van beter leesbare en onderhoudbare code.
 
 
-{{< gist notkarlmarx 8d1b1346a9b21306e5f128fbd5602fec "ClaimsHelperV02.cs">}}
+{{< gist dotkarl 8d1b1346a9b21306e5f128fbd5602fec "ClaimsHelperV02.cs">}}
 
 
 De logica in `GetClaimsForUser()` bevat echter nog veel repetitie en is afhankelijk van de concrete implementatie van de classes die we aanroepen. Om dat probleem aan te pakken, kunnen we gebruik maken van een ander SOLID-principe: het *Dependency inversion* principe.
@@ -54,13 +54,13 @@ Als je de code snippet bekijkt waar deze blog-post mee begon, valt je dan iets o
 In wezen doen ze alle drie hetzelfde, namelijk: de claim teruggeven die bij de permission hoort. Dit is een functie van alle drie de methods die de concrete implementatie overstijgt. We zijn op een [abstractie](https://en.wikipedia.org/wiki/Abstraction_(computer_science)) gestuit. Dat gedrag kunnen we vangen in een [interface](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface):
 
 
-{{< gist notkarlmarx bedb39a5b877fd1fdbc9508e745e8b4f "IProvideClaims.cs">}}
+{{< gist dotkarl bedb39a5b877fd1fdbc9508e745e8b4f "IProvideClaims.cs">}}
 
 
 Onze eerder geschetste `ReadClaimProvider` hoeven we maar minimaal aan te passen om aan deze interface te kunnen voldoen:
 
 
-{{< gist notkarlmarx bedb39a5b877fd1fdbc9508e745e8b4f "ReadClaimProvider.cs">}}
+{{< gist dotkarl bedb39a5b877fd1fdbc9508e745e8b4f "ReadClaimProvider.cs">}}
 
 
 Nu we tegen een interface aan kunnen programmeren, hoeft de `ClaimsHelper` niet meer te weten van concrete methods die de claim van elke individuele permission teruggaven. Hij hoeft alleen maar te weten dat hij met een class te maken heeft die `IProvideClaims` implementeert en daar de method `GetClaim()` van aan te roepen.
@@ -69,7 +69,7 @@ Nu we tegen een interface aan kunnen programmeren, hoeft de `ClaimsHelper` niet 
 De `ClaimsHelper` komt er nu als volgt uit te zien:
 
 
-{{< gist notkarlmarx bedb39a5b877fd1fdbc9508e745e8b4f "ClaimsHelper.cs">}}
+{{< gist dotkarl bedb39a5b877fd1fdbc9508e745e8b4f "ClaimsHelper.cs">}}
 
 
 Zoals je ziet, is `GetClaimsForUser()` een stuk opgeschoond. Omdat we niet meer afhankelijk zijn van concrete implementaties, hebben we het oorspronkelijke switch-statement uit de method kunnen abstraheren naar zijn eigen helpermethod met een [switch-expressie](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/switch-expression). 

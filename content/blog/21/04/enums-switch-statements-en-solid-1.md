@@ -25,7 +25,7 @@ Het ging om een [switch statement](https://docs.microsoft.com/en-us/dotnet/cshar
 Ik zou het patroon met veel woorden uit kunnen leggen, maar de onderstaande code snippet - een versimpelde versie van de code die ik in het wild tegenkwam - illustreert de boel denk ik heel aardig:
 
 
-{{< gist notkarlmarx c8d96422d63e6cd7165e19a4fb243886 "ClaimsHelper.cs">}}
+{{< gist dotkarl c8d96422d63e6cd7165e19a4fb243886 "ClaimsHelper.cs">}}
 
 
 Waar hebben we hier mee te maken? Deze class, de `ClaimsHelper`, kent één method: `GetClaimsForUser()`. Deze bekijkt welke rechten (`Permissions`) een gebruiker (`User`) allemaal heeft, en geeft voor elk recht een string-representatie (claim) terug. Deze wordt als nieuwe regel toegevoegd aan een string met wat inleidende tekst.

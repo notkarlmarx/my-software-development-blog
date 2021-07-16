@@ -10,7 +10,7 @@ summary: "Is een meerkeuzevraag waarbij je nul antwoorden in mag vullen van het 
 Bevat deze code een bug?
 
 
-{{< gist notkarlmarx 4c7781c440167a12bcd2537875442a89 "OriginalChoiceTypeChecker.cs">}}
+{{< gist dotkarl 4c7781c440167a12bcd2537875442a89 "OriginalChoiceTypeChecker.cs">}}
 
 
 Oké, misschien ga ik te snel. Even wat terminologie.
@@ -70,7 +70,7 @@ En tot ze me een antwoord zouden geven, zou ik mezelf gek maken in een poging er
 Ik besloot toch even aan de code te rommelen:
 
 
-{{< gist notkarlmarx 4c7781c440167a12bcd2537875442a89 "RefactoredChoiceTypeChecker.cs">}}
+{{< gist dotkarl 4c7781c440167a12bcd2537875442a89 "RefactoredChoiceTypeChecker.cs">}}
 
 
 Bevat deze code een bug? *Nee!*

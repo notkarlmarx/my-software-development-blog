@@ -61,7 +61,7 @@ Wie het SRP serieus neemt, schrijft code die makkelijk te begrijpen is en logisc
 Dus: welke verantwoordelijkheden kunnen we allemaal in deze code onderscheiden?
 
 
-{{< gist notkarlmarx c8d96422d63e6cd7165e19a4fb243886 "ClaimsHelper.cs">}}
+{{< gist dotkarl c8d96422d63e6cd7165e19a4fb243886 "ClaimsHelper.cs">}}
 
 
 De verantwoordelijkheid van de class als geheel beperkt zich tot één ding: het teruggeven van een string-representatie (*claims*) van de rechten (*permissions*) van de gebruiker (*user*). Dat is alvast goed nieuws: de class hoeft dus niet in tweeën te worden gesplitst omdat deze twee verschillende verantwoordelijkheden herbergt.
@@ -90,7 +90,7 @@ We zouden een nieuwe method kunnen schrijven met daarin opnieuw een switch-state
 De code komt er dus als volgt uit te zien (voor de leesbaarheid heb ik irrelevante zaken als de [class-declaratie](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/classes#declaring-classes) weggelaten):
 
 
-{{< gist notkarlmarx 8d1b1346a9b21306e5f128fbd5602fec "ClaimsHelperV01.cs">}}
+{{< gist dotkarl 8d1b1346a9b21306e5f128fbd5602fec "ClaimsHelperV01.cs">}}
 
 
 Maar hoewel de oorspronkelijke method nu minder verantwoordelijkheden heeft, kan dit niet gezegd worden voor de class. Deze bevindt zich in zekere zin op hetzelfde niveau als voorheen. Elke keer als een claim voor een bepaalde permission wordt gewijzigd, moeten we onze `ClaimsHelper` aanpassen.
@@ -102,13 +102,13 @@ Zou het niet fijn zijn als we deze wijzigingen door konden voeren zonder dat we 
 De opdracht is duidelijk: de code die nu in de methods `GetReadClaim()`, `GetWriteClaim()` en `GetDeleteClaim()` zit, moet de `ClaimsHelper` uit. We kunnen voor alle drie een aparte class aanmaken met hun respectievelijke methods. De class voor leesrechten zou er bijvoorbeeld als volgt uit kunnen zien:
 
 
-{{< gist notkarlmarx 8d1b1346a9b21306e5f128fbd5602fec "ReadClaimProvider.cs">}}
+{{< gist dotkarl 8d1b1346a9b21306e5f128fbd5602fec "ReadClaimProvider.cs">}}
 
 
 En `GetClaimsForUser()` zouden we dan als volgt kunnen omschrijven:
 
 
-{{< gist notkarlmarx 8d1b1346a9b21306e5f128fbd5602fec "ClaimsHelperV02.cs">}}
+{{< gist dotkarl 8d1b1346a9b21306e5f128fbd5602fec "ClaimsHelperV02.cs">}}
 
 
 Dit is opnieuw een stap in de goede richting! `ClaimsHelper` als geheel heeft een verantwoordelijkheid minder. Elke keer als de inhoud van een claim wordt aangepast, hoeft die wijziging alleen maar doorgevoerd te worden in de bijbehorende class. 

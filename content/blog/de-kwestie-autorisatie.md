@@ -5,7 +5,7 @@ date: 2021-07-04T10:23:40+02:00
 draft: true
 comments: true
 tags: ["agile ontwikkeling", "incrementele ontwikkeling", "iteratieve ontwikkeling", "software architectuur", "software ontwikkeling", "waarde"]
-summary: "Op een gegeven moment begon onze autorisatiecode uit de klauwen te lopen. Het aantal checks op de front end was niet meer op één hand te tellen. Om deze situatie het hoofd te kunnen bieden, hadden we als ontwikkelteam een opdracht meegegeven aan onze Product Owner: teken een functionele opzet uit voor een autorisatiematrix. Hij ging anderhalve week ondergronds met onze informatie-analist. Toen hij het eindresultaat eindelijk kon presenteren aan het team, leidde hij zijn verhaal in met de woorden: \"We gaan jullie meenemen.\" Dit was een slecht teken."
+summary: "Op een gegeven moment begon onze autorisatiecode uit de klauwen te lopen. Om deze situatie het hoofd te kunnen bieden, hadden we als ontwikkelteam een opdracht meegegeven aan onze Product Owner: teken een functionele opzet uit voor een autorisatiematrix. Hij ging anderhalve week ondergronds met onze informatie-analist. Toen hij het eindresultaat eindelijk kon presenteren aan het team, leidde hij zijn verhaal in met de woorden: \"We gaan jullie meenemen.\" Dit was een slecht teken."
 ---
 
 # Of: Incrementele Versus Iteratieve Ontwikkeling In De Praktijk
@@ -111,7 +111,7 @@ Maar het is meer dan dat alleen. Het is fundamenteler van aard, en heeft te make
 Zoals dat gaat met filosofische problemen, is er geen eenvoudig gelijk in deze kwestie. 
 
 
-Er zijn goede redenen om een auto te willen ontwerpen, en geen skateboard. In [mijn eerdere blog](LINK /blog/incrementele-versus-iteratieve-ontwikkeling/#voor--en-nadelen) benadrukte ik het feit dat een incrementeel proces een consistent ontworpen oplossing waarborgt. Dat is een argument vanuit de invalshoek van een softwarearchitect.
+Er zijn goede redenen om een auto te willen ontwerpen, en geen skateboard. In [mijn eerdere blog](/blog/21/07/incrementele-versus-iteratieve-ontwikkeling/#voor--en-nadelen) benadrukte ik het feit dat een incrementeel proces een consistent ontworpen oplossing waarborgt. Dat is een argument vanuit de invalshoek van een softwarearchitect.
 
 
 Voor onze PO speelden en spelen andere overwegingen. Eerst en vooral is een auto, aan het eind van de dag, de meest omvattende oplossing voor het op dit moment relevante businessprobleem.

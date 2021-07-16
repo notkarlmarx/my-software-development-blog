@@ -56,16 +56,16 @@ Dat zijn dingen die ik doe omdat ik ze leuk vind. Niemand draagt me op om ze te 
 Toch is het indelen van je leven in een werk- en privégedeelte niet zonder problemen. Wie op elk moment van de dag ofwel met zijn werk, ofwel met zijn privéleven bezig is (of: moet zijn?), zal zich altijd schuldig voelen met het ene bezig te zijn in plaats van het andere.
 
 
-Als ik een uurtje overwerk om een functionaliteit nog vóór het einde van de dag af te kunnen ronden, offer ik privétijd aan mijn werk - tot chagrijn van mijn vrouw. Omgekeerd leidt mijn werk eronder als ik ga wandelen terwijl ik een [PBI uit zou moeten werken](/blog/21/06/schrijf-pbis-en-doe-het-goed).
+Als ik een uurtje overwerk om een feature nog vóór het einde van de dag af te kunnen ronden, offer ik privétijd aan mijn werk - tot chagrijn van mijn vrouw. Omgekeerd leidt mijn werk eronder als ik ga wandelen terwijl ik een [PBI uit zou moeten werken](/blog/21/06/schrijf-pbis-en-doe-het-goed).
 
 
 Werk en privé staan op gespannen voet met elkaar.
 
 
-Of toch niet? Mancuso betoogt dat dit probleem ontstaat door *het maken van het onderscheid überhaupt*. Wie dat doet, komt onvermijdelijk in conflict met het aantal uren in de dag. 
-
-
 ## De hobby
+
+
+Of toch niet? Mancuso betoogt dat dit probleem ontstaat door *het maken van het onderscheid überhaupt*. Wie dat doet, komt onvermijdelijk in conflict met het aantal uren in de dag. 
 
 
 Zijn oplossing is dan ook: maak het onderscheid niet. Maar dit vraagt een andere manier van kijken naar hoe je je leven indeelt. 

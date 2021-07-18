@@ -4,6 +4,7 @@ title = "dotkarl"
 theme = "tale" 
 defaultContentLanguage = "nl"
 disqusShortname = "notkarlmarx"
+googleAnalytics = "G-74F6YGDLD1"
 [params]
   commentoEnable = true
   author = "Karl van Heijster"

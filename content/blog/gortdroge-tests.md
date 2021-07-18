@@ -14,7 +14,7 @@ Valt je iets op aan deze tests?
 {{< gist dotkarl 864e6132c8b41e97feb97bcde73d4298 "DryUnitTests00.cs">}}
 
 
-Oké, afgezien van het feit dat ze nogal triviale code testen en de naamgeving (bewust) weinig inhoudelijk is, wat valt je op aan deze tests?
+Oké, afgezien van het feit dat ze nogal triviale code testen. En dat de naamgeving (bewust) weinig inhoudelijk is. En dat ik geen gebruik maak van de Microsofts [Assert-class](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert?view=visualstudiosdk-2019), maar van het (fantastische!) [Fluent Assertions](https://fluentassertions.com/), wat valt je op aan deze tests?
 
 
 Ik denk dat de meeste mensen hier drie keurig volgens het boekje opgezette unit tests zien. En weet je wat het is: die mensen hebben gelijk, want het *zijn* keurig volgens het boekje opgezette unit tests.

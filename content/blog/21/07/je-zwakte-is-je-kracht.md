@@ -1,8 +1,8 @@
 ---
 title: "Je Zwakte Is Je Kracht"
 author: "Karl van Heijster"
-date: 2021-06-24T05:52:47+02:00
-draft: true
+date: 2021-07-19T06:52:25+02:00
+draft: false
 comments: true
 tags: ["carrièrepad", "diversiteit", "waarde"]
 summary: "De nicht van mijn vrouw heeft een PhD, een berg onderzoekservaring, uitstekende referenties - en geen baan. Commerciële onderzoeksbureaus wijzen haar zelfs af *vanwege* haar academische achtergrond. Maar die achtergrond hoeft geen zwakte te zijn. Sterker nog, het is juist haar kracht."
@@ -26,10 +26,10 @@ Maar dat is niet waar ik het vandaag over wil hebben.
 Toen de nicht van... - weet je, dit irriteert me; ik zeg voortaan gewoon: *mijn nicht*. Toen mijn nicht onlangs op bezoek was, vertelde ze dat ze had gesolliciteerd bij een commercieel onderzoeksbureau. Het bureau was onder de indruk van haar kwaliteiten. 
 
 
-Maar het gaf ook aan dat ze, vanwege haar wetenschappelijke achtergrond, misschien minder goed paste bij het profiel van het bedrijf. Ze haalde haar schouders op en concludeerde niet in de wieg gelegd te zijn voor commercieel werk.
+Maar het gaf ook aan dat ze, vanwege haar wetenschappelijke achtergrond, misschien minder goed paste bij het profiel van het bedrijf. Ze haalde haar schouders op en concludeerde niet in de wieg gelegd te zijn voor commercieel onderzoek.
 
 
-Dat vond ik een vreemde redenering. Het feit dat ze academisch geschoold is, kun je moeilijk als zwakte presenteren. Sterker nog, een commercieel onderzoeksbureau zou er toch alleen maar van kunnen profiteren als ze academische onderzoekers binnenhalen?
+Dat vond ik een opmerkelijke redenering. Het feit dat ze academisch geschoold is, kun je moeilijk als zwakte presenteren. Sterker nog, een commercieel onderzoeksbureau zou er toch alleen maar van kunnen profiteren als ze academische onderzoekers binnenhalen?
 
 
 ## Is filosofie een handicap?
@@ -59,7 +59,7 @@ Hetzelfde geldt voor mijn nicht. Als academisch onderzoeker zou ze een vreemde e
 Het feit dat je *dit* (nog) niet kan, is alleen maar een zwakte vanuit het perspectief dat alles om *dit* draait. Verander het perspectief, en die zwakte blijkt juist je sterke punt: *ik kan* dit *nog niet, maar ik kan wel* dat *en dat kun jij (nog) niet.*
 
 
-En daarom zou je mijn nicht dus aan moeten nemen.
+Het is daarom dat ik tegen mijn nicht zei: ze zijn gek dat ze je niet aangenomen hebben. En dat geloof ik echt.
 
 
-[^1]: Je kunt je afvragen of dat de reden is waarom filosofen zo weinig problemen oplossen. Als liefhebber van het werk van [Wittgenstein](https://plato.stanford.edu/entries/wittgenstein/#LateNatuPhil), hanteer ik een alternatieve hypothese.
+[^1]: Je kunt je afvragen of dat de reden is waarom filosofen zo weinig problemen oplossen. Als liefhebber van het werk van [Ludwig Wittgenstein](https://plato.stanford.edu/entries/wittgenstein/#LateNatuPhil), hanteer ik (gelukkig!) een alternatieve hypothese.

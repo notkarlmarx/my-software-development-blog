@@ -131,4 +131,5 @@ En die van Evans' als volgt: *De taal van de software moet de taal van het domei
 
 [^1]: Wittgenstein ontleende dit punt aan [Gottlob Frege](https://plato.stanford.edu/entries/frege/). Voor een uitstekende boek over de invloeden van op Wittgensteins vroege filosofie, zie [*Representation and Reality in Wittgenstein’s Tractatus*](https://books.google.nl/books?id=vqDoCQAAQBAJ) van José Zalabardo [[recensie](https://deleesclubvanalles.nl/recensie/representation-and-reality-in-wittgensteins-tractatus/)].
 
+
 [^2]: Het beste boek over dit onderwerp dat ik ooit heb gelezen is [*Wittgenstein on Logic as the Method of Philosophy*](https://books.google.nl/books?id=mUSCDwAAQBAJ) van Oskari Kuusela [[recensie](https://deleesclubvanalles.nl/recensie/wittgenstein-on-logic-as-the-method-of-philosophy/)].

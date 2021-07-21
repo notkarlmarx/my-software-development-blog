@@ -1,0 +1,8 @@
+{{ range (first 10 (sort .Site.Taxonomies.tags.ByCount )) }}
+<li>
+    <a href={{.Page.Permalink}}>{{ .Name | humanize }}</a> 
+    <span>
+        ({{ .Count }})
+    </span>
+</li>
+{{ end }}

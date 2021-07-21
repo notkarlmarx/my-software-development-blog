@@ -1,0 +1,10 @@
+{{ $blogcount := len (where .Site.RegularPages "Section" "!=" "") }}
+
+{{ $scratch := newScratch }}
+{{ range (where .Site.RegularPages "Type" "in" (slice "blog")) }}
+    {{ $scratch.Add "wordcount" .WordCount }}
+{{ end }}
+
+{{ $wordcount := $scratch.Get "wordcount" }}
+
+{{ lang.NumFmt 0 (div $wordcount $blogcount) "- , ." }}

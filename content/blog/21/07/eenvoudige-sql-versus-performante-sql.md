@@ -1,10 +1,10 @@
 ---
 title: "Eenvoudige SQL Versus Performante SQL"
 author: "Karl van Heijster"
-date: 2021-06-11T09:47:25+02:00
-draft: true
+date: 2021-07-23T10:13:16+02:00
+draft: false
 comments: true
-tags: ["leermoment", "clean code", "performance", "SQL"]
+tags: ["leermoment", "clean code", "intentie van code", "performance", "SQL"]
 summary: "Als ik zeg dat je al mijn kennis van SQL op de achterkant van een bierviltje kunt schrijven, dan overdrijf ik schromelijk. Maar twee bierviltjes, dat zou best kunnen. Toen ik onlangs de taak had een prachtig performante SQL-query uit te breiden, had dat nogal wat voeten in de aarde."
 ---
 
@@ -14,7 +14,7 @@ Als ik zeg dat je al mijn kennis van [SQL](https://en.wikipedia.org/wiki/SQL) op
 Maar twee bierviltjes, dat zou best kunnen.
 
 
-Dat komt deels doordat ik van huis uit een filosoof ben. Dan heb je natuurlijk weinig met databases te maken, relationeel of anderszins. Trouwens, de meeste applicaties waar je als ontwikkelaar mee te maken krijgt gebruiken een [*Object-Relational Mapper*](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping) (ORM) zoals [Entity Framework](https://docs.microsoft.com/en-us/ef/). Dus ook op de werkvloer zul je maar zelden direct in aanraking komen met ruwe SQL.
+Dat komt deels doordat ik [van huis uit een filosoof](/blog/21/07/mijn-loopbaanwending) ben. Dan heb je natuurlijk weinig met [databases](https://en.wikipedia.org/wiki/Database) te maken, [relationeel](https://en.wikipedia.org/wiki/Relational_database) of [anderszins](https://en.wikipedia.org/wiki/NoSQL). Trouwens, de meeste applicaties waar je als ontwikkelaar mee te maken krijgt gebruiken een [*Object-Relational Mapper*](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping) (ORM) zoals [Entity Framework](https://docs.microsoft.com/en-us/ef/). Dus ook op de werkvloer zul je maar zelden direct in aanraking komen met ruwe SQL.
 
 
 Ik moest de volgende query[^1] dan ook even (twee keer) twee keer nalopen:
@@ -37,7 +37,7 @@ INSERT INTO GroupedObject (GroupId, ObjectId)
 ## De query
 
 
-Deze query insert een reeks nieuwe records in een koppeltabel. Hij kent twee parameters. De eerste is een GroupId. Dit is de identifier van een groep waar objecten toe behoren. De tweede is een ObjectId. De naam daarvan spreekt hopelijk voor zichzelf. 
+Deze query voegt (*insert*) een reeks nieuwe records in een koppeltabel in. Hij kent twee parameters. De eerste is een GroupId. Dit is de identifier van een groep waar objecten toe behoren. De tweede is een ObjectId. De naam daarvan spreekt hopelijk voor zichzelf. 
 
 
 In het kader van performance is ervoor gekozen geen aparte insert te doen voor elk ObjectId, maar om in één keer meerdere ObjectIds toe te voegen voor elke GroupId. Om dit voor elkaar te krijgen, worden deze als een door komma's gescheiden lijst in string-vorm meegegeven. 
@@ -110,10 +110,10 @@ INSERT INTO GroupedObject (GroupId, ObjectId, ObjectType)
 Ik zal de details achterwege laten van hoe ik uiteindelijk op deze query uit ben gekomen. Laten we het erop houden dat het nogal wat voeten in de aarde had.
 
 
-Feit is dat het een niet bijzonder leesbare query is. Filosofen die moeite hebben met de eerste query, zullen bij deze met de handen in het haar zitten. En niet alleen filosofen. Zelfs mijn meer SQL-*savvy* collega's moesten de query (ten minste) twee keer nalopen om 'm goed en wel te kunnen volgen.
+Feit is dat dit een niet bijzonder leesbare query is. Filosofen die moeite hebben met de eerste query, zullen bij deze met de handen in het haar zitten. En niet alleen filosofen. Zelfs mijn meer SQL-*savvy* collega's moesten de query (ten minste) twee keer nalopen om 'm goed en wel te kunnen volgen.
 
 
-Maar belangrijker is dat de query, alle voeten in aarde ten spijt, nog niet helemaal is wat het moet zijn. `STRING_SPLIT` kent namelijk niet [de garantie de volgorde van de lijst te bewaren](https://www.sqlservercentral.com/articles/an-overview-of-string_split). Dit brengt het risico met zich mee dat bepaalde ObjectIds gepaard worden met een onjuist ObjectType. 
+Maar belangrijker is dat de query, alle voeten in aarde ten spijt, nog steeds niet helemaal is wat het moet zijn. `STRING_SPLIT` kent namelijk niet [de garantie de volgorde van de lijst te bewaren](https://www.sqlservercentral.com/articles/an-overview-of-string_split). Dit brengt het risico met zich mee dat bepaalde ObjectIds gepaard worden met een onjuist ObjectType. 
 
 
 De query is moeilijk te lezen, nog moeilijker uit te breiden, en boven alles nog een bron voor nauwelijks reproduceerbare bugs.
@@ -122,7 +122,7 @@ De query is moeilijk te lezen, nog moeilijker uit te breiden, en boven alles nog
 ## Een oplossing voor de oplossing
 
 
-Wat te doen? Een technisch georiënteerde ontwikkelaar zou de oplossing misschien in SQL gezocht hebben. Deze ontwikkelaar zou zichzelf net zo lang in die taal verdiept hebben, totdat hij op een nette oplossing voor het probleem was gestuit. 
+Wat te doen? Een technisch georiënteerde ontwikkelaar zou de oplossing misschien in SQL gezocht hebben. Deze ontwikkelaar zou zichzelf net zo lang in die taal verdiept hebben, totdat hij op een passende oplossing voor het probleem was gestuit. 
 
 
 Ik heb die optie overwogen, al was het maar om mijn exemplaar van het [*SQL Cookbook*](https://www.oreilly.com/library/view/sql-cookbook-2nd/9781492077435/) uit de kast te kunnen halen. 
@@ -186,4 +186,6 @@ Daar kan zelfs een filosoof als ik mee uit de voeten.
 
 
 [^1]: Althans, een structureel identieke variant. Mijn team noemt zijn variabelen beter dan dit.
+
+
 [^2]: Je kunt er je vraagtekens bij zetten of de omringende code wel op een juiste manier is opgezet. De lezer zal van me aan moeten nemen dat er in dit geval goede redenen bestaan om de objecten één voor één toe te voegen aan de koppeltabel.

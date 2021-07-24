@@ -47,15 +47,15 @@ nooit op zal merken
 <br>
 <br>
 
-**Een microservice**
+**Tuin**
 
 <br>
 
-één microservice
+mijn code is mijn 
 
-per domein, dat is de droom
+tuin, ik ben vooral onkruid
 
-van een architect
+aan het wieden dus
 
 <br>
 <br>
@@ -69,6 +69,7 @@ mijn beste vriend is
 Google, die kent mij beter
 
 dan ik mezelf ken
+
 <br>
 <br>
 

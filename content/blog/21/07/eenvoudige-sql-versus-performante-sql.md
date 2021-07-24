@@ -167,7 +167,7 @@ Ik zou mijn collega's in het beste geval hebben opgezadeld met een query waar de
 ## De oplossing
 
 
-In plaats daarvan heb ik de method die meerdere objecten tegelijkertijd in de database insert, verwijderd, en de eerste methode de volgende query af laten vuren:
+In plaats daarvan heb ik de method die meerdere objecten tegelijkertijd in de database insert, verwijderd, en de eerste method de volgende query af laten vuren:
 
 
 ```sql

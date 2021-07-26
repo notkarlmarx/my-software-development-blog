@@ -1,11 +1,11 @@
 ---
 title: "De Kwestie Autorisatie"
 author: "Karl van Heijster"
-date: 2021-07-04T10:23:40+02:00
-draft: true
+date: 2021-07-26T16:15:03+02:00
+draft: false
 comments: true
-tags: ["agile ontwikkeling", "incrementele ontwikkeling", "iteratieve ontwikkeling", "software architectuur", "software ontwikkeling", "waarde"]
-summary: "Op een gegeven moment begon onze autorisatiecode uit de klauwen te lopen. Om deze situatie het hoofd te kunnen bieden, hadden we als ontwikkelteam een opdracht meegegeven aan onze Product Owner: teken een functionele opzet uit voor een autorisatiematrix. Hij ging anderhalve week ondergronds met onze informatie-analist. Toen hij het eindresultaat eindelijk kon presenteren aan het team, leidde hij zijn verhaal in met de woorden: \"We gaan jullie meenemen.\" Dit was een slecht teken."
+tags: ["agile ontwikkeling", "autorisatie", "incrementele ontwikkeling", "iteratieve ontwikkeling", "software architectuur", "software ontwikkeling", "waarde"]
+summary: "Onze Product Owner ging anderhalve week ondergronds met onze informatie-analist om een autorisatiematrix uit te tekenen. Toen hij het eindresultaat eindelijk presenteerde aan het team, leidde hij zijn verhaal in met de woorden: \"We gaan jullie meenemen.\" Dat was een slecht teken."
 ---
 
 # Of: Incrementele Versus Iteratieve Ontwikkeling In De Praktijk
@@ -45,7 +45,7 @@ Dat is geen eenvoudige opdracht, al zou je dat op basis van het eindproduct miss
 Onze PO ging anderhalve week ondergronds met onze informatie-analist. Toen hij het eindresultaat eindelijk kon presenteren aan het team, leidde hij zijn verhaal in met de woorden: "We gaan jullie meenemen."
 
 
-Dit is doorgaans een slecht teken.
+Dat was een slecht teken.
 
 
 Wat bleek: onze PO en analist hadden een compleet systeem uitgedacht waarin het mogelijk was om voor elke rol, op elk niveau van de applicatie rechten te definiëren, inclusief een complete overervingsstructuur, die op diverse niveaus weer kon worden overschreven.
@@ -57,19 +57,19 @@ Laat ik vooropstellen dat ons team een fantastische PO kent, en een minstens zo 
 Soms iets te perfect.
 
 
-Na tien minuten riep het team in wanhoop uit: "We ontwikkelen een applicatie om toets mee te construeren, geen lanceersysteem van nucleaire raketten!" Eén ontwikkelaar verwoordde het heel kernachtig toen hij zei: "Dit is niks. Of liever: dit is veel te veel."
+Na tien minuten riep het team in wanhoop uit: "We ontwikkelen een applicatie om toetsen mee te construeren, geen lanceersysteem van nucleaire raketten!" Eén ontwikkelaar verwoordde het heel kernachtig toen hij zei: "Dit is niks. Of liever: dit is veel te veel."
 
 
 ## Waar het mis ging (1)
 
 
-Wat was er gebeurd? Er zijn geloof ik twee dingen misgegaan. Deze hangen op een subtiele manier met elkaar samen, maar zijn volgens mij niet hetzelfde. 
+Wat was er gebeurd? Er zijn geloof ik twee dingen misgegaan. Deze hangen op een subtiele manier met elkaar samen, maar zijn niet hetzelfde. 
 
 
 Het eerste punt ligt op het vlak van de communicatie rondom de inhoud van de opdracht.
 
 
-Het ontwikkelteam had een helder afgebakend idee van wat er uit de functionele analyse zou moeten komen, namelijk een autorisatiematrix, zoals hierboven beschreven. Dit had een tabelletje in een Excel of Word kunnen zijn. De moeilijkheid van de opdracht zat hem volgens deze opvatting in het op het juiste niveau definiëren van de rechten voor elke rol. De lijst moet uitgebreid genoeg zijn om alle *use cases* te ondersteunen, maar beperkt genoeg om makkelijk hanteerbaar te blijven.
+Het ontwikkelteam had een helder afgebakend idee van wat er uit de functionele analyse zou moeten komen. Namelijk: een autorisatiematrix, zoals hierboven beschreven. Dit had een tabelletje in een Excel of Word kunnen zijn. De moeilijkheid van de opdracht zat hem volgens deze opvatting in het op het juiste niveau definiëren van de rechten voor elke rol. De lijst moet uitgebreid genoeg zijn om alle *use cases* te ondersteunen, maar beperkt genoeg om makkelijk hanteerbaar te blijven.
 
 
 Onze PO had zijn opdracht echter heel anders opgevat. Hij meende een complete oplossing te moeten hebben uitgedacht over de manier waarop rollen en rechten ingeregeld zouden moeten worden in onze applicatie. Volgens deze opvatting zat de moeiljkheid van de opdracht hem in het specificeren van een flexibel systeem dat alle huidige én toekomstige *use cases* omvat.
@@ -87,10 +87,10 @@ Hoe dan ook, het team als geheel heeft onvoldoende gevalideerd of er een gedeeld
 Dan het tweede punt.
 
 
-Een tijd geleden schreef ik over [incrementele en iteratieve ontwikkeling](LINK). Deze situatie is volgens mij een uitstekende illustratie van wat er gebeurt wanneer een team niet op één lijn zit wat betreft het te volgen ontwikkelproces.
+Een tijd geleden schreef ik over [incrementele en iteratieve ontwikkeling](/blog/21/07/incrementele-versus-iteratieve-ontwikkeling). Deze situatie is volgens mij een uitstekende illustratie van wat er gebeurt wanneer een team niet op één lijn zit wat betreft het te volgen ontwikkelproces.
 
 
-Laat ik deze beroemde illustratie van Hans Kniberg opnieuw aanhalen:
+Laat ik deze beroemde afbeelding van Hans Kniberg opnieuw aanhalen:
 
 
 {{<figure src="https://blog.crisp.se/wp-content/uploads/2016/01/mvp.png" width="600" alt="Henrik Kniberg: Making sense of MVP (Minimum Viable Product)" >}}
@@ -111,7 +111,7 @@ Maar het is meer dan dat alleen. Het is fundamenteler van aard, en heeft te make
 Zoals dat gaat met filosofische problemen, is er geen eenvoudig gelijk in deze kwestie. 
 
 
-Er zijn goede redenen om een auto te willen ontwerpen, en geen skateboard. In [mijn eerdere blog](/blog/21/07/incrementele-versus-iteratieve-ontwikkeling/#voor--en-nadelen) benadrukte ik het feit dat een incrementeel proces een consistent ontworpen oplossing waarborgt. Dat is een argument vanuit de invalshoek van een softwarearchitect.
+Er zijn goede redenen om een auto te willen ontwerpen, in plaats van een fiets. In [mijn eerdere blog](/blog/21/07/incrementele-versus-iteratieve-ontwikkeling/#voor--en-nadelen) benadrukte ik het feit dat een incrementeel proces een consistent ontworpen oplossing waarborgt. Dat is een argument vanuit de invalshoek van een softwarearchitect.
 
 
 Voor onze PO speelden en spelen andere overwegingen. Eerst en vooral is een auto, aan het eind van de dag, de meest omvattende oplossing voor het op dit moment relevante businessprobleem.
@@ -135,7 +135,7 @@ En die visie leek haalbaar, want op papier is hij snel en eenvoudig te verwezenl
 Door het hanteren van een theoretische lens, is een belangrijke vraag over het hoofd gezien: moet je het complete proces inclusief alle uitzonderingen wel *willen* ondersteunen? Of, bescheidener: moet je dat complete proces *nu* willen ondersteunen?
 
 
-Daarom is het *op korte termijn* een beter idee om nu een fiets te ontwikkelen. Een fiets is verre van een ideale oplossing van het probleem, maar het is tenminste wel een oplossing die snel en goedkoop kan worden ingezet.
+Daarom is het *op korte termijn* een beter idee om nu een fiets te ontwikkelen. Een fiets is verre van een ideale oplossing van het probleem, maar het is tenminste wel een oplossing die snel en goedkoop kan worden opgeleverd.
 
 
 Dit is de kerngedachte achter *agile* ontwikkeling. Het is beter nu waarde te leveren, hoe imperfect ook, dan veel tijd en geld te steken in een idee dat misschien op langere termijn meer oplevert. "Misschien" is het sleutelwoord hier. In softwareontwikkelland zijn er geen garanties dat een oplossing op het moment van implementatie even goed werkt als op het moment van ontwerp.
@@ -147,7 +147,7 @@ Dit is de kerngedachte achter *agile* ontwikkeling. Het is beter nu waarde te le
 Het team heeft onze PO terug naar de tekentafel gestuurd, ditmaal met de opdracht een autorisatiematrix uit te tekenen voor het proces *zonder* alle mogelijke uitzonderingen. We gaven hem mee: "Stel dat we hiermee 80% van de gebruikers ondersteunen, dan hebben we al 80% winst gemaakt. Met een eenvoudige oplossing bovendien."
 
 
-Toch vind ik dat onze taak als softwareontwikkelaar er hiermee nog niet op zit. Het is moeilijk om een proces te analyseren, al helemaal als je zo diep in de materie zit als onze PO. Het kan geen kwaad om daar een helpende hand bij te bieden. Soms heeft iemand een derde persoon nodig die zegt: "Dit gaan we niet doen." En diegene kan maar beter een softwareontwikkelaar zijn, want die heeft er zicht op hoe complex het kan zijn om de oplossing te implementeren.
+Toch vind ik dat onze taak als softwareontwikkelaar er hiermee nog niet op zit. Het is moeilijk om een proces te analyseren, al helemaal als je zo diep in de materie zit als onze PO en analist. Het kan geen kwaad om daar een helpende hand bij te bieden. Soms heeft iemand een derde persoon nodig die zegt: "Dit gaan we niet doen." En diegene kan maar beter een softwareontwikkelaar zijn, want die heeft er zicht op hoe complex het kan zijn om de oplossing te implementeren.
 
 
 In wezen komt het er hier op neer: de ontwikkelaar moet de PO zo ver krijgen zijn ogen van het uiteindelijke increment af te wenden, en te richten op de eerstvolgende iteratie.

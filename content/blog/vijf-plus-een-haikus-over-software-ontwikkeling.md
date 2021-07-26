@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2021-07-20T21:38:44+02:00
 draft: true
 comments: true
-tags: ["poëzie", "software ontwikkeling"]
+tags: ["poëzie", "software ontwikkelen"]
 summary: "*er is maar één ding / dat mijn code kan breken: / een eindgebruiker*"
 ---
 

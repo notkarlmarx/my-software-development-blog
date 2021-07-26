@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2021-07-23T10:13:16+02:00
 draft: false
 comments: true
-tags: ["leermoment", "clean code", "intentie van code", "performance", "SQL"]
+tags: ["clean code", "intentie van code", "leermoment", "performance", "SQL"]
 summary: "Als ik zeg dat je al mijn kennis van SQL op de achterkant van een bierviltje kunt schrijven, dan overdrijf ik schromelijk. Maar twee bierviltjes, dat zou best kunnen. Toen ik onlangs de taak had een prachtig performante SQL-query uit te breiden, had dat nogal wat voeten in de aarde."
 ---
 

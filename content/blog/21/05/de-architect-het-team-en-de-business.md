@@ -3,7 +3,7 @@ title: "De Architect, Het Team en De Business"
 date: 2021-05-24T11:33:22+02:00
 draft: false
 comments: true
-tags: ["agile ontwikkeling", "empathie", "samenwerking", "software architect (rol)", "software ontwikkeling"]
+tags: ["agile ontwikkeling", "empathie", "samenwerking", "software architect (rol)", "software ontwikkelen"]
 summary: "Ik vind dat een softwarearchitect mee moet draaien in een ontwikkelteam. Mijn leiddingevende is daar minder van overtuigd. \"Vind je dan ook dat een architect mee moet draaien met de business?\" vroeg hij me tijdens een discussie - retorisch uiteraard. Maar toen ik erover nadacht, vroeg ik me af: waarom eigenlijk niet?"
 ---
 

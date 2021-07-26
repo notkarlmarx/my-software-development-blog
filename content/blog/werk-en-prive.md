@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2021-06-30T06:55:18+02:00
 draft: true
 comments: true
-tags: ["software ontwikkeling", "werkbalans", "werkplezier"]
+tags: ["software ontwikkelen", "werkbalans", "werkplezier"]
 summary: "Vergelijk de volgende twee zinnen eens met elkaar:
 
 

@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2021-06-21T07:52:19+02:00
 draft: false
 comments: true
-tags: ["boeken", "communicatie", "empathie", "software ontwikkeling", "stakeholders"]
+tags: ["boeken", "communicatie", "empathie", "software ontwikkelen", "stakeholders"]
 summary: "Software ontwikkelen is meer dan alleen code schrijven. Sterker nog, één van de leukste dingen aan het vak is het scala aan competenties dat erbij komt kijken - en de ontwikkelmogelijkheden (*no pun intended*) die dat met zich meebrengt. Zo las ik onlangs bijvoorbeeld *Articulating Design Decisions* van Tom Greever en vond daar een schat aan informatie in, ondanks dat ik geen designer ben."
 ---
 

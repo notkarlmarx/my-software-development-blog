@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2021-07-16T08:07:34+02:00
 draft: false
 comments: true
-tags: ["agile ontwikkeling", "incrementele ontwikkeling", "iteratieve ontwikkeling", "software architectuur", "software ontwikkeling", "waarde"]
+tags: ["agile ontwikkeling", "incrementele ontwikkeling", "iteratieve ontwikkeling", "software architectuur", "software ontwikkelen", "waarde"]
 summary: "Als ik geen zin heb om over software ontwikkeling te lezen tijdens mijn ontbijt, zet ik een filmpje op YouTube op. Laatst keek ik er een van software architect George Fairbanks over de bijdrage van softwareontwikkelprocessen aan (het wegwerken van) technische schuld. Ik at die ochtend, als ik me het goed herinner, afbakbroodjes met jam. Het was dus in meerdere opzichten een prima begin van de dag."
 ---
 

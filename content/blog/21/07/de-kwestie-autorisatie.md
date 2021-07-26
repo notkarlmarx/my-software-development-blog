@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2021-07-26T16:15:03+02:00
 draft: false
 comments: true
-tags: ["agile ontwikkeling", "autorisatie", "incrementele ontwikkeling", "iteratieve ontwikkeling", "software architectuur", "software ontwikkeling", "waarde"]
+tags: ["agile ontwikkeling", "autorisatie", "incrementele ontwikkeling", "iteratieve ontwikkeling", "software architectuur", "software ontwikkelen", "waarde"]
 summary: "Onze Product Owner ging anderhalve week ondergronds met onze informatie-analist om een autorisatiematrix uit te tekenen. Toen hij het eindresultaat eindelijk presenteerde aan het team, leidde hij zijn verhaal in met de woorden: \"We gaan jullie meenemen.\" Dat was een slecht teken."
 ---
 

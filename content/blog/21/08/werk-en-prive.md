@@ -1,8 +1,8 @@
 ---
 title: "Werk en Privé"
 author: "Karl van Heijster"
-date: 2021-06-30T06:55:18+02:00
-draft: true
+date: 2021-08-02T08:43:11+02:00
+draft: false
 comments: true
 tags: ["software ontwikkelen", "werkbalans", "werkplezier"]
 summary: "Vergelijk de volgende twee zinnen eens met elkaar:
@@ -44,16 +44,16 @@ Ergens is dat iets heel vreemds, natuurlijk. Het lijkt evident dat er een versch
 Ik ben softwareontwikkelaar. Dat wil zeggen: mijn werk is het ontwikkelen van software. Ik doe dat in opdracht van mijn werkgever. Ik krijg ervoor betaald.
 
 
-Maar ik ben niet *alleen* een softwareontwikkelaar. Privé houd ik me met andere dingen bezig. Ik hou van lezen, bijvoorbeeld, en van muziek luisteren. Ik hou van wandelen met mijn vrouw, zelfs al is het maar even naar de supermarkt op en neer.
+Maar ik ben niet *alleen* een softwareontwikkelaar. Privé houd ik me met andere dingen bezig. Ik hou van [lezen](/blog/21/05/de-beste-boeken-over-software-ontwikkeling-die-ik-in-2020-las), bijvoorbeeld, en van [muziek luisteren](/blog/21/07/programmeren-op-de-beat). Ik hou van wandelen met mijn vrouw, zelfs al is het maar even naar de supermarkt op en neer. Dat zijn dingen die ik doe omdat ik ze leuk vind. Niemand draagt me op om ze te doen. En (helaas!) krijg ik er ook niet voor betaald.
 
 
-Dat zijn dingen die ik doe omdat ik ze leuk vind. Niemand draagt me op om ze te doen. En (helaas!) krijg ik er ook niet voor betaald.
+Mijn leven bestaat dus uit een werkgedeelte en een privégedeelte.
 
 
 ## Werk versus privé?
 
 
-Toch is het indelen van je leven in een werk- en privégedeelte niet zonder problemen. Wie op elk moment van de dag ofwel met zijn werk, ofwel met zijn privéleven bezig is (of: moet zijn?), zal zich altijd schuldig voelen met het ene bezig te zijn in plaats van het andere.
+Toch is het op deze manier indelen van je leven niet zonder problemen. Wie op elk moment van de dag ofwel met zijn werk, ofwel met zijn privéleven bezig is (of: moet zijn?), zal zich altijd schuldig voelen (moeten voelen?) met het ene bezig te zijn in plaats van het andere.
 
 
 Als ik een uurtje overwerk om een feature nog vóór het einde van de dag af te kunnen ronden, offer ik privétijd aan mijn werk - tot chagrijn van mijn vrouw. Omgekeerd leidt mijn werk eronder als ik ga wandelen terwijl ik een [PBI uit zou moeten werken](/blog/21/06/schrijf-pbis-en-doe-het-goed).
@@ -80,13 +80,10 @@ Er zijn ook weken waarin hij technische boeken over softwareontwikkeling verslin
 Netflix of softwareontwikkeling, het is Mancuso om het even. Waarom? Beide zijn een *hobby* van hem. Dat is de verenigende factor die het onderscheid tussen werk en privé opheft.
 
 
-Want zo zwart-wit als ik hierboven beschreven heb, hoeft het onderscheid tussen werk en privé helemaal niet te zijn. Je kunt je werk doen omdat je het leuk vindt, of iemand je het opdraagt of niet.
+Want zo zwart-wit als ik hierboven beschreven heb, hoeft het onderscheid tussen werk en privé helemaal niet te zijn. Je kunt je werk doen omdat je het leuk vindt, of iemand je het opdraagt of niet. In een hobby kunnen werk en privé samenkomen. (Maar alleen als anderen je hobby waardevol genoeg vinden om er geld voor neer te leggen!)
 
 
-In een hobby kunnen werk en privé samenkomen. (Maar alleen als anderen je hobby waardevol genoeg vinden om er geld voor neer te leggen!)
-
-
-Het is verstandig om deze context in het achterhoofd te houden wanneer ik aanraad [om elke dag twee kwartier over je vak te lezen](/blog/21/05/lees-elke-dag-een-kwartier-over-je-vak). Dat advies geldt alleen als je het *leuk* vindt om over je vak te lezen, oftewel: als je je vak - of onderdelen van je vak - als hobby kunt beschouwen. 
+Het is verstandig om deze context in het achterhoofd te houden wanneer ik aanraad [om elke dag twee kwartier over je vak te lezen](/blog/21/05/lees-elke-dag-een-kwartier-over-je-vak). Dat advies geldt alleen als je het *leuk* vindt om over je vak te lezen, oftewel: als je je vak (of onderdelen van je vak) als hobby kunt beschouwen. 
 
 
 Is dat niet het geval, dan zal dat lezen alleen maar energie kosten. Dan zal het jezelf opleggen van die gewoonte aanvoelen alsof je werk je privétijd insluipt. En dat is een gevoel - daar geef ik Mancuso gelijk in - dat je niet wil hebben.
@@ -107,4 +104,4 @@ Maar *in deze context*, waarin beide zinnen nadrukkelijk naast elkaar gepresente
 Let wel, ik zeg niet dat het erg is als software ontwikkelen je hobby niet is. Er is niets mis mee als [je werk gewoon je werk is](https://www.youtube.com/watch?v=0N4Xf0ZexvQ). Maar uit eigen ervaring durf ik wel te zeggen: het is leuker om *softwareontwikkelaar te zijn* dan om *als softwareontwikkelaar te werken*.
 
 
-Toch zou mijn advies nooit zijn om van je hobby je werk te maken. [Dat heb ik zelf ook niet gedaan](https://magazine.bazarow.com/bazarow-magazine-1-2021/waarom-lezen-deel-2/). Mijn vraag is: zie je manieren om van je werk je hobby te maken?
+Toch zou mijn advies nooit zijn om van je hobby je werk te maken. [Dat heb ik zelf ook niet gedaan](/blog/21/07/mijn-loopbaanwending). Mijn vraag is: zie je manieren om [van je werk je hobby te maken](https://magazine.bazarow.com/bazarow-magazine-1-2021/waarom-lezen-deel-2/)?

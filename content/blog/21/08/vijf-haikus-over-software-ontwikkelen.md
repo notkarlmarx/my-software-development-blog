@@ -1,8 +1,8 @@
 ---
 title: "Vijf Haiku's Over Software Ontwikkelen"
 author: "Karl van Heijster"
-date: 2021-07-03T12:02:40+02:00
-draft: true
+date: 2021-08-06T10:20:10+02:00
+draft: false
 comments: true
 tags: ["clean code", "poëzie"]
 summary: "*schoonheid zit in iets / zo klein als een method die / precies één ding doet*"

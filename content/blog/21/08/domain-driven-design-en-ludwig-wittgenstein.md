@@ -59,6 +59,9 @@ De eenduidige concepten die het ontwikkelteam heeft verzonnen, zullen nooit hele
 De route van de gezaghebbende, eenduidige definitie valt (met, toegegeven, wat dichterlijke vrijheid) te vergelijken met de route die [Ludwig Wittgenstein](https://plato.stanford.edu/entries/wittgenstein/) bewandelde in zijn [*Tractatus Logico-Philosophicus*](https://books.google.nl/books?id=0gKCAAAAQBAJ) (1921/1922). Daarin probeerde hij het raamwerk te ontwikkelen van hoe taal zich tot de werkelijkheid verhoudt. 
 
 
+{{<figure src="https://upload.wikimedia.org/wikipedia/commons/a/ab/50._Wittgenstein_in_Swansea_%28taken_by_Ben_Richards%29.jpg" alt="Portret van Ludwig Wittgenstein, 1930" width="300">}}
+
+
 In het kort: woorden staan voor objecten, en zinnen staan voor de manier waarop objecten zich tot elkaar in feiten verhouden. De primaire eenheid van de werkelijkheid (en van taal) is echter niet het object (woord), maar het feit (zin). Want objecten (woorden) bestaan niet in een vacuüm, maar in samenhang met elkaar.[^1]
 
 
@@ -120,7 +123,7 @@ In de video wordt afgeraden om microservices te groeperen per entiteit (*data*).
 Dus niet: één `ProductService` die een canoniek `Product` teruggeeft, die vervolgens kan worden gebruikt in verschillende andere services. Maar: een `Catalog`-, `Sales`-, `Purchasing`- en `WareHouseService` die elk een eigen variant van `Product` teruggeven, met alleen de voor hun relevante eigenschappen. Die services hebben elk hun eigen domein. Elk domein kent zijn eigen concept *product*. En de representatie van een *product* ziet er, logischerwijs, dus ook anders uit in elke service.
 
 
-## De taal van de software
+## De taal van de software *revisited*
 
 
 Merk op dat de eerste manier van een microservice coderen in lijn is met het vroege gedachtegoed van Wittgensteiniaanse, en de tweede manier in lijn is met zijn latere werk. In Wittgensteiniaanse termen zou de boodschap van de video dus kunnen zijn: groepeer microservices niet per object, maar per taalspel.

@@ -1,8 +1,8 @@
 ---
 title: "Breek Je Test"
 author: "Karl van Heijster"
-date: 2021-06-18T17:09:14+02:00
-draft: true
+date: 2021-08-13T07:20:45+02:00
+draft: false
 comments: true
 tags: ["boeken", "leermoment", "refactoren", "testen"]
 summary: "In Martin Fowlers *Refactoring* vond ik een interessante programmeertip: *breek je test.* Ja, dat lees je goed."
@@ -17,31 +17,31 @@ Ja, dat lees je goed.
 ## Wanneer je test hoort te falen
 
 
-Tests horen te slagen, toch? Ja. Maar ook: nee. 
+Maar tests horen toch juist te slagen? Ja. Maar ook: nee. 
 
 
 Tests horen te slagen *in 99,9% van de gevallen*. 99,9% van de tijd geeft een falende test aan dat er iets mis is met je code. 
 
 
-Dit is ook precies waarom je een goede testcoverage wil hebben. Je schrijft geen tests omdat je code zo ingewikkeld is dat je anders niet snapt wat hij doet. Je schrijft tests omdat je wil weten wanneer je nieuwe code bestaande functionaliteiten omver werpt.
+Dit is ook precies waarom je een goede [testcoverage](https://en.wikipedia.org/wiki/Code_coverage) wil hebben. Je schrijft geen tests omdat je code zo ingewikkeld is dat je anders niet snapt wat hij doet. Je schrijft tests omdat je wil weten wanneer je nieuwe code bestaande functionaliteiten omver werpt.
 
 
-0,1% van de tijd *hoort* je test te falen. Dat is de keer dat je nagaat of hij daadwerkelijk test wat hij zou moeten testen.
+In 0,1% van de tijd *hoort* je test te falen. Dat is de keer dat je nagaat of hij daadwerkelijk test wat hij zou moeten testen.
 
 
-Dat een test dat doet, is geen triviaal gegeven. Programmeren is moeilijk, en zeker wanneer je vermoeid bent (bijvoorbeeld omdat je al uren achtereen tests aan het schrijven bent... toch?!) wil je het nogal eens over het hoofd zien wanneer een test niet doet wat hij moet doen. In dat geval slaagt de test vanwege een bijwerking van de conditie die je probeert te testen. Of erger: hij slaagt ongeacht die condities!
+Dat een test dat doet, is geen triviaal gegeven. Programmeren is moeilijk, en zeker wanneer je vermoeid bent (bijvoorbeeld omdat je al [uren achtereen](/blog/21/07/stoor-me-niet-ik-zit-in-the-zone) tests aan het schrijven bent... toch?!) wil je het nogal eens over het hoofd zien wanneer een test niet doet wat hij moet doen. In dat geval slaagt de test vanwege een bijwerking van de conditie die je probeert te testen. Of erger: hij slaagt ongeacht die condities!
 
 
 ## De casus
 
 
-Onlangs kwam ik op moeizame wijze achter de wijsheid van deze tip.
+Onlangs kwam ik op moeizame wijze achter de wijsheid van Fowlers tip.
 
 
 De applicatie waaar mijn team en ik aan werken, bestaat uit een [Angular](https://angular.io/) [front-end](https://en.wikipedia.org/wiki/Front_end_and_back_end), die middels [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) communiceert met een [ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis). 
 
 
-In code is zo'n API niet meer dan een aantal [Controller](https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-5.0#controllerbase-class)-classes met een aantal methods die corresponderen met [HTTP-verbs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods). Denk aan `GET` voor het ophalen van data en `POST` voor het opslaan ervan.
+In code is zo'n API niet meer dan een aantal [Controller](https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-5.0#controllerbase-class)-classes met wat methods die corresponderen met [HTTP-verbs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods). Denk aan `GET` voor het ophalen van data en `POST` voor het opslaan ervan.
 
 
 Een controller zou er zo uit kunnen zien:
@@ -59,7 +59,7 @@ public void ActionResult<IEnumerable<Resource>> SearchResource([FromQuery] Searc
 
 In het attribuut boven de method, staat het HTTP-verb gespecificeerd, plus (een deel van) de [URL](https://en.wikipedia.org/wiki/URL) waar je naar moet navigeren om de method aan te roepen. De method zelf kent één parameter, die wordt samengesteld uit datgene wat in de [querystring](https://en.wikipedia.org/wiki/Query_string) wordt meegegeven.
 
-Stel dat het `SearchRequest`-object een property `KeyWords` bevat, zoals hier onder:
+Stel dat het `SearchRequest`-object een property `KeyWords` bevat:
 
 ```c#
 public class SearchRequest
@@ -70,7 +70,7 @@ public class SearchRequest
 }
 ```
 
-In dat geval zou je een RESTful call naar onze API kunnen maken door naar de volgende URL te navigeren: `.../api/resource?keywords=puppies`. (Op de drie puntjes zou de *base URL* komen te staan. Voor deze website is dat bijvoorbeeld `www.karlvanheijster.com`.) Deze URL geeft je, als het goed is, alle resources terug die over puppy's gaan.
+In dat geval zou je een RESTful call naar onze API kunnen maken door naar de volgende URL te navigeren: `.../api/resource?keywords=puppies`. (Op de drie puntjes zou de [*base URL*](https://swagger.io/docs/specification/api-host-and-base-path/) komen te staan. Voor deze website is dat bijvoorbeeld `www.karlvanheijster.com`.) Deze URL geeft je, als het goed is, alle resources terug die over puppy's gaan.
 
 
 ## De test

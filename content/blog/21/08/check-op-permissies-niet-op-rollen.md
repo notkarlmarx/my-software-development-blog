@@ -1,20 +1,20 @@
 ---
 title: "Check Op Permissies, Niet Op Rollen"
 author: "Karl van Heijster"
-date: 2021-08-13T11:04:42+02:00
-draft: true
+date: 2021-08-20T08:11:17+02:00
+draft: false
 comments: true
 tags: ["autorisatie", "intentie van code", "incrementele ontwikkeling", "leermoment", "open-closed principe", "software ontwikkelen"]
 summary: "Op een gegeven moment begon onze autorisatiecode uit de hand te lopen. De code in onze front-end was haast onleesbaar geworden van alle rollenchecks die de logica vervuilde. Erop terugkijkend, hadden we twee fouten gemaakt in onze oorspronkelijke implementatie. Ten eerste hadden we gebruikers de mogelijkheid gegeven meerdere rollen te hebben, en ten tweede bevonden onze checks zich op een te grof niveau."
 ---
 
-Toch nog even over [die Kwestie Autorisatie](/blog/21/07/de-kwestie-autorisatie/).
+Toch nog even over die [Kwestie Autorisatie](/blog/21/07/de-kwestie-autorisatie/).
 
 
 Zoals ik zei, op een gegeven moment begon onze autorisatiecode uit de hand te lopen. De code in onze front-end was haast onleesbaar geworden van alle rollenchecks die de logica vervuilde.
 
 
-Erop terugkijkend, hadden we twee fouten gemaakt in onze oorspronkelijke implementatie. Ten eerste hadden we gebruikers de mogelijkheid gegeven meerdere rollen te hebben, en ten tweede bevonden onze checks zich op een te grof niveau.
+Erop terugkijkend, hadden we twee fouten gemaakt in onze oorspronkelijke implementatie. Ten eerste hadden we gebruikers de mogelijkheid gegeven meerdere rollen te hebben. Ten tweede bevonden onze checks zich op een te grof niveau.
 
 
 ## Hoeveel rollen is genoeg?
@@ -26,13 +26,16 @@ Het idee achter het hebben van meerdere rollen, was dat we op die manier een fle
 Het bleek nodeloos complex. Verschillende rollen kunnen elkaar namelijk bijten. Stel, we hebben twee rollen *a* en *b*. Gebruikers met rol *a* hebben toegang tot een functionaliteit *x*, en gebruikers met rol *b* niet. Duidelijk, toch? Maar wat als een gebruiker zowel rol *a* als *b* heeft? Heeft diegene dan toegang tot die functionaliteit of niet?
 
 
+Het antwoord op deze vraag bleek (natuurlijk): [*it depends*](https://convincedcoder.com/2018/08/31/It-depends/). Dit betekende dat er niet alleen logica moest worden geschreven om op de juiste rol(len) te checken, maar dat er aanvullende logica was om de voorrang van de rol te bepalen binnen een bepaalde context.
+
+
 Dit probleem is al moeilijk genoeg wanneer een gebruiker twee rollen heeft. Maar wat gebeurt er als er sprake is van drie, vijf of tien rollen? Het aantal condities waar je als programmeur rekening mee moet houden, neemt exponentieel toe met elke rol. Dit levert een ware onderhoudsnachtmerrie op.
 
 
 Bovendien, het is de vraag of deze flexibiliteit in rollen überhaupt wel nodig is. De bedrijfsinhoudelijke processsen waar we voor ontwikkelen, zijn stabiel, relatief eenvoudig en kennen welonderscheiden rollen. Het is niet zo dat gebruikers constant van in hun rol wisselen in het bedrijfsproces, dus waarom wel in onze code?
 
 
-Het team besloot daarom om het wisselen tussen rollen te laten vallen. Gebruikers krijgen één rol, en die houden ze.
+Het team hakte een knoop door. Gebruikers krijgen één rol, en die houden ze.
 
 
 ## Waar check je op?
@@ -53,7 +56,7 @@ Dat zou een mogelijke oplossing kunnen zijn. Maar het is een arbeidsintensieve. 
 Het team heeft daarom iets anders bedacht om op te checken: permissies. Het idee hierachter is heel eenvoudig. Bepaalde rollen hebben bepaalde permissies. Deze kunnen overlappen. Als zowel rol *a* als *b* toegang hebben tot een bepaalde funcitonaliteit *x*, dan hebben ze beide de permissie *toegang_functionaliteit_x*.
 
 
-Ik haal deze tabel er nog eens bij. De rollen zijn gespecificeerd in de eerste rij. De permissies zijn gespecificeerd in de eerste kolom.
+Ik haal de tabel uit [de oorspronkelijke blog](/blog/21/07/de-kwestie-autorisatie/) er nog eens bij. De rollen zijn gespecificeerd in de eerste rij. De permissies zijn gespecificeerd in de eerste kolom.
 
 
 |                   | Rol *a* | Rol *b* | Rol *c* |

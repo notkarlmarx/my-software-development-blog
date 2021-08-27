@@ -1,14 +1,14 @@
 ---
-title: "Moet Je Dit Willen Testen?"
+title: "Moet je dit willen testen?"
 author: "Karl van Heijster"
-date: 2021-07-23T10:48:49+02:00
-draft: true
+date: 2021-08-27T08:09:58+02:00
+draft: false
 comments: true
-tags: ["boeken", "leermoment", "testen", "unit tests", "waarde"]
-summary: "\"*Code is a liability, not an asset.*\" Van alle zinnen in Vladimir Khorikovs *Unit Testing: Principles, Practices, and Patterns* is deze me het meest bijgebleven. Ironisch, want op het eerste gezicht is het geen zin die iets te doen heeft met unit testing. Ook testcode kan een een blok aan het been zijn. Bijvoorbeeld wanneer je de code eigenlijk niet zou moeten willen unittesten."
+tags: ["boeken", "integratietests", "leermoment", "testen", "unit tests", "waarde"]
+summary: "\"*Code is a liability, not an asset.*\" Van alle zinnen in Vladimir Khorikovs *Unit Testing: Principles, Practices, and Patterns* is deze me het meest bijgebleven. Ironisch, want op het eerste gezicht is het geen zin die iets te doen heeft met unit testing. Maar ook testcode kan een een blok aan het been zijn. Bijvoorbeeld wanneer je de code eigenlijk niet zou moeten willen unittesten."
 ---
 
-"*Code is a liability, not an asset.*" Van alle zinnen in Vladimir Khorikovs *Unit Testing: Principles, Practices, and Patterns* is deze me het meest bijgebleven. Ironisch, want op het eerste gezicht is het geen zin die iets te doen heeft met unit testing. 
+"*Code is a liability, not an asset.*" Van alle zinnen in [Vladimir Khorikovs](https://enterprisecraftsmanship.com/) [*Unit Testing: Principles, Practices, and Patterns*](https://www.manning.com/books/unit-testing) is deze me het meest bijgebleven. Ironisch, want op het eerste gezicht is het geen zin die iets te doen heeft met unit testing. 
 
 
 Dat klopt echter maar gedeeltelijk. Een groot deel van Khorikovs boek gaat ook expliciet *niet* over unit tests zelf, maar de manier waarop je je productiecode zo kunt opzetten dat deze goed testbaar is. De indringendste boodschap die Khorikov voor de lezer in petto heeft, is dan ook: codeer het niet, dan hoef je het ook niet te testen.
@@ -23,7 +23,7 @@ Maar de zin heeft niet alleen betrekking op productiecode. Ook testcode kan een 
 Of wanneer je de code eigenlijk niet zou moeten unittesten.
 
 
-Dat klinkt misschien als een tegenintuïtieve reden. Het is min of meer een dogma in de programmeerwereld dat de testcoverage van je code zo hoog mogelijk moet zijn. (Ik zeg "*min of meer* een dogma", omdat een hoge testcoverage in veel projecten - helaas! - nog geen eerste prioriteit is.) 
+Dat klinkt misschien als een tegenintuïtieve reden. Het is min of meer een dogma in de programmeerwereld dat de testcoverage van je code zo hoog mogelijk moet zijn. (Ik zeg "*min of meer* een dogma", omdat een hoge testcoverage in veel projecten - helaas! - nog een te lage prioriteit heeft voor het ontwikkelteam.) 
 
 
 Maar Khorikov wijst erop: hoewel een lage testcoverage een indicatie is van slechte code, hoeft een hoge testcoverage niet te betekenen dat de code van hoge kwaliteit is. Sommige code is zo triviaal, dat het schrijven van een unit test eigenlijk de moeite niet loont. Andere code is zo complex, dat unit tests niet het juiste middel zijn om hun werking te testen. 

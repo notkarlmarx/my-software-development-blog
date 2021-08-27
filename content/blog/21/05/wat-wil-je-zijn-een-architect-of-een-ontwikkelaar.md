@@ -1,5 +1,5 @@
 ---
-title: "Wat Wil Je Zijn: Een Architect of Een Ontwikkelaar?"
+title: "Wat wil je zijn: een architect of een ontwikkelaar?"
 date: 2021-05-10T16:02:15+02:00
 draft: false
 comments: true

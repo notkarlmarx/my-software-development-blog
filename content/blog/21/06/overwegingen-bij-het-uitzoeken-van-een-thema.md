@@ -1,5 +1,5 @@
 ---
-title: "Overwegingen Bij Het Uitzoeken Van Een Thema"
+title: "Overwegingen bij het uitzoeken van een thema"
 author: "Karl van Heijster"
 date: 2021-06-07T07:43:05+02:00
 draft: false

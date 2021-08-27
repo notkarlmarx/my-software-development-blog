@@ -1,5 +1,5 @@
 ---
-title: "Enums, Switch Statements en SOLID - Deel 4"
+title: "Enums, switch statements en SOLID - deel 4"
 date: 2021-05-21T09:07:30+02:00
 draft: false
 comments: true

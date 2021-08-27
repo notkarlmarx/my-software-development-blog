@@ -1,5 +1,5 @@
 ---
-title: "Hello World"
+title: "Hello world"
 date: 2021-04-09T15:54:15+02:00
 draft: false
 comments: true

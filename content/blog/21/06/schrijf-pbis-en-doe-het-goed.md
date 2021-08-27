@@ -1,5 +1,5 @@
 ---
-title: "Schrijf PBI's - En Doe Het Goed"
+title: "Schrijf PBI's - en doe het goed"
 date: 2021-06-25T13:50:31+02:00
 draft: false
 comments: true

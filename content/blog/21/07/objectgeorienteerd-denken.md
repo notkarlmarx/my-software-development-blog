@@ -1,5 +1,5 @@
 ---
-title: "Objectgeoriënteerd Denken"
+title: "Objectgeoriënteerd denken"
 author: "Karl van Heijster"
 date: 2021-07-02T09:48:24+02:00
 draft: false

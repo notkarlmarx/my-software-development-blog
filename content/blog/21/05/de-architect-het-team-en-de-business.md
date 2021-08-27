@@ -1,5 +1,5 @@
 ---
-title: "De Architect, Het Team en De Business"
+title: "De architect, het team en de business"
 date: 2021-05-24T11:33:22+02:00
 draft: false
 comments: true

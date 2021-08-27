@@ -1,5 +1,5 @@
 ---
-title: "\"Niet Zo Bijzonder\""
+title: "\"Niet zo bijzonder\""
 author: "Karl van Heijster"
 date: 2021-06-18T08:05:14+02:00
 draft: false

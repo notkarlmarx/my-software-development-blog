@@ -1,5 +1,5 @@
 ---
-title: "Incrementele Versus Iteratieve Ontwikkeling"
+title: "Incrementele versus iteratieve ontwikkeling"
 author: "Karl van Heijster"
 date: 2021-07-16T08:07:34+02:00
 draft: false

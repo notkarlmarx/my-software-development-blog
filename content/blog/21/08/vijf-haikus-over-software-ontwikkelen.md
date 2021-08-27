@@ -1,5 +1,5 @@
 ---
-title: "Vijf Haiku's Over Software Ontwikkelen"
+title: "Vijf haiku's over software ontwikkelen"
 author: "Karl van Heijster"
 date: 2021-08-06T10:20:10+02:00
 draft: false

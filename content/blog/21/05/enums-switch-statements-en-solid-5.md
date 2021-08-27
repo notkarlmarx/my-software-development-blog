@@ -1,5 +1,5 @@
 ---
-title: "Enums, Switch Statements en SOLID - Deel 5"
+title: "Enums, switch statements en SOLID - deel 5"
 author: "Karl van Heijster"
 date: 2021-05-28T08:14:10+02:00
 draft: false

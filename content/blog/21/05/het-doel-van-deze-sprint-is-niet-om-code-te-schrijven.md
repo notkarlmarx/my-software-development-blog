@@ -1,5 +1,5 @@
 ---
-title: "Het Doel Van Deze Sprint Is Niet Om Code Te Schrijven"
+title: "Het doel van deze Sprint is niet om code te schrijven"
 author: "Karl van Heijster"
 date: 2021-05-31T06:23:40+02:00
 draft: false

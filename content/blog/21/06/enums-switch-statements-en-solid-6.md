@@ -1,5 +1,5 @@
 ---
-title: "Enums, Switch Statemens en SOLID - Deel 6"
+title: "Enums, switch statemens en SOLID - deel 6"
 author: "Karl van Heijster"
 date: 2021-06-04T08:24:18+02:00
 draft: false

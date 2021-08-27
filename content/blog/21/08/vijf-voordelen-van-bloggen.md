@@ -1,5 +1,5 @@
 ---
-title: "Vijf Voordelen Van Bloggen"
+title: "Vijf voordelen van bloggen"
 author: "Karl van Heijster"
 date: 2021-08-16T12:46:48+02:00
 draft: false

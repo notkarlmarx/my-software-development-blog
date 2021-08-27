@@ -1,5 +1,5 @@
 ---
-title: "Presenteren Voor Programmeurs"
+title: "Presenteren voor programmeurs"
 author: "Karl van Heijster"
 date: 2021-07-05T08:38:35+02:00
 draft: false

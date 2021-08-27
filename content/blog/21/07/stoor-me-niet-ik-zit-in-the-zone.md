@@ -1,5 +1,5 @@
 ---
-title: "Stoor Me (Niet), Ik Zit In The Zone"
+title: "Stoor me (niet), ik zit in the zone"
 author: "Karl van Heijster"
 date: 2021-07-12T12:49:04+02:00
 draft: false

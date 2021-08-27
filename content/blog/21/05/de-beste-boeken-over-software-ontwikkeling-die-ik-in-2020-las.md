@@ -1,5 +1,5 @@
 ---
-title: "De Beste Boeken Over Software Ontwikkeling Die Ik in 2020 Las"
+title: "De beste boeken over software ontwikkeling die ik in 2020 las"
 date: 2021-05-03T08:46:29+02:00
 draft: false
 comments: true

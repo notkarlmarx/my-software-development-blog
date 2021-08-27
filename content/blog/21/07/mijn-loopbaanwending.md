@@ -1,5 +1,5 @@
 ---
-title: "Mijn Loopbaanwending"
+title: "Mijn loopbaanwending"
 author: "Karl van Heijster"
 date: 2021-07-09T08:50:56+02:00
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Programmeren Op De Beat"
+title: "Programmeren op de beat"
 date: 2021-07-30T11:08:56+02:00
 draft: false
 comments: true

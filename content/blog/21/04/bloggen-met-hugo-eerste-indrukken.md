@@ -1,5 +1,5 @@
 ---
-title: "Bloggen Met Hugo: Eerste Indrukken"
+title: "Bloggen met Hugo: eerste indrukken"
 date: 2021-04-16T10:44:36+02:00
 draft: false
 comments: true

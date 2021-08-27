@@ -1,5 +1,5 @@
 ---
-title: "Check Op Permissies, Niet Op Rollen"
+title: "Check op permissies, niet op rollen"
 author: "Karl van Heijster"
 date: 2021-08-20T08:11:17+02:00
 draft: false

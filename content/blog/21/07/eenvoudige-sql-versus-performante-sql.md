@@ -1,5 +1,5 @@
 ---
-title: "Eenvoudige SQL Versus Performante SQL"
+title: "Eenvoudige SQL versus performante SQL"
 author: "Karl van Heijster"
 date: 2021-07-23T10:13:16+02:00
 draft: false

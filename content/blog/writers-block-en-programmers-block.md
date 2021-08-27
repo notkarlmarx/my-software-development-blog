@@ -14,7 +14,7 @@ Mensen zeggen nou nooit tegen me: "Karl, ik zou graag willen bloggen, maar ik we
 ## *Writer's block*
 
 
-Wat daarna volgt, zo stel ik me voor, is een stroom aan tegenwerpingen die iedereen bekend voor zou moeten komen die ooit meer dan één letter op papier heeft gezet. *Maar dat is niet (precies) wat ik wil zeggen.* En: *Maar dat is niet (precies) hoe ik wil zeggen wat ik wil zeggen.* En de ergste van allemaal: *Maar daar zit toch niemand op te wachten.*
+Wat daarna volgt, zo stel ik me voor, is een stroom aan tegenwerpingen die iedereen bekend voor zou moeten komen die ooit meer dan één letter op papier heeft gezet. *Maar dat is niet (precies) wat ik wil zeggen.* En: *Maar dat is niet (precies)* hoe *ik wil zeggen wat ik wil zeggen.* En de ergste van allemaal: *Maar daar zit toch niemand op te wachten.*
 
 
 Die tegenwerpingen zijn allemaal uitdrukking van *writer's block*.

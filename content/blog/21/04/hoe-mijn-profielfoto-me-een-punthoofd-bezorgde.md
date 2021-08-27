@@ -1,5 +1,5 @@
 ---
-title: "Hoe Mijn Punthoofd Me Een Punthoofd Bezorgde"
+title: "Hoe mijn punthoofd me een punthoofd bezorgde"
 date: 2021-04-19T07:45:11+02:00
 draft: false
 comments: true

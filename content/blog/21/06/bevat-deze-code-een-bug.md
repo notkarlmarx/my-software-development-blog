@@ -1,5 +1,5 @@
 ---
-title: "Bevat Deze Code Een Bug?"
+title: "Bevat deze code een bug?"
 date: 2021-06-14T06:46:44+02:00
 draft: false
 comments: true

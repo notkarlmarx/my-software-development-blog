@@ -1,5 +1,5 @@
 ---
-title: "Schud Je Sprint Review Eens Op"
+title: "Schud je Sprint Review eens op"
 date: 2021-04-12T15:17:13+02:00
 draft: false
 comments: true

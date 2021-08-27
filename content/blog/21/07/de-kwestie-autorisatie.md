@@ -1,5 +1,5 @@
 ---
-title: "De Kwestie Autorisatie"
+title: "De kwestie autorisatie"
 author: "Karl van Heijster"
 date: 2021-07-26T16:15:03+02:00
 draft: false

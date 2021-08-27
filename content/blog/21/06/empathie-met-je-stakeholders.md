@@ -1,5 +1,5 @@
 ---
-title: "Empathie Met Je Stakeholders"
+title: "Empathie met je stakeholders"
 author: "Karl van Heijster"
 date: 2021-06-21T07:52:19+02:00
 draft: false

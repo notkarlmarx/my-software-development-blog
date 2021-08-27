@@ -1,5 +1,5 @@
 ---
-title: "Hoe Ik Mijn PBI's Opzet"
+title: "Hoe ik mijn PBI's opzet"
 date: 2021-06-28T08:45:22+02:00
 draft: false
 comments: true

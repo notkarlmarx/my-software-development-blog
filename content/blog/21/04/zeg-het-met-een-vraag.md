@@ -1,5 +1,5 @@
 ---
-title: "Zeg Het Met Een Vraag"
+title: "Zeg het met een vraag"
 date: 2021-04-26T08:08:27+02:00
 draft: false
 comments: true

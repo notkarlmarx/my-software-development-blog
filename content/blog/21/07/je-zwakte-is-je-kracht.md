@@ -1,5 +1,5 @@
 ---
-title: "Je Zwakte Is Je Kracht"
+title: "Je zwakte is je kracht"
 author: "Karl van Heijster"
 date: 2021-07-19T06:52:25+02:00
 draft: false

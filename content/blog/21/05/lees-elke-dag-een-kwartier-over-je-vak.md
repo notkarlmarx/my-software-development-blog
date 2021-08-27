@@ -1,5 +1,5 @@
 ---
-title: "Lees Elke Dag Twee Kwartier Over Je Vak"
+title: "Lees elke dag twee kwartier over je vak"
 date: 2021-05-17T16:12:27+02:00
 draft: false
 comments: true

@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2021-08-20T12:51:54+02:00
 draft: true
 comments: true
-tags: ["boeken", "recensies", "SQL", "zelfstudie"]
+tags: ["boeken", "databases", "recensies", "SQL", "zelfstudie"]
 summary: "De theorie achter relationele databases en een goede beheersing van SQL is om deze reden essentieel voor softwareontwikkelaars vandaag de dag. Studenten en professionals die hun kennis willen opfrissen, kunnen voor een toegankelijke inleiding in dit onderwerp terecht bij *Relationele databases en SQL* van Leo Wiegerink, Jeanot Bijpost en Marco de Groot. Dit relatief lijvige boekwerk (520 pagina’s) maakt de lezer in een aangenaam tempo bekend met de basis van de onderwerpen in de titel."
 ---
 

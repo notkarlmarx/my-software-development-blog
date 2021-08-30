@@ -1,5 +1,5 @@
 ---
-title: "Writer's Block en Programmer's Block"
+title: "Writer's block en programmer's block"
 author: "Karl van Heijster"
 date: 2021-07-24T21:02:52+02:00
 draft: true

@@ -1,5 +1,5 @@
 ---
-title: "Gortdroge Tests"
+title: "Gortdroge tests"
 author: "Karl van Heijster"
 date: 2021-07-17T20:51:58+02:00
 draft: true

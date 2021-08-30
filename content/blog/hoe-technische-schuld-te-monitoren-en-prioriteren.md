@@ -1,5 +1,5 @@
 ---
-title: "Hoe Technische Schuld Te Monitoren én Prioriteren"
+title: "Hoe technische schuld te monitoren én prioriteren"
 author: "Karl van Heijster"
 date: 2021-07-21T21:53:01+02:00
 draft: true

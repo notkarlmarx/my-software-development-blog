@@ -1,5 +1,5 @@
 ---
-title: "Wie Is Verantwoordelijk Voor Jouw Ontwikkeling?"
+title: "Wie is verantwoordelijk voor jouw ontwikkeling?"
 author: "Karl van Heijster"
 date: 2021-08-12T12:56:24+02:00
 draft: true

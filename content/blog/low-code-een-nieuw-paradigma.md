@@ -1,5 +1,5 @@
 ---
-title: "Low Code: Een Nieuw Paradigma?"
+title: "Low code: een nieuw paradigma?"
 author: "Karl van Heijster"
 date: 2021-07-05T04:49:38+02:00
 draft: true

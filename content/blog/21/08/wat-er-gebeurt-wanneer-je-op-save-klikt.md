@@ -1,11 +1,11 @@
 ---
 title: "Wat Er Gebeurt Wanneer Je Op 'Save' Klikt"
 author: "Karl van Heijster"
-date: 2021-08-20T12:51:54+02:00
-draft: true
+date: 2021-08-30T07:59:08+02:00
+draft: false
 comments: true
 tags: ["boeken", "databases", "recensies", "SQL", "zelfstudie"]
-summary: "De theorie achter relationele databases en een goede beheersing van SQL is om deze reden essentieel voor softwareontwikkelaars vandaag de dag. Studenten en professionals die hun kennis willen opfrissen, kunnen voor een toegankelijke inleiding in dit onderwerp terecht bij *Relationele databases en SQL* van Leo Wiegerink, Jeanot Bijpost en Marco de Groot. Dit relatief lijvige boekwerk (520 pagina’s) maakt de lezer in een aangenaam tempo bekend met de basis van de onderwerpen in de titel."
+summary: "De theorie achter relationele databases en een goede beheersing van SQL is essentieel voor softwareontwikkelaars vandaag de dag. Studenten en professionals die hun kennis willen opfrissen, kunnen voor een toegankelijke inleiding in dit onderwerp terecht bij *Relationele databases en SQL* van Leo Wiegerink, Jeanot Bijpost en Marco de Groot. Dit relatief lijvige boekwerk (520 pagina’s) maakt de lezer in een aangenaam tempo bekend met de basis van de onderwerpen in de titel."
 ---
 
 Heb je je wel eens afgevraagd wat er gebeurt wanneer je op de *save*-knop drukt, in willekeurig welke [applicatie](https://en.wikipedia.org/wiki/Application_software) (computerprogramma)? Datgene waar je mee bezig was, de gegevens die je hebt ingevoerd, moet in dat geval ergens worden neergezet. En dat niet alleen, die gegevens moeten ook weer makkelijk terug te halen zijn wanneer je verder wil gaan met je werk. Sommige, vaak heel eenvoudige applicatie’s hebben geen data-opslagfunctionaliteit nodig, maar voor de overgrote meerderheid geldt dat niet.
@@ -39,7 +39,7 @@ WHERE Id = ‘1’
 Dat ziet er eenvoudig genoeg uit: Kolom1 en Kolom2 worden opgehaald uit Tabel1, voor elke rij waarvoor geldt dat het Id gelijk is aan “1”. Maar wat een naïeve programmeur bijvoorbeeld al gauw over het hoofd zou zien, is dat de bovenstaande query niet van boven naar beneden dient te worden gelezen. Conceptueel bezien is het beter om bij de tweede regel te beginnen: ga uit van Tabel1, neem alle rijen waarvoor het Id gelijk is aan “1”, en geef vervolgens de informatie die in Kolom1 en Kolom2 staat. Het is een subtiel verschil, maar naarmate de queries complexer worden, betaalt deze kennis zich dubbel en dwars terug.
 
 
-Want queries kunnen al gauw erg complex worden, bijvoorbeeld wanneer er statistische gegevens worden opgevraagd (“hoeveel rijen met conditie x heeft deze database?”), of wanneer gegevens uit verschillende tabellen met elkaar gecombineerd moeten worden. De uitleg van de auteurs wordt toegelicht met veel broodnodige voorbeelden. Hoewel de stof naar zijn aard behoorlijk aan de droge kant is, weten de schrijvers de boel te verlevendigen door hun voorbeelden te situeren in aansprekende contexten, zoals een toetjesboek of een ruimtevaartbedrijf.
+Want queries kunnen al gauw erg complex worden, bijvoorbeeld wanneer er statistische gegevens worden opgevraagd (“hoeveel rijen met conditie *x* heeft deze database?”), of wanneer gegevens uit verschillende tabellen met elkaar gecombineerd moeten worden. De uitleg van de auteurs wordt toegelicht met veel broodnodige voorbeelden. Hoewel de stof naar zijn aard behoorlijk aan de droge kant is, weten de schrijvers de boel te verlevendigen door hun voorbeelden te situeren in aansprekende contexten, zoals een toetjesboek of een ruimtevaartbedrijf.
 
 
 Daarnaast wordt de lezer uitgedaagd zich actief tot de leerstof te verhouden door middel van opdrachten die de lopende tekst onderbreken en elk hoofdstuk afsluiten. Deze zijn essentieel voor een goede beheersing van SQL. Als softwareontwikkelaar is het belangrijk dat je de taal als het ware “in je vingers” zit, wil je er goed mee kunnen werken. De bijbehorende databases en uitwerkingen van de opdrachten zijn te vinden op de [bijbehorende website](https://www.relationeledatabasesensql.nl/). Deze bevat daarnaast aanvullend materiaal voor docenten en enthousiastelingen over normalisatietheorie.
@@ -60,4 +60,4 @@ Het is met name voor beginnende ontwikkelaars daarom geen overbodige luxe om *Re
 Het laatste, verdiepende deel, kent daarnaast een uitstekende uiteenzettingen over [performanceverbetering](https://en.wikipedia.org/wiki/Software_performance_testing) en, belangrijker nog, hoe complexe queryproblemen stap voor stap kunnen worden opgehakt in eenvoudiger deelproblemen. Die kennis is van toegevoegde waarde voor elke softwareontwikkelaar, of die zich nu intensief bezighoudt met SQL of niet.
 
 
-*Deze recensie verscheen oorspronkelijk op [De Leesclub van Alles]() LINK.*
+*Deze recensie verscheen oorspronkelijk op [De Leesclub van Alles](https://deleesclubvanalles.nl/).*

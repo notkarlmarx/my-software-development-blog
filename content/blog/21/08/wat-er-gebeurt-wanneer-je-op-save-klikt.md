@@ -1,5 +1,5 @@
 ---
-title: "Wat Er Gebeurt Wanneer Je Op 'Save' Klikt"
+title: "Wat er gebeurt wanneer je op 'save' klikt"
 author: "Karl van Heijster"
 date: 2021-08-30T07:59:08+02:00
 draft: false

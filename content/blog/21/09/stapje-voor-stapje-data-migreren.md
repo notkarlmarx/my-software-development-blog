@@ -1,14 +1,14 @@
 ---
 title: "Stapje voor stapje data migreren"
 author: "Karl van Heijster"
-date: 2021-08-27T10:11:37+02:00
-draft: true
+date: 2021-09-06T07:13:30+02:00
+draft: false
 comments: true
 tags: ["databases", "datamigratie", "leermoment", "NoSQL", "open source", "procesverbetering", "proof of concept", "software ontwikkelen", "testen"]
-summary: "Als er één constante is in softwareontwikkelland, dan is het wel dat software constant verandert. Nieuwe inzichten noodzaken ontwikkelaars om hun code aan te passen om bepaalde *use cases* beter te kunnen ondersteunen. Soms betekent dat dat er een aanpassing moet plaatsvinden in je model. Hoe ga daarbij om met data die is opgeslagen volgens het verouderd model?"
+summary: "Als er één constante is in softwareontwikkelland, dan is het wel dat software constant verandert. Nieuwe inzichten noodzaken ontwikkelaars om hun code aan te passen om bepaalde *use cases* (beter) te kunnen ondersteunen. Soms betekent dat dat er een aanpassing moet plaatsvinden in je model. Hoe ga daarbij om met data die nog is opgeslagen volgens het verouderd model?"
 ---
 
-Als er één constante is in softwareontwikkelland, dan is het wel dat software constant verandert. Nieuwe inzichten noodzaken ontwikkelaars om hun code aan te passen om bepaalde [*use cases*](https://nl.wikipedia.org/wiki/Usecase) beter te kunnen ondersteunen. Soms betekent dat dat bepaalde [algoritmen](https://nl.wikipedia.org/wiki/Algoritme) moeten worden vervangen, andere keren betekent dat dat er een aanpassing moet plaatsvinden in het model waar de algoritmen gebruik van maken.
+Als er één constante is in softwareontwikkelland, dan is het wel dat software constant verandert. Nieuwe inzichten noodzaken ontwikkelaars om hun code aan te passen om bepaalde [*use cases*](https://nl.wikipedia.org/wiki/Usecase) (beter) te kunnen ondersteunen. Soms betekent dat dat bepaalde [algoritmen](https://nl.wikipedia.org/wiki/Algoritme) moeten worden vervangen, andere keren betekent dat dat er een aanpassing moet plaatsvinden in het model waar de algoritmen gebruik van maken.
 
 
 ## Modelwijzigingen
@@ -32,7 +32,7 @@ Mijn team heeft jarenlang van dat eerste smaakje mogen proeven in onze *legacy*-
 Deze oplossingsrichting is relatief eenvoudig, maar niet zonder nadelen. Ten eerste speelt er een coördinatievraagstuk. Wanneer je de nieuwe code uitrolt zonder het migratiescript op de productieomgeving te draaien, wordt de applicatie onbruikbaar. Andersom geldt dat, als je geen boze gebruikers wil, je het migratiescript niet kunt draaien zonder de nieuwe code uit te rollen.
 
 
-Dit maakte een uitrol een heikel punt, dat goede afstemming vergt met gebruikers. Je kunt niet elke nieuwe wijziging zomaar meer doorzetten naar je productieomgeving. Als gevolg daarvan hopen codewijzigingen zich op. Wanneer er dan een bug wordt ontdekt, valt moeilijk na te gaan in welke codewijziging deze erin is geslopen.
+Dit maakt een uitrol een heikel punt, dat goede afstemming vergt met gebruikers. Je kunt niet elke nieuwe wijziging zomaar meer doorzetten naar je productieomgeving. Als gevolg daarvan hopen codewijzigingen zich op. Wanneer er dan een bug wordt ontdekt, valt moeilijk na te gaan bij welke wijziging deze erin is geslopen.
 
 
 Een tweede probleem is [schaalbaarheid](https://en.wikipedia.org/wiki/Scalability). In de loop der jaren was de database van onze applicatie enorm gegroeid. Hierdoor was de migratie geen kwestie van seconden meer, zoals op onze ontwikkellaptops, maar minuten. Als er halverwege de migratie een probleem ontstond, dan was onze data in corrupte staat geraakt en moest de boel terug worden gedraaid. Vervolgens begon het proces weer van voren af aan.
@@ -55,13 +55,13 @@ Tijdens de [*proof of concept*](https://en.wikipedia.org/wiki/Proof_of_concept) 
 
 - **Het werkt!** Het is mogelijk om *on the fly* nieuwe [*properties*](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties) aan een object toe te voegen, of bestaande *properties* te wijzigen, wanneer deze opgehaald worden uit onze database. De oude data wordt omgezet naar het nieuwe model *wanneer dat nodig is*, niet wanneer het ontwikkelteam dat forceert.
 
-- **Deze functionaliteit laat zich niet integratietesten.** Ik had een test geschreven waarin ik met wat trucage een verouderd object opsloeg in RavenDB, om te zien of ik hem als geüpdate object terug zou krijgen, maar dat vond de database niet zo leuk. Binnen de POC bleef dit ongemak echter beperkt: de functionaliteit liet zich net zo goed handmatig bewijzen. 
+- **Pas op voor botsende *properties*.** RavenDB kent zijn eigen [versioneringssysteem](https://ravendb.net/docs/article-page/5.2/csharp/server/extensions/revisions), waar we als ontwikkelteam dankbaar gebruik van maken. Onze objecten kennen dan ook een *Version*-*property* waarmee we de versie van een object naar de eindgebruiker communiceren. Migrations.Json.Net veronderstelt echter ook een *Version*-*property* om te kunnen bepalen welke migratiescripts er allemaal uitgevoerd dienen te worden. Een versie 1-object dat wordt opgehaald via een versie 3-model, zal migraties moeten ondergaan van versie 1 naar 2 naar 3. 
+
+  Zoals te verwachten valt, is dat een verwarrende situatie voor beide tools. Om hiermee om te kunnen gaan, moet het team deze ambiguïteit oplossen. Dat kan bijvoorbeeld door onze eigen *Version* om te zetten naar een *property* met een andere naam. (Merk op dat het gebruik van Migrations.Json.Net niet de geschikte kandidaat is om dit voor elkaar te krijgen, hiervoor moet een migratiescript oude stijl worden geschreven.) Een andere optie is om een *pull request* te doen op Migrations.Json.Net om de naam van die *property* configurabel te maken. 
+
+- **Migraties laten zich niet integratietesten.** Ik had een test geschreven waarin ik met wat trucage een verouderd object opsloeg in RavenDB, om te zien of ik hem als geüpdate object terug zou krijgen, maar dat vond de database niet zo leuk. Binnen de POC bleef dit ongemak echter beperkt: de functionaliteit liet zich net zo goed handmatig bewijzen. 
   
   Maar voor de daadwerkelijke implementatie van deze techniek is het wel belangrijk om deze beperking in het achterhoofd te houden. Het haalt een stukje zekerheid weg voor de ontwikkelaar wiens taak het is de migratie te schrijven, en legt extra daarnaast verantwoordelijkheid bij de tester neer.
-
-- **Pas op voor botsende *properties*.** RavenDB kent zijn eigen [versioneringssysteem](https://ravendb.net/docs/article-page/5.2/csharp/server/extensions/revisions), waar we als ontwikkelaarteam dankbaar gebruik van maken. Onze objecten kennen dan ook een *Version*-*property* waarmee we de versie van een object naar de eindgebruiker communiceren. Migrations.Json.Net veronderstelt echter ook een *Version*-*property* om te kunnen bepalen welke migratiescripts er allemaal uitgevoerd dienen te worden. Een object dat op versie 3 zit, zal de migraties uit moeten voeren om van versie 1 naar 2 naar 3 te gaan. 
-
-  Zoals te verwachten valt, is dat een verwarrende situatie voor beide tools. Om hiermee om te kunnen gaan, moet het team deze ambiguïteit oplossen. Dat kan ofwel door onze eigen *Version* om te zetten naar een andere naam, ofwel door een *pull request* te doen op Migrations.Json.Net om de naam van die property configurabel te maken. Merk op dat het gebruik van Migrations.Json.Net niet de geschikte kandidaat is om dit voor elkaar te krijgen, hiervoor moet een migratiescript oude stijl worden geschreven.
 
 
 ## Stapje voor stapje
@@ -76,4 +76,4 @@ Hetzelfde geldt voor de schaalbaarheidsproblematiek. Het kritieke moment waarop 
 Bovendien is de oplossing eenvoudig te bouwen door gebruik te maken van onze bestaande tooling in combinatie met *open source*-software.
 
 
-Kleven er dan helemaal geen nadelen aan deze oplossingsrichting? Ongetwijfeld wel. Maar daar zullen we in de loop van de tijd pas achter komen, stapje voor stapje. En dan zal ik ongetwijfeld een blog schrijven over de zegeningen van *big bang*-datamigraties.
+Kleven er dan helemaal geen nadelen aan deze oplossingsrichting? Ongetwijfeld wel. Maar daar zullen we in de loop van de tijd pas achter komen, stapje voor stapje. En dan zal ik vast en zeker een blog schrijven over de zegeningen van *big bang*-datamigraties.

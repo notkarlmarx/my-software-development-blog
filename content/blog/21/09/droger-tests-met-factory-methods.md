@@ -1,10 +1,10 @@
 ---
-title: "Gortdroge tests"
+title: "Droger tests met factory methods"
 author: "Karl van Heijster"
-date: 2021-07-17T20:51:58+02:00
-draft: true
+date: 2021-09-10T06:55:36+02:00
+draft: false
 comments: true
-tags: ["clean code", "DRY", "testen", "unit tests"]
+tags: ["clean code", "DRY", "ontwerppatronen", "testen", "unit tests"]
 summary: "Ga eens voor jezelf na: hoe instantieer je objecten in je unit tests? Introduceer je veel codeduplicatie over tests heen? Wat zegt dit over je houding tegenover testcode? Is die houding hetzelfde als die tegenover productiecode?"
 ---
 
@@ -20,10 +20,10 @@ Oké, afgezien van het feit dat ze nogal triviale code testen. En dat de naamgev
 Ik denk dat de meeste mensen hier drie keurig volgens het boekje opgezette unit tests zien. En weet je wat het is: die mensen hebben gelijk, want het *zijn* keurig volgens het boekje opgezette unit tests.
 
 
-Toch roept deze code irritatie bij mij op. Dat is omdat deze testsuite één van de meest basale principes van softwareontwikkeling schendts: *DRY*, oftewel: *don't repeat yourself*.
+Toch roept deze code irritatie bij mij op. Dat is omdat deze testsuite één van de meest basale principes van softwareontwikkeling schendt: [*DRY*](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), oftewel: *don't repeat yourself*.
 
 
-Zie je wat ik zie?
+Zie je wat ik bedoel?
 
 
 ## Wat is het probleem?
@@ -32,7 +32,7 @@ Zie je wat ik zie?
 Je zou kunnen stellen dat de bovenstaande vorm van duplicatie redelijk goedaardig is. Wie waarschuwt voor de gevaren van codeduplicatie, heeft meestal de duplicatie van complete stukken logica in het achterhoofd. Dit heeft tot gevolg dat bepaalde kennis verspreid wordt over de codebase. Elke keer als die kennis verouderd raakt, moet de ontwikkelaar de codebase afspeuren naar de diverse plekken waar deze aangepast dient te worden.
 
 
-Het is waar: de bovenstaande vorm van codeduplicatie is minder kritiek dan dat. Maar hij is minstens even irritant. Wat gebeurt er bijvoorbeeld, wanneer je de constructor van `SystemUnderTest` aanpast? Dan moet je elke test waarin dit object wordt geïnstantieerd aanpassen. Het schenden van *DRY* leidt tot een toename van *test fragility*.
+Het is waar: het steeds opnieuw instantiëren van nieuwe objecten in een test is minder kritiek dan dat. Maar het is minstens even irritant. Wat gebeurt er bijvoorbeeld, wanneer je de constructor van `SystemUnderTest` aanpast? Dan moet je elke test aanpassen waarin dit object wordt geïnstantieerd. Het schenden van *DRY* leidt tot een toename van *test fragility*.
 
 
 Dat is een probleem dat toeneemt naarmate je je codebase uitgebreider test. Het werpt een drempel op de goede gewoonte te ontwikkelen je code grondig te testen.
@@ -44,7 +44,7 @@ Dat is een probleem dat toeneemt naarmate je je codebase uitgebreider test. Het 
 Neem nu even afstand van de bovenstaande code en ga voor jezelf na: schrijf ik mijn tests op dezelfde manier? Dat wil zeggen: instantieer ik in elke method op dezelfde manier dezelfde objecten? 
 
 
-Begrijp me niet verkeerd, het is niet erg als je dat doet. Tot voor kort deed ik precies hetzelfde. De vraag is alleen: waarom?
+Begrijp me niet verkeerd, het is niet erg als je dat doet. Ik deed lang genoeg precies hetzelfde. De vraag is alleen: waarom?
 
 
 Ik kan twee antwoorden op die vraag bedenken. Het eerste is betrekkelijk neutraal, het tweede cynisch. 
@@ -105,6 +105,9 @@ Nu zal ik niet beweren een expert te zijn in het zo efficiënt mogelijk opzetten
 
 
 Als de constructor van `SystemUnderTest` wordt aangepast, dan hoeft dat nog maar op één plek te gebeuren. En als verschillende tests altijd dezelfde afhankelijkheid verwachten, dan kan deze worden toegevoegd aan de *factory method*, in plaats van de *Arrange*-sectie van diverse tests uit te hoeven breiden met extra informatie. Het abstraheren van zulke informatie naar helpers met een desciptieve naam, zorgt ervoor dat je test goed leesbaar blijft.
+
+
+De factory methods zijn natuurlijk nog maar stap 1. Naarmate de codebase uitgebreider wordt, loont het zich om deze te verzamelen in zogenaamde [*ObjectMothers*](https://martinfowler.com/bliki/ObjectMother.html). Dat zijn factory classes die speciaal voor testdoeleinden geschreven worden. Zulke classes combineren DRY met het [Single-Responsibility Principe](https://en.wikipedia.org/wiki/Single-responsibility_principle). Ze wijzen de verantwoordelijkheid van het creëren van nieuwe objecten toe aan één plek.
 
 
 Een andere methode om codeduplicatie te voorkomen en de lees- en onderhoudbaarheid van je tests te vergroten, is door gebruik te maken van [Test Data Builders](http://natpryce.com/articles/000714.html). Dat is een patroon dat al langer op mijn verlanglijstje staat om toe te passen in onze testcode, maar waar ik tot mijn grote spijt nog steeds niet aan toegekomen ben. Wellicht in een volgende blog...?

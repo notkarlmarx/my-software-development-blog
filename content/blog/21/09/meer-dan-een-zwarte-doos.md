@@ -1,8 +1,8 @@
 ---
 title: "Meer dan een zwarte doos"
 author: "Karl van Heijster"
-date: 2021-09-07T08:21:11+02:00
-draft: true
+date: 2021-09-13T07:53:44+02:00
+draft: false
 comments: true
 tags: ["boeken", "clean code", "recensies", "zelfstudie"]
 summary: "De basis van een programmeren kost je misschien een weekendje, maar een goed programma leren schrijven, dat is een proces van jaren. Waarom? Het besef dat een goed programma meer is dan een werkend programma, daalt pas na veel vallen en opstaan in. Studenten en beginnend programmeurs die meer uit hun strubbelingen willen halen, doen er daarom goed aan Perdita Stevens' *How to Write Good Programs* aandachtig te lezen."

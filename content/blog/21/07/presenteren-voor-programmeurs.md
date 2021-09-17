@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2021-07-05T08:38:35+02:00
 draft: false
 comments: true
-tags: ["communicatie", "presenteren"]
+tags: ["communicatie", "Developer Meet-up", "presenteren"]
 summary: "Ik zal niet beweren dat ik een ster ben in presenteren. Maar vergeleken met mijn collega-ontwikkelaars steek ik klaarblijkelijk niet slecht af. Dat heeft denk ik alles te maken met het feit dat ik mijn publiek meeneem in mijn voorbereiding, en iets van mezelf in zo'n presentatie probeer te leggen. Laatst, bijvoorbeeld, toen ik de intro van de eerste teamoverstijgende *Developer meet-up* aan elkaar mocht praten."
 ---
 

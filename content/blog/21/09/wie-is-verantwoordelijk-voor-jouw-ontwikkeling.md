@@ -1,26 +1,26 @@
 ---
 title: "Wie is verantwoordelijk voor jouw ontwikkeling?"
 author: "Karl van Heijster"
-date: 2021-08-12T12:56:24+02:00
-draft: true
+date: 2021-09-20T08:03:22+02:00
+draft: false
 comments: true
 tags: ["boeken", "carrièrepad", "professionaliteit", "software ontwikkelaar (rol)", "verantwoordelijkheid"]
 summary: "Wie zijn vakinhoudelijke ontwikkeling afhankelijk maakt van zijn werkgever, zegt eigenlijk die ontwikkeling zelf niet zo belangrijk te vinden. Maar je persoonlijke ontwikkeling is *wel* belangrijk. Daarom is het essentieel dat je daar zelf de leiding in neemt. Als jij het niet belangrijk genoeg vindt om er tijd en geld in te steken, hoe kun je dan van je werkgever verwachten dat die dat wel doet?"
 ---
 
-Er zijn maar weinig sectoren die zich zo snel ontwikkelen als de ICT. Als ontwikkelaar is het daarom essentieel om je vakkennis bij te houden. Dat kan op verschillende manieren, bijvoorbeeld door boeken en blogs te lezen (of schrijven! [LINK]), conferenties te bezoeken, of door cursussen en trainingen te volgen. En natuurlijk ook: door nieuwe uitdagingen aan te gaan op je werk!
+Er zijn maar weinig sectoren die zich zo snel ontwikkelen als de ICT. Als ontwikkelaar is het daarom essentieel om je vakkennis bij te houden. Dat kan op verschillende manieren, bijvoorbeeld door boeken en blogs te lezen (of [schrijven](/blog/21/08/vijf-voordelen-van-bloggen/)!), conferenties te bezoeken, of door cursussen en trainingen te volgen. En natuurlijk ook: door nieuwe uitdagingen aan te gaan op je werk.
 
 
-## Wie is verantwoordelijk? 
+## Wie investeert? 
 
 
 Nu bevind ik me gelukkig in de luxepositie dat mijn leidinggevende actief meedenkt over mijn persoonlijke en vakinhoudelijke ontwikkeling. Maar dat is geen gegeven, en daar ben ik me goed van bewust. Er zijn genoeg bedrijven die van mening zijn dat de werknemers zelf in hun eigen ontwikkeling moeten investeren.
 
 
-Dat is geen ideale situatie - niet voor de werknemer, maar ook niet voor de werkgever. Het is in het belang van het bedrijf dat deze werknemers in dienst heeft met *up to date* vakkennis. En zoals ik zei: boeken zijn relatief goedkoop, dus ook voor het bedrijf geldt dat de kosten in het niet vallen bij de baten.
+Dat is geen ideale situatie - niet voor de werknemer, maar ook niet voor de werkgever. Het is in het belang van het bedrijf dat deze werknemers in dienst heeft met *up to date* vakkennis. Dat vergt misschien een investering, maar deze betaalt zich dubbel en dwars terug, zeker als het om een relatief lage investering gaat zoals de aanschaf van boeken.
 
 
-Ik heb de cijfers er eens op nageslagen, en kwam tot de conclusie dat mijn werkgever inmiddels aan [BEDRAG] heeft neergelegd voor mijn boeken. De baten, daarentegen? Onbetaalbaar!
+(Ik heb de cijfers er eens op nageslagen, en kwam tot de conclusie dat mijn werkgever de laatste paar jaar zo'n zes- à zevenhonderd euro heeft neergelegd voor mijn boeken. De baten, daarentegen? Onbetaalbaar!)
 
 
 ## Wat te doen?
@@ -72,7 +72,7 @@ Een snellere en goedkopere manier om je kennis te vergroten is daarom het lezen 
 Ik meen dat het [*The Pragmatic Programmer*](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/) was, waarin werd gesteld dat het een goede gewoonte is om maandelijks één boek over een technisch onderwerp te consumeren. (Maar het zou ook [*The Clean Coder*](https://www.pearson.com/us/higher-education/program/Martin-Clean-Coder-The-A-Code-of-Conduct-for-Professional-Programmers/PGM8366.html) geweest kunnen zijn, dus pin me er niet op vast.) En als het in een boek staat, moet het wel waar zijn! 
 
 
-Het is jouw verantwoordelijkheid om aan de literatuur komen die je nodig hebt om je vak goed te kunnen doen. Als dat betekent dat je een paar tientjes neer moet leggen voor zo'n boek, dan is dat maar zo.
+Het is jouw verantwoordelijkheid om aan de literatuur te komen die je nodig hebt om je vak goed te kunnen doen. Als dat betekent dat je een paar tientjes neer moet leggen voor zo'n boek, dan is dat maar zo.
 
 
 ## Collega's *to the rescue*
@@ -84,7 +84,7 @@ Wonen in Nederland kost tegenwoordig een godsvermogen, dus mocht je desondanks d
 Je zou de kosten bijvoorbeeld kunnen delen met collega's. Hebben zij vakliteratuur die je nog graag wil lezen? Vraag of je het boek mag lezen. En wees niet egoïstisch: bied ook je eigen boeken aan. 
 
 
-Leren hoeft geen individuele bezigheid te zijn. Integendeel, jullie gedeelde bibliotheken kunnen aanleiding geven tot interessante discussies die jullie begrip vergroot! 
+Leren hoeft geen individuele bezigheid te zijn. Integendeel, jullie gedeelde bibliotheken kunnen aanleiding geven tot interessante discussies die jullie begrip vergroten! 
 
 
 ## Recenseren als leermiddel

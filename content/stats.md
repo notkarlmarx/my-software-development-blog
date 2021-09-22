@@ -18,7 +18,7 @@ Gemiddeld aantal woorden per blog: {{< stats/averagewordcount >}}.
 <br>
 
 
-Totaal aantal tags: {{< stats/totaltagcount >}}
+Totaal aantal tags: {{< stats/totaltagcount >}}.
 
 
 Top 10 tags: 

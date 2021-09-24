@@ -35,7 +35,7 @@ die lullen vooral
 <br>
 
 
-**Ontwikkelaars onder elkaar**
+**Ontwikkelaars (onder elkaar)**
 
 <br>
 

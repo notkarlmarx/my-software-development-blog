@@ -1,8 +1,8 @@
 ---
 title: "Vijf+1 haiku's over software ontwikkelen"
 author: "Karl van Heijster"
-date: 2021-07-20T21:38:44+02:00
-draft: true
+date: 2021-09-24T08:20:29+02:00
+draft: false
 comments: true
 tags: ["poëzie", "software ontwikkelen"]
 summary: "*er is maar één ding / dat mijn code kan breken: / een eindgebruiker*"
@@ -21,7 +21,7 @@ een eindgebruiker
 <br>
 <br>
 
-**Mijn laptop**
+**Herinnering**
 
 <br>
 
@@ -60,7 +60,7 @@ aan het wieden dus
 <br>
 <br>
 
-**Mijn beste vriend**
+**Vriend**
 
 <br>
 

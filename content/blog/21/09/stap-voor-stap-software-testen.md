@@ -1,8 +1,8 @@
 ---
 title: "Stap voor stap software testen"
 author: "Karl van Heijster"
-date: 2021-09-24T11:23:32+02:00
-draft: true
+date: 2021-09-27T08:12:14+02:00
+draft: false
 comments: true
 tags: ["agile ontwikkeling", "boeken", "recensies", "samenwerking", "software ontwikkelen", "testen"]
 summary: "Software testen is een vak apart. Veel ontwikkelaars hebben wel een schetsmatige notie van hoe een goede test eruit dient te zien, maar ontberen een gedegen theoretisch fundament. Zulke ontwikkelaars zouden er goed aan doen om *Essentials of Software Testing* van Ralf Bierig, Stephen Brown, Edgar Galván en Joe Timoney te lezen."

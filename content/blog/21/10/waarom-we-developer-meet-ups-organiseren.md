@@ -1,8 +1,8 @@
 ---
 title: "Waarom we Developer Meet-ups organiseren"
 author: "Karl van Heijster"
-date: 2021-09-17T09:42:36+02:00
-draft: true
+date: 2021-10-01T07:36:02+02:00
+draft: false
 comments: true
 tags: ["bedrijfscultuur", "Developer Meet-up", "leercultuur", "leermoment", "procesverbetering", "samenwerking", "waarde", "werkplezier"]
 summary: "Sinds kort organiseren enkele enthousiaste collega's en ik iets wat we een *Developer Meet-up* hebben genoemd. Dat is een informele bijeenkomst van geïnteresseerde softwareontwikkelaars binnen het bedrijf, die op een laagdrempelige manier ervaringen uitwisselen over een aan softwareonwtikkeling gerelateerd onderwerp. Waarom organiseren we Developer Meet-ups? In de intropraatjes dat ik als initiatiefnemer verzorg, onderscheid ik drie redenen."
@@ -41,7 +41,7 @@ Een Developer Meet-up is een manier om je in contact met collega's te brengen. E
 Op korte termijn zijn er natuurlijk ook voordelen: je leert er iets van! In het beste geval leer je iets nieuws of open je jezelf voor andere perspectieven. In het slechtste geval leer je niets, maar dat zou je ook doen als je niet aansloot. 
 
 
-(Trouwens, ik ben van mening dat er met de juiste *mind set* overal wel wat te leren valt. Als je niets leert van een enthousiaste collega, kijk dan eens goed in de spiegel. Misschien leer je er wel iets van!) 
+(Trouwens, ik ben van mening dat er met de juiste *mind set* overal wel wat te leren valt. Als je niets leert van een enthousiaste collega, kijk dan eens goed in de spiegel. Misschien leer je daar wél iets van!) 
 
 
 Op papier zou ik Developer Meet-ups onder het kopje *kennisdeling* scharen, maar er is een reden waarom ik dit niet als eerste reden aanvoer. Het bijwonen van een Developer Meet-up zou niet afhankelijk moeten zijn van het onderwerp. Wie zo'n bijeenkomst overslaat omdat hij al voldoende kennis meent te hebben over *infrastructure as code* of *low code development*, ziet de "zachte", niet-inhoudelijke kansen om te leren over het hoofd.

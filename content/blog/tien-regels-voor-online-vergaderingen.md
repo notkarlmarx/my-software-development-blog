@@ -16,13 +16,13 @@ Maar het betekent ook: online vergaderen, heel veel online vergaderen. Dit zijn 
 
 1. Zet je camera aan. Dit klinkt misschien als een open deur, maar niet iedereen voelt zich er prettig bij continu in beeld te zijn tijdens een vergadering. Ik raad toch iedereen aan zich over die verlegenheid heen te zetten. Je collega's kunnen zien tijdens een discussie voegt ontzettend veel informatie toe en dat maakt het vergaderen een stuk makkelijker. Trouwens, het komt de gezelligheid ook ten goede.
 
-2. Zet je geluid uit. Beter nog zou zijn: vergader in een stille ruimte, maar die luxe heeft niet iedereen. Dus mute jezelf zoveel mogelijk als je niet aan het woord bent. Zorg dat je de keyboard shortcut hiervoor in de vingers hebt. In [Microsoft Teams](https://www.microsoft.com/nl-nl/microsoft-teams/log-in) is dat `Ctrl + Shift + M`.
+2. Zet je geluid uit als je niet aan het woord bent. Beter nog zou zijn: vergader in een stille ruimte, maar die luxe heeft niet iedereen. Dus mute jezelf zoveel mogelijk als je niet aan het woord bent. Zorg dat je de keyboard shortcut hiervoor in de vingers hebt. In [Microsoft Teams](https://www.microsoft.com/nl-nl/microsoft-teams/log-in) is dat `Ctrl + Shift + M`.
 
 3. Gebruik oordopjes. Wanneer je vergadert op de speakers van je laptop, heb je het risico dat je collega's zichzelf met vertraging terughoren via jouw microfoon. Dat is irritant. Wees niet die persoon.
 
-4. Probeer je tijdens vergaderingen zoveel mogelijk tot één scherm te beperken (tenzij je in de positie bent waarin je je scherm moet delen; zie punt 6). Het is verleidelijk om je werk (of - foei! - je [social media](https://www.linkedin.com/in/karl-van-heijster-833503aa/)) op je tweede scherm open te hebben, terwijl de vergadering zich op het eerste scherm voltrekt. Maar dit komt niemand ten goede. Wie denkt dat 'ie goed kan multitasken, kan vooral goed tegen zichzelf liegen. Reserveer het multitasken voor de momenten waarop dit echt niet anders kan.
+4. Probeer je tijdens vergaderingen zoveel mogelijk tot één scherm te beperken (tenzij je in de positie bent waarin je je scherm moet delen; zie punt 6). Het is verleidelijk om je werk (of - foei! - je [social media](https://www.linkedin.com/in/karl-van-heijster-833503aa/)) op het ene scherm open te hebben, terwijl de vergadering zich op het andere scherm voltrekt. Maar dit komt niemand ten goede. Wie denkt dat 'ie goed kan multitasken, kan vooral goed tegen zichzelf liegen. Reserveer het multitasken voor de momenten waarop dit echt niet anders kan.
 
-5. Plaats je collega's op je eerste scherm, het scherm waar je webcam staat. Doe dat ook wanneer je een tweede scherm hebt dat groter is en jou dus meer gemak verschaft. Het is niet prettig voor mensen om tegen de zijkant van je gezicht aan te praten.
+5. Plaats je collega's op je eerste scherm, dat wil zeggen het scherm waar je webcam staat. Doe dat ook wanneer je een tweede scherm hebt dat groter is en jou dus meer gemak verschaft. Het is niet prettig voor mensen om tegen de zijkant van je gezicht aan te praten.
 
 6. Gebruik je tweede scherm alleen in geval van presentaties. Reserveer je eerste scherm voor je collega's (punt 5). Zo kun je de reacties van je toehoorders in de gaten houden terwijl je je verhaal doet.
 

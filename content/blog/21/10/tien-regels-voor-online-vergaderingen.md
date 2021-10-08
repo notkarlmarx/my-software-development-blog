@@ -1,14 +1,14 @@
 ---
 title: "Tien regels voor online vergaderingen"
 author: "Karl van Heijster"
-date: 2021-09-01T07:50:41+02:00
-draft: true
+date: 2021-10-08T08:08:25+02:00
+draft: false
 comments: true
 tags: ["thuiswerken", "vergaderen"]
 summary: "Schenk jezelf geen nieuwe kop thee in aan het begin van een vergadering die langer dan een uur duurt. Je zal jezelf halverwege de vergadering moeten verexcuseren. Of, erger nog, ondraaglijk lang toeleven naar het volgende pauzemoment, in plaats van actief bij te kunnen dragen aan de discussie."
 ---
 
-Zo'n anderhalf jaar na het uitbreken van de coronacrisis, is thuiswerken in de ICT de norm geworden. En dat zal, ook wanneer we terugkeren naar een enigszins normale situatie, waarschijnlijk zo blijven. Dat betekent, afhankelijk van je situatie, hemelse rust of constante stress. 
+Zo'n anderhalf jaar na het uitbreken van de coronacrisis, is thuiswerken in de ICT de norm geworden. En dat zal, ook nu we terugkeren naar een enigszins normale situatie, waarschijnlijk zo blijven. Dat betekent, afhankelijk van je situatie, hemelse rust of constante stress. 
 
 
 Maar het betekent ook: online vergaderen, heel veel online vergaderen. Dit zijn tien regels voor zulke vergaderingen, die ik mezelf na schade en schande heb gesteld:

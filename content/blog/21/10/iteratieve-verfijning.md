@@ -1,14 +1,14 @@
 ---
-title: "Iteratieve PBI's"
+title: "Iteratieve verfijning"
 author: "Karl van Heijster"
-date: 2021-10-01T07:50:53+02:00
-draft: true
+date: 2021-10-11T07:24:57+02:00
+draft: false
 comments: true
 tags: ["agile ontwikkeling", "boeken", "communicatie", "iteratieve ontwikkeling", "leermoment", "procesverbetering", "product backlog items", "product backlog refinement", "scrum"]
 summary: "Dat software ontwikkelen - vandaag de dag in elk geval - een iteratief proces is, is een plattitude. Dat ook de voorbereidingswerkzaamheden van programmeren iteratief kunnen (of moeten?) worden vormgegeven, is iets wat ik misschien wel wist, maar me nooit helemaal beseft heb. Het interessante van Scrum (en van softwareontwikkeling in het algemeen) is dat je het jarenlang kunt doen, en toch steeds opnieuw *best* en *better practices* kunt ontdekken - of herontdekken."
 ---
 
-Alle [Sprintdoelen](/blog/21/05/het-doel-van-deze-sprint-is-niet-om-code-te-schrijven/) ten spijt, blijft mijn team worstelen met het op orde krijgen van de Product Backlog. De moeilijkheid zit 'm in het vertalen van abstracte doelen in concrete oplossingen. Er gaapt een gat tussen de staccato zinnen die onze Product Owner (PO) op zijn bollenplaat - een mindmap met daarop alles waar we mee bezig zijn én we nog op moeten pakken - heeft gezet, en de functionaliteiten die die doelen verwezenlijken.
+Alle [Sprintdoelen](/blog/21/05/het-doel-van-deze-sprint-is-niet-om-code-te-schrijven/) ten spijt, blijft mijn team worstelen met het op orde krijgen van de [Product Backlog](https://www.scrum.org/resources/what-is-a-product-backlog). De moeilijkheid zit 'm in het vertalen van abstracte doelen in concrete oplossingen. Er gaapt een gat tussen de staccato zinnen die onze [Product Owner](https://www.scrum.org/resources/what-is-a-product-owner) (PO) op zijn bollenplaat - een mindmap met daarop alles waar we mee bezig zijn én we nog op moeten pakken - heeft gezet, en de functionaliteiten die die doelen verwezenlijken.
 
 
 ## De basis
@@ -17,10 +17,10 @@ Alle [Sprintdoelen](/blog/21/05/het-doel-van-deze-sprint-is-niet-om-code-te-schr
 Wat ik meestal doe in zulke situaties, is terug proberen te gaan naar de basis. Daarom nam ik [*Scrum voor Dummies*](https://www.dummies.nl/producten/9789045350301-scrum-voor-dummies) van [Michael Franken](https://www.linkedin.com/in/michaelfranken/) mee van kantoor (we mogen weer naar kantoor!) en werkte me daar in een paar dagen doorheen. 
 
 
-Het is eigenlijk altijd een goed idee om even de tijd je eigen proces van een afstandje te bekijken, en jezelf af te vragen: waarom doen we wat we doen? En wat zegt de theorie over wat we zouden moeten doen?
+Het is eigenlijk altijd een goed idee om even de tijd te nemen je eigen proces van een afstandje te bekijken, en jezelf af te vragen: waarom doen we wat we doen? En wat zegt de theorie over wat we zouden moeten doen?
 
 
-Ik leerde uit dat boekje wat waardevolle lessen over de manier waarop wij onze Product Backlog Refinements vormgeven en hoe deze er volgens Franken uit dienen te zien. 
+Ik leerde uit dat boekje wat waardevolle lessen over de manier waarop wij onze [Product Backlog Refinements](https://www.scrum.org/resources/blog/product-backlog-refinement-explained-13) vormgeven en hoe deze er volgens Franken uit dienen te zien. 
 
 
 ## De Product Backlog als communicatiemiddel
@@ -44,7 +44,7 @@ Het gebruik van de Product Backlog als primaire bron van waarheid, heeft implica
 Maar als deze de primaire bron is voor ál onze werkzaamheden, en niet alleen de eerstvolgende, dan betekent dit dat er ook minder goed uitgewerkte PBI's op de Backlog moeten staan. Onze Scrum Master probeerde dit idee handen en voeten te geven door onderscheid te maken tussen PBI's van type 1, 2 en 3. 
 
 
-PBI's van type 1 zijn nieuw en schetsmatig. Ze geven eigenlijk alleen maar het doel weer, zonder dat het gaat om de implementatie. Type 2 is al wat verder uitgewerkt. Het doel wordt hier omgezet in een feature. Het gaat hier om een goede manier om het doel te volbrengen. Type 3 is de PBI zoals we ze kennen, de gedetailleerde *user stories*. Bovenaan de Backlog staan PBI's van type 3, wat verder naar achteren staan types 2, en helemaal achteraan staan types 3.
+PBI's van type 1 zijn nieuw en schetsmatig. Ze geven eigenlijk alleen maar het doel weer, zonder dat het gaat om de implementatie. Type 2 is al wat verder uitgewerkt. Het doel wordt hier omgezet in een feature. Het gaat hier om een goede manier om het doel te volbrengen. Type 3 is de PBI zoals we ze kennen, de gedetailleerde *user stories*. Bovenaan de Backlog staan PBI's van type 3, wat verder naar achteren staan types 2, en helemaal onderaan staan types 3.
 
 
 ## Verfijning
@@ -56,7 +56,7 @@ Dit heeft vervolgens weer implicaties voor de manier waarop we tot onze uiteinde
 Dit is anders dan hoe we nu werken. Nu werken onze PO en informatie-analist een idee uit, presenteren dat aan het team, waarna het team aan de slag gaat om PBI's te maken. PBI's komen dus pas in de laatste stap aan bod. Voordat het team ermee aan de slag gaat, is die informatie vastgelegd in bollenplaten, persoonlijke aantekeningen en de hoofden van onze PO en analist.
 
 
-Wat Franken voorstelt, is om die informatie allemaal naar de Product Backlog te verplaatsen. De PBI's aldaar worden in verschillende iteraties aan het team voorgelegd en uitgesplitsen in steeds kleinere brokken. Een Product Backlog Refinement heet niet voor niets een *Refinement*: grote PBI's worden steeds verder verfijnd totdat ze klein genoeg zijn om in een Sprint op te kunnen pakken! 
+Wat Franken voorstelt, is om die informatie allemaal naar de Product Backlog te verplaatsen. De PBI's aldaar worden in verschillende iteraties aan het team voorgelegd en uitgesplitsen in steeds kleinere brokken. Een Product Backlog Refinement heet niet voor niets een *refinement*: grote PBI's worden steeds verder verfijnd totdat ze klein genoeg zijn om in een Sprint op te kunnen pakken. 
 
 
 ## Iteratief
@@ -65,4 +65,4 @@ Wat Franken voorstelt, is om die informatie allemaal naar de Product Backlog te 
 Dat software ontwikkelen - vandaag de dag in elk geval - een iteratief proces is, is een plattitude. Dat ook de voorbereidingswerkzaamheden van programmeren iteratief kunnen (of moeten?) worden vormgegeven, is iets wat ik misschien wel wist, maar me nooit helemaal beseft heb.
 
 
-Misschien klinken de dingen die ik zeg daarom wel als een open deur, misschien zijn ze dat ook. Het interessante van Scrum (en van softwareontwikkeling in het algemeen) is dat je het jarenlang kunt doen, en toch steeds opnieuw *best* en *better practices* kunt ontdekken - of herontdekken. Als het op Agile ontwikkeling aankomt, is elke ontwikkelaar aan het eind van de dag nog steeds een *dummy*.
+Misschien klinken de dingen die ik zeg daarom wel als een open deur, wellicht zijn ze dat ook. Het interessante van Scrum (en van softwareontwikkeling in het algemeen) is dat je het jarenlang kunt doen, en toch steeds opnieuw *best* en *better practices* kunt ontdekken - of herontdekken. Als het op *agile* ontwikkeling aankomt, is elke ontwikkelaar aan het eind van de dag nog steeds een *dummy*.

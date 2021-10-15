@@ -1,14 +1,14 @@
 ---
 title: "Writer's block en programmer's block"
 author: "Karl van Heijster"
-date: 2021-07-24T21:02:52+02:00
-draft: true
+date: 2021-10-15T07:20:44+02:00
+draft: false
 comments: true
-tags: ["bloggen", "software ontwikkelen", "writer's block"]
-summary: "Mensen zeggen nou nooit tegen me: \"Karl, ik zou graag willen bloggen, maar ik weet niet waar ik moet beginnen.\" Maar als ze me dat zouden doen, dan zou ik zeggen: \"Begin eens met wat je vandaag hebt gedaan.\" Wat daarna volgt, zo stel ik me voor, is een stroom aan tegenwerpingen die iedereen bekend voor zou moeten komen die ooit meer dan één letter op papier heeft gezet. Die tegenwerpingen zijn uitdrukking van *writer's block*."
+tags: ["bloggen", "iteratieve ontwikkeling", "refactoren", "software ontwikkelen", "writer's block"]
+summary: "Mensen zeggen nou nooit tegen me: \"Karl, ik zou graag willen bloggen, maar ik weet niet waar ik moet beginnen.\" Maar als ze dat zouden doen, dan zou ik zeggen: \"Begin eens met wat je vandaag hebt gedaan.\" Wat daarna volgt, zo stel ik me voor, is een stroom aan tegenwerpingen die iedereen bekend voor zou moeten komen die ooit meer dan één letter op papier heeft gezet. Die tegenwerpingen zijn uitdrukking van *writer's block*."
 ---
 
-Mensen zeggen nou nooit tegen me: "Karl, ik zou graag willen bloggen, maar ik weet niet waar ik moet beginnen." Maar als ze me dat zouden doen, dan zou ik zeggen: "Begin eens met wat je vandaag hebt gedaan."
+Mensen zeggen nou nooit tegen me: "Karl, ik zou graag willen bloggen, maar ik weet niet waar ik moet beginnen." Maar als ze dat zouden doen, dan zou ik zeggen: "Begin eens met wat je vandaag hebt gedaan."
 
 
 ## *Writer's block*
@@ -20,7 +20,7 @@ Wat daarna volgt, zo stel ik me voor, is een stroom aan tegenwerpingen die ieder
 Die tegenwerpingen zijn allemaal uitdrukking van *writer's block*.
 
 
-Wat de laatste tegenwerping betreft, kan ik kort zijn: je blog niet voor de lezer. Althans, dat zou je niet moeten doen - niet in eerste instantie, in elk geval. Bloggen levert veel te veel op [voor jou als schrijver](LINK) om te dat te doen voor een lezer.
+Wat de laatste tegenwerping betreft, kan ik kort zijn: je blogt niet voor de lezer. Althans, dat zou je niet moeten doen - niet in eerste instantie, in elk geval. Bloggen levert veel te veel op [voor jou als schrijver](/blog/21/08/vijf-voordelen-van-bloggen/) om te dat te doen voor een lezer.
 
 
 ## Verwachtingen
@@ -29,10 +29,7 @@ Wat de laatste tegenwerping betreft, kan ik kort zijn: je blog niet voor de leze
 De eerste twee tegenwerpingen zijn het gevolg van bepaalde verwachtingen die je als schrijver van je blog hebt. Meer bepaald: onrealistische verwachtingen. 
 
 
-Wie zegt dat-ie *dat* niet wil schrijven, vóórdat hij het daadwerkelijk heeft opgeschreven, heeft voor zichzelf een bepaalde verwachting geschapen van hoe de uiteindelijke tekst eruit zou moeten zien. 
-
-
-Meestal zijn die verwachtingen ongedefinieerd, maar altijd zijn ze te hoog. Typische verwachtingen van iemand met writer's block zijn: *mijn tekst moet origineel zijn* of *mijn tekst moet compleet zijn*.
+Wie zegt dat-ie *dat* niet wil schrijven, vóórdat hij het daadwerkelijk heeft opgeschreven, heeft voor zichzelf een bepaalde verwachting geschapen van hoe de uiteindelijke tekst eruit zou moeten zien. Meestal zijn die verwachtingen ongedefinieerd, maar altijd zijn ze te hoog. Typische verwachtingen van iemand met writer's block zijn: *mijn tekst moet origineel zijn* of *mijn tekst moet compleet zijn*.
 
 
 De onderliggende, meest blokkerende verwachting gaat echter niet over de tekst zelf, maar het schrijfproces: *de eerste versie van mijn tekst moet aan al die verwachtingen voldoen*. Of, prangender verwoord: *ik moet in één keer een tekst kunnen schrijven die aan al mijn verwachtingen voldoet*. Deze gedachte is voldoende om alles wat volgt onmiddellijk als rotzooi af te schrijven.
@@ -104,10 +101,10 @@ Op een gegeven moment heeft deze schrijfoefening je begrip van het probleem zoda
 Het is niet voor niets een adagium in de softwareontwikkeling: *First make it work. Then make it pretty.* En *make it work* is in eerste instantie altijd *make it - make something, anything!*.
 
 
-## Een kijkje in de keuken
+## Achter de schermen
 
 
-De eerste versie van deze blog was immers ook niet om over naar huis te schrijven. Een kijkje in de keuken:
+De eerste versie van deze blog was immers ook niet om over naar huis te schrijven. Lees maar:
 
 
 > Mensen zeggen nou nooit tegen me: Karl, ik zou graag willen bloggen, maar ik weet niet waar ik moet beginnen. Maar als ze me dat zouden doen, dan zou ik zeggen: begin eens met wat je vandaag gedaan hebt.
@@ -135,4 +132,4 @@ De eerste versie van deze blog was immers ook niet om over naar huis te schrijve
 > Dit is een bevrijdend idee.
 
 
-Ondanks dat is de boel nog best aardig geworden, volgens mij. Daarom: begin gewoon. Dat is het moeilijke gedeelte. De boel verbeteren kan daarna alleen nog maar meevallen.
+Zegt de uiteindelijke blog precies wat ik wilde zeggen? Ach, het is goed genoeg. Daarom: begin gewoon. Dat is het moeilijke gedeelte. De boel verbeteren kan daarna alleen nog maar meevallen.

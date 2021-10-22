@@ -5,7 +5,7 @@ date: 2021-10-18T15:57:08+02:00
 draft: true
 comments: true
 tags: ["communicatie", "informatieanalyse"]
-summary: "Hoe verhoudt het proces zich tot de wens van de gebruiker? - En andersom? Is wat *in wezen* hetzelfde proces is, niet *eigenlijk* twee heel verschillende dingen? En hebben gebruikers die erop staan dat "dit echt iets *totaal* anders" is, het wel bij het juiste eind? Die vraag stellen is allesbehalve hem beantwoorden."
+summary: "Hoe verhoudt het proces zich tot de wens van de gebruiker? - En andersom? Is wat *in wezen* hetzelfde proces is, niet *eigenlijk* twee heel verschillende dingen? En hebben gebruikers die erop staan dat \"dit echt iets *totaal* anders\" is, het wel bij het juiste eind? Die vraag stellen is allesbehalve hem beantwoorden."
 ---
 
 Schrijven is herschrijven, zegt men ook wel. Met toetsen is het eigenlijk niet anders. Het ontwikkelen van toetsvragen is een kwestie van schrijven, feedback ontvangen, herschrijven, feedback ontvangen, herschrijven - net zolang tot er een goede toetsvraag van de lopende band rolt.

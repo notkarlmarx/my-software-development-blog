@@ -93,7 +93,7 @@ In lijn met het bovenstaande, legt *low code development* een ontwikkelaar absol
 Maar in zekere zin zijn deze beperkingen maar incidenteel. Hoewel Martins paradigma's allen met beperkingen gepaard gaan, is het de vraag of beperkingen überhaupt een manier van ontwikkelen tot een paradigma verheffen.
 
 
-Het volgende argument is volgens mij sterker. Je zou kunnen stellen dat programmeren tot dusverre een in wezen talige bezigheid was. *Low code development* is daarentegen visueel van aard. Anders gezeg: "ouderwets" programmeren is wat je een lineaire bezigheid zou kunnen noemen. Klassieke code dient van boven naar beneden gelezen te worden. *Low code* neemt afscheid van die traditie. Programma's in elkaar klikken is iets wezenlijks anders dan ze van boven naar beneden lezen. 
+Het volgende argument is volgens mij sterker. Je zou kunnen stellen dat programmeren tot dusverre een in wezen talige bezigheid was. *Low code development* is daarentegen visueel van aard. Anders gezegd: "ouderwets" programmeren is wat je een lineaire bezigheid zou kunnen noemen. Klassieke code dient van boven naar beneden gelezen te worden. *Low code* neemt afscheid van die traditie. Programma's in elkaar klikken is iets wezenlijks anders dan ze van boven naar beneden lezen. 
 
 
 Het zou zomaar kunnen we over tien jaar zeggen dat er een periode vóór en na *low code* is. 

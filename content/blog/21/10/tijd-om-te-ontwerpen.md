@@ -1,8 +1,8 @@
 ---
 title: "Tijd om te ontwerpen"
 author: "Karl van Heijster"
-date: 2021-10-08T11:47:20+02:00
-draft: true
+date: 2021-10-29T08:06:11+02:00
+draft: false
 comments: true
 tags: ["diagrammen", "documentatie", "productiviteit", "software ontwikkelen", "waarde"]
 summary: "Ik heb jarenlang als ontwikkelaar code kunnen kloppen zonder ooit maar één stroomdiagram te hoeven bekijken. Een grappig gegeven, want één van de eerste dingen die ik moest doen toen ik solliciteerde naar een traineeship als back end developer, was een cognitietaak waarbij ik steeds complexere stroomdiagrammen voor mijn neus kreeg. En om de indruk te wekken dat software ontwikkelen méér is dan alleen naar een scherm staren, moest ik dat doen in een ruimte behangen met foto's van mensen die lachend naar whiteboards staan te wijzen. "
@@ -20,7 +20,7 @@ De praktijk zag er anders uit: tekstuele beschrijvingen van features en een bak 
 Totdat een collega een tijd terug een stroomdiagram tekende en ik uitriep: "Wat een verademing!" Het valt moeilijk te overschatten hoeveel je als ontwikkelaar hebt aan een visueel referentiepunt om je code aan te toetsen. (Uiteindelijk worstelde ik nog steeds met diverse complexe codeproblemen, maar dat meer te maken met de scope van mijn PBI dan met het diagram. Sterker nog, zonder diagram zou ik nu waarschijnlijk nog aan het worstelen zijn.)
 
 
-Dat roept de vraag op: waarom doen we dit niet vaker, stroom- of architectuurdiagrammetjes tekenen? Trekken we met als softwareontwikkelaars niet eigenlijk veel te weinig tijd uit om onze oplossingen goed uit te werken, vóórdat we aan het coderen slaan?
+Dat roept de vraag op: waarom doen we dit niet vaker, stroom- of architectuurdiagrammetjes tekenen? Trekken we als softwareontwikkelaars niet eigenlijk veel te weinig tijd uit om onze oplossingen goed uit te werken, vóórdat we aan het coderen slaan?
 
 
 ## Tijd om te ontwerpen
@@ -50,13 +50,13 @@ Ik zal (en kan) geen uitspraken doen over de gehele ontwikkelpopulatie. Maar te 
 ## Een plek, een tijd
 
 
-Het is de vraag of we onszelf daarmee tekort doen. Want software ontwikkelen leent zich, anders dan creatief schrijven, eerder voor *plotten* dan voor *pantsen*. Het verschil tussen beide is namelijk dat de uitkomst bij de eerste op voorhand vastligt. Een auteur is vrij om een boek te schrijven over elk mogelijk onderwerp, maar een softwareontwikkelaar moet opleveren wat de klantbehoefte het best bevredigt.
+Doen we onszelf daarmee tekort? Het ontwikkelen van software leent zich, anders dan creatief schrijven, eerder voor *plotten* dan voor *pantsen*. Het verschil tussen beide is namelijk dat de uitkomst bij de eerste op voorhand vastligt. Een auteur is vrij om een boek te schrijven over elk mogelijk onderwerp, maar een softwareontwikkelaar moet opleveren wat de klantbehoefte het best bevredigt.
 
 
 Daarmee is niet gezegd dat er geen plek en tijd is voor *pantsen*. Soms is een gevraagde wijziging zo klein dat het onnodig is om een aparte ontwerpstap in te bouwen. En soms heeft een ontwikkelaar voldoende begrip van het probleem én de oplossing, dat deze met vertrouwen aan het coderen kan slaan. 
 
 
-Maar vaak zijn wijzigingen aanzienlijk en is het moeilijk om de architecturele implicaties van bepaalde beslissingen te overzien. In dat geval moeten er moeilijke keuzes worden gemaakt, keuzes waar het team als geheel iets van moet (willen) vinden. Dat is eigenlijk het moment om aan het tekenen te slaan.
+Maar vaak zijn wijzigingen aanzienlijk en is het moeilijk om zonder hulpmiddelen de architecturele implicaties van bepaalde beslissingen te overzien. In dat geval moeten er moeilijke keuzes worden gemaakt, keuzes waar het team als geheel iets van moet (willen) vinden. Dat is eigenlijk het moment om aan het tekenen te slaan.
 
 
 ## Obstakels

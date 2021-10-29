@@ -8,7 +8,7 @@ tags: ["boeken", "functionele eigenschappen", "kwaliteitsattributen", "software 
 summary: "Een ontwerper van een systeem - of dat nu een kok is of een softwarearchitect - dient niet alleen rekening te houden met de functionele eigenschappen van zijn componenten. *Smaak is niet alles!* Een lekker ingrediënt kan om allerlei redenen niet in een gerecht terechtkomen. De impact van het ingrediënt op de afwasser - niet onbelangrijk! - kan dusdanig zijn dat het verstandig is om toch maar een ander smaakje te kiezen."
 ---
 
-Mijn vrouw maakte laatst aardappelen klaar met stoofvlees en schorseneren. - Schorseneren? 
+Mijn vrouw maakte laatst aardappelen klaar met stoofvlees en schorseneren. - Schorseneren, zeg je? 
 
 
 Ja, schorseneren. Een [schorseneer](https://nl.wikipedia.org/wiki/Grote_schorseneer) is een wortel met een smaak die ergens tussen asperge, artisjok en bloemkool in zit. Ik had nog nooit schorseneren gehad, dus dat was een hele ervaring. Ik vond het niet vies, maar ik was er ook niet kapot van.

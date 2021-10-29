@@ -5,7 +5,7 @@ date: 2021-10-26T07:42:02+02:00
 draft: true
 comments: true
 tags: ["agile ontwikkeling", "communicatie", "empathie", "samenwerking", "scrum", "software ontwikkelen", "sprint review", "stakeholders"]
-summary: "Een stakeholder zei laatst iets tijdens een Sprint Review wat me tegen het zere been stootte. Ze was nog niet zo lang aangesloten bij de ontwikkeling van de applicatie en gebruikte deze zelf alleen nog als pilot. We spraken over aansluiten van een nieuwe gebruikersgroep op onze applicatie. De stakeholder gaf aan dat het op korte termijn - anderhalve sprint - moest gebeuren, en somde daarna een lijst features op die tegen die tijd af moesten zijn, \"anders heeft het geen zin.\" Harde woorden, en dat voor iemand die nog maar net komt kijken! "
+summary: "Een stakeholder zei laatst iets tijdens een Sprint Review wat me tegen het zere been stootte. Ze was nog niet zo lang aangesloten bij de ontwikkeling van de applicatie en gebruikte deze zelf alleen nog als pilot. We spraken over aansluiten van een nieuwe gebruikersgroep op onze applicatie. De stakeholder gaf aan dat het op korte termijn - anderhalve sprint - moest gebeuren, en somde daarna een lijst features op die tegen die tijd af moesten zijn, \"anders heeft het geen zin.\" Harde woorden, en dat voor iemand die nog maar net komt kijken!"
 ---
 
 Een stakeholder zei laatst iets tijdens een Sprint Review wat me tegen het zere been stootte. Ze was nog niet zo lang aangesloten bij de ontwikkeling van de applicatie en gebruikte deze zelf alleen nog als pilot.

@@ -5,7 +5,7 @@ date: 2021-10-30T09:09:18+02:00
 draft: true
 comments: true
 tags: ["boeken", "communicatie", "empathie", "management", "recensies", "verandering"]
-summary: ""
+summary: "Alle verandering is moeilijk, maar anderen veranderen, dat is nog veel moeilijker. Toch zijn we vaak van anderen afhankelijk om te kunnen veranderen, bijvoorbeeld als je je collega’s aan wil sporen een nieuwe werkwijze uit te proberen. Of wanneer je als manager de opdracht hebt gekregen om een afdeling te reorganiseren. Er zijn boeken volgeschreven over verandermanagement op de werkvloer, *Verandergedrag* van organisatiepsycholoog en communicatiekundige Thijs Leenman is daar slechts één van."
 ---
 
 Alle verandering is moeilijk, maar anderen veranderen, dat is nog veel moeilijker. Toch zijn we vaak van anderen afhankelijk om te kunnen veranderen, bijvoorbeeld als je je collega’s aan wil sporen een nieuwe werkwijze uit te proberen. Of wanneer je als manager de opdracht hebt gekregen om een afdeling te reorganiseren. Er zijn boeken volgeschreven over verandermanagement op de werkvloer, *Verandergedrag* van organisatiepsycholoog en communicatiekundige Thijs Leenman is daar slechts één van.

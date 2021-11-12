@@ -1,8 +1,8 @@
 ---
 title: "Wat is 'hetzelfde proces'?"
 author: "Karl van Heijster"
-date: 2021-10-18T15:57:08+02:00
-draft: true
+date: 2021-11-12T08:05:34+01:00
+draft: false
 comments: true
 tags: ["communicatie", "informatieanalyse"]
 summary: "Hoe verhoudt het proces zich tot de wens van de gebruiker? - En andersom? Is wat *in wezen* hetzelfde proces is, niet *eigenlijk* twee heel verschillende dingen? En hebben gebruikers die erop staan dat \"dit echt iets *totaal* anders\" is, het wel bij het juiste eind? Die vraag stellen is allesbehalve hem beantwoorden."
@@ -14,7 +14,7 @@ Schrijven is herschrijven, zegt men ook wel. Met toetsen is het eigenlijk niet a
 Als toetsen maken je *core business* is, bouw je daar natuurlijk een heel proces omheen. Het ondersteunen van dat proces met software is waar mijn team zich mee bezighoudt.
 
 
-Het proces kent enkele rollen, bijvoorbeeld[^1] auteurs, redacteurs en reviewers. Die laatste heb je in formele en informele varianten. Maar in wezen vervult elke rol één van de volgende twee verantwoordelijkheden: ofwel men wijzigt de inhoud van toetsvraag, ofwel men beoordeelt zo'n wijziging. Een vraag wordt ofwel geschreven, ofwel bekritiseerd.
+Het proces kent enkele rollen, bijvoorbeeld[^1] auteurs, redacteurs en reviewers. Die laatste heb je in formele en informele varianten. Maar in wezen vervult elke rol één van de volgende twee verantwoordelijkheden: ofwel men wijzigt de inhoud van toetsvraag, ofwel men beoordeelt zo'n wijziging. Een vraag wordt ofwel geschreven, ofwel kritisch tegen het licht gehouden.
 
 
 ## Pingpong
@@ -62,7 +62,7 @@ Ik geloof niet dat er een makkelijke uitweg is uit deze spagaat - ik heb 'm in e
 Hoe verhoudt het proces zich tot de wens van de gebruiker? - En andersom? Is wat *in wezen* hetzelfde proces is, niet *eigenlijk* twee heel verschillende dingen? En hebben gebruikers die erop staan dat "dit echt iets *totaal* anders" is, het wel bij het juiste eind? Die vraag stellen is allesbehalve hem beantwoorden. 
 
 
-Software ontwikkelen is [meer dan code schrijven alleen](/blog/21/06/empathie-met-je-stakeholders/). Het is ook praten, heel veel praten. En constant in het achterhoofd houden: de ogenschijnlijke onmogelijkheid van een (één) antwoord, is het *begin* van een gesprek, en niet het eind. Soms verschilt software ontwikkelen nauweliks van filosofie.
+Software ontwikkelen is [meer dan code schrijven alleen](/blog/21/06/empathie-met-je-stakeholders/). Het is ook praten, heel veel praten. En constant in het achterhoofd houden: de ogenschijnlijke onmogelijkheid van een (één) antwoord, is het *begin* van een gesprek, en niet het eind. Soms verschilt software ontwikkelen nauwelijks van filosofie.
 
 
 [^1]: Maar niet uitsluitend! Nog ver verwijderd van onze concrete code zwerven platen met "publicisten" en "managers" rond. Als er één ding zeker is in het leven, dan is het wel dat bedrijven hun eigen proces hoe dan ook complexer en complexer maken, en niet altijd ten goede. Wat dat betreft verschillen bedrijven nauwelijks van software.

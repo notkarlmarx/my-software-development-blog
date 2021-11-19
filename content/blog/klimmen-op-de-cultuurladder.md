@@ -4,8 +4,8 @@ author: "Karl van Heijster"
 date: 2021-11-19T10:45:12+01:00
 draft: true
 comments: true
-tags: []
-summary: ""
+tags: ["bedrijfscultuur", "boeken", "management", "recensies", "verandering"]
+summary: "Het succes van een organisatie is van een boel dingen afhankelijk. Eén van die dingen is de bedrijfscultuur. Een organisatie waarin hard werken de norm is, en het vanzelfsprekend is dat je als team staat voor je resultaten, zal beter dan een cultuur waarin medewerkers doen wat er van hen gevraagd wordt en geen millimeter meer. Dus: hoe krijg je het voor elkaar om de juiste cultuur te kweken in je organisatie? Dat is de vraag die centraal staat in *De Cultuurladder* van Marcel van Wiggen, Gerard Vriens en Frits Galle."
 ---
 
 Het succes van een organisatie is van een boel dingen afhankelijk. Eén van die dingen is de bedrijfscultuur. Een organisatie waarin hard werken de norm is, en het vanzelfsprekend is dat je als team staat voor je resultaten, zal beter dan een cultuur waarin medewerkers doen wat er van hen gevraagd wordt en geen millimeter meer. Dus: hoe krijg je het voor elkaar om de juiste cultuur te kweken in je organisatie? Dat is de vraag die centraal staat in [*De Cultuurladder*](https://www.atlascontact.nl/boek/de-cultuurladder/) van [Marcel van Wiggen](https://www.per4mance.nl/over-per4mance/marcel-van-wiggen), [Gerard Vriens](https://www.per4mance.nl/over-per4mance/gerard-vriens) en [Frits Galle](https://www.per4mance.nl/over-per4mance/frits-galle).
@@ -45,3 +45,6 @@ De uitdaging is om de cultuur concreet te maken. Cultuur is een concreet ding, h
 
 
 Dat laatste inzicht is misschien wel de meest aansprekende boodschap in *De Cultuurladder*. En dat geldt niet alleen voor het management, die met concrete beelden beter de gewenste veranderingen tot stand brengt. Het geldt vooral voor elke medewerker die zich jaarlijks door een praktisch betekenisloze presentatie over kernwaarden heen moet worstelen, in plaats van hard te werken en te staan voor de resultaten van zijn of haar team.
+
+
+*Deze recensie verscheen oorspronkelijk op [De Leesclub van Alles](https://deleesclubvanalles.nl/).*

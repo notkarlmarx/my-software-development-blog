@@ -1,8 +1,8 @@
 ---
 title: "Agile zijn, niet Agile doen"
 author: "Karl van Heijster"
-date: 2021-11-12T10:30:02+01:00
-draft: true
+date: 2021-11-19T06:59:00+01:00
+draft: false
 comments: true
 tags: ["agile ontwikkeling", "boeken", "paradigma's", "recensies", "productiviteit", "scrum"]
 summary: "Heeft Agile gefaald? Of heeft Agile nooit écht een voet aan de grond gekregen? In *Clean Agile* pleit Robert “Uncle Bob” Martin voor dat laatste. Het succes van Agile is zowel een vloek als een zegen geweest. Een zegen, omdat het het inefficiënte Waterval heeft verdreven, maar een vloek omdat de kerngedachte achter Agile zo vaak verkeerd begrepen is dat deze geheel verloren dreigt te gaan. *Clean Agile* is zijn poging de vele misverstanden recht te zetten."

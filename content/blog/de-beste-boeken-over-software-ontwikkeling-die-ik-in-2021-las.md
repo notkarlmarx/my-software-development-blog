@@ -35,7 +35,7 @@ Het is een geluk dat ik *Software Engineering at Google* las toen *dotkarl* al l
 ### 3. Tom Greever - [*Articulating Design Decisions (Second Edition): Communicate with Stakeholders, Keep Your Sanity, and Deliver the Best User Experience*](https://www.oreilly.com/library/view/articulating-design-decisions/9781492079217/)
 
 
-Ook Tom Greever deed me anders naar mijn softwareontwikkelpraktijk kijken. Hij maakte me veel meer bewust van de manier waarop ik me tot mijn stakeholders verhoud. Sterker nog, hij opende me de ogen voor het feit *dat* ik me - bewust - op een bepaalde manier kan verhouden.
+Ook Tom Greever deed me anders naar mijn softwareontwikkelpraktijk kijken. Hij maakte me veel meer bewust van de manier waarop ik me tot mijn stakeholders verhoud. Sterker nog, hij opende me de ogen voor het feit *dat* ik me - bewust - op een bepaalde manier kan verhouden. (Ik blogde er [hier](/blog/21/06/empathie-met-je-stakeholders/) over.)
 
 
 Door het boek te structureren rondom *die belangrijke vergadering* biedt *Articulating Design Decisions* niet alleen een strak geordende verzameling levensreddende tips, de boel leest ook nog eens als een thriller. De focus op grafisch design hoeft niemand af te schikken: Greevers advies is universeel voor iedereen die met stakeholders om moet gaan, en al helemaal als deze een mening hebben.
@@ -50,10 +50,13 @@ Ik begon aan dit boek met het idee technische kennis op te doen over het aanpakk
 Het is een boek dat veeleer inzoomt op de politieke kanten van het plannen en uitvoeren van een grote refactorslag. En dat is maar goed ook, want die invalshoek is vele malen interessanter dan *het is eigenlijk hetzelfde als kleine refactorslagen, maar dan heel veel*.
 
 
-### 5. ...
+### 5. Andrew Hoffman - [*Web Application Security: Exploitation and Countermeasures for Modern Web Applications*](https://www.oreilly.com/library/view/web-application-security/9781492053101/)
 
 
-...
+De beveiliging van je applicatie valt onmogelijk achteraf nog in te bouwen. Een applicatie is zo veilig als de zwaktste schakel in haar keten, en dat betekent dat dit een overweging is die in elke stap van het ontwikkelproces moet worden meegenomen.
+
+
+Hoffmans boek is niet alleen van waarde omdat deze ontwikkelaars wijst op de meest voorkomende gaten in de beveliging van webapplicaties - dat komt pas in het derde deel. In de eerste twee delen toont de schrijver hoe hackers de zwakke plekken in je applicatie proberen te achterhalen. De les is belangrijk: pas als je weet hoe een hacker denkt, kun je deze effectief de pas afsnijden.
 
 
 ## Eervolle vermeldingen
@@ -62,7 +65,7 @@ Het is een boek dat veeleer inzoomt op de politieke kanten van het plannen en ui
 De volgende boeken verdienen een eervolle vermelding:
 
 
-- Andrew Hoffman - [*Web Application Security: Exploitation and Countermeasures for Modern Web Applications*](https://www.oreilly.com/library/view/web-application-security/9781492053101/)
+- Heather Adkins, Betsy Beyer, Paul Blankinship, Ana Oprea, Piotr Lewandowski & Adam Stubblefield (eds.) - [*Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems*](https://www.oreilly.com/library/view/building-secure-and/9781492083115/)
 - Martin Fowler - [*Refactoring (Second Edition): Improving the Design of Existing Code*](https://martinfowler.com/books/refactoring.html) [[blog](/blog/21/08/breek-je-test/)]
 - Len Bass, Paul Clements & Rick Kazman - [*Software Architecture in Practice (Fourth Edition)*](https://www.pearson.com/us/higher-education/program/Bass-Software-Architecture-in-Practice-4th-Edition/PGM2920979.html) [[blog](/blog/21/11/schorseneren-en-software-architectuur/)]
 - Robert C. Martin - [*Clean Agile (Nederlandse editie): Terug naar de basis*](https://www.vanduurenmedia.nl/EAN/9789463562393/Clean_Agile_Nederlandse_editie) [[recensie](/blog/21/11/agile-zijn-niet-agile-doen/)]

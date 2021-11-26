@@ -1,14 +1,14 @@
 ---
 title: "Klimmen op de cultuurladder"
 author: "Karl van Heijster"
-date: 2021-11-19T10:45:12+01:00
-draft: true
+date: 2021-11-26T08:04:29+01:00
+draft: false
 comments: true
 tags: ["bedrijfscultuur", "boeken", "management", "recensies", "verandering"]
-summary: "Het succes van een organisatie is van een boel dingen afhankelijk. Eén van die dingen is de bedrijfscultuur. Een organisatie waarin hard werken de norm is, en het vanzelfsprekend is dat je als team staat voor je resultaten, zal beter dan een cultuur waarin medewerkers doen wat er van hen gevraagd wordt en geen millimeter meer. Dus: hoe krijg je het voor elkaar om de juiste cultuur te kweken in je organisatie? Dat is de vraag die centraal staat in *De Cultuurladder* van Marcel van Wiggen, Gerard Vriens en Frits Galle."
+summary: "Het succes van een organisatie is van een boel dingen afhankelijk. Eén van die dingen is de bedrijfscultuur. Een organisatie waarin hard werken de norm is, en het vanzelfsprekend is dat je als team staat voor je resultaten, zal beter presteren dan een cultuur waarin medewerkers doen wat er van hen gevraagd wordt en geen millimeter meer. Dus: hoe krijg je het voor elkaar om de juiste cultuur te kweken in je organisatie? Dat is de vraag die centraal staat in *De Cultuurladder* van Marcel van Wiggen, Gerard Vriens en Frits Galle."
 ---
 
-Het succes van een organisatie is van een boel dingen afhankelijk. Eén van die dingen is de bedrijfscultuur. Een organisatie waarin hard werken de norm is, en het vanzelfsprekend is dat je als team staat voor je resultaten, zal beter dan een cultuur waarin medewerkers doen wat er van hen gevraagd wordt en geen millimeter meer. Dus: hoe krijg je het voor elkaar om de juiste cultuur te kweken in je organisatie? Dat is de vraag die centraal staat in [*De Cultuurladder*](https://www.atlascontact.nl/boek/de-cultuurladder/) van [Marcel van Wiggen](https://www.per4mance.nl/over-per4mance/marcel-van-wiggen), [Gerard Vriens](https://www.per4mance.nl/over-per4mance/gerard-vriens) en [Frits Galle](https://www.per4mance.nl/over-per4mance/frits-galle).
+Het succes van een organisatie is van een boel dingen afhankelijk. Eén van die dingen is de bedrijfscultuur. Een organisatie waarin hard werken de norm is, en het vanzelfsprekend is dat je als team staat voor je resultaten, zal beter presteren dan een cultuur waarin medewerkers doen wat er van hen gevraagd wordt en geen millimeter meer. Dus: hoe krijg je het voor elkaar om de juiste cultuur te kweken in je organisatie? Dat is de vraag die centraal staat in [*De Cultuurladder*](https://www.atlascontact.nl/boek/de-cultuurladder/) van [Marcel van Wiggen](https://www.per4mance.nl/over-per4mance/marcel-van-wiggen), [Gerard Vriens](https://www.per4mance.nl/over-per4mance/gerard-vriens) en [Frits Galle](https://www.per4mance.nl/over-per4mance/frits-galle).
 
 
 ## Urgent
@@ -35,7 +35,7 @@ De cultuurladder uit de titel bestaat uit de volgende zes treden: (1) uitvoerend
 Om de cultuur te kunnen veranderen, moet het leiderschap veranderen. De auteurs schetsen zes niveaus van leiderschap, die gekoppeld zijn aan de zes cultuursoorten. De stijl van het leiderschap is een essentiële factor in het veranderen van de cultuur. Een baas die zijn medewerkers niet de verantwoordelijkheid geeft om zelf problemen op te lossen, houdt de organisatie tegen te groeien tot het volgende niveau op de ladder. Hij maakt uitvoerende medewerkers van zijn ondergeschikten, als het ware. 
 
 
-Er moet dus geïnvesteerd worden in het leiderschap. Leidinggevende zullen bepaalde competenties moeten ontwikkelen die passen bij de gewenste cultuur. Het is belangrijk om te beseffen dat die investering langdurig is, wil ze effect hebben. Cultuur is notoir moeilijk om te veranderen: met één sessie op een vrijdagmiddag ben je er niet. Verandering is een proces. Dat is precies de reden waarom van Wiggen, Vriens en Galle erop hameren dat zo’n proces niet lichtzinnig ondernomen moet worden.
+Er moet dus geïnvesteerd worden in het leiderschap. Leidinggevenden zullen bepaalde competenties moeten ontwikkelen die passen bij de gewenste cultuur. Het is belangrijk om te beseffen dat die investering langdurig is, wil ze effect hebben. Cultuur is notoir moeilijk om te veranderen: met één sessie op een vrijdagmiddag ben je er niet. Verandering is een proces. Dat is precies de reden waarom van Wiggen, Vriens en Galle erop hameren dat zo’n proces niet lichtzinnig ondernomen moet worden.
 
 
 ## Concreet

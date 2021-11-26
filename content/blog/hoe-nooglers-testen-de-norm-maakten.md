@@ -80,6 +80,9 @@ Bovendien, waarschijnlijk ervoer de oude garde het succes van de Nooglers als dr
 Het zou kunnen dat de bestaande cultuur bij Google ontvankelijker was voor verandering dan die bij Boogle. Dat klinkt als een makkelijke uitweg, maar gezien de doorgaans vrij open en antihiërarchische cultuur in de wereld van softwareontwikkeling, zou dat niet eens zo vergezocht zijn.
 
 
+Welk proces Googlers in 2003 hanteerden om software te ontwikkelen, heb ik niet kunnen achterhalen. Maar als het een exponent van [Agile](/blog/21/11/agile-zijn-niet-agile-doen/) is geweest, is het niet onaannemelijk dat de bestaande cultuur al in de richting zat van wat Van Wiggen, Vriens en Galle een [lerende cultuur](/blog/21/11/klimmen-op-de-cultuurladder/) noemen. Het onderscheidende van zo'n cultuur is dat er actief wordt gezocht naar manieren om het proces te verbeteren. Tests zullen in zo'n cultuur alleen maar verwelkomd worden.
+
+
 ### De nieuwe cultuur
 
 
@@ -101,7 +104,7 @@ In dat geval ervaren de bestaande werknemers de cultuurwijziging niet als een vo
 ## Conclusie
 
 
-'t Is vast een beetje van allemaal. En trouwens, Boogle-repen zijn hartstikke lekker.
+Wat het antwoord is? Joh, geen idee, dat kan mijn kleine hoofdje niet aan. Daarom zet ik mijn escape in en speel voor: vast een beetje van allemaal. En trouwens, Boogle-repen zijn hartstikke lekker.
 
 
 [^1]: Die mening is controversieel, natuurlijk. Het zou zomaar kunnen dat sommige Booglers binnen de nieuwe cultuur meer voldoening uit hun werk halen, en daarom graag een uurtje overwerken! 

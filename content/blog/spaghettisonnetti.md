@@ -18,17 +18,17 @@ Ene bug, juist in jouw mik geschoven,
 
 Zit verstopt in kluwen van spaghetti,
 
-Gekookt door een programmeur die boven
+Gebrouwd door een programmeur die boven
 
 <br>
 
 Van onder niet scheiden kon; als doof en
 
-Blind voor zijn lezer, stom ook nog, zet-ie
+Blind voor zijn lezer, stom ook nog, hettie
 
-Vieze code, in elkaar geschoven,
+Schone code, in elkaar geschoven,
 
-Tot onlogica om - 't is 'n deceptie.
+In pardonlogica omgezetti!
 
 <br>
 
@@ -44,4 +44,4 @@ Van dit betonrottend codegewelf?
 
 De *blame*-knop wijst uit: jij mag niet klagen,
 
-Want de architect, knul, was je dus zelf.
+Want de architect, knul, was je mooi zelf.

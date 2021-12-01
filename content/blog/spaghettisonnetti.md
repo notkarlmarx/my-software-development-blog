@@ -26,9 +26,9 @@ Van onder niet scheiden kon; als doof en
 
 Blind voor zijn lezer, stom ook nog, hettie
 
-Schone code, in elkaar geschoven,
+Schone code in elkaar geschoven:
 
-In pardonlogica omgezetti!
+'t In pardonlogica omgezetti!
 
 <br>
 

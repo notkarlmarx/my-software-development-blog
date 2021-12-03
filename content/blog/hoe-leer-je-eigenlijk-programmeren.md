@@ -4,8 +4,8 @@ author: "Karl van Heijster"
 date: 2021-12-03T07:45:38+01:00
 draft: true
 comments: true
-tags: ["leermoment", "leren", "productiviteit", "zelfstudie"]
-summary: "Hoe leert iemand programmeren? Felienne Harmans stelt deze vraag naar aanleiding van een persoonlijke anekdote over de tijd dat ze jonge kinderen lesgaf over het onderwerp. Ze geeft ruiterlijk toe, als onbewust onbekwame leraar, in eerste instantie terug te vallen op de manier waarop ze zelf leerde programmeren: *door het te doen.* Anders gezegd: begin maar een applicatie te bouwen, en laten we hopen dat je leert van de fouten die je onderweg onvermijdelijk zult maken. Maar is ontdekkend leren de beste manier om te leren programmeren? Te oordelen naar het succes van haar leerlingen, concludeert Hermans: nee, bepaald niet."
+tags: ["leren", "productiviteit", "zelfstudie"]
+summary: "Hoe leert iemand programmeren? Felienne Harmans stelt deze vraag naar aanleiding van een persoonlijke anekdote over de tijd dat ze jonge kinderen lesgaf over het onderwerp. Ze geeft ruiterlijk toe, als onbewust onbekwame leraar, in eerste instantie terug te vallen op de manier waarop ze zelf leerde programmeren: *door het te doen.* Maar is ontdekkend leren de beste manier om te leren programmeren? Te oordelen naar het succes van haar leerlingen, concludeert Hermans: nee, bepaald niet."
 ---
 
 Als ik te brak ben om over softwareontwikkeling te lezen [tijdens mijn ontbijt](/blog/21/05/lees-elke-dag-een-kwartier-over-je-vak) (de wekker gaat vroeg als mijn vrouw een ochtenddienst heeft), zet ik een filmpje op YouTube op. Laatst keek ik deze van Felienne Hermans, universitair docent op het [Leiden Institute of Advanced Computer Science](https://liacs.leidenuniv.nl/):
@@ -105,4 +105,4 @@ Want dat ontdekte ik ook: ik had die vrijdagen helemaal niet nodig om code te le
 Is er dan helemaal geen plek voor ontdekkend leren? Jawel, maar alleen voor hen die over voldoende kennis beschikken om te kunnen leren van hun experimenten. De rest doet er goed aan zich te bezinnen, vóór ze code beginnen te schrijven. 
 
 
-Ontdekkend leren de *default* maken, is een goede manier om potentieel vaardige programmeurs in een vroeg stadium af te schrikken. We kunnen en moeten beter dan dat. Hoe? Daar ben ik nog niet uit. Hoe dan ook, Hermans' boek, [*The Programmer's Brain*](https://www.manning.com/books/the-programmers-brain) staat bij dezen op mijn verlanglijstje. 
+Ontdekkend leren de *default* maken, is een goede manier om potentieel vaardige programmeurs in een vroeg stadium af te schrikken. We kunnen en moeten beter dan dat. Hoe? Daar ben ik nog niet uit. Maar Hermans' boek, [*The Programmer's Brain*](https://www.manning.com/books/the-programmers-brain) staat bij dezen op mijn verlanglijstje. 

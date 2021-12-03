@@ -1,8 +1,8 @@
 ---
 title: "Vijf nieuwe haiku's over software ontwikkelen"
 author: "Karl van Heijster"
-date: 2021-09-22T10:07:54+02:00
-draft: true
+date: 2021-12-03T07:26:31+01:00
+draft: false
 comments: true
 tags: ["agile ontwikkeling", "poëzie", "scrum", "software ontwikkelen"]
 summary: "*eerst verneuk je het, / daarna fix je de boel; dat / noemen we agile*"

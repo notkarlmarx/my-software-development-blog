@@ -1,8 +1,8 @@
 ---
 title: "Goede code documenteert zichzelf (niet)"
 author: "Karl van Heijster"
-date: 2021-10-04T14:20:35+02:00
-draft: true
+date: 2021-12-10T08:21:32+01:00
+draft: false
 comments: true
 tags: ["clean code", "communicatie", "documentatie", "filosofie", "intentie van code"]
 summary: "Uit de code valt niet af te leiden wat de specificaties zouden moeten zijn. Om met David Hume (1711-1776) te spreken: een *ought* valt niet af te leiden uit een *is*. Wie zegt dat goede code zichzelf documenteert, maakt zich schuldig aan de naturalistische dwaling. En toch zit er een kern van waarheid in het idee dat goede code zichzelf documenteert."
@@ -14,7 +14,7 @@ Mijn teamgenoten en ik zijn geen softwareontwikkelaar geworden omdat we zo graag
 Toch? Nou nee, want op het moment dat er vragen rondom de code rijzen, dan roepen we collectief uit: "Hadden we dat maar gedocumenteerd!"
 
 
-## Descriptief versus normatief
+## Descriptief vs. normatief
 
 
 Goede code documenteert zichzelf niet. De reden daarvoor is best wel principieel, eigenlijk. Feitelijke code - goed of slecht - is descriptief. Het hoe en wat van de code geeft de feitelijke stand van zaken weer. Functionele of technische specificaties daarentegen zijn normatief. Deze geven een ideële toestand weer, een maatstaf waar de feitelijke code naast kan worden gelegd om beoordeeld te worden.
@@ -50,7 +50,6 @@ Code is een drager van informatie. Goede code zorgt er niet alleen voor dat het 
 ## Zijn zoals het hoort
 
 
-Dus nee, goede code documenteert zichzelf niet. En toch is goede code niet louter descriptief. Eenvoud en leesbaarheid communiceren wel degelijk een bepaalde boodschap naar de lezer, een idee dat de code *is zoals het hoort*. Complexe en obscure code communiceert niets. 
+Dus nee, goede code documenteert zichzelf niet. En toch is goede code niet louter descriptief. Eenvoud en leesbaarheid communiceren wel degelijk een bepaalde boodschap naar de lezer, een idee dat de code *is zoals het hoort*. 
 
-
-Nou ja, hooguit: raadpleeg de documentatie om te snappen wat hier gebeurt. Aangenomen dat je die geschreven hebt, natuurlijk!
+Complexe en obscure code communiceert daarentegen niets. Nou ja, hooguit: raadpleeg de documentatie om te snappen wat hier gebeurt. Aangenomen dat je die geschreven hebt, natuurlijk!

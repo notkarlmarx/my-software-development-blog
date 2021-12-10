@@ -53,19 +53,19 @@ Sterker nog, zulke gedrag wordt in het vak zelfs gevierd en aangemoedigd. [Mark 
 Betekent dat dat het hek van Chesterton een achterhaald idee is? Ik denk het niet. Het is niet voor niets zo dat ik het idee leer kennen uit een boek over softwareontwikkeling bij Google.
 
 
-Chestertons voorbeeld is geladen met vooronderstellingen die niet opgaan voor softwareontwkkelaars. De keuze om een hek weg te halen, met alle gevolgen van dien, is kostbaar. Zulke keuzes moeten weloverwogen genomen worden, want eenmaal genomen zijn ze moeilijk terug te draaien. 
+Máár: Chestertons voorbeeld is geladen met vooronderstellingen die niet opgaan voor softwareontwkkelaars. De keuze om een hek weg te halen, met alle gevolgen van dien, is kostbaar. Zulke keuzes moeten weloverwogen genomen worden, want eenmaal genomen zijn ze moeilijk terug te draaien. 
 
 
-Maar de keuze om code te wijzigen, met alle gevolgen van dien, is relatief goedkoop. De zachtheid van software stelt ons in staat om snel dingen te breken, zeker. Maar het stelt ons ook in staat de gebroken code snel terug te draaien, te inspecteren en te repareren. 
+De keuze om code te wijzigen, met alle gevolgen van dien, is echter relatief goedkoop. De zachtheid van software stelt ons in staat om snel dingen te breken, zeker. Maar het stelt ons ook in staat de gebroken code snel terug te draaien, te inspecteren en te repareren. 
 
 
 ## Middel
 
 
-De gevolgen hiervan zijn moeilijk te overschatten. Het breken van code kan in worden gezet *als middel om context te vergaren*. Gebroken code wijst ons relatief goedkoop op de toegevoegde waarde van de oorspronkelijke implementatie. De aard van software stelt ons in staat om *move fast and break things* te verenigen met het hek van Chesterton. 
+De gevolgen hiervan zijn moeilijk te overschatten. Het breken van code kan in worden gezet als middel om context te vergaren. Gebroken code wijst ons relatief goedkoop op de toegevoegde waarde van de oorspronkelijke implementatie. De aard van software stelt ons in staat om *move fast and break things* te verenigen met het hek van Chesterton. 
 
 
 Zijn we daarom vrij om ons als Chestertons moderne hervormers te gedragen, en kunnen we het intelligenter type vaarwel zeggen? Zo ver wil ik niet gaan. Voordat we die conclusie kunnen trekken, zou je toch echt eerst de gedachtegang achter Chestertons hek moeten hebben doorgrond.
 
 
-[^1]: De vertaling is van mijn hand.
+[^1]: De vertaling is van mijn hand. Klik [hier](https://en.wikipedia.org/wiki/G._K._Chesterton#Chesterton's_fence) voor het origineel.

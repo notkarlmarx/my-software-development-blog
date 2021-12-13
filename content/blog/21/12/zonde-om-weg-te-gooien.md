@@ -1,8 +1,8 @@
 ---
 title: "Zonde om weg te gooien?"
 author: "Karl van Heijster"
-date: 2021-10-22T10:03:43+02:00
-draft: true
+date: 2021-12-13T08:13:08+01:00
+draft: false
 comments: true
 tags: ["clean code", "Concorde-effect", "refactoren", "samenwerking", "software ontwikkelen", "technische schuld", "waarde"]
 summary: "Laatst kwam ik tijdens het refactoren een stuk code tegen dat alleen maar werd gebruikt in unittests. Dat maakt me erg verdrietig, en om dat verdriet niet te hoeven voelen, donderde ik dat stuk code weg zodat ik er nooit meer naar om zou hoeven kijken. Een collega van me maakte bezwaar toen hij mijn *pull request* bekeek. En, eerlijk is eerlijk, niet helemaal onterecht. Er was veel moeite in deze feature gestopt, zei hij. Was het niet zonde om deze code zonder omzien te verwijderen?"
@@ -17,7 +17,7 @@ Ongebruikte code voegt geen waarde toe, maar wel onderhoudslast. Het verwijderen
 ## Zonde?
 
 
-Toch maakte een collega van me bezwaar toen hij mijn *pull request* bekeek. En, eerlijk is eerlijk, niet helemaal onterecht. Er was veel moeite in deze feature gestopt, zei hij. Door hem nota bene, geen wonder dat uitgerekend hij in opstand kwam! Was het niet zonde om deze code zonder omzien te verwijderen?
+Toch maakte een collega van me bezwaar toen hij mijn *pull request* bekeek. En, eerlijk is eerlijk, niet helemaal onterecht. Er was veel moeite in deze feature gestopt, zei hij. (Door hem nota bene, geen wonder dat uitgerekend hij in opstand kwam!) Was het niet zonde om deze code zonder omzien te verwijderen?
 
 
 Ja, gaf ik toe. Maar ook: nee. 
@@ -47,13 +47,13 @@ En toch, is het niet zonde om de domeinkennis die mijn collega met pijn en moeit
 Ten eerste is de code misschien wel verwijderd, maar niet verdwenen. De feature is vastgelegd in onze [*source control*](https://en.wikipedia.org/wiki/Version_control) en kan dus altijd terug worden gehaald, mocht dat nodig zijn.
 
 
-Maar zal het nodig zijn? Het is, ten tweede, maar de vraag of de manier waarop de boel destijds geprogrammeerd was, wel de beste was. Niet dat de code slecht opgezet was, meer omdat deze niet strookte met nieuwe inzichten. Het was niet voor niets dat ik deze code tijdens een refactorslag tegenkwam: de opzet van de feature botste met een architecturele beslissing die het team onlangs had genomen. 
+Maar zal het nodig zijn? Het is, ten tweede, maar de vraag of de manier waarop de boel destijds geprogrammeerd was, ook echt de beste was. Niet dat de code slecht opgezet was, meer omdat deze niet strookte met nieuwe inzichten. Het was niet voor niets dat ik deze code tijdens een refactorslag tegenkwam: de opzet van de feature botste met een architecturele beslissing die het team onlangs had genomen. 
 
 
 Om de feature naar behoren te laten werken, zou hij sowieso moeten worden omgebouwd. Zoals ik al zei: geen waarde, wel onderhoudslast. In wezen is het niets meer dan *legacy code* - en zulke code ben je liever kwijt dan rijk.
 
 
-# Gehecht
+## Gehecht
 
 
 Waarom had mijn collega dan toch het gevoel dat de code beter bewaard zou kunnen blijven? Het antwoord is simpel: omdat hij er veel pijn en moeite in had gestoken! Het is een bekend psychologisch gegeven dat het moeilijker is om afscheid te nemen van zaken naarmate je er meer moeite in hebt gestoken. Je raakt eraan gehecht, niet omdat het iets oplevert, maar omdat het je al zoveel gekost heeft. Dit wordt ook wel het [Concorde-effect](https://nl.wikipedia.org/wiki/Sunk_costs) genoemd.

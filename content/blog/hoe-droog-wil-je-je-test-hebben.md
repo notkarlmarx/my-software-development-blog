@@ -35,7 +35,8 @@ public void shouldNavigateToAlbumsPage() {
     String baseUrl = "http://photos.google.com/";
     Navigator nav = new Navigator(baseUrl);
     nav.goToAlbumPage();
-    assertThat(nav.getCurrentUrl()).isEqualTo(baseUrl + "/albums");
+    assertThat(nav.getCurrentUrl())
+        .isEqualTo(baseUrl + "/albums");
 }
 ```
 
@@ -69,7 +70,8 @@ Het lijkt, in het licht van DRY, misschien een goed idee lijkt om testcode vol t
 public void shouldNavigateToAlbumsPage() {
     Navigator nav = new Navigator("http://photos.google.com/");
     nav.goToAlbumPage();
-    assertThat(nav.getCurrentUrl()).isEqualTo("http://photos.google.com/albums");
+    assertThat(nav.getCurrentUrl())
+        .isEqualTo("http://photos.google.com/albums");
 }
 ```
 
@@ -107,4 +109,4 @@ DAMP is geen vervanging voor DRY; het is een aanvulling erop. Helper methods in 
 Maar DRY is niet zaligmakend. Een te rigide toepassing van dit principe zorgt ervoor dat je tests *minder* lees- en onderhoudbaar worden. Herhaling op zichzelf is niet slecht, zolang het je tests betekenisvoller en descriptiever maakt. Aan een beetje vocht gaat niemand dood.
 
 
-[^1]: Het onderscheid tussen die twee is problematisch, natuurlijk. Productiecode is pas productierijp als er een goede testcoverage tegenover staat, en in die zin is testcode een belangrijk onderdeel van productiecode. Dit onderscheid heeft volgens mij zelfs ten onrechte het idee gepromoot bij veel ontwikkelaars dat testcode niet aan dezelfde standaard hoeft te voldoen als productiecode, met alle negatieve gevolgen van dien. Zie ook [deze lezing](https://www.youtube.com/watch?v=1u6DdiFFH6Q) over *Testing as an equal 1st class citizen (to coding)* van [Jon Jagger](http://jonjagger.blogspot.com/).
+[^1]: Het onderscheid tussen die twee is problematisch, natuurlijk. Productiecode is pas productierijp als er een goede testcoverage tegenover staat, en in die zin is testcode een belangrijk onderdeel van productiecode. Dit onderscheid heeft volgens mij zelfs ten onrechte het idee gepromoot bij veel ontwikkelaars dat testcode niet aan dezelfde standaard hoeft te voldoen als productiecode, met alle negatieve gevolgen van dien. Zie ook de uitstekende lezing [*Testing as an equal 1st class citizen (to coding)*](https://www.youtube.com/watch?v=1u6DdiFFH6Q) van [Jon Jagger](http://jonjagger.blogspot.com/).

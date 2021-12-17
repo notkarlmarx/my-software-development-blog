@@ -8,7 +8,7 @@ tags: ["objectgeoriënteerd programmeren", "poëzie"]
 summary: "*Hoe programmeurs, die charmeurs, meisjes zien? / Hun hoofdje vol zorgen, hun lieve lach: / Da's een handvol data en wat gedrag - / Oftewel 'n object. Dan klinkt misschien // Politiek incorrect; dat is het niet. / Ook objecten zijn lief en zacht en teêr. / Ze ruiken zo heerlijk, smaken naar meer / Features, meer regels. Dan komt het verdriet.*"
 ---
 
-**Objectgeoriënteerd**
+**Oriëntatie**
 
 <br>
 
@@ -36,7 +36,7 @@ Ook objecten neem je terug, altijd.
 
 Zelfs als ze je rekening plunderen
 
-En liegen in je gezicht, glunderend.
+En in je gezicht liegen, glunderend.
 
 Dat is jouw single verantwoord'lijkheid.
 

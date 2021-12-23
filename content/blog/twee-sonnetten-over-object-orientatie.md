@@ -5,7 +5,7 @@ date: 2021-12-16T09:49:23+01:00
 draft: true
 comments: true
 tags: ["objectgeoriënteerd programmeren", "poëzie"]
-summary: "*Hoe programmeurs, die charmeurs, meisjes zien? / Hun hoofdje vol zorgen, hun lieve lach: / Da's een handvol data en wat gedrag - / Oftewel 'n object. Dan klinkt misschien // Politiek incorrect; dat is het niet. / Ook objecten zijn lief en zacht en teêr. / Ze ruiken zo heerlijk, smaken naar meer / Features, meer regels. Dan komt het verdriet.*"
+summary: "*Hoe programmeurs, die charmeurs, meisjes zien? / Hun hoofdje vol zorgen, hun lieve lach: / Da's een handvol data en wat gedrag - / Oftewel 'n object. Dan klinkt misschien // Politiek incorrect; dat is het niet.*"
 ---
 
 **Oriëntatie**

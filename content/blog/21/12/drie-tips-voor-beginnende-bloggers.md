@@ -1,10 +1,10 @@
 ---
 title: "Drie tips voor beginnende bloggers"
 author: "Karl van Heijster"
-date: 2021-12-10T10:31:32+01:00
-draft: true
+date: 2021-12-27T09:45:04+01:00
+draft: false
 comments: true
-tags: ["bloggen"]
+tags: ["bloggen", "leren", "motivatie", "werkplezier", "zelfstudie"]
 summary: "Ik ben de laatste die zal beweren dat 'ie een expert is op het gebied van bloggen. Maar aan de andere kant: ik blog wel al een maandje of wat twee keer per week. Dus ik geloof dat ik met minimale autoriteit over het onderwerp mag spreken - oftewel: met evenveel autoriteit als over *elk* onderwerp dat op deze blog voorbijkomt. Bij dezen: dit zijn drie tips die ik softwareontwikkelaars mee zou willen geven die een blog over hun vakgebied zouden willen beginnen."
 ---
 
@@ -26,7 +26,7 @@ Met deze tip maakte ik voor het eerst kennis in de context van het schrijven van
 Door te bloggen zie ik deze tip nu in een ander licht. Het probleem met schrijven over iets wat je niet kent is dat *het verdomd moeilijk is*. Hoe kun je in hemelsnaam iets zinvols zeggen over iets waar je totaal geen ervaring mee hebt?
 
 
-De mogelijkheden van zinvol schrijven over zo'n onderwerp zijn uitgeput met het verkennen en erkennen (als je ze al kan herkennen) van de facetten die je niet begrijpt. Zo'n verkenning kan op zich best zinvol zijn, maar erg bevredigend is het niet per se.
+De mogelijkheden van zinvol schrijven over zo'n onderwerp zijn uitgeput met het verkennen en erkennen (als je ze al kan herkennen) van de facetten die je niet begrijpt. Zo'n verkenning kan best zinvol zijn, het is één van de eerste stappen in het opdoen van nieuwe kennis. Maar je moet er toch niet aan denken je dat *elke* blog alleen maar daarover zou mogen schrijven.
 
 
 Om zinvol te kunnen schrijven over wat je niet kent, moet je je het onderwerp dus eerst eigen maken. Je zult onderzoek moeten doen. En daar heb je, eerlijk gezegd, helemaal geen tijd voor - niet als je twee blogs per week wil schrijven, in elk geval. 
@@ -35,7 +35,10 @@ Om zinvol te kunnen schrijven over wat je niet kent, moet je je het onderwerp du
 Let wel, dat betekent niet dat je nooit moet schrijven over iets waar je nog geen ervaring mee hebt. Integendeel, voor je persoonlijke en professionele ontwikkeling is het alleen maar goed als je af en toe buiten je gebaande paden treedt en nieuwe kennis opdoet. 
 
 
-Maar waak ervoor te denken dat elke blog gepaard moet gaan met zo'n uitbreiding op je kennis. Een verdieping van je kennis is net zo waardevol - en een stuk eenvoudiger om te schrijven.
+Doe onderzoek, verbreed je kennis, maar doe het niet *voor je blogs*. Doe onderzoek, en blog er vervolgens over. Het verschil is subtiel maar significant.
+
+
+Waak ervoor te denken dat elke blog gepaard moet gaan met zo'n uitbreiding op je kennis. Een verdieping van je kennis is net zo waardevol - en een stuk eenvoudiger om te schrijven.
 
 
 Schrijf over wat je kent, of: meen niet alleen te moeten schrijven over wat je nog niet kent.
@@ -53,10 +56,10 @@ Het zou zomaar kunnen dat je als beginnend blogger meent te moeten schrijven ove
 Helemaal immuun hiervoor ben ik zelf ook niet. Dat is waarom veel van mijn eerste blogs gelardeerd waren met code. (Bijvoorbeeld [hier](/blog/21/04/enums-switch-statements-en-solid-1/), [hier](/blog/21/06/bevat-deze-code-een-bug/) en [hier](/blog/21/07/eenvoudige-sql-versus-performante-sql/).) Ik was impliciet van mening dat een blog over softwareontwikkeling over code moest gaan.
 
 
-Begrijp me niet verkeerd, blogs *mogen* natuurlijk heus wel programmeerproblemen als onderwerp hebben, met alle code die daarbij komt kijken. Maar in de loop van de tijd ben ik wel tot de conclusie gekomen dat niet *per se* hetgeen is waar ik over moet schrijven - of wil schrijven.
+Begrijp me niet verkeerd, blogs *mogen* natuurlijk heus wel programmeerproblemen als onderwerp hebben, met alle code die daarbij komt kijken. Maar in de loop van de tijd ben ik wel tot de conclusie gekomen dat dat niet *per se* hetgeen is waar ik over moet schrijven - of wil schrijven.
 
 
-Er geen enkele regel die stelt dat een blog over softwareontwikkeling alleen maar over bepaalde onderwerpen mag gaan, of vanuit een bepaalde invalshoek geschreven moet zijn. Ze *moeten* niet over programmeerproblemen gaan, of de nieuwste technieken. 
+Er is geen enkele regel die stelt dat een blog over softwareontwikkeling alleen maar over bepaalde onderwerpen mag gaan, of vanuit een bepaalde invalshoek geschreven moet zijn. Ze *moeten* niet over programmeerproblemen gaan, of de nieuwste technieken. 
 
 
 Het *mag* natuurlijk wel, maar alleen als je dat wil. Een blog is - onder andere - een middel om je persoonlijke ontwikkeling mee vorm te geven. Schrijf daarom vooral over de dingen waar je je graag in wil ontwikkelen. Kies de dingen die je interesse grijpen, waar je energie van krijgt. 
@@ -92,7 +95,10 @@ Maar ik herhaal: zulke regels bestaan helemaal niet - afgezien van in je hoofd. 
 Het (geforceerd) beperken van je uitdrukkingsmogelijkheden is fnuikend voor je creativiteit. Als je een blog probeert te proppen in een vorm die niet bij jou of bij het onderwerp past, zal het schrijven ervan onherroepelijk in frustratie verzanden.
 
 
-Een blog kan en mag allerlei vormen hebben. Denk aan *tutorials*, genummerde lijsten, of dagboekachtige aantekeningen. (Veel van mijn blogs hebben de volgende structuur: "Laatst overkwam me dit. Dit is wat ik daar van vind." Waarom? Omdat ze makkelijk zijn om te schrijven!) Het kan zelfs een tamelijk willekeurige verzameling van indrukken zijn. Als dat jou helpt om je gedachten te ordenen, wees dan niet bang om zo'n vorm te kiezen.
+Een blog kan en mag allerlei vormen hebben. Denk aan *tutorials*, genummerde lijsten, of dagboekachtige aantekeningen, of zelfs [gedichten](/tags/poëzie/). Het kan zelfs een tamelijk willekeurige verzameling van indrukken zijn. Als dat jou helpt om je gedachten te ordenen, wees dan niet bang om zo'n vorm te kiezen.
+
+
+Veel van mijn blogs hebben de volgende structuur: "Laatst overkwam me dit. Dit is wat ik daar van vind." Waarom? Omdat ze makkelijk zijn om te schrijven!
 
 
 Wees ook niet bang om te experimenteren met vorm. Schrijf af en toe een *tutorial*, of houd een uiteenzetting droog en technisch, om te kijken of die manier van schrijven bij je past. Zulke oefeningen kunnen je alleen maar dingen leren - over je onderwerp, maar vooral over jezelf.

@@ -59,7 +59,7 @@ Het was een ambitieuze voorstelling van zaken, maar ons enthousiasme evenaarde d
 Ironisch genoeg gebeurde toen precies wat ik hierboven beschreef: ik liet het vallen toen de werkdruk toenam.
 
 
-Toch was dit gesprek allesbehalve vruchteloos. Onze ambities zijn wel wat naar beneden bijgesteld. Het ambitieuze plan is vervangen door een maandelijkse mail waarin we de afdeling op de hoogte stellen van interessant nieuw leesvoer, actuele conferenties en nieuwe technologische ontwikkelingen. Bepaald geen maatwerk dat de bestaande cultuur in een lerende transformeert, maar wel een regelmatige *nudge* in die richting. 
+Toch was dit gesprek allesbehalve vruchteloos. Onze ambities zijn wel wat naar beneden bijgesteld. Het ambitieuze plan is vervangen door een maandelijkse mail waarin we de afdeling op de hoogte stellen van interessant leesvoer, actuele conferenties en nieuwe technologische ontwikkelingen. Bepaald geen maatwerk dat de bestaande cultuur in een lerende transformeert, maar wel een regelmatige *nudge* in die richting. 
 
 
 ## Een boek
@@ -83,7 +83,7 @@ Het boek waar ik het over had was [*Mapping Experiences*](https://www.oreilly.co
 Hoe simpel het idee ook is, het behoeft wel wat meer uitwerking dan dit ene zinnetje. Maar naarmate de tijd verstreek, zakte de wijsheid uit Kalbachs boek steeds verder weg. Met als gevolg dat het een steeds grotere opgave werd om deze blog aan te pakken.
 
 
-In [deze blog] (LINK; drie tips voor beginnende bloggers) schreef ik: zorg dat je geen onderzoek hoeft te doen om een blog te kunnen schrijven. Je hebt helemaal geen tijd voor onderzoek; je hebt ook nog een baan naast je blog. Schrijf daarom over de dingen waar je op dat moment mee bezig bent.
+In [deze blog](/blog/21/12/drie-tips-voor-beginnende-bloggers/) schreef ik: zorg dat je geen onderzoek hoeft te doen om een blog te kunnen schrijven. Je hebt helemaal geen tijd voor onderzoek; je hebt ook nog een baan naast je blog. Schrijf daarom over de dingen waar je op dat moment mee bezig bent.
 
 
 Die tip komt voor een belangrijk deel voort uit mijn ervaring van het niet-schrijven van deze blog. 

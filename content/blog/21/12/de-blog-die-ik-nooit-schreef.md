@@ -1,8 +1,8 @@
 ---
 title: "De blog die ik nooit schreef"
 author: "Karl van Heijster"
-date: 2021-08-23T08:17:38+02:00
-draft: true
+date: 2021-12-31T12:18:52+01:00
+draft: false
 comments: true
 tags: ["bedrijfscultuur", "bloggen", "boeken", "diagrammen", "informatieanalyse", "leercultuur", "motivatie", "procesverbetering"]
 summary: "Op 23 augustus maakte ik uitgebreide aantekeningen voor een blog - en in de maanden daarna deed ik mijn uiterste best die aantekeningen vooral niet uit te werken. Sindsdien vervuilt deze pseudoblog de broncode van deze website eigenlijk alleen maar. Ik zou 'm natuurlijk weg kunnen gooien, maar aan de andere kant: ik zou het ook niet kunnen doen. Dit is een deconstructie van de blog die ik nooit schreef."
@@ -17,7 +17,7 @@ Dit is een deconstructie van de blog die ik nooit schreef.
 > # User experience mappend richting een leercultuur
 
 
-Ik denk dat de problemen hier begonnen. Dit is, als ik zo vrij mag zijn, best een toffe titel. Die verwachtingen schept die ik totaal niet waar kan maken. - Of misschien: totaal niet waar *wil* maken? - In elk geval: die ik, door omstandigheden, niet waar heb gemaakt.
+Ik denk dat de problemen hier begonnen. Dit is, als ik zo vrij mag zijn, best een toffe titel. Die verwachtingen schept die ik totaal niet waar kan maken. (Of misschien: totaal niet waar *wil* maken?) In elk geval: die ik, door omstandigheden, niet waar heb gemaakt.
 
 
 ## Een gesprek
@@ -32,7 +32,7 @@ Ik denk dat de problemen hier begonnen. Dit is, als ik zo vrij mag zijn, best ee
 > Hoe ik precies op dat punt gekomen ben, durf ik ook niet te zeggen. Voor een deel komt het voort uit mijn eigen positieve ervaringen met leren centraal zetten in je eigen dagelijkse werkzaamheden. Een ander deel komt voort uit het organiseren van [*Developer meet-ups*](/tags/developer-meet-up/), informele bijeenkomsten waarin collega-ontwikkelaars aan elkaar presenteren waar ze enthousiast over worden. Een derde deel is dat ik, stom toevallig, een [*Fireside chat*](https://www.youtube.com/watch?v=5WjisyIXmG4&list=PLGS1QE37I5lTjbbOVm8QrS-85WAdeBehx) van de mannen van [Codurance](https://www.codurance.com/) keek over een [*culture of learning*](https://youtu.be/PKpCWtXccu8).
 
 
-Over dezelfde video schreef ik, tussen twee haakjes, in [deze blog](/blog/21/09/wie-is-verantwoordelijk-voor-jouw-ontwikkeling/). Leercultuur komt terug in [deze blog](/blog/21/10/waarom-we-developer-meet-ups-organiseren/) over het waarom van Developer Meet-ups. Later zou ik opnieuw over cultuur en cultuurverandering schrijven in [deze recensie](/blog/21/11/klimmen-op-de-cultuurladder/) van [*De Cultuurladder*](https://www.atlascontact.nl/boek/de-cultuurladder/).
+Over dezelfde video schreef ik, tussen twee haakjes, in [deze blog](/blog/21/09/wie-is-verantwoordelijk-voor-jouw-ontwikkeling/). Leercultuur komt terug in [deze blog](/blog/21/10/waarom-we-developer-meet-ups-organiseren/) over het waarom van Developer Meet-ups. Later zou ik opnieuw over cultuur en cultuurverandering schrijven in [deze recensie](/blog/21/11/klimmen-op-de-cultuurladder/) van en [deze blog](/blog/21/12/hoe-nooglers-testen-de-norm-maakten/) over [*De Cultuurladder*](https://www.atlascontact.nl/boek/de-cultuurladder/).
 
 
 De volgende observatie zou significant kunnen zijn: de onderwerpen waar ik ten tijde van schrijven mee bezig was, kon ik kwijt in andere blogs. Misschien ligt daarin een aanwijzing waarom deze blog nooit echt tot wasdom is gekomen.

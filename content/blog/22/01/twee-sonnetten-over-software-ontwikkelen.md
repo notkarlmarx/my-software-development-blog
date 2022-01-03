@@ -1,8 +1,8 @@
 ---
 title: "Twee sonnetten over software ontwikkelen"
 author: "Karl van Heijster"
-date: 2021-11-27T13:33:22+01:00
-draft: true
+date: 2022-01-03T10:02:42+01:00
+draft: false
 comments: true
 tags: ["clean code", "poëzie", "stakeholders", "verantwoordelijkheid"]
 summary: "*Stakeholder, u stijgt pas echt in achting / Als u - prijs de Heer voor dit geluk! - / Inziet wanneer niet de code de bug / Herbergt, maar uw eigen verwachting.*"

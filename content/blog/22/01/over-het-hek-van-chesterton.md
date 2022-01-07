@@ -1,5 +1,5 @@
 ---
-title: "Het hek van Chesterton"
+title: "Over het hek van Chesterton"
 author: "Karl van Heijster"
 date: 2022-01-07T08:18:00+01:00
 draft: true

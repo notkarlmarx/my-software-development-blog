@@ -2,7 +2,7 @@
 title: "Over het hek van Chesterton"
 author: "Karl van Heijster"
 date: 2022-01-07T08:18:00+01:00
-draft: true
+draft: false
 comments: true
 tags: ["boeken", "filosofie", "hek van Chesterton", "verandering"]
 summary: "Ik ben niet vies van het refactoren van code die ik onduidelijk vind, of zelfs van weggooien van (meestal dode) code. Dat is een goede eigenschap wanneer je het met beleid doet en een slechte als het uit louter enthousiasme voorkomt. De eerste resulteert in helderder en eenvoudiger code, de tweede in buggy software. Waar zit hem precies het onderscheid in? Het antwoord vond ik in *Software Engineering at Google* in het hoofdstuk over kennisdeling."

@@ -11,7 +11,7 @@ summary: "Er zijn twee soorten activiteiten in het leven: activiteiten die je en
 Volgens [een poll](https://www.youtube.com/post/UgkxPNJqUc-scwm4TJB_ZCKjsF6-xyXvQx13) van YouTuber [Nick Chapsas](https://www.youtube.com/channel/UCrkPsvLGln62OMZRO6K-llg) heeft ongeveer tweederde van zijn kijkers geprogrammeerd aan persoonlijk projecten, de afgelopen kerstvakantie. Ik hoor bij dat andere derde.
 
 
-Niet dat ik niet graag met code in de weer ben. En 't is ook niet zo dat ik graag lui ben - althans, niet méér [dan een ontwikkelaar hoort te zijn](https://exceptionnotfound.net/be-the-laziest-programmer-you-can-be). En het is al helemaal niet zo dat ik niet graag nieuwe dingen leer in mijn vrije tijd. 
+Niet dat ik niet graag met code in de weer ben. En 't is ook niet zo dat ik graag lui ben - althans, niet méér [dan een ontwikkelaar hoort te zijn](https://exceptionnotfound.net/be-the-laziest-programmer-you-can-be). En het is al helemaal niet zo dat ik niet graag [nieuwe dingen leer](/blog/21/05/lees-elke-dag-een-kwartier-over-je-vak/) in mijn vrije tijd. 
 
 
 Maar de vakanties houd ik wel graag vrij voor andere dingen dan code. Daar zit enigszins (1) een idee achter.

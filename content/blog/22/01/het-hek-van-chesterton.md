@@ -1,7 +1,7 @@
 ---
 title: "Het hek van Chesterton"
 author: "Karl van Heijster"
-date: 2021-11-20T10:03:59+01:00
+date: 2022-01-07T08:18:00+01:00
 draft: true
 comments: true
 tags: ["boeken", "filosofie", "hek van Chesterton", "verandering"]
@@ -32,10 +32,10 @@ De kwaliteit van code wordt voor een groot deel bepaald door context. Complexe c
 Ik geloof niet dat ik een slechte softwareontwikkelaar ben, maar ik zal onmiddellijk bekennen dat ik me vaak zat eerder als Chestertons moderne hervormer gedraag, dan het meer intelligente type. Waarom?
 
 
-Voor een deel zal het in de aard van het beestje zitten. Ik heb het dan over mijn karakter, maar ook de menselijke aard *an sich*. Wie geen enkele contextuele kennis heeft, weet heel goed dat hij niet zomaar moet handelen. 
+Voor een deel zal het in de aard van het beestje zitten. Ik heb het dan over mijn karakter, maar ook de menselijke aard *an sich*. 
 
 
-Maar wat als je een beetje contextuele informatie hebt? Mensen overschatten hun kennis van zaken in zulke gevallen enorm. Dat is zo, omdat ze nog niet weten wat ze niet weten. Geen wonder dat ze het niet in hun overwegingen meenemen. Dit [Dunning-krugereffect](https://nl.wikipedia.org/wiki/Dunning-krugereffect) heeft heel wat frustrerende debugsessies veroorzaakt.
+Wie geen enkele contextuele kennis heeft, weet heel goed dat hij niet zomaar moet handelen. Maar wat als je een beetje contextuele informatie hebt? Mensen overschatten hun kennis van zaken in zulke gevallen enorm. Dat is zo, omdat ze nog niet weten wat ze niet weten. Geen wonder dat ze het niet in hun overwegingen meenemen. Dit [Dunning-krugereffect](https://nl.wikipedia.org/wiki/Dunning-krugereffect) heeft heel wat frustrerende debugsessies veroorzaakt.
 
 
 ## Het vak
@@ -44,7 +44,7 @@ Maar wat als je een beetje contextuele informatie hebt? Mensen overschatten hun 
 Maar voor een ander deel zit het denk ik ook in de aard van ons vak. Software heet niet voor niets *soft*: het is makkelijk te wijzigen - of dat zou het in elk geval moeten zijn - en daardoor heerst de verwachting dat dit ook gebeurt. Er bestaat een druk van buitenaf om snel te handelen, zonder alle noodzakelijke context tot je te kunnen nemen.
 
 
-Sterker nog, zulke gedrag wordt in het vak zelfs gevierd en aangemoedigd. [Mark Zuckerberg](https://nl.wikipedia.org/wiki/Mark_Zuckerberg) zei niet voor niets [*move fast and break things*](https://en.wikipedia.org/wiki/Move_fast_and_break_things). [Het succes van Facebook, Google en Amazon](https://www.panmacmillan.com/authors/jonathan-taplin/move-fast-and-break-things/9781509847709) lijkt nu juist het gevolg van de antithese van het hek van Chesterton te zijn! 
+Sterker nog, zulk gedrag wordt in het vak zelfs gevierd en aangemoedigd. [Mark Zuckerberg](https://nl.wikipedia.org/wiki/Mark_Zuckerberg) zei niet voor niets [*move fast and break things*](https://en.wikipedia.org/wiki/Move_fast_and_break_things). [Het succes van Facebook, Google en Amazon](https://www.panmacmillan.com/authors/jonathan-taplin/move-fast-and-break-things/9781509847709) lijkt nu juist het gevolg van de antithese van het hek van Chesterton te zijn! 
 
 
 ## Zachtheid
@@ -65,7 +65,7 @@ De keuze om code te wijzigen, met alle gevolgen van dien, is echter relatief goe
 De gevolgen hiervan zijn moeilijk te overschatten. Het breken van code kan in worden gezet als middel om context te vergaren. Gebroken code wijst ons relatief goedkoop op de toegevoegde waarde van de oorspronkelijke implementatie. De aard van software stelt ons in staat om *move fast and break things* te verenigen met het hek van Chesterton. 
 
 
-Zijn we daarom vrij om ons als Chestertons moderne hervormers te gedragen, en kunnen we het intelligenter type vaarwel zeggen? Zo ver wil ik niet gaan. Voordat we die conclusie kunnen trekken, zou je toch echt eerst de gedachtegang achter Chestertons hek moeten hebben doorgrond.
+Zijn we daarom vrij om ons als Chestertons moderne hervormers te gedragen, en kunnen we het intelligenter type vaarwel zeggen? Zo ver wil ik niet gaan. Voordat je die conclusie kunt trekken, zou je toch echt eerst de gedachtegang achter Chestertons hek moeten hebben doorgrond.
 
 
 [^1]: De vertaling is van mijn hand. Klik [hier](https://en.wikipedia.org/wiki/G._K._Chesterton#Chesterton's_fence) voor het origineel.

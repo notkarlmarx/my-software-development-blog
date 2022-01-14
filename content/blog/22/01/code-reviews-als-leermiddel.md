@@ -1,11 +1,11 @@
 ---
 title: "Code reviews als leermiddel"
 author: "Karl van Heijster"
-date: 2021-11-26T10:12:42+01:00
-draft: true
+date: 2022-01-14T07:52:13+01:00
+draft: false
 comments: true
 tags: ["code reviews", "communicatie", "empathie", "intentie van code", "leermoment", "samenwerking"]
-summary: "Toen ik begon als softwareontwikkelaar, was ik eerlijk gezegd een beetje bang voor code reviews. Inmiddels zijn de rollen omgedraaid, en zijn mijn collega's banger voor mijn code reviews dan ik voor die van hen. Feit is dat ik een stuk scheutiger ben met mijn opmerkingen dan mijn collega's. Toch denk ik dat er in mijn feitelijke commentaar maar weinig is om bang voor te zijn. Ik zie code reviews namelijk niet als middel en moment om kritiek te geven op andermans code. Of liever: *niet alleen* als middel en moment om kritiek te geven."
+summary: "Toen ik begon als softwareontwikkelaar, was ik eerlijk gezegd een beetje bang voor code reviews. Inmiddels zijn de rollen omgedraaid, en zijn mijn collega's banger voor mijn code reviews dan ik voor die van hen. Feit is dat ik een stuk scheutiger ben met mijn opmerkingen dan mijn collega's. Toch denk ik dat er in mijn commentaar maar weinig is om bang voor te zijn. Ik zie code reviews namelijk niet als middel en moment om kritiek te geven op andermans code. Of liever: *niet alleen* als middel en moment om kritiek te geven."
 ---
 
 Toen ik begon als softwareontwikkelaar, was ik eerlijk gezegd een beetje bang voor [code reviews](https://en.wikipedia.org/wiki/Code_review). Ik was bang dat ik stomme fouten maakte waar mijn meer ervaren collega's me zuchtend op zouden wijzen. En als ik hun code na moest lopen, was ik bang dat ik overduidelijke bugs over het hoofd zou zien, en daarmee aan zou tonen dat ik eigenlijk helemaal niet kon programmeren.

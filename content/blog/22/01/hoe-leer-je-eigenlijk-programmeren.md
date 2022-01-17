@@ -1,30 +1,33 @@
 ---
 title: "Hoe leer je eigenlijk programmeren?"
 author: "Karl van Heijster"
-date: 2021-12-03T07:45:38+01:00
-draft: true
+date: 2022-01-17T08:24:56+01:00
+draft: false
 comments: true
 tags: ["leren", "productiviteit", "zelfstudie"]
 summary: "Hoe leert iemand programmeren? Felienne Harmans stelt deze vraag naar aanleiding van een persoonlijke anekdote over de tijd dat ze jonge kinderen lesgaf over het onderwerp. Ze geeft ruiterlijk toe, als onbewust onbekwame leraar, in eerste instantie terug te vallen op de manier waarop ze zelf leerde programmeren: *door het te doen.* Maar is ontdekkend leren de beste manier om te leren programmeren? Te oordelen naar het succes van haar leerlingen, concludeert Hermans: nee, bepaald niet."
 ---
 
-Als ik te brak ben om over softwareontwikkeling te lezen [tijdens mijn ontbijt](/blog/21/05/lees-elke-dag-een-kwartier-over-je-vak) (de wekker gaat vroeg als mijn vrouw een ochtenddienst heeft), zet ik een filmpje op YouTube op. Laatst keek ik deze van Felienne Hermans, universitair docent op het [Leiden Institute of Advanced Computer Science](https://liacs.leidenuniv.nl/):
+Als ik te brak ben om over softwareontwikkeling te lezen [tijdens mijn ontbijt](/blog/21/05/lees-elke-dag-een-kwartier-over-je-vak) (de wekker gaat vroeg als mijn vrouw een ochtenddienst heeft), zet ik een filmpje op YouTube op. 
+
+
+Laatst keek ik deze van Felienne Hermans, universitair docent op het [Leiden Institute of Advanced Computer Science](https://liacs.leidenuniv.nl/):
 
 
 {{<youtube id="az-MX_M11lg" title="How to Read Complex Code? • Felienne Hermans • GOTO 2021" >}}
 <br>
 
 
-Het was een prettig ontbijt, want Hermans is een enthousiaste, aanstekelijke spreekster. Een aantal jaar geleden zag ik haar op een conferentie in Arnhem, waar ze haar toehoorders aanspoorde hun code eens door een poëtische bril te bekijken. Erg gecharmeerd van de dichterlijke kwaliteiten van mijn eigen code ben ik niet, maar het zou zomaar kunnen dat haar vrolijke lezing het zaadje bij mij plantte waar [een stuk of wat](/blog/21/08/vijf-haikus-over-software-ontwikkelen/) [hopelijk humoristische haiku's](/blog/21/09/vijf-plus-een-haikus-over-software-ontwikkeling/) [over softwareontwikkeling](/blog/21/12/vijf-nieuwe-haikus-over-software-ontwikkelen/) uit zijn gegroeid.
+Het was een prettig ontbijt, want Hermans is een enthousiaste, aanstekelijke spreekster. Een aantal jaar geleden zag ik haar op een conferentie in Arnhem, waar ze haar toehoorders aanspoorde hun code eens door een poëtische bril te bekijken. Erg gecharmeerd van de dichterlijke kwaliteiten van mijn eigen code ben ik niet, maar het zou zomaar kunnen dat haar vrolijke lezing het zaadje bij mij plantte waar [een stuk of wat](/blog/21/08/vijf-haikus-over-software-ontwikkelen/) [hopelijk humoristische haiku's](/blog/21/09/vijf-plus-een-haikus-over-software-ontwikkeling/) [over softwareontwikkeling](/blog/21/12/vijf-nieuwe-haikus-over-software-ontwikkelen/) uit zijn gegroeid (en laterna ook [wat sonnetten](/blog/22/01/twee-sonnetten-over-software-ontwikkelen/)).
 
 
 ## Experimenteer, maak fouten
 
 
-Maar ook los van haar koddige presentatiestijl, is de video hierboven de moeite waard. Een vraag die Hermans in haar lezing opwerpt, is hoe iemand leert programmeren. Ze stelt deze vraag naar aanleiding van een persoonlijke anekdote over de tijd dat ze jonge kinderen lesgaf over het onderwerp. Ze geeft ruiterlijk toe, als onbewust onbekwame leraar, in eerste instantie terug te vallen op de manier waarop ze zelf leerde programmeren: *door het te doen.* Anders gezegd: begin maar een applicatie te bouwen, en laten we hopen dat je leert van de fouten die je onderweg onvermijdelijk zult maken.
+Maar ook los van haar koddige presentatiestijl is de video hierboven de moeite waard. Een vraag die Hermans in haar lezing opwerpt, is hoe iemand leert programmeren. Ze stelt deze vraag naar aanleiding van een persoonlijke anekdote over de tijd dat ze jonge kinderen lesgaf over het onderwerp. Ze geeft ruiterlijk toe, als onbewust onbekwame leraar, in eerste instantie terug te vallen op de manier waarop ze zelf leerde programmeren: *door het te doen.* Anders gezegd: begin maar een applicatie te bouwen, en laten we hopen dat je leert van de fouten die je onderweg onvermijdelijk zult maken.
 
 
-Dat Hermans zo leerde programmeren, hoeft niet te verbazen. Het was vóór de tijd van YouTube-tutorials en helpende handjes op [Stack Overflow](https://stackoverflow.com/). Het enige wat ze had was een boek waar ze code uit kon overtypen. En als ze afweek van het voorbeeld en iets brak, moest ze zelf uitvinden waar het mis was gegaan.
+Dat Hermans zo leerde programmeren, hoeft niet te verbazen. Het was vóór de tijd van YouTube-tutorials en helpende handjes op [Stack Overflow](https://stackoverflow.com/). Het enige wat ze had was een boek waar ze code uit kon overtypen. En als ze afweek van het voorbeeld en iets stukmaakte, moest ze zelf uitvinden waar het mis was gegaan.
 
 
 Maar deze manier van leren is niet beperkt gebleven tot de tijd waarin Hermans zich het vak eigen maakte. Ze geeft enkele voorbeelden van lesboeken voor kinderen waarin hetzelfde sentiment expliciet wordt overgedragen: experimenteer, maak fouten en probeer daarvan te leren. Soms geven de auteurs zelfs toe: programmeren is vaak moeilijk en frustrerend. Daarmee implicerend: en er is niets wat we daar aan kunnen doen.
@@ -69,7 +72,7 @@ Experimenteren en fouten maken is zo moeilijk niet, als je niet weet waar je mee
 ## Vloek van kennis
 
 
-Volgens mij leiden voorstanders van ontdekkend leren aan de vloek van kennis. Hun onbewuste bekwaamheid zorgt ervoor dat ze zich niet meer in kunnen leven in iemand die niet over dezelfde kennis, vaardigheden en aannames beschikt als zij. 
+Volgens mij lijden voorstanders van ontdekkend leren aan de vloek van kennis. Hun onbewuste bekwaamheid zorgt ervoor dat ze zich niet meer in kunnen leven in iemand die niet over dezelfde kennis, vaardigheden en aannames beschikt als zij. 
 
 
 Omdat ze zelf prima met experimenten uit de voeten kunnen, zien ze over het hoofd hoe hun advies overkomt op een nieuweling. Namelijk: als een zwaktebod. Als je zegt: "Experimenteer, maak fouten en leer daarvan", dan horen nieuwkomers: "Ik weet niet (meer) hoe je dit leert, zoek het maar zelf uit."

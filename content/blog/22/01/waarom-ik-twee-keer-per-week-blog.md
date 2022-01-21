@@ -1,8 +1,8 @@
 ---
 title: "Waarom ik twee keer per week blog"
 author: "Karl van Heijster"
-date: 2021-12-03T07:05:53+01:00
-draft: true
+date: 2022-01-21T08:18:53+01:00
+draft: false
 comments: true
 tags: ["bloggen", "motivatie", "zelfstudie"]
 summary: "Een collega vroeg me eens: \"Twee keer per week bloggen, is dat niet heel erg veel?\" Mijn antwoord was: \"Het is uitdagend.\" Nu ik erop reflecteer, besef ik dat je zijn vraag op twee manieren op kan vatten. De eerste, en volgens mij meest voor de hand liggende: zitten er wel genoeg uren in de week om goed en wel twee blogs te kunnen schrijven? Maar de tweede is even gegrond: heb je wel genoeg materiaal om twee keer per week over te schrijven?"
@@ -29,10 +29,10 @@ Als je zou willen, zou je elke week twee, drie, vier - of tien! - blogs van hond
 ## Reflectie
 
 
-Inhoudelijk bezien, gebruik ik mijn blogs als reflectiemiddel, als manier om mijn eigen gedachten scherp te krijgen. Maar dat betekent niet dat ik per se veel tijd kwijt ben aan onderzoek. Sterker nog, ik schrijf over dingen die toch al op mijn pad kwamen. Ik doe maar zelden onderzoek met als specifiek doel er een blog over te kunnen schrijven.
+Inhoudelijk bezien, gebruik ik mijn blogs als reflectiemiddel, als manier om mijn eigen gedachten scherp te krijgen. Maar dat betekent niet dat ik per se veel tijd kwijt ben aan onderzoek. Sterker nog, [ik schrijf over dingen die toch al op mijn pad kwamen](/blog/21/12/drie-tips-voor-beginnende-bloggers/). Ik doe maar zelden onderzoek met als specifiek doel er een blog over te kunnen schrijven.
 
 
-Maar natuurlijk haal je wel meer uit een blog als leermiddel, als je er iets meer tijd aan besteedt. Dat is waarom ik er twee schrijf, en geen drie of vier of tien. 
+Maar natuurlijk haal je wel meer uit elke individuele blog als leermiddel, naarmate je er meer tijd aan besteedt. Dat is waarom ik er twee schrijf, en geen drie of vier of tien. Bij twee blogs heb je voldoende tijd voor elk onderwerp, en schrijf je tegelijkertijd niet zóveel dat het overweldigend wordt.
 
 
 ## Efficiënt

@@ -1,14 +1,14 @@
 ---
 title: "Hoe lang hoort een Sprint Review te duren?"
 author: "Karl van Heijster"
-date: 2021-12-06T08:31:43+01:00
-draft: true
+date: 2022-01-24T08:07:14+01:00
+draft: false
 comments: true
 tags: ["communicatie", "empathie", "scrum", "sprint review", "stakeholders"]
 summary: "Soms sluit ik wel eens aan bij de Sprint Reviews van collega-teams. Wat me daarbij opvalt, is dat er een behoorlijke diversiteit in tijdsduur is tussen de Reviews van de verschillende teams. De onze zijn getimeboxt op een uur en 'n kwartier, al duren ze in de praktijk meestal ongeveer een uur. Maar ik woon ook Reviews bij van een halfuurtje. Wat is er aan de hand?"
 ---
 
-Soms sluit ik wel eens aan bij de Sprint Reviews van collega-teams. Dat heeft twee redenen: de eerste is om op de hoogte te blijven van waar mijn collega's mee bezig zijn. De tweede reden is in de hoop iets op te steken van hoe wij onze eigen Reviews opzetten.
+Soms sluit ik wel eens aan bij de Sprint Reviews van collega-teams. Dat heeft twee redenen. De eerste is om op de hoogte te blijven van waar mijn collega's mee bezig zijn. De tweede reden is in de hoop iets op te steken van hoe wij onze eigen Reviews opzetten.
 
 
 Wat opvalt, is dat er een behoorlijke diversiteit in tijdsduur is tussen de Reviews van de verschillende teams. De onze zijn getimeboxt op een uur en 'n kwartier, al duren ze in de praktijk meestal ongeveer een uur. Maar ik woon ook Reviews bij van een halfuurtje. 
@@ -62,7 +62,7 @@ Die tijdsdruk voelen stakeholders ook, en daarom trekken ze alleen hun mond open
 ## Feedback
 
 
-De halfuur durende Sprint Review verloochent daarmee de belangrijkste functie van een Sprint Review: *feedback krijgen van je stakeholders*. Je wil als team altijd weten wat je stakeholders vinden van de opgeleverde functionaliteit. En dan vooral: waar ze nog ruimte zien voor verbetering, of liever nog: ruimte eisen voor verbetering. 
+De halfuur durende Sprint Review verloochent daarmee de belangrijkste functie van een Sprint Review: *feedback krijgen van je stakeholders*. Je wil als team altijd weten wat je stakeholders vinden van de opgeleverde functionaliteit. En dan vooral: waar ze nog ruimte zien voor verbetering, of zelfs ruimte eisen voor verbetering. 
 
 
 Ik denk dat onze Reviews voor zo'n 70 procent bestaan uit het presenteren van de features, en zo'n 30 procent uit het uitvragen van de stakeholders naar hun mening. Ik zal niet liegen: mondige stakeholders kunnen behoorlijke lastpakken zijn. Maar aan het eind van de dag mag je je in je handen wrijven met een kritisch klankbord, daar heb je veel meer aan dan jaknikkers - of ze de ruimte hebben gekregen om hun mening te geven of niet.

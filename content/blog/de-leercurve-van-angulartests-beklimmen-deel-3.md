@@ -91,11 +91,11 @@ Hoe nu verder? Dat leg ik in de laatste blog in deze reeks uit. Hint: het heeft 
 
 ## Meer in deze reeks
 
-1. **Van *end to end* naar unit tests**
+1. [Van *end to end* naar unit tests] (LINK)
 
-2. Van integratie- naar unit tests [volgt binnenkort]
+2. [Van integratie- naar unit tests] (LINK) 
 
-3. Zijn deze tests onderhoudbaar? [volgt binnenkort]
+3. **Zijn deze tests onderhoudbaar?**
 
 
 [^1]: Er bestaat in de testwereld enige controverse over de vraag of je zulke code ook zou moeten mocken in unit tests. Vladimir Khorikov heeft in [*Unit Testing*](https://www.manning.com/books/unit-testing) mijns inziens de discussie beslecht in het voordeel van de bovenstaande implementatie.

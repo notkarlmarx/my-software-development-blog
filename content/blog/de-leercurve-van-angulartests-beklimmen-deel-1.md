@@ -88,7 +88,7 @@ Uit het feit dat deze blog nog doorgaat na deze alinea, kun je vast en zeker wel
 
 2. Van integratie- naar unit tests [volgt binnenkort]
 
-3. ...? [volgt binnenkort]
+3. Zijn deze tests onderhoudbaar? [volgt binnenkort]
 
 
 [^1]: [Test-driven development](https://nl.wikipedia.org/wiki/Test-driven_development) is een manier om met precies die twee problemen om te gaan. Helaas is die praktijk nog niet bij ons in het team - mezelf incluis - ingesleten. Het is interessant om in de toekomst te onderzoeken wat ons tegenhoudt deze manier van software ontwikkelen eigen te maken.

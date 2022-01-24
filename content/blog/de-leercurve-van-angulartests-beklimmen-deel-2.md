@@ -87,7 +87,7 @@ Maar idealiter voorkom je die situatie. In onze nieuwe opzet zouden componenten 
 Is dat het eind van het verhaal? Is ons team enthousiast aan de slag gegaan om vereenvoudigde Angulartests te schrijven?
 
 
-Nee, niet helemaal helaas. Waarom niet? Dat leg ik in een volgende blog uit. Hint: het heeft [hier](/blog/21/09/droger-tests-met-factory-methods/) iets mee van doen.
+Nee, niet helemaal helaas. Waarom niet? Dat leg ik in een volgende blog uit.
 
 
 ## Meer in deze reeks
@@ -96,7 +96,7 @@ Nee, niet helemaal helaas. Waarom niet? Dat leg ik in een volgende blog uit. Hin
 
 2. **Van integratie- naar unit tests**
 
-3. ...? [volgt binnenkort]
+3. Zijn deze tests onderhoudbaar? [volgt binnenkort]
 
 
 [^1]: Strikt genomen wil je geen *methods* testen, maar *gedrag*. Het gedrag is de abstractie waar je in geïnteresseerd bent, de method is de implementatie daarvan. Voor onze uiteenzetting van hoe een unit test er in .NET uitziet, is dat verschil echter niet van belang.

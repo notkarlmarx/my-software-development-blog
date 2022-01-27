@@ -98,6 +98,8 @@ Nee, niet helemaal helaas. Waarom niet? Dat leg ik in een volgende blog uit.
 
 3. Zijn deze tests onderhoudbaar? [volgt binnenkort]
 
+4. Droger Angulartests met factory classes [volgt binnenkort]
+
 
 [^1]: Strikt genomen wil je geen *methods* testen, maar *gedrag*. Het gedrag is de abstractie waar je in geïnteresseerd bent, de method is de implementatie daarvan. Voor onze uiteenzetting van hoe een unit test er in .NET uitziet, is dat verschil echter niet van belang.
 

@@ -62,7 +62,7 @@ Onze tests zouden er in dat geval zo uit kunnen komen te zien:
 {{< gist dotkarl 3086ecdaffd9bac3151a25173e2c093f "example.service.spec.ts">}}
 
 
-In het voorbeeld zie je twee soorten afhankelijkheden: mocks en services. De mocks reserveer ik voor *third party*-code, de services bestaan louter en alleen uit code die het team zelf in beheer heeft.[^1]
+In het voorbeeld zie je twee soorten afhankelijkheden: mocks[^1] en services. De mocks reserveer ik voor *third party*-code, de services bestaan louter en alleen uit code die het team zelf in beheer heeft.[^2]
 
 
 Het gebruik van mocks versimpelt het opzetten van de afhankelijkheden voor een ontwikkelaar aanzienlijk. Sterker nog, deze opzetten *zonder* mocks is eigenlijk onbegonnen werk. De afhankelijkheidsboom kan ontzettend diep worden, en als ontwikkelaar heb je lang niet altijd directe toegang tot alle classes die je daarvoor nodig hebt.
@@ -71,7 +71,7 @@ Het gebruik van mocks versimpelt het opzetten van de afhankelijkheden voor een o
 ## Nadelen
 
 
-Maar er kleven ook nadelen aan het gebruik van mocks.[^2] Ten eerste zijn ze onderhoudsintensief. Het verwachte gedrag moet door een ontwikkelaar handmatig uitgeschreven worden. En omdat verschillende tests in principe verschillend gedrag van dezelfde afhankelijkheid zou kunnen verwachten, kun je uitkomen dat je voor elke test aparte mocks moet uitschrijven. 
+Maar er kleven ook nadelen aan het gebruik van mocks.[^3] Ten eerste zijn ze onderhoudsintensief. Het verwachte gedrag moet door een ontwikkelaar handmatig uitgeschreven worden. En omdat verschillende tests in principe verschillend gedrag van dezelfde afhankelijkheid zou kunnen verwachten, kun je uitkomen dat je voor elke test aparte mocks moet uitschrijven. 
 
 
 \- En dan heb ik het nog niet eens over de situatie waarin het gedrag van een afhankelijkheid verandert! In zo'n situatie moeten alle mocks aangepast worden. Het maakt tests, met andere woorden, broos voor verandering.
@@ -97,8 +97,12 @@ Hoe nu verder? Dat leg ik in de laatste blog in deze reeks uit. Hint: het heeft 
 
 3. **Zijn deze tests onderhoudbaar?**
 
+4. Droger Angulartests met factory classes [volgt binnenkort]
 
-[^1]: Er bestaat in de testwereld enige controverse over de vraag of je zulke code ook zou moeten mocken in unit tests. Vladimir Khorikov heeft in [*Unit Testing*](https://www.manning.com/books/unit-testing) mijns inziens de discussie beslecht in het voordeel van de bovenstaande implementatie.
+
+[^1]: Er zijn verschillende manieren om objecten te mocken in Angular. Ik gebruik hier de *spies* van het [Jasmine test framework](https://jasmine.github.io/). Voor alternatieven, zie [deze blog](https://codecraft.tv/courses/angular/unit-testing/mocks-and-spies/). 
+
+[^2]: Er bestaat in de testwereld enige controverse over de vraag of je zulke code ook zou moeten mocken in unit tests. Vladimir Khorikov heeft in [*Unit Testing*](https://www.manning.com/books/unit-testing) mijns inziens de discussie beslecht in het voordeel van de bovenstaande implementatie.
 
 
-[^2]: Zie opnieuw Khorikovs [*Unit Testing*](https://www.manning.com/books/unit-testing), en hoofdstuk 13 in [*Software Engineering at Google*](https://www.oreilly.com/library/view/software-engineering-at/9781492082781/).
+[^3]: Zie opnieuw Khorikovs [*Unit Testing*](https://www.manning.com/books/unit-testing), en hoofdstuk 13 in [*Software Engineering at Google*](https://www.oreilly.com/library/view/software-engineering-at/9781492082781/).

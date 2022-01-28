@@ -1,11 +1,11 @@
 ---
 title: "De leercurve van Angulartests beklimmen - Deel 1"
 author: "Karl van Heijster"
-date: 2022-01-14T08:14:35+01:00
-draft: true
+date: 2022-01-28T08:15:23+01:00
+draft: false
 comments: true
 tags: ["angular", "clean code", "end to end tests", "leermoment", "software ontwikkelen", "technische schuld", "testen", "unit tests", "web development"]
-summary: "Niet lang nadat we Angular als front end-framework besloten te gebruiken, maakten we de keuze de unit tests te laten voor wat het was. We waren heus wel overtuigd van het belang ervan, dat was het probleem niet, maar de stijle leercurve van Angulars tests verleidde ons daar niet naar te handelen. Toch lieten we het testen van de front end niet helemaal schieten. Onze tester had zich verdiept in *end to end* testframework Selenium, en het team wilde graag geloven dat dit een acceptabel alternatief was voor het schrijven van front end tests. En eerlijk is eerlijk, een tijdlang werkte deze aanpak behoorlijk. Maar uiteindelijk dwong de werkelijkheid ons toch die beslissing te herzien."
+summary: "Niet lang nadat we Angular als front end-framework besloten te gebruiken, maakten we de keuze de unit tests te laten voor wat het was. We waren heus wel overtuigd van het belang ervan, dat was het probleem niet, maar de stijle leercurve van Angulars tests verleidde ons daar niet naar te handelen. Toch lieten we het testen van de front end niet helemaal schieten. Onze tester had zich verdiept in *end to end* testframework Selenium, en het team wilde graag geloven dat dit een acceptabel alternatief was voor het schrijven van front end tests. Maar uiteindelijk dwong de werkelijkheid ons toch die beslissing te herzien."
 ---
 
 # Van *end to end* naar unit tests
@@ -67,7 +67,7 @@ Het klinkt als een open deur, natuurlijk, maar E2E-tests zijn geen goede unit te
 
 2. **Ze signaleren alleen *dat* er iets mis is.** Maar *wat*, dat is veelal een open vraag. Doordat ze zo langzaam zijn, wordt er een drempel opgeworpen om al teveel E2E-tests te schrijven. Dat zorgt er voor dat de tests grofmaziger van aard worden. En dat zorgt er, ten slotte, weer voor dat de tests weinig inzicht bieden over de oorzaak van een defect.
 
-3. **Ze zijn nondeterministisch.** E2E-tests kunnen om allerlei redenen falen die niets met wijzigingen in de logica te maken hebben: denk aan een slechte verbinding of een afhankelijkheid. Dat is op zich waardevolle informatie, maar niet om erachter te komen of je logica een bug heeft geïntroduceerd of niet. Hun nondeterministische aard zorgt ervoor dat ze het liefst door ontwikkelaars genegeerd worden, totdat het niet anders kan.
+3. **Ze zijn nondeterministisch.** E2E-tests kunnen om allerlei redenen falen die niets met wijzigingen in de logica te maken hebben: denk aan een slechte verbinding of een defect in een afhankelijkheid. Dat is op zich waardevolle informatie, maar niet om erachter te komen of je logica een bug heeft geïntroduceerd of niet. Hun nondeterministische aard zorgt ervoor dat ze het liefst door ontwikkelaars genegeerd worden, totdat het niet anders kan.
 
 
 Let wel, hiermee is niet gezegd dat E2E-tests geen waarde hebben. Ze zijn een uitstekende aanvulling op unit tests. Maar een vervanging? Nee, daarvoor zijn ze bepaald niet geschikt.
@@ -79,7 +79,10 @@ Let wel, hiermee is niet gezegd dat E2E-tests geen waarde hebben. Ze zijn een ui
 Het team werd dus voor een keuze gesteld. Gaan we door met het exclusieve gebruik van Selenium om de front end te testen, met alle gebreken van dien, of gaan we er werk van maken om de front end daadwerkelijk te *unit*testen? (Er was nog een derde optie, namelijk het testen van de front end helemaal te laten schieten. Maar die kon op geen enkele steun rekenen in het team. We staan immers voor de waarde van tests!)
 
 
-Uit het feit dat deze blog nog doorgaat na deze alinea, kun je vast en zeker wel raden welke keus het team gemaakt heeft. De daaropvolgende keuze in de beslissingsboom was deze: gaan we ons in het zweet werken om Angulars steile leercurve te beklimmen, of bekijken we of er een manier is waarop we het testen voor ons kunnen vergemakkelijken? Daar gaat de volgende blog in deze reeks over.
+Uit het feit dat deze blog het eerste deel is in een serie, kun je vast en zeker wel raden welke keus het team gemaakt heeft. 
+
+
+De dááropvolgende keuze in de beslissingsboom was deze: gaan we ons in het zweet werken om Angulars steile leercurve te beklimmen, of bekijken we of er een manier is waarop we het testen voor ons kunnen vergemakkelijken? Daar gaat de volgende blog in deze reeks over.
 
 
 ## Meer in deze reeks

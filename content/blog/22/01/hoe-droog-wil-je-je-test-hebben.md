@@ -1,8 +1,8 @@
 ---
 title: "Hoe droog wil je je test hebben?"
 author: "Karl van Heijster"
-date: 2021-12-13T15:42:28+01:00
-draft: true
+date: 2022-01-31T08:07:12+01:00
+draft: false
 comments: true
 tags: ["clean code", "DRY", "intentie van code", "leermoment", "testen", "unit tests"]
 summary: "Ik heb in het verleden over droger tests geschreven, want ik ben een softwareontwikkelaar en wij herhalen onszelf niet graag. En precies daarom ga ik het nóg een keer over droger tests hebben - of liever: minder droge tests. Want, anders dan je als naïeve ontwikkelaar zou verwachten, gelden er voor productiecode en testcode andere regels wat betreft de mate waarin herhaling tolerabel of zelfs wenselijk is. "
@@ -26,7 +26,7 @@ De reden daarvoor mag als vanzelfsprekend worden beschouwd. Als de kennis op é�
 ## Droge testcode?
 
 
-Voor tests ligt de boel wat genuanceerder. Bekijk bijvoorbeeld eens de volgende testcase (die ik overneem uit hoofdstuk 12, *Unit Testing*, van het [fantastische] (LINK 20 BESTE BOEKEN) [*Software Engineering at Google*](https://www.oreilly.com/library/view/software-engineering-at/9781492082781/)):
+Voor tests ligt de boel wat genuanceerder. Bekijk bijvoorbeeld eens de volgende testcase (die ik overneem uit hoofdstuk 12, *Unit Testing*, van het [fantastische](/blog/21/12/de-beste-boeken-over-software-ontwikkeling-die-ik-in-2021-las/) [*Software Engineering at Google*](https://www.oreilly.com/library/view/software-engineering-at/9781492082781/)):
 
 
 ```java

@@ -1,8 +1,8 @@
 ---
 title: "De leercurve van Angulartests beklimmen - Deel 2"
 author: "Karl van Heijster"
-date: 2022-01-12T14:24:08+01:00
-draft: true
+date: 2022-02-04T07:48:39+01:00
+draft: false
 comments: true
 tags: ["angular", "clean code", "integratietests", "leermoment", "ontwerppatronen", "single-responsibility principe", "software ontwikkelen", "technische schuld", "testen", "unit tests", "web development"]
 summary: "In een vorige blog beschreef ik de keuze van mijn team om de front end van onze Angular-applicatie te testen via *end to end*-tests - en waarom we daar uiteindelijk op terugkwamen. Nu we besloten hadden inderdaad te willen (nee, *moeten*) unit testen, doemde er een nieuwe keuze op in de beslisboom: gaan we ons in het zweet werken om Angulars steile leercurve te beklimmen, of bekijken we of er een manier is waarop we het testen voor ons kunnen vergemakkelijken?"
@@ -11,10 +11,10 @@ summary: "In een vorige blog beschreef ik de keuze van mijn team om de front end
 # Van integratie- naar unit tests
 
 
-In een [vorige blog] (LINK) beschreef ik de keuze van mijn team om de front end van onze Angular-applicatie te testen via *end to end*-tests - en waarom we daar uiteindelijk op terugkwamen. Nu we besloten hadden inderdaad te willen (nee, *moeten*) unit testen, doemde er een nieuwe keuze op in de beslisboom: gaan we ons in het zweet werken om Angulars steile leercurve te beklimmen, of bekijken we of er een manier is waarop we het testen voor ons kunnen vergemakkelijken?
+In een [vorige blog](/blog/22/01/de-leercurve-van-angulartests-beklimmen-deel-1/) beschreef ik de keuze van mijn team om de front end van onze Angular-applicatie te testen via *end to end*-tests - en waarom we daar uiteindelijk op terugkwamen. Nu we besloten hadden inderdaad te willen (nee, *moeten*) unit testen, doemde er een nieuwe keuze op in de beslisboom: gaan we ons in het zweet werken om Angulars steile leercurve te beklimmen, of bekijken we of er een manier is waarop we het testen voor ons kunnen vergemakkelijken?
 
 
-Omdat programmeurs nu eenmaal lui zijn, kozen we - ook hier - voor de tweede optie. Maar voordat we de uitkomsten van dat onderzoek bekijken, loont het zich te bekijken *waarom* we de leercurve van de Angulartests nu precies zo stijl vonden.
+Omdat programmeurs nu eenmaal lui zijn, kozen we voor de tweede optie. Maar voordat we de uitkomsten van dat onderzoek bekijken, loont het zich te bekijken *waarom* we de leercurve van de Angulartests nu precies zo stijl vonden.
 
 
 ## .NET vs. Angular
@@ -63,7 +63,7 @@ Het is met name deze versmelting van presentatie en logica die testen in Angular
 ## Services boven componenten
 
 
-Het Angular-team lijkt zich dat ook te hebben beseft. Dat is waarom hun testdocumentatie steeds meer leunt richting het [testen van services](https://angular.io/guide/testing-services), in plaats componenten. Services zijn immers classes à la C#, die zich louter met logica bezig (zouden moeten) houden. Ze kunnen dus op dezelfde manier worden getest.
+Het Angular-team lijkt zich dat ook te hebben beseft. Dat is waarom hun testdocumentatie steeds nadruk is gaan leggen op het [testen van services](https://angular.io/guide/testing-services), in plaats componenten. Services zijn immers classes à la C#, die zich louter met logica bezig (zouden moeten) houden. Ze kunnen dus op dezelfde manier worden getest.
 
 
 (Overigens, componenten zijn net zozeer classes en kunnen in principe dus op dezelfde manier getest worden; zie [deze blog](https://www.forbes.com/sites/forbesdigitalgroup/2020/04/21/how-to-make-your-angular-unit-tests-25x-faster/) van [Zach Shuffield](https://www.linkedin.com/in/zach-shuffield-0a00a5aa/). Dit lost de schending van het SRP echter niet op. De opzet van de tests is dus eenvoudiger, maar de winst blijft beperkt als de code niet testbaar is opgezet. Shuffield prijst deze opzet overigens aan als manier om Angulartests 2,5 keer sneller te maken, wat mijns inziens eerder bijzaak is.) 
@@ -78,7 +78,7 @@ Dat is dan ook de uiteindelijke route die we hebben genomen om onze leercurve vo
 En de componenten? Hebben die geen tests nodig? Nou ja, *it depends* (natúúrlijk!). Als de componenten, ondanks onze refactorslag, nog steeds een aanzienlijke hoeveelheid presentatielogica blijken te bevatten, dan kan het verstandig zijn om ze op de oorspronkelijke manier te testen. 
 
 
-Maar idealiter voorkom je die situatie. In onze nieuwe opzet zouden componenten alleen maar verantwoordelijk moeten zijn voor het aan de HTML doorspelen van data die ze uit de services krijgen. Met andere woorden: componenten moeten [`HumbleObjects`](https://martinfowler.com/bliki/HumbleObject.html) worden - én blijven. Een `HumbleObject` is een object dat zó simpel is dat testen eigenlijk zonde van je tijd is. 
+Maar idealiter voorkom je die situatie. In onze nieuwe opzet zouden componenten alleen maar verantwoordelijk moeten zijn voor het aan de HTML doorspelen van data die ze uit de services krijgen. Met andere woorden: componenten moeten [Humble Objects](https://martinfowler.com/bliki/HumbleObject.html) worden - én blijven. Een Humble Object is een object dat zó simpel is dat testen eigenlijk zonde van je tijd is. 
 
 
 ## Het eind?
@@ -92,7 +92,7 @@ Nee, niet helemaal helaas. Waarom niet? Dat leg ik in een volgende blog uit.
 
 ## Meer in deze reeks
 
-1. [Van *end to end* naar unit tests] (LINK)
+1. [Van *end to end* naar unit tests](/blog/22/01/de-leercurve-van-angulartests-beklimmen-deel-1/)
 
 2. **Van integratie- naar unit tests**
 

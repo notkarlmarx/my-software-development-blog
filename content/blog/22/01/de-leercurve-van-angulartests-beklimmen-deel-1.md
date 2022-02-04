@@ -89,7 +89,7 @@ De dááropvolgende keuze in de beslissingsboom was deze: gaan we ons in het zwe
 
 1. **Van *end to end* naar unit tests**
 
-2. Van integratie- naar unit tests [volgt binnenkort]
+2. [Van integratie- naar unit tests](/blog/22/02/de-leercurve-van-angulartests-beklimmen-deel-2/)
 
 3. Zijn deze tests onderhoudbaar? [volgt binnenkort]
 

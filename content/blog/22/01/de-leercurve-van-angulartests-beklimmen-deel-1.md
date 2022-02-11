@@ -91,7 +91,7 @@ De dááropvolgende keuze in de beslissingsboom was deze: gaan we ons in het zwe
 
 2. [Van integratie- naar unit tests](/blog/22/02/de-leercurve-van-angulartests-beklimmen-deel-2/)
 
-3. Zijn deze tests onderhoudbaar? [volgt binnenkort]
+3. [Zijn deze tests onderhoudbaar?](/blog/22/02/de-leercurve-van-angulartests-beklimmen-deel-3/)
 
 4. Droger Angulartests met factory classes [volgt binnenkort]
 

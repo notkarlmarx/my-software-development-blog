@@ -96,7 +96,7 @@ Nee, niet helemaal helaas. Waarom niet? Dat leg ik in een volgende blog uit.
 
 2. **Van integratie- naar unit tests**
 
-3. Zijn deze tests onderhoudbaar? [volgt binnenkort]
+3. [Zijn deze tests onderhoudbaar?](/blog/22/02/de-leercurve-van-angulartests-beklimmen-deel-3/)
 
 4. Droger Angulartests met factory classes [volgt binnenkort]
 

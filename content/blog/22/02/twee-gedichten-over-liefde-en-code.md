@@ -1,11 +1,11 @@
 ---
 title: "Twee gedichten over liefde en code"
 author: "Karl van Heijster"
-date: 2021-12-16T09:49:23+01:00
-draft: true
+date: 2022-02-14T07:52:03+01:00
+draft: false
 comments: true
-tags: ["poëzie"]
-summary: "*Sinds een dag of twee / vlinders in mijn code.*"
+tags: ["clean code", "poëzie"]
+summary: "*Sinds een dag of twee, / vlinders in mijn code.*"
 ---
 
 **Muze**
@@ -54,7 +54,7 @@ bij 't programmeren. Niet de poëzie.
 
 <br>
 
-Sinds een dag of twee
+Sinds een dag of twee,
 
 vlinders in mijn code. (Van
 

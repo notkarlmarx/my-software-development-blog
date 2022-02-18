@@ -97,7 +97,7 @@ Hoe nu verder? Dat leg ik in de laatste blog in deze reeks uit. Hint: het heeft 
 
 3. **Zijn deze tests onderhoudbaar?**
 
-4. Droger Angulartests met factory classes [volgt binnenkort]
+4. [Droger Angulartests met factory classes](/blog/22/02/de-leercurve-van-angulartests-beklimmen-deel-4/)
 
 
 [^1]: Er zijn verschillende manieren om objecten te mocken in Angular. Ik gebruik hier de *spies* van het [Jasmine test framework](https://jasmine.github.io/). Voor alternatieven, zie [deze blog](https://codecraft.tv/courses/angular/unit-testing/mocks-and-spies/). 

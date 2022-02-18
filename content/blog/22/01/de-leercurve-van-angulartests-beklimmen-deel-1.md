@@ -93,7 +93,7 @@ De dááropvolgende keuze in de beslissingsboom was deze: gaan we ons in het zwe
 
 3. [Zijn deze tests onderhoudbaar?](/blog/22/02/de-leercurve-van-angulartests-beklimmen-deel-3/)
 
-4. Droger Angulartests met factory classes [volgt binnenkort]
+4. [Droger Angulartests met factory classes](/blog/22/02/de-leercurve-van-angulartests-beklimmen-deel-4/)
 
 
 [^1]: [Test-driven development](https://nl.wikipedia.org/wiki/Test-driven_development) is een manier om met precies die twee problemen om te gaan. Helaas is die praktijk nog niet bij ons in het team - mezelf incluis - ingesleten. Het is interessant om in de toekomst te onderzoeken wat ons tegenhoudt deze manier van software ontwikkelen eigen te maken.

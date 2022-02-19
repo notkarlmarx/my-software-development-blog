@@ -5,7 +5,7 @@ date: 2022-02-18T08:00:32+01:00
 draft: false
 comments: true
 tags: ["angular", "clean code", "dry", "leermoment", "mocks", "ontwerppatronen", "software ontwikkelen", "testen", "unit tests", "web development"]
-summary: "Wat is de kern van ons onderhoudprobleem probleem? Codeduplicatie - of liever: de duplicatie van informatie. Het opzetten van een bepaalde service en haar afhankelijkheden gebeurt voor elke (reeks) test(en) handmatig in de `beforeEach`-methode. Als dezelfde afhankelijkheid in twee verschillende reeks testen voorkomt, moet de ontwikkelaar deze twee keer uitschrijven. Maar is dat nu echt nodig?"
+summary: "Wat is de kern van ons onderhoudprobleem? Codeduplicatie - of liever: de duplicatie van informatie. Het opzetten van een bepaalde service en haar afhankelijkheden gebeurt voor elke (reeks) test(en) handmatig in de `beforeEach`-methode. Als dezelfde afhankelijkheid in twee verschillende reeks testen voorkomt, moet de ontwikkelaar deze twee keer uitschrijven. Maar is dat nu echt nodig?"
 ---
 
 # Droger Angulartests met factory classes

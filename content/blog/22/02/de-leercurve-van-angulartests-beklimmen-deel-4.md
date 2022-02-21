@@ -1,5 +1,5 @@
 ---
-title: "De leercurve van Angulartests beklimmen - Deel 4"
+title: "De leercurve van Angulartests beklimmen - deel 4"
 author: "Karl van Heijster"
 date: 2022-02-18T08:00:32+01:00
 draft: false

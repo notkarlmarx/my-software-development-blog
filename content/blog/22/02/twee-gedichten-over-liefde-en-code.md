@@ -14,7 +14,7 @@ summary: "*Sinds een dag of twee, / vlinders in mijn code.*"
 
 Muzemeisje, je hebt me in je macht.
 
-Je loense ogen, geslaagde test-groen,
+Je loense ogen, geslaagdetestgroen,
 
 en Liskov-substitueerbare lach
 

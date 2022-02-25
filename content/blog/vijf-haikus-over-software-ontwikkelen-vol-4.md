@@ -27,9 +27,9 @@ de klant voorstelde.
 
 Herken het verschil:
 
-code doet slechts wat je haar 
+code doet slechts wat je vraagt, 
 
-vraagt, niet wat jij wil.
+en niet wat jij wil.
 
 <br>
 <br>

@@ -1,11 +1,11 @@
 ---
 title: "Hoe machines leren"
 author: "Karl van Heijster"
-date: 2022-02-21T08:12:59+01:00
-draft: true
+date: 2022-02-25T08:17:43+01:00
+draft: false
 comments: true
 tags: ["boeken", "machine learning", "recensies"]
-summary: "Met de opkomst van kunstmatige intelligentie en Machine Learning, verschijnen er ook steeds meer *toolkits* voor softwareontwikkelaars om met deze technieken aan de slag te gaan. (Voor .NET-ontwikkelaars is er bijvoorbeeld ML.NET.) Deze bieden handvaten waardoor ontwikkelaars op een laagdrempelige manier kennis kunnen maken met deze techniek. Zulke *toolkits* schermen echter - met goede reden! - veel van de achterliggende complexiteit af voor hun gebruikers. Ontwikkelaars die zich daarin willen verdiepen, zouden zich kunnen wagen aan Hui Jiangs *Machine Learning Fundamentals: A Concise Introduction*."
+summary: "Met de opkomst van kunstmatige intelligentie en Machine Learning, verschijnen er ook steeds meer *toolkits* voor softwareontwikkelaars om met deze technieken aan de slag te gaan. Deze bieden handvaten waardoor ontwikkelaars op een laagdrempelige manier kennis kunnen maken met deze techniek. Zulke *toolkits* schermen echter - met goede reden! - veel van de achterliggende complexiteit af voor hun gebruikers. Ontwikkelaars die zich daarin willen verdiepen, zouden zich kunnen wagen aan Hui Jiangs *Machine Learning Fundamentals: A Concise Introduction*."
 ---
 
 De belofte van kunstmatige intelligentie (AI) is al honderden jaren oud. Maar het creatieve vermogen om te redeneren, leren en plannen bleek lange tijd ongrijpbaar. De laatste decennia zijn er echter grote stappen gemaakt in de studie naar kunstmatige intelligentie. We zijn nu zelfs op het punt dat computers zelfstandig auto kunnen rijden, ziekten kunnen detecteren en kunnen voorspellen in welke producten we geïnteresseerd zijn (dat laatste overigens met wisselend succes). Het is aannemelijk dat kunstmatige intelligentie de komende jaren een alleen maar grotere rol in ons leven zal gaan spelen.

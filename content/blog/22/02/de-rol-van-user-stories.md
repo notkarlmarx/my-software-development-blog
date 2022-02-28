@@ -1,8 +1,8 @@
 ---
-title: "User stories in een Agile omgeving"
+title: "De rol van user stories"
 author: "Karl van Heijster"
-date: 2022-01-26T13:12:58+01:00
-draft: true
+date: 2022-02-28T07:52:15+01:00
+draft: false
 comments: true
 tags: ["agile ontwikkeling", "bedrijfscultuur", "boeken", "communicatie", "product backlog items", "samenwerking"]
 summary: "Wie *The Art of Agile Development* van James Shore doorbladert, doet heel nieuwe opzichten op. Zijn hoofdstuk over *stories* (ook wel bekend als *user stories*) deed me wel opveren, in elk geval. Shores stelling - mening? inzicht? - is provocatief: een *story* moet op een *index card* passen. de volledige *story* zou dus uit niet meer dan een zin of een kreet hoeven bestaan."
@@ -20,7 +20,7 @@ Het tweede soort team heeft wat weg van de [Cargocults](https://nl.wikipedia.org
 Waar de grens loopt tussen die twee is niet altijd even goed te zeggen. Dat kan bijvoorbeeld komen doordat de visie en houding van de teams niet overeenkomt met die van de organisatie. Is een Agile team in een niet-Agile omgeving wel echt Agile? Kan zo'n team dat überhaupt wel zijn? 
 
 
-Een tweede bron van onduidelijkheid komt vooruit uit het feit dat Agile een notoir ondergedefinieerd concept is. Wie zich louter en alleen op het [Agile manifest](https://agilemanifesto.org/) beroept, krijgt een totaal ander idee van wat deze vorm van ontwikkelen inhoudt, dan wie [Robert Martins](http://cleancoder.com/products) [*Clean Agile*](https://www.vanduurenmedia.nl/EAN/9789463562393/Clean_Agile_Nederlandse_editie) erop naslaat. (Het boek is overigens een aanrader; klik [hier](/blog/21/11/agile-zijn-niet-agile-doen/) voor mijn recensie.)
+Een tweede bron van onduidelijkheid komt vooruit uit het feit dat Agile een notoir ondergedefinieerd concept is. Wie zich louter en alleen op het [Agile manifest](https://agilemanifesto.org/) beroept, krijgt een totaal ander idee van wat deze vorm van ontwikkelen inhoudt, dan wie [Robert Martins](http://cleancoder.com/products) [*Clean Agile*](https://www.vanduurenmedia.nl/EAN/9789463562393/Clean_Agile_Nederlandse_editie) erop naslaat. (Het boek is overigens een [aanrader](/blog/21/12/de-beste-boeken-over-software-ontwikkeling-die-ik-in-2021-las/); klik [hier](/blog/21/11/agile-zijn-niet-agile-doen/) voor mijn recensie.)
 
 
 En wie [*The Art of Agile Development*](https://www.oreilly.com/library/view/the-art-of/9780596527679/) van [James Shore](https://www.jamesshore.com/)[^1] doorbladert, doet weer heel nieuwe opzichten op.
@@ -50,7 +50,7 @@ De voor de hand liggende vraag is: hoe kan deze manier van werken ooit, eh, werk
 Het antwoord daarop is te vinden in het Agile manifest. Immers: *Individuals and interactions over processes and tools*. En: *Customer collaboration over contract negotiation*.
 
 
-Dat betekent: de achtergrond van een *story* - de context, de oplossingsrichting - zouden onderdeel moeten zijn van de tribale kennis van het team. 
+Dat betekent: de achtergrond van een *story* - de context, de oplossingsrichting - zouden onderdeel moeten zijn van de [tribale kennis](https://en.wikipedia.org/wiki/Tribal_knowledge) van het team. 
 
 
 Daarmee is niet gezegd dat het team zo goed in de materie zit, dat het niet nodig zou moeten zijn om uitgebreide specificaties te schrijven. De *story* fungeert niet als specificatie, maar als middel om het gesprek op gang te brengen. 

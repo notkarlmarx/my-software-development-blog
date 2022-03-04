@@ -1,8 +1,8 @@
 ---
 title: "De noodzaak van refactoren"
 author: "Karl van Heijster"
-date: 2022-02-04T07:59:43+01:00
-draft: true
+date: 2022-03-04T07:54:30+01:00
+draft: false
 comments: true
 tags: ["agile ontwikkeling", "communicatie", "documentatie", "informatieanalyse", "refactoren", "sprint review", "stakeholders", "waarde"]
 summary: "Ons team heeft een stakeholder wiens gezicht vertrekt, elke keer als we tijdens een Sprint Review aangeven tijd te hebben gestoken in het refactoren van onze applicatie. In zijn beleving is refactoren een verspilling van je tijd. Als we meer tijd hadden genomen om de wensen van onze gebruikers grondig te analyseren, redeneert hij, dan had zo'n dure, inefficiënte refactorslag kunnen worden voorkomen. Als ik iemand zo hoor redeneren, dan vertrekt míjn gezicht."
@@ -20,19 +20,22 @@ Als ik iemand zo hoor redeneren, dan vertrekt míjn gezicht.
 ## Waterval
 
 
-Refactoren is geen teken van inefficiëntie. Constant, meedogenloos refactoren is een essentieel onderdeel van de [filosofie achter Agile ontwikkeling](/blog/21/11/agile-zijn-niet-agile-doen/). Als softwareontwikkelaar vind ik het verbazingwekkend dat er - 20 jaar na de introductie van Agile, in een tijdperk waarin deze stijl van ontwikkelen zo mainstream is als maar kan - nog steeds stakeholders bestaan die dit niet inzien.
+Refactoren is geen teken van inefficiëntie. Constant, meedogenloos refactoren is een essentieel onderdeel van de [filosofie achter Agile ontwikkeling](/blog/21/11/agile-zijn-niet-agile-doen/). Als softwareontwikkelaar vind ik het verbazingwekkend dat er - 20 jaar na de introductie van Agile, in een tijdperk waarin deze stijl van ontwikkelen zo mainstream is als maar kan - nog steeds stakeholders bestaan die dit niet inzien. 
 
 
-Het idee dat je refactoring kunt voorkomen met gedegen analyse, is gebaseerd op een wensdenken, een papieren werkelijkheid. Want op papier is het eenvoudig, inderdaad. Stap 1: Je verzamelt de *requirements* voor je software-oplossing. Stap 2: je werkt deze uit in gedegen documenten. Stap 3: je programmeert de oplossing op basis van deze documenten. Stap 4: via tests verifieer je de werking van het systeem. Stap 5: blije gebruikers.
+(Maar dan herinner ik me weer: niet elke stakeholder zit zo diep in het softwareontwikkelwereldje als een ontwikkelaar, natuurlijk!)
 
 
-Het is de intuïtieve aantrekkingskracht van het [watervalmodel](https://nl.wikipedia.org/wiki/Watervalmethode) dat ervoor zorgde dat het ervoor zorgde dat het het dominante ontwikkelparadigma kon worden in de jaren '80 en '90. 
+Het idee dat je refactoring kunt voorkomen met gedegen analyse, is gebaseerd op wensdenken, op een papieren werkelijkheid. Want op papier is het eenvoudig, inderdaad. Stap 1: Je verzamelt de *requirements* voor je software-oplossing. Stap 2: je werkt deze uit in gedegen documenten. Stap 3: je programmeert de oplossing op basis van deze documenten. Stap 4: via tests verifieer je de werking van het systeem. Stap 5: blije gebruikers.
+
+
+Het is de intuïtieve aantrekkingskracht van het [watervalmodel](https://nl.wikipedia.org/wiki/Watervalmethode) dat ervoor zorgde dat het het dominante ontwikkelparadigma kon worden in de jaren '80 en '90. 
 
 
 ## Informatie verzamelen
 
 
-Maar dit model steunt op een onjuist aanname: dat je alle relevante informatie kunt verzamelen vóórdat je aan het programmeren slaat.
+Maar dit model steunt op een onjuist aanname, namelijk dat je alle relevante informatie kunt verzamelen vóórdat je aan het programmeren slaat.
 
 
 Ga maar na: wanneer weet je het best of een bepaalde oplossing werkbaar is? Vóórdat je onderzoek hebt gedaan? Nee, natuurlijk niet! Je moet eerst analyse verrichten. - Goed, die geef ik je. Je verricht analyse. Weet je nu alles wat je moet weten om een goede oplossing te bouwen? - Nee, je moet die analyse eerst uitwerken in een document, waarin de uitkomst van die analyse eenduidig beschreven staat.
@@ -47,7 +50,7 @@ Nota bene, de vooronderstelling van het watervalmodel valt op dit punt al in dui
 Je voert wat verdere analyse uit tijdens het programmeren om de problemen waar je tegenaan liep, op te kunnen lossen. Weet je nu voldoende? - Nee, want zodra de tester aan de slag gaat, leer je van een heleboel scenario's waar je tijdens het programmeren geen rekening had gehouden. Die verwerk je. Gelukkig heb je nu alle relevante informatie eindelijk tot je beschikking, toch? 
 
 
-\- Nee, want zodra je je software aan een eindgebruiker presenteert, ontdek je dat deze op een compleet andere manier naar je oplossing aankijkt. Dit is de eigenlijke lakmoesproef: pas als een eindgebruiker met de software aan de slag gaat, kom je erachter of de informatie op basis waarvan je een oplossing hebt bedacht, ook maar enigszins volledig was.
+\- Nee! Want zodra je je software aan een eindgebruiker presenteert, ontdek je dat deze op een compleet andere manier naar je oplossing aankijkt. Dit is de eigenlijke lakmoesproef: pas als een eindgebruiker met de software aan de slag gaat, kom je erachter of de informatie op basis waarvan je een oplossing hebt bedacht, ook maar enigszins volledig was.
 
 
 ## Nooit klaar

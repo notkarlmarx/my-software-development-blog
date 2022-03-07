@@ -1,8 +1,8 @@
 ---
 title: "Een GIF zegt meer dan duizend woorden"
 author: "Karl van Heijster"
-date: 2022-02-11T10:31:36+01:00
-draft: true
+date: 2022-03-07T07:25:25+01:00
+draft: false
 comments: true
 tags: ["communicatie", "leermoment", "waarde", "werkplezier"]
 summary: "De mogelijkheid om eenvoudig met GIF-jes te kunnen communiceren is één van de meest gewaardeerde features die Microsoft Teams heeft, als je het mij vraagt. Maar waarom? Want strikt genomen kan het doel van die applicatie - asynchrone communicatie bewerkstelligen voor gedistribueerde teams - ook worden bereikt zonder deze feature. Sterker nog, misschien zou onze communicatie wel vlotter verlopen als ik niet elk gesprek ontspoor met bewegend beeld!"

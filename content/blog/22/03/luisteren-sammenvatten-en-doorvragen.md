@@ -1,8 +1,8 @@
 ---
 title: "Luisteren, sammenvatten en doorvragen"
 author: "Karl van Heijster"
-date: 2022-02-25T08:28:12+01:00
-draft: true
+date: 2022-03-14T07:58:04+01:00
+draft: false
 comments: true
 tags: ["coaching", "communicatie", "filosofie", "shift left"]
 summary: "LSD staat voor *lysergic acid diethylamide* en heeft een hallucinerende werking. Het verhaal wil dat dat de inspiratie vormde voor *Lucy in the Sky with Diamonds*, en da's een liedje van The Beatles. Maar LSD staat ook voor *luisteren, samenvatten en doorvragen* en da's een bekende gesprekstechniek - weinig hallucinant, maar minstens even belangrijk in het leven van een softwareontwikkelaar."
@@ -56,13 +56,13 @@ En elke keer dat de cirkel zich herhaalt, heeft er een [*Aufhebung*](https://en.
 ## Coaching en software
 
 
-De waarde van LSD (de gesprekstechniek, niet de drug) laat zich moeilijk onderschatten. En dat geldt zowel in de coachingswereld als in de softwareontwikkeling. 
+De waarde van LSD (de gesprekstechniek, niet de drug) laat zich moeilijk overschatten. En dat geldt zowel in de coachingswereld als in de softwareontwikkeling. 
 
 
 Het is verleidelijk om te denken dat je iets snapt - en vervolgens direct aan de slag te gaan. Ik kan me voorstellen dat die *can do*-mentaliteit al tot heel wat suboptimale coachingsinterventies en software heeft geleid. 
 
 
-Wat is het probleem van die aanpak? Dat de aannames in het hoofd van de coach of softwareontwikkelaar pas werden gevalideerd nádat het werk werd verzet. 
+Wat is het probleem van die aanpak? Dat de aannames in het hoofd van de coach of softwareontwikkelaar pas werden gevalideerd nádat het werk werd verzet. Wie oplossingen aandraagt zonder te valideren of deze aansluiten op het daadwerkelijke problemen, lost slechts een *aangenomen* probleem op. Met een beetje geluk sluit dat aangenomen probleem naadloos aan op het daadwerkelijke probleem, maar de praktijk wijst uit dat dat maar zelden het geval is.
 
 
 LSD (de gesprekstechniek, niet de drug) is op te vatten als een techniek die past in de [*shift left*](https://devopedia.org/shift-left)-gedachte die dominant is in de softwareontwikkeling. - En daarmee vinden we opnieuw een goed voorbeeld van het feit dat software ontwikkelen [meer is dan alleen code schrijven](/blog/21/06/empathie-met-je-stakeholders/).

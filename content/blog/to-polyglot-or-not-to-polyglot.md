@@ -11,7 +11,7 @@ summary: "Laten we aannemen dat sommige programmeerproblemen zich meer voor obje
 # Gedachten naar aanleiding van *Learning Test-Driven Development* - Deel 3
 
 
-*Onlangs las ik* [Learning Test-Driven Development](https://www.oreilly.com/library/view/learning-test-driven-development/9781098106461/) *van [Saleem Siddiqui](https://www.linkedin.com/in/ssiddiqui/). Ik zal met de deur in huis vallen: het boek is een aanrader. Zo erg zelfs, dat ik er wel drie blogs uit wist te persen! Vandaag: over het leren van meerdere programmeertalen.*
+*Onlangs las ik* [Learning Test-Driven Development](https://www.oreilly.com/library/view/learning-test-driven-development/9781098106461/) *van [Saleem Siddiqui](https://www.linkedin.com/in/ssiddiqui/). Ik zal met de deur in huis vallen: het boek is een aanrader. Zo erg zelfs, dat ik er wel vier blogs uit wist te persen! Vandaag: over het leren van meerdere programmeertalen.*
 
 
 De ondertitel van *Learning Test-Driven Development* is *A Polyglot Guide to Writing Uncluttered Code*. Het boek behandelt TDD in drie talen: [Go](https://go.dev/), [JavaScript](https://nl.wikipedia.org/wiki/JavaScript) en [Python](https://www.python.org/).
@@ -70,6 +70,15 @@ Ik heb *Learning Test-Driven Development* tweemaal doorlopen: de eerste keer in 
 
 
 Hoe zinvol die exercitie was? Ik ben in elk geval niet gaan twijfelen aan de waarde van TDD, veel meer kan ik er niet over zeggen!
+
+
+## Meer in deze reeks
+
+
+1. [Agile en Test-Driven Development] (LINK)
+2. [Eén test per keer] (LINK)
+3. ***To polyglot or not to polyglot***
+4. Legacy code en Test-Driven Development [binnenkort]
 
 
 [^1]: Dit is een controversieel statement, afhankelijk van hoe je 'm uitlegt. Het is niet zo dat de ene of de andere taal *per definitie* beter bij een probleem past of niet. Het is wel zo dat een taal bepaalde features kan hebben die de oplossing eenvoudiger of eleganter maken dan een andere taal. De hamvraag is eigenlijk: wat maakt het dat een bepaalde taal beter geschikt is voor een bepaald programmeerprobleem dan een andere taal? - en het is niet duidelijk of daar eenvoudig antwoord op te geven valt.

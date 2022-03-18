@@ -11,7 +11,7 @@ summary: "De meeste ontwikkelaar (waaronder ondergetekende!) schrijven als volgt
 # Gedachten naar aanleiding van *Learning Test-Driven Development* - Deel 1
 
 
-*Onlangs las ik* [Learning Test-Driven Development](https://www.oreilly.com/library/view/learning-test-driven-development/9781098106461/) *van [Saleem Siddiqui](https://www.linkedin.com/in/ssiddiqui/). Ik zal met de deur in huis vallen: het boek is een aanrader. Zo erg zelfs, dat ik er wel drie blogs uit wist te persen! Vandaag: over de overeenkomsten tussen Agile en TDD.*
+*Onlangs las ik* [Learning Test-Driven Development](https://www.oreilly.com/library/view/learning-test-driven-development/9781098106461/) *van [Saleem Siddiqui](https://www.linkedin.com/in/ssiddiqui/). Ik zal met de deur in huis vallen: het boek is een aanrader. Zo erg zelfs, dat ik er wel vier blogs uit wist te persen! Vandaag: over de overeenkomsten tussen Agile en TDD.*
 
 
 ## Wat is TDD?
@@ -150,6 +150,15 @@ In [*Clean Agile*](https://www.vanduurenmedia.nl/EAN/9789463562393/Clean_Agile_N
 
 
 Toch is TDD geen wijdverbreide praktijk in de wereld van softwareontwikkeling - althans niet in dezelfde mate als Agile. Waarom? Daarover gaat het volgende deel in deze reeks.
+
+
+## Meer in deze reeks
+
+
+1. **Agile en Test-Driven Development**
+2. Eén test per keer [binnenkort]
+3. *To polyglot or not to polyglot* [binnenkort]
+4. Legacy code en Test-Driven Development [binnenkort]
 
 
 [^1]: Siddiqui neemt, om het voorbeeld simpel te houden, aan dat wisselkoersen stabiel zijn en niet veranderen. De wisselkoers dollar-euro vast staat op 1.2; die van dollar-won op 1100.

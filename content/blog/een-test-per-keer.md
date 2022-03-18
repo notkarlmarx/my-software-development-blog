@@ -11,7 +11,7 @@ summary: "Ik hou niet van programmeerboeken die van me vragen dat ik onder het l
 # Gedachten naar aanleiding van *Learning Test-Driven Development* - Deel 2
 
 
-*Onlangs las ik* [Learning Test-Driven Development](https://www.oreilly.com/library/view/learning-test-driven-development/9781098106461/) *van [Saleem Siddiqui](https://www.linkedin.com/in/ssiddiqui/). Ik zal met de deur in huis vallen: het boek is een aanrader. Zo erg zelfs, dat ik er wel drie blogs uit wist te persen! Vandaag: over de discipline die TDD vraagt van jou als ontwikkelaar.*
+*Onlangs las ik* [Learning Test-Driven Development](https://www.oreilly.com/library/view/learning-test-driven-development/9781098106461/) *van [Saleem Siddiqui](https://www.linkedin.com/in/ssiddiqui/). Ik zal met de deur in huis vallen: het boek is een aanrader. Zo erg zelfs, dat ik er wel vier blogs uit wist te persen! Vandaag: over de discipline die TDD vraagt van jou als ontwikkelaar.*
 
 
 Ik hou niet van programmeerboeken die van me vragen dat ik onder het lezen code schrijf. Daar kan zo'n boek niks aan doen, ik houd er nu eenmaal van om een boekje op de bank te lezen, ver weg van mijn laptop. Voor één boek maak ik een uitzondering, en dat is *Learning Test-Driven Development*.
@@ -66,6 +66,15 @@ Dat vraagt discipline van een ontwikkelaar, en ik denk dat dat één van de rede
 
 
 Precies om die reden is het zo belangrijk dat *Learning Test-Driven Development* een boek is dat van je vraagt om mee te coderen naarmate je verder leest. Dat is een oefening in het aanleren van een nieuwe gewoonte - en daarbij het afleren van een oude. Je een vaardigheid eigen maken vereist actie - gedisciplineerde actie. En dat begint bij iets kleins als het overtikken van een stukje JavaScript - en dan op de testknop te rammen.
+
+
+## Meer in deze reeks
+
+
+1. [Agile en Test-Driven Development] (LINK)
+2. **Eén test per keer**
+3. *To polyglot or not to polyglot* [binnenkort]
+4. Legacy code en Test-Driven Development [binnenkort]
 
 
 [^1]: Zie ook deel 1 in deze reeks: [*Agile en Test-Driven Development*] (LINK)

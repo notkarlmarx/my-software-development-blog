@@ -26,7 +26,7 @@ Hoe dan ook, ik had niet verwacht dat ik in de rol van softwareontwikkelaar ooit
 Mijn [haiku's over software ontwikkelen](/blog/21/08/vijf-haikus-over-software-ontwikkelen/) begonnen op de grens van de grap. Maar [na verloop](/blog/21/09/vijf-plus-een-haikus-over-software-ontwikkeling/) [van tijd](/blog/21/12/vijf-nieuwe-haikus-over-software-ontwikkelen/) kreeg ik meer en meer plezier in dit spel met taal. Zo erg zelfs, dat ik het tijdens een [ontspannen kerstvakantie](/blog/22/01/vakantie-vs-enigszins-vakantie/) de stap zette naar [sonnetten](/blog/22/01/twee-sonnetten-over-software-ontwikkelen/) en [liefdesgedichten](/blog/22/02/twee-gedichten-over-liefde-en-code/).
 
 
-Poëzie en code zijn geen natuurlijke bondgenoten[^2] - op het eerste gezicht niet, althans. Maar: code is niet alleen of zelfs hoofdzakelijk een logisch-analytische aangelegenheid. Het is net zozeer een creatieve onderneming. Een goede ontwikkelaar moet, net als een dichter, in staat zijn buiten de gestelde kaders te kunnen denken. - Wie weet, misschien is het schrijven van poëzie wel een manier om buiten de gestelde kaders van de softwareontwikkeling te kunnen denken.
+Poëzie en code zijn geen natuurlijke bondgenoten[^2] - op het eerste gezicht niet, althans. Maar: code is niet alleen of zelfs hoofdzakelijk een logisch-analytische aangelegenheid. Het is net zozeer een creatieve onderneming. Een goede ontwikkelaar moet, net als een dichter, in staat zijn buiten de gestelde kaders te kunnen denken. - Wie weet, misschien is het schrijven van poëzie wel een manier om buiten de gestelde kaders van de softwareontwikkeling te kunnen denken. Maar het is vooral een leuk tijdverdrijf - voor de lezer hopelijk net zozeer als voor de schrijver.
 
 
 ## 3. [Mijn loopbaanwending](/blog/21/07/mijn-loopbaanwending/)
@@ -56,7 +56,7 @@ Eén van de beste boeken dit ik het afgelopen jaar las, was [*Unit Testing*](htt
 Naast boeken zijn filmpjes op YouTube een prima manier om je kennispeil te verhogen. In mijn [blog over het verschil tussen incrementele en iteratieve ontwikkeling](/blog/21/07/incrementele-versus-iteratieve-ontwikkeling/) probeer ik in mijn eigen woorden de ideeën van softwarearchitect [George Fairbanks](https://www.georgefairbanks.com/) weer te geven.
 
 
-Kennis is echter blind zonder toepassing - en die liet in dit geval niet lang op zich wachten. In een [blog over de worsteling van mijn team met onze uit de kluiten gewassen autorisatiecode](/blog/21/07/de-kwestie-autorisatie/) verkrijgen Fairbanks ideeën grond in de praktijk.
+Kennis is echter blind zonder toepassing - en die liet in dit geval niet lang op zich wachten. In een [blog over de worsteling van mijn team met onze uit de kluiten gewassen autorisatiecode](/blog/21/07/de-kwestie-autorisatie/) vinden Fairbanks ideeën grond in de praktijk.
 
 
 Het leuke aan het bijhouden van een blog, is dat bepaalde ideeën en hun toepassing in een volgende blog op een andere manier terug kunnen komen. In een [derde blog](/blog/21/08/check-op-permissies-niet-op-rollen/) kom ik terug op onze autorisatieperikelen, en presenteer de oplossing waar het team mee aankwam. Ditmaal zonder Fairbanks, waardoor deze drie blogs als het ware een ketting vormen: aan de ene kant theorie en aan de andere kant de praktijk, en in het midden het schakelpunt.
@@ -71,7 +71,7 @@ De Kwestie Autorisatie is op zijn beurt eigenlijk weer een concrete toepassing, 
 Eigenlijk is Agile in belangrijke mate een politiek vraagstuk, in die zin dat het gaat om de juiste mensen te verleiden zich een bepaalde filosofie eigen te maken. 
 
 
-Ik schreef er bijvoorbeeld over in mijn [recensie](/blog/21/11/agile-zijn-niet-agile-doen/) van [Robert C. Martins](https://en.wikipedia.org/wiki/Robert_C._Martin) [*Clean Agile*](https://www.vanduurenmedia.nl/EAN/9789463562393/Clean_Agile_Nederlandse_editie). Ik hanteer [hier](/blog/21/10/horizontale-of-verticale-pbis/) Agile argumenten om de vraag te beslechten hoe je je werk structureert. - En spreek [hier](/blog/21/11/u-vraagt-wij-draaien/) mijn frustatie uit over niet-Agile stakeholders.
+Ik schreef er bijvoorbeeld over in mijn [recensie](/blog/21/11/agile-zijn-niet-agile-doen/) van [Robert C. Martins](https://en.wikipedia.org/wiki/Robert_C._Martin) [*Clean Agile*](https://www.vanduurenmedia.nl/EAN/9789463562393/Clean_Agile_Nederlandse_editie). Ik hanteer [hier](/blog/21/10/horizontale-of-verticale-pbis/) Agile argumenten om de vraag te beslechten hoe je je werk structureert. - En spreek [hier](/blog/21/11/u-vraagt-wij-draaien/), ietwat ironisch, mijn frustatie uit over niet-Agile stakeholders.
 
 
 ## 8. Cultuur
@@ -93,6 +93,9 @@ Mijn favoriet in dit genre blogs is [*Hoe mijn punthoofd me een punthoofd bezorg
 
 
 Het eind is het begin is het eind.[^3] Nee, ik heb het niet over [de eerste 36 woorden](/blog/21/04/hello-world/) die ik de ether in slingerde. Ik heb het over mijn [eerste indrukken van het bloggen met Hugo](/blog/21/04/bloggen-met-hugo-eerste-indrukken/). Denk je er over na een blog te beginnen over je werk in het algemeen, of softwareontwikkeling in het bijzonder? Wellicht dat Karl anno april 2020 je op weg kan helpen. (En anders kun je misschien bij [Karl anno augustus](/blog/21/08/vijf-voordelen-van-bloggen/) of [december 2021](/blog/21/12/drie-tips-voor-beginnende-bloggers/) terecht.)
+
+
+Enfin, dat was blog nummer 100! Dat er nog vele moge volgen! *\*champagne ontkurken doet\**
 
 
 [^1]: Onlangs verscheen bij [Uitgeverij Boom](https://www.boomfilosofie.nl/) een herdruk van [Bert Keizers](https://nl.wikipedia.org/wiki/Bert_Keizer) [vlotte introductie in diens leven en werk](https://www.boomfilosofie.nl/product/100-10271_Leven-en-werk-van-Ludwig-Wittgenstein). Ik schreef er [hier](https://deleesclubvanalles.nl/recensie/leven-en-werk-van-ludwig-wittgenstein-2/) een recensie over. Ook Wittgensteins [*Tractatus*](https://www.boomfilosofie.nl/product/100-10270_Tractatus) en [*Filosofische Onderzoekingen*](https://www.boomfilosofie.nl/product/100-10272_Filosofische-onderzoekingen) verschenen opnieuw.

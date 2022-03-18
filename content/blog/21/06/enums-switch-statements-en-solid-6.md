@@ -87,3 +87,4 @@ Heb jij een betere suggestie voor de naam van deze class?
 4. [Het *Open-closed* principe](/blog/21/05/enums-switch-statements-en-solid-4)
 5. [SOLID en performance](/blog/21/05/enums-switch-statements-en-solid-5)
 6. **Conclusie**
+7. Addendum: [Slimmere Enums](/blog/22/03/enums-switch-statements-en-solid-7/)

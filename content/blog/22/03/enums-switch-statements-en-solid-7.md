@@ -1,8 +1,8 @@
 ---
 title: "Enums, switch statements en SOLID - deel 7"
 author: "Karl van Heijster"
-date: 2022-02-19T14:47:43+01:00
-draft: true
+date: 2022-03-18T07:49:11+01:00
+draft: false
 comments: true
 tags: ["clean code", "enums", "leermoment", "open source", "performance", "refactoren", "software ontwikkelaar (rol)", "software ontwikkelen", "SOLID", "waarde"]
 summary: "Een eeuwigheid geleden - april vorig jaar - schreef ik een reeks blogs over wat logica die rondom een Enum gebouwd was. Bijna een jaar na dato stel ik de vraag: wat probeerde ik nu eigenlijk te bereiken? - Eigenlijk was mijn *use case* betrekkelijk eenvoudig. Ik wilde wat logica kunnen koppelen aan een Enum-waarde, dat is alles. Sterker nog, die wens is niet alleen eenvoudig, hij is ook ontzettend *generiek*. Dat is een significante observatie. Gezien de generieke aard van het codeerprobleem, is er eigenlijk geen enkele reden waarom *ik* code zou moeten schrijven het probleem op te lossen. "
@@ -29,7 +29,7 @@ Wat het tweede doel betreft, kan ik mijn blogs nog steeds als een geslaagde onde
 Het eerste punt is problematischer. Want hoewel ik uiteindelijk inderdaad uitkwam op onderhoudbare, performante code, introduceerde ik met mijn oplossing ook een hoop complexiteit. 
 
 
-\- Is het, bijna een jaar na dato, nog steeds vol te houden dat er een interface, een stuk of wat implementaties, een singleton (en Reflection als de lijm tussen al die elementen) voor nodig is om een stukje logica aan een Enum te kunnen koppelen?
+\- Is het, bijna een jaar na dato, nog steeds vol te houden dat er een interface, een stuk of wat implementaties daarvan en een singleton (en Reflection als de lijm tussen al die elementen) voor nodig is om een stukje logica aan een Enum te kunnen koppelen?
 
 
 Stel, je zou het onderstaande stukken code in het wild tegenkomen...:
@@ -41,7 +41,7 @@ Stel, je zou het onderstaande stukken code in het wild tegenkomen...:
 {{< gist dotkarl a5571b15998ff4b86de84d368152ff0b "ClaimProviderFactoryV06.cs">}}
 
 
-...zou je dan roepen: "Ah, duidelijk!" - of iets verzuchten over, eh, een visuele handicap? - De vraag stellen is hem beantwoorden, natuurlijk. 
+...zou je dan roepen: "Ah, duidelijk!" Of zou je iets verzuchten over, eh, een visuele handicap? - De vraag stellen is hem beantwoorden, natuurlijk. 
 
 
 ## Wat wil ik?
@@ -62,7 +62,7 @@ Dat klinkt misschien tegenintuïtief. Als softwareontwikkelaar is het toch bij u
 Ja en nee. Ja, professionele softwareontwikkelaars lossen problemen op met code. Welke problemen? In eerste instantie: *business*problemen. En pas in tweede instantie codeproblemen - problemen die ontstaan door de gekozen oplossing voor het businessprobleem.
 
 
-Maar het is belangrijk om in het achterhoofd te houden (en dit is de "nee"): code is een doel, geen middel. Als ik een businessprobleem op kan lossen zonder daar zelf code voor te hoeven schrijven, heeft dat dan niet de voorkeur? 
+Maar het is belangrijk om in het achterhoofd te houden (en dit is de "nee"): code is een middel, geen doel op zichzelf. Als ik een businessprobleem op kan lossen zonder daar zelf code voor te hoeven schrijven, heeft dat dan niet de voorkeur? 
 
 
 Waarom zou ik interfaces en singletons en Reflection gebruiken om code te kunnen koppelen aan een Enum, als er ook een stukje opensource software bestaat die dit probleem voor mij oplost? - Door de oplossing zelf te coderen, haal ik me codeproblemen op de hals die ik kan vermijden door de code uit te besteden.
@@ -121,7 +121,7 @@ Deze optie is twee keer zo snel als de *oorspronkelijke* oplossingsrichting, laa
 ## Les
 
 
-Dit is precies waarom IT-managers graag dingen als "*Buy before build!*" roepen. De kans dat iemand een betere oplossing heeft bedacht voor een algemeen programmeerprobleem, is ontzettend groot. De kans dat een heuse community aan opensource-developers een betere oplossing heeft, is nagenoeg 1.
+Dit is precies waarom IT-managers graag dingen als "*Buy before build!*" roepen. De kans dat iemand een goede oplossing heeft bedacht voor een algemeen programmeerprobleem, is ontzettend groot. De kans dat een community aan opensource-developers een betere oplossing voor zo'n probleem kan bedenken dan ik, is nagenoeg 1.
 
 
 De implicaties daarvan voor wat het betekent om een goede softwareontwikkelaar te zijn, zijn nauwelijks te overschatten. *Het gaat er niet (meer?) om wie de beste code kan schrijven.* Een ontwikkelaar die de beste oplossing kan vinden op het web, wint het van een vaardige programmeur, makkelijk. 
@@ -141,4 +141,4 @@ De code die ik schrijf met *SmartEnum* is eenvoudiger én sneller. De les is dui
 7. **Slimmere Enums**
 
 
-[^1]: Ik heb de oplossing bewust zo simpel mogelijk gehouden. De oorspronkelijke Enum had bijvoorbeeld een [`FlagsAttribute`](https://docs.microsoft.com/en-us/dotnet/api/system.flagsattribute?view=net-6.0) om het opslaan in de database te vergemakkelijken. Flags worden kort ook [ondersteund door *SmartEnum*](https://github.com/ardalis/SmartEnum#smartflagenum), maar zijn buiten beschouwing gelaten omdat ze niet voor het punt van deze blog relevant zijn.
+[^1]: Ik heb de oplossing bewust zo simpel mogelijk gehouden. De oorspronkelijke Enum had bijvoorbeeld een [`FlagsAttribute`](https://docs.microsoft.com/en-us/dotnet/api/system.flagsattribute?view=net-6.0) om het opslaan in de database te vergemakkelijken. Flags worden sinds kort ook [ondersteund door *SmartEnum*](https://github.com/ardalis/SmartEnum#smartflagenum), maar zijn buiten beschouwing gelaten omdat ze niet voor het punt van deze blog relevant zijn.

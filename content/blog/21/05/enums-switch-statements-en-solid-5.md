@@ -202,6 +202,7 @@ Wie de code vóór die tijd nog eens na wil lopen, kan terecht op [GitHub](https
 4. [Het *Open-closed* principe](/blog/21/05/enums-switch-statements-en-solid-4)
 5. **SOLID en performance**
 6. [Conclusie](/blog/21/06/enums-switch-statements-en-solid-6)
+7. Addendum: [Slimmere Enums](/blog/22/03/enums-switch-statements-en-solid-7/)
 
 
 [^1]: Met dank aan [Nick Chapsas](https://www.youtube.com/channel/UCrkPsvLGln62OMZRO6K-llg), die de werking van het project in deze [video](https://www.youtube.com/watch?v=EWmufbVF2A4) beter uitlegt dan ik in tekst zou kunnen doen.

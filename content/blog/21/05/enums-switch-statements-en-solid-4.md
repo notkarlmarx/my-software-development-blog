@@ -111,3 +111,4 @@ Wie tot die tijd graag zelf wil experimenteren, kan de code [via GitHub](https:/
 4. **Het *Open-closed* principe**
 5. [SOLID en performance](/blog/21/05/enums-switch-statements-en-solid-5)
 6. [Conclusie](/blog/21/06/enums-switch-statements-en-solid-6)
+7. Addendum: [Slimmere Enums](/blog/22/03/enums-switch-statements-en-solid-7/)

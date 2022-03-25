@@ -1,11 +1,11 @@
 ---
 title: "Agile en Test-Driven Development"
 author: "Karl van Heijster"
-date: 2022-03-10T08:43:45+01:00
-draft: true
+date: 2022-03-25T08:32:31+01:00
+draft: false
 comments: true
 tags: ["agile ontwikkeling", "boeken", "leermoment", "refactoren", "test-driven development", "testen", "unit tests"]
-summary: "De meeste ontwikkelaar (waaronder ondergetekende!) schrijven als volgt code. Ze bekijken de specificaties en beginnen vervolgens te klungelen. Dat duurt een tijd, totdat ze iets hebben wat werkt. Of dat zo is, verifiëren ze middels handmatige tests. Pas als de code werkt als bedoeld, schrijft men - als het goed is! - een reeks geautomatiseerde tests. Het is een hardnekkig misverstand dat TDD deze praktijk van software schrijven omdraait: eerst de geautomatiseerde tests (meervoud!) schrijven, en dan pas de productiecode. De werkelijkheid ligt wat genuanceerder."
+summary: "De meeste ontwikkelaars (waaronder ondergetekende!) schrijven als volgt code. Ze bekijken de specificaties en beginnen vervolgens te klungelen. Dat duurt een tijd, totdat ze iets hebben wat werkt. Of dat zo is, verifiëren ze middels handmatige tests. Pas als de code werkt als bedoeld, schrijft men - als het goed is! - een reeks geautomatiseerde tests. Het is een hardnekkig misverstand dat TDD deze praktijk van software schrijven omdraait: eerst de geautomatiseerde tests (meervoud!) schrijven, en dan pas de productiecode. De werkelijkheid ligt wat genuanceerder."
 ---
 
 # Gedachten naar aanleiding van *Learning Test-Driven Development* - Deel 1
@@ -17,7 +17,7 @@ summary: "De meeste ontwikkelaar (waaronder ondergetekende!) schrijven als volgt
 ## Wat is TDD?
 
 
-De meeste ontwikkelaar (waaronder ondergetekende!) schrijven als volgt code. Ze bekijken de specificaties en beginnen vervolgens te klungelen. Dat duurt een tijd, totdat ze iets hebben wat werkt. Of dat zo is, verifiëren ze middels handmatige tests. Pas als de code werkt als bedoeld, schrijft men - als het goed is! - een reeks geautomatiseerde tests.
+De meeste ontwikkelaars (waaronder ondergetekende!) schrijven als volgt code. Ze bekijken de specificaties en beginnen vervolgens te klungelen. Dat duurt een tijd, totdat ze iets hebben wat werkt. Of dat zo is, verifiëren ze middels handmatige tests. Pas als de code werkt als bedoeld, schrijft men - als het goed is! - een reeks geautomatiseerde tests.
 
 
 Het is een hardnekkig misverstand dat TDD deze praktijk van software schrijven omdraait: eerst de geautomatiseerde tests (meervoud!) schrijven, en dan pas de productiecode. De werkelijkheid ligt wat genuanceerder. 
@@ -26,7 +26,7 @@ Het is een hardnekkig misverstand dat TDD deze praktijk van software schrijven o
 Het proces van TDD valt uiteen in drie fasen. In de literatuur worden deze aangeduid als *red-green-refactor*-cyclus.
 
 
-1. *Red*. De ontwikkelaar schrijft een (enkelvoud!) test die faalt.
+1. *Red*. De ontwikkelaar schrijft een test (enkelvoud!) die faalt.
 
 
 2. *Green*. De ontwikkelaar schrijft genoeg code om de falende test te laten slagen - en niet meer dan dat.
@@ -35,7 +35,7 @@ Het proces van TDD valt uiteen in drie fasen. In de literatuur worden deze aange
 3. *Refactor*. De ontwikkelaar schoont zijn code op. De eenvoudigst mogelijke code om een test te laten slagen voldoet namelijk maar zelden aan *best practices*. Ze bevat bijvoorbeeld hardgecodeerde variabelen of bevat codeduplicatie of schendt de SOLID-principes.
 
 
-Een testgedreven ontwikkelaar schrijft dus *afwisselend* tests en productiecode. Eerst een test, dan wat productiecode (gevolgd door wat opschoning), dan weer een nieuwe test. De tests zijn een zich langzaam uitbreidend vangnet die het mogelijk maken steeds een klein beetje meer productiecode te schrijven.
+Een testgedreven ontwikkelaar schrijft dus *afwisselend* tests en productiecode. Eerst een test, dan wat productiecode (gevolgd door wat opschoning), dan weer een nieuwe test. De tests zijn een zich langzaam uitbreidend vangnet die het mogelijk maken steeds een klein beetje meer productiecode te schrijven zonder regressiebugs te introduceren.
 
 
 ## Inefficiënt?
@@ -71,7 +71,7 @@ Natuurlijk, als je tests had geschreven voor features die nog niet geïmplemente
 ## Test voor test, feature voor feature
 
 
-Er is nog een tweede parallel tussen TDD en Agile - eentje die samehangt, misschien zelfs wel voortvloeit uit de eerste. Om dat concreet te maken, loont het zich te kijken naar de manier waarop *Learning Test-Driven Development* is opgebouwd.
+Er is nog een tweede parallel tussen TDD en Agile - eentje die samenhangt, misschien zelfs wel voortvloeit uit de eerste. Om dat concreet te maken, loont het zich te kijken naar de manier waarop *Learning Test-Driven Development* is opgebouwd.
 
 
 Het boek is geschreven rondom één centraal probleem, namelijk het schrijven van een programma dat het mogelijk maakt om geld in meerdere munteenheden te beheren. Siddiqui begint met de volgende handvol operaties die het programma aan moet kunnen:
@@ -161,7 +161,7 @@ Toch is TDD geen wijdverbreide praktijk in de wereld van softwareontwikkeling - 
 4. Legacy code en Test-Driven Development [binnenkort]
 
 
-[^1]: Siddiqui neemt, om het voorbeeld simpel te houden, aan dat wisselkoersen stabiel zijn en niet veranderen. De wisselkoers dollar-euro vast staat op 1.2; die van dollar-won op 1100.
+[^1]: Siddiqui neemt, om het voorbeeld simpel te houden, aan dat wisselkoersen niet veranderen. De wisselkoers dollar-euro vast staat op 1.2; die van dollar-won op 1100.
 
 
 [^2]: *Fun fact*: precies deze observatie zette me ertoe aan Siddiquis boek te gaan lezen. Mijn recensie van *Clean Agile* is [hier](/blog/21/11/agile-zijn-niet-agile-doen/) te lezen.

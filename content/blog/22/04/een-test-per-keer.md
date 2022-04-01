@@ -1,8 +1,8 @@
 ---
 title: "Eén test per keer"
 author: "Karl van Heijster"
-date: 2022-03-09T14:12:27+01:00
-draft: true
+date: 2022-04-01T08:06:10+02:00
+draft: false
 comments: true
 tags: ["boeken", "leren", "software ontwikkelen", "test-driven development", "testen", "verandering"]
 summary: "Ik hou niet van programmeerboeken die van me vragen dat ik onder het lezen code schrijf. Daar kan zo'n boek niks aan doen, ik houd er nu eenmaal van om een boekje op de bank te lezen, ver weg van mijn laptop. Voor één boek maak ik een uitzondering, en dat is *Learning Test-Driven Development* van Saleem Siddiqui. Dat boek draait namelijk niet om het eindproduct, de code. Het draait om het proces."
@@ -32,13 +32,13 @@ TDD is een oefening in terughoudendheid - of nee: in focus. Wie op z'n TDD's sof
 ## Denken als code
 
 
-Je zou kunnen zeggen: TDD is een oefening in denken zoals je code denkt. Je code doet één ding tegelijkertijd. (Het is waar: multithreaded code doet meerdere dingen tegelijkertijd. Maar elke thread doet één ding tegelijkertijd.) Als je programma een regel code uitvoert, dan voert het die regel code uit. Het is niet bezig vooruit te kijken hoe de volgende regel eruit ziet en wat ervoor nodig is om die succesvol te tackelen.
+Je zou kunnen zeggen: TDD is een oefening in denken zoals je code denkt. Je code doet één ding tegelijkertijd. (Ik hoor je denken: en multithreaded code dan? Daarop zou ik willen antwoorden: elke thread doet één ding tegelijkertijd.) Als je programma een regel code uitvoert, dan voert het die regel code uit. Het is niet bezig vooruit te kijken hoe de volgende regel eruit ziet en wat ervoor nodig is om die succesvol te tackelen.
 
 
 Mensen in het algemeen, en softwareontwikkelaars in het bijzonder, zitten wat minder rechtlijnig in elkaar. Dat is deels onze kracht: het vermogen naar de toekomst te kijken stelt ons in staat rampen te voorkomen. Sterker nog, een aanzienlijk deel van onze taak als softwareontwikkelaar bestaat uit het voorzien van toekomstige problemen en onze code daarop voorbereiden. Wie dat niet doet, schrijft code die zijn nut verliest zodra er maar één kleine aanpassing nodig is.
 
 
-Maar het kan ook onze zwakte zijn. Door naar de toekomst te kijken - de nabije toekomst, de verre toekomst en zelfs de toekomst die nooit zal komen - lopen we het risico het overzicht te verliezen. We zijn met teveel zaken tegelijkertijd bezig, wat ervoor zorgt dat we code schrijven die vijftien dingen half doen, in plaats van één ding goed.
+Maar het kan ook onze zwakte zijn. Door naar de toekomst te kijken - de nabije toekomst, de verre toekomst en zelfs de toekomst die nooit zal komen - lopen we het risico het overzicht te verliezen. We zijn met teveel zaken tegelijkertijd bezig, wat ervoor zorgt dat we code schrijven die vijftien dingen half doet, in plaats van één ding goed.
 
 
 TDD is een techniek die die situatie tracht te voorkomen.
@@ -47,7 +47,7 @@ TDD is een techniek die die situatie tracht te voorkomen.
 ## *Single responsibility*
 
 
-TDD legt een ontwikkelaar een *single responsibility* op: een test schrijven, een test laten slagen, of je code opruimen - *en niets anders*. Dat betekent niet dat je als softwareontwikkelaar niet meerdere verantwoordelijkheden hebt, het betekent dat je er *nu op dit moment* maar één hebt. Zodra je die hebt afgerond, richt je je op de volgende, niet eerder.
+TDD legt een ontwikkelaar een [*single responsibility*](/tags/single-responsibility-principe/) op: een test schrijven, een test laten slagen, of je code opruimen - *en niets anders*. Dat betekent niet dat je als softwareontwikkelaar niet meerdere verantwoordelijkheden hebt, het betekent dat je er *nu op dit moment* maar één hebt. Zodra je die hebt afgerond, richt je je op de volgende, niet eerder.
 
 
 Het is makkelijk om onder het TDD'en terug te glijden in oude gewoonten. Dat doe je bijvoorbeeld als je tegen jezelf zegt: ik zet deze method of class alvast wat generieker op dan nodig is, want ik weet dat ik 'm voor de volgende feature toch aan moet passen. TDD vraagt je om dat te laten. 
@@ -71,10 +71,10 @@ Precies om die reden is het zo belangrijk dat *Learning Test-Driven Development*
 ## Meer in deze reeks
 
 
-1. [Agile en Test-Driven Development] (LINK)
+1. [Agile en Test-Driven Development](/blog/22/03/agile-en-test-driven-development/)
 2. **Eén test per keer**
 3. *To polyglot or not to polyglot* [binnenkort]
 4. Legacy code en Test-Driven Development [binnenkort]
 
 
-[^1]: Zie ook deel 1 in deze reeks: [*Agile en Test-Driven Development*] (LINK)
+[^1]: Zie ook deel 1 in deze reeks: [*Agile en Test-Driven Development*](/blog/22/03/agile-en-test-driven-development/)

@@ -156,7 +156,7 @@ Toch is TDD geen wijdverbreide praktijk in de wereld van softwareontwikkeling - 
 
 
 1. **Agile en Test-Driven Development**
-2. Eén test per keer [binnenkort]
+2. [Eén test per keer](/blog/22/04/een-test-per-keer/)
 3. *To polyglot or not to polyglot* [binnenkort]
 4. Legacy code en Test-Driven Development [binnenkort]
 

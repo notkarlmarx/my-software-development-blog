@@ -1,8 +1,8 @@
 ---
 title: "Vijf haikus over software ontwikkelen - Vol. 4"
 author: "Karl van Heijster"
-date: 2021-12-24T12:26:07+01:00
-draft: true
+date: 2022-04-04T07:48:46+02:00
+draft: false
 comments: true
 tags: ["poëzie", "software ontwikkelen"]
 summary: "*De klant heeft altijd / gelijk. Totdat je bouwt wat / de klant voorstelde.*"

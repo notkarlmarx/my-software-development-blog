@@ -1,11 +1,11 @@
 ---
 title: "To polyglot or not to polyglot"
 author: "Karl van Heijster"
-date: 2022-03-11T12:27:40+01:00
-draft: true
+date: 2022-04-08T08:40:24+02:00
+draft: false
 comments: true
 tags: ["boeken", "polyglot", "test-driven development"]
-summary: "Laten we aannemen dat sommige programmeerproblemen zich meer voor objectgeoriënteerde talen lenen, en andere meer voor functionele.[^1] Is het dan niet logisch om de taal te kiezen die het best bij het probleem past? Het antwoord op die vraag is: ja en nee. Ja, het is verstandig om *the right tool for the job* te kiezen - dat is een open deur. Maar zelfs als we aannemen dat de ene taal zich beter leent voor het probleem, is het maar de vraag of het verstandig is dat *jij* die taal *nu* inzet om *dat probleem* op te lossen. "
+summary: "Laten we aannemen dat sommige programmeerproblemen zich meer voor objectgeoriënteerde talen lenen, en andere meer voor functionele. Is het dan niet logisch om de taal te kiezen die het best bij het probleem past? Het antwoord op die vraag is: ja en nee. Ja, het is verstandig om *the right tool for the job* te kiezen - dat is een open deur. Maar zelfs als we aannemen dat de ene taal zich beter leent voor het probleem, is het maar de vraag of het verstandig is dat *jij* die taal *nu* inzet om *dat probleem* op te lossen. "
 ---
 
 # Gedachten naar aanleiding van *Learning Test-Driven Development* - Deel 3
@@ -20,7 +20,7 @@ De ondertitel van *Learning Test-Driven Development* is *A Polyglot Guide to Wri
 Vanuit een marketingpectief is dit een goede zet, natuurlijk. Door TDD in drie talen aan te bieden, spreekt Siddiqui een groter publiek aan dan wanneer 'ie zich tot één van die drie talen beperkt had.
 
 
-Maar ook inhoudelijk bezien is de keuze voor een meertalige aanpak te verdedigen. TDD is immers niet gebonden aan een specifieke taal - zelfs niet aan een programmeerparadigma. Het is een universele praktijk. Of je nu objectgeoriënteerde of functionele code schrijft, de praktijk van TDD loont zich altijd. 
+Maar ook inhoudelijk bezien is de keuze voor een meertalige aanpak te verdedigen. TDD is immers niet gebonden aan een specifieke taal - zelfs niet aan een [programmeerparadigma](/blog/21/10/low-code-een-nieuw-paradigma/). Het is een universele praktijk. Of je nu [objectgeoriënteerde](/tags/objectgeoriënteerd-programmeren/) of [functionele](/tags/functioneel-programmeren/) code schrijft, de praktijk van TDD loont zich altijd. 
 
 
 Siddiqui geeft aan dat zijn boek op meerdere manieren gelezen kan worden. Je kunt het boek bijvoorbeeld drie keer doorlopen - één keer voor elke taal. Of je kunt het van begin tot eind lezen, waarbij je voor elke feature van taal naar taal overstapt. Een mengvorm tussen beide is natuurlijk ook mogelijk.
@@ -60,13 +60,16 @@ Een illustratie - niet eens op het niveau van talen, maar over een framework. Mi
 Precies om die reden zegt Corey dan ook: waak ervoor teveel talen (c.q. frameworks) op je CV te zetten. Wie een half jaar ervaring heeft op twaalf talen en in dertien frameworks, heeft feitelijk nul ervaring in allemaal!
 
 
+{{<figure src="https://media-exp1.licdn.com/dms/image/C4E22AQH1zdXnawxHGA/feedshare-shrink_1280/0/1648620886023?e=2147483647&v=beta&t=t3iHR-l0U0wIaFRk_XfPJHscwGPqyYjvvMf4rzofWAg" width="300" alt="Me learning programming languages">}}
+
+
 ## JavaScript, Go
 
 
 Daarmee zeg ik niet dat het niet zinvol is om van tijd tot tijd een nieuwe programmeertaal te leren. De voordelen die ik hierboven noemde, die blijven overeind staan. Maar het is goed om je te realiseren dat het leren van een taal een *commitment* is. Een polyglot is niet iemand die meerdere talen spreekt, een polyglot spreekt meerdere talen *vloeiend*. En dat gebeurt niet van de ene op de andere dag.
 
 
-Ik heb *Learning Test-Driven Development* tweemaal doorlopen: de eerste keer in JavaScript en de tweede keer in Go. De eerste keer omwille van de TDD, en de tweede keer om van de taal te proeven. En hoewel dat me een gevoel heeft gegeven van Go's syntax, zou ik niet durven beweren enige ervaring te hebben in die taal. 
+Ik heb *Learning Test-Driven Development* tweemaal[^2] doorlopen: de eerste keer in JavaScript en de tweede keer in Go. De eerste keer omwille van de TDD, en de tweede keer om van de taal te proeven. En hoewel dat me een gevoel heeft gegeven van Go's syntax, zou ik niet durven beweren enige ervaring te hebben in die taal. 
 
 
 Hoe zinvol die exercitie was? Ik ben in elk geval niet gaan twijfelen aan de waarde van TDD, veel meer kan ik er niet over zeggen!
@@ -75,10 +78,12 @@ Hoe zinvol die exercitie was? Ik ben in elk geval niet gaan twijfelen aan de waa
 ## Meer in deze reeks
 
 
-1. [Agile en Test-Driven Development] (LINK)
-2. [Eén test per keer] (LINK)
+1. [Agile en Test-Driven Development](/blog/22/03/agile-en-test-driven-development/)
+2. [Eén test per keer](/blog/22/04/een-test-per-keer/)
 3. ***To polyglot or not to polyglot***
 4. Legacy code en Test-Driven Development [binnenkort]
 
 
 [^1]: Dit is een controversieel statement, afhankelijk van hoe je 'm uitlegt. Het is niet zo dat de ene of de andere taal *per definitie* beter bij een probleem past of niet. Het is wel zo dat een taal bepaalde features kan hebben die de oplossing eenvoudiger of eleganter maken dan een andere taal. De hamvraag is eigenlijk: wat maakt het dat een bepaalde taal beter geschikt is voor een bepaald programmeerprobleem dan een andere taal? - en het is niet duidelijk of daar eenvoudig antwoord op te geven valt.
+
+[^2]: Oké, eerlijk: anderhalf maal. Ik ben ook maar een mens!

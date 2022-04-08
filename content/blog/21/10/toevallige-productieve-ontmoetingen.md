@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2021-10-18T08:06:34+02:00
 draft: false
 comments: true
-tags: ["communicatie", "Developer Meet-up", "productiviteit", "samenwerking", "software ontwikkelen", "thuiswerken", "waarde", "werkplezier"]
+tags: ["communicatie", "Developer Meet-up", "literatuur", "productiviteit", "samenwerking", "software ontwikkelen", "thuiswerken", "waarde", "werkplezier"]
 summary: "Een collega van me omschreef de huidige, moderne functie van een kantoor als volgt: *het faciliteren van toevallige productieve ontmoetingen*. Ik viel bijna van mijn stoel toen ik dat hoorde (het was tijdens een borrel), zo'n mooie formulering vind ik het. Tegelijkertijd werpt het een licht op een gebeurtenis die voorheen zo alledaags en vanzelfsprekend was dat hij al die jaren aan mijn aandacht is ontsnapt: een collega tegen het lijf lopen bij de koffieautomaat."
 ---
 

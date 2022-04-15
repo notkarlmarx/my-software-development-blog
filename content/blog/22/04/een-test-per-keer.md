@@ -74,7 +74,7 @@ Precies om die reden is het zo belangrijk dat *Learning Test-Driven Development*
 1. [Agile en Test-Driven Development](/blog/22/03/agile-en-test-driven-development/)
 2. **Eén test per keer**
 3. [*To polyglot or not to polyglot*](/blog/22/04/to-polyglot-or-not-to-polyglot/)
-4. Legacy code en Test-Driven Development [binnenkort]
+4. [Legacy code en Test-Driven Development](/blog/22/04/legacy-code-en-test-driven-development/)
 
 
 [^1]: Zie ook deel 1 in deze reeks: [*Agile en Test-Driven Development*](/blog/22/03/agile-en-test-driven-development/)

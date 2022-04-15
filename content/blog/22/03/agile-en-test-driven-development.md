@@ -158,7 +158,7 @@ Toch is TDD geen wijdverbreide praktijk in de wereld van softwareontwikkeling - 
 1. **Agile en Test-Driven Development**
 2. [Eén test per keer](/blog/22/04/een-test-per-keer/)
 3. [*To polyglot or not to polyglot*](/blog/22/04/to-polyglot-or-not-to-polyglot/)
-4. Legacy code en Test-Driven Development [binnenkort]
+4. [Legacy code en Test-Driven Development](/blog/22/04/legacy-code-en-test-driven-development/)
 
 
 [^1]: Siddiqui neemt, om het voorbeeld simpel te houden, aan dat wisselkoersen niet veranderen. De wisselkoers dollar-euro vast staat op 1.2; die van dollar-won op 1100.

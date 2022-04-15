@@ -81,7 +81,7 @@ Hoe zinvol die exercitie was? Ik ben in elk geval niet gaan twijfelen aan de waa
 1. [Agile en Test-Driven Development](/blog/22/03/agile-en-test-driven-development/)
 2. [Eén test per keer](/blog/22/04/een-test-per-keer/)
 3. ***To polyglot or not to polyglot***
-4. Legacy code en Test-Driven Development [binnenkort]
+4. [Legacy code en Test-Driven Development](/blog/22/04/legacy-code-en-test-driven-development/)
 
 
 [^1]: Dit is een controversieel statement, afhankelijk van hoe je 'm uitlegt. Het is niet zo dat de ene of de andere taal *per definitie* beter bij een probleem past of niet. Het is wel zo dat een taal bepaalde features kan hebben die de oplossing eenvoudiger of eleganter maken dan een andere taal. De hamvraag is eigenlijk: wat maakt het dat een bepaalde taal beter geschikt is voor een bepaald programmeerprobleem dan een andere taal? - en het is niet duidelijk of daar eenvoudig antwoord op te geven valt.

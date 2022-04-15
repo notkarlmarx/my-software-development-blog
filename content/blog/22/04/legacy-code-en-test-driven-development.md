@@ -1,8 +1,8 @@
 ---
 title: "Legacy code en Test-Driven Development"
 author: "Karl van Heijster"
-date: 2022-03-18T10:52:06+01:00
-draft: true
+date: 2022-04-15T11:58:55+02:00
+draft: false
 comments: true
 tags: ["boeken", "leermoment", "legacy code", "software ontwikkelen", "test-driven development"]
 summary: "TDD gaat over het toevoegen van nieuwe features - *per definitie*. Immers, wie tests toevoegt voor bestaande code is niet test-driven aan het developen. Maar de meeste ontwikkelaars werken helemaal niet aan *greenfield*-applicaties. Ze slepen zich dag na dag, week na week door het moeras dat we *legacy code* noemen. TDD lijkt te zijn weggelegd voor de *lucky few* onder ons die nieuwe applicaties mogen ontwikkelen. De rest van ons mag ploeteren in bestaande drek. Maar die conclusie gaat toch niet helemaal op."
@@ -47,7 +47,7 @@ Waarom? Omdat nieuwe features in een *legacy*-applicatie veelal bestaan uit vari
 ## Doelen
 
 
-Maar dat is dus precies waarom TDD drie stappen kent, en niet twee. Het gekopieerde code dient een doel - nee, meerdere. Je zal je als ontwikkelaar hier doorheen moeten werken om je test te kunnen laten slagen. Dat is het eerste doel. 
+Maar dat is dus precies waarom TDD drie stappen kent, en niet twee. De gekopieerde code dient een doel - nee, meerdere. Je zal je als ontwikkelaar hier doorheen moeten werken om je test te kunnen laten slagen. Dat is het eerste doel. 
 
 
 Het tweede doel is je begrip van de bestaande code te vergroten *door* de nieuwe feature te implementeren. Dat is immers waarom het vaak zo frustrerend is om met *legacy code* te werken: de code is ondoorgrondelijk. Nou, als je klaar bent met de nieuwe feature dus niet meer.
@@ -74,13 +74,13 @@ Wat ik zeg is niets nieuws. Ontwikkelaars die zich regelmatig door *legacy code*
 ## Meer in deze reeks
 
 
-1. [Agile en Test-Driven Development] (LINK)
-2. [Eén test per keer] (LINK)
-3. [*To polyglot or not to polyglot*] (LINK)
+1. [Agile en Test-Driven Development](/blog/22/03/agile-en-test-driven-development/)
+2. [Eén test per keer](/blog/22/04/een-test-per-keer/)
+3. [*To polyglot or not to polyglot*](/blog/22/04/to-polyglot-or-not-to-polyglot/)
 4. **Legacy code en Test-Driven Development**
 
 
-[^1]: Misschien is dat [óók] (LINK_NAAR_DEEL_2) een reden waarom het zo moeilijk is om ontwikkelaars de praktijk van TDD eigen te maken. Ze hebben het gevoel dat het niets met hun dagelijkse werkzaamheden te maken heeft. 
+[^1]: Misschien is dat [óók](/blog/22/04/een-test-per-keer/) een reden waarom het zo moeilijk is om ontwikkelaars de praktijk van TDD eigen te maken. Ze hebben het gevoel dat het niets met hun dagelijkse werkzaamheden te maken heeft. 
 
 
 [^2]: En die definitie heeft intuïtieve aantrekkingskracht voor iedereen die een *greenfield*-applicatie binnen de kortste keren heeft zien verbruinen! Voor een praktijkvoorbeeld: die keer dat we [de Angular-kant van onze applicatie dachten te kunnen ondersteunen met louter E2E-tests](/blog/22/01/de-leercurve-van-angulartests-beklimmen-deel-1/). 

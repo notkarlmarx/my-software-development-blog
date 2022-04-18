@@ -1,17 +1,17 @@
 ---
 title: "De standaard versus de business"
 author: "Karl van Heijster"
-date: 2022-03-04T08:23:19+01:00
-draft: true
+date: 2022-04-18T10:06:45+02:00
+draft: false
 comments: true
 tags: ["datamigratie", "domeinmodel", "informatieanalyse", "leermoment", "modelleren", "productieverstoring", "refactoren", "software ontwikkelen", "waarde", "YAGNI"]
-summary: "Onze business volgt de QTI-standaard, maar ze gebruiken niet alles. Zo bestaat er - op dit moment - nog geen behoefte om Items te construeren die uit meerdere rijen bestaat. Bij het modelleren van ons domein, werden we voor een keus gesteld: volgen we de QTI-standaard bij het uitschrijven van ons model? Of leggen we alleen vast wat de business nodig heeft, en laten we ons eigen model daarmee afwijken van de standaard? Concreet: ondersteunen we meerdere rijen of niet? "
+summary: "Onze business volgt de QTI-standaard, maar ze gebruiken niet alles. Zo bestaat er - op dit moment - nog geen behoefte om Items te construeren die uit meerdere rijen bestaan. Bij het modelleren van ons domein werden we voor een keus gesteld: volgen we de QTI-standaard bij het uitschrijven van ons model? Of leggen we alleen vast wat de business nodig heeft, en laten we ons eigen model daarmee afwijken van de standaard? Concreet: ondersteunen we meerdere rijen of niet? "
 ---
 
 Mijn team ontwikkelt een applicatie in het domein van de toetsconstructie. Sterker nog, we ontwikkelen een nieuwe applicatie, die onze inmiddels veertien jaar oude legacy-applicatie dient te vervangen. Dat gaf ons de unieke mogelijkheid om *from scratch* na te denken over ons domeinmodel. Een kans, zonder meer, maar ook een grote uitdaging.
 
 
-Gelukkig hoefden we niet in het luchtledige te werken. We hadden het model van onze legacy-applicatie, natuurlijk, maar dat model was in veertien jaar tijd behoorlijk ondoorgrondelijk geworden. Daarom baseerden we ons bij het modelleren op een ander model, namelijk de [QTI-standaard](https://en.wikipedia.org/wiki/QTI), de internationale standaard om toetsen uit te kunnen wisselen.
+Gelukkig hoefden we niet in het luchtledige te werken. We hadden het model van onze legacy-applicatie, natuurlijk, maar dat model was in veertien jaar tijd behoorlijk ondoorgrondelijk geworden. Daarom baseerden we ons bij het modelleren op een ander model, namelijk de [QTI-standaard](https://en.wikipedia.org/wiki/QTI), de internationale standaard om toetsen mee uit te kunnen wisselen.
 
 
 ## QTI
@@ -29,10 +29,10 @@ De inhoud van een Item heeft in QTI een tabelachtige structuur. Ze bestaat uit r
 ## Rijen en kolommen
 
 
-Tot zover de standaard. Onze business volgt de QTI-standaard, maar ze gebruiken niet alles. Zo bestaat er - op dit moment - nog geen behoefte om Items te construeren die uit meerdere rijen bestaat. Onze businessregels geven aan: een Item heeft ofwel één, ofwel twee kolommen. En daar volgt uit dat een Item altijd maar één rij heeft.
+Tot zover de standaard. Onze business volgt de QTI-standaard, maar ze gebruiken niet alles. Zo bestaat er - op dit moment - nog geen behoefte om Items te construeren die uit meerdere rijen bestaan. Onze businessregels geven aan: een Item heeft ofwel één, ofwel twee kolommen. En daar volgt uit dat een Item altijd maar één rij heeft.
 
 
-Bij het modelleren van ons domein, werden we voor een keus gesteld: volgen we de QTI-standaard bij het uitschrijven van ons model? Of leggen we alleen vast wat de business nodig heeft, en laten we ons eigen model daarmee afwijken van de standaard? Concreet: ondersteunen we meerdere rijen of niet? 
+Bij het modelleren van ons domein werden we voor een keus gesteld: volgen we de QTI-standaard bij het uitschrijven van ons model? Of leggen we alleen vast wat de business nodig heeft, en laten we ons eigen model daarmee afwijken van de standaard? Concreet: ondersteunen we meerdere rijen of niet? 
 
 
 \- Wat zou jij hebben gedaan, denk je?
@@ -74,7 +74,7 @@ De implementatie lijkt op het eerste gezicht vlekkeloos te gaan, maar na verloop
 Oftewel: onze data is gecorrumpeerd geraakt.
 
 
-Geen zorgen: de aanleiding van het probleem bleek ook meteen haar oplossing te zijn. Dankzij Migrations.Json.Net bleek het heel eenvoudig om Items met meerdere rijen bij conversie om te zetten naar Items met één rij.[^1] Het probleem kon dus zonder vervelende neveneffecten worden opgelost - maar er gingen wel wat spannende momenten aan vooraf.
+Geen zorgen: de aanleiding van het probleem bleek ook meteen haar oplossing te zijn. Dankzij Migrations.Json.Net bleek het heel eenvoudig om Items met meerdere rijen om te zetten naar Items met één rij bij het ophalen uit de database.[^1] Het probleem kon dus zonder vervelende neveneffecten worden opgelost - maar er gingen wel wat spannende momenten aan vooraf.
 
 
 ## Dus: YAGNI
@@ -86,7 +86,7 @@ Achteraf kun je zeggen: dat ene argument tegen woog zwaarder - of liever: had zw
 Alle code die je schrijft als softwareontwikkelaar, is code die je moet onderhouden. En de onderhoudslast van code weegt altijd zwaarder dan je op voorhand durft te denken. Niet voor niets worden de meeste kosten van het bouwen van software gemaakt in de onderhoudsfase. Dit is het moment waarop de keuzes die in de ontwikkelfase zijn genomen, hun duurzaamheid - of gebrek daaraan - bewijzen.
 
 
-Ik stel een vuistregel voor: als we het als softwareontwikkelaars de moeite waard vonden een lekker bekkende afkorting te verzinnen voor een bepaalde praktijk, dan moet je wel verdomd goede redenen aandragen waarom je van die praktijk af wil wijken.
+Ik stel een vuistregel voor: als we het als softwareontwikkelaars de moeite waard vonden een lekker bekkende afkorting te verzinnen voor een bepaalde praktijk, dan moet je wel verdomd goede redenen aandragen om van die praktijk af te willen wijken.
 
 
 "Maar in de toekomst misschien..." is geen goede reden om YAGNI te schenden. YAGNI is nu precies bedacht omdat dit soort redeneringen vrijwel nooit opgaan. "Het kan geen kwaad" is zowaar een nog slechtere reden. Want het kan geen kwaad, totdat het kwaad blijkt te kunnen - en dan zit je met de gebakken peren. 
@@ -95,4 +95,4 @@ Ik stel een vuistregel voor: als we het als softwareontwikkelaars de moeite waar
 Dus: volg je de standaard of de business? Door schade en schande wijs geworden, neig ik naar de laatste. - Wat jij?
 
 
-[^1]: In de fase waarin we het model van onze applicatie uitwerkten, hadden we nog geen Migrations.Json.Net - helaas, haar bestaan had er zomaar voor kunnen zorgen dat we hadden besloten voorlopig nog geen rijen te ondersteunen. Deze techniek stelt ons immers net zo goed in staat rijen *toe te voegen* als ze te verwijderen. Zo kunnen we Items-zonder-rijen *backwards compatible* maken met een geupdate model waarin rijen wél worden ondersteund. 
+[^1]: In de fase waarin we het model van onze applicatie uitwerkten, hadden we nog geen Migrations.Json.Net - helaas, haar bestaan had er zomaar voor kunnen zorgen dat we hadden besloten voorlopig nog geen rijen te ondersteunen. Deze techniek stelt ons immers net zo goed in staat rijen *toe te voegen* als ze te verwijderen, wanneer we ze ophalen uit de database. Zo kunnen we Items-zonder-rijen *backwards compatible* maken met een geupdatet model waarin rijen wél worden ondersteund. 

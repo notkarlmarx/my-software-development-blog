@@ -1,8 +1,8 @@
 ---
 title: "Wat je aanpakt weegt licht"
 author: "Karl van Heijster"
-date: 2022-03-25T10:28:56+01:00
-draft: true
+date: 2022-04-22T08:09:01+02:00
+draft: false
 comments: true
 tags: ["leermoment", "legacy code", "software ontwikkelen", "verantwoordelijkheid", "zorg"]
 summary: "De vloek van een goed functionerend team is dat de organisatie daarvan vindt: die kunnen dit en dat best erbij hebben. De zegening van een goed team is dat de organisatie daarin meestal wel een punt heeft. Dat gezegd hebbende, mijn team was niet blij toen we de opdracht in onze mik geschoven kregen om een bedrijfskritische *legacy* applicatie door te lichten. We hebben ons werk voor die applicatie lange tijd zo ver mogelijk naar achteren geschoven. Maar enkele Sprints terug was het dan toch zo ver. En eerlijk gezegd: het viel alleszins mee."

@@ -1,14 +1,14 @@
 ---
 title: "De ontwikkelaar als chirurg"
 author: "Karl van Heijster"
-date: 2022-04-01T11:17:10+02:00
-draft: true
+date: 2022-04-25T07:38:38+02:00
+draft: false
 comments: true
 tags: ["boeken", "clean code", "leermoment", "legacy code", "recensies", "refactoren", "schoonheid", "technische schuld", "testen"]
-summary: "*Working Effectively with Legacy Code* van Michael Feathers staat vol met adviezen waar je cleancodershart een slag van overslaat. Vrijelijk raadt Feathers je aan encapsulatie uit het raam te smijten of onhandelbare methods zomaar tot class te promoveren. Zijn inzichten gaan lijnrecht tegen alle richtlijnen die je als ontwikkelaar geleerd krijgt om goede, onderhoudbare code te schrijven. Het boek is zonder twijfel een aanrader voor elke softwareontwikkelaar."
+summary: "*Working Effectively with Legacy Code* van Michael Feathers staat vol met adviezen waar je cleancodershart een slag van overslaat. Vrijelijk raadt Feathers je aan encapsulatie uit het raam te smijten of onhandelbare methods zomaar tot class te promoveren. Zijn inzichten gaan lijnrecht in tegen alle richtlijnen om goede, onderhoudbare code te schrijven. Het boek is zonder twijfel een aanrader voor elke softwareontwikkelaar."
 ---
 
-[*Working Effectively with Legacy Code*](https://www.pearson.com/us/higher-education/program/Feathers-Working-Effectively-with-Legacy-Code/PGM254740.html) van [Michael Feathers](https://michaelfeathers.silvrback.com/) staat vol met adviezen waar je cleancodershart een slag van overslaat. Vrijelijk raadt Feathers je aan encapsulatie uit het raam te smijten of onhandelbare methods zomaar tot class te promoveren. Zijn inzichten gaan lijnrecht tegen alle richtlijnen die je als ontwikkelaar geleerd krijgt om goede, onderhoudbare code te schrijven.
+[*Working Effectively with Legacy Code*](https://www.pearson.com/us/higher-education/program/Feathers-Working-Effectively-with-Legacy-Code/PGM254740.html) van [Michael Feathers](https://michaelfeathers.silvrback.com/) staat vol met adviezen waar je cleancodershart een slag van overslaat. Vrijelijk raadt Feathers je aan encapsulatie uit het raam te smijten of onhandelbare methods zomaar tot class te promoveren. Zijn inzichten gaan lijnrecht in tegen alle richtlijnen om goede, onderhoudbare code te schrijven.
 
 
 Het boek is zonder twijfel een aanrader voor elke softwareontwikkelaar.
@@ -47,4 +47,4 @@ Dat is een belangrijk en allesbehalve triviaal inzicht. Ik betrap mezelf er rege
 Het lezen van Feathers' boek heeft me wat minder terughoudend gemaakt in deze onderneming. Dat is deels omdat het boek vol staat met manieren om code, al dan niet met pijn en moeite, in een testharnas te hijsen. Feathers' tips en trucs zouden standaard in de gereedschapskist van elke goede softwareontwikkelaar moeten zitten. Maar het grootste gedeelte van het vertrouwen komt voort uit het besef dat je je handen - en je code! - vuil, écht vuil moet maken, om 'm op te kunnen schonen.
 
 
-Men zegt niet voor niks: wie mooi wil zijn, moet pijn lijden - en wie mooie code wil hebben, zal zijn applicatie van tijd tot tijd voor zijn eigen bestwil op de pijnbank moeten leggen.
+Men zegt niet voor niks: wie mooi wil zijn, moet pijn lijden - en wie mooie code wil hebben, zal zijn applicatie van tijd tot tijd voor zijn eigen bestwil op de pijnbank moeten leggen. Snijden maar!

@@ -4,8 +4,8 @@ author: "Karl van Heijster"
 date: 2022-04-22T08:20:31+02:00
 draft: true
 comments: true
-tags: []
-summary: ""
+tags: ["coaching", "motivatie", "vertrouwen"]
+summary: "Coachen is niet alleen praten. Coachingsgesprekken zijn ingebed in een context van (professionele of persoonlijke) situaties en handelingen. Zo'n gesprek eindigt dan ook niet wanneer de betrokkenen ophouden te praten. Dat wat besproken is, blijft - hopelijk! - in het hoofd van de coachee rondzingen. Zo vindt het zijn uitwerking in een nieuw perspectief op de situaties waarin deze terechtkomt, en misschien zelfs wel in nieuwe handelingen. Maar je hoeft als coach niet te alleen hopen dat dit gebeurt, er bestaat een manier om de coachee een handje te helpen. Dat doe je door middel van opdrachten."
 ---
 
 *In het kader van mijn persoonlijke ontwikkeling volg ik een [cursus coachend begeleiden](https://www.windesheim.nl/opleidingen/deeltijd/cursus/basiscursus-coachen-en-coachend-begeleiden) op [Hogeschool Windesheim](https://www.windesheim.nl/) in Zwolle. Eén van de opdrachten die bij die cursus hoort, is een reflectie schrijven over de voorgeschreven literatuur, "bijvoorbeeld in een blog." Bij dezen.*
@@ -50,7 +50,7 @@ Maar coachen is niet alleen praten. Coachingsgesprekken zijn ingebed in een cont
 Een voorbeeld. Een coachee begrijpt in de loop van een gesprek dat 'ie zus of zo handelt vanwege een onbepaalde angst. De volgende keer als die angst opspeelt, herkent 'ie hem. Misschien vindt diegene op dat moment de woorden om die onbepaalde angst terug te brengen tot iets concreets. Misschien besluit 'ie op dat moment: hier moet ik doorheen - en doorbreekt het oude patroon.
 
 
-In het ideale geval gaat het coachingsgesprek gewoon verder in het hoofd van de coachee, ook wanneer je als coach niet meer fysiek aanwezig bent.
+In het ideale geval gaat het coachingsgesprek gewoon verder in het hoofd en het gedrag van de coachee, ook wanneer je als coach niet meer fysiek aanwezig bent.
 
 
 ## Opdrachten
@@ -59,7 +59,7 @@ In het ideale geval gaat het coachingsgesprek gewoon verder in het hoofd van de 
 Een gemotiveerde coachee die van aanpakken houdt, heeft aan een half woord genoeg. Die gaat na een coachingsgesprek zelf aan de slag met hetgeen jullie besproken hebben - met een beetje geluk met een nieuw perspectief, een open deur die hem naar een nieuw pad heeft geleid. 
 
 
-Maar je hoeft als coach niet te alleen hopen dat dit gebeurt, er bestaat een manier om de coachee een handje te helpen. Dat doe je door middel van opdrachten. Je kunt een coachee vragen: houd eens in een schriftje bij wat je voelt in die en die situatie. Of: schrijf een verhaal (of maak een gedicht, een tekening, een schilderij etc.) waarin je verwerkt wat je graag zou willen op dit en dat gebied. Of: begin elke dag ten minste één gesprekje met je collega.  Je begrijpt: zo'n opdracht sluit aan bij een bepaalde deur - het liefst een gesloten deur. 
+Maar je hoeft als coach niet te alleen hopen dat dit gebeurt, er bestaat een manier om de coachee een handje te helpen. Dat doe je door middel van opdrachten. Je kunt een coachee vragen: houd eens in een schriftje bij wat je voelt in die en die situatie. Of: schrijf een verhaal (of een gedicht, of maak een tekening, een schilderij etc.) waarin je verwerkt wat je graag zou willen op dit en dat gebied. Of: begin elke dag ten minste één gesprekje met je collega. Je begrijpt: zo'n opdracht sluit aan bij een bepaalde deur - het liefst een gesloten deur. 
 
 
 Opdrachten zijn manieren voor de coachee om *zelf* en *op zijn of haar eigen tempo* te gaan lopen morrelen aan gesloten deuren. Hoewel je als coachee enigszins kunt sturen in de soort opdrachten die je aanbiedt, is het belangrijk dat de coachee zelf de opdrachten uitkiest, en de lat op een niveau legt dat uitdagend is maar niet te hoog. 
@@ -68,10 +68,10 @@ Opdrachten zijn manieren voor de coachee om *zelf* en *op zijn of haar eigen tem
 ## Praten of doen
 
 
-De coachee heeft zelf een leidende rol in het uitvoeren van de opdrachten - hij of zij doet het immers voor zichzelf, en niet om jou te plezieren. Het voordeel daarvan is dat de opdrachtgever en -nemer nu één en dezelfde persoon zijn. Er is daarom in zekere zin al sprake van een iets wat je een vertrouwensband zou kunnen noemen.[^1] De coachee wordt gestimuleerd een deur te openen - door zichzelf.
+De coachee heeft zelf een leidende rol in het uitvoeren van de opdrachten - hij of zij doet het immers voor zichzelf, en niet om jou te plezieren. Het voordeel daarvan is dat de opdrachtgever en -nemer één en dezelfde persoon zijn. Er is daarom in zekere zin al sprake van een iets wat je een vertrouwensband zou kunnen noemen.[^1] De coachee wordt gestimuleerd een deur te openen - door zichzelf.
 
 
-Dat is uiteindelijk waar het in coaching om gaat: dat de coachee zelf - maar niet zonder hulp! - zijn of haar doelen bereikt.
+Dat is uiteindelijk waar het in coaching om gaat: dat de coachee zelf - maar niet zonder ondersteuning! - zijn of haar doelen bereikt.
 
 
 Praten is een manier om deuren te openen - als er voldoende vertrouwen is tussen de gesprekspartner. Praten leidt in het ideale geval vanzelf tot nieuwe handelingen. Maar je hebt praten, en je hebt doen. Ook opdrachten zijn een middel om deuren te openen - en de nieuwe handelingen bevorderen. Het bewerkstellingen van nieuw gedrag zit als het ware ingebakken in de opdracht. En de persoon die de coachee daar doorheen helpt, is zijn beste vertrouwenspersoon: zichzelf.

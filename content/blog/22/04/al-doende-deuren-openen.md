@@ -1,8 +1,8 @@
 ---
 title: "Al doende deuren openen"
 author: "Karl van Heijster"
-date: 2022-04-22T08:20:31+02:00
-draft: true
+date: 2022-04-29T07:49:25+02:00
+draft: false
 comments: true
 tags: ["coaching", "motivatie", "vertrouwen"]
 summary: "Coachen is niet alleen praten. Coachingsgesprekken zijn ingebed in een context van (professionele of persoonlijke) situaties en handelingen. Zo'n gesprek eindigt dan ook niet wanneer de betrokkenen ophouden te praten. Dat wat besproken is, blijft - hopelijk! - in het hoofd van de coachee rondzingen. Zo vindt het zijn uitwerking in een nieuw perspectief op de situaties waarin deze terechtkomt, en misschien zelfs wel in nieuwe handelingen. Maar je hoeft als coach niet te alleen hopen dat dit gebeurt, er bestaat een manier om de coachee een handje te helpen. Dat doe je door middel van opdrachten."
@@ -32,7 +32,7 @@ De metafoor is goed gekozen. Wie een deur opent, schijnt vanuit een nieuwe inval
 ## Op slot
 
 
-Tegelijkertijd geldt ook: je kunt niet zonder pardon zomaar aan gesloten deuren gaan zitten rammelen. Soms zit een deur dicht omdat 'ie nu eenmaal dicht zit. Maar andere keren zit een deur op slot - bewust of onbewust, met goede reden of een vermeend goede reden. 
+Tegelijkertijd geldt ook: je kunt niet zonder pardon zomaar aan gesloten deuren gaan zitten rammelen. Soms zit een deur dicht omdat 'ie nu eenmaal dicht zit. Maar andere keren zit een deur zelfs op slot - bewust of onbewust, met goede reden of een vermeend goede reden. 
 
 
 Wat ik bedoel te zeggen is: soms wil een coachee niet dat je een bepaalde deur opent. Omdat dat ongemakkelijk is, of omdat diegene bang is voor wat zich daar achter bevindt. Wie al te voortvarend aan het slot gaat zitten morrelen, loopt het risico de coachee als geheel op slot te gooien.

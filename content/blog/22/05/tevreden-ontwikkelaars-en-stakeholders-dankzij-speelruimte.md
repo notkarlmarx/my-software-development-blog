@@ -1,8 +1,8 @@
 ---
 title: "Tevreden ontwikkelaars én stakeholders dankzij speelruimte"
 author: "Karl van Heijster"
-date: 2022-04-01T09:50:02+02:00
-draft: true
+date: 2022-05-02T07:39:27+02:00
+draft: false
 comments: true
 tags: ["agile ontwikkeling", "boeken", "leermoment", "procesverbetering", "productiviteit", "professionaliteit", "scrum", "sprint planning", "stakeholders", "verantwoordelijkheid", "werkbalans"]
 summary: "Dit is denk ik voor veel teams een herkenbare situatie: de ene Sprint verbranden jullie achttien *effort points*, de volgende twintig, de keer daarop vijftien. Wat is dan de capaciteit van het team? Hoe kun je voorspellen wat jullie de volgende Sprint gaan opleveren, als de capaciteit fluctueert van keer tot keer? Het antwoord is: dat kun je niet. Maar in *The Art of Agile Development* van James Shore vond ik hier een oplossing voor."
@@ -17,7 +17,7 @@ Het antwoord is: dat kun je niet. Soms zal de inschatting van het team meevallen
 ## Voorbij
 
 
-Mijn team bevindt zich zo ongeveer in die situatie - of liever: we zijn er al voorbij. Er was een tijd dat we een inschatting van onze capaciteit maakten op basis van de vorige paar Sprints, maar die getallen fluctueerden zo hevig dat we stilzwijgend hebben besloten dat maar te laten  voor wat het was. Wat we nu doen is op gevoel een inschatting maken tijdens de Sprint Planning - en hopen dat het mee zal vallen de komende twee weken.
+Mijn team bevindt zich zo ongeveer in die situatie - of liever: we zijn er al voorbij. Er was een tijd dat we een inschatting van onze capaciteit maakten op basis van de vorige paar Sprints, maar die getallen fluctueerden zo hevig dat we stilzwijgend hebben besloten dat maar te laten voor wat het was. Wat we nu doen is op gevoel een inschatting maken tijdens de Sprint Planning - en hopen dat het mee zal vallen de komende twee weken.
 
 
 Dat kan methodischer, natuurlijk. Sterker nog, het móet methodischer, want onze Product Owner (PO) moet de stakeholders een indicatie kunnen geven van wat we wanneer op denken te leveren.
@@ -47,7 +47,7 @@ Stel nu dat je de ene Sprint PBI's ter waarde van twintig punten naar *done done
 Nu kan het heel goed zijn dat je de komende Sprint alle vijftien punten hebt verbrandt vóór het eind van de Sprint. Wat doe je dan? 
 
 
-Ik zal je zeggen wat wij als team deden: we sleepten doodleuk de volgende PBI's de Sprint op en we keken wel hoe ver we daar mee kwamen. Als we ze af kregen, dan konden we de stakeholders een verrassinkje bieden, en als dat niet lukte, dan hadden we alvast een beginnetje gemaakt met de volgende Sprint. Slim toch?
+Ik zal je zeggen wat wij als team deden: we sleepten doodleuk de volgende PBI's de Sprint op en we keken wel hoe ver we daar mee kwamen. Als we ze af kregen, dan konden we de stakeholders een verrassinkje bieden, en als dat niet lukte, dan hadden we alvast een beginnetje gemaakt met de volgende Sprint.[^4] Slim toch?
 
 
 ## Verbeteren
@@ -77,7 +77,7 @@ Dus: je plant de hoeveelheid werk in waarvan je zeker weet dat je het af kan kri
 De volgende Sprint plan je weer op een capaciteit van vijftien. Misschien ben je weer ruim op tijd klaar, maar misschien ook niet. Zo niet, mooi: dan was vijftien een getrouwe inschatting. Zo ja, mooi: dan heb je opnieuw wat extra speelruimte om je applicatie nog wat verder op te schonen.
 
 
-Als je dit lang genoeg doet, dan is je applicatie zo goed onderhouden, dat het team eraan kan gaan denken wat meer hooi op zijn vork te nemen, de volgende Sprint. Je zet de capaciteit op, zeg, achttien. Haal je dat? Prima! Volgende keer gewoon op die koers van achttien doorgaan dus! En haal je dat niet? Geen probleem: verlaag dan opnieuw de capaciteit naar het aantal punten dat je helemaal af hebt weten te maken.
+Als je dit lang genoeg doet, dan is je applicatie zo goed onderhouden, dat het team eraan kan gaan denken wat meer hooi op zijn vork te nemen, de volgende Sprint. Je zet de capaciteit op, zeg, achttien. Haal je dat? Prima! Volgende keer gewoon op die koers van achttien doorgaan dus! En haal je dat niet? Geen probleem: verlaag dan opnieuw de capaciteit naar het aantal punten dat je helemaal af hebt weten te ronden.
 
 
 ## Inzicht
@@ -99,3 +99,6 @@ Speelruimte geeft je twee dingen. Het eerste is betrouwbaarheid naar de mensen b
 
 
 [^3]: Sommige teams zijn afhankelijk van derden om uit te kunnen rollen naar Productie. Voor hen geldt het eenvoudige advies: neem dat niet op in je DoD. In de DoD moeten alleen zaken staan waar het team verantwoordelijkheid voor kan nemen.
+
+
+[^4]: De situatie ligt eerlijk gezegd nét iets genuanceerder dan wat hier beschreven staat. Veel van de PBI's die we in zulke gevallen de Sprint op sleepten, vielen onder de noemer "productkwaliteit": meestal gingen ze over het opschonen van de codebase of het verbeteren van onze deployment pipeline. We begonnen van tijd tot tijd ook aan nieuwe features, jazeker, maar dat was een minderheid van de gevallen.

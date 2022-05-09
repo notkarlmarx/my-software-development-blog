@@ -20,7 +20,14 @@ Als je een slanke den bent, heet je buik je buik. Zodra die slankheid in gevaar 
 Sindsdien fiets ik een paar keer per week - en eerlijk gezegd met veel plezier ook nog. Niet alleen is fietsen goed voor de conditie, het maakt je hoofd ook leeg. Na een goede fietstocht van anderhalf uur, heb je meer (lichamelijke? geestelijke?) energie dan bij aanvang - een interessante observatie. 
 
 
-O, en het is een mooie gelegenheid om een goede podcast te luisteren, daar ben ik sinds de aanvang van de coronacrisis ook te weinig aan toegekomen. Het heeft me in elk geval een goede gelegenheid geboden om mijn luisterachterstand van de [*Hanselminutes*](https://hanselminutes.com/)-podcast weg te werken.[^1]
+O, en het is een mooie gelegenheid om een muziekje te luisteren. Deze bijvoorbeeld (maar om mijn street cred te redden is [hier een playlist](https://open.spotify.com/playlist/5SmBNuCObcy75YLIySVxHr?si=6b4484e532164b66) vol [TOOL](https://toolband.com/)):
+
+
+{{<youtube id="gZiEvY6d8Y4" title="Carly Rae Jepsen - Western Wind (Official Video)" >}}
+<br/>
+
+
+\- Of om een goede podcast te luisteren, daar ben ik sinds de aanvang van de coronacrisis ook te weinig aan toegekomen. Het heeft me in elk geval een goede gelegenheid geboden om mijn luisterachterstand van de [*Hanselminutes*](https://hanselminutes.com/)-podcast weg te werken.[^1]
 
 
 ## Odyssee

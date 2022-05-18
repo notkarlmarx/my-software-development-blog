@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2022-05-02T07:39:27+02:00
 draft: false
 comments: true
-tags: ["agile ontwikkeling", "boeken", "leermoment", "procesverbetering", "productiviteit", "professionaliteit", "scrum", "sprint planning", "stakeholders", "verantwoordelijkheid", "werkbalans"]
+tags: ["agile ontwikkeling", "boeken", "leermoment", "procesverbetering", "productiviteit", "professionaliteit", "scrum", "speelruimte", "sprint planning", "stakeholders", "verantwoordelijkheid", "werkbalans"]
 summary: "Dit is denk ik voor veel teams een herkenbare situatie: de ene Sprint verbranden jullie achttien *effort points*, de volgende twintig, de keer daarop vijftien. Wat is dan de capaciteit van het team? Hoe kun je voorspellen wat jullie de volgende Sprint gaan opleveren, als de capaciteit fluctueert van keer tot keer? Het antwoord is: dat kun je niet. Maar in *The Art of Agile Development* van James Shore vond ik hier een oplossing voor."
 ---
 

@@ -11,13 +11,13 @@ summary: "Een minimijlpaal: dit is mijn honderste blog! In krap een jaar heb ik 
 Een minimijlpaal: dit is mijn honderste blog! In krap een jaar heb ik 80.168 woorden over softwareontwikkeling geschreven, gecategoriseerd onder [112 tags](/tags/). Het leek me een mooi moment voor een knap staaltje navelstaren, met hier en daar een snuifje zelfpijperij. Bij dezen: tien blogs waar ik met iets van plezier op terugkijk.
 
 
-## 1. [Domain Driven Design en Ludwig Wittgenstein](/blog/21/08/domain-driven-design-en-ludwig-wittgenstein/)
+## 1. [Domain-Driven Design en Ludwig Wittgenstein](/blog/21/08/domain-driven-design-en-ludwig-wittgenstein/)
 
 
 Mijn filosofievrienden kunnen het bevestigen: ik ben een liefhebber van de Oostenrijkse filosoof [Ludwig Wittgenstein](https://nl.wikipedia.org/wiki/Ludwig_Wittgenstein), de man die niet één maar twee keer een revolutie introduceerde in het twintigste-eeuwse denken.[^1] Ik ging daarin zelfs zo ver, dat mijn medestudenten op een gegeven moment weigerden nog discussies met me te voeren, omdat ik alles binnen drie zinnen toch doodsloeg met een opmerking over [taalspelen](https://plato.stanford.edu/entries/wittgenstein/#LangGameFamiRese). Je had daar een uitstekend drankspel omheen kunnen bouwen - en dat is wat we volgens mij, bewust of onbewust, ook maar gedaan hebben.
 
 
-Hoe dan ook, ik had niet verwacht dat ik in de rol van softwareontwikkelaar ooit nog wat met Wittgenstein van doen zou hebben. Maar daar heb ik mezelf maar mooi ongelijk in gegeven. Mijn [blog](/blog/21/08/domain-driven-design-en-ludwig-wittgenstein/) over de manier waarop Wittgensteins latere filosofie terug te lezen is in [Eric Evans](https://www.domainlanguage.com/)' [Domain Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design) (DDD), is wat mij betreft nog steeds het beste wat ik ooit op deze blog heb neergepend. Het biedt zowel een filosofische verdieping als rechtvaardiging van een populaire opvatting van hoe we software dienen te ontwikkelen - met de notie van taalspel in het hart. Proost!
+Hoe dan ook, ik had niet verwacht dat ik in de rol van softwareontwikkelaar ooit nog wat met Wittgenstein van doen zou hebben. Maar daar heb ik mezelf maar mooi ongelijk in gegeven. Mijn [blog](/blog/21/08/domain-driven-design-en-ludwig-wittgenstein/) over de manier waarop Wittgensteins latere filosofie terug te lezen is in [Eric Evans](https://www.domainlanguage.com/)' [Domain-Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design) (DDD), is wat mij betreft nog steeds het beste wat ik ooit op deze blog heb neergepend. Het biedt zowel een filosofische verdieping als rechtvaardiging van een populaire opvatting van hoe we software dienen te ontwikkelen - met de notie van taalspel in het hart. Proost!
 
 
 ## 2. [Poëzie](/tags/poëzie/)

@@ -1,20 +1,20 @@
 ---
-title: "Domain Driven Design en Ludwig Wittgenstein"
+title: "Domain-Driven Design en Ludwig Wittgenstein"
 author: "Karl van Heijster"
 date: 2021-08-09T08:13:36+02:00
 draft: false
 comments: true
-tags: ["communicatie", "domain driven design", "filosofie", "microservices", "software architectuur"]
+tags: ["communicatie", "domain-driven design", "filosofie", "microservices", "software architectuur"]
 summary: "Vaak gebruiken verschillende delen van de business dezelfde woorden op verschillende manieren, of gebruiken ze verschillende woorden voor hetzelfde concept. Dat is een frustrerende situatie voor een softwareontwikkelaar, maar een feest voor een taalfilosoof."
 ---
 
-[Eric Evans](https://www.domainlanguage.com/)' [*Domain Driven Design*](https://books.google.nl/books?id=xColAAPGubgC) is zo'n boek dat elke ontwikkelaar gelezen moet hebben. Tenminste, dat zegt men. Ik zou het niet weten, want ik heb het boek nooit gelezen. Gelukkig houdt dat me niet tegen om over Evans' ideeën te praten.
+[Eric Evans](https://www.domainlanguage.com/)' [*Domain-Driven Design*](https://books.google.nl/books?id=xColAAPGubgC) is zo'n boek dat elke ontwikkelaar gelezen moet hebben. Tenminste, dat zegt men. Ik zou het niet weten, want ik heb het boek nooit gelezen. Gelukkig houdt dat me niet tegen om over Evans' ideeën te praten.
 
 
 ## De taal van software
 
 
-In het kort komt het idee achter *domain driven design* (DDD) hier op neer: de taal van de software zou de taal van het [domein](https://en.wikipedia.org/wiki/Business_domain) moeten spiegelen. Dat wat in een de toetsconstructie een [*item*](http://www.imsglobal.org/spec/qti/v3p0/guide#h.w7rp6is7v7fd) heet, zou in code niet *vraag* of *opgave* moeten heten.
+In het kort komt het idee achter *domain-driven design* (DDD) hier op neer: de taal van de software zou de taal van het [domein](https://en.wikipedia.org/wiki/Business_domain) moeten spiegelen. Dat wat in een de toetsconstructie een [*item*](http://www.imsglobal.org/spec/qti/v3p0/guide#h.w7rp6is7v7fd) heet, zou in code niet *vraag* of *opgave* moeten heten.
 
 
 Om dit voor elkaar te krijgen, stelt Evans voor de taal van het domein vast te leggen in een [*ubiquitous language*](https://martinfowler.com/bliki/UbiquitousLanguage.html). Je kunt dit zien als een domeinspecifiek woordenboek, dat wordt gedeeld tussen de ontwikkelaars en de business, en dat met de tijd mee evolueert.
@@ -107,7 +107,7 @@ Ook hier geldt: dat betekent niet dat de betekenissen van die woorden totaal ver
 Ik hoop dat de parellel duidelijk is. Evans' domeinen kunnen worden opgevat als Wittgensteiniaanse taalspelen. De functie die een woord in het ene domein (taalspel) heeft, is haast per definitie niet dezelfde als die "datzelfde" woord in het andere domein (taalspel) heeft. 
 
 
-De doorbraak in Evans' idee van *domain driven design* is dat we dit als softwareontwikkelaar moeten accepteren. De verschillende betekenissen die een woord *per domein* kan hebben, moeten terugkomen in de code. De *ubiquitous language* is geen universele taal, maar domeinspecifiek. Concepten dienen te worden gecodeerd in één of meerdere *ubiquitous languages*: één voor elk domein.
+De doorbraak in Evans' idee van *domain-driven design* is dat we dit als softwareontwikkelaar moeten accepteren. De verschillende betekenissen die een woord *per domein* kan hebben, moeten terugkomen in de code. De *ubiquitous language* is geen universele taal, maar domeinspecifiek. Concepten dienen te worden gecodeerd in één of meerdere *ubiquitous languages*: één voor elk domein.
 
 
 Misschien klinkt dat abstract, zeker voor de niet-filosofen onder ons. Hopelijk kan de volgende video van [CodeOpinion](https://www.youtube.com/channel/UC3RKA4vunFAfrfxiJhPEplw) de boel enigszins verduidelijken. (De video gaat over [microservices](https://microservices.io/) en niet over DDD. De twee liggen echter in elkaars verlengde: een goed ontworpen microserviceslandschap kent één microservice per domein.) 

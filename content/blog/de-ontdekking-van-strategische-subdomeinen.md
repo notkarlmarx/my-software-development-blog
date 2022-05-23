@@ -71,5 +71,4 @@ Dat betekent ook: eenvoud propageren naar de business toe. Als de business *push
 Opnieuw levert de notie van strategische subdomeinen hier de taal. Waarom vraag je aan ontwikkelaars om complexe, *cutting edge* - en loeidure - oplossingen te ontwikkelen, als ze niet de waarde leveren waar jullie een strategisch voordeel mee behalen ten opzichte van de concurrent? - Dáárom is het als ontwikkelaar belangrijk om kennis te nemen van DDD.
 
 
-
 [^1]: Het [beruchte boek](https://www.dddcommunity.org/book/evans_2003/) van [Eric Evans](https://www.domainlanguage.com/) durfde ik nog niet aan. Je begint ook niet aan [*Kritik der reinen Vernunft*](https://nl.wikipedia.org/wiki/Kritik_der_reinen_Vernunft) zonder eerst een goede inleiding in het denken van [Kant](https://plato.stanford.edu/entries/kant/) gelezen te hebben!

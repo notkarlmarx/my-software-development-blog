@@ -1,8 +1,8 @@
 ---
 title: "Heb je die setter echt nodig?"
 author: "Karl van Heijster"
-date: 2022-04-29T08:58:50+02:00
-draft: true
+date: 2022-05-23T06:58:10+02:00
+draft: false
 comments: true
 tags: ["classes", "clean code", "functioneel programmeren", "immutability", "intentie van code", "objectgeoriënteerd programmeren", "properties"]
 summary: "`\"prop\"` + `tab` + `tab` - welke C#-ontwikkelaar maakt niet bijna dagelijks dankbaar gebruik van dat code snippet om zijn ontwikkelsnelheid te verhogen? Standaard properties zijn zo alomtegenwoordig in de wereld van objectgeoriënteerd programmeren in het algemeen - en C# in het bijzonder - dat je er haast niet meer bij stilstaat dat het ook anders kan. Maar dat het ook anders kan, leerde ik dankzij Spencer Schneidenbach, in een uitstekende lezing over *immutability* (onveranderlijkheid)."
@@ -21,7 +21,7 @@ Dat het ook anders kan, leerde ik dankzij [Spencer Schneidenbach](https://schnei
 ## ~~Twiet~~ Tweet
 
 
-Schneidenbach begint zijn lezing met een aansprekend voorbeeld. Zou het niet fijn zijn als [Twitter](https://twitter.com/) de mogelijkheid zou aanbieden om je tweet te kunnen bewerken? Alle ongeduldige, dikduimige autocorrectslachtoffers knikken hard ja, natuurlijk! - Maar wacht! zegt Schneidenbach, want heb je de implicaties van dat feature request wel overzien?
+Schneidenbach begint zijn lezing met een interessant voorbeeld. Zou het niet fijn zijn als [Twitter](https://twitter.com/) de mogelijkheid zou aanbieden om je tweet te kunnen bewerken? Alle ongeduldige, dikduimige autocorrectslachtoffers knikken hard ja, natuurlijk! - Maar wacht! zegt Schneidenbach, want heb je de implicaties van dat feature request wel overzien?
 
 
 Wat doe je als een tweet al geretweet is, of geciteerd of geliket? Blijft die informatie dan bewaard of niet? - In de eerste instantie zou je misschien willen zeggen: ja, natuurlijk! En dat is niet gek, want waarschijnlijk denk je aan scenario's waarin mensen hun spelfouten corrigeren, en dat de inhoud van de tweet dus gelijk blijft. 
@@ -51,7 +51,7 @@ Dat is wat je koopt voor een beperktere set aan features: de luxe om niet over b
 Nu is Twitter een dienst voor jan en alleman - maar het principe is net zo goed van toepassing op dat waar wij ontwikkelaars ons mee bezig houden: code. Want C# is een taal die *out of the box* veranderlijkheid ondersteunt: het gemiddelde C#-object staat bol van velden die je middels setters naar hartelust kunt aanpassen. Met alle complexiteit van dien.
 
 
-Maar die veranderlijkheid is geen natuurgegeven dat we nu eenmaal moeten accepteren. Functionele programmeertalen zoals [F#](https://docs.microsoft.com/en-us/dotnet/fsharp/what-is-fsharp) ondersteunen juist onveranderlijkheid *out of the box*. Wie een object aanmaakt in die taal, heeft daarna niet meer de mogelijkheid om deze aan te passen. Wie dat wil, zal een kopie moeten maken van dat object, en op dat nieuwe object de gewenste aanpassingen moeten doen.
+Maar die veranderlijkheid is geen natuurgegeven dat we nu eenmaal moeten accepteren. Functionele programmeertalen zoals [F#](https://docs.microsoft.com/en-us/dotnet/fsharp/what-is-fsharp) ondersteunen juist *on*veranderlijkheid *out of the box*. Wie een object aanmaakt in die taal, heeft daarna niet meer de mogelijkheid om deze aan te passen. Wie dat wil, zal een kopie moeten maken van dat object, en op dat nieuwe object de gewenste aanpassingen moeten doen.
 
 
 Dat klinkt alsof het zonde van het geheugengebruik is, en misschien is dat ook zo. Maar wat je ervoor terugkrijgt als ontwikkelaar is niet te verwaarlozen: de zekerheid dat het object waar je mee werkt niet onder je neus ineens ongemerkt van eigenschappen verandert. 
@@ -66,7 +66,7 @@ Denk eens aan hoeveel bugs je in de loop van je carrière je hebt lopen fixen, o
 Ook het team achter C# heeft de voordelen van onveranderlijkheid ingezien, blijkens de introductie van het [Records](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/record) in [C# 9.0](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9). 
 
 
-Records zijn onder water gewone classes, maar ze hebben de bijzondere eigenschap dat de properties die je erop definieert niet meer aan kunt passen, en dat de vergelijking tussen twee Records op basis van haar waarden geschiet, en niet op basis van de referentie. Ik zal niet te diep ingaan op alle features die Records, wie zich daarvoor interesseert kan prima terecht bij de [documentatie](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/record) of [deze video](https://www.youtube.com/watch?v=9Byvwa9yF-I) van [Tim Corey](https://www.iamtimcorey.com/).
+Records zijn onder water gewone classes, maar ze hebben de bijzondere eigenschap dat de properties die je erop definieert niet meer aan kunt passen, en dat de vergelijking tussen twee Records op basis van haar waarden geschiedt, en niet op basis van de referentie. Ik zal niet te diep ingaan op alle features die Records, wie zich daarvoor interesseert kan prima terecht bij de [documentatie](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/record) of [deze video](https://www.youtube.com/watch?v=9Byvwa9yF-I) van [Tim Corey](https://www.iamtimcorey.com/).
 
 
 ## Les

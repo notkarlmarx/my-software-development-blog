@@ -64,7 +64,7 @@ en zij kijkt terug.
 
 <br>
 
-Hey kun je me hel-
+Hey kun je mij hel-
 
 pen? - Even kijken juni-
 

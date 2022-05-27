@@ -1,8 +1,8 @@
 ---
 title: "De Standup is geen statusmeeting"
 author: "Karl van Heijster"
-date: 2022-04-29T10:24:04+02:00
-draft: true
+date: 2022-05-27T06:40:28+02:00
+draft: false
 comments: true
 tags: ["agile ontwikkeling", "communicatie", "daily standup", "samenwerking", "scrum"]
 summary: "In *The Art of Agile Development* van James Shore kwam ik een zinsnede tegen die me deed opveren: *de Daily Standup (ook wel Daily Scrum genoemd) is geen statusmeeting.* - Laten we kijken wat dat betekent."
@@ -14,7 +14,7 @@ In [*The Art of Agile Development*](https://www.oreilly.com/library/view/the-art
 ## De Standup als statusmeeting
 
 
-Een statusmeeting is een een bijeenkomst waarbij de voortgang van het project wordt besproken. Er worden dingen gezegd als: "We hebben dit en dit gedaan", "Dit en dit gaan we nog doen" en - de hamvraag, vaak! - "We liggen wel/niet op schema".
+Een statusmeeting is een een bijeenkomst waarbij de voortgang van het project wordt besproken. Er worden dingen gezegd als: "We hebben dit en dit gedaan", "Dit en dit gaan we nog doen" en - het antwoord op de hamvraag, vaak! - "We liggen wel/niet op schema".
 
 
 Voor beoefenaars van Scrum moet dat bekend in de oren klinken. De eerste twee van de drie standaardvragen die elk teamlid elke Standup wordt geacht te beantwoorden, zijn immers: "Wat heb ik sinds gisteren gedaan?" en "Wat ga ik vandaag doen?" (De derde vraag, daar kom ik zo op terug.) Dat klinkt toch echt alsof je de status van je werkzaamheden opsomt, of niet? - En op basis van de antwoorden op die vragen, kan je Product Owner (PO) beslissen of je op schema loopt of niet.
@@ -82,4 +82,4 @@ Het is niet voor niets dat er drie standaardvragen worden geassocieerd met de Da
 De Standup is geen statusmeeting, het is een coördinatiemeeting.
 
 
-[^1]: Voor iedereen die nog niet overtuigd is van de waarde van dit boek op basis van het aantal keer dat ik het aangehaald heb ([hier](/blog/22/02/de-rol-van-user-stories/), [HIER OOK DE REST AANHALEN, Karl]): het is een absolute aanrader!
+[^1]: Voor iedereen die nog niet overtuigd is van de waarde van dit boek op basis van het aantal keer dat ik het aangehaald heb ([hier](/blog/22/02/de-rol-van-user-stories/), [hier](/blog/22/05/tevreden-ontwikkelaars-en-stakeholders-dankzij-speelruimte/), [hier](/blog/22/05/nog-een-reden-om-testgedreven-te-ontwikkelen/), en [hier](/blog/22/05/incidentanalyse-zonder-schuldigen/)): het is een absolute aanrader!

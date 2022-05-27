@@ -38,7 +38,7 @@ Er is, denk ik, een manier om dichter bij dat ideaal te komen. Dat ideaal bereik
 De vraag werpt zich dan op: wat een gebruiker van je code? Vaak ben je dat zelf, bijvoorbeeld als je een helper class schrijft die je in de rest van je applicatie gebruikt. Maar dat kan het juiste antwoord niet zijn, want mijn mopperende collega is ook een gebruiker van zijn eigen code en hij is mijlenver verwijderd van het ideaal.
 
 
-Dit zou een antwoord kunnen zijn: iemand buiten het team. Als je een enterprise applicatie ontwikkelt, dan is dat iemand van de business, en als je een [NuGet](https://www.nuget.org/) package ontwikkelt, dan is dat een andere ontwikkelaar die je code gebruikt.
+Dit zou een antwoord kunnen zijn: een gebruiker van je code is iemand buiten het team. Als je een enterprise applicatie ontwikkelt, dan is dat iemand van de business, en als je een [NuGet](https://www.nuget.org/) package ontwikkelt, dan is dat een andere ontwikkelaar die je code gebruikt.
 
 
 ## Haalbaar
@@ -56,7 +56,10 @@ Volgens mij kun je hier best pragmatisch in zijn. Als we uitgaan van een systeem
 Door op deze manier te testen, geef je jezelf als ontwikkelaar een ruime afstand van de implementatiedetails van je code. Je definieert een input en een output - maar hoe de code dat onder water afhandelt, is voor jou om het even. Of elk request nu in één lange method wordt verwerkt, of dat je gebruik van een rijk [domeinmodel](https://en.wikipedia.org/wiki/Domain_model) dat diverse verantwoordelijkheden delegeert, is voor een eindgebruiker van je code om het even. Het enige waar die wat om geeft, is dat een bepaald request gepaard gaat met een bepaalde response.
 
 
-En het voordeel is dat je via de voordeur zeker weet dat de uitkomsten van je test reflectief zijn voor de ervaringen van een gebruiker van je code. Ga je dichter op het metaal zitten met je tests - en schrijf je unittests op basis van een specifieke implementatie -, dan loop je het risico scenario's te testen die in de praktijk nooit voor kunnen komen. Dat is zonde - al helemaal als je op basis daarvan onterecht meent te mogen concluderen dat de eindgebruiker van bugs vrijgewaard zal blijven!
+Anders gezegd: je test een contract, niet de implementatie. De implementatie moet vrijelijk kunnen veranderen, terwijl het contract hetzelfde blijft.
+
+
+Het voordeel is dat je via de voordeur zeker weet dat de uitkomsten van je test reflectief zijn voor de ervaringen van een gebruiker van je code. Ga je dichter op het metaal zitten met je tests - en schrijf je unittests op basis van een specifieke implementatie -, dan loop je het risico scenario's te testen die in de praktijk nooit voor kunnen komen. Dat is zonde - al helemaal als je op basis daarvan onterecht meent te mogen concluderen dat de eindgebruiker van bugs vrijgewaard zal blijven!
 
 
 ## Integratietests

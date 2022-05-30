@@ -1,8 +1,8 @@
 ---
 title: "Wat is de O in SOLID nog waard?"
 author: "Karl van Heijster"
-date: 2022-05-04T21:31:40+02:00
-draft: true
+date: 2022-05-30T08:59:07+02:00
+draft: false
 comments: true
 tags: ["agile ontwikkeling", "clean code", "interface segregatie principe", "leermoment", "open-closed principe", "refactoren", "single-responsibility principe", "software architectuur", "SOLID", "verandering"]
 summary: "Een ontwikkelaar die eens code schrijft en deze nooit meer aan denkt te hoeven passen, is een ontwikkelaar die rot in zijn applicatie verwelkomt. Een al te strikte naleving van het *Open-closed* principe (OCP) getuigt van een ronduit onverantwoorde houding - in elk geval binnen de context van agile ontwikkeling. Waar komt de aantrekkingskracht van het OCP dan vandaan? "
@@ -15,7 +15,7 @@ Hey kijk, een video:
 <br>
 
 
-In deze [NDC-lezing](https://ndcconferences.com/) houdt [Phil Nash](https://philna.sh/) de [SOLID-principes](/tags/solid/) eens kritisch tegen het daglicht. Ik vond het een prikkelende onderneming, want deze principes zijn één van de eerste dingen die ik als programmeur aangeleerd kreeg - en vooral één van de eerste programmeergerelateerde zaken die vat kregen op mijn filosofenbrein.
+In deze [NDC-lezing](https://ndcconferences.com/) houdt [Phil Nash](https://philna.sh/) de [SOLID-principes](/tags/solid/) eens kritisch tegen het licht. Ik vond het een prikkelende onderneming, want deze principes zijn één van de eerste dingen die ik als programmeur aangeleerd kreeg - en vooral één van de eerste programmeergerelateerde zaken die vat kregen op mijn filosofenbrein.
 
 
 ## Heilig
@@ -36,7 +36,7 @@ Ik heb de SOLID-principes lange tijd daarom ook als vrijwel heilig beschouwd. - 
 Terug naar die lezing van Nash: je kunt je vraagtekens bij de heiligheid van SOLID zetten. Sterker nog, het lijkt me gezond dat van tijd tot tijd te doen. En eerlijk waar, hij maakt een paar goede punten. 
 
 
-Bijvoorbeeld: wat is het [Interface segratatie principe](https://en.wikipedia.org/wiki/Interface_segregation_principle) (ISP) anders dan het [*Single-Responsibility* principe](https://en.wikipedia.org/wiki/Single-responsibility_principle) (SRP) toegepast op [interfaces](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface)? - Vooral een mooie gelegenheid om een I in SOLID te fietsen, blijkt. De SOLD-principes... tja, het klinkt niet onaardig, maar ik ben toch nog niet helemaal, eh, verkocht. Het klinkt mij nog niet, zeg maar, solide genoeg in de oren.
+Bijvoorbeeld: wat is het [Interface segratatie principe](https://en.wikipedia.org/wiki/Interface_segregation_principle) (ISP) anders dan het [*Single-Responsibility* principe](https://en.wikipedia.org/wiki/Single-responsibility_principle) (SRP) toegepast op [interfaces](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface)? - Vooral een mooie gelegenheid om een I in SOLID te fietsen, blijkt. De SOLD-principes... tja, het klinkt niet onaardig, maar ik ben toch nog niet helemaal, eh, verkocht. Het klinkt mij nog niet, eh, solide genoeg in de oren.
 
 
 Maar aan het eind van de dag zou je die kritiek als oppervlakkig af kunnen schrijven. Hij gaat over de vorm waarin het principe gegoten is, maar aan de geldigheid van het SRP - toegepast op interfaces of niet - tornt het niet.
@@ -108,7 +108,7 @@ Pas naarmate het aantal (verwante) *use cases* toeneemt, komt er een omslagpunt 
 Wat betekenen deze observaties voor de SOLID-principes? Een voor de hand liggende conclusie is: niet elk principes is gelijk geschapen. Het ISP is een afgeleide van het SRP - de laatste staat dus "hoger", in zekere zin, dan de eerste. En het OCP wordt van belang naarmate de volwassenheid van de codebase toeneemt - en in die zin staat ook dit principe dus "lager" dan het SRP.
 
 
-Daaruit volgt een tweede conclusie: code hoeft niet alle SOLID-principes te respecteren om het predikaat "goede code" te verdienen. Software ontwikkelen is een pragmatische aangelegenheid. Het is aan de ontwikkelaar om zich constant af te vragen: is dit *goed genoeg* - hoeveel meerwaarde levert het verder verfijnen van deze code op, ten opzichte van de huidige implementatie? 
+Daaruit volgt een tweede conclusie: code hoeft niet alle SOLID-principes te respecteren om het predikaat "goede code" te verdienen. Software ontwikkelen is een pragmatische aangelegenheid. Het is aan de ontwikkelaar om zich constant af te vragen: is dit *goed genoeg*? - hoeveel meerwaarde levert het verder verfijnen van deze code op, ten opzichte van de huidige implementatie? 
 
 
 De SOLID-principes zijn richtlijnen bij de beantwoording van die vraag. Maar heilig? Nee, dat zijn ze zeker niet.

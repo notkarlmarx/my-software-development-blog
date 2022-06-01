@@ -35,4 +35,10 @@ Dit vind ik jammer, ten eerste omdat dat het moeilijk maakt om die TrainTool te 
 En, lijkt dat een beetje ergens op? Ja? Dan heeft *Vaardig communiceren in de ICT* zijn doel toch niet helemaal gemist!
 
 
+## Rectificatie
+
+
+In deze recensie staat dat het verkrijgen van toegang tot de TrainTool resulteert in een foutmelding. Dit blijkt aan een instelling aan mijn laptop te hebben gelegen en niet aan de TrainTool zelf. Deze werkt naar behoren en biedt een waardevolle praktische aanvulling op het boek. 
+
+
 *Deze recensie verscheen oorspronkelijk op [De Leesclub Van Alles](https://deleesclubvanalles.nl/)*.

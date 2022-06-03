@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2022-05-28T11:22:38+02:00
 draft: true
 comments: true
-tags: []
+tags: ["boeken", "functioneel programmeren", "objectgeoriënteerd programmeren", "ontwerppatronen", "performance"]
 summary: "In het eerste hoofdstuk van Enrico Buonanno's *Functional Programming in C# (Second Edition)* demonstreert de auteur wat functionele features van C# aan de hand van een concreet voorbeeld: het berekenen van de BTW op een (lijst) product(en). Buonanno raadt de lezer aan om dezelfde functionaliteit ook op een objectgeoriënteerde manier te implementeren, om die oplossing te kunnen contrasteren met de zijne. Dus dat is precies wat ik heb gedaan."
 ---
 

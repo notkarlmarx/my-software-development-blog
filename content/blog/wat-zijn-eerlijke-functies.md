@@ -1,5 +1,5 @@
 ---
-title: "Eerlijke functies"
+title: "Wat zijn eerlijke functies?"
 author: "Karl van Heijster"
 date: 2022-06-03T11:18:47+02:00
 draft: true
@@ -93,7 +93,7 @@ Is dit een eerlijke functie? - *Nee!* Hoe ik dat weet, zonder naar de implementa
 We weten dat de code sowieso geen Execption op mag gooien, want daarmee zou deze oneerlijk worden. Het alternatief zou dus moeten zijn: dan geef je een waarde terug die aangeeft dat de `Resource` niet gevonden is. En die waarde is in C# doorgaans `null`. Gegeven een `Guid`, krijg je ofwel een `Resource` terug, ofwel `null` - maar dat is niet wat de signatuur beloofde! Die beloofde immers een `Resource`.
 
 
-## Het probleem met classes
+## Het gedoe met classes
 
 
 Je zou deze beperking af kunnen proberen te vangen door gebruik te maken van het [*Null object*-patroon](https://en.wikipedia.org/wiki/Null_object_pattern).[^1] Dat is een ontwerppatroon waarbij er bij niet-gevonden waarden geen `null` terug wordt gegeven, maar een door de programmeur gedefinieerd `Resource`-object dat als "niet aanwezig" kan worden gedefinieerd door de caller van de functie.
@@ -113,6 +113,9 @@ Is er dan geen hoop voor eerlijke functies in C#? Natuurlijk wel! En daarvoor ge
 
 {{<youtube id="OJjVvPINlYA" title="Should you stop returning null? | Functional C#" >}}
 <br>
+
+
+Maar de vraag is natuurlijk: vind je dit als objectgeoriënteerde programmeur een overtuigend verhaal?
 
 
 [^1]: Een alternatief is gebruik te maken van [*Non-nullable reference types*](https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references), zoals geïntroduceerd in C# 8. Buonanno bespreekt dit alternatief op pagina's 90-92 van *Functional Programming in C# (Second Edition)* - en serveert deze optie af. Voor deze blog laat ik deze oplossingsrichting daarom buiten beschouwing.

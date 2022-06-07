@@ -5,7 +5,7 @@ date: 2022-05-30T08:59:07+02:00
 draft: false
 comments: true
 tags: ["agile ontwikkeling", "clean code", "interface segregatie principe", "leermoment", "open-closed principe", "refactoren", "single-responsibility principe", "software architectuur", "SOLID", "verandering"]
-summary: "Een ontwikkelaar die eens code schrijft en deze nooit meer aan denkt te hoeven passen, is een ontwikkelaar die rot in zijn applicatie verwelkomt. Een al te strikte naleving van het *Open-closed* principe (OCP) getuigt van een ronduit onverantwoorde houding - in elk geval binnen de context van agile ontwikkeling. Waar komt de aantrekkingskracht van het OCP dan vandaan? "
+summary: "Een ontwikkelaar die eens code schrijft en deze nooit meer aan denkt te hoeven passen, is een ontwikkelaar die rot in zijn applicatie verwelkomt. Een al te strikte naleving van het *Open-closed* principe (OCP) getuigt van een ronduit onverantwoorde houding - in elk geval binnen de context van Agile ontwikkeling. Waar komt de aantrekkingskracht van het OCP dan vandaan? "
 ---
 
 Hey kijk, een video:
@@ -51,10 +51,10 @@ De O in SOLID, het [*Open-closed* principe](https://en.wikipedia.org/wiki/Open%E
 Dat klinkt logisch genoeg. Maar waarom? Als softwareontwikkelaars zijn we constant bezig bestaande code aan te passen. Sterker nog, dat is een belangrijk deel van ons werk. Nieuwe wensen, nieuwe functionaliteiten, nieuwe specificaties brengen nieuwe inzichten - ook rondom bestaande code. En niet zelden behoeft die code daarom aanpassing. 
 
 
-Hetzelfde sentiment als in Nashs lezing, kwam ik tegen in [*The Art of Agile Development*](https://www.oreilly.com/library/view/the-art-of/9780596527679/) van [James Shore](https://www.jamesshore.com/).[^3] Een essentieel onderdeel van agile softwareontwikkeling, is het constant refactoren van bestaande code. - Dat is zo'n beetje het tegenovergestelde van code schrijven die gesloten is voor aanpassing!
+Hetzelfde sentiment als in Nashs lezing, kwam ik tegen in [*The Art of Agile Development*](https://www.oreilly.com/library/view/the-art-of/9780596527679/) van [James Shore](https://www.jamesshore.com/).[^3] Een essentieel onderdeel van Agile softwareontwikkeling, is het constant refactoren van bestaande code. - Dat is zo'n beetje het tegenovergestelde van code schrijven die gesloten is voor aanpassing!
 
 
-Een ontwikkelaar die eens code schrijft en deze nooit meer aan denkt te hoeven passen, is een ontwikkelaar die rot in zijn applicatie verwelkomt. Een al te strikte naleving van het OCP getuigt van een ronduit onverantwoorde houding - in elk geval binnen de context van agile ontwikkeling.
+Een ontwikkelaar die eens code schrijft en deze nooit meer aan denkt te hoeven passen, is een ontwikkelaar die rot in zijn applicatie verwelkomt. Een al te strikte naleving van het OCP getuigt van een ronduit onverantwoorde houding - in elk geval binnen de context van Agile ontwikkeling.
 
 
 ## Aantrekkingskracht
@@ -78,7 +78,7 @@ De eigenlijk aantrekkingskracht van het principe lijkt me wat dichter bij huis t
 Ik geloof dat dat implicaties heeft voor het OCP - niet voor het belang ervan, maar voor de mate waarin je het toe dient te passen of niet.
 
 
-Stel, je hebt een nieuwe codebase. Je voegt een feature toe. Die implementeer je, zoals het hoort in agile ontwikkeling, zo eenvoudig mogelijk. Vervolgens voeg je een verwante feature toe. Ook die implementeer je zo eenvoudig mogelijk. Als dat betekent dat het onderscheid tussen die features met een `if`-statement wordt afgehandeld, dan is dat maar zo. - Anders gezegd: in een vroeg stadium van ontwikkeling, hoef je het OCP nog niet strikt te volgen.
+Stel, je hebt een nieuwe codebase. Je voegt een feature toe. Die implementeer je, zoals het hoort in Agile ontwikkeling, zo eenvoudig mogelijk. Vervolgens voeg je een verwante feature toe. Ook die implementeer je zo eenvoudig mogelijk. Als dat betekent dat het onderscheid tussen die features met een `if`-statement wordt afgehandeld, dan is dat maar zo. - Anders gezegd: in een vroeg stadium van ontwikkeling, hoef je het OCP nog niet strikt te volgen.
 
 
 De situatie verandert wanneer de applicatie volwassener wordt. Naarmate er meer verwante features worden toegevoegd, wordt het onwenselijk om deze middels een steeds verder uitdijende lijst `if`-statements af te handelen. Pas op dat moment ga je nadenken over het OCP. - Zeker als je weet dat er nog meer verwante features op de planning staan.

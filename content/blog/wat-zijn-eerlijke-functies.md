@@ -45,6 +45,9 @@ public static int PlusOne(int i) => i + 1;
 De signatuur van deze functie - aan de linkerkant van de `=>` - belooft een `int` als input te nemen en een `int` als output weer uit te spugen. De implementatie van de functie - rechts van de `=>` - maakt die belofte waar. Er is geen enkele manier waarop je iets anders dan een `int` terug uit deze functie terug zou kunnen krijgen, gegeven het feit dat je er een `int` in stopt.
 
 
+De wereld van het functioneel programmeren kent trouwens zijn eigen notatie voor het weergeven van een signatuur. In dit geval is die als volgt: `PlusOne: int -> int`.
+
+
 ## Een oneerlijke functie...
 
 
@@ -87,10 +90,13 @@ public static Resource GetResourceById(Guid id);
 ```
 
 
+Of, in de functionele notatie: `GetResourceById: Guid -> Resource`.
+
+
 Is dit een eerlijke functie? - *Nee!* Hoe ik dat weet, zonder naar de implementatie te hebben gekeken? Vraag je eens af: wat gebeurt er als de `Resource` die bij de `Guid` hoort niet gevonden kan worden?
 
 
-We weten dat de code sowieso geen Execption op mag gooien, want daarmee zou deze oneerlijk worden. Het alternatief zou dus moeten zijn: dan geef je een waarde terug die aangeeft dat de `Resource` niet gevonden is. En die waarde is in C# doorgaans `null`. Gegeven een `Guid`, krijg je ofwel een `Resource` terug, ofwel `null` - maar dat is niet wat de signatuur beloofde! Die beloofde immers een `Resource`.
+We weten dat de code sowieso geen Execption op mag gooien, want daarmee zou deze oneerlijk worden. Het alternatief zou dus moeten zijn: dan geef je een waarde terug die aangeeft dat de `Resource` niet gevonden is. En die waarde is in C# doorgaans `null`. Gegeven een `Guid`, krijg je ofwel een `Resource` terug, ofwel `null` - maar dat is niet wat de signatuur beloofde! Die beloofde immers een `Resource`. Anders gezegd: de signatuur geeft niet aan dat de bij een `Guid` horende `Resource` ook níet gevonden kan worden.
 
 
 ## Het gedoe met classes

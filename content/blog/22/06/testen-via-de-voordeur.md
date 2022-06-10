@@ -1,8 +1,8 @@
 ---
 title: "Testen via de voordeur"
 author: "Karl van Heijster"
-date: 2022-05-13T13:27:35+02:00
-draft: true
+date: 2022-06-10T07:59:35+02:00
+draft: false
 comments: true
 tags: ["integratietests", "refactoren", "test-driven development", "testen", "unit tests"]
 summary: "Het ideaal van Test-Driven Development is dit: al coderend breid je je testsuite uit, zonder ooit één test te hoeven herschrijven. Het toevoegen van nieuwe functionaliteit gebeurt op zijn best binnen de kaders van een bestaande API. Op zijn slechtst leidt het tot uitbreidingen daarvan - meer niet. Er is, denk ik, een manier om dichter bij dat ideaal te komen. Dat ideaal bereik je door te testen via de voordeur. Dat houdt kort gezegd in dat je je logica idealiter test via dezelfde route als een gebruiker van je code. "
@@ -35,10 +35,10 @@ Er is, denk ik, een manier om dichter bij dat ideaal te komen. Dat ideaal bereik
 ## Gebruiker
 
 
-De vraag werpt zich dan op: wat een gebruiker van je code? Vaak ben je dat zelf, bijvoorbeeld als je een helper class schrijft die je in de rest van je applicatie gebruikt. Maar dat kan het juiste antwoord niet zijn, want mijn mopperende collega is ook een gebruiker van zijn eigen code en hij is mijlenver verwijderd van het ideaal.
+De vraag werpt zich dan op: wat een gebruiker van je code? Vaak ben je dat zelf, bijvoorbeeld als je een helper class schrijft die je in de rest van je applicatie gebruikt. Maar dat kan het juiste antwoord niet zijn, want mijn mopperende collega is ook een gebruiker van zijn eigen code en hij is mijlenver verwijderd van het TDD-ideaal.
 
 
-Dit zou een antwoord kunnen zijn: een gebruiker van je code is iemand buiten het team. Als je een enterprise applicatie ontwikkelt, dan is dat iemand van de business, en als je een [NuGet](https://www.nuget.org/) package ontwikkelt, dan is dat een andere ontwikkelaar die je code gebruikt.
+Dit zou een antwoord kunnen zijn: een gebruiker van je code is iemand buiten het team. Als je een enterprise applicatie ontwikkelt, dan is dat iemand van de business, en als je een [NuGet package](https://www.nuget.org/) ontwikkelt, dan is dat een andere ontwikkelaar die je code gebruikt.
 
 
 ## Haalbaar
@@ -65,7 +65,7 @@ Het voordeel is dat je via de voordeur zeker weet dat de uitkomsten van je test 
 ## Integratietests
 
 
-Een vraag werpt zich op: ben je hier niet eigenlijk integratietests aan het schrijven, en geen unittests? Het antwoord is: misschien wel, inderdaad. 
+Maar, vraag je je misschien af, ben je hier niet eigenlijk integratietests aan het schrijven, en geen unittests? Het antwoord is: misschien wel, inderdaad. 
 
 
 De vraag is hoe erg dat is. Ook op het vlak van TDD hoef je niet dogmatisch te zijn. Als het logisch is om een deel van je applicatie middels unittests te ontwikkelen - een stuk logica in de kern van je domeinmodel, bijvoorbeeld -, doe het dan alsjeblieft via unittests. Maar als het om relatief eenvoudige CRUD-operaties gaat, is het dan per se nodig om elke laag in isolatie testgedreven te ontwikkelen, of kun je het met integratietests af?
@@ -83,16 +83,16 @@ Natuurlijk wil ik daar niet mee zeggen dat unittests geen waarde hebben - intege
 Maar het is goed om je je te beseffen dat unittests vaak implementatiedetails testen. Ze testen via de achterdeur, ze zitten dicht op het metaal. Daardoor blijken ze broos bij refactorslagen. Dat is wat een oké test van een goede test onderscheidt: de mate waarin ze resistent blijken bij refactoring.
 
 
-De les is daarom: schrijf de soort tests die het mogelijk maken om een publieke[^3] interface te definiëren. De concrete implementatie van die interface zou voor je tests om het even moeten zijn. Daardoor heb je als ontwikkelaar maximale ruimte om te refactoren in een poging aan de eisen van de interface tegemoet te komen. 
+De les is daarom: schrijf de soort tests die het mogelijk maken om een publieke[^3] interface te definiëren. De concrete implementatie van die interface zou voor je tests om het even moeten zijn. Daardoor heb je als ontwikkelaar maximale ruimte om te refactoren zonder je tests te moeten herschrijven. 
 
 
-Je test legt vast wat die eisen zijn - de in- en output: de voordeur -, niet hoe je eraan voldoet - de achterdeur.
+Je test legt de interface vast - de in- en output: de voordeur -, niet de code die de input omzet naar output - de achterdeur.
 
 
 [^1]: Ik meen de term te hebben ontleend uit één van de hoofdstukken over testen uit [*Software Engineering at Google*](https://www.oreilly.com/library/view/software-engineering-at/9781492082781/). Maar ik kan de referentie niet vinden, dus het zou goed kunnen dat mijn geheugen me bedriegt. Het zou ook goed kunnen dat ik de term van [Dennis Doomen](https://www.continuousimprover.com/) heb, die jaren geleden een soortgelijk idee uiteenzette tijdens een sessie op [dotNed Saturday](https://dotnedsaturday.nl/).
 
 
-[^2]: Nota bene, dit is precies wat ik deed gedurende [mijn eerste testgedreven stapjes] (LINK)!
+[^2]: Nota bene, dit is precies wat ik deed gedurende [mijn eerste testgedreven stapjes](/blog/22/06/mijn-eerste-testgedreven-stapjes/)!
 
 
-[^3]: Merk op dat ik hier haast ongemerkt opnieuw een taal hanteer die veronderstelt dat er een gebruiker van de code is die geen weet heeft of moet willen hebben van de implementatie!
+[^3]: Merk op dat ik hier haast ongemerkt opnieuw een taal hanteer die veronderstelt dat er een gebruiker van de code is, die geen weet heeft (of moet willen hebben) van de implementatie!

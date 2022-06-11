@@ -1,5 +1,5 @@
 ---
-title: "Junior: een verhaal in vijf haiku's"
+title: "Vijf haiku's over software ontwikkelen - Vol. 5"
 author: "Karl van Heijster"
 date: 2022-05-23T07:06:48+02:00
 draft: true
@@ -8,13 +8,16 @@ tags: ["poëzie", "software ontwikkelen"]
 summary: "*Ik ben zó dichtbij / deze bug te fixen sinds / twee dagen of drie.*"
 ---
 
+# Of Junior: Een verhaal in vijf haiku's
+
+
 **1.**
 
 <br>
 
-Deze bug? Een eitje.
+Deze bug? Eitje.
 
-Geef me een middag en
+Geef me een middagje en
 
 de boel is gefixt.
 

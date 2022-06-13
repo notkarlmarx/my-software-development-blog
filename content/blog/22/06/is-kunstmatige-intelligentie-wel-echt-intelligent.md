@@ -1,8 +1,8 @@
 ---
 title: "Is kunstmatige intelligentie wel écht intelligent?"
 author: "Karl van Heijster"
-date: 2022-06-11T16:48:43+02:00
-draft: true
+date: 2022-06-13T07:56:30+02:00
+draft: false
 comments: true
 tags: ["boeken", "filosofie", "kunstmatige intelligentie", "machine learning", "recensies"]
 summary: "Kunstmatige intelligentie (ook wel artificiële intelligentie of kortweg AI genoemd) heeft de laatste jaren een enorme opmars gemaakt. AI neemt een steeds prominentere plek in in het dagelijks leven: van vertaalmachines tot gepersonaliseerde advertenties tot gerobotiseerde obers. Hoog tijd dus om filosofisch op dit fenomeen te reflecteren. Wat is AI? Kunnen computers echt denken? Wat is denken überhaupt? En wat zijn de ethische en politieke implicaties van de steeds grotere rol die AI in de samenleving speelt? Deze en andere vragen komen aan bod in Guido van der Knaaps *Van Aristoteles tot algoritme: Filosofie van kunstmatige intelligentie*."

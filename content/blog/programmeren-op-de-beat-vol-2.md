@@ -71,7 +71,10 @@ Als slot van dit boeketje een eervolle vermelding voor [Chairlift](https://open.
 ## Zonnig, bewolkt
 
 
-Op zonnige dagen mag ik graag wat van [Jamiroquai](https://open.spotify.com/artist/6J7biCazzYhU3gM9j1wfid?si=fDFNrWcHS6GcduTz8e-yZQ) opzetten. [*The Return of the Space Cowboy*](https://open.spotify.com/album/3emhnEQ76nUUehouSvnGxk?si=wJus2dOfQteGjRajkh1tyw) is hun spannendste plaat, maar de eerlijkheid gebiedt me te zeggen dat het relaxte [*Emergency on Planet Earth*](https://open.spotify.com/album/0SeTonJJPjy57LqiCDmeEM?si=lx1JsV7cRaKOmraKQ7r-tw) net wat vaker de weg vindt naar mijn oortjes. Het latere werk van de band is ook meer dan oké, maar alleen [*A funk odyssey*](https://open.spotify.com/album/6cLYs4e403jQk6PJ8PG9rs?si=YCgby9jsQ96fLfbc_H-2hA) heeft, naast die eerste twee platen, een plekje in mijn hart weten te veroveren.
+Op zonnige dagen mag ik graag de nieuwe van [Lorde](https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm?si=7XDWEP9BQTeidfkUAtgB7g) opzetten. [*Solar Power*](https://open.spotify.com/album/3lK2JRwfIOn2NaYtgEGTmZ?si=i_QKqEhMQvudxk-MjV56-g) is wat lichter verteerbaar dan haar eerdere albums, zowel muzikaal als tekstueel.[^2] Het is daardoor meer een luister- dan een dansplaat geworden, met als hoogtepunt het heerlijk lome *Oceanic Feeling*.
+
+
+Maar de zomer is pas compleet als er wat van [Jamiroquai](https://open.spotify.com/artist/6J7biCazzYhU3gM9j1wfid?si=fDFNrWcHS6GcduTz8e-yZQ) op staat. [*The Return of the Space Cowboy*](https://open.spotify.com/album/3emhnEQ76nUUehouSvnGxk?si=wJus2dOfQteGjRajkh1tyw) is hun spannendste plaat, maar de eerlijkheid gebiedt me te zeggen dat het relaxte [*Emergency on Planet Earth*](https://open.spotify.com/album/0SeTonJJPjy57LqiCDmeEM?si=lx1JsV7cRaKOmraKQ7r-tw) net wat vaker de weg vindt naar mijn oortjes. Het latere werk van de band is ook meer dan oké, maar alleen [*A funk odyssey*](https://open.spotify.com/album/6cLYs4e403jQk6PJ8PG9rs?si=YCgby9jsQ96fLfbc_H-2hA) heeft, naast die eerste twee platen, een plekje in mijn hart weten te veroveren.
 
 
 Hun grootste hit staat echter op [*Travelling Without Moving*](https://open.spotify.com/album/4yrrPNjd9RcqnuDnoEhlER?si=VMo1vWNUT96rZwgTiv3B1A) en zal iedereen bekend in de oren klinken:
@@ -81,7 +84,10 @@ Hun grootste hit staat echter op [*Travelling Without Moving*](https://open.spot
 <br/>
 
 
-Wanneer de wolken voor de zon schuiven, maakt Jamiroquai plaats voor [Cassandra Jenkins](https://open.spotify.com/artist/1WVGbBnzZ5WLZ2PfesIHik?si=ayH9bfwoQTeLyNH2_Fuosw)' fenomenale [*An Overview on Phenomenal Nature*](https://open.spotify.com/album/0QURjDbfsPsDa5R4sgkjV9?si=JKBamwnPTz2g4rxY3Cbe_g).[^2] Elk nummer op dit album is de moeite waard, maar het liefst - als ontwikkelaar en muziekliefhebber - hoor ik *Hard Drive*:
+Wanneer de wolken voor de zon schuiven, maakt Jamiroquai plaats voor [Radiohead](https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb?si=Yszxw2qaSzebRJWM4Jxtlg). De band behoeft geen introductie: [*The Bends*](https://open.spotify.com/album/35UJLpClj5EDrhpNIi4DFg?si=zirNCQDYTU2XVxhkEY7arg) en [*OK Computer*](https://open.spotify.com/album/6dVIqQ8qmQ5GBnJ9shOYGE?si=0PPAp1HhTSSyNV2g0XQLJQ) behoren tot de beste albums van de jaren '90, en [*In Rainbows*](https://open.spotify.com/album/5vkqYmiPBYLaalcmjujWxK?si=ormdaiKuQ3ebvn0uQYNA7g) doet daar niet voor onder. Maar ook hun electronische periode heeft me altijd gefascineerd. Niet lang geleden verscheen [*KID A MNESIA*](https://open.spotify.com/album/6ofEQubaL265rIW6WnCU8y?si=aJcs8PGeSWushi_OMdnR0Q), waarmee de band de kans om alle A- en (fantastische!) B-kantjes van die periode bij elkaar te brengen onbegrijpelijkerwijs liet schieten.
+
+
+Wie Thom Yorkes nerveuze zang moeilijk verdraagt, kan op een bewolkte dag tot slot goed terecht bij [Cassandra Jenkins](https://open.spotify.com/artist/1WVGbBnzZ5WLZ2PfesIHik?si=ayH9bfwoQTeLyNH2_Fuosw). Haar fenomenale [*An Overview on Phenomenal Nature*](https://open.spotify.com/album/0QURjDbfsPsDa5R4sgkjV9?si=JKBamwnPTz2g4rxY3Cbe_g) is één van de beste platen van vorig jaar.[^3] Elk nummer op dit album is de moeite waard, maar het liefst - als ontwikkelaar en muziekliefhebber - hoor ik *Hard Drive*:
 
 
 {{<youtube id="eW8XoovSlsM" title="Hard Drive" >}}
@@ -94,4 +100,7 @@ En jij? Nog goeie muziek gehoord, de laatste tijd?
 [^1]: Ik schreef er ooit een gedicht over genaamd [*Spaghettisonnetti*](/blog/22/01/twee-sonnetten-over-software-ontwikkelen/) - nadat de klus geklaard was, uiteraard!
 
 
-[^2]: Ik leerde dit album kennen dankzij [deze podcast](https://www.mixcloud.com/opensourceradio/storytelling-in-muziek-w-teun-van-laake-rob-van-den-bergh-10-12-2021/) met twee oud-collega's van me uit het filmfestivalcircuit, [Teun van Laake](https://www.teunvanlaake.nl/) en [Rob van den Bergh](https://www.linkedin.com/in/rob-van-den-bergh-5428b2a1). De aanleiding van de podcast was het verschijnen van Teuns kleinkunsthiphopplaat, [*Niet in Het Geniep*](https://open.spotify.com/album/4fgsoLYAQr479wdA94q4iY?si=gfdEBKgjTj2vGCcAHiUShg). Dat album is erg grappig om naar te luisteren, maar eerlijk gezegd totáál niet geschikt voor tijdens het programmeren.
+[^2]: Al bevat B-kantje [*Helen of Troy*](https://open.spotify.com/track/5luI0qmsWNYRRTJCWn8rcb?si=aa71e64e23004040) wel de scherpste zinsnede verwijzende naar de Griekse mythologie die ik ooit in een popliedje heb gehoord. Toegegeven, de concurrentie is niet enorm in die hoek. Maar toch: Lorde is en blijft wel bij uitstek één van de beste tekstschrijvers in haar genre vandaag de dag.
+
+
+[^3]: Ik leerde dit album kennen dankzij [deze podcast](https://www.mixcloud.com/opensourceradio/storytelling-in-muziek-w-teun-van-laake-rob-van-den-bergh-10-12-2021/) met twee oud-collega's van me uit het filmfestivalcircuit, [Teun van Laake](https://www.teunvanlaake.nl/) en [Rob van den Bergh](https://www.linkedin.com/in/rob-van-den-bergh-5428b2a1). De aanleiding van de podcast was het verschijnen van Teuns kleinkunsthiphopplaat, [*Niet in Het Geniep*](https://open.spotify.com/album/4fgsoLYAQr479wdA94q4iY?si=gfdEBKgjTj2vGCcAHiUShg). Dat album is erg grappig om naar te luisteren, maar eerlijk gezegd totáál niet geschikt voor tijdens het programmeren.

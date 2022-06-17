@@ -2,7 +2,7 @@
 title: "Het geweten aan het woord"
 author: "Karl van Heijster"
 date: 2022-06-17T07:26:56+02:00
-draft: true
+draft: false
 comments: true
 tags: ["coaching", "diversiteit"]
 summary: "Ik heb mijn huiswerk niet gemaakt voor de cursus coachend begeleiden. Ironisch genoeg moest dit natuurlijk gebeuren bij de reflectie op de hoofdstukken in Nicolette Kats *Coachen met een leeg hoofd* waarin *de coach als geweten* wordt behandeld. Het goede nieuws is dat ik, nu ik weken na dato alsnog een blog aan het onderwerp besteed, kan concluderen dat mijn eigen geweten toch nog enigszins functioneert."

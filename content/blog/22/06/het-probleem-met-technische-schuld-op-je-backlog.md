@@ -1,8 +1,8 @@
 ---
 title: "Het probleem met technische schuld op je backlog"
 author: "Karl van Heijster"
-date: 2022-05-18T15:15:26+02:00
-draft: true
+date: 2022-06-20T08:43:45+02:00
+draft: false
 comments: true
 tags: ["boy scout rule", "clean code", "leermoment", "product backlog items", "professionaliteit", "refactoren", "scrum", "software ontwikkelen", "speelruimte", "technische schuld", "testen", "verandering", "waarde"]
 summary: "Zo gaat mijn team om met het monitoren van technische schuld: we prikken elke Sprint een moment waarop we er met elkaar over praten, en als we het belangrijk genoeg vinden om er wat aan te doen, dan voeren we een Product Backlog Item op om die schuld weg te werken. Die aanpak werkt goed - goed genoeg, in elk geval. De technische schuld van onze huidige applicatie blijft grotendeels binnen de perken. En bovendien - dat is nog veel belangrijker - is iedereen in het team op de hoogte van het feit dat sommige plekken verbetering behoeven, en welke plekken dat zijn. Maar toch zit iets me niet helemaal lekker in die aanpak."
@@ -11,7 +11,7 @@ summary: "Zo gaat mijn team om met het monitoren van technische schuld: we prikk
 Een tijd geleden beschreef ik [hoe mijn team omgaat met het monitoren van technische schuld](/blog/21/09/hoe-technische-schuld-te-monitoren-en-prioriteren/). Lang verhaal kort: we prikken elke Sprint een moment waarop we er met elkaar over praten, en als we het belangrijk genoeg vinden om er wat aan te doen, dan voeren we een [Product Backlog Item](/tags/product-backlog-items/) (PBI) op om die schuld weg te werken.
 
 
-Dat is beter dan het alternatief: niet erover praten, geen PBI's opvoeren en nadat je applicatie de onvermijdelijke status van een *big ball of mud* heeft bereikt, voorstellen helemaal opnieuw te beginnen. - Dat is de strategie die het team hanteerde ten tijde van het ontwikkelen van de *legacy*-applicatie die we nu uit proberen te faseren.
+Dat is beter dan het alternatief: er niet over praten, geen PBI's opvoeren en nadat je applicatie de onvermijdelijke status van een *big ball of mud* heeft bereikt, voorstellen helemaal opnieuw te beginnen. - Dat is de strategie die het team hanteerde ten tijde van het ontwikkelen van de *legacy*-applicatie die we nu uit proberen te faseren.
 
 
 Die aanpak werkt goed - goed genoeg, in elk geval. De technische schuld van onze huidige applicatie blijft grotendeels binnen de perken. En bovendien - dat is nog veel belangrijker - is iedereen in het team op de hoogte van het feit dat sommige plekken verbetering behoeven, en welke plekken dat zijn.
@@ -29,7 +29,7 @@ Het bespreken van een probleem en het schrijven van een PBI lossen dat probleem 
 ## ObjectMothers en TestBuilders
 
 
-Een concreet voorbeeld. Een tijd geleden stelde ik tijdens zo'n [Alignment-sessie](/blog/21/09/hoe-technische-schuld-te-monitoren-en-prioriteren/) voor de objectcreatie in onze testclasses te stroomlijnen door gebruik te maken van het [ObjectMother-patroon](https://martinfowler.com/bliki/ObjectMother.html) voor simpele objecten, en [TestBuilders](http://natpryce.com/articles/000714.html) voor complexere objecten. (Zie ook [deze blog](/blog/21/09/droger-tests-met-factory-methods/).) Onze unit- en integratietests liepen over van de codeduplicatie als het ging om het instantiëren van nieuwe objecten, dus iedereen was het daar volmondig mee eens.
+Een concreet voorbeeld. Een tijd geleden stelde ik tijdens zo'n [Alignment-sessie](/blog/21/09/hoe-technische-schuld-te-monitoren-en-prioriteren/) voor de objectcreatie in onze testclasses te stroomlijnen door gebruik te maken van het [ObjectMother-patroon](https://martinfowler.com/bliki/ObjectMother.html) voor simpele, en [TestBuilders](http://natpryce.com/articles/000714.html) voor complexere objecten. (Zie ook [deze blog](/blog/21/09/droger-tests-met-factory-methods/).) Onze unit- en integratietests liepen over van de codeduplicatie als het ging om het instantiëren van nieuwe objecten, dus iedereen was het daar volmondig mee eens.
 
 
 En daarom gebeurde er de maanden daarop precies niks op dat gebied. Het opruimen van de unit- en integratietests was [wel belangrijk, maar nooit urgent](https://leansixsigmagroep.nl/lean-agile-en-six-sigma/eisenhower-matrix/).
@@ -68,7 +68,7 @@ Maar ook relatief fikse refactorslagen vallen onder de *Boy Scout Rule*. Want wa
 ## Een stapje, twee stapjes
 
 
-Bovendien: je hoeft niet je complete applicatie te herstructureren. Begin maar gewoon met de code waar je in bezig bent. Als de unit- en integratietests die je code raakt, gebruik maken van een ObjectMother, dan is dat al winst. De speelruimte doet de rest: een volgende keer, als je andere tests raakt, dan neem je die mee. 
+Bovendien: je hoeft niet je complete applicatie te herstructureren. Begin maar gewoon met de code waar je in bezig bent. Als de unit- en integratietests die je code raakt gebruik maken van een ObjectMother, dan is dat al winst. De speelruimte doet de rest: een volgende keer, als je andere tests raakt, dan neem je die mee. 
 
 
 \- En zo is het. Elke dag een stapje beter, en op sommige dagen twee stapjes - of de PO dat nu geprioriteerd heeft of niet. Dat maakt het verschil tussen een goede programmeur en een goede softwareontwikkelaar.

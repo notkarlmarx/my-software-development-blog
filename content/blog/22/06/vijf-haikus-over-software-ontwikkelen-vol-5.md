@@ -1,8 +1,8 @@
 ---
 title: "Vijf haiku's over software ontwikkelen - Vol. 5"
 author: "Karl van Heijster"
-date: 2022-05-23T07:06:48+02:00
-draft: true
+date: 2022-06-24T07:56:54+02:00
+draft: false
 comments: true
 tags: ["poëzie", "software ontwikkelen"]
 summary: "*Ik ben zó dichtbij / deze bug te fixen sinds / twee dagen of drie.*"
@@ -10,6 +10,7 @@ summary: "*Ik ben zó dichtbij / deze bug te fixen sinds / twee dagen of drie.*"
 
 # Of Junior: Een verhaal in vijf haiku's
 
+<br>
 
 **1.**
 

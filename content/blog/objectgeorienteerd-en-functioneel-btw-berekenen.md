@@ -92,7 +92,7 @@ Wat valt jou op aan beide oplossingen? Welke heeft je voorkeur? En waarom?
 ## Benchmarks
 
 
-Tot zover de esthetische vergelijking. Omdat ik graag grondig ben (en omdat ik de infrastructuur er al voor klaar had staan), heb ik ook wat benchmarks gedraaid om beide oplossingen op performancegebied te kunnen vergelijken.
+Tot zover de esthetische vergelijking. Omdat ik graag grondig ben (en omdat ik de infrastructuur er al voor klaar had staan), heb ik ook wat [benchmarks](https://benchmarkdotnet.org/articles/overview.html) gedraaid om beide oplossingen op performancegebied te kunnen vergelijken.
 
 
 Als we naar de snelheid kijken, dan zien we dat de functionele oplossing over het algemeen iets sneller is:

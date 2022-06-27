@@ -17,10 +17,10 @@ Eens per jaar verandert mijn blog over softwareontwikkeling in een schaamteloze 
 ## Ambient
 
 
-Wat de moeilijke klussen aangaat, daar kun je het beste muziek voor opzetten die de buitenwereld van je afsluit, zonder dat het aandacht voor zichzelf opeist. [Ambient](https://en.wikipedia.org/wiki/Ambient_music) is daar perfect voor. De laatste tijd luister ik vooral graag naar [deze playlist](https://open.spotify.com/playlist/37i9dQZF1DX5pzlFKAwpZ5?si=5d4709f5ad614343) vol hedendaagse ambient-componisten uit Japan. 
+Wat de moeilijke klussen aangaat, daar kun je het beste muziek voor opzetten die de buitenwereld van je afsluit, zonder dat het aandacht voor zichzelf opeist. [Ambient](https://en.wikipedia.org/wiki/Ambient_music) is daar perfect voor. De laatste tijd luister ik graag naar [Grouper](https://open.spotify.com/artist/31uyAcnY0kjjKKIQZMKX4i?si=mjsh0wo9TuWJBpUfRhEmzw), wier ijle stem en folky sfeer me doet denken aan [Julianna Barwick](https://open.spotify.com/artist/0HWfFWL4vVrbaBQqxVCwCi?si=mYYJl0qhTJuk7mnI_Eho4g). Daarnaast staan er regelmatig wat playlists vol [ambient shoegaze](https://open.spotify.com/playlist/37i9dQZF1DWYIlyW5yvFjI?si=3a44680bb2c148fe) of [hedendaagse ambient-componisten uit Japan](https://open.spotify.com/playlist/37i9dQZF1DX5pzlFKAwpZ5?si=5d4709f5ad614343) op. 
 
 
-Eén daarvan is [Ryuichi Sakamoto](https://open.spotify.com/artist/1tcgfoMTT1szjUeaikxRjA?si=0VYh7FyLT6WL73ClEKW62g), die een paar jaar terug een plaat maakte die [*async*](https://open.spotify.com/album/55BwNuGPkSSKOCBkTSCQWA?si=ma1SiclmRnKFJAcAJEIoyw) heet, en dat kan ik als hedendaags ontwikkelaar natuurlijk niet onvermeld laten:
+Eén van van die componisten is [Ryuichi Sakamoto](https://open.spotify.com/artist/1tcgfoMTT1szjUeaikxRjA?si=0VYh7FyLT6WL73ClEKW62g), die een paar jaar terug een plaat maakte die [*async*](https://open.spotify.com/album/55BwNuGPkSSKOCBkTSCQWA?si=ma1SiclmRnKFJAcAJEIoyw) heet, en dat kan ik als hedendaags ontwikkelaar natuurlijk niet onvermeld laten:
 
 
 {{<youtube id="FpR3VJwYHZY" title="Ryuichi Sakamoto - Life, Life (from async)" >}}

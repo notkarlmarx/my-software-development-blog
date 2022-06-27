@@ -1,8 +1,8 @@
 ---
 title: "De ontdekking van strategische subdomeinen"
 author: "Karl van Heijster"
-date: 2022-05-23T07:29:05+02:00
-draft: true
+date: 2022-06-27T08:03:10+02:00
+draft: false
 comments: true
 tags: ["domain-driven design", "leermoment", "software ontwikkelaar (rol)", "strategische subdomeinen", "verantwoordelijkheid", "waarde"]
 summary: "Ik schreef één keer eerder over Domain-Driven Design - en in die blog gaf ik onmiddellijk toe niks van het onderwerp te weten. Precies daarom nam ik me voor om *Learning Domain-Driven Design* van Vlad Khononov op te pakken. En met succes, want al meteen in het eerste hoofdstuk leerde ik iets nieuws: het bestaan van strategische subdomeinen."
@@ -38,7 +38,7 @@ Waarom is dit belangrijk om als softwareontwikkelaar te weten? Omdat de aard van
 Een voorbeeld verheldert die uitspraak misschien. Een tijd geleden sprak ik een oud-studiegenoot van me, die niet zolang daarvoor een carrièreswitch gemaakt had van filosofiedocent naar de IT-afdeling van een Nederlandse universiteit.
 
 
-Hij vertelde over de applicaties die zijn team ontwikkelde (en die ik - sorry! - vrijwel onmiddellijk allemaal vergat). Maar één ding is me wel bijgebleven. Hij vertelde dat hij onlangs de opdracht op zich had genomen een [rijke teksteditor](https://weblearn.ox.ac.uk/portal/help/TOCDisplay/content.hlp?docId=whatistherichtexteditor) te bouwen. Daar was hij twee of drie weken mee bezig geweest, en toen besloot men dat project te schrappen en een open source-oplossing te gebruiken.
+Hij vertelde over de applicaties die zijn team ontwikkelde (en die ik - sorry! - vrijwel onmiddellijk allemaal vergat). Maar één ding is me wel bijgebleven. Onlangs had hij de opdracht op zich had genomen een [rijke teksteditor](https://weblearn.ox.ac.uk/portal/help/TOCDisplay/content.hlp?docId=whatistherichtexteditor) te bouwen. Daar was hij twee of drie weken mee bezig geweest, en toen besloot men dat project te schrappen en een open source-oplossing te gebruiken.
 
 
 Een goede keus, als je het mij vraagt. Dat vond ik toen hij me dat verhaal vertelde, en dat vind ik nu nog steeds. Maar waarom? - Destijds vond ik het moeilijk er de woorden voor te vinden. Maar de notie van strategische subdomeinen heeft me die nu gegeven. 
@@ -56,7 +56,7 @@ Uit die anekdote is het misschien verleidelijk om de les te trekken: oplossingen
 Een bedrijf kán zich onderscheiden door het gebruik van *cutting edge* [machine learning-algoritmen](/blog/22/02/hoe-machines-leren/), zeker. Maar het kan datzelfde ook doen op het gebied van klantvriendelijkheid, of de goedkope prijs van haar diensten. De software van zo'n bedrijf - dat waar jij als ontwikkelaar je ziel en zaligheid in legt - kan volledig in het ondersteunende en generieke domein vallen.
 
 
-Let op: daar is niets mis mee! Het lezen van *Learning Domain-Driven Design* deed mij beseffen dat mijn team en ik inderdaad in het ondersteunende domein vallen. Het kerndomein van onze werkgever, ligt 'm niet in de *software* die ze gebruikt om toetsen te construeren: het zit 'm in de expertise waarmee die toetsen geconstrueerd worden.
+Let op: daar is niets mis mee! Het lezen van *Learning Domain-Driven Design* deed mij beseffen dat het gros van de werkzaamheden van mijn team inderdaad in het ondersteunende domein vallen. Het kerndomein van onze werkgever, ligt 'm niet in de *software* die ze gebruikt om toetsen te construeren: het zit 'm in de expertise waarmee die toetsen geconstrueerd worden.
 
 
 ## Gevolgen

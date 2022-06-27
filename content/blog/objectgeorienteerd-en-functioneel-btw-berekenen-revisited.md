@@ -5,7 +5,7 @@ date: 2022-06-24T11:26:45+02:00
 draft: true
 comments: true
 tags: ["boeken", "functioneel programmeren", "objectgeoriënteerd programmeren", "performance"]
-summary: "Ik plaatste een tijd geleden wat kanttekeningen bij mijn aanpak Enrico Buonanno's uitdaging om een objectgeoriënteerde BTW-calculator te schrijven. Zo zette ik mijn vraagtekens bij het feit dat ik zijn oorspronkelijke model één op één overnam. Die keuze bracht met ertoe een aparte `VatCalculator`-class te definiëren. En hoewel die objectgeoriënteerd was opgezet, viel deze makkelijk om te schrijven naar een functionele variant. De vraag wierp zich op: hoe objectgeoriënteerd is die oplossing? Is de vergelijking daarmee wel eerlijk? Hoe zou een "echt" objectgeoriënteerde oplossing eruit zien?"
+summary: "Ik plaatste een tijd geleden wat kanttekeningen bij mijn aanpak Enrico Buonanno's uitdaging om een objectgeoriënteerde BTW-calculator te schrijven. Zo zette ik mijn vraagtekens bij het feit dat ik zijn oorspronkelijke model één op één overnam. Die keuze bracht met ertoe een aparte `VatCalculator`-class te definiëren. En hoewel die objectgeoriënteerd was opgezet, viel deze makkelijk om te schrijven naar een functionele variant. De vraag wierp zich op: hoe objectgeoriënteerd is die oplossing? Is de vergelijking daarmee wel eerlijk? Hoe zou een \"echt\" objectgeoriënteerde oplossing eruit zien?"
 ---
 
 [Een tijd terug] (LINK) schreef ik over het demoproject waarmee [Enrico Buonanno](https://twitter.com/la_yumba) de lezer van [*Functional Programming in C# (Second Edition)*](https://www.manning.com/books/functional-programming-in-c-sharp-second-edition) bekend maakt met het concept van functioneel programmeren in C#. 

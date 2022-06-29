@@ -47,7 +47,7 @@ Een goede keus, als je het mij vraagt. Dat vond ik toen hij me dat verhaal verte
 Het bouwen van een rijke teksteditor is geen onderdeel van het kerndomein van een universiteit. Sterker nog, zo'n editor is onderdeel van een generiek subdomein. Het is een standaardprobleem waar standaardoplossingen beschikbaar voor zijn. Het is een probleem dat je oplost door zo'n standaardpakket in te kopen, tegen nota bene een fractie van de kosten van het zelfstandig ontwikkelen van een eigen oplossing.
 
 
-### Ondersteunen
+## Ondersteunen
 
 
 Uit die anekdote is het misschien verleidelijk om de les te trekken: oplossingen in het generieke domein koop je in, oplossingen in het kerndomein ontwikkel je zelf. Maar die vlieger gaat niet op. Het kerndomein is datgene wat een bedrijf onderscheidt van zijn concurrenten, maar wat dat is, hoeft niet per se op het vlak van software te liggen.

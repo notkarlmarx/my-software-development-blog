@@ -61,7 +61,10 @@ public static int PlusOne(int i) => (i >= 0)
 ```
 
 
-De signatuur van deze functie belooft opnieuw een `int` als output terug te geven, gegeven een `int` als input. Maar de implementatie laat een heel ander verhaal zien. Voor getallen groter dan 0 doet de signatuur inderdaad wat het belooft. Maar voor negatieve getallen wordt de belofte - als je het zo wil noemen - van de signatuur verbroken: er wordt een `ArgumentException` teruggegeven. Dat is een gegeven waar je alleen van op de hoogte kan zijn als je de implementatie van de functie hebt bekeken.
+De signatuur van deze functie belooft opnieuw een `int` als output terug te geven, gegeven een `int` als input: `PlusOne: int -> int`. 
+
+
+Maar de implementatie laat een heel ander verhaal zien. Voor getallen groter dan 0 doet de signatuur inderdaad wat het belooft. Maar voor negatieve getallen wordt de belofte - als je het zo wil noemen - van de signatuur verbroken: er wordt een `ArgumentException` teruggegeven. Dat is een gegeven waar je alleen van op de hoogte kan zijn als je de implementatie van de functie hebt bekeken.
 
 
 Nu zou je kunnen denken dit probleem te ondervangen door betere naamgeving, `PositivePlusOne` bijvoorbeeld. En hoewel dat wel degelijk een verbetering is, maakt dat de functie nog niet *eerlijk*. De eerlijkheid van een functie wordt puur en alleen bepaald door de input(s) en output(s), niet de naam. Ook `PositiveOneOrThrowArgumentException` lost het probleem niet op (en is bovendien ontzettend lelijk). De signatuur belooft immers nog steeds een `int` voor een `int` terug te geven - de `ArgumentException` zelf is nog steeds nergens te bekennen. 

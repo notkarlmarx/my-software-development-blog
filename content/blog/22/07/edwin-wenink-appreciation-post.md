@@ -1,11 +1,11 @@
 ---
 title: "Edwin Wenink Appreciation Post"
 author: "Karl van Heijster"
-date: 2022-05-28T14:00:44+02:00
-draft: true
+date: 2022-07-01T08:14:23+02:00
+draft: false
 comments: true
 tags: ["bloggen", "filosofie"]
-summary: "Ik danste onlangs bij een concert van Eefje de Visser en liep bij de uitgang Edwin Wenink tegen het lijf. Edwin is een oud-studiegenoot van me en de hoofdverantwoordelijke voor de RSS-link in het menu rechtsboven. \"Ik krijg elke keer een mailtje als jij iets nieuws post!\" bekende hij enthousiast. \"Niet dat ik er ooit iets van lees, natuurlijk.\" - Edwin is altijd eerlijk en dat waardeer ik soms. Tijdens ons gesprek kwam ik erachter dat Edwin ook een blog heeft en de ochtend erop zelfs dat er een heleboel interessants op staat ook nog. Bij dezen dus, een momentje om de gedachtewereld van Edwin te waarderen."
+summary: "Ik danste onlangs bij een concert van Eefje de Visser en liep bij de uitgang Edwin Wenink tegen het lijf. Edwin is een oud-studiegenoot van me en de hoofdverantwoordelijke voor de RSS-link in het menu rechtsboven. \"Ik krijg elke keer een mailtje als jij iets nieuws post!\" bekende hij enthousiast. \"Niet dat ik er ooit iets van lees, natuurlijk.\" - Edwin is altijd eerlijk en dat waardeer ik soms. Tijdens ons gesprek kwam ik erachter dat hij ook een blog heeft en de ochtend erop zelfs dat er een heleboel interessants op staat ook nog. Bij dezen dus, een momentje om de gedachtewereld van Edwin te waarderen."
 ---
 
 Ik danste onlangs bij een concert van [Eefje de Visser](https://www.eefjedevisser.com/) en liep bij de uitgang [Edwin Wenink](https://www.linkedin.com/in/ejwenink/) tegen het lijf. Ik was niet meer nuchter, dus we hadden een goed gesprek over het feit dat Eefje - ik mag *Eefje* zeggen - de meest sexy vrouw is in het Nederlandse taalgebied op mijn eigen vrouw na.[^1] - Althans, ik denk dat we het daar over gehad hebben, want mijn herinnering aan die avond is twee delen koortsachtige verliefdheid en drie delen nevel. 
@@ -20,7 +20,7 @@ Edwin is een oud-studiegenoot van me en de hoofdverantwoordelijke voor de [RSS-l
 Tijdens ons gesprek kwam ik erachter dat Edwin ook een [blog](https://www.edwinwenink.xyz/) heeft en de ochtend erop zelfs dat er een heleboel interessants op staat ook nog. Bij dezen dus, een momentje om de gedachtewereld van Edwin te waarderen.
 
 
-Hij heeft bijvoorbeeld interessante blogs geschreven over [complexiteit](https://www.edwinwenink.xyz/posts/4-p_np/), het gebruik van [de Monte-Carlosimulatie om PI te berekenen](https://www.edwinwenink.xyz/posts/7-montecarlo/), en het [*Strategy*](https://www.edwinwenink.xyz/posts/8-oostrategypattern/)- en [*Observer*](https://www.edwinwenink.xyz/posts/9-ooobserverpattern/)-ontwerppatroon. Ik vond [de manier waarop zijn website comments afhandelt](https://www.edwinwenink.xyz/posts/18-comments/) interessant om te lezen, vooral in contrast met mijn eigen - makkelijke, misschien zelfs wel luie? - oplossing. Meer filosofisch ingestelde ontwikkelaars doen er daarnaast goed aan zijn reflecties op [de begrippen "*security*" en "privacy"](https://www.edwinwenink.xyz/posts/20-security_privacy_key_terms/), en de vraag [of cyberaanvallen oorlogsdaden zijn of niet](https://www.edwinwenink.xyz/posts/24-war_terrorism_cyberdomain/) te lezen. 
+Hij heeft bijvoorbeeld interessante blogs geschreven over [complexiteit](https://www.edwinwenink.xyz/posts/4-p_np/), het gebruik van [de Monte-Carlosimulatie om PI te berekenen](https://www.edwinwenink.xyz/posts/7-montecarlo/), en het [*Strategy*](https://www.edwinwenink.xyz/posts/8-oostrategypattern/)- en [*Observer*](https://www.edwinwenink.xyz/posts/9-ooobserverpattern/)-ontwerppatroon. Ik vond [de manier waarop zijn website comments afhandelt](https://www.edwinwenink.xyz/posts/18-comments/) interessant om te lezen, vooral in contrast met mijn eigen - makkelijke, misschien zelfs wel luie? - oplossing. Meer filosofisch ingestelde ontwikkelaars doen er goed aan zijn reflecties op [de begrippen "*security*" en "privacy"](https://www.edwinwenink.xyz/posts/20-security_privacy_key_terms/), en de vraag [of cyberaanvallen oorlogsdaden zijn of niet](https://www.edwinwenink.xyz/posts/24-war_terrorism_cyberdomain/) te lezen. 
 
 
 En dan heb ik nota bene alleen nog maar doorgelezen tot begin 2019!
@@ -29,13 +29,13 @@ En dan heb ik nota bene alleen nog maar doorgelezen tot begin 2019!
 ## Aantekeningen
 
 
-Maar voor deze blog wil ik vooral even inzoomen op de redenen die hij aandraagt om te bloggen, want deze zijn interessant om met de mijne te contrasteren. In één van zijn eerste blogs, [*About this website*](https://www.edwinwenink.xyz/posts/2-about-this-website/), schrijft hij:
+Maar voor deze blog wil ik vooral even inzoomen op de redenen die Edwin aandraagt om te bloggen, want deze zijn interessant om met de mijne te contrasteren. In één van zijn eerste blogs, [*About this website*](https://www.edwinwenink.xyz/posts/2-about-this-website/), schrijft hij:
 
 
 > As far as the content of this blog section of my site goes: I intend to use it as a mnemonic device. Over the years I have occupied myself with studying such diverse topics, only to realize that I can barely recollect half of it. So as a rule of thumb for this blog: if I spend a considerable amount of time on one topic, I should record it in this elaborate and weirdly public note-taking system.
 
 
-Vertrouwen op je eigen geheugen is een waardeloze manier om informatie vast te houden. Wie daarop vertrouwt om informatie vast te houden, gooit feitelijk een groot deel van zijn eigen kennis weg. Daaruit volgt: wie een bepaalde hoeveelheid tijd besteedt aan het onderzoeken van een bepaald onderwerp, doet er goed aan de uitkomsten daarvan vast te leggen. Dat is de enige manier om ervoor te zorgen dat de duurzaamheid van het onderzoek wordt gegarandeert. (Ik maakte een soortgelijk punt in [deze blog](/blog/21/08/vijf-voordelen-van-bloggen/).)
+Vertrouwen op je eigen geheugen is een waardeloze manier om informatie vast te houden. Wie zijn geld daarop inzet, gooit feitelijk een groot deel van zijn eigen kennis weg. Daaruit volgt: wie een bepaalde hoeveelheid tijd besteedt aan het onderzoeken van een bepaald onderwerp, doet er goed aan de uitkomsten daarvan vast te leggen. Dat is de enige manier om ervoor te zorgen dat de duurzaamheid van het onderzoek wordt gegarandeert. (Ik maakte een soortgelijk punt in [deze blog](/blog/21/08/vijf-voordelen-van-bloggen/).)
 
 
 Zijn insteek is wel een iets andere dan de mijne. Edwin schrijft een blog als hij een aanzienlijke hoeveelheid tijd aan een onderwerp heeft besteedt. Zelf blog ik twee keer per week, of ik die week nu veel tijd aan studie heb besteed of niet. Het idee daar achter zet ik in [deze blog](/blog/22/01/waarom-ik-twee-keer-per-week-blog/) uiteen.
@@ -77,7 +77,7 @@ Een tweede voordeel van bloggen, ligt hem in het feit dat ze imperfect mogen zij
 Je merkt in deze passage dat Edwin een filosoof is - en niet alleen vanwege de verwijzing naar [Heidegger](https://plato.stanford.edu/entries/heidegger/). Het schrijven van blogs is een manier om ideeën uit te proberen, zonder op voorhand te hoeven weten of het ingeslagen pad ergens naar leidt of niet. Een blog is een plek om vragen te stellen zonder er een definitief antwoord op te hoeven geven. Je mag er naast zitten in een blog - want het is een stapsteen is in het leerpoces, niet het eindresultaat ervan. 
 
 
-Het is een echo van het [platoonse](https://stanford.library.sydney.edu.au/archives/sum2012/entries/plato/) idee ([met kleine letter](https://nl.wikipedia.org/wiki/Idee%C3%ABnleer)) dat echte filosofie plaatsvindt in levendige gesprekken tussen individuen, niet in declaratieve, "dode" teksten. Met dien verstande, dat het gesprek hier plaatsvindt, op digitaal papier, tussen de schrijver en zichzelf.
+Het is een echo van het [platoonse](https://stanford.library.sydney.edu.au/archives/sum2012/entries/plato/) idee ([met kleine letter](https://nl.wikipedia.org/wiki/Idee%C3%ABnleer)) dat echte filosofie plaatsvindt in levendige gesprekken tussen individuen, niet in declaratieve, "dode" teksten. Met dien verstande, dat het gesprek hier plaatsvindt, op digitaal papier - tussen de schrijver en zichzelf.
 
 
 ## Waarde

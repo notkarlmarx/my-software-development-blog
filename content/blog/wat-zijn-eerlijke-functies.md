@@ -17,7 +17,7 @@ Wat zijn eerlijke functies? Voordat we die vraag kunnen beantwoorden, moeten we 
 ## Functies
 
 
-De term [*functie*](https://nl.wikipedia.org/wiki/Functie_(wiskunde)) komt uit de wiskunde en betekent drukt de afhankelijk van een element uit met een ander element. In de wiskunde zijn die elementen traditioneel getallen. Stel, we hebben de functie `*f*(*x*+1)`, dan arrangeert deze functie het getal `1` met `2`, `2` met `3`, en `938` met `939`. Het steeds eerstgenoemde getal in die opsomming behoort tot de ene set, het tweede genoemde getal behoort tot de andere set. Je zou een functie kunnen zien als een vertaaltabel van de ene set naar de andere.
+De term [*functie*](https://nl.wikipedia.org/wiki/Functie_(wiskunde)) komt uit de wiskunde en betekent drukt de afhankelijkheid van een element uit met een ander element. In de wiskunde zijn die elementen traditioneel getallen. Stel, we hebben de functie `*f*(*x*+1)`, dan arrangeert deze functie het getal `1` met `2`, `2` met `3`, en `938` met `939`. Het steeds eerstgenoemde getal in die opsomming behoort tot de ene set, het tweede genoemde getal behoort tot de andere set. Je zou een functie kunnen zien als een vertaaltabel van de ene set naar de andere.
 
 
 Functies hoeven niet per se afhankelijkheden tussen getallen uit te drukken, natuurlijk. Laat ik dat met een eenvoudig (en schaamteloos gejat) voorbeeld illustreren. We veronderstellen twee sets, beide bestaande uit letters. De eerste set bestaat uit kleine letters (`a`, `b`, `c` etc.) en de tweede uit hoofdletters (`A`, `B`, `C` etc.). Een functie is dat wat de elementen uit beide sets met elkaar arrangeert. Een functie als `ToUpper` brengt een eenvoudige vertaling tot stand van de ene set naar de andere.

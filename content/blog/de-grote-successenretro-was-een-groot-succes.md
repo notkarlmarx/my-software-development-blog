@@ -1,5 +1,5 @@
 ---
-title: "De Grote Successenretro was een doorslaand succes"
+title: "De Grote Successenretro was een groot succes"
 author: "Karl van Heijster"
 date: 2022-06-24T07:59:48+02:00
 draft: true

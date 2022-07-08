@@ -1,8 +1,8 @@
 ---
 title: "Objectgeoriënteerd en functioneel BTW berekenen"
 author: "Karl van Heijster"
-date: 2022-05-28T11:22:38+02:00
-draft: true
+date: 2022-07-08T08:24:50+02:00
+draft: false
 comments: true
 tags: ["boeken", "functioneel programmeren", "objectgeoriënteerd programmeren", "ontwerppatronen", "performance"]
 summary: "In het eerste hoofdstuk van Enrico Buonanno's *Functional Programming in C# (Second Edition)* demonstreert de auteur wat functionele features van C# aan de hand van een concreet voorbeeld: het berekenen van de BTW op een (lijst) product(en). Buonanno raadt de lezer aan om dezelfde functionaliteit ook op een objectgeoriënteerde manier te implementeren, om die oplossing te kunnen contrasteren met de zijne. Dus dat is precies wat ik heb gedaan."
@@ -27,7 +27,7 @@ Bij het berekenen van BTW, moeten de volgende drie scenario's worden onderkend.
 3. Ten slotte zijn er landen waarin de BTW afhankelijk is van de regio. Voor zulke landen moet je eerst nagaan bij welke regio het gekochte product hoort, om het juiste tarief te kunnen bepalen. De Verenigde Staten is een voorbeeld van zo'n land, daar bepalen de staten het tarief. 
 
 
-Ik ging als volgt te werk. Ik heb eerst Buonanno's oplossing overgenomen ter referentie. Daarna heb ik middels Test-Driven Development (TDD) de verschillende scenario's stuk voor stuk opnieuw gecodeerd in een objectgeoriënteerde stijl.
+Ik ging als volgt te werk. Ik heb eerst Buonanno's oplossing overgenomen ter referentie. Daarna heb ik middels [Test-Driven Development](/tags/test-driven-development/) (TDD) de verschillende scenario's stuk voor stuk opnieuw gecodeerd in een objectgeoriënteerde stijl.
 
 
 N.B. Het Engelse equivalent van BTW (belasting toegevoegde waarde) is VAT (*value added tax*). In het vervolg van deze blog zal ik de Engelse afkorting gebruiken, om in lijn te zijn met de code.
@@ -51,7 +51,7 @@ Een `Product` bestaat uit een naam en een prijs. Daarnaast heeft dit type een `b
 In een `Order` is de bestelling vastgelegd die naar een bepaald land moet worden verscheept. Om het model eenvoudig te houden, is er uitgegaan van het versimpelde scenario waarin je maar één soort `Product` per keer kan bestellen. De hoeveelheid `Products` is daarentegen wel vrij.
 
 
-## De functionele oplossing
+## De oplossingen
 
 
 Dit is Buonanno's oplossing:
@@ -79,9 +79,9 @@ Enkele observaties, in min of meer willekeurige volgorde.
 
 - Eén van de redenen waarom de functionele oplossing zo klein kan blijven, is het gebruik van de [`=>`-syntax](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator) om functies te declareren. Dat is mogelijk, omdat elke functie ofwel slechts één regel code bevat, ofwel een [switch expression](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/switch-expression). Zelf maak ik gebruik van de iets meer *verbose* `{`-notatie. Voor een groot deel is dat conventie. Merk op dat ook mijn methods eenvoudig om kunnen worden geschreven naar *oneliners*.
 
-- Geen enkele functie - zowel de functionele als de objectgeoriënteerde - maakt gebruik van method-variabelen; ze berekenen het resultaat en retourneren dat onmiddellijk. In functionele talen is dat heel gebruikelijk om te doen. De objectgeoriënteerde oplossing maakt wel gebruik van class-variabelen, maar ook dat is deels conventie. De `address`- en `order`-parameters zouden in dit geval net zo goed in de method meegegeven kunnen worden, in plaats van [constructor](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors). 
+- Geen enkele functie - zowel de functionele als de objectgeoriënteerde - maakt gebruik van method-variabelen; ze berekenen het resultaat en retourneren dat onmiddellijk. In functionele talen is dat heel gebruikelijk om te doen. De objectgeoriënteerde oplossing maakt wel gebruik van class-variabelen, maar ook dat is deels conventie. De `_address`- en `_order`-fields zouden in dit geval net zo goed in de method meegegeven kunnen worden als parameters, in plaats van via de [constructor](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors) geïnjecteerd te worden.
 
-- Als gevolg hiervan kan de functionele oplossing zuiver statisch blijven. De [`static`-modifier](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/static) is op alle niveaus van toepassing: van class tot functie. Ook dat is typisch voor functioneel programmeren. In de objectgeoriënteerde wereld wordt het gebruik van `static` juist veelal afgeraden, omdat dit niet altijd even goed samengaat met het componeren van objecten.[^3] De objectgeoriënteerde oplossing is dan ook niet statisch. (Al zou hij, ook nu weer, eenvoudig om geschreven kunnen worden om wel zo te zijn.)
+- Als gevolg van het punt hierboven kan de functionele oplossing zuiver statisch blijven. De [`static`-modifier](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/static) is op alle niveaus van toepassing: van class tot functie. Ook dat is typisch voor functioneel programmeren. In de objectgeoriënteerde wereld wordt het gebruik van `static` juist veelal afgeraden, omdat dit niet altijd even goed samengaat met het componeren van objecten.[^3] De objectgeoriënteerde oplossing is dan ook niet statisch. (Al zou hij, ook nu weer, eenvoudig om geschreven kunnen worden om wel zo te zijn.)
 
 - De functionele oplossing maakt geen gebruik van een ontwerppatroon. Alle logica zit bij elkaar in één class. De objectgeoriënteerde oplossing hanteert daarentegen het *Strategy*-patroon om de code beheersbaar te houden. Is dat een ontwerpkeuze die inherent is aan het ene of het andere paradigma? Daar ben ik nog niet over uit. Mijn kennis buiten de [objectgeoriënteerde denkwijze](/blog/21/07/objectgeorienteerd-denken/) reikt nog niet ver genoeg om iets over functionele ontwerppatronen te durven zeggen.
 
@@ -136,13 +136,13 @@ Is daarmee alles gezegd over dit experiment? Natuurlijk niet.
 Mijn aanpak had een in het oog springend nadeel, en dat is dat ik in mijn nieuwe oplossing wat van Buonanno's functionele oplossing meeneem. Concreet: het gebruik van records voor het model en het gebruik van de `UsAddress`-class. 
 
 
-Het eerste punt is niet per definitie problematisch. Het model wordt met name gebruikt om enkele testobjecten te kunnen definiëren - en dat gebeurt per test maar één keer. Deze objecten hoeven daarom niet per se muteerbaar te zijn. 
+Het eerste punt hoeft niet per se problematisch te zijn. Het model wordt met name gebruikt om enkele testobjecten te kunnen definiëren - en dat gebeurt per test maar één keer. Deze objecten hoeven daarom niet per se muteerbaar te zijn. 
 
 
 De vraag werpt zich natuurlijk wel op: had ik, als ik van nul af aan was begonnen, ook voor *immutable* objecten gekozen? Dat durf ik niet te zeggen. Een vervolgvraag is dan: als ik de `Product`-class als muteerbaar object zou hebben gedefinieerd, zou ik dan geneigd zijn om een `VatRate`-property of iets dergelijks erop te definiëren? Dat zou mijn eigen oplossing substantieel van die van Buonanno doen verschillen. 
 
 
-Je kunt je voorstellen dat je de code zodanig implementeert dat het *strategy*-patroon wordt gebruikt op in `Product`-class zelf - een *waarlijk* objectgeoriënteerde oplossing. Ik speel met het idee om in een toekomstige blog zo'n oplossing te schrijven en het experiment opnieuw te doen.
+Je kunt je voorstellen dat je de code zodanig implementeert dat het *strategy*-patroon wordt gebruikt op in `Order`-class zelf - een *waarlijk* objectgeoriënteerde oplossing. Ik speel met het idee om in een toekomstige blog zo'n oplossing te schrijven en het experiment opnieuw te doen.
 
 
 Het tweede punt is minder problematisch, denk ik. Buonanno introduceert de `UsAddress`-class om te kunnen demonstreren dat je een type-check in een `switch expression` kunt gebruiken. Zelf maak ik niet van deze functionaliteit gebruik (hoewel ik mijn oplossing eenvoudig aan zou kunnen passen om dat wel te doen - en het ontwerp er niet per se onder zou leiden). In die zin heeft deze ontwerpkeuze mijn objectgeoriënteerde implementatie dus niet beïnvloed.
@@ -160,13 +160,13 @@ Wat ik wel al durf te concluderen is dit: *Functional Programming in C# (Second 
 Het is goed om ingesleten patronen van tijd tot tijd tegen het licht te houden en jezelf af te vragen: waarom doe ik het eigenlijk *zo*? Buonanno's boek stimuleert het in slaap gesukkelde ontwerpgedeelte van je ontwikkelaarsbrein met verve.
 
 
-O, en de code is terug te vinden op [GitHub](https://github.com/dotkarl/RefactorExercises/tree/master/RefactorExercises/VAT) voor de geïnteresseerde lezer.
+O, en voor geïnteresseerde lezer: de code uit deze blog is terug te vinden op [GitHub](https://github.com/dotkarl/RefactorExercises/tree/master/RefactorExercises/VAT).
 
 
-[^1]: Ik moet je bekennen dat ik helemaal niet weet of wat ik hier zeg daadwerkelijk geldt voor al die landen. Buonanno neemt ze als voorbeeld en ik neem ze over, want ik geloof Buonanno op zijn blauwe ogen.
+[^1]: Althans, dat zegt Buonanno en ik geloof Buonanno op zijn blauwe ogen.
 
 
 [^2]: Doorgaans bestaat een adres uit meer dan alleen een land natuurlijk, maar om het voorbeeld zo eenvoudig mogelijk te houden, is hier alleen de noodzakelijke informatie vastgelegd. Buonanno merkt overigens wel op dat je een minimaal `Address` zoals hierboven beschreven zou kunnen hanteren voor specifieke delen van je applicatie, die alleen deze informatie nodig hebben - het deel dat BTW berekent, bijvoorbeeld.
 
 
-[^3]: Buonanno is overigens niet overtuigd van de rechtvaardigheid van de objectgeoriënteerde afkeer van `static`. Daar wil ik in een latere blog nog op terugkomen!
+[^3]: Buonanno is overigens niet overtuigd van de rechtvaardigheid van de objectgeoriënteerde afkeer van `static`. Wellicht dat ik daar in een latere blog nog op terugkom.

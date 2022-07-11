@@ -1,8 +1,8 @@
 ---
 title: "De Grote Successenretro was een groot succes"
 author: "Karl van Heijster"
-date: 2022-06-24T07:59:48+02:00
-draft: true
+date: 2022-07-11T08:16:13+02:00
+draft: false
 comments: true
 tags: ["coaching", "leermoment", "scrum", "sprint retrospective", "succes"]
 summary: "Onze Scrummaster was er niet, en dus kwam het organiseren van de Sprint Retrospective op mijn bordje terecht. Omdat ik iets spannenders wilde organiseren dan een wat-ging-er-goed-en-wat-kon-er-beter-Retro (dat is de officiële term, toch?), nam ik een middag de tijd om verschillende vormen te bekijken. Voor de uiteindelijke opzet, putte ik inspiratie uit de cursus begeleidend coachen die ik de afgelopen maanden heb gevolgd. Eén van de belangrijkste lessen die ik heb getrokken uit die cursus, is de waarde van het focussen op successen. Wie oog heeft voor zijn eigen successen (of de successen van zijn/haar team), wie zijn eigen successen erkent en viert, opent de weg naar meer succes."
@@ -38,7 +38,7 @@ Wie zich concentreert op het negatieve, op alles wat niet lukt, krijgt daar nega
 De vraag werpt zich op: wat is een succes? Daarvoor hanteer ik een zo breed mogelijke definitie. Een succes kan bijvoorbeeld zijn:
 
 
-- **Een gewenst resultaat**. Oftewel: ik heb iets gedaan en dat heeft ten minste opgeleverd wat ik ervan verwachtte. Dit is wat we in het dagelijks taalgebruik paradigmatisch als succes opvatten.
+- **Een gewenst resultaat**. Oftewel: ik heb iets gedaan en dat heeft ten minste opgeleverd wat ik ervan verwachtte (en misschien zelfs wel meer). Dit is wat we in het dagelijks taalgebruik paradigmatisch als succes opvatten.
 
 - **Een gedane actie (al dan niet na aarzeling), los van het resultaat.** Niet alles wat je probeert levert ook op wat je hoopte. Maar het feit dat je een stap hebt gezet, is al veel waard - zeker als het gaat om dingen die je moeilijk vindt. Niet alles lukt in één keer, daarom is het belangrijk om de poging op zichzelf positief te bekrachtigen. Misschien lukt het de tweede of zesde keer wel!
 
@@ -52,7 +52,7 @@ De vraag werpt zich op: wat is een succes? Daarvoor hanteer ik een zo breed moge
 ## *Mindset*
 
 
-Merk op dat succes, zoals hierboven beschreven, wordt losgekoppeld van resultaat. Een onderneming kan gigantisch in de soep lopen - in die zin dat het niet het gewenste resultaat oplevert -, en toch een succes zijn. Het feit dat je überhaupt aan die onderneming begonnen bent, is al een pluim waard. Want je had ook niks kunnen doen. En het een "mislukking" kan veel nieuwe informatie op hebben geleverd - over het onderwerp van de onderneming, of over jezelf. Geweldig toch!
+Merk op dat succes, zoals hierboven beschreven, wordt losgekoppeld van resultaat. Een onderneming kan gigantisch in de soep lopen - in die zin dat het niet het gewenste resultaat oplevert -, en toch een succes zijn. Het feit dat je überhaupt aan die onderneming begonnen bent, is al een pluim waard. Want je had ook niks kunnen doen. En een "mislukking" kan veel nieuwe informatie op hebben geleverd - over het onderwerp van de onderneming, of over jezelf. Geweldig toch!
 
 
 De consequentie daarvan is dat succes gekoppeld wordt aan een bepaalde *mindset*. Wie successen ziet, *is* succesvol, in de brede betekenis die we hier hanteren. Dat is een ontzettend bevrijdend idee.
@@ -67,7 +67,7 @@ Goed, terug naar de Retro. Deze had de volgende opzet. Ik vroeg het team, na wat
 Daarna verdeelde ik de groep in drieën, en gaf hen de opdracht om hun eigen succes aan die deelgroep toe te lichten. Ook vroeg ik hen om twee successen uit te kiezen om met de groep als geheel te bespreken. Hier hadden ze tien minuten de tijd voor.
 
 
-Met hulp van [dot-voting](https://en.wikipedia.org/wiki/Dot-voting) kozen we als geheel de belangrijkste onderwerpen uit om over te spreken. Ik hanteerde een [*lean coffee*](https://retromat.org/en/?id=51)-structuur: vijf minuten discussie over het onderwerp in kwestie, waarna er wordt gecheckt of we hier verder op door willen gaan, of het volgende onderwerp willen bespreken. Tijdens de discussie schreef ik mee op het [Whiteboard](https://www.microsoft.com/nl-nl/microsoft-365/microsoft-whiteboard/digital-whiteboard-app) om de discussie inzichtelijk te maken en eventuele actiepunten te noteren.
+Met hulp van [*dot-voting*](https://en.wikipedia.org/wiki/Dot-voting) kozen we als geheel de belangrijkste onderwerpen uit om over te spreken. Ik hanteerde een [*lean coffee*](https://retromat.org/en/?id=51)-structuur: vijf minuten discussie over het onderwerp in kwestie, waarna er wordt gecheckt of we hier verder op door willen gaan, of het volgende onderwerp willen bespreken. Tijdens de discussie schreef ik mee op het [Whiteboard](https://www.microsoft.com/nl-nl/microsoft-365/microsoft-whiteboard/digital-whiteboard-app) om de discussie inzichtelijk te maken en eventuele actiepunten te noteren.
 
 
 ## Observaties

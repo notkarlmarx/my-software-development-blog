@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2022-07-04T15:15:25+02:00
 draft: true
 comments: true
-tags: ["boeken", "clean code", "mentale modellen", "refactoren", "single-responsibility principe", "testbaarheid", "testen"]
+tags: ["boeken", "clean code", "refactoren", "single-responsibility principe", "testbaarheid", "testen"]
 summary: "Het aantal refactoravonturen (met goede of slechte afloop) dat ik heb beleefd is, inmiddels al lang niet meer op één hand te tellen. In de loop der tijd is een terugkerend fenomeen me opgevallen: code waarin het ophalen van data niet wordt gescheiden van het manipuleren ervan. Laten we dat eens wat nader bekijken."
 ---
 
@@ -85,7 +85,7 @@ Het kan ook afhangen van de mate waarin die deelverantwoordelijkheden los van el
 Oftewel, als het op het scheiden van de (a)'tjes en de (b)'tjes in de bovenstaande opsomming aankomt, mag je jezelf als ontwikkelaar best wat speelruimte gunnen. Datzelfde vind ik niet opgaan voor het scheiden van de (1)'tjes en de (2)'tjes. Het ophalen van data en het manipuleren ervan zijn mijns inziens zulke ver uit elkaar liggende verantwoordelijkheden, dat deze eigenlijk altijd gescheiden móeten worden.
 
 
-## Testbaarheid
+## Testbaarheid (1)
 
 
 Wellicht zijn deze overwegingen wat aan de theoretische kant. Ze bieden in elk geval weinig concrete handvaten. Wat complex is, is bijvoorbeeld afhankelijk van het vaardigheidsniveau van de programmeur. En welke deelverantwoordelijkheden bij elkaar horen en welke los van elkaar moeten kunnen evolueren, wil in de loop van een project wel eens overwacht veranderen. 
@@ -94,10 +94,52 @@ Wellicht zijn deze overwegingen wat aan de theoretische kant. Ze bieden in elk g
 Een meer praktische leidraad is deze: code moet zodanig gescheiden worden, dat deze eenvoudig te testen is. Sterker nog, één van de belangrijkste redenen om het SRP te respecteren, is omdat dit makkelijk testbare code oplevert - makkelijker testbaar dan wanneer je het niet doet, in elk geval.
 
 
-Ga maar na. Stel, je zou het algoritme willen testen die `foos` en `bars` mapt naar `SomeType`, zoals geschetst in de code hierboven. Op dit moment kun je die code niet testen zonder gebruik te maken van de `repository` - wat dat ook moge zijn. Als dat een interface is, zul je een mock moeten specificeren die *the real deal* simuleert. Dat is wat ongemak voor jou als ontwikkelaar - en wat extra testcode om te onderhouden -, maar op zich overkomelijk. Als het echter een concrete implementatie is - *foei!* -, dan heb je een groter probleem. De code is dan namelijk niet in isolatie te testen. Het testen van het algoritme houdt automatisch ook het testen van de [Repository](https://dotnettutorials.net/lesson/repository-design-pattern-csharp/) in, en dat houdt het testen van de database in. 
+Ga maar na. Stel, je zou het algoritme willen testen die `foos` en `bars` mapt naar `SomeType`, zoals geschetst in de code hierboven. Op dit moment kun je die code niet testen zonder gebruik te maken van de `repository` - wat dat ook moge zijn. Als dat een concrete implementatie is - *foei!* -, dan heb je een probleem. De code is dan namelijk niet in isolatie te testen. Het testen van het algoritme houdt automatisch ook het testen van de [Repository](https://dotnettutorials.net/lesson/repository-design-pattern-csharp/) in, en dat houdt het testen van de database in. 
 
 
 Denk je eens in wat er allemaal voor nodig is om die tests aan de gang te krijgen! Je moet een database opzetten en inrichten en deze vullen met testdata, en dat allemaal vóórdat je kunt beginnen aan dat waar het je eigenlijk om gaat: het algoritme testen. Bovendien zal het je tests erg langzaam maken, waardoor je ontwikkelcyclus vertraagd zal worden. Elke keer als je de tests aftrapt, zul je even moeten wachten, wat je als ontwikkelaar uit je *flow* haalt, en je productiviteit vermindert.
+
+
+## Testbaarheid (2)
+
+
+Als `repository` een interface is, kom je er een stuk makkelijker vanaf. Maar dan nog zul je een mock moeten specificeren die *the real deal* simuleert - en ook dat is niet niks. Je zal een mocking library zoals [*Moq*](https://moq.github.io/moq4/) of [*FakeItEasy*](https://fakeiteasy.github.io/) moeten gebruiken, en voor elke test moeten specificeren welk gedrag je van je gemockte `repository` verwacht. (Over de nadelen van mocks schreef ik al eerder, [hier](/blog/22/02/de-leercurve-van-angulartests-beklimmen-deel-3/).)
+
+
+Een test zou er met wat hulp van *FakeItEasy* bijvoorbeeld zou uit kunnen komen te zien:
+
+
+```cs
+[TestMethod]
+public void OneFooWithCorrespondingBar_WhenMappedToSomeType_ReturnsSomeTypeWithBar()
+{
+    // Arrange
+    // Set up fake data
+    var foo = new Foo { BarId = 1 };
+    var bar = new Bar { Id = 1 };
+    var foos = new [] { foo };
+    var bars = new [] { bar };
+
+    // Set up fake Repository
+    var repo = A.Fake<IRepository>();
+    A.CallTo(() => repo.GetFoos().Returns(foos));
+    A.CallTo(() => repo.GetBars().Returns(bars));
+
+    // Assume code above lives in class called MappingClass
+    // Inject Repository in class
+    var sut = new MappingClass(repo);
+
+    // Act
+    // Assume code aboves lives in method calld ToSomeType
+    var someType = sut.ToSomeType(foos, bars).First();
+
+    // Assert
+    Assert.IsNotNull(someType.Prop3);
+}
+```
+
+
+Die test werkt, maar is verre van ideaal, natuurlijk. Het gebruik van mocks maakt de test broos. Bovendien vraagt deze opzet veel van de lezer. Door alle code in het `Arrange`-gedeelte van de test, is het moeilijk om in één oogopslag te zien wat de test precies doet. Een overdaad aan *low level*-informatie vertroebelt de intentie van de test.
 
 
 ## De scheiding
@@ -137,6 +179,9 @@ De code om de data op te halen, is nu helemaal losgetrokken van de mappingcode. 
 
 
 Hierdoor hoeven we in het algoritme zelf alleen maar de corresponderende `bar` in de al opgehaalde lijst te vinden - of `null` terug te geven wanneer deze niet gevonden kan worden, en de property daarom effectief niet zetten.
+
+
+## Testbaarheid (3)
 
 
 Maar de voordelen eindigen nog niet daar. Onze aanvankelijke refactorslag heeft ons in staat gesteld om de `foreach`-loop te kunnen abstraheren naar een nieuwe method. Laten we 'm `ToSomeType` noemen:
@@ -185,34 +230,7 @@ public void OneFooWithCorrespondingBar_WhenMappedToSomeType_ReturnsSomeTypeWithB
 ```
 
 
-Nu weet ik niet hoe het met jou zit, maar als ik moest kiezen tussen een complete database opzetten of wat objecten definiëren aan het begin van mijn test - nou, dan wist ik het wel! 
+Nu weet ik niet hoe het met jou zit, maar als ik moest kiezen tussen een complete database opzetten, uitgebreide mockingcode schrijven, of wat objecten definiëren aan het begin van mijn test - nou, dan wist ik het wel! 
 
 
-## Waarom scheiden we code niet?
-
-
-Ik kan me voorstellen dat ik lezers heb die denken: joh, dit zijn toch allemaal open deuren? En misschien hebben ze daar gelijk in - maar het aantal keren dat ik code heb kunnen verbeteren door het ophalen en manipuleren van data te scheiden, vertelt toch een ander verhaal. Misschien loont het zich om daarom kort te reflecteren op een aantal redenen waarom dit niet stevig verankerd is in het hoofd van elke ontwikkelaar.
-
-
-Een eerste mogelijkheid zou kunnen zijn: gebrek aan kennis. Misschien is niet elke ontwikkelaar zich even bewust van de problemen die schendingen van het SRP opleveren, verderop in de ontwikkelcyclus. Deze blog zou een bijdrage kunnen leveren aan een verhoging van het bewustzijn op dat gebied.
-
-
-Misschien is het ook: druk van buitenaf. Veel stakeholders van softwareprojecten zijn over het algemeen in de eerste instantie geïnteresseerd in nieuwe features. Voor codekwaliteit interesseren ze zich in mindere mate - en meestal pas als het te laat is. (Dat is overigens geen steek onder water naar stakeholders toe. Het is helemaal niet hun taak zich om codekwaliteit te bemoeien; dat is die van jou als ontwikkelaar!) Het is denkbaar dat ontwikkelaars de hete adem van stakeholders in hun nek voelen, en daarom genoegen nemen met code die werkt, in plaats van code die geweldig is opgezet. Lieg niet: ik geloof dat iedereen zich hier wel eens aan heeft bezondigt.
-
-
-## Mentale modellen
-
-
-Een derde mogelijkheid ontleen ik aan [Felienne Hermans](https://www.felienne.com/)' bespreking van [mentale modellen](https://en.wikipedia.org/wiki/Mental_model) in [*The Programmer's Brain*](https://www.felienne.com/). Misschien zien sommige ontwikkelaars het probleem van deze specifieke schending van het SRP niet, omdat hun mentale representatie van wat de code doet, dat niet toelaat.
-
-
-Kijk nog eens naar de code waar ik deze blog mee begon. Met welke analogie zou je die code kunnen beschrijven? Ik zou me een ontwikkelaar voor kunnen stellen, die het als volgt zou omschrijven: *Ik verzamel alle spullen in deze doos (*`repository.GetFoos()`*), en als ze van mij zijn (*`if (foo.SomeCondition)`*), dan pak ik een rode sticker uit die doos (*`repository.GetBars()`*) en plak die erop.* (En omdat ik mezelf nu eenmaal ben, stel ik me voor dat die ontwikkelaar in een pijnlijke scheiding ligt.)
-
-
-Wat impliceert die analogie over de code hierboven? Wie een doos doorzoekt, gaat niet eerst een keer alle spullen door om te kijken hoeveel rode stickers 'ie nodig heeft, om daarna nog een keer aan de gang te gaan om zijn spullen te beplakken. Het is in dat geval veel gemakkelijker om de rode sticker te pakken, zodra je één van je spullen tegenkomt.
-
-
-De crux zit 'm in het feit dat de ontwikkelaar denkt dat het ophalen van de `bars` een eenvoudige operatie is, net als het pakken van een rode sticker. Maar precies op dat punt wijkt het mentale model af van de werkelijkheid. 
-
-
-Want het ophalen van data uit een database is een relatief zware operatie, die beter gevangen wordt door de volgende analogie: *Ik verzamel alle spullen in deze doos, en als ze van mij zijn, dan ga ik naar de supermarkt om een rode sticker te halen en erop te plakken.* Een ontwikkelaar die zo redeneert, denkt wel twee keer na voordat 'ie data ophalen en data manipuleren met elkaar verknoopt!
+Daarom: scheid het ophalen van data van het manipuleren ervan. Je zal jezelf denkbaar zijn voor de moeite!

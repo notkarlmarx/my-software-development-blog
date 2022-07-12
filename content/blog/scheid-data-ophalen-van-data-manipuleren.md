@@ -94,7 +94,7 @@ Wellicht zijn deze overwegingen wat aan de theoretische kant. Ze bieden in elk g
 Een meer praktische leidraad is deze: code moet zodanig gescheiden worden, dat deze eenvoudig te testen is. Sterker nog, één van de belangrijkste redenen om het SRP te respecteren, is omdat dit makkelijk testbare code oplevert - makkelijker testbaar dan wanneer je het niet doet, in elk geval.
 
 
-Ga maar na. Stel, je zou het algoritme willen testen die `foos` en `bars` mapt naar `SomeType`, zoals geschetst in de code hierboven. Op dit moment kun je die code niet testen zonder gebruik te maken van de `repository` - wat dat ook moge zijn. Als dat een concrete implementatie is - *foei!* -, dan heb je een probleem. De code is dan namelijk niet in isolatie te testen. Het testen van het algoritme houdt automatisch ook het testen van de [Repository](https://dotnettutorials.net/lesson/repository-design-pattern-csharp/) in, en dat houdt het testen van de database in. 
+Ga maar na. Stel, je zou het algoritme willen testen die `foos` en `bars` mapt naar `SomeType`, zoals geschetst in de code hierboven. Op dit moment kun je die code niet testen zonder gebruik te maken van de `_repository` - wat dat ook moge zijn. Als dat een concrete implementatie is - *foei!* -, dan heb je een probleem. De code is dan namelijk niet in isolatie te testen. Het testen van het algoritme houdt automatisch ook het testen van de [Repository](https://dotnettutorials.net/lesson/repository-design-pattern-csharp/) in, en dat houdt het testen van de database in. 
 
 
 Denk je eens in wat er allemaal voor nodig is om die tests aan de gang te krijgen! Je moet een database opzetten en inrichten en deze vullen met testdata, en dat allemaal vóórdat je kunt beginnen aan dat waar het je eigenlijk om gaat: het algoritme testen. Bovendien zal het je tests erg langzaam maken, waardoor je ontwikkelcyclus vertraagd zal worden. Elke keer als je de tests aftrapt, zul je even moeten wachten, wat je als ontwikkelaar uit je *flow* haalt, en je productiviteit vermindert.
@@ -103,7 +103,7 @@ Denk je eens in wat er allemaal voor nodig is om die tests aan de gang te krijge
 ## Testbaarheid (2)
 
 
-Als `repository` een interface is, kom je er een stuk makkelijker vanaf. Maar dan nog zul je een mock moeten specificeren die *the real deal* simuleert - en ook dat is niet niks. Je zal een mocking library zoals [*Moq*](https://moq.github.io/moq4/) of [*FakeItEasy*](https://fakeiteasy.github.io/) moeten gebruiken, en voor elke test moeten specificeren welk gedrag je van je gemockte `repository` verwacht. (Over de nadelen van mocks schreef ik al eerder, [hier](/blog/22/02/de-leercurve-van-angulartests-beklimmen-deel-3/).)
+Als `_repository` een interface is, kom je er een stuk makkelijker vanaf. Maar dan nog zul je een mock moeten specificeren die *the real deal* simuleert - en ook dat is niet niks. Je zal een mocking library zoals [*Moq*](https://moq.github.io/moq4/) of [*FakeItEasy*](https://fakeiteasy.github.io/) moeten gebruiken, en voor elke test moeten specificeren welk gedrag je van je gemockte `_repository` verwacht. (Over de nadelen van mocks schreef ik al eerder, [hier](/blog/22/02/de-leercurve-van-angulartests-beklimmen-deel-3/).)
 
 
 Een test zou er met wat hulp van *FakeItEasy* bijvoorbeeld zou uit kunnen komen te zien:
@@ -130,8 +130,8 @@ public void OneFooWithCorrespondingBar_WhenMappedToSomeType_ReturnsSomeTypeWithB
     var sut = new MappingClass(repo);
 
     // Act
-    // Assume code aboves lives in method calld ToSomeType
-    var someType = sut.ToSomeType(foos, bars).First();
+    // Assume code aboves lives in method calld Map
+    var someType = sut.Map(foos, bars).First();
 
     // Assert
     Assert.IsNotNull(someType.Prop3);

@@ -108,7 +108,7 @@ We weten dat de code sowieso geen Execption op mag gooien, want daarmee zou deze
 Je zou deze beperking af kunnen proberen te vangen door gebruik te maken van het [*Null object*-patroon](https://en.wikipedia.org/wiki/Null_object_pattern).[^1] Dat is een ontwerppatroon waarbij er bij niet-gevonden waarden geen `null` terug wordt gegeven, maar een door de programmeur gedefinieerd `Resource`-object dat als "niet aanwezig" kan worden gedefinieerd door de caller van de functie.
 
 
-Maar, net als bij het aanpassen van de naam hierboven, lost dat het fundamentele probleem niet op. De `Resource` *an sich* is immers nog steeds nullable. Het probleem is in de praktijk misschien opgelost, maar in principe is het mogelijk om `null` terug te krijgen. De oneerlijkheid van de functie is maar één programmeerfout verwijderd. Oftewel: om zekerheid te kunnen verkrijgen, zul je alsnog de implementatie na moeten lopen. 
+Maar, net als bij het aanpassen van de naam hierboven, lost dat het fundamentele probleem niet op. De `Resource` *an sich* is immers nog steeds nullable - en er is niets wat een programmeur ervan weerhoudt om alsnog `null` terug te geven in plaats van een *Null object*. Om zeker te weten wat de code doet, zul je alsnog in de implementatie moeten duiken. Het *Null object*-patroon is - in de handen van een gedisciplineerd team! - misschien in staat om het probleem in de praktijk op te lossen, maar in principe is het mogelijk om `null` terug te krijgen. De oneerlijkheid van de functie is maar één programmeerfout verwijderd. 
 
 
 De implicatie hiervan is verstrekkend. Gegeven het feit dat classes in C# nullable zijn (sterker nog, ze hun *default*-waarde is `null`!) is een signatuur met een class erin *per definitie* oneerlijk.

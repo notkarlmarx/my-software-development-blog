@@ -7,7 +7,7 @@ draft: false
 <br/>
 
 
-Mijn naam is Karl van Heijster. Sinds 2017 ben ik werkzaam als softwareontwikkelaar. Ik ben te vinden op [LinkedIn](https://www.linkedin.com/in/karl-van-heijster-833503aa/) en [GitHub](https://github.com/dotkarl).
+Hoi! Mijn naam is Karl van Heijster. Sinds 2017 ben ik werkzaam als softwareontwikkelaar. Ik ben te vinden op [LinkedIn](https://www.linkedin.com/in/karl-van-heijster-833503aa/) en [GitHub](https://github.com/dotkarl).
 
 
 Ik word enthousiast van continue en stapsgewijze verbetering. 

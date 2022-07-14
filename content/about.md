@@ -13,10 +13,10 @@ Mijn naam is Karl van Heijster. Sinds 2017 ben ik werkzaam als softwareontwikkel
 Ik word enthousiast van continue en stapsgewijze verbetering. 
 
 
-Dat geldt bijvoorbeeld voor de code die ik schrijf (en herschrijf!). Ik hou van schone code. Geen grap: ik krijg er oprecht warme gevoelens van. 
+Dat geldt bijvoorbeeld voor de code die ik schrijf (en herschrijf!). Ik hou van *clean code* - van het schrijven van unittests tot het hernoemen van variabelen. Geen grap: ik krijg er oprecht warme gevoelens van. 
 
 
-Maar het geldt ook voor het hele proces daaromheen. Denk aan het analyseren van de wensen en behoeften van gebruikers en opstellen van functionele eisen, of aan het verbreden en verdiepen van technische en domeinspecifieke kennis, of aan Scrum.
+Maar het geldt ook voor het hele proces om software ontwikkelen heen. Wat maakt een goede softwareontwikkelaar? Wat stelt een team in staat zo goed mogelijke oplossingen te programmeren? En hoe bewaak je de kwaliteit van die oplossing? Ik heb een fascinatie voor *code craftmanship* en de Agile filosofie, en een honger naar alles wat mijn collega's en mij helpt om meer waarde te leveren.
 
 
 Op deze blog houd ik twee keer per week enkele van mijn observaties over de softwareontwikkelpraktijk bij. 

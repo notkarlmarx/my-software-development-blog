@@ -23,36 +23,7 @@ Denk je bijvoorbeeld een scenario in waarin er een lijst met *resources* wordt o
 De volgende pseudocode geeft het idee aardig weer:
 
 
-```cs
-var result = new List<SomeType>();
-
-// Get resources
-var foos = _repository.GetFoos();
-
-foreach (var foo in foos)
-{
-    // Map resource to new type
-    var r = new SomeType 
-    {
-        Prop1 = foo.Prop1,
-        Prop2 = foo.Prop2
-    }
-
-    // In case of some condition...
-    if (foo.SomeCondition) 
-    {
-        // ...get some additional information...
-        var bars = _repository.GetBars(foo.BarId);
-
-        // ...and add it to the new type
-        r.Prop3 = bars;
-    }
-    result.Add(r);
-}
-
-// Further processing...
-
-```
+{{< gist dotkarl eb2b6cc84dd228200ecc277e88bfaded "GetAndMapSimultaneously.cs">}}
 
 
 Het hoeft niemand die de titel van deze blog heeft gelezen, te verbazen dat ik geen voorstander ben van dit soort code. Hiermee geconfronteerd, slaat mijn hart een slag over. De linkerhelft duikt teleurgesteld ineen om dit soort structuren, de rechterhelft springt een gat in de lucht omdat ik weer aan het refactoren slaan mag.
@@ -109,34 +80,7 @@ Als `_repository` een interface is, kom je er een stuk makkelijker vanaf. Maar d
 Een test zou er met wat hulp van *FakeItEasy* bijvoorbeeld zou uit kunnen komen te zien:
 
 
-```cs
-[TestMethod]
-public void OneFooWithCorrespondingBar_WhenMappedToSomeType_ReturnsSomeTypeWithBar()
-{
-    // Arrange
-    // Set up fake data
-    var foo = new Foo { BarId = 1 };
-    var bar = new Bar { Id = 1 };
-    var foos = new [] { foo };
-    var bars = new [] { bar };
-
-    // Set up fake Repository
-    var repo = A.Fake<IRepository>();
-    A.CallTo(() => repo.GetFoos().Returns(foos));
-    A.CallTo(() => repo.GetBars().Returns(bars));
-
-    // Assume code above lives in class called MappingClass
-    // Inject Repository in class
-    var sut = new MappingClass(repo);
-
-    // Act
-    // Assume code aboves lives in method calld Map
-    var someType = sut.Map(foos, bars).First();
-
-    // Assert
-    Assert.IsNotNull(someType.Prop3);
-}
-```
+{{< gist dotkarl eb2b6cc84dd228200ecc277e88bfaded "GetAndMapSimultaneouslyTest.cs">}}
 
 
 Die test werkt, maar is verre van ideaal, natuurlijk. Het gebruik van mocks maakt de test broos. Bovendien vraagt deze opzet veel van de lezer. Door alle code in het `Arrange`-gedeelte van de test, is het moeilijk om in één oogopslag te zien wat de test precies doet. Een overdaad aan *low level*-informatie vertroebelt de intentie van de test.
@@ -148,31 +92,7 @@ Die test werkt, maar is verre van ideaal, natuurlijk. Het gebruik van mocks maak
 Het goede nieuws is: je *hoeft* je verantwoordelijkheden niet met elkaar te verknopen. In de meeste gevallen is het vrij eenvoudig om het ophalen van data te scheiden van het manipuleren ervan. Maar het vraagt wel wat bewustzijn van je als ontwikkelaar. De bovenstaande code kan bijvoorbeeld worden omgeschreven naar iets als dit:
 
 
-```cs
-var foos = _repository.GetFoos();
-// Get bars for foos where SomeCondition applies,
-// based on the foo's BarId
-var bars = _repository.GetBars(
-    foos.Where(f => f.SomeCondition)
-        .Select(f => f.BarId));
-
-var result = new List<SomeType>();
-foreach (var foo in foos)
-{
-    // Map resource to new type
-    var r = new SomeType 
-    {
-        Prop1 = foo.Prop1,
-        Prop2 = foo.Prop2,
-        // If available, get some additional information
-        // and add it to the new type
-        Prop3 = bars.FirstOrDefault(b => b.Id == foo.BarId);
-    }
-    result.Add(r);
-}
-
-// Further processing...
-```
+{{< gist dotkarl eb2b6cc84dd228200ecc277e88bfaded "GetAndMapSeparated.cs">}}
 
 
 De code om de data op te halen, is nu helemaal losgetrokken van de mappingcode. En je ziet: de code is er meteen een stuk eenvoudiger op geworden ook! De check op `SomeCondition` is uit het algoritme verdwenen, bijvoorbeeld. Dat komt doordat deze in wezen gekoppeld was aan de vraag of we de data op moesten halen of niet. Het `if`-statement kon worden omgeschreven naar een `Where`-clausule. 
@@ -187,47 +107,13 @@ Hierdoor hoeven we in het algoritme zelf alleen maar de corresponderende `bar` i
 Maar de voordelen eindigen nog niet daar. Onze aanvankelijke refactorslag heeft ons in staat gesteld om de `foreach`-loop te kunnen abstraheren naar een nieuwe method. Laten we 'm `ToSomeType` noemen:
 
 
-```cs
-public static IEnumerable<SomeType> ToSomeType(IEnumerable<Foo> foos, IEnumerable<Bar> bars)
-{
-    foreach (var foo in foos)
-    {
-        // Map resource to new type
-        var r = new SomeType 
-        {
-            Prop1 = foo.Prop1,
-            Prop2 = foo.Prop2
-        }
-
-        // If available, get some additional information
-        // and add it to the new type
-        r.Prop3 = bars.FirstOrDefault(b => b.Id == foo.BarId);
-        yield return r;
-    }
-}
-```
+{{< gist dotkarl eb2b6cc84dd228200ecc277e88bfaded "Map.cs">}}
 
 
 Het mooie is nu: deze method valt in isolatie te testen. Het enige wat je moet doen, is wat `foos` en wat `bars` specificeren in je test, en deze meegeven aan die nieuwe method. De volgende test geeft een indruk:
 
 
-```cs
-[TestMethod]
-public void OneFooWithCorrespondingBar_WhenMappedToSomeType_ReturnsSomeTypeWithBar()
-{
-    // Arrange
-    var foo = new Foo { BarId = 1 };
-    var bar = new Bar { Id = 1 };
-    var foos = new [] { foo };
-    var bars = new [] { bar };
-
-    // Act
-    var someType = ToSomeType(foos, bars).First();
-
-    // Assert
-    Assert.IsNotNull(someType.Prop3);
-}
-```
+{{< gist dotkarl eb2b6cc84dd228200ecc277e88bfaded "GetAndMapSeparatedTest.cs">}}
 
 
 Nu weet ik niet hoe het met jou zit, maar als ik moest kiezen tussen een complete database opzetten, uitgebreide mockingcode schrijven, of wat objecten definiëren aan het begin van mijn test - nou, dan wist ik het wel! 

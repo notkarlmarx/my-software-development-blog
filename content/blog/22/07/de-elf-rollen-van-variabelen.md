@@ -1,10 +1,10 @@
 ---
 title: "De elf rollen van variabelen"
 author: "Karl van Heijster"
-date: 2022-06-17T07:39:28+02:00
-draft: true
+date: 2022-07-18T07:48:43+02:00
+draft: false
 comments: true
-tags: ["boeken", "clean code", "code reviews", "intentie van code", "ontwerppatronen", "variabelen"]
+tags: ["boeken", "clean code", "intentie van code", "ontwerppatronen", "variabelen"]
 summary: "Pas wanneer de vanzelfsprekendheid van code in het geding komt, gaan we nadenken - écht nadenken - over wat er op je scherm staat en waarom. Pas dan wordt de vraag \"Wat doet deze variabele hier precies?\" relevant. Goed, vraag jezelf nu eens af: als dat moment komt, hoe beschrijf je de rol van een variabele dan? - Heb je enig idee waar je moet beginnen bij het beantwoorden van die vraag?"
 ---
 
@@ -29,7 +29,7 @@ Misschien wel, misschien niet. Ik vermoed dat als ik twintig ontwikkelaars om ee
 ## Generiek, specifiek
 
 
-Waarom? Als we het over variabelen hebben, dan hebben we het daar ofwel in extreem generieke termen over, ofwel in extreem specifieke. We spreken ofwel van [*fields*](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/fields) of [*variabelen*](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/variables) of het datatype: `string`, `integer` etc., ofwel van `nrOfRecords`, `validationResult`, `customerAddress` etc..
+Waarom? Als we het over variabelen hebben, dan hebben we het daar ofwel in extreem generieke termen over, ofwel in extreem specifieke. We spreken ofwel van [*fields*](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/fields) of [*variables*](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/variables) of het datatype: `string`, `integer` etc., ofwel van `nrOfRecords`, `validationResult`, `customerAddress` etc..
 
 
 Maar "Het is een *method scoped* variabele" is natuurlijk geen antwoord op de vraag welke rol die variabele speelt. En hetzelfde geldt voor "Dat is het `validationResult`". Dat is wat er staat, inderdaad, maar *waarom* staat het daar? - Het staat elke ontwikkelaar vrij om op geheel eigen wijze die vraag te beantwoorden.
@@ -44,27 +44,27 @@ In [*The Programmer's Brain*](https://www.manning.com/books/the-programmers-brai
 Die luiden als volgt[^1]:
 
 
-- *Fixed value*. Een variabele wiens waarde niet meer verandert na initialisatie. Je kunt hierbij denken aan velden die het [`const`-keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/const) in C# gebruiken of een [`ReadOnlyList`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.sqlserver.management.sdk.sfc.readonlylist-1?view=sql-smo-160), maar het kan ook gaan om "gewone" variabelen die bij wijze van spreken "toevallig" niet meer gewijzigd worden in de code. 
+- **Fixed value**. Een variabele wiens waarde niet meer verandert na initialisatie. Je kunt hierbij denken aan velden die het [`const`-keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/const) in C# gebruiken of een [`ReadOnlyList`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.sqlserver.management.sdk.sfc.readonlylist-1?view=sql-smo-160), maar het kan ook gaan om "gewone" variabelen die bij wijze van spreken "toevallig" niet meer gewijzigd worden in de code. 
 
-- *Stepper*. De waarde die je gebruikt om over een lijst te itereren. Het standaardvoorbeeld is de `i` in een [for-loop](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements#the-for-statement). Maar er bestaan ook gecompliceerder *steppers*, zoals `size = size / 2` in een [*binary search*-algoritme](https://nl.wikipedia.org/wiki/Bisectie). 
+- **Stepper**. De waarde die je gebruikt om over een lijst te itereren. Het standaardvoorbeeld is de `i` in een [for-loop](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements#the-for-statement). Maar er bestaan ook gecompliceerder *steppers*, zoals `size = size / 2` in een [*binary search*-algoritme](https://nl.wikipedia.org/wiki/Bisectie). 
 
-- *Flag*. Een variabele die aangeeft dat er iets gebeurd is of het geval is, zoals `hasErrors` of `isDownloaded`. Meestal zijn dit booleans, maar dat hoeft niet per se. Het kunnen ook integers zijn of datums.
+- **Flag**. Een variabele die aangeeft dat er iets gebeurd is of het geval is, zoals `hasErrors` of `isDownloaded`. Meestal zijn dit booleans, maar dat hoeft niet per se. Het kunnen ook integers zijn of datums.
 
-- *Walker*. Een *walker* "loopt" een datastructuur "door" en is in die zin vergelijkbaar met een *stepper*. Het verschil zit 'm in de soorten datastructuren. Een *stepper* itereert altijd over een lijst met waarden die op voorhand bekend is. Een *walker* houdt zich daarentegen met op voorhand onbekende waarden bezig. Een voorbeeld is het doorlopen van een [gelinkte lijst](https://nl.wikipedia.org/wiki/Gelinkte_lijst) om de positie te vinden waar een nieuw element ingevoerd moet worden.
+- **Walker**. Een *walker* "loopt" een datastructuur "door" en is in die zin vergelijkbaar met een *stepper*. Het verschil zit 'm in de soorten datastructuren. Een *stepper* itereert altijd over een lijst met waarden die op voorhand bekend is. Een *walker* houdt zich daarentegen met op voorhand onbekende waarden bezig. Een voorbeeld is het doorlopen van een [gelinkte lijst](https://nl.wikipedia.org/wiki/Gelinkte_lijst) om de positie te vinden waar een nieuw element ingevoerd moet worden.
 
-- *Most recent holder*. Een variabele die de laatste in een reeks waarden "vasthoudt". Een voorbeeld is een kopie van het laatste element die door een *stepper* wordt ontsloten: `element = list[i]`. 
+- **Most recent holder**. Een variabele die de laatste in een reeks waarden "vasthoudt". Een voorbeeld is een kopie van het laatste element die door een *stepper* wordt ontsloten: `element = list[i]`. 
 
-- *Most wanted holder*. Vaak ben je op zoek naar een bepaalde waarde, wanneer je een lijst doorloopt. Wanneer je die vindt, bewaar je die in een *most wanted holder*. Standaardvoorbeelden zijn de laagste waarde, de hoogste waarde, of de eerste die aan een bepaalde conditie doet. Een *most wanted holder* kan zowel het eindresultaat zijn van die zoektocht, of de beste match die je tot nu toe hebt gevonden.
+- **Most wanted holder**. Vaak ben je op zoek naar een bepaalde waarde, wanneer je een lijst doorloopt. Wanneer je die vindt, bewaar je die in een *most wanted holder*. Standaardvoorbeelden zijn de laagste waarde, de hoogste waarde, of de eerste die aan een bepaalde conditie doet. Een *most wanted holder* kan zowel het eindresultaat zijn van die zoektocht, of de beste match die je tot nu toe hebt gevonden.
 
-- *Gatherer*. Een variabele die data verzamelt en aggregeert tot één waarde. Denk bijvoorbeeld aan het totaal aantal werkuren in een lijst met alle werkuren die je deze week hebt bijgehouden.
+- **Gatherer**. Een variabele die data verzamelt en aggregeert tot één waarde. Denk bijvoorbeeld aan het totaal aantal werkuren in een lijst met alle werkuren die je deze week hebt bijgehouden.
 
-- *Container*. Een datastructuur die verschillende elementen vasthoudt. De elementen kunnen worden toegevoegd en verwijderd. Denk aan [lijsten](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-6.0), [arrays](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/), [stacks](https://docs.microsoft.com/en-us/dotnet/api/system.collections.stack?view=net-6.0) etc..
+- **Container**. Een datastructuur die verschillende elementen vasthoudt. De elementen kunnen worden toegevoegd en verwijderd. Denk aan [lijsten](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-6.0), [arrays](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/), [stacks](https://docs.microsoft.com/en-us/dotnet/api/system.collections.stack?view=net-6.0) etc..
 
-- *Follower*. Voor sommige algoritmen is het noodzakelijk om bij te houden wat de vorige (of volgende) waarde was (of zal zijn). Een *follower* is dus altijd gekoppeld aan een andere waarde. Denk aan de pointer die wijst naar de vorige waarde in een gelinkte lijst. 
+- **Follower**. Voor sommige algoritmen is het noodzakelijk om bij te houden wat de vorige (of volgende) waarde was (of zal zijn). Een *follower* is dus altijd gekoppeld aan een andere waarde. Denk aan de pointer die wijst naar de vorige waarde in een gelinkte lijst. 
 
-- *Organizer*. Een getransformeerde versie van een andere variabele om deze verder te kunnen verwerken. Denk aan een gesorteerde lijst. 
+- **Organizer**. Een getransformeerde versie van een andere variabele om deze verder te kunnen verwerken. Denk aan een gesorteerde lijst. 
 
-- *Temporary*. Een tijdelijke variabele die veelal voor de leesbaarheid wordt geïntroduceerd. Denk aan het resultaat van een berekening dat verderop meermaals in de code wordt gebruikt, of een variabele die wordt geïntroduceerd om data om te kunnen wisselen. Veelal heten deze variabelen ook `t` of `temp`.
+- **Temporary**. Een tijdelijke variabele die veelal voor de leesbaarheid wordt geïntroduceerd. Denk aan het resultaat van een berekening dat verderop meermaals in de code wordt gebruikt, of een variabele die wordt geïntroduceerd om data om te kunnen wisselen. Veelal heten deze variabelen ook `t` of `temp`.
 
 
 ## Gedeelde taal

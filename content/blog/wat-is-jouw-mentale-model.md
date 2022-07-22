@@ -47,7 +47,7 @@ Lieg niet: ik geloof dat iedereen zich hier wel eens aan heeft bezondigt. Eén v
 ## Mentale modellen
 
 
-Een derde mogelijkheid ontleen ik aan [Felienne Hermans](https://www.felienne.com/)' bespreking van [mentale modellen](https://en.wikipedia.org/wiki/Mental_model) in [*The Programmer's Brain*](https://www.felienne.com/). Misschien zien sommige ontwikkelaars het probleem van deze specifieke schending van het SRP niet, omdat hun mentale representatie van wat de code doet, dat niet toelaat.
+Een derde mogelijkheid ontleen ik aan [Felienne Hermans](https://www.felienne.com/)' bespreking van [mentale modellen](https://en.wikipedia.org/wiki/Mental_model) in [*The Programmer's Brain*](https://www.manning.com/books/the-programmers-brain). Misschien zien sommige ontwikkelaars het probleem van deze specifieke schending van het SRP niet, omdat hun mentale representatie van wat de code doet, dat niet toelaat.
 
 
 Hermans' hanteert de volgende definitie van mentale modellen: een mentaal model creëert een abstractie in je [werkgeheugen](https://en.wikipedia.org/wiki/Working_memory) dat je kunt gebruiken in je redenering over een bepaald probleem. Wanneer we werken met het bestandsysteem van een computer, denken we bijvoorbeeld aan een groep bestanden een map. Maar in het echt is er natuurlijk geen sprake van bestanden en mappen die op een harde schijf zijn opgeslagen. Het mentale model van bestanden-in-mappen is een handige fictie die we kunnen gebruiken wanneer we ons afvragen waar we een bepaald bestand ook alweer hebben opgeslagen.

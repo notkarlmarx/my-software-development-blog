@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2022-07-22T07:43:44+02:00
 draft: false
 comments: true
-tags: ["coachen", "succes"]
+tags: ["coaching", "succes"]
 summary: "Onlangs mocht ik voor het eerst in lange tijd mijn CV weer eens updaten. Ik heb namelijk met succes een cursus coachend begeleiden op Hogeschool Windesheim afgerond. Mijn dank daarvoor gaat in eerste instantie uit naar cursusleidster Herma Ronda en mijn medecursisten, wier enthousiasme me inspireerde om op een heel andere manier naar mijn eigen communcatie te kijken. Daarnaast ben ik dank verschuldigd aan mijn collega's en schoonzus, die zo dapper waren om - op video nota bene! - een coachingstraject met mij in te gaan. Dus: dank, dank, duizendmaal dank! Ter afsluiting van dit hoofdstuk, citeer ik voor deze blog vrijelijk enkele punten uit mijn reflectieverslag."
 ---
 

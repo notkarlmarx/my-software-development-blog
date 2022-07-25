@@ -1,8 +1,8 @@
 ---
 title: "Programmeren op de beat - Vol. 2"
 author: "Karl van Heijster"
-date: 2022-06-10T08:13:28+02:00
-draft: true
+date: 2022-07-25T07:59:55+02:00
+draft: false
 comments: true
 tags: ["muziek"]
 summary: "Eens per jaar verandert mijn blog over softwareontwikkeling in een schaamteloze gelegenheid voor mij om over muziek te praten - en vandaag is die dag! Deze keer: met video's van liedjes die een link hebben naar mijn vakgebied, hihi!"

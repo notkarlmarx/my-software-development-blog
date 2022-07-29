@@ -5,7 +5,7 @@ date: 2022-07-29T08:38:29+02:00
 draft: true
 comments: true
 tags: ["communicatie", "documentatie", "samenwerking", "software ontwikkelen", "testen"]
-summary: "Ik ken geen enkele ontwikkelaar die het leuk vindt om documentatie te schrijven - ik ook niet - en dat is omdat goede documentatie schrijven *moeilijk* is. Het is moeilijk, omdat je je vanuit een positie van iemand die snapt hoe iets werkt, je in moet leven in iemand die dat begrip nog niet heeft. Mijn belofte "even" documentatie te schrijven werd daarom al gauw "een uur" documentatie schrijven. Maar het resultaat is volgens mij wel de moeite waard, dus laten we er even (...toch?) naar kijken."
+summary: "Ik ken geen enkele ontwikkelaar die het leuk vindt om documentatie te schrijven - ik ook niet - en dat is omdat goede documentatie schrijven *moeilijk* is. Het is moeilijk, omdat je je vanuit een positie van iemand die snapt hoe iets werkt, je in moet leven in iemand die dat begrip nog niet heeft. Mijn belofte \"even\" documentatie te schrijven werd daarom al gauw \"een uur\" documentatie schrijven. Maar het resultaat is volgens mij wel de moeite waard, dus laten we er even (...toch?) naar kijken."
 ---
 
 Ik ken geen enkele ontwikkelaar die het leuk vindt om documentatie te schrijven. - Dat is waarschijnlijk de reden waarom ontwikkelaars zo graag zeggen: goede code documenteert zichzelf. Dat is het ultieme excuus om je alleen maar te hoeven focussen op de onderdelen van je werk die je wél leuk vindt, namelijk: code schrijven.
@@ -47,16 +47,16 @@ Ik ken geen enkele ontwikkelaar die het leuk vindt om documentatie te schrijven 
 Maar het resultaat is volgens mij wel de moeite waard, dus laten we er even (...toch?) naar kijken.
 
 
-> # Instructions on how to use Verify to test PDF generation
+> ### Instructions on how to use Verify to test PDF generation
 > 
 > 
-> ## TL;DR
+> #### TL;DR
 > 
 > 
 > Make sure this folder contains a file named `{testClass}.{testName}.received.png` and a file named `{testClass}.{testName}.received.txt` in order to make your tests pass. These files specify what correct PDF should look like for each test.
 > 
 > 
-> ## On Verify
+> #### On Verify
 > 
 > 
 > The unit tests in this folder use [Verify](https://github.com/VerifyTests/Verify) to assert the correct generation of PDF AssessmentTests. It also uses some code, based on [Verify.QuestPDF](https://github.com/VerifyTests/Verify.QuestPDF)[^1], to verify the contents of your newly generated PDFs. The code for this functionality can be found in the subfolder named [VerifyQuestPDF](/VerifyQuestPDF).
@@ -65,7 +65,7 @@ Maar het resultaat is volgens mij wel de moeite waard, dus laten we er even (...
 > Verify is a library that requires you to specify what the correct result looks like in a very specific way. It assumes the existence of some files, and will compare the output of each unit test to those files.
 > 
 > 
-> ## Test outputs
+> #### Test outputs
 > 
 > 
 > Each Verify test produces (at least) two files in the same folder as the test:
@@ -82,7 +82,7 @@ Maar het resultaat is volgens mij wel de moeite waard, dus laten we er even (...
 > The files will be compared to a files named `{testClass}.{testName}.verified.png` and `{testClass}.{testName}.verified.txt` respectively, which are assumed to live in the same folder.
 > 
 > 
-> ## How Verify determines whether you tests should pass
+> #### How Verify determines whether you tests should pass
 >
 >  
 > If you write a new test, it will fail for two reasons. 
@@ -93,7 +93,7 @@ Maar het resultaat is volgens mij wel de moeite waard, dus laten we er even (...
 > 2. Verify will compare the textual output of your test with a file named `{testClass}.{testName}.verified.txt`. By default, Verify will generate an empty document with this name. This will by definition not match the outcome of the test, since in your test you've generated a PDF, thus resulting in a failing test.
 >  
 > 
-> ## How to make your test(s) pass
+> #### How to make your test(s) pass
 > 
 > 
 > In order to make your test pass, you will have to specify what a succesfull outcome should look like for both files.

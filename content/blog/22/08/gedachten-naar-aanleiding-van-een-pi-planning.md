@@ -5,10 +5,10 @@ date: 2022-08-01T10:57:36+02:00
 draft: false
 comments: true
 tags: ["agile ontwikkeling", "bedrijfscultuur", "communicatie", "procesverbetering", "program increment-planning", "scaled agile framework (SAFe)", "scrum", "vergaderen"]
-summary: "Ik had onlangs het geluk aanwezig te mogen zijn bij een Program Increment-planning - kortweg: PI-planning. Het was de tweede die mijn werkgever ooit organiseerde, en de eerste waar ontwikkelaars bij aanschoven. Het was een hele ervaring. En ik zal in het vervolg kort reflecteren op die ervaring."
+summary: "Ik had onlangs het geluk aanwezig te mogen zijn bij een Program Increment-planning - kortweg: PI-planning. Het was de tweede die mijn werkgever ooit organiseerde, en de eerste waar ontwikkelaars bij aanschoven. Het was een hele ervaring. En ik zal in wat volgt kort reflecteren op die ervaring."
 ---
 
-Ik had onlangs het geluk aanwezig te mogen zijn bij een [Program Increment-planning](https://www.scaledagileframework.com/pi-planning/) - kortweg: PI-planning. Het was de tweede die mijn werkgever ooit organiseerde, en de eerste waar ontwikkelaars bij aanschoven. Het was een hele ervaring. En ik zal in het vervolg kort reflecteren op die ervaring.
+Ik had onlangs het geluk aanwezig te mogen zijn bij een [Program Increment-planning](https://www.scaledagileframework.com/pi-planning/) - kortweg: PI-planning. Het was de tweede die mijn werkgever ooit organiseerde, en de eerste waar ontwikkelaars bij aanschoven. Het was een hele ervaring. En ik zal in wat volgt kort reflecteren op die ervaring.
 
 
 Dit is een goed moment om een *disclaimer* in te bouwen, denk ik. Want ik pretendeer absoluut niet de waarheid van deze sessie te vangen of verkondigen! Als de ervaring (en het lezen van [Voskuils](https://nl.wikipedia.org/wiki/J.J._Voskuil_(schrijver)) [*Het Bureau*](https://nl.wikipedia.org/wiki/Het_Bureau)) me één ding geleerd heeft, dan is het wel dat iedereen zijn eigen perspectief heeft op wat er gebeurt op een kantoor, en dat die perspectieven elkaar diametraal kunnen tegenspreken. 

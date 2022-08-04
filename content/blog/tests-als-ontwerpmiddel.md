@@ -23,7 +23,7 @@ Maar ik ga het niet alléén over TDD hebben. Ook tests die *after the fact* zij
 ## Twee assen, vier kwadranten
 
 
-Dat kan ik uitleggen aan de hand van een concept dat ik al eens eerder heb behandeld ([hier](/blog/21/08/moet-je-dit-willen-testen/)). Stel je twee assen voor: de verticale geeft de algoritmische complexiteit en domeinsignificantie aan, de horizontale de complexiteit van de code, gemeten in het aantal classes waarmee de code interacteert. Alle in je codebase valt aan de hand van die assen in vier kwadranten te plotten:
+Dat kan ik uitleggen aan de hand van een concept dat ik al eens eerder heb behandeld ([hier](/blog/21/08/moet-je-dit-willen-testen/)). Stel je twee assen voor[^1]: de verticale geeft de algoritmische complexiteit en domeinsignificantie aan, de horizontale de complexiteit van de code, gemeten in het aantal classes waarmee de code interacteert. Alle in je codebase valt aan de hand van die assen in vier kwadranten te plotten:
 
 
 |                                |                             |                             |
@@ -73,7 +73,7 @@ De complexe tests waren een signaal: deze code is niet goed ontworpen, hij schen
 Andersom werkt het ook: als tests zich haast vanzelfsprekend laten schrijven, dan is dat een teken dat de code goed is opgezet. Ook testcode can *clean* zijn - in de zin dat ze het [*principle of least surprise*](https://en.wikipedia.org/wiki/Principle_of_least_astonishment) respecteren. En ironisch genoeg houden ze de productiecode daar net zo *clean* mee.
 
 
-## Het bruggetje[^1]
+## Het bruggetje[^2]
 
 
 En dan kom ik toch bij TDD uit. Want wat is de eenvoudigste manier om vanzelfsprekende tests te schrijven? - Door eerst een test te schrijven, en dan de implementatie. Dan weer een test, dan weer wat implementatie.
@@ -123,7 +123,7 @@ De uitkomst van dat denkproces leg je vast in een test. Een zo simpel mogelijke 
 Je weet hoe die tests eruitzien. Het is een unittest voor domeinobjecten, het is een integratietest voor controllers.
 
 
-\- En je implementatie van die test is zo simpel mogelijk. - Je schrijft geen overgecompliceerde code - want je let op.[^2] Daar hebben de tests je toe gedwongen. Je schrijft pas nieuwe functionaliteit nadat je een nieuwe test hebt geschreven. Zo lang dat niet het geval is, refactor je.
+\- En je implementatie van die test is zo simpel mogelijk. - Je schrijft geen overgecompliceerde code - want je let op.[^3] Daar hebben de tests je toe gedwongen. Je schrijft pas nieuwe functionaliteit nadat je een nieuwe test hebt geschreven. Zo lang dat niet het geval is, refactor je.
 
 
 
@@ -144,7 +144,8 @@ Het belang van grondig geteste, goed ontworpen code is moeilijk te overschatten.
 
 Een ontwikkelaar die op de toekomst voorbereid wil zijn, kan TDD maar beter omarmen - en de kracht van tests als ontwerpmiddel ten volle benutten.
 
+[^1]: De volgende ideeën ontleen ik aan [Vladimir Khorikovs](https://enterprisecraftsmanship.com/) [*Unit Testing: Principles, Practices, and Patterns*](https://www.manning.com/books/unit-testing), een [aanrader](/blog/21/12/de-beste-boeken-over-software-ontwikkeling-die-ik-in-2021-las/)!
 
-[^1]: *[Of: de rotonde - Red.]*
+[^2]: *[Of: de rotonde - Red.]*
 
-[^2]: *[Wat is dit, is dit zo'n gedicht van je? - Red.]* - [Misschien, ooit - Karl.]
+[^3]: *[Wat is dit, is dit zo'n gedicht van je? - Red.]* - [Misschien, ooit - Karl.]

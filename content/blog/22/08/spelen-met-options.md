@@ -1,21 +1,20 @@
 ---
 title: "Spelen met Options"
 author: "Karl van Heijster"
-date: 2022-07-01T11:26:52+02:00
-draft: true
+date: 2022-08-05T10:42:07+02:00
+draft: false
 comments: true
 tags: ["functioneel programmeren", "intentie van code", "leermoment", "options"]
 summary: "Options vormen de brug tussen totale en gedeeltelijke functies. Het is een type dat de eigenlijke *return value* van een functie wrapt. In het geval dat de mapping zinvol is, dan geeft de functie een Option terug met daarin de gezochte waarde. En als de mapping dat niet is, dan geeft deze een Option terug zónder die waarde. Wat het resultaat dus ook is, één ding weet je zeker: je krijgt een Option terug. De functie is altijd eerlijk."
 ---
 
-Eerder schreef ik over [eerlijke functies en hoe Options daar een rol in kan spelen] (LINK). Daar wil ik vandaag wat dieper op in gaan.
+Eerder schreef ik over [eerlijke functies en hoe Options daar een rol in kunnen spelen](/blog/22/07/wat-zijn-eerlijke-functies/). Daar wil ik vandaag wat dieper op in gaan.
 
 
 ## Totale en gedeeltelijke functies
 
 
-Wat zijn Options? Daarvoor moet je eerst wat weten over functies. Je kunt functies opvatten als datgene wat de waarden uit domein A mapt naar de waarden uit domein B. Stel, je hebt
-een domein A met daarin alle kleine letters van het alfabet, en een domein B met daarin alle hoofdletters. De functie `ToUpper` mapt dan elke letter één op één van domein A naar domein B. 
+Wat zijn [Options](https://en.wikipedia.org/wiki/Option_type)? Daarvoor moet je eerst wat weten over functies. Je kunt functies opvatten als datgene wat de waarden uit domein A mapt naar de waarden uit domein B. Stel, je hebt een domein A met daarin alle kleine letters van het alfabet, en een domein B met daarin alle hoofdletters. De functie `ToUpper` mapt dan elke letter één op één van domein A naar domein B. 
 
 
 Dit is een voorbeeld van een *totale functie*. Een totale functie mapt elk element in een domein naar een element in een ander domein.
@@ -30,10 +29,10 @@ Dit is een voorbeeld van een *gedeeltelijke functie*. Een gedeeltelijke functie 
 ## Options als brug
 
 
-Je zou kunnen zeggen: als die mapping niet zinvol kan worden gedefinieerd, dan gooi je een Exception op, of je geeft `null` terug. Maar, zoals ik in [mijn eerdere blog] (LINK) uiteenzette, breng je daarmee wel een offer. Je maakt het gros van je functies daarmee per definitie oneerlijk. Als we voor één van deze twee opties kiezen (*no pun intended*) zeggen we daarmee eigenlijk: jammer joh, maar eerlijkheid is voor gedeeltelijke functies niet weggelegd.
+Je zou kunnen zeggen: als die mapping niet zinvol kan worden gedefinieerd, dan gooi je een Exception op, of je geeft `null` terug. Maar, zoals ik in [mijn eerdere blog](/blog/22/07/wat-zijn-eerlijke-functies/) uiteenzette, breng je daarmee wel een offer. Je maakt het gros van je functies daarmee per definitie oneerlijk. Als we voor één van deze twee opties kiezen (*no pun intended*) zeggen we daarmee eigenlijk: jammer joh, maar eerlijkheid is voor gedeeltelijke functies niet weggelegd.
 
 
-Dat is voor een taal als C# - waar iets als een eerlijke functie allesbehalve een gemeenplaats is - misschien een acceptabele oplossing. Maar voor een functionele taal geldt dat natuurlijk niet. Het hoeft niet te verbazen dat dat soort talen een constructie hebben verzonnen om op een eerlijke manier met gedeeltelijke functies om te kunnen gaan. En daar komen Options dus om de hoek kijken.
+Dat is voor een taal als [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) - waar iets als een eerlijke functie allesbehalve een gemeenplaats is - misschien een acceptabele oplossing. Maar voor een functionele taal geldt dat natuurlijk niet. Het hoeft niet te verbazen dat dat soort talen een constructie hebben verzonnen om op een eerlijke manier met gedeeltelijke functies om te kunnen gaan. En daar komen Options dus om de hoek kijken.
 
 
 Options vormen de brug tussen totale en gedeeltelijke functies. Het is een type dat de eigenlijke *return value* van een functie wrapt. In het geval dat de mapping zinvol is, dan geeft de functie een Option terug met daarin de gezochte waarde. En als de mapping dat niet is, dan geeft deze een Option terug zónder die waarde. Wat het resultaat dus ook is, één ding weet je zeker: je krijgt een Option terug. De functie is altijd eerlijk.
@@ -48,7 +47,7 @@ Natuurlijk is de afhandeling van een lege waarde (in de functionele literatuur *
 Je zou een Option daarom kunnen zien als een expliciete `null`-check. Als je een Option terugkrijgt *moet* je twee condities afhandelen. Vergelijk dat eens met de normale gang van zaken als je in C# programmeert. Hoe vaak heb je niet een `null`-check ingebouwd nádat er een vervelende bug op de productieomgeving omhoog kwam borrelen?[^1] - En hoe gerustgesteld was je na zo'n fix dat precies dezelfde `NullReferenceException` niet op een andere plek op zou borrelen?
 
 
-Options kunnen hier een uitweg bieden. Laten we daarom kijken wat we er in onze code mee aan kunnen vangen.
+Options kunnen hier een uitweg bieden. 
 
 
 ## Waar haal je Options vandaan?
@@ -63,10 +62,10 @@ Het concept van een Option komt uit de wereld van de functionele programmeertale
 Voor de oefening is het natuurlijk heel leuk om eigenhandig de functionaliteit rondom Options uit te schrijven, maar in een productieomgeving is die keuze niet verdedigbaar. Het is als softwareontwikkelaar niet per se je taak om code te schrijven. Het is je taak om met code - en niet per se jouw code! - problemen op te lossen. (Zie ook [deze blog](/blog/22/03/enums-switch-statements-en-solid-7/).) Of, in de taal van [strategische subdomeinen](/blog/22/06/de-ontdekking-van-strategische-subdomeinen/): Options behoren tot het generieke subdomein. Het is een probleem dat al voor jou is opgelost.
 
 
-Buonanno heeft een eenvoudige `Option` uitgeprogrammeerd die [hier](https://github.com/la-yumba/functional-csharp-code) te vinden is. Maar die code is bedoeld om de lezer van *Functional Programming in C#* vertrouwd te maken met functionele programmeerconcepten in C#, en is dus niet heel erg geschikt. 
+Buonanno heeft een eenvoudige `Option` uitgeprogrammeerd die [hier](https://github.com/la-yumba/functional-csharp-code) te vinden is. Maar die code is bedoeld om de lezer van *Functional Programming in C#* vertrouwd te maken met functionele programmeerconcepten in C#, en is dus niet geschikt om in een productieomgeving te gebruiken. 
 
 
-Een betere oplossing vinden we in het [LanguageExt](https://www.nuget.org/packages/LanguageExt.Core)-package, waarvan de broncode [hier](https://github.com/louthy/language-ext) te vinden is. (Dit is overigens dezelfde library als waar ik in mijn eerdere blog naar verwees via de [video](https://www.youtube.com/watch?v=OJjVvPINlYA) van [Nick Chapsas](https://nickchapsas.com/).) Dit project wordt op het moment van schrijven nog zeer regelmatig onderhouden en is daarom een goede keus voor een applicatie die daadwerkelijk productie draait.
+Een betere oplossing vinden we in het [LanguageExt](https://www.nuget.org/packages/LanguageExt.Core)-package, waarvan de broncode [hier](https://github.com/louthy/language-ext) te vinden is. (Dit is overigens dezelfde library als waar ik in [mijn eerdere blog](/blog/22/07/wat-zijn-eerlijke-functies/) naar verwees via de [video](https://www.youtube.com/watch?v=OJjVvPINlYA) van [Nick Chapsas](https://nickchapsas.com/).) Dit project wordt op het moment van schrijven nog zeer regelmatig onderhouden en is daarom een goede keus voor een applicatie die daadwerkelijk productie draait.
 
 
 ## Spelen met Options

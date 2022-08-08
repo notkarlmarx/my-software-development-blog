@@ -1,8 +1,8 @@
 ---
 title: "Scheid data ophalen van data manipuleren"
 author: "Karl van Heijster"
-date: 2022-07-04T15:15:25+02:00
-draft: true
+date: 2022-08-08T10:43:03+02:00
+draft: false
 comments: true
 tags: ["boeken", "clean code", "refactoren", "single-responsibility principe", "testbaarheid", "testen"]
 summary: "Het aantal refactoravonturen (met goede of slechte afloop) dat ik heb beleefd is, inmiddels al lang niet meer op één hand te tellen. In de loop der tijd is een terugkerend fenomeen me opgevallen: code waarin het ophalen van data niet wordt gescheiden van het manipuleren ervan. Laten we dat eens wat nader bekijken."
@@ -35,10 +35,10 @@ Het hoeft niemand die de titel van deze blog heeft gelezen, te verbazen dat ik g
 Maar laten we eerst een stapje terugzetten. Wat is het probleem van deze code?
 
 
-Code die verantwoordelijk is voor het ophalen én manipuleren van data, schendt het *Single-Responsibility Principe* (SRP). Die code kent namelijk twee verantwoordelijkheden: (1) data ophalen, en (2) data manipuleren. 
+Code die verantwoordelijk is voor het ophalen én manipuleren van data, schendt het [*Single-Responsibility Principe*](https://en.wikipedia.org/wiki/Single-responsibility_principle) (SRP). Die code kent namelijk twee verantwoordelijkheden: (1) data ophalen, en (2) data manipuleren. 
 
 
-Nu hoeft dat niet per se een probleem te zijn, zolang je de code nooit aan hoeft te passen. Maar wanneer dat wel gebeurt - en als je een verstokte refactorfanaat in je team hebt zoals ik, *gaat* het gebeuren -, leveren verknoopte verantwoordelijkheden allerlei moeilijkheden op. Het wordt bijvoorbeeld moeiijk om bepaalde functionaliteit naar aparte methods of classes te abstraheren. Die functionaliteit is immers verknoopt met andere verantwoordelijkheden. Een verhuizing zou betekenen: je verhuist ofwel alles, ofwel niets. Maar het hele idee van het abstraheren van bepaalde functionaliteit is nu eenmaal dat het om *bepaalde* functionaliteit gaat!
+Nu hoeft dat niet per se een probleem te zijn, zolang je de code nooit aan hoeft te passen. Maar wanneer dat wel gebeurt - en als je een verstokte refactorfanaat in je team hebt zoals ik, dan *gaat* het gebeuren -, leveren verknoopte verantwoordelijkheden allerlei moeilijkheden op. Het wordt bijvoorbeeld moeiijk om bepaalde functionaliteit naar aparte methods of classes te abstraheren. Die functionaliteit is immers verknoopt met andere verantwoordelijkheden. Een verhuizing zou betekenen: je verhuist ofwel alles, ofwel niets. Maar het hele idee van het abstraheren van bepaalde functionaliteit is nu eenmaal dat het om *bepaalde* functionaliteit gaat!
 
 
 Om dat soort moeilijkheden verderop in de ontwikkeling van je code base te voorkomen, loont het zich eigenlijk altijd om code zo goed mogelijk te structureren naar het SRP. Maar hoe ver moet je daar in gaan? Want die twee verantwoordelijkheden van de code hierboven kunnen natuurlijk weer uiteenvallen in meerdere deelverantwoordelijkheden. Het ophalen van data kan in de bovenstaande code bijvoorbeeld worden uitgesplitst naar (1a) het ophalen van de `foos` en (1b) het ophalen van de `bars`. En het manipuleren van de data kent ook meerdere stappen: (2a) een nieuw type declareren, (2b) de properties mappen die voor alle objecten gelden, (2c) checken of een bepaalde conditie standhoudt, en (2d) de properties mappen die bij die conditie horen. 
@@ -98,7 +98,7 @@ Het goede nieuws is: je *hoeft* je verantwoordelijkheden niet met elkaar te verk
 De code om de data op te halen, is nu helemaal losgetrokken van de mappingcode. En je ziet: de code is er meteen een stuk eenvoudiger op geworden ook! De check op `SomeCondition` is uit het algoritme verdwenen, bijvoorbeeld. Dat komt doordat deze in wezen gekoppeld was aan de vraag of we de data op moesten halen of niet. Het `if`-statement kon worden omgeschreven naar een `Where`-clausule. 
 
 
-Hierdoor hoeven we in het algoritme zelf alleen maar de corresponderende `bar` in de al opgehaalde lijst te vinden - of `null` terug te geven wanneer deze niet gevonden kan worden, en de property daarom effectief niet zetten.
+Hierdoor hoeven we in het algoritme zelf alleen maar de corresponderende `bar` in de al opgehaalde lijst te vinden - of `null` terug te geven wanneer deze niet gevonden kan worden, waarmee we de property effectief niet setten.
 
 
 ## Testbaarheid (3)

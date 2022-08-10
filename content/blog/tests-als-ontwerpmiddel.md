@@ -8,6 +8,15 @@ tags: ["clean code", "integratietests", "software architectuur", "test-driven de
 summary: "Tests zijn een ontwerpmiddel, een *design tool*. Ze fungeren als indicator voor de kwaliteit van het ontwerp van je code. De vuistregel is even eenvoudig als zag-het-niet-want-het-stond-recht-voor-mijn-neus-vanzelfsprekend: *Is het moeilijk om er een test voor te schrijven? Dan deugt het ontwerp niet!*"
 ---
 
+> ## TL;DR
+>
+> Tests zijn een ontwerpmiddel. Tests geven je feedback over de kwaliteit van het ontwerp van je code. De vuistregel luidt: *is het moeilijk om er een test voor te schrijven? Dan deugt het ontwerp niet!*
+>
+> Alle code valt in vier categorieën in te delen: (1) triviale code, (2) complexe code, (3) domeinsignificante code en (4) overgecompliceerde code. (1) test je niet; voor (2) schrijf je integratietests, voor (3) unittests; (4) refactor je naar (2) en (3) - die je op hun beurt goed test.
+>
+> Tests achteraf geven uitstekende feedback, maar wie het meest uit tests als ontwerpmiddel wil halen, ontwikkelt middels Test-Driven Development.
+
+
 Tests zijn een ontwerpmiddel, een *design tool*.
 
 

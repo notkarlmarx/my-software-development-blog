@@ -82,7 +82,7 @@ Maar het resultaat is volgens mij wel de moeite waard, dus laten we er even (...
 > The files will be compared to a files named `{testClass}.{testName}.verified.png` and `{testClass}.{testName}.verified.txt` respectively, which are assumed to live in the same folder.
 > 
 > 
-> #### How Verify determines whether you tests should pass
+> #### Why your test fails
 >
 >  
 > If you write a new test, it will fail for two reasons. 

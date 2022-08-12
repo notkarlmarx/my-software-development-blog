@@ -1,14 +1,14 @@
 ---
 title: "Wat is jouw mentale model?"
 author: "Karl van Heijster"
-date: 2022-07-12T11:11:50+02:00
-draft: true
+date: 2022-08-12T09:59:14+02:00
+draft: false
 comments: true
 tags: ["code reviews", "mentaal model", "single-responsibility principe"]
-summary: "Eerder schreef ik erover waarom het zo belangrijk is om code die data ophaalt te scheiden van code die data manipuleert. Ik kan me voorstellen dat ik lezers heb die denken: joh, dit zijn toch allemaal open deuren? Misschien hebben die lezers gelijk. Maar aan de andere kant: het aantal keren dat ik code heb kunnen verbeteren door het ophalen en manipuleren van data te scheiden, vertelt een ander verhaal. Misschien loont het zich om daarom kort te reflecteren op een aantal redenen waarom deze goede gewoonte niet stevig verankerd is in het hoofd van elke ontwikkelaar."
+summary: "Eerder schreef ik erover waarom het zo belangrijk is om code die data ophaalt te scheiden van code die data manipuleert. Ik kan me voorstellen dat ik lezers heb die denken: joh, dit zijn toch allemaal open deuren? Misschien hebben die lezers gelijk. Maar aan de andere kant: het aantal keren dat ik code heb kunnen verbeteren door het ophalen en manipuleren van data te scheiden, vertelt een ander verhaal. Wellicht loont het zich om daarom kort te reflecteren op een aantal redenen waarom deze goede gewoonte niet stevig verankerd is in het hoofd van elke ontwikkelaar."
 ---
 
-Eerder schreef ik erover [waarom het zo belangrijk is om code die data ophaalt te scheiden van code die data manipuleert] (LINK). De managementsamenvatting van die blog luidt als volgt:
+Eerder schreef ik erover [waarom het zo belangrijk is om code die data ophaalt te scheiden van code die data manipuleert](/blog/22/08/scheid-data-ophalen-van-data-manipuleren/). De managementsamenvatting van die blog luidt als volgt:
 
 
 *Schrijf je code niet zo:*
@@ -29,13 +29,13 @@ Eerder schreef ik erover [waarom het zo belangrijk is om code die data ophaalt t
 Ik kan me voorstellen dat ik lezers heb die denken: joh, dit zijn toch allemaal open deuren? Elke ontwikkelaar die ooit zijdelings iets van het [*Single-Responsibility Principe*](https://en.wikipedia.org/wiki/Single-responsibility_principle) (SRP)[^1] heeft meegekregen, weet toch dat je code niet twee dingen tegelijkertijd moet doen?
 
 
-Misschien hebben die lezers gelijk. Maar aan de andere kant: het aantal keren dat ik code heb kunnen verbeteren door het ophalen en manipuleren van data te scheiden, vertelt een ander verhaal. Misschien loont het zich om daarom kort te reflecteren op een aantal redenen waarom deze goede gewoonte niet stevig verankerd is in het hoofd van elke ontwikkelaar.
+Misschien hebben die lezers gelijk. Maar aan de andere kant: het aantal keren dat ik code heb kunnen verbeteren door het ophalen en manipuleren van data te scheiden, vertelt een ander verhaal. Wellicht loont het zich om daarom kort te reflecteren op een aantal redenen waarom deze goede gewoonte niet stevig verankerd is in het hoofd van elke ontwikkelaar.
 
 
 ## Waarom we niet scheiden
 
 
-Een eerste mogelijkheid zou kunnen zijn: gebrek aan kennis. Misschien is niet elke ontwikkelaar zich even bewust van de problemen die schendingen van het SRP opleveren, verderop in de ontwikkelcyclus.  en [Deze](/blog/scheid-data-ophalen-van-data-manipuleren/) (en [deze](/blog/21/05/enums-switch-statements-en-solid-2/)) blog zou een bijdrage kunnen leveren aan een verhoging van het bewustzijn op dat gebied.
+Een eerste mogelijkheid zou kunnen zijn: gebrek aan kennis. Misschien is niet elke ontwikkelaar zich even bewust van de problemen die schendingen van het SRP opleveren, verderop in de ontwikkelcyclus. [Deze](/blog/scheid-data-ophalen-van-data-manipuleren/) (en [deze](/blog/21/05/enums-switch-statements-en-solid-2/)) blog zou een bijdrage kunnen leveren aan een verhoging van het bewustzijn op dat gebied.
 
 
 Misschien is het ook: druk van buitenaf. Veel stakeholders van softwareprojecten zijn over het algemeen in de eerste instantie geïnteresseerd in nieuwe features. Voor codekwaliteit interesseren ze zich in mindere mate - en meestal pas als het te laat is.[^2] Het is denkbaar dat ontwikkelaars de hete adem van stakeholders in hun nek voelen, en daarom genoegen nemen met code die werkt - of liever: *louter* werkt -, in plaats van code die geweldig is opgezet. 
@@ -62,13 +62,13 @@ Kijk nog eens naar de code waar ik deze blog mee begon. Als jij een samenvatting
 Ik zou me een ontwikkelaar voor kunnen stellen, die het als volgt zou omschrijven: 
 
 
-> Ik verzamel alle spullen in deze doos (`repository.GetFoos()`), en als ze van mij zijn (`if (foo.SomeCondition)`), dan pak ik een rode sticker uit die doos (`repository.GetBars()`) en plak die erop (`r.Prop3 = bars`).
+> Ik verzamel alle spullen in *deze* doos (`repository.GetFoos()`), en als ze van mij zijn (`if (foo.SomeCondition)`), dan pak ik een rode sticker uit *die* doos (`repository.GetBars()`) en plak die erop (`r.Prop3 = bars`).
 
 
 (En omdat ik mezelf nu eenmaal ben, stel ik me voor dat die ontwikkelaar in een pijnlijke scheiding ligt.)
 
 
-# Implicaties
+## Implicaties
 
 
 Wat impliceert die analogie over de code hierboven? Wie een doos doorzoekt, gaat niet eerst een keer alle spullen door om te kijken hoeveel rode stickers 'ie nodig heeft, om daarna nog een keer aan de gang te gaan om zijn spullen te beplakken. Het is in dat geval veel gemakkelijker om de rode sticker te pakken, zodra je één van je spullen tegenkomt.
@@ -114,7 +114,6 @@ Die openheid geeft de mogelijkheid tot een (drie)dubbel inzicht. Wanneer uit mij
 
 
 Onjuist mentale modellen kunnen lang blijven sluimeren. De beste manier om ze te corrigeren, is ze uit het domein van het mentale te trekken, de buitenwereld in.
-
 
 
 [^1]: Het SRP is de eerste van de [SOLID-principes](https://en.wikipedia.org/wiki/SOLID) - en wat mij betreft de belangrijkste. Mijn eerdere blogs over dit onderwerp zijn [hier](/tags/single-responsibility-principe/) terug te lezen.

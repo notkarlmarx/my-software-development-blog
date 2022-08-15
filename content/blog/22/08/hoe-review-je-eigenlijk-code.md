@@ -1,8 +1,8 @@
 ---
 title: "Hoe review je eigenlijk code?"
 author: "Karl van Heijster"
-date: 2022-07-15T22:47:34+02:00
-draft: true
+date: 2022-08-15T12:40:19+02:00
+draft: false
 comments: true
 tags: ["boeken", "code lezen", "code reviews"]
 summary: "Hoe lees je eigenlijk code? Waar begin je? En in welke volgorde loop je code door? - En zit er verschil tussen het lezen van code tijdens je programmeerwerk en tijdens een code review? Ik stelde mezelf onlangs die vragen, na in Felienne Hermans' *The Programmer's Brain* te hebben gelezen dat gevorderde programmeurs op een andere manier code lezen dan nieuwelingen. "
@@ -17,7 +17,7 @@ Hoe lees je eigenlijk code? Waar begin je? En in welke volgorde loop je code doo
 Ik stelde mezelf onlangs die vragen, na in [Felienne Hermans](https://www.felienne.com/)' [*The Programmer's Brain*](https://www.manning.com/books/the-programmers-brain) te hebben gelezen dat gevorderde programmeurs op een andere manier code lezen dan nieuwelingen. 
 
 
-Beginners lezen code zoals ze een tekst lezen: van boven naar beneden. Gevorderde programmeurs daarentegen volgen vaker de stack: als zij code tegenkomen die een bepaalde method aanroept, dan bekijken ze eerst die. En als die method op zijn beurt een method aanroept, dan inspecteren ze die. Daarna keren ze terug naar de aanroepende method.
+Beginners lezen code zoals ze een tekst lezen: van boven naar beneden. Gevorderde programmeurs daarentegen volgen vaker de stack: als zij code tegenkomen die een bepaalde method aanroept, dan bekijken ze die eerst. En als die method op zijn beurt een method aanroept, dan inspecteren ze die. Daarna keren ze terug naar de aanroepende method.
 
 
 Blijkbaar, concludeert Hermans, is code lezen een vaardigheid die je ontwikkelt naarmate je langer programmeert. 
@@ -26,7 +26,7 @@ Blijkbaar, concludeert Hermans, is code lezen een vaardigheid die je ontwikkelt 
 ## Achterdocht
 
 
-En dat is waar - onder andere in de volgende zin. Een beginnende ontwikkelaar die een method genaamd `GetFoos` leest, concludeert dat die method een verzameling objecten ophaalt van het type `Foo`. Een gevorderde programmeur weet door schade en schande dat code vaak niet zo simpel in elkaar zit, en wil toch even controleren of dat écht is wat er gebeurt. Het zal immers niet de eerste keer zijn dat code bepaalde neveneffecten heeft - het *setten* van een bepaalde variabele, bijvoorbeeld - die niet in de naamgeving terugkomt. (Zie ook [deze blog](/blog/22/07/wat-zijn-eerlijke-functies/).)
+En dat is waar - onder andere in de volgende zin. Een beginnende ontwikkelaar die een method genaamd `GetFoos` leest, concludeert dat die method een verzameling objecten ophaalt van het type `Foo`. Een gevorderde programmeur weet door schade en schande dat code vaak niet zo simpel in elkaar zit, en wil toch even controleren of dat écht is wat er gebeurt. Het zal immers niet de eerste keer zijn dat code bepaalde neveneffecten heeft - het *setten* van een variabele, bijvoorbeeld - die niet in de naamgeving terugkomt. (Zie ook [deze blog](/blog/22/07/wat-zijn-eerlijke-functies/).)
 
 
 Die achterdocht is een waardevolle eigenschap. Dat hebben de makers van [Integrated Development Environments](https://en.wikipedia.org/wiki/Integrated_development_environment) (IDE's) als [Visual Studio](https://visualstudio.microsoft.com/) ook goed begrepen. Niet voor niets is het mogelijk om met één druk op de knop [naar de definitie van een method of variabele te springen](https://docs.microsoft.com/en-us/visualstudio/ide/go-to-and-peek-definition). Gemakkelijk kunnen inspringen op je gerechtvaardigde gevoel van achterdocht is essentieel voor een programmeur om veilig en vloeiend te kunnen prorgrammeren.
@@ -38,7 +38,7 @@ Maar ook tijdens code reviews loont het zich om de stack te volgen. Wanneer je d
 ## Tooling
 
 
-Helaas helpt de tooling daar niet altijd even goed bij mee. code reviews - of ze nu in [GitHub](https://github.com/) plaatsvinden of in [Azure DevOps](https://azure.microsoft.com/nl-nl/services/devops/) of een ander codeplatform -, bestaan in de regel uit [*diffs* van platte tekstbestanden](https://nl.wikipedia.org/wiki/Bestanden_vergelijken): aan de linkerkant de oude code, en aan de rechterkant de aangepaste variant. 
+Helaas helpt de tooling daar niet altijd even goed bij mee. Code reviews - of ze nu in [GitHub](https://github.com/) plaatsvinden of in [Azure DevOps](https://azure.microsoft.com/nl-nl/services/devops/) of een ander codeplatform -, bestaan in de regel uit [*diffs* van platte tekstbestanden](https://nl.wikipedia.org/wiki/Bestanden_vergelijken): aan de linkerkant de oude code, en aan de rechterkant de aangepaste variant. 
 
 
 Het gevolg daarvan is dat je, anders dan in je IDE, handmatig naar andere classes moet navigeren, wanneer de code een bepaalde verantwoordelijkheid daar naartoe delegeert. Dat is een onhandig klusje wanneer de aangeroepen code in de *diff* is inbegrepen. Maar als er een method in een ongewijzigde class wordt aangeroepen, houdt dat in dat je je achterdocht ergens anders moet bevredigen - in je eigen IDE, waar je de broncode open hebt staan, bijvoorbeeld.

@@ -96,7 +96,8 @@ Neem de volgende test[^2]:
 
 ```cs
 [TestMethod]
-public void Navigator_WhenGoesToAlbumPage_NavigatesToAlbumsUrl() {
+public void Navigator_WhenGoesToAlbumPage_NavigatesToAlbumsUrl() 
+{
     var baseUrl = "http://photos.user.com/";
     var nav = new Navigator(baseUrl);
     nav.GoToAlbumPage();
@@ -122,7 +123,8 @@ Deze versie is duidelijker:
 
 ```cs
 [TestMethod]
-public void Navigator_WhenGoesToAlbumPage_NavigatesToAlbumsUrl() {
+public void Navigator_WhenGoesToAlbumPage_NavigatesToAlbumsUrl() 
+{
     var nav = new Navigator("http://photos.user.com/");
     nav.GoToAlbumPage();
     nav.GetCurrentUrl().Should.Be("http://photos.user.com/albums");
@@ -168,7 +170,8 @@ Een bijkomend voordeel van deze aanpak is dat je tests er minder fragiel van wor
 
 ```cs
 [TestMethod]
-public void Factory() {
+public void Factory() 
+{
     var sut = GetSutWithComplexSetUpLogic();
     sut.DoSomething("Relevant variable");
     sut.SomethingDone.Should.BeTrue();
@@ -191,7 +194,8 @@ Wat ook regelmatig voorkomt, is dat verschillende tests (al dan niet met verschi
 
 ```cs
 [TestMethod]
-public void ObjectMotherFoo() {
+public void ObjectMotherFoo() 
+{
     var oFoo = ObjectMother.GetObjectWithFoo();
     var sut = GetSutWithComplexSetUpLogic();
     sut.DoSomething(oFoo);
@@ -199,7 +203,8 @@ public void ObjectMotherFoo() {
 }
 
 [TestMethod]
-public void ObjectMotherBar() {
+public void ObjectMotherBar() 
+{
     var oBar = ObjectMother.GetObjectWithBar();
     var sut = GetSutWithComplexSetUpLogic();
     sut.DoSomething(oBar);
@@ -213,7 +218,8 @@ Wanneer *Object Mothers* niet meer voldoen - wanneer het aantal variaties uit de
 
 ```cs
 [TestMethod]
-public void TestBuilder() {
+public void TestBuilder() 
+{
     var o = new TestObjectBuilder()
         .WithId(1)
         .WithName("Foo")

@@ -101,7 +101,7 @@ public void Navigator_GoesToAlbumPage_NavigatesToAlbumsUrl()
     var baseUrl = "http://photos.user.com/";
     var nav = new Navigator(baseUrl);
     nav.GoToAlbumPage();
-    nav.GetCurrentUrl().Should.Be(baseUrl + "/albums");
+    nav.GetCurrentUrl().Should().Be(baseUrl + "/albums");
 }
 ```
 
@@ -127,7 +127,7 @@ public void Navigator_GoesToAlbumPage_NavigatesToAlbumsUrl()
 {
     var nav = new Navigator("http://photos.user.com/");
     nav.GoToAlbumPage();
-    nav.GetCurrentUrl().Should.Be("http://photos.user.com/albums");
+    nav.GetCurrentUrl().Should().Be("http://photos.user.com/albums");
 }
 ```
 
@@ -174,7 +174,7 @@ public void Factory()
 {
     var sut = GetSutWithComplexSetUpLogic();
     sut.DoSomething("Relevant variable");
-    sut.SomethingDone.Should.BeTrue();
+    sut.SomethingDone.Should().BeTrue();
 }
 
 private static SystemUnderTest GetSutWithComplexSetUpLogic()
@@ -199,7 +199,7 @@ public void ObjectMotherFoo()
     var oFoo = ObjectMother.GetObjectWithFoo();
     var sut = GetSutWithComplexSetUpLogic();
     sut.DoSomething(oFoo);
-    sut.SomethingDone.Should.BeTrue();
+    sut.SomethingDone.Should().BeTrue();
 }
 
 [TestMethod]
@@ -208,7 +208,7 @@ public void ObjectMotherBar()
     var oBar = ObjectMother.GetObjectWithBar();
     var sut = GetSutWithComplexSetUpLogic();
     sut.DoSomething(oBar);
-    sut.SomethingDone.Should.BeTrue();
+    sut.SomethingDone.Should().BeTrue();
 }
 ```
 
@@ -220,15 +220,15 @@ Wanneer *Object Mothers* niet meer voldoen - wanneer het aantal variaties uit de
 [TestMethod]
 public void TestBuilder() 
 {
-    var o = new TestObjectBuilder()
+    var obj = new TestObjectBuilder()
         .WithId(1)
         .WithName("Foo")
         .WithProperty(new PropertyBuilder()
             .WithName("Property1"))
         .Build();
     var sut = GetSutWithComplexSetUpLogic();
-    sut.DoSomething(0);
-    sut.SomethingDone.Should.BeTrue();
+    sut.DoSomething(obj);
+    sut.SomethingDone.Should().BeTrue();
 }
 ```
 

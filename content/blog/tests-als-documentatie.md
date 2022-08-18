@@ -208,7 +208,7 @@ public void ObjectMotherBar()
     var oBar = ObjectMother.GetObjectWithBar();
     var sut = GetSutWithComplexSetUpLogic();
     sut.DoSomething(oBar);
-    sut.SomethingDone.Should().BeTrue();
+    sut.SomethingDone.Should().BeFalse();
 }
 ```
 

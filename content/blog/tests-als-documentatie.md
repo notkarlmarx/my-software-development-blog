@@ -96,7 +96,7 @@ Neem de volgende test[^2]:
 
 ```cs
 [TestMethod]
-public void Navigator_WhenGoesToAlbumPage_NavigatesToAlbumsUrl() 
+public void Navigator_GoesToAlbumPage_NavigatesToAlbumsUrl() 
 {
     var baseUrl = "http://photos.user.com/";
     var nav = new Navigator(baseUrl);
@@ -123,7 +123,7 @@ Deze versie is duidelijker:
 
 ```cs
 [TestMethod]
-public void Navigator_WhenGoesToAlbumPage_NavigatesToAlbumsUrl() 
+public void Navigator_GoesToAlbumPage_NavigatesToAlbumsUrl() 
 {
     var nav = new Navigator("http://photos.user.com/");
     nav.GoToAlbumPage();

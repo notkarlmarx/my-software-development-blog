@@ -1,8 +1,8 @@
 ---
 title: "Historie van Koenraad van Codeghat"
 author: "Karl van Heijster"
-date: 2022-07-15T12:02:40+02:00
-draft: true
+date: 2022-08-19T10:13:33+02:00
+draft: false
 comments: true
 tags: ["debuggen", "poezie"]
 summary: "*Koenraad bestijgt dapper 't ros / van de debugger, bereid / te dolen onder de linde. // Hij stapt door het beslisbos / dat hem naar hier heeft geleid / maar kan de oorzaak niet vinden.*"

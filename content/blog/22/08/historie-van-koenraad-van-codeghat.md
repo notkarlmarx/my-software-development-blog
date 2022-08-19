@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2022-08-19T10:13:33+02:00
 draft: false
 comments: true
-tags: ["debuggen", "poezie"]
+tags: ["debuggen", "poëzie"]
 summary: "*Koenraad bestijgt dapper 't ros / van de debugger, bereid / te dolen onder de linde. // Hij stapt door het beslisbos / dat hem naar hier heeft geleid / maar kan de oorzaak niet vinden.*"
 ---
 

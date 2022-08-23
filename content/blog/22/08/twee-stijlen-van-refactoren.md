@@ -1,7 +1,7 @@
 ---
 title: "Twee stijlen van refactoren"
 author: "Karl van Heijster"
-date: 2022-07-22T08:03:51+02:00
+date: 2022-08-26T08:21:20+02:00
 draft: true
 comments: true
 tags: ["incrementele ontwikkeling", "refactoren"]
@@ -38,7 +38,7 @@ Voor mijn tweede refactorslag richtte ik me op een ander stuk code. Een eenvoudi
 Ook deze keer keek ik naar de code, zag wat er mis mee was en had een aardig idee van hoe ik wilde dat het eruit zou komen te zien. Maar in plaats van direct voor het goud te willen gaan, stelde ik me een bescheidener doel.
 
 
-De code in kwestie combineerde het ophalen van data met het manipuleren ervan. (Zie ook [deze blog] (LINK).) De code die de data ophaalde, de databasecall, bevond zich in een [`for each`-loop](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements#the-foreach-statement). Dat vond ik een slecht idee. Dus ik trok die code daar uit. 
+De code in kwestie combineerde het ophalen van data met het manipuleren ervan. (Zie ook [deze blog](/blog/22/08/scheid-data-ophalen-van-data-manipuleren/).) De code die de data ophaalde, de databasecall, bevond zich in een [`for each`-loop](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements#the-foreach-statement). Dat vond ik een slecht idee. Dus ik trok die code daar uit. 
 
 
 \- Let wel: ik verplaatste de code niet naar waar ik die databasecall uiteindelijk wilde hebben. Nee, ik plaatste 'm vóór aanvang van die loop, in dezelfde method nog. Daar haalde ik in één keer de data op. Ik paste de code in de loop aan zodat deze alleen nog maar de data manipuleerde - meer niet. Daarna trapte ik de tests af - en ze slaagden.
@@ -86,7 +86,7 @@ Mijn refactorslag had dus niet alleen de oorspronkelijke class vereenvoudigd, he
 ## *Big bang* versus incrementeel
 
 
-Het mag duidelijk zijn waar het verschil tussen de eerste en de tweede stijlen van refactoring 'm in zitten. 
+Het mag duidelijk zijn waar het verschil tussen de eerste en de tweede stijlen van refactoring 'm in zit. 
 
 
 De eerste gaat uit van een *big bang*-manier van dingen wijzigen. Alle wijzigingen moeten er in één keer staan om de boel goed en wel te laten werken. Tot je bij het eindresultaat bent aangekomen, is de code stuk - *kaputt*.
@@ -95,7 +95,7 @@ De eerste gaat uit van een *big bang*-manier van dingen wijzigen. Alle wijziging
 De tweede gaat uit van een incrementele manier van code wijzigen. In kleine tussenstapjes werk je toe naar het gewenste resultaat. Gedurende elk stapje blijft de code werken zoals bedoeld. 
 
 
-Dat de incrementel aanpak mijn voorkeur heeft, hoeft niemand te verbazen. 
+Dat de incrementele aanpak mijn voorkeur heeft, hoeft niemand te verbazen. 
 
 
 ## Debuggen
@@ -107,7 +107,7 @@ Door in kleine stapjes te werken en steeds opnieuw je tests af te trappen, krijg
 Wie op een *big bang* hanteert, heeft die context niet. Die moet, nadat de nieuwe implementatie voltooid is, met de debugger in de hand actief op zoek naar de oorzaak van het probleem. Dat is geen enorme opgave als je maar één falende test hebt, maar als het er tientallen of zelfs honderden zijn, dan is die taak eenvoudigweg overweldigend.
 
 
-In de taal van [Felienne Hermans](https://www.felienne.com/)' [*The Programmer's Brain*](https://www.manning.com/books/the-programmers-brain): de incrementele aanpak is een stuk vriendelijker voor met name je kortetermijn- en werkgeheugen.
+In de taal van [Felienne Hermans](https://www.felienne.com/)' [*The Programmer's Brain*](https://www.manning.com/books/the-programmers-brain): de incrementele aanpak is een stuk vriendelijker voor met name je kortetermijn- en werkgeheugen. (Lees ook [mijn recensie](/blog/22/08/hoe-hersenwetenschap-programmeurs-kan-helpen/) erop na!)
 
 
 ## Betere code

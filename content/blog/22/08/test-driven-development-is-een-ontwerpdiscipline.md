@@ -1,8 +1,8 @@
 ---
 title: "Test-driven development is een ontwerpdiscipline"
 author: "Karl van Heijster"
-date: 2022-07-29T07:35:45+02:00
-draft: true
+date: 2022-08-29T08:47:26+02:00
+draft: false
 comments: true
 tags: ["boeken", "clean code", "samenwerking", "single-responsibility principe", "software ontwikkelen", "test-driven development", "testen"]
 summary: "Een collega benaderde me laatst met een vraag over een stuk code. Hij was bezig met het implementeren van een feature om een toets met afbeeldingen om te zetten naar een PDF-representatie ervan. Zijn vraag was: hoe kom ik aan die afbeelding? Of liever: waar kom ik aan die afbeelding? Zijn eerste ingeving was om via dependency injection de relevante repository mee te geven aan de `ImagePdfGenerator`. - Het is een klassiek geval van het verknopen van het ophalen van data en het manipuleren ervan. Ik bleef wel met een knagend gevoel achter: hoe makkelijk blijkt het om dankzij een DI-container de verantwoordelijkheden van classes te verwateren - en wat moeten we daarmee?"
@@ -41,7 +41,7 @@ Het is een klassiek geval van het verknopen van het ophalen van data en het mani
 Ga maar na: het is verantwoordelijkheid van de `ImagePdfGenerator` om data te manipuleren. De class is ervoor verantwoordelijk om de afbeelding waar in het `Item` naar wordt gerefereerd, een plekje te geven in de PDF. 
 
 
-De `ImagePdfGenerator` is er *niet* voor verantwoordelijk om die afbeelding op te halen. [Het ophalen van data dient te worden gescheiden van het manipuleren ervan.] (LINK)
+De `ImagePdfGenerator` is er *niet* voor verantwoordelijk om die afbeelding op te halen. [Het ophalen van data dient te worden gescheiden van het manipuleren ervan.](/blog/22/08/scheid-data-ophalen-van-data-manipuleren/)
 
 
 De truc is dan ook niet om een repository als afhankelijkheid de class in te injecteren. De truc is om de juiste afbeelding als afhankelijkheid te injecteren. Het ophalen van die afbeelding dient al veel eerder te zijn gebeurd.
@@ -50,7 +50,7 @@ De truc is dan ook niet om een repository als afhankelijkheid de class in te inj
 ## *Clean Craftmanship*
 
 
-Nu had ik toevallig een [blog] (LINK) geschreven over het scheiden van code die data ophaalt van code die data manipuleert, dus ik draaide er mijn hand niet voor dit inzicht op om mijn collega over te brengen. Maar ik bleef wel met een knagend gevoel achter: hoe makkelijk blijkt het om dankzij een [DI-container](https://docs.microsoft.com/en-us/dotnet/core/extensions/dependency-injection) de verantwoordelijkheden van classes te verwateren - en wat moeten we daarmee?
+Nu heb ik toevallig onlangs een [blog](/blog/22/08/scheid-data-ophalen-van-data-manipuleren/) geschreven over het scheiden van code die data ophaalt van code die data manipuleert, dus ik draaide er mijn hand niet voor dit inzicht op om mijn collega over te brengen. Maar ik bleef wel met een knagend gevoel achter: hoe makkelijk blijkt het om dankzij een [DI-container](https://docs.microsoft.com/en-us/dotnet/core/extensions/dependency-injection) de verantwoordelijkheden van classes te verwateren - en wat moeten we daarmee?
 
 
 Een paar dagen later las ik in *Clean Craftmanship* van Robert C. Martin de volgende zin: 
@@ -59,7 +59,7 @@ Een paar dagen later las ik in *Clean Craftmanship* van Robert C. Martin de volg
 > It is that cycle [of red -> green -> refactor] that helps us to prevent harm to behavior and harm to structure. It is that cycle that allows us to prioritize structure over behavior. And that's why we consider TDD to be a *design* technique as opposed to a testing technique.
 
 
-En dankzij de vraag van mijn collega klikte die zin op een heel nieuwe manier met me.
+En dankzij de vraag van mijn collega klikte dat inzicht op een heel nieuwe manier met me.
 
 
 ## Wat als...
@@ -83,7 +83,13 @@ Nee, ik denk dat als mijn collega zijn feature bijeen had ge-TDD'd, dat 'ie dan 
 ## Eerst de interface
 
 
-Het is zoals [James Shore](https://www.jamesshore.com/) zei in [*The Art of Agile Development*](https://www.oreilly.com/library/view/the-art-of/9780596527679/): [TDD dwingt je om éérst na te denken over de interface van je code, en daarna pas over haar implementatie](/blog/22/05/nog-een-reden-om-testgedreven-te-ontwikkelen/). Precies dáárom is TDD een ontwerpdiscipline, geen testdiscipline.
+Het is zoals [James Shore](https://www.jamesshore.com/) zei in [*The Art of Agile Development*](https://www.oreilly.com/library/view/the-art-of/9780596527679/): [TDD dwingt je om éérst na te denken over de interface van je code, en daarna pas over haar implementatie](/blog/22/05/nog-een-reden-om-testgedreven-te-ontwikkelen/). 
+
+
+Het is eenvoudiger om een unittest te schrijven met een afbeelding in de [*Assert*](http://wiki.c2.com/?ArrangeActAssert)-sectie, dan een unittest met een mock die een afbeelding teruggeeft. TDD maakt goede, uitgesplitste code schrijven makkelijk.
+
+
+Precies dáárom is TDD een ontwerpdiscipline, geen testdiscipline.
 
 
 \- Dat middels TDD ontworpen code een haast perfecte testcoverage heeft, is *bijvangst*. Bedenk eens wat voor een bizarre constatering dat is!

@@ -2,7 +2,7 @@
 title: "Twee stijlen van refactoren"
 author: "Karl van Heijster"
 date: 2022-08-26T08:21:20+02:00
-draft: true
+draft: false
 comments: true
 tags: ["incrementele ontwikkeling", "refactoren"]
 summary: "Het was een tijd terug 40 graden en dat leek me, om redenen die ik achteraf niet kan bevatten, geen reden om het geairconditioneerde pand van mijn werkgever te bezoeken. In plaats daarvan bleef ik met de gordijnen dicht op mijn snikhete kantoortje zitten en begon aan een grootscheepse refactorslag. Of liever: twee refactorslagen - de ene met een gestaag toenemende hoeveelheid koortsig zweet op mijn voorhoofd, en de ander met een stabiele hoeveelheid normalehittezweet. De ene refactorslag was een ramp, de ander een succes. In beide gevallen moest ik het kantoor nadien goed luchten - dat wel."

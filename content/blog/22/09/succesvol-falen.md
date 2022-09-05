@@ -1,8 +1,8 @@
 ---
 title: "Succesvol falen"
 author: "Karl van Heijster"
-date: 2022-08-15T14:37:52+02:00
-draft: true
+date: 2022-09-05T08:37:51+02:00
+draft: false
 comments: true
 tags: ["bedrijfscultuur", "boeken", "falen", "leercultuur", "recensies", "succes"]
 summary: "Van fouten kun je leren, zegt men. Daaruit volgt: hoe meer fouten je maakt, hoe meer leerkansen je creëert. Eigenlijk zou je het maken van fouten dus moeten vieren. Hoe meer er mis gaat, hoe meer je leert – en hoe meer je leert, hoe minder er mis zal gaan. Toch is dat niet hoe het in veel organisaties werkt. Daar wordt er hard gewerkt om fouten te voorkomen. Erger nog, medewerkers die de mist in gaan, worden afgerekend op hun misstappen. Dat maakt hen voorzichtig, conservatief. En daardoor staan ze hun eigen groei – en die van de organisatie – in de weg."
@@ -29,4 +29,4 @@ Slagen of falen is in belangrijke mate een kwestie van perspectief. Wie de succe
 Dus, de volgende keer als je het grondig hebt verpest op de werkvloer, vraag je dan af: heb ik gefaald, of heb ik geleerd? Welke van de twee je ook kiest, het kan geen kwaad om *Superfalen* preventief aan je leidinggevende cadeau te doen.
 
 
-*Deze recensie verscheen ook op ~~[AutomationNL](https://www.automationnl.nl/) en~~ [Bazarow.com](https://bazarow.com/).*
+*Deze recensie verscheen ook op [Bazarow.com](https://bazarow.com/).*

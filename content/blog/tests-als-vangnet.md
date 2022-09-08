@@ -211,6 +211,14 @@ Om dat voor elkaar te krijgen, moet de testsuite op een bepaalde manier ontworpe
 De extra moeite die je steekt in het ontwerp van je testcode betaalt zich dubbel en dwars terug als hulpmiddel bij het ontwikkelen.
 
 
+## Meer in deze reeks
+
+
+1. [Tests als documentatie] (LINK)
+2. **Tests als vangnet**
+3. Tests als ontwerpmiddel [binnenkort]
+
+
 [^1]: Ik schreef hier per ongeluk: "*ingenieus*" - en dat is natuurlijk ook waar!
 
 [^2]: Wat volgt is pseudocode om het punt duidelijk te maken.

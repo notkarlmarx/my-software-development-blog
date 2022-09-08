@@ -132,7 +132,7 @@ De uitkomst van dat denkproces leg je vast in een test. Een zo simpel mogelijke 
 Je weet hoe die tests eruitzien. Het is een unittest voor domeinobjecten, het is een integratietest voor controllers.
 
 
-\- En je implementatie van die test is zo simpel mogelijk. - Je schrijft geen overgecompliceerde code - want je let op.[^3] Daar hebben de tests je toe gedwongen. Je schrijft pas nieuwe functionaliteit nadat je een nieuwe test hebt geschreven. Zo lang dat niet het geval is, refactor je.
+\- En je implementatie van die test is zo simpel mogelijk. - Je schrijft geen overgecompliceerde code - want je let op. Daar hebben de tests je toe gedwongen. Je schrijft pas nieuwe functionaliteit nadat je een nieuwe test hebt geschreven. Zo lang dat niet het geval is, refactor je.
 
 
 
@@ -154,8 +154,14 @@ Het belang van grondig geteste, goed ontworpen code is moeilijk te overschatten.
 Een ontwikkelaar die op de toekomst voorbereid wil zijn, kan TDD maar beter omarmen - en de kracht van tests als ontwerpmiddel ten volle benutten.
 
 
+## Meer in deze reeks
+
+
+1. [Tests als documentatie] (LINK)
+2. [Tests als vangnet] (LINK)
+3. **Tests als ontwerpmiddel** 
+
+
 [^1]: De volgende ideeën ontleen ik aan [Vladimir Khorikovs](https://enterprisecraftsmanship.com/) [*Unit Testing: Principles, Practices, and Patterns*](https://www.manning.com/books/unit-testing), een [aanrader](/blog/21/12/de-beste-boeken-over-software-ontwikkeling-die-ik-in-2021-las/)!
 
 [^2]: *[Of: de rotonde - Red.]*
-
-[^3]: *[Wat is dit, is dit zo'n gedicht van je? - Red.]* - [Misschien, ooit - Karl.]

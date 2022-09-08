@@ -245,6 +245,14 @@ Ze verdienen daarom net zoveel aandacht als productiecode - maar daarom niet per
 Elke test vertelt een verhaal. En uiteindelijk is een spannend verhaal - een verhaal dat je wíl lezen - de beste vorm van documentatie.
 
 
+## Meer in deze reeks
+
+
+1. **Tests als documentatie**
+2. Tests als vangnet [binnenkort]
+3. Tests als ontwerpmiddel [binnenkort]
+
+
 [^1]: De naamgeving volgen ruwweg het adagium van [*Arrange, Act, Assert*](https://docs.microsoft.com/en-us/visualstudio/test/unit-test-basics?view=vs-2022#write-your-tests) - maar niet helemaal. Waar zitten de overeenkomsten en waar zitten de verschillen?
 
 

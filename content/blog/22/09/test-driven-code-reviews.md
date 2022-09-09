@@ -1,17 +1,17 @@
 ---
 title: "Test-driven code reviews"
 author: "Karl van Heijster"
-date: 2022-08-01T23:17:20+02:00
-draft: true
+date: 2022-09-09T07:58:39+02:00
+draft: false
 comments: true
 tags: ["code reviews", "testen"]
-summary: "Door een alfabetisch toeval presenteert Azure DevOps elk *pull request* (PR) van mijn team in deze volgorde: eerst de front-end, dan de back-end - de API, de businesslogica, de datatoegang en het model - en ten slotte te tests. Onlangs stelde ik de vraag hoe je eigenlijk code reviewt - en waar je het best kunt beginnen bij zo'n beoordeling. Ik heb er een tijdje op zitten broeden, en ik denk dat ik eruit ben."
+summary: "Door een alfabetisch toeval presenteert Azure DevOps elk *pull request* van mijn team in deze volgorde: eerst de front-end, dan de back-end - de API, de businesslogica, de datatoegang en het model - en ten slotte te tests. Onlangs stelde ik de vraag hoe je eigenlijk code reviewt - en waar je het best kunt beginnen bij zo'n beoordeling. Ik heb er een tijdje op zitten broeden, en ik denk dat ik eruit ben."
 ---
 
 Door een alfabetisch toeval presenteert [Azure DevOps](https://azure.microsoft.com/nl-nl/services/devops/) elk *pull request* (PR) van mijn team in deze volgorde: eerst de front-end, dan de back-end - de API, de businesslogica, de datatoegang en het model - en ten slotte te tests.
 
 
-Onlangs stelde ik de vraag [hoe je eigenlijk code reviewt] (LINK) - en waar je het best kunt beginnen bij zo'n beoordeling. Ik heb er een tijdje op zitten broeden, en ik denk dat ik eruit ben.
+Onlangs stelde ik de vraag [hoe je eigenlijk code reviewt](/blog/22/08/hoe-review-je-eigenlijk-code/) - en waar je het best kunt beginnen bij zo'n beoordeling. Ik heb er een tijdje op zitten broeden, en ik denk dat ik eruit ben.
 
 
 (In wat volgt, heb ik het alleen over fikse PR's, die meerdere lagen van het systeem raken. Kleine PR's - die één of een handvol files raken -, kunnen uiteraard eenvoudig in andere volgorde worden afgelopen.)
@@ -29,10 +29,10 @@ Waarom de tests? Omdat de tests fungeren als *low level*-documentatie van wat de
 Let op de volgende zaken: zijn de tests makkelijk te begrijpen? Is de naamgeving helder en eenduidig? Bevatten de tests geen overbodige informatie? Abstraheren de tests geen relevante informatie? - Kortweg: heb ik na het lezen van de tests een goed idee van het verantwoordelijkheden van de code?
 
 
-Vraag jezelf ook af: zijn de tests compleet? Wordt alleen het *happy path* getest, of heeft de ontwikkelaar zich ook afgevraagd wat er gebeurt bij afwijkende inputs? Wat als je *hier* een `null` meegeeft? Wat als je *daar* een negatief getal invoert? - Bedenk: tests bewijzen niet dat de code vrij is van bugs, tests bewijzen wanneer dat wél het geval is. Hoe completer de tests, hoe zekerder je kunt zijn over de kwaliteit van de code.
+Vraag jezelf ook af: zijn de tests compleet? Wordt alleen het *happy path* getest, of heeft de ontwikkelaar zich ook afgevraagd wat er gebeurt bij afwijkende inputs? Wat als je *hier* een `null` meegeeft? Wat als je *daar* een negatief getal invoert? - Bedenk: tests bewijzen niet dat de code vrij is van bugs, hun functie is te signaleren wanneer dat wél het geval is. Hoe completer de tests, hoe zekerder je kunt zijn over de kwaliteit van de code.
 
 
-Wat als een PR geen tests bevat? Dan zou dat een goede reden kunnen zijn om de wijziging in zijn geheel te blokkeren. Hoe kun je er als reviewer immers zeker van zijn dat de code doet wat het beoogt, als de maker ervan daar geen bewijs van levert?[^1]
+Wat als een PR geen tests bevat? Dan zou dat een goede reden kunnen zijn om de wijziging in zijn geheel te blokkeren. Hoe kun je er als reviewer immers zeker van zijn dat de code doet wat het beoogt, als je collega daar geen bewijs van levert?[^1]
 
 
 ## 2. Het model (of: de API)
@@ -80,7 +80,7 @@ Begrijp me niet verkeerd, dit is absoluut geen excuus om niet goed naar de imple
 Ik noem deze manier van code beoordeelen *Test-Driven Code Reviews*.
 
 
-Dat is een vreselijke naam, natuurlijk, die vooral bedoeld is om op de goede naam van Test-Driven Development (TDD) mee te liften, dat geef ik eerlijk toe. Een belangrijk verschil is bijvoorbeeld dat je bij TDD afwisselend met de tests en de implementatie bezighoudt. Bij TDCR bekijk je eerst de tests, en pas later de implementatie. Je werkt van buiten naar binnen toe, als het ware.
+Dat is een vreselijke naam, natuurlijk, die vooral bedoeld is om op de goede naam van [Test-Driven Development](/tags/test-driven-development/) (TDD) mee te liften, dat geef ik eerlijk toe. Een belangrijk verschil is bijvoorbeeld dat je bij TDD afwisselend met de tests en de implementatie bezighoudt. Bij TDCR bekijk je eerst de tests, en pas later de implementatie. Je werkt van buiten naar binnen toe, als het ware.
 
 
 Waarom dan toch die naam? 

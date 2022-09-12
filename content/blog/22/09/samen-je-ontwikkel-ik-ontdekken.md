@@ -1,8 +1,8 @@
 ---
 title: "Samen je ontwikkel-ik ontdekken"
 author: "Karl van Heijster"
-date: 2022-07-29T11:56:39+02:00
-draft: true
+date: 2022-09-12T07:47:47+02:00
+draft: false
 comments: true
 tags: ["boeken", "leren", "recensies"]
 summary: "Praten over je eigen leer- en ontwikkelingsproces is een moeilijke opgave. Maar weinig mensen hebben de taal om hun ideeën daarover uit te kunnen drukken - als ze er überhaupt al een idee over hebben. En de kans dat ze die ideeën, en de bijbehorende taal, in hun eentje zullen ontwikkelen, is nagenoeg nul. Je hebt anderen - andere mensen, perspectieven, leerdoelen en -stijlen - nodig om gestalte te kunnen geven aan je eigen ontwikkeling. Maar hoe ga je het gesprek aan als je er de taal voor ontbeert? Daar hebben Manon Ruijters, Gerritjan van Luin en Robert-Jan Simons *Ons ontwikkelen ontward* voor, eh, ontwikkeld"
@@ -14,7 +14,7 @@ Er zijn maar weinig vakgebieden die zich zo snel ontwikkelen als de ICT. Elk jaa
 Maar praten over je eigen leer- en ontwikkelingsproces is een moeilijke opgave. Maar weinig mensen hebben de taal om hun ideeën daarover uit te kunnen drukken - als ze er überhaupt al een idee over hebben. En de kans dat ze die ideeën, en de bijbehorende taal, in hun eentje zullen ontwikkelen, is nagenoeg nul. Je hebt anderen - andere mensen, perspectieven, leerdoelen en -stijlen - nodig om gestalte te kunnen geven aan je eigen ontwikkeling. Maar hoe ga je het gesprek aan als je er de taal voor ontbeert?
 
 
-Daar hebben [Manon Ruijters](https://www.linkedin.com/in/manonruijters/), [Gerritjan van Luin](http://www.vanluincoaching.nl/) en [Robert-Jan Simons](https://www.visieopleren.nl/) *Ons ontwikkelen ontward* voor, eh, ontwikkeld. [*Ons ontwikkelen ontward*](https://www.bua.nl/product/100-10692_Ons-Ontwikkelen-Ontward) is een set van 81 dialoogkaarten die je in staat stellen om een gesprek over dit onderwerp aan te gaan met je leidinggevende, collega’s en/of professionele vrienden. In de loop van die gesprekken zul je haast spelenderwijs een antwoord formuleren op de centrale vraag: wie ben je in je manier van leren en ontwikkelen, wat is jouw ontwikkelidentiteit?
+Daar hebben [Manon Ruijters](https://www.linkedin.com/in/manonruijters/), [Gerritjan van Luin](http://www.vanluincoaching.nl/) en [Robert-Jan Simons](https://www.visieopleren.nl/) [*Ons ontwikkelen ontward*](https://www.bua.nl/product/100-10692_Ons-Ontwikkelen-Ontward) voor, eh, ontwikkeld. *Ons ontwikkelen ontward* is een set van 81 dialoogkaarten die je in staat stellen om een gesprek over dit onderwerp aan te gaan met je leidinggevende, collega’s en/of professionele vrienden. In de loop van die gesprekken zul je haast spelenderwijs een antwoord formuleren op de centrale vraag: wie ben je in je manier van leren en ontwikkelen, wat is jouw ontwikkelidentiteit?
 
 
 Het gros van de set kaarten bevat een vraag die het gesprek op gang helpt. Een willekeurige greep uit de stapel omvat dingen als “Waar ben je goed in? En waar wil je nog beter in worden?”, “Door welke ontmoetingen of gebeurtenissen kreeg je ontwikkeling een andere draai?”, “Wat heb je nodig (aan hulpmiddelen) bij je leren en ontwikkelen? En wat mis je daarin?” en “Wat inspireert je? En hoe kun je dit inzetten bij je leren en ontwikkelen?”
@@ -32,10 +32,10 @@ Wie zo grondig mogelijk zijn of haar ontwikkelidentiteit wil leren kennen, gaat 
 De volgende opzet is bijvoorbeeld erg leuk en toegankelijk. Op de achterkant van elke vraagkaart staat een foto. Leg die kaarten met de foto naar boven en stel de aanwezigen de vraag: welke foto spreekt je aan? Of welke juist totaal niet? Die vraag alleen al kan interessante inzichten opleverenover iemand. Maar het gesprek krijgt pas echt een diepere wending, wanneer de vraag vervolgens wordt onthuld. “Pieter, je koos de kaart met het rugbyteam, omdat je zelf elk weekend op het veld staat. *Welke bijdrage lever jij in de samenwerking?* - En gaat dat op het werk net zo als op het veld? Waar zit het verschil ‘m in?” Zeker in groepssessies is deze vorm even hilarisch als inzichtelijk!
 
 
-In het samenspel met anderen zit de kracht van Ons ontwikkelen ontward. Door een gebrek aan een gemeenschappelijke taal is juist dat samenspel zo moeilijk op gang te brengen. Het is daarom des te knap dat de auteurs een vorm hebben gevonden waarmee ze die impasse hebben weten te doorbreken. De vrij in te zetten dialoogkaarten kickstarten een levendig gesprek, en weten zo zelfs de meest vastgeroeste collega’s en vrienden te prikkelen. 
+In het samenspel met anderen zit de kracht van *Ons ontwikkelen ontward*. Door een gebrek aan een gemeenschappelijke taal is juist dat samenspel zo moeilijk op gang te brengen. Het is daarom des te knap dat de auteurs een vorm hebben gevonden waarmee ze die impasse hebben weten te doorbreken. De vrij in te zetten dialoogkaarten kickstarten een levendig gesprek, en weten zo zelfs de meest vastgeroeste collega’s en vrienden te prikkelen. 
 
 
 Ga je dat ene nieuwe framework leren, of blijk je veel meer voldoening te halen uit het uitdiepen van de kennis die je al hebt? Duik je liever in alle rust in een boek over softwarearchitectuur, of geef je je op voor een cursus met enthousiaste collega’s? Wie de tijd neemt om zijn ontwikkelen te ontwarren, zal zien dat er veel meer te leren valt dan je op voorhand zou durven vermoeden - over je verleden, je toekomst, jezelf, je omgeving, en ook een beetje over software en ICT.
 
 
-*Deze recensie verscheen ook op ~~[AutomationNL](https://www.automationnl.nl/) en~~ [Bazarow.com](https://bazarow.com/).*
+*Deze recensie verscheen ook op [Bazarow.com](https://bazarow.com/).*

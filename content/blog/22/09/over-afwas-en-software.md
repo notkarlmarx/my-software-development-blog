@@ -1,8 +1,8 @@
 ---
 title: "Over afwas en software"
 author: "Karl van Heijster"
-date: 2022-08-29T12:31:09+02:00
-draft: true
+date: 2022-09-16T07:47:55+02:00
+draft: false
 comments: true
 tags: ["beroepsdeformatie", "refactoren"]
 summary: "Afwassen is net als software ontwikkelen. Althans, ik probeer mijn afwas net zo aan te pakken zoals ik mijn software het liefst ontwikkel. Het fundamentele idee wordt kernachtig verwoord door Kent Beck in de volgende quote: \"*For each desired change, make the change easy (warning: this may be hard), then make the easy change.*\""
@@ -38,7 +38,7 @@ Waarom vertel ik dit verhaal? Omdat afwassen net is als software ontwikkelen. Al
 > For each desired change, make the change easy, then make the easy change.[^1]
 
 
-Afwassen terwijl het volledige keukenblad is bezaaid met vuile borden, is een moeilijke wijziging. Je moet immers constant afwisselen tussen afwassen, afdrogen en borden verplaatsen. 
+Afwassen terwijl het volledige keukenblad is bezaaid met vuile borden, bekers en bestek, is een moeilijke wijziging. Je moet immers constant afwisselen tussen afwassen, afdrogen en borden verplaatsen. 
 
 
 Om die taak te vergemakkelijken, is het verstandig om je eerst bezig te houden met de plaatsing van de vuile borden op het keukenblad. Als dat probleem eenmaal is opgelost, is het een stuk eenvoudiger om af te wassen. Dan is 't een kwestie van de borden verplaatsen van de linkerkant van het keukenblad, via de gootsteen, naar de rechterkant.
@@ -53,7 +53,7 @@ In softwaretaal zou je kunnen zeggen: het verplaatsen van de vaat is een refacto
 Soms - vaak - nee, meestal is het verstandig om éérst je code te refactoren, voordat je een nieuwe feature implementeert. Die refactorslag is bedoeld om de code voor te bereiden op de komende functionaliteit. Eérst pas je de code aan, zodat deze makkelijk een bepaalde kant op uit te breiden is. Daarna breid je de functionaliteit uit - die bepaalde kant op.
 
 
-Merk op dat het implementeren van de nieuwe feature eenvoudig hoort te zijn, maar dat de refactorslag dat niet per se is. De code in een juiste staat krijgen om de volgende feature te kunnen implementeren, is juist het moeilijke gedeelte.
+Merk op dat het implementeren van de nieuwe feature eenvoudig hoort te zijn, maar dat de refactorslag dat niet per se is. De code in een behoorlijke staat krijgen om de volgende feature te kunnen implementeren, is juist het moeilijke gedeelte.
 
 
 En die moeilijkheid zit 'm op twee gebieden. Ten eerste kan het inhoudelijk moeilijk zijn om de code aan te passen. Anders gezegd: soms moet je veel code omschrijven om iets nieuws mogelijk te kunnen maken. Dat is in zekere zin de minst interessante moeilijkheid.

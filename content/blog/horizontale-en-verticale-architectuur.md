@@ -14,7 +14,7 @@ Een typische applicatie bestaat uit (ten minste) [drie lagen](https://en.wikiped
 Je kunt dit model visualiseren als drie blokken die boven op elkaar liggen: de UI bovenop, de businesslogica in het midden en de datatoegang onderop. - De volgende afbeelding pluk ik schaamteloos van [Wikipedia](https://en.wikipedia.org/wiki/Multitier_architecture#Three-tier_architecture):
 
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Overview_of_a_three-tier_application_vectorVersion.svg/1024px-Overview_of_a_three-tier_application_vectorVersion.svg.png)
+{{<figure src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Overview_of_a_three-tier_application_vectorVersion.svg/1024px-Overview_of_a_three-tier_application_vectorVersion.svg.png" alt="Three-tier architecture">}}
 
 
 Een typische [*solution*](https://docs.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio?view=vs-2022#solutions) in de .NET-wereld bestaat dan ook uit drie [projecten](https://docs.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio?view=vs-2022#project-file), die corresponderen met elke laag.
@@ -32,7 +32,7 @@ Een alternatieve manier van afhankelijkheden vastleggen is de volgende: de UI en
 Opnieuw komt [Wikipedia](https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)#Principle) *to the rescue*:
 
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Hexagonal_Architecture.svg/800px-Hexagonal_Architecture.svg.png)
+{{<figure src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Hexagonal_Architecture.svg/800px-Hexagonal_Architecture.svg.png" alt="Hexagonal architecture">}}
 
 
 ## Horizontaal

@@ -1,8 +1,8 @@
 ---
 title: "Tests als documentatie"
 author: "Karl van Heijster"
-date: 2022-08-04T23:08:43+02:00
-draft: true
+date: 2022-09-19T07:53:25+02:00
+draft: false
 comments: true
 tags: ["clean code", "documentatie", "intentie van code", "testen"]
 summary: "Tests zijn een vorm van documentatie. Ze leggen vast hoe een deel van je codebase zich hoort te gedragen. Maar ook: hoe je dat deel van de codebase gebruikt - wat je nodig hebt om het *system under test* te instantiëren, het gedrag van z'n methods etc.. Wie de tests leest, weet hoe de code gebruikt dient te worden. - Althans, dat is de ideale wereld."
@@ -14,7 +14,7 @@ summary: "Tests zijn een vorm van documentatie. Ze leggen vast hoe een deel van 
 >
 > 1. Ze hebben consistente en eenduidige namen door het hanteren van de *Given_When_Then*-conventie.
 >
-> 2. Ze leggen nadruk op relevante variabelen door toepassing van DAMP.
+> 2. Ze leggen nadruk op relevante variabelen door toepassing van DAMP: *Descriptive And Meaningful Phrases*.
 >
 > 3. Ze abstraheren irrelevante variabelen door het gebruik van *factory*-methods, *Object Mothers* of *Test Builders*.
 
@@ -25,7 +25,7 @@ Tests zijn een vorm van documentatie.
 Tests leggen vast hoe een deel van je codebase zich hoort te gedragen.
 
 
-Tests leggen vast hoe je dat deel van de codebase gebruikt - wat je nodig hebt om het [*system under test*](https://en.wikipedia.org/wiki/System_under_test) (SUT) te instantiëren, het gedrag van z'n methods etc..
+Tests leggen vast hoe je dat deel van de codebase gebruikt: wat je nodig hebt om het [*system under test*](https://en.wikipedia.org/wiki/System_under_test) (SUT) te instantiëren, het gedrag van z'n methods etc..
 
 
 Wie de tests leest, weet hoe de code gebruikt dient te worden. - Althans, dat is de ideale wereld.
@@ -46,7 +46,7 @@ Want als ontwikkelaars code breken, zijn de tests hun eerste leidraad bij het vi
 ## Waarom
 
 
-Dat verhoogt de ontwikkelproductiviteit aanzienlijk. Elke minuut die niet aan debuggen hoeft te worden besteedt, is gewonnen.
+Dat verhoogt de ontwikkelproductiviteit aanzienlijk. Elke minuut die niet aan debuggen hoeft te worden besteed, is gewonnen.
 
 
 Maar ontwikkelcapaciteit is niet de enige reden waarom tests descriptief moeten zijn.
@@ -67,22 +67,25 @@ Hoe maak je tests descriptief? Dat begint bij de naamgeving.
 Allereerst wil je dat je naamgeving consistent is. Als een lezer weet wat hij kan verwachten, verlicht dat zijn cognitieve druk. Hij kan op eerdere ervaringen vertrouwen, in plaats van alles opnieuw zelf uit te hoeven vogelen. Dat geeft 'm meer gelegenheid om zich op de inhoud te richten.
 
 
-Wat de inhoud van die test is, moet van de titel afgelezen kunnen worden. `Feature_6839()` is geen descriptieve naam. (- Maar niemand gebruikt toch zulke titels?!) `Bug_12056()` ook niet. `GetItem_Successfully()` is al wat beter - al laat het aan de lezer om te raden waar dat succes in bestaat.
+Wat de inhoud van die test is, moet van de titel afgelezen kunnen worden. `Feature_6839()` is geen descriptieve naam. (- Maar gelukkig zou jij nooit zulke namen gebruiken... toch?) `Bug_12056()` ook niet. `GetItem_Successfully()` is al wat beter - al laat het aan de lezer om te raden waar dat succes in bestaat.
 
 
 ### Given_When_Then
 
 
-`GetItemEndpoint_ReceivesIdRequest_ReturnsItemWithThatId()` is - wat aan de lange kant, maar toch ook behoorlijk eenduidig. Wie die titel leest, weet precies wat 'ie kan verwachten als 'ie de test leest.
+`GetItemEndpoint_ReceivesIdRequest_ReturnsItemWithThatId()` is - wat aan de lange kant, maar toch ook behoorlijk eenduidig. Wie die titel leest, weet precies wat 'ie kan verwachten van de test.
 
 
 De ontwikkelaar die deze test voor zijn neus krijgt, moet wel denken: *ja, logisch.*
 
 
-De bovenstaande naamgeving volgt het [*Given_When_Then*-patroon](https://en.wikipedia.org/wiki/Given-When-Then). Elk deel van de titel correspondeert met het SUT, met de inputs en met de outputs.[^1] Samen geven ze een compleet beeld van waar de test uit bestaat.
+De bovenstaande naamgeving volgt het [*Given_When_Then*-patroon](https://en.wikipedia.org/wiki/Given-When-Then). Het eerste deel (*Given*) beschrijft de conditie die je test, het tweede deel (*When*) de operatie die je uitvoert, en het derde deel (*Then*) de uitkomst van die operatie. 
 
 
-En wie die naamgevingsconventie volgt, krijgt daar gratis de gewilde consistentie bij. 
+De naamgeving volgt eigenlijk het adagium van [*Arrange, Act, Assert*](https://docs.microsoft.com/en-us/visualstudio/test/unit-test-basics?view=vs-2022#write-your-tests). Dat betekent dat de naam van de test je een beknopt overzicht geeft van wat je in de test aan zult treffen. Samen geven ze een compleet beeld van waar de test uit bestaat.
+
+
+Wie die naamgevingsconventie volgt, krijgt daar gratis de gewilde consistentie bij. 
 
 
 ## Relevantie
@@ -91,7 +94,7 @@ En wie die naamgevingsconventie volgt, krijgt daar gratis de gewilde consistenti
 Een descriptieve test maakt de relevante variabelen expliciet (en abstraheert al het overbodige - maar daar kom ik zo op). Het moet voor een lezer duidelijk zijn wat de werkzame onderdelen in de vergelijking zijn. Je kunt het ook zo zien: een descriptieve test is een verhaal - focus je dus op de hoofdpersonen en niet op de figuranten. (- Onze tests zijn geen postmoderne fictie!) 
 
 
-Neem de volgende test[^2]:
+Neem de volgende test[^1]:
 
 
 ```cs
@@ -115,7 +118,7 @@ De test faalt namelijk, omdat het `"http://photos.user.com//albums"` als resulta
 Wat scheelt er aan deze test? - Hij legt te weinig nadruk op de relevante variabelen - in dit geval: de output. Het gebruik van logica verhult het verwachte gedrag van de code, zodanig zelfs, dat een bug eenvoudig onder de radar vliegt.
 
 
-### Niet DRY, maar DAMP
+## Niet DRY, maar DAMP
 
 
 Deze versie is duidelijker:
@@ -147,13 +150,13 @@ Maar schone tests (*clean test code*) zijn niet hetzelfde als schone productieco
 Stel je een test voor, een muur van code. Aan het begin regel na regel complexe *set up*-logica die het SUT in de juiste staat brengt. (Objecten die geïnstantieerd worden, vervolgens als afhankelijkheid geinjecteerd worden; methods die drie keer worden aangeroepen om de data in gereedheid te brengen; een property die wordt gewijzigd...)
 
 
-Dan, uiteindelijk: een commentaarregel `// Act` en daaronder een method. Gevolgd door een (DAMP, uiteraard!) *Assert*-sectie. Ga nu maar na: welk deel van die *set up*-logica had het uiteindelijke resultaat nu tot gevolg?
+Dan, uiteindelijk: een commentaarregel `//Act` en daaronder een method. Gevolgd door een (DAMP, uiteraard!) *Assert*-sectie. Ga nu maar na: welk deel van die *set up*-logica had het uiteindelijke resultaat nu tot gevolg?
 
 
 Het probleem van zo'n test is dat deze de lezer overlaadt met informatie. De ontwikkelaar ziet de bomen door het bos niet meer. Alle relevante onderdelen zijn aanwezig - maar ook alle irrelvante. De test is een roman die aan de lopende band uitweidt, die niet kan kiezen tussen haar hoofdpersonages en figuranten.
 
 
-### Factories
+## Factories
 
 
 Dit probleem kan voorkomen worden met het gebruik van *factories*. (Ik zeg bewust niet: het [*Factory*-patroon](https://en.wikipedia.org/wiki/Factory_method_pattern). Want het idee hierachter is breder dan dat - of, ook mogelijk: er is niet één *Factory*-patroon.) Een *factory* is een method of class die verantwoordelijk is voor het instantiëren van een object.
@@ -233,13 +236,16 @@ public void TestBuilder()
 ```
 
 
+*Test Builders* zijn ideaal om irrelevante details te abstraheren en zo de maximale nadruk op de relevante variabelen te leggen. In het bovenstaande voorbeeld zou je bijvoorbeeld, aangenomen dat `"Property1"` de relevante variabele is, de `TestObjectBuilder` standaardwaarden mee kunnen geven voor het `Id` (`1`) en de `Name` (`"Foo"`). De aandacht van de lezer komt zo automatisch te liggen bij datgene wat voor de test het meest relevant is.
+
+
 ## Waardevol
 
 
 Tests zijn net zo'n waardevol deel van je codebase als je productiecode. Tests informeren ontwikkelaars over het gebruik van bepaalde delen van de code. Dat is handig voor nieuwe ontwikkelaars - maar ook voor jou, als je na maanden afwezigheid opnieuw in een stoffig deel van de codebase moet duiken.
 
 
-Ze verdienen daarom net zoveel aandacht als productiecode - maar daarom niet per se dezelfde aandacht. Goede testcode is geoptimaliseerd voor descriptiviteit. Elke test moet eenvoudig te doorgronden zijn voor de lezer. Let daarom goed op de naamgeving en op welke informatie je toont, en welke je achterwege laat.
+Ze verdienen daarom net zoveel aandacht als productiecode - maar daarom niet per se dezelfde aandacht. Goede testcode is geoptimaliseerd voor descriptiviteit. Elke test moet eenvoudig te doorgronden zijn voor de lezer. Let daarom goed op de naamgeving, en op welke informatie je toont en welke je achterwege laat.
 
 
 Elke test vertelt een verhaal. En uiteindelijk is een spannend verhaal - een verhaal dat je wíl lezen - de beste vorm van documentatie.
@@ -253,7 +259,4 @@ Elke test vertelt een verhaal. En uiteindelijk is een spannend verhaal - een ver
 3. Tests als ontwerpmiddel [binnenkort]
 
 
-[^1]: De naamgeving volgen ruwweg het adagium van [*Arrange, Act, Assert*](https://docs.microsoft.com/en-us/visualstudio/test/unit-test-basics?view=vs-2022#write-your-tests) - maar niet helemaal. Waar zitten de overeenkomsten en waar zitten de verschillen?
-
-
-[^2]: Een aangepaste versie van voorbeeld besprak ik eerder [deze blog](/blog/22/01/hoe-droog-wil-je-je-test-hebben/); de oorspronkelijke referentie is [*Unit Testing*](https://www.oreilly.com/library/view/software-engineering-at/9781492082781/ch12.html) van [Erik Kuefler](https://www.linkedin.com/in/erikkuefler/), hoofdstuk 12 van het [fantastische](/blog/21/12/de-beste-boeken-over-software-ontwikkeling-die-ik-in-2021-las/) [*Software Engineering at Google*](https://www.oreilly.com/library/view/software-engineering-at/9781492082781/)). De test maakt overigens gebruik van het eveneens fantastische [Fluent Assertions](https://fluentassertions.com/).
+[^1]: Een aangepaste versie van voorbeeld besprak ik eerder [deze blog](/blog/22/01/hoe-droog-wil-je-je-test-hebben/); de oorspronkelijke referentie is [*Unit Testing*](https://www.oreilly.com/library/view/software-engineering-at/9781492082781/ch12.html) van [Erik Kuefler](https://www.linkedin.com/in/erikkuefler/), hoofdstuk 12 van het [fantastische](/blog/21/12/de-beste-boeken-over-software-ontwikkeling-die-ik-in-2021-las/) [*Software Engineering at Google*](https://www.oreilly.com/library/view/software-engineering-at/9781492082781/)). De test maakt overigens gebruik van het eveneens fantastische [Fluent Assertions](https://fluentassertions.com/).

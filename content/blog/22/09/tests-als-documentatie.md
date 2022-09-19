@@ -70,7 +70,7 @@ Allereerst wil je dat je naamgeving consistent is. Als een lezer weet wat hij ka
 Wat de inhoud van die test is, moet van de titel afgelezen kunnen worden. `Feature_6839()` is geen descriptieve naam. (- Maar gelukkig zou jij nooit zulke namen gebruiken... toch?) `Bug_12056()` ook niet. `GetItem_Successfully()` is al wat beter - al laat het aan de lezer om te raden waar dat succes in bestaat.
 
 
-### Given_When_Then
+## Given_When_Then
 
 
 `GetItemEndpoint_ReceivesIdRequest_ReturnsItemWithThatId()` is - wat aan de lange kant, maar toch ook behoorlijk eenduidig. Wie die titel leest, weet precies wat 'ie kan verwachten van de test.

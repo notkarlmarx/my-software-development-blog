@@ -1,8 +1,8 @@
 ---
 title: "Tests als vangnet"
 author: "Karl van Heijster"
-date: 2022-08-04T23:08:54+02:00
-draft: true
+date: 2022-09-23T08:29:41+02:00
+draft: false
 comments: true
 tags: ["clean code", "end to end tests", "integratietests", "ontwerppatronen", "refactoren", "testen", "teststrategie", "unit tests"]
 summary: "Tests zijn een vangnet. Elke keer dat je code aanraakt - en dat doe je continu -, dan speel je een balanceeract. Als je code blijft functioneren zoals bedoeld, blijf je op het koord. Zo niet, dan val je. En als je valt, heb je een keus: te pletter vallen, of opgevangen worden door een vangnet. Tests zijn je vangnet, je afgrond is - ontevreden ontwikkelaars, stakeholders, eindgebruikers."
@@ -20,7 +20,7 @@ summary: "Tests zijn een vangnet. Elke keer dat je code aanraakt - en dat doe je
 Sommige mensen zeggen: tests zijn de steigers die je helpen een gebouw te doen verrijzen. - Alleen breek je ze nooit af.
 
 
-Het is een uitvloeisel van de metafoor van een software ontwikkelen als projectontwikkelen, - een junior softwareontwikkelaar als constructiemedewerker, de senior als ingenieur.[^1]
+Het is een uitvloeisel van de metafoor van een software ontwikkelen als projectontwikkelen: - een junior softwareontwikkelaar als constructiemedewerker, de senior als ingenieur.[^1]
 
 
 Ik zeg liever: tests zijn een vangnet. Elke keer dat je code aanraakt - en dat doe je continu -, dan speel je een balanceeract. Als je code blijft functioneren zoals bedoeld, blijf je op het koord. Zo niet, dan val je. 
@@ -133,7 +133,7 @@ public void ItemQtiGenerator_GeneratesTextBlockQti_PreservesText()
 ```
 
 
-(De test maakt gebruik van het [*Test Builder*-patroon](https://canro91.github.io/2021/04/26/CreateTestValuesWithBuilders/) om de code leesbaar te houden. `GetBlock` is een helper method die de lezer de details van het opvragen van het juiste stukje QTI bespaart. Zie ook [deze blog](LINK naar Tests als documentatie).)
+(De test maakt gebruik van het [*Test Builder*-patroon](https://canro91.github.io/2021/04/26/CreateTestValuesWithBuilders/) om de code leesbaar te houden. `GetBlock` is een helper method die de lezer de details van het opvragen van het juiste stukje QTI bespaart. Zie ook [deze blog](/blog/22/09/tests-als-documentatie/).)
 
 
 Deze opzet stelt het team in staat om moeiteloos alles wat zich achter de interface van de `ItemQtiGenerator` bevindt te refactoren, zonder de tests aan te hoeven passen. De generators van de inviduele onderdelen kunnen naar harteloos gesplitst worden, of juist samengevoegd, of worden voorzien van [*special cases*](https://martinfowler.com/eaaCatalog/specialCase.html) zonder dat er maar één regel testcode hoeft te worden aangepast.
@@ -151,7 +151,7 @@ Eén vuistregel is bijvoorbeeld: wordt de code op verschillende plekken in de ap
 Een andere vuistregel luidt: test code via hetzelfde pad als een gebruiker van de code. Maar wat is een gebruiker van je code? Hier kun je meerdere gevallen onderscheiden. 
 
 
-Als je een helper class schrijft die door de hele applicatie wordt gebruikt, dan ben jij als ontwikkelaar zelf de gebruiker. Hetzelfde geldt voor een object in een [rijk domeinmodel](https://martinfowler.com/eaaCatalog/domainModel.html). Om er zeker van te zijn dat deze objecten zich gedragen zoals je zou verwachten, moet je deze unittesten.
+Als je een helper class schrijft die door de hele applicatie wordt gebruikt, dan ben jij als ontwikkelaar zelf de gebruiker. Hetzelfde geldt voor een object in een [rijk domeinmodel](https://martinfowler.com/eaaCatalog/domainModel.html). Om er zeker van te zijn dat deze objecten zich gedragen zoals je zou verwachten, moet je deze unittesten. Hun veelvuldig gebruik in de codebase maakt het noodzakelijk vrij dicht op het metaal te gaan zitten. Een fout in deze code heeft immers grote gevolgen.
 
 
 Je zou "gebruiker" ook kunnen lezen als "eindgebruiker". Als je een eenvoudige CRUD-applicatie hebt met een Web-API als back-end, dan is het niet onlogisch om je applicatie via die ingang te testen. Zeker als de applicatie weinig complexe logica kent, kunnen integratietests uitstekend als vangnet fungeren. 
@@ -163,7 +163,7 @@ Je zou "gebruiker" ook kunnen lezen als "eindgebruiker". Als je een eenvoudige C
 [Vlad Khononov](https://vladikk.com/) tilt dit idee nog een stap verder in [*Learning Domain-Driven Design*](https://www.oreilly.com/library/view/learning-domain-driven-design/9781098100124/). Zijn standpunt laat zich samenvatten als: je softwarearchitectuur bepaalt je teststrategie. (Ik schreef er eerder over, [hier](/blog/22/07/zelfs-de-testpiramide-is-niet-meer-heilig/).)
 
 
-Applicaties die zijn opgezet volgens het [*Transaction Script*-patroon](https://martinfowler.com/eaaCatalog/transactionScript.html) bestaan uit weinig meer dan lijm tussen externe componenten, zoals [databases](https://nl.wikipedia.org/wiki/Database) of een [servicebus](https://nl.wikipedia.org/wiki/Enterprise_service_bus). Unittests zijn bijvoorbeeld een slechte match voor zulke relatief eenvoudige applicaties met weinig businesslogica. De testsuite van zo'n applicatie zal daarom vooral uit *End to end* (*E2E*)-tests bestaan. 
+Applicaties die zijn opgezet volgens het [*Transaction Script*-patroon](https://martinfowler.com/eaaCatalog/transactionScript.html) bestaan uit weinig meer dan lijm tussen externe componenten, zoals [databases](https://nl.wikipedia.org/wiki/Database) of een [servicebus](https://nl.wikipedia.org/wiki/Enterprise_service_bus). Unittests zijn een slechte match voor zulke relatief eenvoudige applicaties met weinig businesslogica. De testsuite van zo'n applicatie zal daarom vooral uit *End to end* (*E2E*)-tests bestaan. 
 
 
 Andere applicaties zijn veel meer gericht op het in code vastleggen van businessregels. Zulke applicaties zullen veelal gebruik maken van een [domeinmodel](https://martinfowler.com/eaaCatalog/domainModel.html). Objecten uit dat model zijn geisoleerd van infrastructurele delen van de code en worden door de hele codebase gebruikt. Daarom zal de testsuite van dat soort applicaties veel unittests kennen.
@@ -175,7 +175,7 @@ Een middenweg wordt gevormd door applicaties die gebruik maken van het [*Active 
 De softwarearchitectuur bepaalt de teststrategie. Welke soort tests je voornamelijk zal schrijven, is afhankelijk van het ontwerppatroon dat je kiest. Samengevat:
 
 
-|       Ontwerppatroon |   Teststrategie |           Testpiramide | 
+|       Ontwerppatroon |   Teststrategie |     Soort testpiramide | 
 |---------------------:|----------------:|-----------------------:|
 |       *Domain Model* |       Unittests | Klassieke testpiramide |
 |      *Active Record* | Integratietests |            Testdiamant |
@@ -214,7 +214,7 @@ De extra moeite die je steekt in het ontwerp van je testcode betaalt zich dubbel
 ## Meer in deze reeks
 
 
-1. [Tests als documentatie] (LINK)
+1. [Tests als documentatie](/blog/22/09/tests-als-documentatie/)
 2. **Tests als vangnet**
 3. Tests als ontwerpmiddel [binnenkort]
 

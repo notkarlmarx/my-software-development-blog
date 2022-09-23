@@ -255,7 +255,7 @@ Elke test vertelt een verhaal. En uiteindelijk is een spannend verhaal - een ver
 
 
 1. **Tests als documentatie**
-2. Tests als vangnet [binnenkort]
+2. [Tests als vangnet](/blog/22/09/tests-als-vangnet/)
 3. Tests als ontwerpmiddel [binnenkort]
 
 

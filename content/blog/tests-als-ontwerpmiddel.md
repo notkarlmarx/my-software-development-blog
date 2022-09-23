@@ -142,7 +142,7 @@ Je weet hoe die tests eruitzien. Het is een unittest voor domeinobjecten, het is
 Tests zijn een ontwerpmiddel, een *design tool*. Dat is een perspectief op tests dat makkelijk te vergeten valt - wanneer je door het modderige ontwerp van *legacy code* heen baggert - of wanneer je zonder vangnet aan een refactorslag begint - of wanneer je een test schrijft om aan de minimale coverage te komen.
 
 
-Het belang van grondig geteste, goed ontworpen code is moeilijk te overschatten. Robert "*Uncle Bob*" Martin windt er in [*Clean Craftmanship: Disciplines, Standards, and Ethics*](https://www.oreilly.com/library/view/clean-craftsmanship-disciplines/9780136915805/) geen doekjes om. (Nota bene: de helft (!) van dat boek is aan testen gewijd is. - *De helft!* En dat terwijl het, aan de subtitel te zien, toch genoeg stof om te overdenken bevat!) Hij schrijft:
+Het belang van grondig geteste, goed ontworpen code is moeilijk te overschatten. [Robert "*Uncle Bob*" Martin](http://cleancoder.com/products) windt er in [*Clean Craftmanship: Disciplines, Standards, and Ethics*](https://www.oreilly.com/library/view/clean-craftsmanship-disciplines/9780136915805/) geen doekjes om. (Nota bene: de helft (!) van dat boek is aan testen gewijd is. - *De helft!* En dat terwijl het, aan de subtitel te zien, toch genoeg stof om te overdenken bevat!) Hij schrijft:
 
 
 > Is TDD really a prerequisite to professionalism? Am I really suggesting that you can’t be a professional software developer unless you practice TDD?

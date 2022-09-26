@@ -1,8 +1,8 @@
 ---
 title: "Tests als ontwerpmiddel"
 author: "Karl van Heijster"
-date: 2022-08-04T21:44:33+02:00
-draft: true
+date: 2022-09-26T07:20:02+02:00
+draft: false
 comments: true
 tags: ["clean code", "integratietests", "software architectuur", "test-driven development", "testen", "unit tests"]
 summary: "Tests zijn een ontwerpmiddel, een *design tool*. Ze fungeren als indicator voor de kwaliteit van het ontwerp van je code. De vuistregel is even eenvoudig als zag-het-niet-want-het-stond-recht-voor-mijn-neus-vanzelfsprekend: *Is het moeilijk om er een test voor te schrijven? Dan deugt het ontwerp niet!*"
@@ -55,7 +55,7 @@ Weinig complexe code die met veel classes interacteert, noemt Khorikov *controll
 \- Deze code dient te worden geïntegratietest.
 
 
-Complexe en/of domeinsignificante code die met weinig classes interacteert (3). De algoritmische complexiteit en/of domeinsignificantie maken het bestaan van deze tests essentieel, en hun lage complexiteit zorgen ervoor dat deze eenvoudig geschreven kunnen worden. Denk aan de objecten in je [*Domain Model*](https://martinfowler.com/eaaCatalog/domainModel.html) hebt gedefinieerd, en die door heel de codebase gebruikt worden.
+Dan: complexe en/of domeinsignificante code die met weinig classes interacteert (3). De algoritmische complexiteit en/of domeinsignificantie maken het bestaan van deze tests essentieel, en hun lage complexiteit zorgen ervoor dat deze eenvoudig geschreven kunnen worden. Denk aan de objecten in je [*Domain Model*](https://martinfowler.com/eaaCatalog/domainModel.html) hebt gedefinieerd, en die door heel de codebase gebruikt worden.
 
 
 \- Hier schrijf je unittests voor. Je *system under test* is makkelijk te instantiëren. Je voert het verschillende waarden voor elke parameter om het gedrag vast te leggen - en verifiëren. Deze tests testen puur en alleen [*businesslogica*](https://en.wikipedia.org/wiki/Business_logic). ((2) is daarentegen een test van, zou je kunnen zeggen, de [*applicatielogica*](https://en.wiktionary.org/wiki/application_logic).)
@@ -76,7 +76,7 @@ Je moet deze code niet testen. Je moet deze code uitsplitsen. De businesslogica 
 ## Signaal
 
 
-De complexe tests waren een signaal: deze code is niet goed ontworpen, hij schendt het [Single-Responsibility Principe](https://en.wikipedia.org/wiki/Single-responsibility_principle) (SRP). Goed ontworpen methods, classes, modules bevatten businesslogica - en alleen maar businesslogica -, of ze coördineren de businesslogica. (Zie ook [deze blog] (LINK naar Scheid data ophalen van...).)
+De complexe tests waren een signaal: deze code is niet goed ontworpen, hij schendt het [Single-Responsibility Principe](https://en.wikipedia.org/wiki/Single-responsibility_principle) (SRP). Goed ontworpen methods, classes, modules bevatten businesslogica - en alleen maar businesslogica -, of ze coördineren de businesslogica. (Zie ook [deze blog](/blog/22/08/scheid-data-ophalen-van-data-manipuleren/).)
 
 
 Andersom werkt het ook: als tests zich haast vanzelfsprekend laten schrijven, dan is dat een teken dat de code goed is opgezet. Ook testcode can *clean* zijn - in de zin dat ze het [*principle of least surprise*](https://en.wikipedia.org/wiki/Principle_of_least_astonishment) respecteren. En ironisch genoeg houden ze de productiecode daar net zo *clean* mee.
@@ -102,13 +102,13 @@ Hoewel, dat is niet *precies* de cirkel van TDD. Die ziet er, in mijn beleving, 
 5. **Ga terug naar 1.**
 
 
-[TDD is een ontwerpdiscipline] (LINK). Hoewel tests achteraf je een indicatie geven van het ontwerp van je code, functioneren ze op hun best wanneer ze tijdens het ontwikkelen actief worden gebruikt. Tests zijn je blauwdrukken - je werkt een stuk beter gefocust met een plan.
+[TDD is een ontwerpdiscipline](/blog/22/08/test-driven-development-is-een-ontwerpdiscipline/). Hoewel tests achteraf je een indicatie geven van het ontwerp van je code, functioneren ze op hun best wanneer ze tijdens het ontwikkelen actief worden gebruikt. Tests zijn je blauwdrukken - je werkt een stuk beter gefocust met een plan.
 
 
 ## Perspectief
 
 
-Als je TDD't heb je niet alleen tests - hoewel dat op zichzelf al waardevol genoeg is. Je verandert daarmee ook het perspectief waarmee je code schrijft. (zie ook [deze blog](/blog/22/05/nog-een-reden-om-testgedreven-te-ontwikkelen/).)
+Als je TDD't heb je niet alleen tests - hoewel dat op zichzelf al waardevol genoeg is. Je verandert daarmee ook het perspectief waarmee je code schrijft. (Zie ook [deze blog](/blog/22/05/nog-een-reden-om-testgedreven-te-ontwikkelen/).)
 
 
 Wie "traditioneel" codeert, benadert zijn code vanuit het perspectief van de ontwikkelaar. Dit zal, als je niet uitkijkt (zelfs als je goed onderlegd bent in ontwerppatronen *en niet uitkijkt*), zijn effect hebben op de code die je niet schrijft. De interface van je classes zal een weerspiegeling zijn van de implementatie. Je schrijft [*leaky abstractions*](https://en.wikipedia.org/wiki/Leaky_abstraction). 
@@ -157,8 +157,8 @@ Een ontwikkelaar die op de toekomst voorbereid wil zijn, kan TDD maar beter omar
 ## Meer in deze reeks
 
 
-1. [Tests als documentatie] (LINK)
-2. [Tests als vangnet] (LINK)
+1. [Tests als documentatie](/blog/22/09/tests-als-documentatie/)
+2. [Tests als vangnet](/blog/22/09/tests-als-vangnet/)
 3. **Tests als ontwerpmiddel** 
 
 

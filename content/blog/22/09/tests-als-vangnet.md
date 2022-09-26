@@ -216,7 +216,7 @@ De extra moeite die je steekt in het ontwerp van je testcode betaalt zich dubbel
 
 1. [Tests als documentatie](/blog/22/09/tests-als-documentatie/)
 2. **Tests als vangnet**
-3. Tests als ontwerpmiddel [binnenkort]
+3. [Tests als ontwerpmiddel](/blog/22/09/tests-als-ontwerpmiddel/)
 
 
 [^1]: Ik schreef hier per ongeluk: "*ingenieus*" - en dat is natuurlijk ook waar!

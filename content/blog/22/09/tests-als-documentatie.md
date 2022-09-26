@@ -256,7 +256,7 @@ Elke test vertelt een verhaal. En uiteindelijk is een spannend verhaal - een ver
 
 1. **Tests als documentatie**
 2. [Tests als vangnet](/blog/22/09/tests-als-vangnet/)
-3. Tests als ontwerpmiddel [binnenkort]
+3. [Tests als ontwerpmiddel](/blog/22/09/tests-als-ontwerpmiddel/)
 
 
 [^1]: Een aangepaste versie van voorbeeld besprak ik eerder [deze blog](/blog/22/01/hoe-droog-wil-je-je-test-hebben/); de oorspronkelijke referentie is [*Unit Testing*](https://www.oreilly.com/library/view/software-engineering-at/9781492082781/ch12.html) van [Erik Kuefler](https://www.linkedin.com/in/erikkuefler/), hoofdstuk 12 van het [fantastische](/blog/21/12/de-beste-boeken-over-software-ontwikkeling-die-ik-in-2021-las/) [*Software Engineering at Google*](https://www.oreilly.com/library/view/software-engineering-at/9781492082781/)). De test maakt overigens gebruik van het eveneens fantastische [Fluent Assertions](https://fluentassertions.com/).

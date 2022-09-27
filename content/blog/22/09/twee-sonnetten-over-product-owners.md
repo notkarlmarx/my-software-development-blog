@@ -1,7 +1,7 @@
 ---
 title: "Twee sonnetten over Product Owners"
 author: "Karl van Heijster"
-date: 2022-09-01T09:51:30+02:00
+date: 2022-09-30T10:37:51+02:00
 draft: true
 comments: true
 tags: ["poëzie", "scrum"]
@@ -18,7 +18,7 @@ dan zeggen we vaarwel vriend, adios.
 
 De koffieautomaat is in chaos:
 
-'t is druk want er is deze keer ook cake.
+het is druk want er is dit keer ook cake.
 
 <br>
 

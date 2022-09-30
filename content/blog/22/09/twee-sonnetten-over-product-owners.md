@@ -2,7 +2,7 @@
 title: "Twee sonnetten over Product Owners"
 author: "Karl van Heijster"
 date: 2022-09-30T10:37:51+02:00
-draft: true
+draft: false
 comments: true
 tags: ["poëzie", "scrum"]
 summary: "*Het staat me nu nog helder voor de geest / hoe hij uit zijn ogen keek: compleet maf. / Schuimend vroeg hij of er ook gewerkt was / of dat we twee weken hadden gefeest.*"

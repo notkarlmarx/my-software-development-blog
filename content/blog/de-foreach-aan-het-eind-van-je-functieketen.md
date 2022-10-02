@@ -67,10 +67,19 @@ opt.Map(name => $"Hello, {name}")
 ## Het eind
 
 
-Deze manier van je code opzetten heeft interessante consequenties. Het zorgt er ten eerste voor dat de `ForEach` altijd aan het eind van een (potentieel heel lange) keten van pure functies komt. Na de `ForEach` is het over met de functionele pret: er wordt geen waarde meer teruggegeven die kan worden gemanipuleerd. Het neveneffect is het enige wat overblijft.
+Deze manier van je code opzetten heeft interessante consequenties. 
 
 
-Dat is de tweede consequentie. Code in de `ForEach` focust zich nog maar op één ding: het neveneffect bewerkstelligen. Het is een zo klein mogelijk stukje functionaliteit, waardoor haar (nét wat moeilijker te schrijven) tests zo beperkt mogelijk kunnen blijven. Zo helpt een scherpe scheiding van pure en onpure functies - een variant op het [Single-Responsibility Principe](/tags/single-responsibility-principe/) - bij het schrijven van optimaal testbare code.
+Het zorgt er ten eerste voor dat de `ForEach` altijd aan het eind van een (potentieel heel lange) keten van pure functies komt. Na de `ForEach` is het over met de functionele pret: er wordt geen waarde meer teruggegeven die kan worden gemanipuleerd. Het neveneffect is het enige wat overblijft.
+
+
+Code in de `ForEach` focust zich nog maar op één ding: het neveneffect bewerkstelligen. Het is een zo klein mogelijk stukje functionaliteit, scherp gescheiden van alle puur functionele code.
+
+
+We hebben de pure en onpure code in de voorbeelden hierboven op methodniveau gescheiden - maar waarom daar stoppen? Code die neveneffecten produceert moet zijn eigen, geïsoleerde plek in de codebase hebben. Slechts één module mag zich met neveneffecten bezig houden (naar een database schrijven, zip-bestanden maken), de rest is zuiver functioneel.
+
+
+Zo helpt een scherpe scheiding van pure en onpure functies - een variant op het [Single-Responsibility Principe](/tags/single-responsibility-principe/) - bij het schrijven van optimaal testbare code.
 
 
 [^1]: Merk op dat ik hier van een *method* spreek, en niet van een *functie*!

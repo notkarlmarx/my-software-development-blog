@@ -1,8 +1,8 @@
 ---
 title: "Identifiers zijn ook objecten"
 author: "Karl van Heijster"
-date: 2022-09-02T09:42:00+02:00
-draft: true
+date: 2022-10-03T07:36:58+02:00
+draft: false
 comments: true
 tags: ["clean code", "domeinmodel", "intentie van code", "primitive obsession"]
 summary: "Het oneigenlijk gebruik van \"primitieve\" types voor iets wat eigenlijk op een domeinniveau gedefinieerd hoort te worden, wordt *primitive obsession* genoemd. Het gebruik van een ingebouwd type voor een Id, is een specifieke instantie daarvan. De oplossing is: gebruik een door *jou* (of liever: jouw team) gedefinieerd object om het Id mee weer te geven."
@@ -40,7 +40,7 @@ public Foo GetFooThatBars(Guid fooId, Guid barId)
     {
         return foo;
     }
-    throw new Exception($"Bar `{barId}` does not contain Foo '{fooId}'")
+    throw new Exception($"Bar '{barId}' does not contain Foo '{fooId}'")
 }
 ```
 

@@ -29,13 +29,13 @@ Maar over die zin ga ik het vandaag niet hebben, ik wil het graag hebben over wa
 ## Waar te beginnen
 
 
-In een [eerdere blog] (LINK) raadde ik codereviewers aan te beginnen met het beoordelen van de tests. Het idee daar achter is: als er geen tests in het PR besloten liggen, dan heeft de maker van het PR niet bewezen dat zijn of haar code correct functioneert, en is er niet aan de randvoorwaarden van het wijzigen van de codebase voldaan. 
+In een [eerdere blog](/blog/22/09/test-driven-code-reviews/) raadde ik codereviewers aan te beginnen met het beoordelen van de tests. Het idee daar achter is: als er geen tests in het PR besloten liggen, dan heeft de maker van het PR niet bewezen dat zijn of haar code correct functioneert, en is er niet aan de randvoorwaarden van het wijzigen van de codebase voldaan. 
 
 
-Bovendien voorzien de tests de codereviewer van context bij zijn beoordeling. De tests voorzien de codereviewer van voorbeelden hoe de nieuwe code gebruikt dient te worden. In die zin fungeren ze [als documentatie] (LINK).
+Bovendien voorzien de tests de codereviewer van context bij zijn beoordeling. De tests voorzien de codereviewer van voorbeelden hoe de nieuwe code gebruikt dient te worden. In die zin fungeren ze [als documentatie](/blog/22/09/tests-als-documentatie/).
 
 
-Ik sta nog steeds achter wat ik in die blog zei, maar ik erken dat ik eigenlijk een stap over heb geslagen. Het allereerste wat je als codereviewer doet, is de titel van het PR lezen - en, wanneer aanwezig, ook de beschrijving. Meer nog dan welke testsuite dan ook, geeft dit de context om het PR te kunnen beoordelen.
+Ik sta nog steeds achter wat ik in die blog zei, maar ik erken dat ik eigenlijk een stap over heb geslagen. Het allereerste wat je als codereviewer doet, is de titel van het PR lezen - en, wanneer aanwezig, de beschrijving. Meer nog dan welke testsuite dan ook, geeft dit de context om het PR te kunnen beoordelen.
 
 
 Des te belangrijker dus om goed na te denken over die titel en die omschrijving.
@@ -93,7 +93,7 @@ Het is belangrijk dat de titel descriptief is, want deze is je primaire informat
 ## *Release notes*
 
 
-Daarnaast: als de titels van je PR's op orde, dan zou je in principe *release notes* moeten kunnen genereren op basis van deze informatie. Nu weet ik dat maar weinig ontwikkelaars zich al te zeer interesseren voor het maken van *release notes* - maar dat is júist waarom het belangrijk is om de titels op orde te hebben. Dit bespaart je immers het werk om deze notities zelf van de grond af aan op te stellen! (Al zal er, en daar moet ik eerlijk in zijn, waarschijnlijk altijd een handmatige redactieslag nodig blijven.)
+Daarnaast: als de titels van je PR's op orde zijn, dan zou je in principe *release notes* moeten kunnen genereren op basis van deze informatie. Nu weet ik dat maar weinig ontwikkelaars zich al te zeer interesseren voor het maken van *release notes* - maar dat is júist waarom het belangrijk is om de titels op orde te hebben. Dit bespaart je immers het werk om deze notities zelf van de grond af aan op te stellen! (Al zal er, en daar moet ik eerlijk in zijn, waarschijnlijk altijd een handmatige redactieslag nodig blijven.)
 
 
 [Cyrille Martraire](http://cyrille.martraire.com/) gaat in [*Living Documentation*](https://www.oreilly.com/library/view/living-documentation-continuous/9780134689418/) nog een stapje verder hierin. Hij stelt voor om metadata aan de titel toe te voegen, die door een *release notes*-generator geïnterpreteerd kan worden om zo een optimale gebruikservaring te bieden. Die metadata hoeft niet ingewikkeld te zijn - het kan een eenvoudig lijstje zijn als *FEATURE*, *BUG*, *REFACTOR* -, als deze maar consequent wordt toegepast. 

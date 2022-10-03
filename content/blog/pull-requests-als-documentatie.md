@@ -78,7 +78,7 @@ In de titel staat dus *wat* de build fixte, *welke* bug verholpen is, *wat* de p
 
 > - Add missing semicolon to start up logic
 >
-> - [Swap key and value for FooBar Dictionary] (LINK Identifiers)
+> - [Swap key and value for FooBar Dictionary](/blog/22/10/identifiers-zijn-ook-objecten/)
 >
 > - Improve performance of Foo module by simplifying design
 > 

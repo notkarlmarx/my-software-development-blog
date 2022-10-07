@@ -1,8 +1,8 @@
 ---
 title: "Pull requests als documentatie"
 author: "Karl van Heijster"
-date: 2022-09-02T10:53:48+02:00
-draft: true
+date: 2022-10-07T08:03:23+02:00
+draft: false
 comments: true
 tags: ["boeken", "code reviews", "documentatie", "Google", "intentie van code", "naamgeving", "productiviteit", "pull requests", "samenwerking"]
 summary: "Hoe vaak denk je na over de titel en omschrijving van je *pull request*? Als je een beetje op mij lijkt, dan is het antwoord: veel te weinig. Het goede nieuws is: je *hoeft* er niet over na te denken, want dat hebben de vriendelijke ontwikkelaars van Google al voor je gedaan. Onlangs las ik hun *Code Review Developer Guide* door, en vond daar een schat aan informatie."

@@ -1,8 +1,8 @@
 ---
 title: "Wat is een functor?"
 author: "Karl van Heijster"
-date: 2022-09-09T11:15:13+02:00
-draft: true
+date: 2022-10-10T08:16:37+02:00
+draft: false
 comments: true
 tags: ["functioneel programmeren", "functors", "leermoment", "LINQ", "options"]
 summary: "Wat is een *functor*, vraag je? Lang verhaal kort: *functors* zijn typen die een `Map`-functie implementeren. Wat is een `Map`-functie, vraag je? Lang verhaal kort: ken je LINQ? - heb je wel eens `Select` gebruikt? - nou, dat dus. Maar misschien loont het zich er nét iets langer bij stil te staan."
@@ -29,13 +29,13 @@ var ages = people.Select(p => p.Age);
 ```
 
 
-De `GetAll`-functie op de `_peopleRepository` levert een `IEnumerable<Person>` op. De `Select`-functie accepteert die `IEnumerable` als eerste parameter.[^1] De tweede parameter is een `Func<T, R>`. In dit geval zegt die functie: geef me voor elke `Person p` de `p.Age` terug. Je stopt een `IEnumerable<Person>` in de `Select`-functie, en je krijgt een `IEnmerable<Age>` terug.
+De `GetAll`-functie op de `_peopleRepository` levert een `IEnumerable<Person>` op. De `Select`-functie accepteert die `IEnumerable` als eerste parameter.[^1] De tweede parameter is een `Func<T, R>`. In dit geval zegt die functie: geef me voor elke `Person p` de `p.Age` terug. Je stopt een `IEnumerable<Person>` in de `Select`-functie, en je krijgt een `IEnmerable<Age>` terug.[^2]
 
 
 ## Transformaties
 
 
-Hoe moet je deze functionaliteit begrijpen? Je zou het zo kunnen zien: je transformeert als het ware de gebonden variabele van een lijst. Daar waar je eerst een lijst met personen had, heb je na de toepassing van de `Select`-functie een lijst met leeftijden.
+Hoe moet je deze functionaliteit begrijpen? Je zou het zo kunnen zien: je transformeert als het ware de lijstwaarden (ook wel de gebonden variabele genoemd). Daar waar je eerst een lijst met personen had, heb je na de toepassing van de `Select`-functie een lijst met leeftijden.
 
 
 Natuurlijk, dat klopt niet helemáál. LINQ omarmt immutability (zie [deze blog](/blog/22/05/heb-je-die-setter-echt-nodig/)), en dus krijg je eigenlijk een nieuwe lijst terug van een ander type. 
@@ -53,7 +53,7 @@ Dit idee blijft niet beperkt tot `IEnumerable`. Ook [Options](https://en.wikiped
 Merk op dat de signatuur van deze functie qua vorm identiek is aan die van `Select`. Het enige verschil is dat `IEnumerable` door `Option` is vervangen. 
 
 
-Je zou het zo kunnen zien: `Option` is, net als `IEnumerable`, een lijst met waarden. Maar daar waar `IEnumerable` honderden lijstitems kan hebben, zijn er voor Options maar twee: wel of geen waarde.
+Je zou het zo kunnen zien: `Option` is, net als `IEnumerable`, een lijst met waarden. Maar daar waar `IEnumerable` honderden gebonden variabelen kan hebben, zijn er voor Options maar twee: wel of geen waarde.
 
 
 Opnieuw, een concreet voorbeeld:
@@ -61,11 +61,11 @@ Opnieuw, een concreet voorbeeld:
 
 ```cs
 var person = _peopleRepository.GetById(1);
-var ages = person.Map(p => p.Age);
+var age = person.Map(p => p.Age);
 ```
 
 
-De `GetById`-functie op de `_peopleRepository` levert een `Option<Person>` op. De `Map`-functie accepteert die `Option` als eerste parameter. De tweede parameter is een `Func<T, R>`. In dit geval zegt die functie: geef me voor de `Person p` de `p.Age` terug. Er zijn twee mogelijke uitkomsten: ofwel er is een `Person p`, ofwel niet. Zo ja, dan krijg je `p.Age` terug; en zo nee, dan niet.
+De `GetById`-functie op de `_peopleRepository` levert een `Option<Person>` op. De `Map`-functie accepteert die `Option` als eerste parameter. De tweede parameter is een `Func<T, R>`. In dit geval zegt die functie: geef me voor de `Person p` de `p.Age` terug. Er zijn twee mogelijke uitkomsten: ofwel er is een `Person p`, ofwel niet. Zo ja, dan krijg je `p.Age` terug; en zo nee, dan niet. Het resultaat van deze operatie is ofwel `Option` met daarin de een welbepaalde `Age`, ofwel een `Option` met als waarde `None`.
 
 
 ## Functors
@@ -74,7 +74,7 @@ De `GetById`-functie op de `_peopleRepository` levert een `Option<Person>` op. D
 Natuurlijk blijft dit idee niet beperkt tot lijsten en Options alleen. Het idee van een type dat `Map` implementeert kan nog verder gegeneraliseerd worden tot veel meer types die als container voor een bepaalde waarde fungeren. Als we naar de functionele notatie kijken, is het enige dat ons rest om het concrete type weg te abstraheren: `Map: (C<T>, (T -> R)) -> C<R>`.
 
 
-`Map` kan zo worden gedefinieerd als een functie die een container `C<T>` accepteert, en een functie *f* met als vorm `(T -> R)`. Het retourneert een container `C<R>`, een wrapper voor de waarde(n) die het resultaat zijn van de toepassing van *f* op de binnenste waarden van de container.
+`Map` kan zo worden gedefinieerd als een functie die een container `C<T>` accepteert, en een functie *f* met als vorm `(T -> R)`. Het retourneert een container `C<R>`, een wrapper voor de waarde(n) die het resultaat zijn van de toepassing van *f* op de gebonden variabelen van de container.
 
 
 ## Voortgang
@@ -92,4 +92,6 @@ Maar ik maak voortgang, en dat doe ik [naar goed gebruik](https://medium.com/my-
 We komen er wel, `Func` voor `Func`!
 
 
-[^1]: Dit is bij het lezen van de code minder duidelijk, omdat `Select` als [extension method](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods) is geïmplementeerd. Wie de method echter inspecteert - druk op `F12` in [Visual Studio](https://visualstudio.microsoft.com/) of bekijk [de documentatie](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.select) - ziet dat het zo is. 
+[^1]: Dit is bij het lezen van de code minder duidelijk, omdat `Select` als [extension method](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods) is geïmplementeerd. Wie de method echter inspecteert - druk op `F12` in [Visual Studio](https://visualstudio.microsoft.com/) of bekijk [de documentatie](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.select) - ziet dat dit inderdaad het geval is. 
+
+[^2]: Of, wat in de praktijk waarschijnlijk vaker voorkomt: een `IEnumerable<int>`. Maar dat is een voorbeeld van *primitive obsession*! Zie ook [deze blog](/blog/22/10/identifiers-zijn-ook-objecten/).

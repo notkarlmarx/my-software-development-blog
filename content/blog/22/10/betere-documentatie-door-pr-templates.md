@@ -1,14 +1,14 @@
 ---
 title: "Betere documentatie door PR-templates"
 author: "Karl van Heijster"
-date: 2022-09-09T08:31:22+02:00
-draft: true
+date: 2022-10-14T07:55:16+02:00
+draft: false
 comments: true
 tags: ["documentatie", "pull requests", "samenwerking", "software ontwikkelen"]
 summary: "Elk *pull request* biedt een gelegenheid om documentatie te schrijven. Toen ik dat punt een tijd geleden inbracht tijdens het tweewekelijkse Alignment-overleg van mijn team, viel mij tot mijn verbazing een hoop instemmend geknik ten deel. Hoe plezierig dat ook was, eerlijk gezegd verwachtte ik niet per se dat mijn pleidooi veel navolg zou vinden. Programmeurs en documentatie is en blijft nu eenmaal een moeilijk huwelijk. Maar mijn team verraste me positief."
 ---
 
-Elk *pull request* (PR) biedt een gelegenheid om documentatie te schrijven. (Ik schreef er onlangs nog over, [hier] (LINK).) Toen ik dat punt een tijd geleden inbracht tijdens [het tweewekelijkse Alignment-overleg van mijn team](/blog/21/09/hoe-technische-schuld-te-monitoren-en-prioriteren/), viel mij tot mijn verbazing een hoop instemmend geknik ten deel. 
+Elk *pull request* (PR) biedt een gelegenheid om documentatie te schrijven. (Ik schreef er onlangs nog over, [hier](/blog/22/10/pull-requests-als-documentatie/).) Toen ik dat punt een tijd geleden inbracht tijdens [het tweewekelijkse Alignment-overleg van mijn team](/blog/21/09/hoe-technische-schuld-te-monitoren-en-prioriteren/), viel mij tot mijn verbazing een hoop instemmend geknik ten deel. 
 
 
 ## PR-templates
@@ -58,7 +58,7 @@ Er vallen ten minste twee lessen uit deze episode te trekken.
 Ten eerste: wat blijkt, ontwikkelaars hebben niet een hekel aan documentatie schrijven *an sich*. Ze hebben een hekel aan het schrijven van uitgebreide ontwerpdocumenten waarvan ze op voorhand weten dat deze binnen de kortste keren achterhaald is. 
 
 
-Dat probleem gaat voor goede PR-omschrijvingen niet op. Die documentatie blijft beperkt tot de scope van het PR. Als de code verandert, dan veroudert de documentatie, in de vorm van de PR-omschrijving, niet. Deze is immers nog steeds op precies dezelfde manier van toepassing op het PR. Waarom de code is veranderd, valt te lezen in een nieuwe PR-omschrijving.
+Dat probleem gaat voor goede PR-omschrijvingen niet op. Die documentatie blijft beperkt tot de scope van het PR. Als de code verandert, dan veroudert de documentatie *qua* PR-omschrijving niet. Deze is immers nog steeds op precies dezelfde manier van toepassing op het PR. Waarom de code is veranderd, valt te lezen in een nieuwe PR-omschrijving.
 
 
 Wie de historie van een stuk code doorloopt, kan middels de omschrijvingen achterhalen wat het oorspronkelijke doel was van de code, en hoe *en waarom* deze in de loop van de tijd is aangepast. Het is een kwestie van omschrijving na omschrijving doorlezen.

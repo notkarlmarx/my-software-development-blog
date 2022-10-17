@@ -1,8 +1,8 @@
 ---
 title: "Horizontale en verticale architectuur"
 author: "Karl van Heijster"
-date: 2022-09-16T09:54:06+02:00
-draft: true
+date: 2022-10-17T08:24:28+02:00
+draft: false
 comments: true
 tags: ["domain-driven design", "domeinmodel", "leermoment", "naamgeving", "software architectuur"]
 summary: "Als we onze applicatie verticaal op zouden hakken, dan zouden we af kunnen komen van onze ongemakkelijke naamgevingsconventies. Elke *slice* zou zijn eigen project krijgen, en elk project zijn eigen model. Of het nu over items in isolatie gaat, of items in een toets, of items in een itembank - we zouden in de code altijd over `Item` kunnen spreken - net als de gebruiker."
@@ -17,7 +17,7 @@ Je kunt dit model visualiseren als drie blokken die boven op elkaar liggen: de U
 {{<figure src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Overview_of_a_three-tier_application_vectorVersion.svg/1024px-Overview_of_a_three-tier_application_vectorVersion.svg.png" alt="Three-tier architecture">}}
 
 
-Een typische [*solution*](https://docs.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio?view=vs-2022#solutions) in de .NET-wereld bestaat dan ook uit drie [projecten](https://docs.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio?view=vs-2022#project-file), die corresponderen met elke laag.
+Een typische [*solution*](https://docs.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio?view=vs-2022#solutions) in de [.NET](https://dotnet.microsoft.com/en-us/)-wereld bestaat dan ook uit drie [projecten](https://docs.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio?view=vs-2022#project-file), die corresponderen met elke laag.
 
 
 ## Afhankelijkheden
@@ -56,7 +56,7 @@ De directe aanleiding is een ongemak dat ik ervaar in de [naamgeving](/tags/naam
 De applicatie van mijn team houdt zich bezig met item- en toetsconstructie. Je zou [items](http://www.imsproject.org/spec/qti/v3p0/impl#h.77l136x98r3), heel kort door de bocht, kunnen kenschetsen als toetsvragen, en [toetsen](http://www.imsproject.org/spec/qti/v3p0/impl#h.j41e5xe4h9bo) als verzamelingen items die als doel hebben een bepaald kennisniveau of vaardigheid te meten. 
 
 
-Het hoeft niemand te verbazen dat onze applicatie een object genaamd `Item` kent - het zou vreemd zijn als dat niet zo is. De vanzelfsprekendheid van die `Items` in onze applicatie, is een erfenis van [Eric Evans](https://www.domainlanguage.com/)' [*Domain-Driven Design*](https://en.wikipedia.org/wiki/Domain-driven_design) (DDD). 
+Het hoeft niemand te verbazen dat onze applicatie een object genaamd `Item` kent - het zou vreemd zijn als dat niet zo is. De vanzelfsprekendheid van `Items` in onze applicatie, is een erfenis van [Eric Evans](https://www.domainlanguage.com/)' [*Domain-Driven Design*](https://en.wikipedia.org/wiki/Domain-driven_design) (DDD). 
 
 
 Eén van de dingen die Evans stelt in zijn klassieke [*Domain-Driven Design: Tackling Complexity in the Heart of Software*](https://www.domainlanguage.com/ddd/), is dat de code van een applicatie de taal van de eindgebruiker moet spiegelen. Spreekt een gebruiker over een *item*, dan moet de code daar ook over spreken. 
@@ -144,7 +144,7 @@ Ook toen ik me meer ging verdiepen in softwarearchitectuur - [*Fundamentals of S
 Er waren heel wat ongemakkelijke soorten `Item`-varianten voor nodig voordat dat kwartje viel. Maar de uitdaging die dat besef presenteert is nog veel groter: moeten wij onze horizontale applicatie nu om gaan bouwen naar een verticale variant - en hoe pakken we dat dan in hemelsnaam aan?
 
 
-[^1]: Dit model is onder verschillende namen bekend. [Robert C. Martin](http://cleancoder.com/products) noemt het "[*clean architecture*](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)". "[*Hexagonal architecture*](https://en.wikipedia.org/wiki/Hexagonal_architecture_(software))" en "[*onion architecture*](https://www.codeguru.com/csharp/understanding-onion-architecture/)" zijn ook twee veel voorkomende termen. 
+[^1]: Dit model is onder verschillende namen bekend. [Robert C. Martin](http://cleancoder.com/products) noemt het "[*clean architecture*](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)". "[*Hexagonal architecture*](https://en.wikipedia.org/wiki/Hexagonal_architecture_(software))", ook wel "*ports and adapters*" genoemd, en "[*onion architecture*](https://www.codeguru.com/csharp/understanding-onion-architecture/)" zijn ook twee veel voorkomende termen. 
 
 
 [^2]: Ik heb de naamgeving wat versimpeld voor deze blog - ontwikkelaars zijn immers heel goed in het pre- en postfixen van namen met allerlei technische implemenatiedetails. Maar die details zijn gelukkig niet nodig om mijn redenering te begrijpen.

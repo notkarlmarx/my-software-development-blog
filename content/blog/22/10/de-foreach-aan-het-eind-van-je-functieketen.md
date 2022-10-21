@@ -1,8 +1,8 @@
 ---
 title: "De ForEach aan het eind van je functieketen"
 author: "Karl van Heijster"
-date: 2022-09-18T16:29:32+02:00
-draft: true
+date: 2022-10-21T07:08:15+02:00
+draft: false
 comments: true
 tags: ["functioneel programmeren", "functiepuurheid", "single-responsibility principe"]
 summary: "Het idee dat een functie altijd een waarde retourneert, is erg krachtig. Zo zorgt het ervoor dat je eenvoudige tests voor je functies kunt schrijven. Helaas is de werkelijkheid weerbarstig, en is het retourneren van een waarde niet altijd voldoende. Soms moet code neveneffecten bewerkstelligen. Denk bijvoorbeeld aan het wegschrijven van bepaalde data naar een tekst- of zipbestand. Het resultaat van zulke code kan niet in een teruggegeven waarde worden gevangen."
@@ -29,10 +29,10 @@ Helaas is de werkelijkheid weerbarstig, en is het retourneren van een waarde nie
 ## Puur en onpuur
 
 
-Een functie die een waarde retourneert op basis van zijn inputvariabelen *en niks anders*, wordt een pure functie genoemd. Elke functie die gebruik maakt van anderssoortige variabelen of die een neveneffect bewerkstelligt, is onpuur. Om die functie te doorgronden, moet je in zekere zin buiten de code van de functie zelf treden.
+Een functie die een waarde retourneert op basis van zijn inputvariabelen *en niks anders*, wordt een pure functie genoemd. Elke functie die gebruik maakt van anderssoortige variabelen of die een neveneffect bewerkstelligt, is onpuur. Om die functie te doorgronden, moet je als het ware buiten de code van de functie zelf treden.
 
 
-Voor het uitvoeren van onpure operaties bestaat een aparte method binnen het functionele paradigma.[^1] Met `ForEach` voer je een actie uit op de binnenste waarden van een bepaalde container. Je zou de method kunnen zien als het [onpure](https://thesharperdev.com/pure-v-impure-functions/) broertje van de `Map`-functie waar ik [eerder] (LINK) over schreef.
+Voor het uitvoeren van onpure operaties bestaat een aparte method binnen het functionele paradigma.[^1] Met `ForEach` voer je een actie uit op de binnenste waarden van een bepaalde container. Je zou de method kunnen zien als het [onpure](https://thesharperdev.com/pure-v-impure-functions/) broertje van de `Map`-functie waar ik [eerder](/blog/22/10/wat-is-een-functor/) over schreef.
 
 
 ## Scheiding

@@ -1,17 +1,20 @@
 ---
 title: "Hoe ik hopelijk (nóg?) betere presentaties geef"
 author: "Karl van Heijster"
-date: 2022-09-22T12:29:24+02:00
-draft: true
+date: 2022-10-24T08:03:47+02:00
+draft: false
 comments: true
 tags: ["developer meet-up", "presenteren"]
-summary: "Laatst verzorgde ik een Developer Meet-up over het schrijven van (nóg betere) unittests.Volgens mij ging de presentatie heel aardig (jeej!), maar ik heb het meest geprofiteerd van alles wat er *niet* goed aan ging. Liever gezegd: ik heb het meest geprofiteerd van de woorden die mij die ochtend waren aangereikt om te kunnen duiden *waarom* sommige dingen beter konden. Want toevallig volgde ik die ochtend een (online) masterclass online presenteren van Serge van Rooij - waar ik veel meer aantekeningen bij maakte dan ik op voorhand verwacht had. En omdat deze blog nu eenmaal het product is van een verwoede kennishamsteraar, deel ik met alle liefde de inzichten die ik graag nét een weekje eerder had willen weten."
+summary: "Laatst verzorgde ik een Developer Meet-up over het schrijven van (nóg betere) unittests. Volgens mij ging de presentatie heel aardig (jeej!), maar ik heb het meest geprofiteerd van alles wat er *niet* goed aan ging. Liever gezegd: ik heb het meest geprofiteerd van de woorden die mij die ochtend waren aangereikt om te kunnen duiden *waarom* sommige dingen beter konden. Want toevallig volgde ik die ochtend een (online) masterclass online presenteren van Serge van Rooij - waar ik veel meer aantekeningen bij maakte dan ik op voorhand verwacht had. En omdat deze blog nu eenmaal het product is van een verwoede kennishamsteraar, deel ik met alle liefde de inzichten die ik graag nét een weekje eerder had willen weten."
 ---
 
-Laatst verzorgde ik een [Developer Meet-up](/tags/developer-meet-up/) over het schrijven van (nóg betere) unittests. (De inhoud van die presentatie had ik al eerder uitgeschreven, in [deze](/blog/22/09/tests-als-documentatie/), [deze](/blog/22/09/tests-als-vangnet/) en [deze blog] (TESTS_ALS_ONTWERPMIDDEL).) Volgens mij ging de presentatie heel aardig (jeej!), maar ik heb het meest geprofiteerd van alles wat er *niet* goed aan ging. Liever gezegd: ik heb het meest geprofiteerd van de woorden die mij die ochtend waren aangereikt om te kunnen duiden *waarom* sommige dingen beter konden. 
+Laatst verzorgde ik een [Developer Meet-up](/tags/developer-meet-up/) over het schrijven van (nóg betere) unittests. (De inhoud van die presentatie had ik al eerder uitgeschreven, in [deze](/blog/22/09/tests-als-documentatie/), [deze](/blog/22/09/tests-als-vangnet/) en [deze blog](/blog/22/09/tests-als-ontwerpmiddel/).) Volgens mij ging de presentatie heel aardig (jeej!), maar ik heb het meest geprofiteerd van alles wat er *niet* goed aan ging. Liever gezegd: ik heb het meest geprofiteerd van de woorden die mij die ochtend waren aangereikt om te kunnen duiden *waarom* sommige dingen beter konden. 
 
 
-Want toevallig volgde ik die ochtend een (online) masterclass online presenteren van [Serge van Rooij](https://www.bexcommunicatie.nl/over-ons/mensen/serge-van-rooij/) - waar ik veel meer aantekeningen bij maakte dan ik op voorhand verwacht had. En omdat deze blog nu eenmaal het product is van een verwoede kennishamsteraar, deel ik met alle liefde de inzichten die ik graag nét een weekje eerder had willen weten. (Althans, de tien procent die ik heb weten te onthouden - want wat blijkt: dat is hoeveel mensen gemiddeld meenemen na een presentatie.)
+Want toevallig volgde ik die ochtend een (online) masterclass online presenteren van [Serge van Rooij](https://www.bexcommunicatie.nl/over-ons/mensen/serge-van-rooij/) - waar ik veel meer aantekeningen bij maakte dan ik op voorhand verwacht had. En omdat deze blog nu eenmaal het product is van een verwoede kennishamsteraar, deel ik met alle liefde de inzichten die ik graag nét een weekje eerder had willen weten. 
+
+
+Althans, de tien procent die ik heb weten te onthouden - want wat blijkt: dat is hoeveel mensen gemiddeld meenemen na een presentatie.
 
 
 ## De drie B's
@@ -30,13 +33,13 @@ Elke goede masterclass heeft een "drie-letter"-dingetje nodig om de aandacht van
 Omdat ik negentig procent vergeten ben, zal ik van Rooij vast vreselijk verkeerd citeren als ik zeg dat beleving slaat op de manier waarop je je verhaal overbrengt, behoefte gaat over het probleem dat je voor je publiek oplost, en dat de boodschap de feitelijke inhoud van je presentatie omvat.
 
 
-Een interessante observatie is dat de meeste mensen relatief veel tijd steken in de boodschap van hun presentatie. De beleving en behoefte blijft dan onderbelicht of wordt, in het ergste geval, zelfs vergeten. Men is zo druk bezig met het overbrengen van kennis, dat bijvoorbeeld er niet over nagedacht wordt de boodschap in een toegankelijke vorm te gieten. PowerPoints worden zo lange lappen tekst met aantekeningen.
+Een interessante observatie is dat de meeste mensen relatief veel tijd steken in de boodschap van hun presentatie. De beleving blijft dan onderbelicht of wordt, in het ergste geval, zelfs vergeten. Men is zo druk bezig met het overbrengen van kennis, dat bijvoorbeeld er niet over nagedacht wordt de boodschap in een toegankelijke vorm te gieten. PowerPoints worden zo lange lappen tekst met aantekeningen.
 
 
 ## Wat is het probleem?
 
 
-Of de boodschap wordt zo belangrijk gemaakt, dat men glad vergeet om uit te leggen waarom dit die boodschap belangrijk is. Het probleem blijft onderbelicht. Toehoorders lopen de zaal uit met een hoofd dat niet verder rijkt dan: "Oké, interessant." Terwijl je als presentator mikt op iets als: "Waarom heeft niemand me dit ooit eerder verteld?!" of "Dit wil ik onmiddellijk zelf toepassen!" 
+Of de boodschap wordt zo belangrijk gemaakt, dat men glad vergeet om uit te leggen waarom er behoefte aan die boodschap zou zijn. Welk probleem los je hiermee op? Dat blijft onderbelicht. Toehoorders lopen de zaal uit met een hoofd dat niet verder rijkt dan: "Oké, interessant." Terwijl je als presentator mikt op iets als: "Waarom heeft niemand me dit ooit eerder verteld?!" of "Dit wil ik onmiddellijk zelf toepassen!" 
 
 
 Deze valkuil valt makkelijk te ondervangen door het probleem expliciet op te nemen in de opbouw van een presentatie. Dat doe je als volgt. Deel je presentatie op in enkele hoofdstukken. Elk hoofdstuk begint met de stelling van een probleem. De rest van het hoofdstuk besteed je aan de oplossing ervan.
@@ -48,11 +51,12 @@ Om de presentatie tot een vloeiend geheel te maken, moet elke oplossing eindigen
 ## Veel meer handige tips
 
 
-Van Rooij had uiteraard nog veel meer handige tips, die ik niet verloren wil gaan (maar waarvoor ik te lui ben ze in een goed lopend verhaal uit te werken):
+Van Rooij had uiteraard nog veel meer handige tips, die ik niet verloren wil laten gaan (maar waarvoor ik te lui ben ze in een goed lopend verhaal uit te werken):
+
 
 - Start je presentatie met een ultakorte uitleg van het probleem. Leg daarna kort uiteen waarom uitgerekend *jij* degene bent die dit probleem op kan lossen. Het is fijn voor je publiek om te weten waarom ze naar je zouden moeten luisteren!
 
-- Een specifieke invulling van die ultrakorte uitleg is als volgt: 1. Stel drie vragen (bijvoorbeeld: "Heb jij last van onleesbare tests? Ben je langer bezig met het fixen van gebroken tests dan dat je er de voordelen van plukt? Of verdrinken je tests in ondoordringbare *plumbing code*?"); 2. Noem een tijdsbepaling ("Aan het eind van deze sessie..."); 3. Noem drie "-erren" ("...weet jij hoe je leesbaarder, robuuster en beter ontworpen tests schrijft!"). Het is een wat goedkope truc, dat is waar, maar: als het werkt, dan werkt het.
+- Een specifieke invulling van die ultrakorte uitleg is als volgt: 1. Stel drie vragen (bijvoorbeeld: "Heb jij last van onleesbare tests? Ben je langer bezig met het fixen van gebroken tests dan dat je er de voordelen van plukt? Of verdrinken je tests in ondoordringbare *plumbing code*?"); 2. Noem een tijdsbepaling ("Aan het eind van deze sessie..."); 3. Noem drie "-erren" ("...weet jij hoe je leesbaarder, robuuster en beter ontworpen tests schrijft!"). Het is een wat goedkope truc, maar: als het werkt, dan werkt het.
 
 - Begin het liefst elk hoofdstuk met een aansprekende anekdote die het probleem schetst. Het probleem uitleggen is prima, maar een verhaal is beter. Mensen zijn verhalende dieren, en je boodschap zal zo meer aansluiting vinden.
 
@@ -60,7 +64,7 @@ Van Rooij had uiteraard nog veel meer handige tips, die ik niet verloren wil gaa
 
 - Las na elk hoofdstukje een vragenronde in. Check of mensen de boel begrepen hebben, dat houdt hen bij de les. Zeker bij online presentaties is dit een goed middel om ervoor te zorgen dat mensen niet afdwalen richting hun telefoon of e-mail.
 
-- Noem drie argumenten voor een stelling - en niet meer. Na meer dan drie argumenten beginnen mensen argwanend te worden. Als je meer argumenten heb, kies dan de beste drie voor je doelpubliek.
+- Noem drie argumenten voor een stelling - en niet meer. Na meer dan drie argumenten beginnen mensen argwanend te worden. Als je meer argumenten paraat hebt, kies dan de beste drie voor je doelpubliek.
 
 - Sluit niet af met een vragenronde. Een vragenronde is prima, maar wanneer je deze als afsluiting inbouwt, dan geef je de controle uit handen over het gevoel waarmee je publiek de zaal verlaat. Bouw na de vragenronde nog een korte samenvatting in - noem niet meer dan drie punten! Dit zijn de hoofdzaken waarvan je wil dat je publiek ze onthoudt.
 

@@ -1,14 +1,14 @@
 ---
 title: "De fix die productie om zeep hielp"
 author: "Karl van Heijster"
-date: 2022-09-23T10:49:15+02:00
-draft: true
+date: 2022-10-28T07:40:54+02:00
+draft: false
 comments: true
 tags: ["falen", "leermoment", "productieverstoring", "software ontwikkelen", "test-driven development", "testen", "verantwoordelijkheid"]
 summary: "\"De fix staat op productie,\" meldden we trots. \"Het bleek te liggen aan wat validatielogica die in dit specifieke scenario wat te streng bleek - enfin, een technisch verhaal, dat hoef je niet te weten. Het enige wat je hoeft te weten is: we hebben weer eens geweldig werk geleverd, bedankjes worden gewaardeerd maar zijn niet noodzakelijk.\" En we leefden nog lang en gelukkig. Een halfuur lang. Want toen kregen we een berichtje: \"Help! Ik kan nu *geen enkel item* meer inzien!\""
 ---
 
-Mijn team en ik, wij ontwikkelen geen software waar mensenlevens vanaf hangen. - Goddank! Want als het aan ons zou liggen, dan zouden er doden vallen.
+Mijn team en ik, wij ontwikkelen geen software waar mensenlevens vanaf hangt. - Goddank! Want als het aan ons zou liggen, dan zouden er doden vallen.
 
 
 Nee, de software die wij ontwikkelen heeft een iets bescheidener doel: het kunnen construeren van toetsen. Dat begint met het construeren van toetsvragen ([*items*](http://www.imsproject.org/spec/qti/v3p0/impl#h.77l136x98r3) in vakjargon, uitgesproken als: "ie-tem").
@@ -20,7 +20,7 @@ Onze gebruikers kunnen items construeren in een prachtige [WYSIWYG](https://nl.w
 ## Een leeg scherm
 
 
-Die editor en die feedbackfunctionaliteit werkt natuurlijk als een zonnetje - totdat 'ie niet meer werkt. Onlangs ontvingen we een bericht van een eindgebruiker: "Help! Als ik een item open, dan krijg ik een leeg scherm te zien!"
+Die editor en die feedbackfunctionaliteit werken natuurlijk als een zonnetje - totdat ze niet meer werken. Onlangs ontvingen we een bericht van een eindgebruiker: "Help! Als ik een item open, dan krijg ik een leeg scherm te zien!"
 
 
 "Geen probleem," zeiden we. En daarna zeiden we: "Of ja, wel een probleem natuurlijk. Maar we bedoelen: we zitten er bovenop. We kijken ernaar. We gaan het fixen, geen zorgen."
@@ -56,7 +56,7 @@ Een halfuur lang. Want toen kregen we een berichtje: "Help! Ik kan nu *geen enke
 Koortsachtig doken we opnieuw in de code. De foutmeldingen die we - wij nu ook! - terugkregen waren cryptisch: iets over items die niet bestonden. Maar als we in onze database keken, dan zagen we de items in kwestie daar toch echt wel staan! Wat was er in hemelsnaam aan de hand?
 
 
-Na een hoop gedebug ging er een lichtje op bij een ontwikkelaar. De code werkte als je één item naar je collega's stuurde - maar wat als feedback vroeg op meerdere toetsvragen in één keer? - Daar had zijn fix geen rekening mee gehouden! En daar hadden hij en onze tester in hun handmatige tests geen rekening mee gehouden. Maar onze eindgebruikers, die deden niet anders!
+Na een hoop gedebug ging er een lichtje op bij een ontwikkelaar. De code werkte als je één item naar je collega's stuurde - maar wat als feedback vroeg op meerdere toetsvragen in één keer? - Daar had onze fix geen rekening mee gehouden! En in onze handmatige tests hadden we dat scenario over het hoofd gezien. Maar onze eindgebruikers, die deden niet anders!
 
 
 Ik paste de validatiecode aan zodat deze opnieuw meerdere items aankon - en ik zette de boel ongetest door naar de testomgeving, want als rechtgeaarde softwareontwikkelaar heb ik een uiterst beperkte capaciteit om van fouten te leren.
@@ -83,10 +83,10 @@ TDD wordt meestal besproken in de context van het ontwikkelen van nieuwe feature
 Ga maar na. We wisten wanneer het probleem optrad - wanneer je een item op probeerde te halen. We wisten onder welke omstandigheden het misging - wanneer deze naar collega's was rondgestuurd. En we wisten wat het verwachte gedrag was - *dat je gewoon je item kon zien!* 
 
 
-We hadden respectievelijk de *Act*, *Arrange* en de *Assert* in handen. En toch fixten we de bug zonder ook maar één geautomatiseerde test te schrijven (sterker nog, in tweede instantie, drukte de boel door zonder zelfs maar een handmatige test uit te voeren!) - en hielpen we productie om zeep. Kortstondig misschien, zeker, maar gedurende een uur konden onze gebruikers helemaal niks meer.
+We hadden respectievelijk de *Act*, *Arrange* en de *Assert* in handen. En toch fixten we de bug zonder ook maar één geautomatiseerde test te schrijven (sterker nog, in tweede instantie, drukte ik de boel door zonder zelfs maar een handmatige test uit te voeren!) - en hielpen we productie om zeep. Kortstondig misschien, zeker, maar gedurende een uur konden onze gebruikers helemaal niks meer.
 
 
-Ik heb in [een eerdere blog] (LINK) [Robert Martin](http://cleancoder.com/products) geciteerd, die stelt dat TDD een voorwaarde is voor professionaliteit in dit vak. Nou, laat ik me voorzichtig uitdrukken: het optreden van mijn team - en mij in het bijzonder - had zeker professioneler gekund.
+Ik heb in [een eerdere blog](/blog/22/09/tests-als-ontwerpmiddel/) [Robert Martin](http://cleancoder.com/products) geciteerd, die stelt dat TDD een voorwaarde is voor professionaliteit in dit vak. Nou, laat ik me voorzichtig uitdrukken: het optreden van mijn team - en mij in het bijzonder - had zeker professioneler gekund.
 
 
 ## De les
@@ -95,10 +95,10 @@ Ik heb in [een eerdere blog] (LINK) [Robert Martin](http://cleancoder.com/produc
 De les van dit verhaal is er één die de meeste ontwikkelaars volgens mij wel kennen - maar waar maar zelden naar geleefd wordt: als je een bug fixt, zorg dan dat je een test hebt die die fix valideert. - Nee, zorg dat je méérdere tests hebt die die fix valideren.
 
 
-De crux is natuurlijk: heel veel meer moeite dan handmatig testen is het niet. In beide gevallen doe je hetzelfde - in het ene geval met muisklikken, en in het andere geval met code. 
+De crux is natuurlijk: heel veel meer moeite dan handmatig testen is dat niet. In beide gevallen doe je hetzelfde - in het ene geval met muisklikken, en in het andere geval met code. 
 
 
-Het voordeel van de codemanier is niet alleen dat je een specifiek scenario nu voor eens en voor altijd aftest. Het in dit geval nog veel relevanter voordeel is dat het opschrijven van wat je doet je dwingt om na te denken over de scenario's die je *niet* test.
+Het voordeel van de codemanier is niet alleen dat je een specifiek scenario voor eens en altijd afgedekt hebt. Het in dit geval nog veel relevanter voordeel is dat het opschrijven van wat je doet je dwingt om na te denken over de scenario's die je *niet* test.
 
 
-Hadden we productie niet om zeep geholpen was we deze bug met tests gevalideerd hadden? Laten we hopen erachter te komen, de volgende keer als een eindgebruiker twee dagen voor een belangrijke vergadering in paniek bij ons aanklopt!
+Hadden we productie niet om zeep geholpen als we deze bug met tests gevalideerd hadden? Laten we hopen erachter te komen, de volgende keer als een eindgebruiker twee dagen voor een belangrijke vergadering in paniek bij ons aanklopt!

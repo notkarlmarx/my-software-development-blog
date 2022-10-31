@@ -89,7 +89,7 @@ Maar in de praktijk - een abstractieniveau lager dan beschreven, als het ware - 
 var cup = _kitchenCabinets.Left.GetNew<Cup>();
 // ...
 
-var pad = _kitchenCabinets.Richt.GetNew<Pad>();
+var pad = _kitchenCabinets.Right.GetNew<Pad>();
 // ...
 ```
 

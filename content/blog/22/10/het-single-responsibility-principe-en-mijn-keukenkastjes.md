@@ -1,8 +1,8 @@
 ---
 title: "Het Single-Responsiblity Principe en mijn keukenkastjes"
 author: "Karl van Heijster"
-date: 2022-10-02T11:15:05+02:00
-draft: true
+date: 2022-10-31T07:51:25+01:00
+draft: false
 comments: true
 tags: ["beroepsdeformatie", "performance", "single-responsibility principe"]
 summary: "Ik vind er wat van dat ik twee verschillende keukenkastjes moet openen voor iets wat in feite één handeling is. Ga maar na: wanneer pak je een koffiekopje? Als je koffie gaat zetten. En wanneer pak je een koffiepad? Als je koffie gaat zetten. Het pakken van een koffiekop gaat altijd gepaard met het pakken van een koffiepad. Het is een atomaire handeling."
@@ -53,10 +53,12 @@ while (!c.Initialized)
 }
 
 c.MakeCoffee();
+
 while (!c.Ready)
 {
     Task.Sleep(1000);
 }
+
 var coffee = c.TakeCoffe();
 Serve(coffee);
 ```

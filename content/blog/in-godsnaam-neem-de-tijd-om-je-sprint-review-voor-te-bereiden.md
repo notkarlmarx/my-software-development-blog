@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2022-11-04T09:54:49+01:00
 draft: true
 comments: true
-tags: ["communicatie", "presenteren", "sprint review"]
+tags: ["communicatie", "presenteren", "scrum", "sprint review"]
 summary: "Een Sprint Review is geen *one man show*. (Al wordt het - terecht - \"het feestje van de Product Owner\" genoemd.) Een Sprint Review is geen PowerPoint-presentatie. (Al kan en mag er gerust PowerPoint gebruikt worden tijdens de Sprint Review.) Een Sprint Review is geen demo van de nieuwste functionaliteit. (Al wordt de nieuwste functionaliteit wel gedemonstreerd.) Een Sprint Review is een teamprestatie - maar niet alleen het team is aan het woord. Een Sprint Review is een gesprek - en in een gesprek vindt altijd plaats tussen meer mensen."
 ---
 

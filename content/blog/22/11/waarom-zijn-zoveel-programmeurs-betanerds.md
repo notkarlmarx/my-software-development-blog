@@ -1,14 +1,14 @@
 ---
 title: "Waarom zijn zoveel programmeurs bètanerds?"
 author: "Karl van Heijster"
-date: 2022-10-07T08:16:53+02:00
-draft: true
+date: 2022-11-04T07:47:19+01:00
+draft: false
 comments: true
 tags: ["diversiteit", "software ontwikkelen"]
 summary: "Als filosoof kan ik een titel als *How do our ideas about coding affect the software we create?* natuurlijk moeilijk weerstaan - en ik heb dan ook met veel plezier naar het gelijknamige praatje van Christin Gorman gekeken. Gorman begint vanuit een probleem: de softwareontwikkelpopulatie (3x woordwaarde) is weinig divers. Ze bestaat, gechargeerd gezegd, voor het grootste gedeelte uit nerds met interesses in de hoek van de bètawetenschappen. Hoe komt dat?"
 ---
 
-Als filosoof kan een titel als *How do our ideas about coding affect the software we create?* natuurlijk moeilijk weerstaan - en ik heb dan ook met veel plezier naar het gelijknamige praatje van [Christin Gorman](https://www.linkedin.com/in/christin-gorman-2321aa1/) gekeken.
+Als filosoof kan ik een titel als *How do our ideas about coding affect the software we create?* natuurlijk moeilijk weerstaan - en ik heb dan ook met veel plezier naar het gelijknamige praatje van [Christin Gorman](https://www.linkedin.com/in/christin-gorman-2321aa1/) gekeken.
 
 
 {{<youtube id="sSee-aDjtmw" title="Keynote: How do our ideas about coding affect the software we create?">}}
@@ -30,13 +30,13 @@ Dit idee heeft ook zijn weg gevonden naar de manier waarop softwareontwikkeling 
 ## Eenzijdig
 
 
-Helemaal onterecht is dat natuurlijk niet. Het valt moeilijk te ontkennen dat software wat te maken heeft met *technology* en *engineering*. Softwareontwikkelaars gebruiken immers techniek om bepaalde oplossingen te bouwen. (Voor *science* en *mathematics* valt ook een zaak te maken, maar die zijn wat mij betreft wat minder overduidelijk.) 
+Helemaal onterecht is dat natuurlijk niet. Het valt moeilijk te ontkennen dat software wat te maken heeft met *technology* en *engineering*. Softwareontwikkelaars gebruiken immers techniek om bepaalde problemen op te lossen. (Voor *science* en *mathematics* valt ook een zaak te maken, maar die zijn wat mij betreft wat minder overduidelijk.) 
 
 
 Gormans punt is dan ook niet dat dit idee niet klopt. Het is eerder zo dat het een te eenzijdig beeld van softwareontwikkeling schetst.
 
 
-Softwareontwikkeling is immers ook: met stakeholders praten, hun domein modelleren, rollen en verantwoordelijkheden toewijzen aan verschillende delen van de code, een team zover krijgen zich op de juiste dingen te focussen, tests en documentatie schrijven - onder andere. In haar woorden: software ontwikkelen is management + documentatie. Dat zijn allemaal zaken die buiten beeld vallen als je het vak *louter* als technische discipline opvat.
+Softwareontwikkeling is immers ook: met stakeholders praten, hun domein modelleren, rollen en verantwoordelijkheden toewijzen aan verschillende delen van de code, een team zover krijgen zich op de juiste dingen te focussen, tests en documentatie schrijven - onder andere. In haar woorden: software ontwikkelen is *management + documentatie*. Dat zijn allemaal zaken die buiten beeld vallen als je het vak *louter* als technische discipline opvat.
 
 
 ## Nieuwe dingen leren

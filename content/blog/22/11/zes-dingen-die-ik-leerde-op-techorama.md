@@ -2,7 +2,7 @@
 title: "Zes dingen die ik leerde op Techorama"
 author: "Karl van Heijster"
 date: 2022-11-07T07:37:46+01:00
-draft: true
+draft: false
 comments: true
 tags: ["communicatie", "conferenties", "domain-driven design", "legacy code", "leren", "LINQ", "open source", "software architectuur"]
 summary: "Een tijd geleden bezocht ik softwareconferentie Techorama in Utrecht. Ik hoorde een boel nieuwe ideeën, werd gesterkt in enkele van mijn al bestaande overtuigingen, en uitgedaagd sommige ingesleten gewoonten te herzien. Uit mijn stapel aantekeningen destilleer ik zes inzichten die ik alleen al de eerste dag opdeed."

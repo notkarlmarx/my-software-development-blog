@@ -1,7 +1,7 @@
 ---
 title: "Zes dingen die ik leerde op Techorama"
 author: "Karl van Heijster"
-date: 2022-10-14T13:57:56+02:00
+date: 2022-11-07T07:37:46+01:00
 draft: true
 comments: true
 tags: ["communicatie", "conferenties", "domain-driven design", "legacy code", "leren", "LINQ", "open source", "software architectuur"]
@@ -35,13 +35,13 @@ Je hebt een ethische verplichting om de open source code te onderhouden die je g
 Het is niet aan te raden *legacy* softwaresystemen van de grond af aan opnieuw te bouwen. Natuurlijk, op deze manier ben je in één klap van je technische schuld af - maar ook van alle features die het systeem je bood. Je gooit de baby met het badwater weg. Dit is een betere oplossing: behoud het oude systeem en bouw er nieuwe systemen omheen dat langzaam maar zeker steeds meer functionaliteiten ervan overneemt. Pas Domain-Driven Design (DDD) toe voor die nieuwe systemen.
 
 
-Het meervoud (system*en*) is van belang hier. *Legacy* systemen zijn vaak monolieten wier model meerdere [*bounded contexts*](https://www.martinfowler.com/bliki/BoundedContext.html) beslaat - dat is precies één van de redenen waarom ze zo ononderhoudbaar zijn geworden. Elke *bounded context* moet in zijn eigen model worden ondergebracht, en mag niet direct interacteren met de modellen uit andere *bounded contexts*.
+Het meervoud (system*en*) is van belang hier. *Legacy* systemen zijn vaak monolieten wier model meerdere [*bounded contexts*](https://www.martinfowler.com/bliki/BoundedContext.html) omvat - dat is precies één van de redenen waarom ze zo ononderhoudbaar zijn geworden. Elke *bounded context* moet in zijn eigen model worden ondergebracht, en mag niet direct interacteren met de modellen uit andere *bounded contexts*.
 
 
 (Nota bene, onder "systeem" versta ik: alle code die behoort tot één *bounded context*. Dat kunnen aparte services zijn - één microservice per *bounded context* (zie ook [deze blog](/blog/21/08/domain-driven-design-en-ludwig-wittgenstein/)) -, maar dat hoeft niet per se. Verschillende contexten zouden in theorie in één .NET-solution kunnen leven, als ze maar gescheiden van elkaar zijn.)
 
 
-[Eric Evans](https://www.domainlanguage.com/) heeft gratis beschikbaar boekje geschreven over DDD binnen de context van [*legacy* software: *Getting started with DDD when surrounded by legacy systems*](https://www.domainlanguage.com/wp-content/uploads/2016/04/GettingStartedWithDDDWhenSurroundedByLegacySystemsV1.pdf).
+[Eric Evans](https://www.domainlanguage.com/) heeft gratis beschikbaar boekje geschreven over DDD binnen de context van *legacy* software: [*Getting started with DDD when surrounded by legacy systems*](https://www.domainlanguage.com/wp-content/uploads/2016/04/GettingStartedWithDDDWhenSurroundedByLegacySystemsV1.pdf).
 
 
 *([Kenny Baas-Schwegler](https://baasie.com/) - [Domain-Driven Design heuristics for dealing with legacy software](https://speakerdeck.com/baasie/domain-driven-design-heuristics-for-dealing-with-legacy-software-at-techorama-2022))*
@@ -51,7 +51,7 @@ Het meervoud (system*en*) is van belang hier. *Legacy* systemen zijn vaak monoli
 ## 3. Er valt nog veel meer uit LINQ te halen 
 
 
-[LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/) is een fantastisch middel om [declaratieve code](https://en.wikipedia.org/wiki/Declarative_programming) te schrijven - dat wisten we al. Maar de uitdrukkingsvaardigheid van LINQ reikt ook maar zo ver. Wees dus niet bang om de `Func<T, bool`-parameters om te schrijven naar functies met heldere namen.
+[LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/) is een fantastisch middel om [declaratieve code](https://en.wikipedia.org/wiki/Declarative_programming) te schrijven - dat wisten we al. Maar de uitdrukkingsvaardigheid van LINQ reikt ook maar zo ver. Wees dus niet bang om de `Func<T, bool>`-parameters om te schrijven naar functies met heldere namen.
 
 
 Meer nog, wees niet bang om je eigen LINQ-operators toe te voegen als daar behoefte aan is. Maar vóórdat je dat doet, check even of een project als [MoreLINQ](https://github.com/morelinq/MoreLINQ) je niet voor is geweest.
@@ -78,7 +78,7 @@ De kosten liggen daarentegen wel bij de code. Hoe complexer de code, hoe hoger h
 In de [objectgeoriënteerde](/tags/objectgeoriënteerd-programmeren/) wereld is een verschuiving merkbaar naar steeds [functioneler](/tags/functioneel-programmeren/) opgezette code. Die komt voort uit het verlangen (opnieuw) eenvoudige code te schrijven. [Monadisch](https://en.wikipedia.org/wiki/Monad_(functional_programming)) opgezette code is [eerlijk](/blog/22/07/wat-zijn-eerlijke-functies/) op een manier die typische objectgeoriënteerde code dat niet is. 
 
 
-Ook de praktijk van [Test-Driven Development](/tags/test-driven-development/) leidt tot het schrijven van eenvoudiger code. Wie zijn [tests als ontwerpmiddel](/blog/22/09/tests-als-ontwerpmiddel/) gebruikt, vervuilt zijn code niet met lekkende abstracties. 
+Ook de praktijk van [Test-Driven Development](/tags/test-driven-development/) leidt tot het schrijven van eenvoudiger code. Wie zijn [tests als ontwerpmiddel](/blog/22/09/tests-als-ontwerpmiddel/) gebruikt, vervuilt zijn code niet met [lekkende abstracties](https://en.wikipedia.org/wiki/Leaky_abstraction). 
 
 
 *([Sander Hoogendoorn](https://sanderhoogendoorn.com/) - [The zen of programming: A personal journey towards writing beautiful code](https://sanderhoogendoorn.com/the-zen-of-programming/))*
@@ -105,7 +105,7 @@ Verschillende contexten en impliciete kennis kunnen tot conflict leiden. Er zijn
 ## 6. Baseer de communicatiestructuur in je code patronen in de echte wereld
 
 
-Het aanroepen van publieke methods op verschillende deelsystemen binnen een monoliet zijn wezenlijk anders dan het aanroepen van een openbaar *endpoint* op een microservice. Wie zich onvoldoende bewust is van dat onderscheid, knutselt een prachtig microserviceslandschap in elkaar met de performance van een bejaarde luiaard.
+Het aanroepen van publieke methods op verschillende deelsystemen binnen een monoliet, is wezenlijk anders dan het aanroepen van een openbaar *endpoint* op een microservice. Wie zich onvoldoende bewust is van dat onderscheid, knutselt een prachtig microserviceslandschap in elkaar met de performance van een bejaarde luiaard.
 
 
 Communicatie over het netwerk moet geleid worden door een helder achterliggend idee. Het loont zich om hiervoor naar de echte wereld te kijken. Dit levert het [mentale model](/tags/mentaal-model/) om de communicatiestructuur te begrijpen. Hoe verlopen de communicatiestructuren binnen verschillende soorten restaurants, bijvoorbeeld? 

@@ -83,4 +83,4 @@ Het is geen probleem om een heleboel regels code aan te roepen om één stukje g
 Dat gezegd hebbend, natuurlijk staat het iedereen vrij om zoveel mocks te schrijven als diegene wil. Maar mijn advies zou zijn om ze te bewaren voor functionaliteit die om de een of andere reden niet rechtstreeks getest *kan* worden - en voor de rest van je tests *the real deal* te gebruiken. 
 
 
-[^1] En ik spreek van een vermoeden, omdat ik ruiterlijk toe durf te geven dat ik in het vervolg van dit verhaal vanuit mijn onderbuik ga spreken.
+[^1]: En ik spreek van een vermoeden, omdat ik ruiterlijk toe durf te geven dat ik in het vervolg van dit verhaal vanuit mijn onderbuik ga spreken.

@@ -1,14 +1,14 @@
 ---
-title: "Zes andere dingen die ik leerde op Techorama"
+title: "Nog zes dingen die ik leerde op Techorama"
 author: "Karl van Heijster"
-date: 2022-10-21T10:07:54+02:00
-draft: true
+date: 2022-11-14T07:33:45+01:00
+draft: false
 comments: true
 tags: ["end to end tests", "low code development", "performance", "proof of concept", "software architectuur"]
 summary: "Een tijd geleden bezocht ik softwareconferentie Techorama in Utrecht. Vandaag pen ik kort neer welke inzichten ik de tweede dag opdeed."
 ---
 
-Een tijd geleden bezocht ik softwareconferentie [Techorama](https://www.techorama.nl/) in Utrecht - ik schreef er [hier] (LINK) al eerder over. Vandaag pen ik kort neer welke inzichten ik de tweede dag opdeed.
+Een tijd geleden bezocht ik softwareconferentie [Techorama](https://www.techorama.nl/) in Utrecht - ik schreef er [hier](/blog/22/11/zes-dingen-die-ik-leerde-op-techorama/) al eerder over. Vandaag pen ik kort neer welke inzichten ik de tweede dag opdeed.
 
 
 ## 1. Bewust gebruik van de Garbage Collector kan de performance van je applicatie verbeteren
@@ -20,7 +20,7 @@ Een tijd geleden bezocht ik softwareconferentie [Techorama](https://www.techoram
 De [Garbage Collector](https://learn.microsoft.com/en-us/dotnet/api/system.gc?view=net-6.0) deelt objecten die hij op wil ruimen onder water in in [drie generaties](https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/fundamentals#generations): 0, 1 en 2. Objecten die meerdere rondes van *garbage collection* overleven, worden gepromoveerd naar een hogere generatie. Naarmate ze in een hogere generatie komen, probeert de Garbage Collector ze minder vaak op te ruimen.
 
 
-Je kunt de performance van je applicatie verbeteren door je objecten zoveel mogelijk in Generatie 0 en 1 te houden, bijvoorbeeld door het gebruik van [valuetypes](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-types). Als een object eenmaal in Generatie 2 zit, dan loont het zich om dat object daar te houden. Het opruimen van Generatie 2-objecten is zeer intensief. Je kunt hiervoor de [`ObjectPool`](https://learn.microsoft.com/en-us/aspnet/core/performance/objectpool?view=aspnetcore-6.0).
+Je kunt de performance van je applicatie verbeteren door je objecten zoveel mogelijk in Generatie 0 en 1 te houden, bijvoorbeeld door het gebruik van [valuetypes](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-types). Als een object eenmaal in Generatie 2 zit, dan loont het zich om dat object daar te houden. Het opruimen van Generatie 2-objecten is zeer intensief. Je kunt hiervoor de [`ObjectPool`](https://learn.microsoft.com/en-us/aspnet/core/performance/objectpool?view=aspnetcore-6.0) gebruiken.
 
 
 Een andere manier om de performance van de Garbage Collector te verbeteren, is middels de [configuratiesettings](https://learn.microsoft.com/en-us/dotnet/core/runtime-config/garbage-collector). Applicaties staan standaard op de Workstation-instellingen. Voor ASP.NET applicaties, is de Server-instelling doorgaans een betere instelling. (Documentatie [hier](https://learn.microsoft.com/en-us/dotnet/core/runtime-config/garbage-collector#workstation-vs-server).)
@@ -38,10 +38,13 @@ Twee dingen zijn belangrijk om daar bij op te merken. 1. Meestal is *garbage col
 Een Proof of Concept (POC) is géén prototype of pilot, en al helemaal geen productiecode. Een POC is een manier om te identificeren of een technische oplossing zijn doel raakt, of het de juiste waarde levert - het is een manier om er zeker van te zijn dat je niet de verkeerde oplossing bouwt. Het is een onderdeel in een proces om geïnformeerde keuzes te kunnen maken.
 
 
-In de volgorde van de vier P's die ik zojuist noemde, staat een op de tweede plek. Eerst doe je een prototype om de techniek te valideren, vervolgens doe je een POC om het businessdoel te valideren. Daarna draai je een pilot, en ten slotte rol je uit naar productie - met code die productierijp is. POC's gaan dus over businesswaarde. (Dit is een terminologisch punt. In de praktijk zie ik vaak dat POCs en prototypes omgedraaid worden gebruikt. Dat is geen probleem, als maar duidelijk is wat je wanneer valideert.)
+In de volgorde van de vier P's die ik zojuist noemde, staat een POC op de tweede plek. Eerst doe je een prototype om de techniek te valideren, vervolgens doe je een POC om het businessdoel te valideren. Daarna draai je een pilot, en ten slotte rol je uit naar productie - met code die productierijp is. POC's gaan dus over businesswaarde. (Dit is een terminologisch punt. In de praktijk zie ik vaak dat POCs en prototypes omgedraaid worden gebruikt. Dat is geen probleem, als maar duidelijk is wat je wanneer valideert.)
 
 
-Een POC heeft een duidelijk doel, en een afgebakende timebox - meestal twee weken. Als dat wat je wil valideren niet in twee weken past, hak de POC dan op in meerdere deel-POC's. En stel voor elk deel een duidelijk doel, dat haalbaar is binnen die twee weken. Voer de POC uit onder dezelfde omstandigheden als waarin je productiecode zou schrijven (bijvoorbeeld wat betreft security). Je wil er zo vroeg mogelijk achter komen of een bepaalde oplossing haalbaar is in een productiecontext.
+Een POC heeft een duidelijk doel, en een afgebakende timebox - meestal twee weken. Als dat wat je wil valideren niet in twee weken past, hak de POC dan op in meerdere deel-POC's. En stel voor elk deel een duidelijk doel, dat haalbaar is binnen die twee weken. 
+
+
+Voer de POC uit onder dezelfde omstandigheden als waarin je productiecode zou schrijven (bijvoorbeeld wat betreft security). Je wil er zo vroeg mogelijk achter komen of een bepaalde oplossing haalbaar is in een productiecontext.
 
 
 Het doel van een POC is niet: bewijzen *dat* iets kan. Het doel is: valideren *of* iets kan. Een POC die aantoont dat de bedachte oplossing niet de juiste is, is een geslaagde POC. De POC heeft je namelijk in staat gesteld om na twee weken (!) te kunnen concluderen: hier moeten we niet mee doorgaan. - Zonder POC zou je daar in het slechtste geval pas achter komen als je code in productie draait. Het is dus allesbehalve zonde van de tijd.
@@ -95,7 +98,7 @@ Alles leuk en wel, maar een [transactie](https://en.wikipedia.org/wiki/Transacti
 Pak het liever zo aan: binnen de context van één [aggregaat](https://martinfowler.com/bliki/DDD_Aggregate.html) - één microservice - zijn je databasecalls transactioneel. Als je de grens van het aggregaat eenmaal voorbijgaat, dan zul je een andere oplossing moeten vinden. Een typische oplossing is: het gebruik van een [service bus](https://en.wikipedia.org/wiki/Enterprise_service_bus).
 
 
-*[Jimmy Bogard](https://jimmybogard.com/) - Consistency and agreements in microservices)*
+*([Jimmy Bogard](https://jimmybogard.com/) - Consistency and agreements in microservices)*
 
 
 ## 6. Bart de Smet is een absolute held

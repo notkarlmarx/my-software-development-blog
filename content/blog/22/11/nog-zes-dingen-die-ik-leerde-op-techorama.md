@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2022-11-14T07:33:45+01:00
 draft: false
 comments: true
-tags: ["end to end tests", "low code development", "performance", "proof of concept", "software architectuur"]
+tags: ["conferenties", "end to end tests", "low code development", "performance", "proof of concept", "software architectuur"]
 summary: "Een tijd geleden bezocht ik softwareconferentie Techorama in Utrecht. Vandaag pen ik kort neer welke inzichten ik de tweede dag opdeed."
 ---
 

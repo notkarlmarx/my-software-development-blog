@@ -1,14 +1,14 @@
 ---
 title: "Test het systeem, niet de class"
 author: "Karl van Heijster"
-date: 2022-10-07T13:29:40+02:00
-draft: true
+date: 2022-11-18T08:15:09+01:00
+draft: false
 comments: true
 tags: ["DRY", "leermoment", "software ontwikkelen", "test-driven development", "testen", "teststrategie", "unit tests"]
 summary: "Het is belangrijk om vast te stellen dat er een bug in het systeem was geslopen, ondanks dat de functionaliteit die de bug veroorzaakte *ogenschijnlijk* gedekt was door tests. Waarom \"ogenschijnlijk\"? De class die de serialisatie voor zijn rekening nam, werd wel getest, maar alleen in isolatie en niet in de context van het systeem. - Vraag je af wat de implicatie daarvan is. Het betekent dat onze tests bewezen dat een class naar behoren werkt. Of het systeem als geheel naar behoren werkt, dat kunnen we op basis van de tests niet concluderen. Terwijl dat juist is waar het om gaat! "
 ---
 
-Ik heb al vaker over testen via de voordeur geschreven ([hier](/blog/22/06/testen-via-de-voordeur/), [hier](/blog/22/09/tests-als-vangnet/) en [hier] (LINK_NAAR_WAT_IS_EEN_UNIT)), dus je zou denken: zo langzamerhand zal 'ie wel uitgeluld zijn. Maar nee hoor!
+Ik heb al vaker over testen via de voordeur geschreven ([hier](/blog/22/06/testen-via-de-voordeur/), [hier](/blog/22/09/tests-als-vangnet/) en [hier](/blog/22/11/wat-is-een-unit/)), dus je zou denken: zo langzamerhand zal 'ie wel uitgeluld zijn. Maar nee hoor!
 
 
 Laatst nam ik een devbugje over van een collega - zo iemand ben ik - die op dat moment al midden in de ontwikkeling van een volgende feature zat. Wat de precieze bug was, ben ik alweer vergeten, maar ik weet nog dat het iets met het [serialiseren](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/serialization/) van een [C#-object](https://www.w3schools.com/cs/cs_classes.php) naar [JSON](https://www.json.org/json-en.html) te maken had. Ik herinner me dat heel goed, want die collega zei nog: "Werkt dat nou nog niet goed? Ik heb toch een hele tijd met die serialisatie zitten te kloten!"
@@ -35,7 +35,7 @@ Logischerwijs verwachtte ik een falende test. Maar wat schetste mijn verbazing: 
 Wat was hier in hemelsnaam aan de hand? Om dat te snappen, moet je iets weten over de bug - en over de test. 
 
 
-De bug ontstond doordat er iets misging bij het serialiseren van het object. De code riep [`JsonConvert.SerializeObject`](https://www.newtonsoft.com/json/help/html/t_newtonsoft_json_jsonconvert.htm) - met een onverwachte uitkomst tot gevolg. De test testte in isolatie of het object in kwestie geserialiseerd kon worden. Hij riep `JsonConvert.SerializeObject` aan - en slaagde.
+De bug bug trad op bij een aanroep van [`JsonConvert.SerializeObject`](https://www.newtonsoft.com/json/help/html/t_newtonsoft_json_jsonconvert.htm) in een *service* in onze codebase - met een onverwachte uitkomst tot gevolg. De test riep `JsonConvert.SerializeObject` in isolatie aan - en slaagde.
 
 
 Achteraf bezien is het verbazingwekkend dat ik het niet meteen zag. De eerste aanroep, die in onze code, serialiseerde het object zonder de optionele [`JsonSerializerSettings`](https://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_JsonSerializerSettings__ctor.htm) mee te geven. Die in de test daarentegen, maakte gebruik van de centraal gedefinieerde `JsonSerializerSettingsFactory`. Deze wordt door de hele codebase overal gebruikt om consistente serialisatie te bewerkstelligen - behalve op de plek waar de bug ontstond.

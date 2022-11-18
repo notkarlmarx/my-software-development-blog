@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2022-08-08T10:43:03+02:00
 draft: false
 comments: true
-tags: ["boeken", "clean code", "refactoren", "single-responsibility principe", "testbaarheid", "testen"]
+tags: ["clean code", "refactoren", "single-responsibility principe", "testbaarheid", "testen"]
 summary: "Het aantal refactoravonturen (met goede of slechte afloop) dat ik heb beleefd is, inmiddels al lang niet meer op één hand te tellen. In de loop der tijd is een terugkerend fenomeen me opgevallen: code waarin het ophalen van data niet wordt gescheiden van het manipuleren ervan. Laten we dat eens wat nader bekijken."
 ---
 

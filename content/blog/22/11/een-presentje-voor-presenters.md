@@ -1,23 +1,23 @@
 ---
 title: "Een presentje voor presenters"
 author: "Karl van Heijster"
-date: 2022-10-28T08:46:04+02:00
-draft: true
+date: 2022-11-21T07:34:24+01:00
+draft: false
 comments: true
 tags: ["communicatie", "developer meet-up", "gebruikersgroep", "samenwerking", "waardering"]
-summary: "*Lieve collega's, bedankt voor alle toffe presentaties die jullie (met een beetje druk van mijn kant) hebben willen verzorgen het afgelopen jaar, ik kan niet in woorden uitdrukken hoe zeer ik jullie waardeer! Ik hoop dat het doosje chocolaatjes dat jullie een tijd terug in de brievenbus vonden, iets van die dankbaarheid over kan brengen. De volgende keer zal die blijk van waarderig een stuk minder lang op zich laten wachten, beloofd! Ik hoop dat jullie van wijn houden.*"
+summary: "*Lieve collega's, bedankt voor alle toffe presentaties die jullie (met een beetje druk van mijn kant) hebben willen verzorgen het afgelopen jaar, ik kan niet in woorden uitdrukken hoe zeer ik jullie waardeer! Ik hoop dat dit wijntje iets van die dankbaarheid over kan brengen. De volgende keer zal die blijk van waarderig een stuk minder lang op zich laten wachten, beloofd!*"
 ---
 
-Een tijd terug bezocht ik mijn allereerste [gebruikersgroep](https://nl.wikipedia.org/wiki/Gebruikersgroep), [Nimma Codes](https://www.nimma.codes/). Dat was een interessante ervaring, en niet alleen omdat het best wel intimiderend is om omringd te worden door heleboel mensen die overduidelijk veel meer van software ontwikkelen afwisten dan ik. En ik geloof echt niet dat ik helemaal niks van software ontwikkelen afweet, dus je kunt je indenken hoe capabel de mensen om mij heen moeten zijn geweest.
+Een tijd terug bezocht ik mijn allereerste [gebruikersgroep](https://nl.wikipedia.org/wiki/Gebruikersgroep), [Nimma Codes](https://www.nimma.codes/).[^1] Dat was een interessante ervaring, en niet alleen omdat het best wel intimiderend is om omringd te worden door heleboel mensen die overduidelijk veel meer van software ontwikkelen afweten dan ik. En ik geloof echt niet dat ik helemaal niks van software ontwikkelen afweet, dus je kunt je indenken hoe capabel de mensen om mij heen moeten zijn geweest.
 
 
-Gelukkig was iedereen heel lief, zelfs die ene meneer die de sprekers meermaals het vuur aan de schenen legde met een lastige vragen.
+Gelukkig was iedereen heel lief, zelfs die ene meneer die de sprekers meermaals het vuur aan de schenen legde met zijn lastige vragen.
 
 
 Er werden twee presentaties gegeven. De eerste werd verzorgd door [Bas van Doren](https://nl.linkedin.com/in/basvdoren) en ging over de technieken die softwareboer [Infi](https://infi.nl/) heeft gebruikt om [identity management](https://en.wikipedia.org/wiki/Identity_management) voor de NPO voor elkaar te boksen. De tweede, [over event sourcing](https://berk.es/es/#/title-slide), werd verzorgd door [Bèr Kessels](https://berk.es/). Ik moet mijn complimenten maken voor beide sprekers: het waren goed verzorgde en erg interessante praatjes en ik heb me er uitstekend bij vermaakt. 
 
 
-En ik moet ook mijn complimenten maken aan de organisatoren, want ik zat aan de rand en daardoor kon ik mezelf continu van pizza kon voorzien. - Jazeker, ik heb me uitstekend vermaakt bij deze gebruikersgroep.
+En ik moet ook mijn complimenten maken aan de organisatoren, want ik zat aan de rand van het zaaltje en kon mezelf daardoor continu van pizza voorzien. - Jazeker, ik heb me uitstekend vermaakt bij deze gebruikersgroep.
 
 
 ## Presentje
@@ -59,4 +59,7 @@ Mijn leidinggevende was het hartstochtelijk met me eens, al vond hij wel dat het
 Die Sprint heb ik iets minder tijd besteed aan het schrijven van code, en iets meer aan het schrijven van bedankbriefjes. 
 
 
-*Lieve collega's, bedankt voor alle toffe presentaties die jullie (met een beetje druk van mijn kant) hebben willen verzorgen het afgelopen jaar, ik kan niet in woorden uitdrukken hoe zeer ik jullie waardeer! Ik hoop dat het doosje chocolaatjes dat jullie een tijd terug in de brievenbus vonden, iets van die dankbaarheid over kan brengen. De volgende keer zal die blijk van waarderig een stuk minder lang op zich laten wachten, beloofd! Ik hoop dat jullie van wijn houden.*
+*Lieve collega's, bedankt voor alle toffe presentaties die jullie (met een beetje druk van mijn kant) hebben willen verzorgen het afgelopen jaar, ik kan niet in woorden uitdrukken hoe zeer ik jullie waardeer! Ik hoop dat dit wijntje iets van die dankbaarheid over kan brengen. De volgende keer zal die blijk van waarderig een stuk minder lang op zich laten wachten, beloofd!*
+
+
+[^1]: De [eerstvolgende bijeenkomst](https://www.meetup.com/nimma-codes-meetup-group/events/287692013/) is trouwens op 29 november, wees welkom!

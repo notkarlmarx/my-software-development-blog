@@ -1,11 +1,11 @@
 ---
 title: "Hoe ziet een leercultuur eruit?"
 author: "Karl van Heijster"
-date: 2022-10-14T08:57:43+02:00
-draft: true
+date: 2022-11-25T08:01:47+01:00
+draft: false
 comments: true
 tags: ["bedrijfscultuur", "leercultuur"]
-summary: "Mijn zelfstudietijd - dat is de tijd waarin ik mijn ervaringen over softwareontwikkeling uitwerk in blogs als deze - is mij heilig. De afgelopen jaren heb ik gemerkt dat als je structureel de tijd neemt om je kennis te verbreden en te verdiepen (en te documenteren!), dit zich met rente terugbetaalt in je productiviteit als ontwikkelaar. Dat inzicht is een cadeau dat ik mijn collega's van harte gun. Nieuwe dingen leren en - net zo belangrijk! - die kennis met je collega's delen is iets wat helaas nog veel te weinig gebeurt op onze afdeling. "
+summary: "Mijn zelfstudietijd - dat is de tijd waarin ik mijn ervaringen over softwareontwikkeling uitwerk in blogs als deze - is mij heilig. De afgelopen jaren heb ik gemerkt dat als je structureel de tijd neemt om je kennis te verbreden en te verdiepen (en te documenteren!), dit zich met rente terugbetaalt in je productiviteit als ontwikkelaar. Dat inzicht is een cadeau dat ik mijn collega's van harte gun. Nieuwe dingen leren en - net zo belangrijk! - die kennis met je collega's delen is iets wat helaas nog veel te weinig gebeurt op onze afdeling."
 ---
 
 Mijn zelfstudietijd - dat is de tijd waarin ik mijn ervaringen over softwareontwikkeling uitwerk in blogs als deze - is mij heilig. De afgelopen jaren heb ik gemerkt dat als je structureel de tijd neemt om je kennis te verbreden en te verdiepen (en te documenteren!), dit zich met rente terugbetaalt in je productiviteit als ontwikkelaar. 
@@ -14,10 +14,16 @@ Mijn zelfstudietijd - dat is de tijd waarin ik mijn ervaringen over softwareontw
 Dat inzicht is een cadeau dat ik mijn collega's van harte gun. Nieuwe dingen leren en - net zo belangrijk! - die kennis met je collega's delen is iets wat helaas nog veel te weinig gebeurt op onze afdeling. 
 
 
+## Tweederangsburgers
+
+
 Zelfstudieprojecten zijn bijvoorbeeld tweederangsburgers onder de werkzaamheden - iets waar je aan toekomt als al het andere af is. Ze worden alleen gepresenteerd tijdens voortgangsgesprekken met de leidinggevende, en dat ook alleen omdat het moet. Congressen worden mondjesmaat bezocht, de boel draaiende houden heeft meestal een hogere prioriteit. 
 
 
-Na ongeveer een jaar aan [Developer Meet-ups organiseren](/blog/21/10/waarom-we-developer-meet-ups-organiseren/), trek ik de conclusie dat aanzienlijk deel van mijn collega's de tijd niet kan of wil vinden om een uurtje naar de presentatie van een collega te luisteren - zelfs niet als daar een borrel op volgt. Over zelf presenteren zal ik het niet eens hebben. (Mijn waardering voor de collega's die wel altijd op komen dagen en die - bevlogen of schoorvoetend - hebben verteld over wat hen enthousiast maakt in softwareontwikkelland, is daardoor overigens alleen maar gegroeid!)
+Na ongeveer een jaar aan [Developer Meet-ups organiseren](/blog/21/10/waarom-we-developer-meet-ups-organiseren/), trek ik de conclusie dat aanzienlijk deel van mijn collega's de tijd niet kan (of wil?) vinden om een uurtje naar de presentatie van een collega te luisteren - zelfs niet als daar een borrel op volgt. Over zelf presenteren zal ik het niet eens hebben. 
+
+
+(Mijn waardering voor de collega's die wel altijd op komen dagen en die - bevlogen of schoorvoetend - hebben verteld over wat hen enthousiast maakt in softwareontwikkelland, is daardoor overigens alleen maar gegroeid!)
 
 
 Naar de oorzaak daarvan is het gissen. Het zal wat te maken hebben met druk om features op te leveren, de mate waarin je door leidinggevenden op je prestaties wordt beoordeeld in plaats van je ontwikkeling, de perceptie van psychologische (on)veiligheid, zelfvertrouwen, of een gebrek aan intrinsieke motivatie. - Maar waarschijnlijker: een beetje van dat allemaal, en nog een heleboel dingen die ik gemist heb.
@@ -47,10 +53,10 @@ Duidelijk is, dat leren hierin centraal zou staan.
 Zelfontwikkeling zou een eersterangsburger zijn. Verstandige spaarders zetten hun geld opzij aan het begin van de maand; wie spaart wat overblijft aan het eind van de maand, spaart effectief niks. Net zo vergaat het met de zelfstudieprojecten van elke ontwikkelaar. Iedereen ruimt een vaste tijd in de Sprint in om hiermee bezig te zijn.
 
 
-Dit wordt gestimuleerd door het management van de IT-afdeling. Wie geen tijd besteedt aan zelfstudie, zal daar vroeg of laat met zijn leidinggevende over in gesprek moeten gaan - niet om te veroordelen, maar om erachter te komen wat er voor nodig is om iemand wél zo ver te krijgen. Stakeholders zullen onvermijdelijk druk uitoefenen om features te leveren, maar, gesteund door het management, zullen de teams die binnen de perken houden. 
+Dit wordt gestimuleerd door het management van de IT-afdeling. Wie geen tijd besteedt aan zelfstudie, zal daar vroeg of laat met zijn leidinggevende over in gesprek moeten gaan - niet om te veroordelen, maar om erachter te komen wat er voor nodig is om iemand wél zo ver te krijgen. Stakeholders zullen onvermijdelijk druk uitoefenen om features te leveren, maar, gesteund door het management, zullen de teams die druk binnen de perken houden. 
 
 
-Features zijn urgent, zeker, ze zijn ook belangrijk - maar ze zijn niet het allerbelangrijkst. Het allerbelangrijkst is het duurzaam features te kunnen blijven opleveren, en daar is continue zelfontwikkeling een essentieel onderdeel in. 
+Features zijn urgent, zeker, ze zijn ook belangrijk - maar ze zijn niet het allerbelangrijkst. Het allerbelangrijkst is: duurzaam features kunnen blijven opleveren, en daar is continue zelfontwikkeling een essentieel onderdeel in. 
 
 
 ## Initiatieven
@@ -77,7 +83,7 @@ Maar het is niet zo dat er alleen maar nadruk ligt op de *hard skills*. *Soft sk
 ## Kennisdeling
 
 
-Geen enkele ontwikkelaar houdt de vruchten van zijn leerproces voor zichzelf. Kennis wordt vrijelijk gedeeld. Ook hierin bestaat er niet één vorm. Ontwikkelaars houden praatjes en workshops, leiden discussies, schrijven blogs. Iedereen wordt gestimuleerd om een vorm te vinden die bij hen past - en om af en toe een andere vorm te kiezen, om buiten de comfort zone te treden. 
+Geen enkele ontwikkelaar houdt de vruchten van zijn leerproces voor zichzelf. Kennis wordt vrijelijk gedeeld. Ook hierin bestaat er niet één vorm. Ontwikkelaars houden praatjes en workshops, leiden discussies, schrijven blogs. Iedereen wordt gestimuleerd om een vorm te vinden die bij hen past - en om af en toe een andere vorm te kiezen, om buiten de comfortzone te treden. 
 
 
 Senior ontwikkelaars coachen medior ontwikkelaars, medior ontwikkelaars coachen juniors. Maar als een junior een vraag heeft, dan voelt een senior zich niet te goed om daar antwoord op te geven. Sterker nog, senioren moedigen junioren aan om zoveel mogelijk vragen te stellen - dat doen ze zelf immers ook.
@@ -95,4 +101,7 @@ Er is een diepgeworteld besef dat we het samen moeten doen. Als de ene ontwikkel
 De ontwikkelaars op de IT-afdeling die ik voor ogen zie, zijn professionals. Ze nemen hun vak serieus - en alle facetten die daarbij komt kijken. Ze worden door het management en de business dan ook niet gezien als handjes die uitvoeren wat de opdrachtgever bedenkt. Nee, ze gaan als volwaardige partner in gesprek met die business, en proberen samen een zo goed mogelijke oplossing te bedenken. 
 
 
-En daarbij gaan ze vaak genoeg op hun bek. Maar daar leren ze van, en de volgende keer doen ze het beter. En die continue verbetering, dat is waarom leren centraal staat - waarom mijn zelfstudietijd heilig is. Nu de rest van de afdeling nog.
+En daarbij gaan ze vaak genoeg op hun bek. Maar daar leren ze van - en wat ze geleerd hebben, leren ze aan hun collega's. Zo zorgen ze ervoor dat niet alleen zij, maar de hele afdeling nooit twee keer dezelfde fout maakt. Elke dag gaat het ontwikkelen een klein beetje beter. En die continue verbetering, dat is waarom leren centraal staat - waarom mijn zelfstudietijd heilig is. 
+
+
+Nu de rest van de afdeling nog.

@@ -1,14 +1,14 @@
 ---
 title: "Van rader in het geheel naar bron van talent"
 author: "Karl van Heijster"
-date: 2022-10-23T13:31:50+02:00
-draft: true
+date: 2022-11-28T07:49:04+01:00
+draft: false
 comments: true
 tags: ["boeken", "management", "recensies", "verantwoordelijkheid"]
-summary: "Hoe ziet een bedrijf haar personeel? Een hint van een antwoord zit ‘m in de daaraan toegewijde afdeling: *human resource management* (HRM). Personeel is een *resource*, een hulpbron - net als de IT-systemen, maar dan menselijk - die gemanaged moet worden. Die metafoor heeft enkele interessante consequenties, die inderdaad regelmatig haar uitwerking vinden in de praktijk: medewerkers zijn raderen in het geheel, ze moeten op hun prestaties beoordeeld worden en kunnen eenvoudig vervangen worden wanneer ze een negatieve impact hebben op dat geheel. Die zienswijze is hopeloos achterhaald, betoogt Rob van den Berg in *Futureproof talentmanagement*."
+summary: "Hoe ziet een bedrijf haar personeel? Een hint van een antwoord zit ‘m in de daaraan toegewijde afdeling: *human resource management*. Personeel is een *resource*, een hulpbron - net als het IT-systeem, maar dan menselijk - die gemanaged moet worden. Die metafoor heeft enkele interessante consequenties, die inderdaad regelmatig haar uitwerking vinden in de praktijk: medewerkers zijn raderen in het geheel, ze moeten op hun prestaties beoordeeld worden en kunnen eenvoudig vervangen worden wanneer ze een negatieve impact hebben op dat geheel. Die zienswijze is hopeloos achterhaald, betoogt Rob van den Berg in *Futureproof talentmanagement*."
 ---
 
-Hoe ziet een bedrijf haar personeel? Een hint van een antwoord zit ‘m in de daaraan toegewijde afdeling: *human resource management* (HRM). Personeel is een *resource*, een hulpbron - net als de IT-systemen, maar dan menselijk - die gemanaged moet worden. Die metafoor heeft enkele interessante consequenties, die inderdaad regelmatig haar uitwerking vinden in de praktijk: medewerkers zijn raderen in het geheel, ze moeten op hun prestaties beoordeeld worden en kunnen eenvoudig vervangen worden wanneer ze een negatieve impact hebben op dat geheel.
+Hoe ziet een bedrijf haar personeel? Een hint van een antwoord zit ‘m in de daaraan toegewijde afdeling: *human resource management* (HRM). Personeel is een *resource*, een hulpbron - net als het IT-systeem, maar dan menselijk - die gemanaged moet worden. Die metafoor heeft enkele interessante consequenties, die inderdaad regelmatig haar uitwerking vinden in de praktijk: medewerkers zijn raderen in het geheel, ze moeten op hun prestaties beoordeeld worden en kunnen eenvoudig vervangen worden wanneer ze een negatieve impact hebben op dat geheel.
 
 
 Die zienswijze is hopeloos achterhaald, betoogt [Rob van den Berg](https://www.linkedin.com/in/rob-van-den-berg-7b05181/) in [*Futureproof talentmanagement*](https://www.boomhogeronderwijs.nl/auteur/110-3890_Berg/100-10657_Futureproof-talentmanagement). Hij betoogt dat recente ontwikkelingen in de samenleving - haar snel toenemende complexiteit, de 24-uursgemeenschap, vergrijzing en ontgroening, flexibilisering, en de impact van dit alles op de arbeidscultuur en -moraal - om een nieuwe metafoor vragen. De inzet van zijn boek spreekt duidelijk uit de ondertitel: *Naar een vernieuwing van HRM*. 

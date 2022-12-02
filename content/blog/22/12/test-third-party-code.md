@@ -1,8 +1,8 @@
 ---
 title: "Test third party code"
 author: "Karl van Heijster"
-date: 2022-10-28T11:24:07+02:00
-draft: true
+date: 2022-12-02T08:15:10+01:00
+draft: false
 comments: true
 tags: ["boeken", "contracttesten", "testen", "third party code", "verantwoordelijkheid"]
 summary: "Het updaten van *third party* code is net zozeer een risicovolle onderneming als het niet updaten ervan. In beide gevallen loop je kans op de introductie van bugs. Er is een uitweg uit dat probleem. En die uitweg is - zoals meestal in softwareontwikkeling - testen, testen, testen."
@@ -11,7 +11,7 @@ summary: "Het updaten van *third party* code is net zozeer een risicovolle onder
 Code die je niet schrijft, maar wel gebruikt, is ook *jouw* code. Het is code waar jij voor verantwoordelijk bent - niet in de zin dat je die code per se hoeft te onderhouden[^1], maar wel in de zin dat als die code breekt, *jouw* code breekt.
 
 
-Je bent verantwoordelijk voor de werking van de applicatie als geheel, of je nu honderd procent van alle regels code zelf hebt geschreven, of de boel slechts aan elkaar hebt gelijmd met blokjes die anderen voor je hebben aangeleverd.
+Je bent verantwoordelijk voor de werking van de applicatie als geheel, of je nu honderd procent van alle regels code zelf hebt geschreven, of de boel slechts aan elkaar hebt gelijmd met blokjes die anderen hebben aangeleverd.
 
 
 ## Plichten
@@ -68,7 +68,7 @@ Je kunt op drie manieren omgaan met die verandering: deze negeren en op het best
 Test *third party* code. - O, en lees ook [*Software Mistakes and Tradeoffs*](https://www.manning.com/books/software-mistakes-and-tradeoffs) van [Tomasz Lelek](https://www.linkedin.com/in/tomaszlelek/?locale=en_US) en [Jon Skeet](https://codeblog.jonskeet.uk/), want zij verwoorden het in hoofdstuk 9 een stuk beter dan ik. 
 
 
-[^1]: Hoewel een bijdrage door de gebruikers van Open Source-projecten wel gewaardeerd wordt, zie ook [deze blog] (TECHORAMA).
+[^1]: Hoewel een bijdrage door de gebruikers van Open Source-projecten wel gewaardeerd wordt, zie ook [deze blog](/blog/22/11/zes-dingen-die-ik-leerde-op-techorama/).
 
 
 [^2]: Althans, voor zover tests je die zekerheid kunnen geven. Een testsuite kan nooit bewijzen dat een codebase géén bugs bevat, het kan alleen bewijzen wanneer dat wél het geval is.

@@ -5,7 +5,7 @@ date: 2022-12-03T14:42:19+01:00
 draft: true
 comments: true
 tags: ["poëzie", "security"]
-summary: "*De wekker van de hacker ging om zes uur. / Het mannetje had ‘n plannetje, / hij hackte de efbieaai, heel fraai / met geen phishingmail teveel...*"
+summary: "*De wekker van de hacker ging om zes uur. / Het mannetje had ‘n plannetje, // hij hackte de efbieaai, heel fraai / met geen phishingmail teveel...*"
 ---
 
 De wekker van de hacker ging om zes uur.

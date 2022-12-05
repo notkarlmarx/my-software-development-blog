@@ -1,8 +1,8 @@
 ---
 title: "Wat is een monad?"
 author: "Karl van Heijster"
-date: 2022-10-28T10:10:56+02:00
-draft: true
+date: 2022-12-05T08:29:10+01:00
+draft: false
 comments: true
 tags: ["functioneel programmeren", "leermoment", "monads", "options"]
 summary: "Wat is een *monad*, vraag je? Simpel: monaden zijn de meest fundamentele zijnden in het universum - ondeelbaar, onafhankelijk, zowel geestelijk als lichamelijk - de bouwblokken van de werkelijkheid, die tezamen een door God geschapen harmonieus geheel vormen - overigens zonder elkaar te beïnvloeden; het zijn perfect op elkaar afgestemde atomen die in autonoom opereren maar in hun zijn het voltallige universum spiegelen. Althans, dat is wat Gottfried Wilhelm Leibniz onder \"monaden\" verstond. Maar dit is nu eenmaal een blog over softwareontwikkeling, dus je zal wel dat functionele spul bedoelen."
@@ -42,7 +42,7 @@ De eerste stelt je in staat om een waarde te wrappen in de *monad*. Middels `Bin
 De potentie van die opzet laat zich raden. Als we ons even beperken tot de context van Options, dan maakt dit het mogelijk om op [declaratieve manier](https://en.wikipedia.org/wiki/Declarative_programming) te specificeren welke (*single-responsiblity*!) operaties je allemaal op een waarde uit wil voeren, zonder ook maar één keer op null te hoeven controleren. Dat vereenvoudigt code aanzienlijk.
 
 
-Geen wonder dat [Sander Hoogendoorn](https://sanderhoogendoorn.com/) *monads* [één van de belangrijkste inzichten in zijn carrière](https://sanderhoogendoorn.com/the-zen-of-programming/) noemde. (Zie ook [deze blog] (LINK_TECHORAMA).) Zo begeesterd als Hoogendoorn ben ik nog niet - maar dat is omdat ik nog nauwelijks met *monads* gewerkt heb buiten [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/) om. Maar als die ervaring een indicatie is voor hoe plezierig die stijl van programmeren werkt, dan kan ik zijn enthousiasme begrijpen.
+Geen wonder dat [Sander Hoogendoorn](https://sanderhoogendoorn.com/) *monads* [één van de belangrijkste inzichten in zijn carrière](https://sanderhoogendoorn.com/the-zen-of-programming/) noemde. (Zie ook [deze blog](/blog/22/11/zes-dingen-die-ik-leerde-op-techorama/).) Zo begeesterd als Hoogendoorn ben ik nog niet - maar dat is omdat ik nog nauwelijks met *monads* gewerkt heb buiten [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/) om. Maar als die ervaring een indicatie is voor hoe plezierig die stijl van programmeren werkt, dan kan ik zijn enthousiasme begrijpen.
 
 
 ## `Bind` en `Map`

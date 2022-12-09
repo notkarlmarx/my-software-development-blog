@@ -1,5 +1,5 @@
 ---
-title: "Kinderrijmpjes (voor security experts van de FBI)"
+title: "Twee kinderrijmpjes"
 author: "Karl van Heijster"
 date: 2022-12-03T14:42:19+01:00
 draft: true
@@ -58,13 +58,13 @@ ik zeg het je, de FBI gehackt!
 
 Niet door de firewall te omzeilen
 
-of verdedigingsmuren om te keilen 
+of de verdedigingsmuur om te keilen 
 
 <br>
 
 of wachtwoorden te kraken
 
-om in hun database te geraken.
+om in hun database te raken.
 
 <br>
 
@@ -82,7 +82,7 @@ ze stuurden er heel veel
 
 of men een gratis drinkfles zou willen,
 
-en dan even hun gegevens hier in wou vullen.
+en dan even hun gegevens hier invullen.
 
 <br>
 
@@ -92,18 +92,26 @@ ik zeg het je, de FBI gehackt!
 
 <br>
 
-Dus de directeur schreeuwde brand en moord,
+De directeur schreeuwt brand en moord!
 
-zo luidde de security officer z’n antwoord:
+En zo luidt de security officer z’n antwoord:
 
 <br>
 
-Wees maar niet getreurd, mijnheer:
+Nou treur toch niet te zeer, mijnheer:
 
-de agenten hebben in elk geval geen dorst meer!
+d'agenten hebben in elk geval geen dorst meer!
 
 <br>
 
 Ze hebben de FBI gehackt,
 
 ik zeg het je, de FBI gehackt!
+
+
+<br>
+<br>
+<br>
+
+
+*Naschrift: mijn dichtbundel* 128 kinderrijmpjes over die keer dat de FBI werd gehackt *zoekt nog een uitgever.*

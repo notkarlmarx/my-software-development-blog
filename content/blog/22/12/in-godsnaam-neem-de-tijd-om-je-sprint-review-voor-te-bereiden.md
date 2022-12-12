@@ -1,8 +1,8 @@
 ---
 title: "In godsnaam, neem de tijd om je Sprint Review voor te bereiden"
 author: "Karl van Heijster"
-date: 2022-11-04T09:54:49+01:00
-draft: true
+date: 2022-12-12T07:53:57+01:00
+draft: false
 comments: true
 tags: ["communicatie", "presenteren", "scrum", "sprint review"]
 summary: "Een Sprint Review is geen *one man show*. (Al wordt het - terecht - \"het feestje van de Product Owner\" genoemd.) Een Sprint Review is geen PowerPoint-presentatie. (Al kan en mag er gerust PowerPoint gebruikt worden tijdens de Sprint Review.) Een Sprint Review is geen demo van de nieuwste functionaliteit. (Al wordt de nieuwste functionaliteit wel gedemonstreerd.) Een Sprint Review is een teamprestatie - maar niet alleen het team is aan het woord. Een Sprint Review is een gesprek - en in een gesprek vindt altijd plaats tussen meer mensen."
@@ -35,7 +35,7 @@ Na afloop van een Sprint Review weten beide partijen een beetje meer van elkaar.
 Die communicatie komt niet vanzelf tot stand. Hoewel Agile methodologieën programmeurs en eindgebruikers stimuleren om met elkaar samen te werken, blijft er een kloof tussen beide bestaan. 
 
 
-Die kloof wordt veroorzaakt door het feit dat beide groepen zich in totaal verschillende contexten bewegen. Programmeurs bevinden zich in een wereld van classes en modules met specifieke verantwoordelijkheden, en libraries en databases en cloudcomponenten die hen het moeilijke werk uit handen nemen. Eindgebruikers zitten diep in de inhoudelijke materie van je applicatie - alles wat er voor nodig is om dat voor elkaar te krijgen is abracadabra.
+Die kloof wordt veroorzaakt door het feit dat beide groepen zich in totaal verschillende contexten bewegen. Programmeurs bevinden zich in een wereld van classes en modules met specifieke verantwoordelijkheden, en libraries en databases en cloudcomponenten die hen het moeilijke werk uit handen nemen. Eindgebruikers zitten diep in de inhoudelijke materie van je applicatie - alles wat er voor nodig is om dat voor elkaar te krijgen is wat hun betreft abracadabra.
 
 
 ## Abracadabra
@@ -56,7 +56,7 @@ Ik heb eens gehoord van een team waarvan de stakeholders uit wanhoop maar een ap
 In godsnaam, neem de tijd om je Sprint Review voor te bereiden. Niet omdat je niet weet wat je gedaan hebt - je weet wat je gedaan hebt, en dat kun je best een uurtje van tevoren structureren. 
 
 
-Een Sprint Review heeft voorbereidingstijd nodig omdat je wat je gedaan hebt moet vertalen in termen die je stakeholders verstaan. Dat gaat niet vanzelf. Je moet je afvragen: welke waarde levert deze feature hen op? Waar zitten nog eventuele beperkingen? Welke informatie deel ik wel, en welke is voor hen niet relevant?
+Een Sprint Review heeft voorbereidingstijd nodig omdat je wat je gedaan hebt, moet vertalen in termen die je stakeholders verstaan. Dat gaat niet vanzelf. Je moet je afvragen: welke waarde levert deze feature hen op? Waar zitten nog eventuele beperkingen? Welke informatie deel ik wel, en welke is voor hen niet relevant?
 
 
 Waar dit op neerkomt, wat ik wil zeggen, is: *ken je publiek.* - Dat betekent niet: weet wie aanschuift. 

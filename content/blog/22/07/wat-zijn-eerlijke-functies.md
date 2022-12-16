@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2022-07-15T07:50:48+02:00
 draft: false
 comments: true
-tags: ["classes", "functies", "functioneel programmeren", "intentie van code", "null", "options"]
+tags: ["classes", "eerlijke functies", "functies", "functioneel programmeren", "intentie van code", "null", "options"]
 summary: "Uit Enrico Buonanno's *Functional Programming in C# (Second Edition)* leerde het concept van een *eerlijke functie* kennen - en dat maakte me bewust van de oneerlijkheid van de code die ik doorgaans schrijf. Wat zijn eerlijke functies? Voordat we die vraag kunnen beantwoorden, moeten we eerst een antwoord geven op een onderliggende vraag, en dat is: wat is een functie überhaupt?"
 ---
 

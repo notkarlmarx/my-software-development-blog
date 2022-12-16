@@ -1,8 +1,8 @@
 ---
 title: "Tests zijn specs"
 author: "Karl van Heijster"
-date: 2022-11-11T11:02:04+01:00
-draft: true
+date: 2022-12-16T08:08:08+01:00
+draft: false
 comments: true
 tags: ["communicatie", "documentatie", "samenwerking", "testen", "unit tests"]
 summary: "Kleine (of liever: te kleine) tests geven weinig informatie over de werking van het systeem. Ze verlangen van de lezer om op de hoogte te zijn van implementatiedetails, en verliezen zo het grote geheel uit het zicht. Voor grotere unittests gaat die beperking niet op. Zulke tests doen geen aannames over de interne werking van het systeem. Ze beschrijven slechts de buitenkant ervan: wat de gebruiker - hoe we die dan ook mogen definiëren - invoert en wat deze terugkrijgt. Het gevolg daarvan is *dat je tests leesbaar worden voor niet-ontwikkelaars*."

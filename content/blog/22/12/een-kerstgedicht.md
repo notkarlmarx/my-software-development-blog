@@ -1,8 +1,8 @@
 ---
 title: "Een kerstgedicht"
 author: "Karl van Heijster"
-date: 2022-12-23T08:35:17+01:00
-draft: true
+date: 2022-12-23T08:28:57+01:00
+draft: false
 comments: true
 tags: ["poëzie", "productieverstoring"]
 summary: "*Elke vogel zingt zijn lied maar de app werkt nu dus niet. / In de volle maan, zet je laptop aan. / Tik tik tik, tak tak tak, laat de code stromen: / De fix zal snel komen!*"

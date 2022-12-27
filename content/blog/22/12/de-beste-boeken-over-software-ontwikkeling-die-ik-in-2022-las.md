@@ -1,8 +1,8 @@
 ---
 title: "De beste boeken over software ontwikkeling die ik in 2022 las"
 author: "Karl van Heijster"
-date: 2022-11-18T08:30:30+01:00
-draft: true
+date: 2022-12-27T23:09:12+01:00
+draft: false
 comments: true
 tags: ["boeken"]
 summary: "Eindejaarslijstjestijd! Net als vorig jaar en het jaar daarvoor heb ik dit jaar weer enkele fantastische boeken over softwareontwikkeling mogen lezen. Dit waren mijn vijf favorieten - en vijf eervolle vermeldingen."
@@ -26,7 +26,7 @@ Functioneel programmeren is niet alleen een manier van denken, het is ook een ma
 Het idee dat mijn huidige manier van code schrijven het meest heeft beïnvloed, is dat van [eerlijke functies](/blog/22/07/wat-zijn-eerlijke-functies/). Je code is meer dan alleen een instructie voor een machine - het is een communicatiemiddel naar je collega's en je toekomstige zelf toe. Een eerlijke functie communiceert haar werking louter en alleen middels haar signatuur: *dit* gaat erin, *dat* komt eruit - meer is het niet. 
 
 
-Met het gebruik van [*monads*](LINK_NAAR_MONADBLOG) kun je de intentie van dat *dit* en *dat* nog verder verduidelijken. Een [Option](https://www.karlvanheijster.com/blog/22/08/spelen-met-options/) geeft bijvoorbeeld aan: dit object kan ook *niets* zijn. - En het is ook een fantastische manier om vervelende boilerplate code te vermijden, zoals de obligate en immer vervelende null-check.
+Met het gebruik van [*monads*](/blog/22/12/wat-is-een-monad/) kun je de intentie van dat *dit* en *dat* nog verder verduidelijken. Een [Option](https://www.karlvanheijster.com/blog/22/08/spelen-met-options/) geeft bijvoorbeeld aan: dit object kan ook *niets* zijn. - En het is ook een fantastische manier om vervelende boilerplate code te vermijden, zoals de obligate en immer vervelende null-check.
 
 
 Dit boek heeft mijn manier van code schrijven veranderd, en is - hoewel nog steeds niet helemaal uitgelezen - daarom een welverdiende nummer één.
@@ -35,7 +35,7 @@ Dit boek heeft mijn manier van code schrijven veranderd, en is - hoewel nog stee
 ### 2. James Shore - [*The Art of Agile Development, Second Edition*](https://www.jamesshore.com/v2/books/aoad2)
 
 
-Ik bevind me in de luxepositie om mijn hele softwareontwikkelcarrière lang al heel aardig volgens het boekje te mogen Scrummen. Toen ik vorig jaar [*Clean Agile*](/blog/21/11/agile-zijn-niet-agile-doen/) las (vorig jaar nog een [eervolle vermelding](/blog/21/12/de-beste-boeken-over-software-ontwikkeling-die-ik-in-2021-las/)!), ontdekte ik echter dat er veel meer bij Agile komt kijken dan alleen iteratief ontwikkelen.
+Ik bevind me in de luxepositie om mijn hele softwareontwikkelcarrière lang al heel aardig volgens het boekje te mogen Scrummen. Toen ik [*Clean Agile*](/blog/21/11/agile-zijn-niet-agile-doen/) las (vorig jaar nog een [eervolle vermelding](/blog/21/12/de-beste-boeken-over-software-ontwikkeling-die-ik-in-2021-las/)!), ontdekte ik echter dat er veel meer bij Agile komt kijken dan alleen iteratief ontwikkelen.
 
 
 *The Art of Agile Development* van [James Shore](https://www.jamesshore.com/) is een zeer compleet overzicht van allerlei praktijken die Agile teams naar een hoger niveau kunnen stuwen. Van [Test-Driven Development (TDD)](/blog/22/05/nog-een-reden-om-testgedreven-te-ontwikkelen/) tot [incidentanalyses](/blog/22/05/incidentanalyse-zonder-schuldigen/) tot [*user stories*](/blog/22/02/de-rol-van-user-stories/) tot de notie van [speelruimte](/blog/22/05/tevreden-ontwikkelaars-en-stakeholders-dankzij-speelruimte/): dit boek bevat een schat aan kennis. Het is wat mij betreft verplichte kost voor elke ontwikkelaar die zichzelf en zijn team continu wil verbeteren.
@@ -47,7 +47,7 @@ Ik bevind me in de luxepositie om mijn hele softwareontwikkelcarrière lang al h
 Tot nog toe is er geen jaar voorbijgegaan zonder dat [Robert *Uncle Bob* Martin](http://cleancoder.com/products) in een of andere hoedanigheid op mijn eindejaarslijstje prijkte (in 2020 stond 'ie zelfs op [de eerste én tweede plek](/blog/21/05/de-beste-boeken-over-software-ontwikkeling-die-ik-in-2020-las/)!) - en dit jaar gaat niet anders zijn. 
 
 
-*Clean Craftmanship* is een oproep aan ontwikkelaars om zichzelf en hun vakgebied te professionaliseren. De tijd dat we weg konden komen met buggy software die voor tachtig, zeventig of zestig procent deed wat de eindgebruiker verwacht, is definitief voorbij. 
+*Clean Craftmanship* is een oproep aan ontwikkelaars om zichzelf en hun vakgebied te professionaliseren. De tijd dat we weg konden komen met buggy software die voor tachtig, zeventig of zestig procent doet wat de eindgebruiker verwacht, is definitief voorbij. 
 
 
 Er komt heel wat kijken bij het zijn van een softwarevakman - een ferm "nee" kunnen verkopen aan je manager, bijvoorbeeld -, maar het allerbelangrijkst is: testen. Testen, testen, testen. Ondanks zijn brede opzet, neemt TDD de helft van dit boek in beslag - en terecht. Als je vandaag de dag professioneel programmeert en nog niet TDD't, stop dan *nu* waar je mee bezig bent en lees dit boek.

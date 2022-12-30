@@ -1,14 +1,14 @@
 ---
 title: "Waarom ik een stapje terug doe"
 author: "Karl van Heijster"
-date: 2022-12-09T07:55:26+01:00
-draft: true
+date: 2022-12-30T10:37:52+01:00
+draft: false
 comments: true
 tags: ["boeken", "bloggen", "dotkarl", "zelfstudie"]
-summary: "Het is (op het moment van schrijven) het eind van het jaar, en dat is altijd een mooi moment om te reflecteren. - Een nog mooier moment, bedoel ik, want reflecteren doe ik aan de lopende band - onder andere middels mijn blogs. Het afgelopen jaar heb ik elke week twee blogs geschreven over alles wat mij interesseert aan softwareontwikkeling, en dat heb ik met veel plezier gedaan. Het komend jaar doe ik daarom logischerwijs een stapje terug en ga één keer per week bloggen."
+summary: "Het is het eind van het jaar, en dat is altijd een mooi moment om te reflecteren. - Een nog mooier moment, bedoel ik, want reflecteren doe ik aan de lopende band - onder andere middels mijn blogs. Het afgelopen jaar heb ik elke week twee blogs geschreven over alles wat mij interesseert aan softwareontwikkeling, en dat heb ik met veel plezier gedaan. Het komend jaar doe ik daarom logischerwijs een stapje terug en ga één keer per week bloggen."
 ---
 
-Het is (op het moment van schrijven) het eind van het jaar, en dat is altijd een mooi moment om te reflecteren. - Een nog mooier moment, bedoel ik, want reflecteren doe ik aan de lopende band - onder andere middels mijn blogs. Het afgelopen jaar heb ik elke week twee blogs geschreven[^1] over alles wat mij interesseert aan softwareontwikkeling, en dat heb ik met veel plezier gedaan. Het komend jaar doe ik daarom logischerwijs een stapje terug en ga één keer per week bloggen.
+Het is het eind van het jaar, en dat is altijd een mooi moment om te reflecteren. - Een nog mooier moment, bedoel ik, want reflecteren doe ik aan de lopende band - onder andere middels mijn blogs. Het afgelopen jaar heb ik elke week twee blogs geschreven[^1] over alles wat mij interesseert aan softwareontwikkeling, en dat heb ik met veel plezier gedaan. Het komend jaar doe ik daarom logischerwijs een stapje terug en ga één keer per week bloggen.
 
 
 ## Middel
@@ -26,7 +26,7 @@ Twee blogs per week schrijven is een middel, geen doel op zich. Het is belangrij
 ## Boeken
 
 
-En het middel is andere dingen in de weg gaan zitten die ik óók graag zou willen doen. [Mijn favoriete boek van dit jaar](LINK) heb ik bijvoorbeeld niet uit weten te lezen. (Waarbij "uitlezen" betekent: het boek doorploegen terwijl ik meeschrijf en experimenteer in mijn IDE.) Dat heeft verschillende oorzaken, natuurlijk. Het gebrek aan aaneengesloten tijdvakken waarin ik me zuiver op het boek kon concentreren, was daar één van. 
+En het middel is andere dingen in de weg gaan zitten die ik óók graag zou willen doen. [Mijn favoriete boek van dit jaar](/blog/22/12/de-beste-boeken-over-software-ontwikkeling-die-ik-in-2022-las/) heb ik bijvoorbeeld niet uit weten te lezen. (Waarbij "uitlezen" betekent: het boek doorploegen terwijl ik meeschrijf en experimenteer in mijn IDE.) Dat heeft verschillende oorzaken, natuurlijk. Het gebrek aan aaneengesloten tijdvakken waarin ik me zuiver op het boek kon concentreren, was daar één van. 
 
 
 Alle zelfstudietijd ging naar het schrijven van twee blogs, waardoor het ontwikkelen van nieuwe programmeervaardigheden in het geding kwam. Wie meer proza schrijft dan code, maakt zich wel de noodzakelijke concepten eigen, maar slaat hen niet op in het spiergeheugen. - Er is meer dan alleen begrip nodig om een goede programmeur te zijn.  

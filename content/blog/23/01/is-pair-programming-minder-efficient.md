@@ -1,14 +1,14 @@
 ---
 title: "Is pair programming minder efficiënt?"
 author: "Karl van Heijster"
-date: 2022-11-25T11:00:47+01:00
-draft: true
+date: 2023-01-13T07:27:28+01:00
+draft: false
 comments: true
 tags: ["code reviews", "efficiëntie", "pair programming"]
 summary: "Mijn team worstelt een beetje met het vlot doorzetten van *pull requests*. Dus vertelde ik tijdens een borrel aan een collega uit een ander team van mijn voornemen vaker te *pair programmen*. Hij was geen fan."
 ---
 
-Mijn team [worstelt een beetje met het vlot doorzetten van *pull requests* (PR's)](LINK_WELCODEREVIEWSGEENPR). Dus vertelde ik tijdens een borrel aan een collega uit een ander team van mijn voornemen vaker te *pair programmen*. 
+Mijn team [worstelt een beetje met het vlot doorzetten van *pull requests* (PR's)](/blog/23/01/wel-code-reviews-geen-pull-requests/). Dus vertelde ik tijdens een borrel aan een collega uit een ander team van mijn voornemen vaker te *pair programmen*. 
 
 
 Hij was geen fan.
@@ -29,7 +29,7 @@ Ten eerste: het is een aanname dat je met z'n tweeën even lang doet over het pr
 Toegegeven, twee keer zo snel klinkt wel érg optimistisch. Maar het zou kunnen, bijvoorbeeld als één van beide programmeurs weet heeft van een open source *library* voor een probleem dat de ander handmatig zou hebben gelost.
 
 
-Zelfs dan geef ik toe dat mijn optimisme niet gerechtvaardigd is. - Sterker nog, het omgekeerde zou ook het geval kunnen zijn: het zou zomaar kunnen dat *pair programming* lánger duurt dan in je eentje programmeren. Mijn punt is: het pessimisme van mijn collega is net zo ongerechtvaardigd. Het is een empirisch vraagstuk of *pair programming* ontwikkelaars in staat stelt sneller - in absolute uren, niet in manuren - features op te leveren.
+Maar zelfs dan geef ik toe dat mijn optimisme niet gerechtvaardigd is. - Sterker nog, het omgekeerde zou ook het geval kunnen zijn: het zou zomaar kunnen dat *pair programming* lánger duurt dan in je eentje programmeren. Mijn punt is dit: het pessimisme van mijn collega is net zo ongerechtvaardigd. Het is een empirisch vraagstuk of *pair programming* ontwikkelaars in staat stelt sneller - in absolute uren, niet in manuren - features op te leveren.
 
 
 ## Hoe goed?
@@ -44,7 +44,7 @@ Voor de korte termijn geldt: eventuele problemen met de code worden pas ontdekt 
 Voor de lange termijn geldt: sluimerende bugs of diepgravender ontwerpproblemen manifesteren zich pas later in de ontwikkelcyclus - hopelijk al tijdens het testen, en anders pas in productie. Ook hier komt extra werk uit. Dat werk zou ook opgeteld moeten worden bij de uren die het kost om de feature te implementeren. Het argument van mijn collega gaat er stilzwijgend van uit dat de feature na de codereview ook echt af is - klaar, voltooid, niks meer aan doen. Het is een empirisch vraagstuk of *pair programming* code met minder bugs oplevert of niet.
 
 
-Nu zou je kunnen tegenwerping: *pair programming* garandeert niet per se dat er meer bugs in een vroeg stadium worden afgevangen. Als je twee slechte programmeurs bij elkaar zet, zullen ze samen buggy code schrijven. En dat klopt - maar dat klopt evenzeer voor de situatie waarin de ene slechte programmeur de buggy code van de andere slechte programmeur codereview. Het is dus geen argument tegen *pair programming* - het is wél een argument om zo min mogelijk slechte programmeurs in je team te willen hebben, waarvan akte.
+Nu zou je kunnen tegenwerping: *pair programming* garandeert niet per se dat er meer bugs in een vroeg stadium worden afgevangen. Als je twee slechte programmeurs bij elkaar zet, zullen ze samen buggy code schrijven. En dat klopt - maar dat klopt net zozeer voor de situatie waarin de ene slechte programmeur de buggy code van de andere slechte programmeur codereviewt. Het is dus geen argument tegen *pair programming* - het is wél een argument om zo min mogelijk slechte programmeurs in je team te willen hebben, waarvan akte.
 
 
 ## Hamvraag

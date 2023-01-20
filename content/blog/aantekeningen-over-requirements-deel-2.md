@@ -1,5 +1,5 @@
 ---
-title: "Aantekeningen over requirements deel 2"
+title: "Aantekeningen over requirements - deel 2"
 author: "Karl van Heijster"
 date: 2023-01-06T12:10:25+01:00
 draft: true

@@ -5,10 +5,19 @@ date: 2023-01-06T10:34:15+01:00
 draft: true
 comments: true
 tags: ["agile ontwikkeling", "boeken", "communicatie", "documentatie", "informatieanalyse", "requirements", "samenwerking"]
-summary: "Deze blog is gebaseerd op de aantekeningen die ik maakte tijdens het lezen van *Software Development Pearls* van Karl Wiegers. Hij beslaat het eerste deel van het eerste deel van Wiegers' boek, te weten de eerste acht van zestien lessen over de praktijk van requirements engineering. De volgende acht komen in een volgende blog aan bod."
+summary: "Het moeilijkste onderdeel van softwareontwikkelen is niet *het juist bouwen*, maar *het juiste bouwen*. Vaak zwoegen programmeurs dagenlang op hun code en worstelen testers zich door het resultaat heen, om er pas helemaal op het eind van de ontwikkelcyclus achter te komen dat er iets is gebouwd waar eindgebruikers niet helemaal (of: helemaal niet!) op zaten te wachten. Het scheppen van een juist beeld van wat er gemaakt moet worden  is misschien wel de belangrijkste stap in het ontwikkelen van software - en niet zelden de minst ontwikkelde."
 ---
 
-Deze blog is gebaseerd op de aantekeningen die ik maakte tijdens het lezen van [*Software Development Pearls*](https://www.informit.com/store/software-development-pearls-lessons-from-fifty-years-9780137487776) van [Karl Wiegers](https://www.karlwiegers.com/). (Zie ook [deze blog](ATOMIC_HABITS).) Hij beslaat het eerste deel van het eerste deel van Wiegers' boek, te weten de eerste acht van zestien lessen over de praktijk van requirements engineering. De volgende acht komen in een volgende blog aan bod.
+Het moeilijkste onderdeel van softwareontwikkelen is niet *het juist bouwen*, maar *het juiste bouwen*. Vaak zwoegen programmeurs dagenlang op hun code en worstelen testers zich door het resultaat heen, om er pas helemaal op het eind van de ontwikkelcyclus achter te komen dat er iets is gebouwd waar eindgebruikers niet helemaal (of: helemaal niet!) op zaten te wachten.
+
+
+Het scheppen van een juist beeld van wat er gemaakt moet worden, wordt *requirements analysis* (of *requirements engineering* of *elicitation* - kies maar een variant) genoemd. Het is misschien wel de belangrijkste stap in het ontwikkelen van software - en niet zelden de minst ontwikkelde. Om die reden heb ik besloten om wat gedachten over het onderwerp uit te werken.
+
+
+\- O, niet mijn eigen gedachten, hoor - maak je geen zorgen. Het volgende is gebaseerd op de aantekeningen die ik maakte tijdens het lezen van [*Software Development Pearls*](https://www.informit.com/store/software-development-pearls-lessons-from-fifty-years-9780137487776) van [Karl Wiegers](https://www.karlwiegers.com/). (Zie ook [deze blog](ATOMIC_HABITS).) Wiegers heeft meer dan vijftig jaar ervaring in het vak en heeft zijn hoofd al een stuk vaker aan de requirementssteen gestoten dan ik.
+
+
+Deze blog beslaat het eerste deel van het eerste deel van Wiegers' boek, te weten de eerste acht van zestien lessen over de praktijk van requirements engineering. De volgende acht komen in een volgende blog aan bod.
 
 
 **I.**

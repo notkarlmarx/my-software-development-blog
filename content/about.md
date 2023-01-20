@@ -19,4 +19,4 @@ Dat geldt bijvoorbeeld voor de code die ik schrijf (en herschrijf!). Ik hou van 
 Maar het geldt ook voor het hele proces om software ontwikkelen heen. Wat maakt een goede softwareontwikkelaar? Wat stelt een team in staat zo goed mogelijke oplossingen te programmeren? En hoe bewaak je de kwaliteit van die oplossing? Ik heb een fascinatie voor *code craftmanship* en de Agile filosofie, en een honger naar alles wat mijn collega's en mij helpt om meer waarde te leveren.
 
 
-Op deze blog houd ik twee keer per week enkele van mijn observaties over de softwareontwikkelpraktijk bij. 
+Op deze blog houd ik twee keer per week enkele van mijn observaties over de softwareontwikkelpraktijk bij. Voeg *dotkarl* toe aan je [RSS-feed](/index.xml/) om geen enkele blog te missen.

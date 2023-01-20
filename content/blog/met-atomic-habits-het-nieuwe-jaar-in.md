@@ -11,7 +11,7 @@ summary: "Het was geen goed voornemen van me, maar op 1 januari begon ik wel met
 Het was geen goed voornemen van me, maar op 1 januari begon ik wel met een goede nieuwe gewoonte. Twee nieuwe gewoontes, eigenlijk.
 
 
-De eerste is er eentje die voortbouwt op een al bestaande goede gewoonte. Die luidt: [lees elke dag twee kwartier over je vak](/blog/21/05/lees-elke-dag-een-kwartier-over-je-vak/). Elke ochtend, aan de ontbijttafel, lees ik, onder het genot van een boterham en een kopje thee, in een boek over softwareontwikkeling. Op het moment van schrijven is dat [*Software Development Pearls*](https://www.informit.com/store/software-development-pearls-lessons-from-fifty-years-9780137487776) van [Karl Wiegers](https://www.karlwiegers.com/)[^1] - want iemand met zo'n voornaam, die móet wel iets zinnigs te vertellen hebben.
+De eerste is er eentje die voortbouwt op een al bestaande goede gewoonte. Die luidt: [lees elke dag twee kwartier over je vak](/blog/21/05/lees-elke-dag-een-kwartier-over-je-vak/). Elke ochtend, aan de ontbijttafel, lees ik, onder het genot van een boterham en een kop thee, in een boek over softwareontwikkeling. Op het moment van schrijven is dat [*Software Development Pearls*](https://www.informit.com/store/software-development-pearls-lessons-from-fifty-years-9780137487776) van [Karl Wiegers](https://www.karlwiegers.com/)[^1] - want iemand met zo'n voornaam, die móet wel iets zinnigs te vertellen hebben.
 
 
 ## Aantekeningen
@@ -32,7 +32,7 @@ Elke keer als ik het boek weg leg, dwing ik mezelf om te reflecteren op de inhou
 Dat klinkt misschien als een vermoeiende bezigheid. Vertraagt deze werkwijze niet zodanig dat ik nooit meer een boek uit zal lezen - een probleem [waar ik vorig jaar nota bene al tegenaan liep](/blog/22/12/waarom-ik-een-stapje-terug-doe/)?
 
 
-Eigenlijk valt dat reuze mee. Sterker nog, deze nieuwe gewoonte heeft mijn leesplezier zelfs verhoogd. Want de optie om gedachteloos een boek te lezen, is effectief uitgeschakeld. Het is praktisch onmogelijk geworden om een hoofdstuk te lezen, zonder iets tot me te nemen. Na elk kwartier heb ik een halve tot een hele pagina aan aantekeningen voor me die bewijst dat ik productief bezig ben geweest. En omdat het maken van die aantekeningen niet langer dan vijf minuten hoeft te duren, voelt het ook niet als een enorme investering. 
+Eigenlijk valt dat reuze mee. Sterker nog, deze nieuwe gewoonte heeft mijn leesplezier zelfs verhoogd. Want de optie om gedachteloos een boek te lezen, is effectief uitgeschakeld. Het is praktisch onmogelijk geworden om een hoofdstuk te lezen, om achteraf te moeten concluderen dat ik me er niets van kan herinneren. Na elk kwartier heb ik een halve tot een hele pagina aan aantekeningen voor me die bewijst dat ik productief bezig ben geweest. En omdat het maken van die aantekeningen niet langer dan vijf minuten hoeft te duren, voelt het ook niet als een enorme investering. 
 
 
 Het is waar, ik loop wat minder snel door het boek heen dan ik normaal gesproken zou hebben gedaan. Maar omdat ik meer uit het boek haal dan anders, voelt dat niet aan als een verlies. Bovendien, ik haal zoveel plezier uit deze nieuwe gewoonte, dat ik af en toe in de avond nog een hoofdstukje meepik. Tien minuten lezen, vijf minuten aantekeningen maken - meer kost het me niet.
@@ -41,7 +41,7 @@ Het is waar, ik loop wat minder snel door het boek heen dan ik normaal gesproken
 ## Tijd vinden
 
 
-De tweede gewoonte heeft te maken met [mijn favoriete boek van 2022](/blog/22/12/de-beste-boeken-over-software-ontwikkeling-die-ik-in-2022-las/), [*Functional Programming in C#, Second Edition*](https://www.manning.com/books/functional-programming-in-c-sharp-second-edition). Dat boek heb ik niet uit kunnen lezen, omdat ik niet de tijd kon vinden om de inhoud van het boek om te zetten in code. 
+De tweede gewoonte heeft te maken met [mijn favoriete boek van 2022](/blog/22/12/de-beste-boeken-over-software-ontwikkeling-die-ik-in-2022-las/), [*Functional Programming in C#, Second Edition*](https://www.manning.com/books/functional-programming-in-c-sharp-second-edition). Dat boek heb ik niet uit kunnen lezen, omdat ik niet de tijd wist te vinden om de inhoud van het boek om te zetten in code. 
 
 
 Een boek als dit kun je namelijk het best tot je nemen met je vingers aan het toetsenbord. Het is nagenoeg onmogelijk om je een nieuw programmeerconcept eigen te maken door er alleen maar over te lezen. Je moet meeschrijven - in proza en code -, je moet met codeconstructen aan de slag. Mijn functionele C#-aantekeningen houd ik bij in [deze GitHub repository](https://github.com/dotkarl/FunctionalProgrammingPlayground).
@@ -53,13 +53,13 @@ Het probleem van deze - niet onterechte - houding is dat het een drempel opwerpt
 ## Aanname
 
 
-Ik zie nu in dat ik een aanname deed die onjuist was. Mijn aannames waren als volgt: (1) ik haal het meest uit dit boek als ik meeschrijf, en (2) dat kan ik alleen in een langer aaneengesloten blok tijd doen. De tweede aanname is onjuist. 
+Ik zie nu in dat ik een aanname deed die onjuist was. Mijn aannames waren als volgt: (1) ik haal het meest uit dit boek als ik meeschrijf, en (2) dat kan ik alleen doen in een langer aaneengesloten blok tijd. Die tweede aanname kan de prullenbak in. 
 
 
-Daarom heb ik mezelf voorgenomen om elke ochtend ongeveer een halfuur aan [Buonanno](https://twitter.com/la_yumba)'s boek te besteden. Dat halfuurtje bevindt zich tussen mijn ontbijt met Karl Wiegers en de aanvang van mijn normale werkzaamheden.
+Ik heb mezelf voorgenomen om elke ochtend ongeveer een halfuur aan [Buonanno](https://twitter.com/la_yumba)'s boek te besteden. (Althans, als ik die dag thuis werk. Als ik naar kantoor ga, gaat dat halfuur op aan reistijd.) Dat halfuurtje bevindt zich tussen mijn ontbijt met Karl Wiegers en de aanvang van mijn normale werkzaamheden.
 
 
-Een halfuur is meer dan voldoende tijd om één paragraaf - soms twee - door te ploegen. De hoofdstukken in *Functional Programming in C#* bestaan in de regel uit zo'n vier tot zes paragrafen. Dus in een week tijd ploeg ik me door een hoofdstuk heen.
+Een halfuur is meer dan voldoende tijd om één paragraaf - soms twee - door te ploegen. De hoofdstukken in *Functional Programming in C#* bestaan in de regel uit zo'n vier tot zes paragrafen. Dus in een à twee weken ploeg ik me door een hoofdstuk heen.
 
 
 Als je het zo bekijkt, is dat een ongekend snelle voortgang. Zeker als je het afzet tegen het feit dat dit boek weken of maanden in de kast stof heeft staan vangen, wachtend op het moment dat ik er tijd voor vrij wilde maken.
@@ -74,7 +74,7 @@ Het overkoepelende thema van deze twee nieuwe gewoontes, is: maak de investering
 Het is verleidelijk om tegen jezelf te zeggen: "als ik dit goed wil doen, dan moet ik eerst..." - en dan volgt er een waslijst aan voorwaarden waarvan je redelijkerwijs heus wel weet dat je er nooit aan zal voldoen. Met als gevolg dat je het überhaupt niet doet, laat staan goed.
 
 
-De truc is: *doen* is belangrijker dan *goed doen*. Want *doen* is de noodzakelijke voorwaarde van *goed doen*. En om het te kunnen doen, moet je het klein maken - zo klein, dat het je eigenlijk nauwelijks moeite kost om het te doen.
+De truc is: *doen* is belangrijker dan *goed doen*. Want *doen* is de noodzakelijke voorwaarde voor *goed doen*. En om het te kunnen doen, moet je het klein maken - zo klein, dat het je eigenlijk nauwelijks moeite kost om het te doen.
 
 
 ## *Atomic habits*

@@ -1,8 +1,8 @@
 ---
 title: "Eerlijke domeinmodellen"
 author: "Karl van Heijster"
-date: 2022-12-16T08:14:17+01:00
-draft: true
+date: 2023-01-20T08:14:34+01:00
+draft: false
 comments: true
 tags: ["domain-driven design", "domeinmodel", "eerlijke functies", "functioneel programmeren", "leermoment", "modelleren", "monads", "objectgeoriënteerd programmeren", "options", "properties"]
 summary: "Options en Eithers vormen nog maar de eerste aanzetten voor het idee van eerlijke functies. Het zijn constructen die, op het oog althans, redelijk beperkt blijven tot het technische domein. Maar het idee van eerlijke functies past ook uitstekend bij de praktijk van het modelleren van een domein, zoals gebruikelijk in Domain-Driven Design. Dat is een les die ik leerde van Scott Wlaschin op DevTernity."
@@ -23,10 +23,10 @@ Als de signatuur zegt dat je er een `int` in stopt en een `bool` terugkrijgt, da
 Een oplettende lezer zal opmerken dat dat een behoorlijke impact heeft op de manier waarop fouten worden afgehandeld binnen het functionele paradigma. Het concept van `Exceptions` die opgegooid worden en ergens anders in de code worden afgehandeld, kent men in de functionele wereld niet. - En niet geheel onterecht. Die manier van foutafhandeling heeft veel weg van het gebruik van `goto`-statements, en we weten al sinds 1968 dat "[Go To Statement Considered Harmful](https://homepages.cwi.nl/~storm/teaching/reader/Dijkstra68.pdf)".
 
 
-In functionele talen worden fouten - validatiefouten of exceptionele condities - afgehandeld met (een variant op) een `Either`-*monad*. De *return value* van een functie wordt dan gewikkeld in een monade die twee mogelijke uitkomsten kan representeren. Als de functie succesvol verloopt, dan bevat deze de verwachte waarde. Als deze mislukt, dan bevat deze een foutmelding. De signatuur van een functie die potentieel kan mislukken, is glashelder: `Input -> Either<FailState, SuccessState>`. 
+In functionele talen worden fouten - validatiefouten of exceptionele condities - afgehandeld met (een variant op) een `Either`-*monad*. De *return value* van een functie wordt dan gewikkeld in een *monad* die twee mogelijke uitkomsten kan representeren. Als de functie succesvol verloopt, dan bevat deze de verwachte waarde. Als deze mislukt, dan bevat deze een foutmelding. De signatuur van een functie die potentieel kan mislukken, is glashelder: `Input -> Either<FailState, SuccessState>`. 
 
 
-Omdat dit concept vaak gebruikt wordt voor validatiefouten en exceptionele condities, bevatten veel talen ook gespecialiseerde *monads* voor deze *use cases*. [*LanguageExt*](https://github.com/louthy/language-ext), de grootste *library* met functionele uitbreidingen voor C#, kent hier bijvoorbeeld een [`Validation`](https://louthy.github.io/language-ext/LanguageExt.Core/Monads/Alternative%20Value%20Monads/Validation/index.html)- en een [`Try`](https://louthy.github.io/language-ext/LanguageExt.Core/Monads/Alternative%20Value%20Monads/Try/Try/index.html)-object voor.
+Omdat dit concept vaak gebruikt wordt voor validatiefouten en exceptionele condities, bevatten veel talen ook gespecialiseerde *monads* voor deze *use cases*. [*LanguageExt*](https://github.com/louthy/language-ext), de grootste *library* met functionele uitbreidingen voor [C#](https://learn.microsoft.com/en-us/dotnet/csharp/), kent hier bijvoorbeeld een [`Validation`](https://louthy.github.io/language-ext/LanguageExt.Core/Monads/Alternative%20Value%20Monads/Validation/index.html)- en een [`Try`](https://louthy.github.io/language-ext/LanguageExt.Core/Monads/Alternative%20Value%20Monads/Try/Try/index.html)-object voor.
 
 
 ## Domeinen
@@ -69,6 +69,7 @@ public void DoSomething(EmailAddress email)
     {
         return;
     }
+
     // Do something...
 }
 ```
@@ -80,7 +81,10 @@ Laat ik vooropstellen dat dit in principe geen verkeerde oplossing is - de appli
 Een tweede nadeel is dat de `Verified`-property door iedereen in de code vrijelijk aan te passen is. Zelfs al worden alle checks zorgvuldig ingebouwd en getest, dan nog kunnen er bugs in de applicatie sluipen wanneer een ontwikkelaar op een verkeerde plek in de code `Verified` op `true` zet.
 
 
-Dan: is de signatuur van deze method eerlijk? Nee! - Maar natuurlijk, het objectgeoriënteerde paradigma kent niet zoiets als eerlijke functies, dus die vraag is (*no pun intended*) niet helemaal eerlijk. Laat ik daarom de volgende vraag stellen: hoe zouden we dit stukje van het domein kunnen modelleren op zo'n manier dat deze wél eerlijk zou zijn?
+Dan: is de signatuur van deze method eerlijk? Nee! Want de signatuur zegt een `EmailAddress` te verwachten, maar wie de inhoud van de method bekijkt, ziet al snel dat dat `EmailAddress` aan bepaalde voorwaarden dient te voldoen. 
+
+
+\- Maar natuurlijk, het objectgeoriënteerde paradigma kent niet zoiets als eerlijke functies, dus die vraag is (*no pun intended*) niet helemaal eerlijk. Laat ik daarom de volgende vraag stellen: hoe zouden we dit stukje van het domein kunnen modelleren op zo'n manier dat deze wél eerlijk zou zijn?
 
 
 Ga je gang, neem even de tijd om erover na te denken.
@@ -116,7 +120,7 @@ public void DoSomething(VerifiedEmailAddress email)
 Dankzij deze oplossing is het niet meer nodig om in de method body te controleren of het object zich wel in de juiste staat bevindt - dat handelt de compiler vanaf nu voor je af. Het is dus ook niet meer nodig om tests te schrijven die verifiëren dat deze checks zijn omgevallen. Het is voor ontwikkelaars eenvoudigweg onmogelijk geworden om hier nog fouten in te maken.
 
 
-Het tweede nadeel, de property die vrijelijk aan te passen was, kan worden ondervangen door een service te definiëren die controleert of een e-mailadres geverifieerd is. Zo ja, dan geeft deze het juiste object terug. Zo nee, dan niet. Die service zou een functie kennen met de volgende signatuur: `EmailAddress -> Option<VerifiedEmailAddress>`.[^1] Als dit de enige plek in de code is waar je een `VerifiedEmailAddress` kunt verkrijgen, dan sluit dat de weg voor de bovengenoemde bugs.
+Het tweede nadeel, de property die vrijelijk aan te passen was, kan worden ondervangen door een service te definiëren die controleert of een e-mailadres geverifieerd is. Zo ja, dan geeft deze het juiste object terug. Zo nee, dan niet. Die service zou een functie kennen met de volgende signatuur: `EmailAddress -> Option<VerifiedEmailAddress>`.[^1] Als dit de enige plek in de code is waar je een `VerifiedEmailAddress` kunt verkrijgen, dan sluit dat de weg voor de bovengenoemde verzameling bugs.
 
 
 ## Substantieleer

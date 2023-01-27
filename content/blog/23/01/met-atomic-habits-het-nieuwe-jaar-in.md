@@ -1,8 +1,8 @@
 ---
 title: "Met atomic habits het nieuwe jaar in"
 author: "Karl van Heijster"
-date: 2023-01-06T08:47:41+01:00
-draft: true
+date: 2023-01-27T07:51:07+01:00
+draft: false
 comments: true
 tags: ["atomic habits", "leermoment", "leren", "zelfstudie"]
 summary: "Het was geen goed voornemen van me, maar op 1 januari begon ik wel met een goede nieuwe gewoonte. Twee nieuwe gewoontes, eigenlijk. Het overkoepelende thema van die  gewoontes is: maak de investering klein - en maak deze daarna nóg kleiner."
@@ -74,7 +74,7 @@ Het overkoepelende thema van deze twee nieuwe gewoontes, is: maak de investering
 Het is verleidelijk om tegen jezelf te zeggen: "als ik dit goed wil doen, dan moet ik eerst..." - en dan volgt er een waslijst aan voorwaarden waarvan je redelijkerwijs heus wel weet dat je er nooit aan zal voldoen. Met als gevolg dat je het überhaupt niet doet, laat staan goed.
 
 
-De truc is: *doen* is belangrijker dan *goed doen*. Want *doen* is de noodzakelijke voorwaarde voor *goed doen*. En om het te kunnen doen, moet je het klein maken - zo klein, dat het je eigenlijk nauwelijks moeite kost om het te doen.
+De truc is: *doen* is belangrijker dan *goed doen*. Want *doen* is de noodzakelijke voorwaarde voor *goed doen*. En om het daadwerkelijk te doen, moet je het klein maken - zo klein, dat het doen je eigenlijk nauwelijks nog moeite kost.
 
 
 ## *Atomic habits*
@@ -96,7 +96,7 @@ Kost het teveel moeite om de inhoud van een heel boek te verwerken in bijvoorbee
 Maak het klein en *doe* het.
 
 
-Welke *atomic habits* zou jij willen ontwikkelen dit jaar?
+Welke *atomic habits* wil jij ontwikkelen dit jaar?
 
 
 [^1]: Wie wil proeven van de inhoud van het boek, kan ik [deze aflevering](https://www.se-radio.net/2022/06/episode-518-karl-wiegers-on-software-engineering-lessons/) van de [Software Engineering Radio podcast](https://www.se-radio.net/) aanraden.

@@ -1,20 +1,14 @@
 ---
 title: "De programmeur, de filosoof"
 author: "Karl van Heijster"
-date: 2022-12-17T21:19:41+01:00
-draft: true
+date: 2023-02-10T07:58:03+01:00
+draft: false
 comments: true
 tags: ["domain-driven design", "filosofie"]
 summary: "We kunnen als softwareontwikkelaars veel leren van Socrates' filosofische houding. \"Ik weet dat ik niets weet\" betekent: ik neem niets aan, ik luister alleen goed naar wat de ander zegt en probeer diens standpunt zo helder mogelijk te krijgen. Ik hoor aan, parafraseer en controleer of die parafrase klopt. Voorzichtig trek ik conclusies - niet om de ander onderuit te halen, maar om te kijken of ik op de juiste weg ben, de ander begrijp. En ook: of het verhaal van de ander klopt - wat dat dan ook moge betekenen. "
 ---
 
-Niet lang geleden heb ik het idee opgevat om een oude blog van me - [deze](/blog/21/08/domain-driven-design-en-ludwig-wittgenstein/) - uit te werken tot iets groters, namelijk: een blogreeks. Vooruit, een praatje misschien. Waarom? Omdat ik een jaarlijks terugkerende behoefte heb om over het leven en werk van [Ludwig Wittgenstein](https://plato.stanford.edu/entries/wittgenstein/) (1889 - 1951) te spreken - iets anders kan het niet zijn.
-
-
 Hoewel ik nu (*\*bekijkt [LinkedIn](https://www.linkedin.com/in/karl-van-heijster-833503aa/)\**) ruim vijf jaar met veel plezier als softwareontwikkelaar werk, voel ik me van binnen nog altijd een filosoof. Of liever gezegd: ik heb niet het gevoel ooit op te hebben gehouden met filosoferen, de afgelopen vijf jaar. (Hoewel, eerlijk is eerlijk, het aandeel filosofieboeken op mijn leeslijst drastisch is gedaald en daar een heleboel boeken over softwareontwikkeling voor in de plek zijn gekomen.)
-
-
-Ik wil opnieuw over Wittgenstein hebben en over [Doman-Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design) (DDD), omdat de twee met elkaar verbonden zijn. Je zou kunnen zeggen: het zijn individuele vertegenwoordigers van een abstracter idee, namelijk dat filosofie en softwareontwikkeling zélf met elkaar verbonden zijn.
 
 
 ## Socrates
@@ -65,13 +59,13 @@ Een softwareontwikkelaar is niet een machine die de verhalen van domeinexperts t
 ## Metafoor
 
 
-In geen enkele softwareontwikkelpraktijk komt die conceptuele analyse zo zeer op de voorgrond te staan als in DDD. 
+In geen enkele softwareontwikkelpraktijk komt die conceptuele analyse zo zeer op de voorgrond te staan als in [Doman-Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design) (DDD). 
 
 
 Het centrale probleem dat DDD oplost, is het probleem van de Metafoor - de term is afkomstig uit [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) (XP) en wordt daar voluit de [*System Metaphor*](https://explainagile.com/agile/xp-extreme-programming/practices/metaphor/) genoemd. De Metafoor is het geheel aan woorden, beelden, verhalen die ontwikkelaars gebruiken om het systeem te beschrijven. 
 
 
-[Robert “Uncle Bob” Martin](https://en.wikipedia.org/wiki/Robert_C._Martin) geeft in [*Clean Agile*](https://www.oreilly.com/library/view/clean-agile-back/9780135782002/) ([recensie](/blog/21/11/agile-zijn-niet-agile-doen/)) een prachtig voorbeeld. Hij gaf aan in zijn jonge jaren eens te hebben gewerkt aan een applicatie die door het team werd omschreven als een vuilniswagen. De vuilniswagen reed rond, haalde pakketjes op en verwerkte die - dat was hoe ze de *flow* en functie van de applicatie voor elkaar begrijpelijk maakten.
+[Robert “Uncle Bob” Martin](https://en.wikipedia.org/wiki/Robert_C._Martin) geeft daar in [*Clean Agile*](https://www.oreilly.com/library/view/clean-agile-back/9780135782002/) ([recensie](/blog/21/11/agile-zijn-niet-agile-doen/)) een prachtig voorbeeld van. Hij gaf aan in zijn jonge jaren eens te hebben gewerkt aan een applicatie die door het team werd omschreven als een vuilniswagen. De vuilniswagen reed rond, haalde pakketjes op en verwerkte die - dat was hoe ze de *flow* en functie van de applicatie voor elkaar begrijpelijk maakten.
 
 
 Het was een vreselijke Metafoor - vooral omdat het suggereerde dat de gebruikers zich de hele dag met rommel bezighielden. 
@@ -92,10 +86,10 @@ Maar woorden zijn nooit alleen woorden. Woorden en beelden hebben hun implicatie
 Gebruikers, domeinexperts en ontwikkelaars moeten over hetzelfde kunnen praten - en praten. Ontwikkelaars moeten een klein beetje domeinexpert worden.
 
 
-Om dat te kunnen, spelen ontwikkelaars de rol van Socrates. DDD vraagt van ontwikkelaars om een beetje filosoof te worden.
+Om dat te kunnen, spelen ontwikkelaars de rol van Socrates. Ze moeten vergeten wat ze denken te weten - ze moeten weten dat ze niets weten. En in plaats daarvan moeten ze praten: vragen stellen, parafraseren, impliceren, concluderen - en af en toe tot de conclusie komen in een aporie terecht te zijn gekomen. 
 
 
-
+DDD vraagt van ontwikkelaars om een beetje filosoof te worden.
 
 
 [^1]: Althans, volgens het orakel van Delphi. Maar, vonden de Atheners, die kon het weten!

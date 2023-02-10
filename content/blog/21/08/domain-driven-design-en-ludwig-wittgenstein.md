@@ -59,9 +59,6 @@ De eenduidige concepten die het ontwikkelteam heeft verzonnen, zullen nooit hele
 De route van de gezaghebbende, eenduidige definitie valt (met, toegegeven, wat dichterlijke vrijheid) te vergelijken met de route die [Ludwig Wittgenstein](https://plato.stanford.edu/entries/wittgenstein/) bewandelde in zijn [*Tractatus Logico-Philosophicus*](https://books.google.nl/books?id=0gKCAAAAQBAJ) (1921/1922). Daarin probeerde hij het raamwerk te ontwikkelen van hoe taal zich tot de werkelijkheid verhoudt. 
 
 
-{{<figure src="https://upload.wikimedia.org/wikipedia/commons/a/ab/50._Wittgenstein_in_Swansea_%28taken_by_Ben_Richards%29.jpg" alt="Portret van Ludwig Wittgenstein, 1930" width="300">}}
-
-
 In het kort: woorden staan voor objecten, en zinnen staan voor de manier waarop objecten zich tot elkaar in feiten verhouden. De primaire eenheid van de werkelijkheid (en van taal) is echter niet het object (woord), maar het feit (zin). Want objecten (woorden) bestaan niet in een vacuüm, maar in samenhang met elkaar.[^1]
 
 

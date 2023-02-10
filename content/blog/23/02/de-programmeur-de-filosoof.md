@@ -80,7 +80,7 @@ Maar het was ook de verkeerde Metafoor - want geen enkele gebruiker sprak in die
 Dat is het centrale inzicht van DDD. De applicatie en het systeem moeten dezelfde taal spreken. Als gebruikers spreken van een "product", dan spreekt de code van "`Product`". Een "order" is een "`Order`", een "gold member" een "`GoldMember`". Als gebruikers en ontwikkelaars dezelfde taal spreken, dan zullen ze een applicatie bouwen die doet wat de gebruikers willen - en dat doet op de manier waarop gebruikers dat verwachten.
 
 
-Maar woorden zijn nooit alleen woorden. Woorden en beelden hebben hun implicaties, verhalen hun eigen logica. Om met een gebruiker te kunnen spreken, moet je niet alleen dezelfde woorden gebruiken. Je moet op dezelfde manier denken. Je moet je daarvoor een [*form of life*](https://plato.stanford.edu/entries/wittgenstein/#GramFormLife) - om een term van Wittgenstein te lenen - eigen maken. Onder de woorden ligt een wereld van aannames en gebruiken - en die zijn net zo belangrijk voor het begrip als de woorden zelf.
+Maar woorden zijn nooit alleen woorden. Woorden en beelden hebben hun implicaties, verhalen hun eigen logica. Om met een gebruiker te kunnen spreken, moet je niet alleen dezelfde woorden gebruiken. Je moet op dezelfde manier denken. Je moet je daarvoor een [*form of life*](https://plato.stanford.edu/entries/wittgenstein/#GramFormLife) - om een term van [Wittgenstein](https://plato.stanford.edu/entries/wittgenstein/) te lenen - eigen maken. Onder de woorden ligt een wereld van aannames en gebruiken - en die zijn net zo belangrijk voor het begrip als de woorden zelf.
 
 
 Gebruikers, domeinexperts en ontwikkelaars moeten over hetzelfde kunnen praten - en praten. Ontwikkelaars moeten een klein beetje domeinexpert worden.

@@ -1,8 +1,8 @@
 ---
 title: "Gedachten over modelaanpassingen"
 author: "Karl van Heijster"
-date: 2022-12-31T14:29:53+01:00
-draft: true
+date: 2023-02-17T08:40:45+01:00
+draft: false
 comments: true
 tags: ["agile ontwikkeling", "datamigratie", "leermoment", "software ontwikkelen"]
 summary: "Wanneer er modelwijzigingen in het spel zijn, dan is een wijziging van de code alléén niet voldoende. Je zult ook moeten zorgen voor een migratie die de oude data omzet naar het nieuwe model. Zo'n migratie kan verschillende vormen aannemen - *big bang* of stapje voor stapje -, maar dat 'ie er moet komen, staat vast. De vraag waar ik me op wil richten is: wannéér moet die migratie er komen?"
@@ -11,7 +11,7 @@ summary: "Wanneer er modelwijzigingen in het spel zijn, dan is een wijziging van
 Mijn team kwam een tijd terug tot de conclusie dat we ons datamodel om moesten gooien om een nieuwe requirement te kunnen ondersteunen.
 
 
-Dat is een pijnlijke constatering - maar niet omdat het vreemd is dat ons model niet bestand is tegen nieuwe requirements. Maar weinig code is bestand tegen nieuwe requirements. Sterker nog, het is een antipatroon om code te schrijven die allerlei mogelijke veranderingen aankan. Zulke code schent een van de fundamenteelste principes van Agile softwareontwikkeling: *schrijf eenvoudige code*.
+Dat is een pijnlijke constatering - maar niet omdat het vreemd is dat ons model niet bestand is tegen nieuwe requirements. Maar weinig code is bestand tegen nieuwe requirements. Sterker nog, het is een antipatroon om code te schrijven die allerlei mogelijke veranderingen aankan. Zulke code schendt een van de fundamenteelste principes van Agile softwareontwikkeling: *schrijf eenvoudige code*.
 
 
 Het is normaal dat code moet worden aangepast, naarmate er nieuwe requirements boven komen drijven. Dat is de enige manier voorwaarts.
@@ -23,7 +23,7 @@ Het is normaal dat code moet worden aangepast, naarmate er nieuwe requirements b
 Modelwijzigingen zijn pijnlijk, desalniettemin, en dat is omdat er bij dit soort codewijzigingen ook data komt kijken. 
 
 
-Het aanpassen van een algoritme is klein bier vergeleken met dit soort wijzigingen. Zulke wijzigingen raken alleen code. (Al kun je je afvragen waar het onderscheid tussen code en data precies zit - en dat is overigens precies wat ik [Kevlin Henney](http://kevlin.tel/) een tijd terug zag doen tijdens een sessie op [DevTernity](https://devternity.com/).) Aangenomen dat je wijziging het bestaande gedrag intact houdt, en daar bovenop nieuw gedrag bouwt, kun je deze in één keer doorzetten naar je *develop*-branch.
+Het aanpassen van een algoritme is klein bier vergeleken met dit soort wijzigingen. Zulke wijzigingen raken alleen code. (Al kun je je afvragen waar het onderscheid tussen code en data precies zit - en dat is overigens precies wat ik [Kevlin Henney](http://kevlin.tel/) een tijd terug zag doen tijdens een sessie op [DevTernity](https://devternity.com/).[^1]) Aangenomen dat je wijziging het bestaande gedrag intact houdt, en daar bovenop nieuw gedrag bouwt, kun je deze in één keer doorzetten naar je *develop*-branch.
 
 
 Wanneer er modelwijzigingen in het spel zijn, dan is een wijziging van de code alléén niet voldoende. Je zult ook moeten zorgen voor een migratie die de oude data omzet naar het nieuwe model. Zo'n migratie kan verschillende vormen aannemen - *big bang* of stapje voor stapje (zie [deze](/blog/21/09/stapje-voor-stapje-data-migreren/) en [deze](/blog/21/10/evolutionaire-datamigratie-met-fluentmigrator/) blog) -, maar dat 'ie er moet komen, staat vast.
@@ -75,3 +75,6 @@ Dus ja, modelwijzigingen zijn pijnlijk omdat er datamigraties bij komen kijken. 
 
 
 Datamigratie komt het laatst kijken in de ontwikkelcyclus - niet het eerst.
+
+
+[^1]: Hetzelfde thema komt overigens ook terug in [dit praatje](https://www.youtube.com/watch?v=6xrGo1IIB3w) dat Henney vorig jaar hield op [GOTO Amsterdam](https://gotoams.nl/), en dat ik toevallig vanochtend bij het ontbijt bekeek.

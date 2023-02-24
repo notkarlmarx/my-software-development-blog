@@ -1,14 +1,14 @@
 ---
 title: "Waarom DRY? Waarom DAMP?"
 author: "Karl van Heijster"
-date: 2023-01-27T08:29:31+01:00
-draft: true
+date: 2023-02-24T08:38:32+01:00
+draft: false
 comments: true
 tags: ["code lezen", "communicatie", "DRY", "testen", "presenteren"]
 summary: "Productiecode optimaliseer je voor onderhoudbaarheid; testcode voor leesbaarheid. Waarom? Omdat de context van productiecode en testcode verschilt. Beide dienen een ander doel, wat verschillende eisen aan de code stelt. Ze opereren in verschillende sferen, zogezegd. "
 ---
 
-Elke zondag maak ik een ochtendwandeling - [ook weer zo'n nieuwe gewoonte, dit jaar](/blog/23/01/met-atomic-habits-het-nieuwe-jaar-in/). Onder het wandelen oefen ik de presentatie dat ik [in februari](https://www.meetup.com/nimma-codes-meetup-group/events/287692035/) ga geven bij [Nimma.Codes](https://www.nimma.codes/). In de buurt van mijn huis ligt een bedrijventerrein dat op zondagochtend voor mij verlaten genoeg is om niet op te vallen als in zichzelf brabbelende gek. 
+Elke zondag maak ik een ochtendwandeling - [ook weer zo'n nieuwe gewoonte, dit jaar](/blog/23/01/met-atomic-habits-het-nieuwe-jaar-in/). Onder het wandelen oefen ik de presentatie dat ik [komende dinsdag](https://www.meetup.com/nimma-codes-meetup-group/events/287692035/) ga geven bij [Nimma.Codes](https://www.nimma.codes/). In de buurt van mijn huis ligt een bedrijventerrein dat op zondagochtend voor mij verlaten genoeg is om niet op te vallen als in zichzelf brabbelende gek. 
 
 
 De presentatie gaat over tests als documentatie, een onderwerp waar ik op deze blog al vaker over geschreven heb ([hier](/blog/22/09/tests-als-documentatie/), bijvoorbeeld). Het hardop uitspreken van die presentatie is dan ook niet per se om de inhoud ervan nogmaals te overdenken, maar om mijn mond te trainen de juiste dingen op het juiste moment te zeggen. 
@@ -135,7 +135,6 @@ Maar hoewel ik de instantiatie van `C` weg zou abstraheren naar een *factory*, z
 
 
 De crux zit 'm in de manier waarop de code duidelijk maakt wat de test doet. De eerste drie letters van DAMP zijn met zorg gekozen: "*descriptive and meaningful*" - voor het begrip van de test dus. Je dient codeduplicatie in je tests te vermijden, net als bij productiecode - *tenzij* het de leesbaarheid ten goede komt.
-
 
 
 Productiecode optimaliseer je voor onderhoudbaarheid: DRY. Testcode optimaliseer je voor leesbaarheid: DAMP, oftewel DRY tenzij.

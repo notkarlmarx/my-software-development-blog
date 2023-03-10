@@ -1,8 +1,8 @@
 ---
 title: "ForEach, Aggregate en Select"
 author: "Karl van Heijster"
-date: 2023-01-13T07:40:27+01:00
-draft: true
+date: 2023-03-10T07:33:25+01:00
+draft: false
 comments: true
 tags: ["functioneel programmeren", "LINQ"]
 summary: "`ForEach` gebruik je alleen als je een `Action` - zonder *return value*! - uit wil voeren voor elke lijstwaarde. `Select` gebruik je als je een resultaat verwacht. En `Aggregate` gebruik je als je het verschil tussen beide uit wil leggen. Of - vooruit - als je wil aggregeren."
@@ -80,7 +80,7 @@ In dit geval is de precieze lijstwaarde voor ons niet relevant, want we zijn all
 ## Transformatie middels aggregatie
 
 
-We kunnen de method van mijn collega ook omschrijven naar een `Aggregate`. Kijk nog maar eens naar die method: alle elementen zijn aanwezig. De oorspronkelijke input is `someList`, de *seed* is `result` en de functie is dat wat de `List<Original>` naar een `List<Transformed>` transformeert.
+We kunnen de method van mijn collega ook omschrijven naar een `Aggregate`. Kijk nog maar eens naar die method: alle elementen zijn aanwezig. De oorspronkelijke input is `someList`, de *seed* is `result` en de functie is dat wat de `List<Original>` naar een `List<Transformed>` omzet.
 
 
 Maar om de code werkend te krijgen, moeten we wel die functie wel wat herschrijven:

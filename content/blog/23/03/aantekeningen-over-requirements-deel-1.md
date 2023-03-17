@@ -166,7 +166,7 @@ Vertrouw op sjablonen en standaarden wanneer mogelijk. Dit reduceert de cognitie
 
 1. **Aantekeningen over requirements - deel 1**
 
-2. Aantekeningen over requirements - deel 2 [binnenkort]
+2. [Aantekeningen over requirements - deel 2](/blog/23/03/aantekeningen-over-requirements-deel-2/)
 
 
 [^1]: Is "project" de juiste term om onze bezigheden als softwareontwikkelaar te duiden? [Kevlin Henny](http://kevlin.tel/) en [Sander Hoogendoorn](https://sanderhoogendoorn.com/) spreken in [dit gesprek](https://www.youtube.com/watch?v=JAl3QFae_dE) liever van "producten". Projecten hebben een einddatum; softwareproducten kunnen daarentegen in principe oneindig doorontwikkeld worden.

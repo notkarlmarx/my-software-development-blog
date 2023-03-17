@@ -1,17 +1,17 @@
 ---
 title: "Aantekeningen over requirements - deel 2"
 author: "Karl van Heijster"
-date: 2023-01-06T12:10:25+01:00
-draft: true
+date: 2023-03-17T07:39:03+01:00
+draft: false
 comments: true
 tags: ["agile ontwikkeling", "boeken", "communicatie", "documentatie", "informatieanalyse", "requirements", "samenwerking"]
 summary: "Het opstellen van de juiste requirements is één van de moeilijkste onderdelen van softwareontwikkeling. In een eerdere blog beschreef ik de eerste acht lessen die Karl Wiegers of dit onderwerp formuleerde in *Software Development Pearls*. In deze blog volgen de tweede acht."
 ---
 
-Het opstellen van de juiste requirements is één van de moeilijkste onderdelen van softwareontwikkeling. In [een eerdere blog] (LINK) beschreef ik de eerste acht lessen die [Karl Wiegers](https://www.karlwiegers.com/) of dit onderwerp formuleerde in [*Software Development Pearls*](https://www.informit.com/store/software-development-pearls-lessons-from-fifty-years-9780137487776). In deze blog volgen de tweede acht.
+Het opstellen van de juiste requirements is één van de moeilijkste onderdelen van softwareontwikkeling. In [een eerdere blog](/blog/23/03/aantekeningen-over-requirements-deel-1/) beschreef ik de eerste acht lessen die [Karl Wiegers](https://www.karlwiegers.com/) over dit onderwerp formuleerde in [*Software Development Pearls*](https://www.informit.com/store/software-development-pearls-lessons-from-fifty-years-9780137487776). In deze blog volgen de tweede acht.
 
 
-**IX.**
+## Kwaliteit
 
 
 Wie bepaalt wat de kwaliteit is van de requirements? Hun gebruikers, niet de makers. Vraag daarom feedback van verschillende gebruikersgroepen om te zien of de requirements voldoen aan de noodzakelijke kwaliteitskenmerken. Elke groep zal vanuit hun eigen perspectief naar de requirements kijken. Stakeholders uit de business beoordelen hen bijvoorbeeld vooral op de mate waarin ze tegemoet komen aan de behoeften van het bedrijf. Ontwikkelaars kijken of ze begrijpelijk zijn, en of ze überhaupt wel zijn te implementeren gegeven de beschikbare tijd en middelen. Testers gaan na of de requirements testbaar zijn, d.w.z.: scherp genoeg omschreven om er tests voor te kunnen schrijven.
@@ -39,7 +39,7 @@ Neem, wanneer dat gebeurt, een stap terug en reflecteer: hoe heeft dit kunnen ge
 Onthoud: het doel is niet om perfecte requirements te schrijven, maar om ze zodanig op te stellen dat de volgende fase van het ontwikkelproces zo efficiënt mogelijk van start kan gaan. Zowel aannames als het continu terug moeten gaan naar stakeholders voor verheldering, zijn een teken dat er iets mis is met het proces.
 
 
-**X.**
+## Onttrekken
 
 
 Requirements worden niet "verzameld" - dat woord suggereert dat de requirements ergens rondslingeren, dat iemand ze maar op hoeft te pakken en er een strikje omheen hoeft te doen. 
@@ -57,7 +57,7 @@ Merk op: als ik zeg dat requirements je in staat moeten stellen naar de volgende
 Gebruik verschillende technieken om requirements te onttrekken. Denk aan interviews - zowel individueel als in groepsverband -, workshops, vragenlijsten, observatie van het huidige werkproces, het analyseren van documentatie, en het bouwen en voorleggen van prototypes.
 
 
-**XI.**
+## Communicatie
 
 
 Communicatie is de sleutel tot een succelvol project. In het bijzonder: de communicatie tussen het ontwikkelteam en de gebruikers van het systeem. Zorg voor effectieve communicatiepaden tussen beide groepen.
@@ -69,7 +69,7 @@ Het gesprek tussen eindgebruikers en ontwikkelaars is tweerichtingsverkeer. Gebr
 Noteer daarom altijd waar bepaalde informatie vandaan komt. Zo weet je, als er onduidelijkheden boven komen drijven, bij wie je aan moet kloppen voor een antwoord op je vragen.
 
 
-**XII.**
+## Samenwerken
 
 
 Bij heel kleine projecten kunnen ontwikkelaars en eindgebruikers één op één met elkaar samenwerken. Naarmate het project groter wordt, wordt het belangrijker om een goede tussenpersoon te regelen, om het ontwikkelteam niet te overstelpen met (conflicterende?) informatie. Dat kunnen vertegenwoordigers zijn die uit de poule van eindgebruikers komen (ook wel *product champions* genoemd), een projectmanager of een [Product Owner](https://www.scrum.org/resources/what-is-a-product-owner), al dan niet in combinatie met een businessanalist. In sommige organisatie vervult de marketingafdeling deze rol: hun marktonderzoek stelt hen in staat om het ontwikkelteam de juiste richting in te sturen.
@@ -78,7 +78,7 @@ Bij heel kleine projecten kunnen ontwikkelaars en eindgebruikers één op één 
 Hoe je die rol ook invult, stel jezelf altijd als doel te zorgen voor helder en continu tweerichtingsverkeer in de communicatie. Zonder feedback van gebruikers zul je nooit weten of je het juiste ontwikkelt of niet.
 
 
-**XIII.**
+## Expliciet
 
 
 Expliciete communicatie heeft de voorkeur boven impliciete. Neem niet aan dat je lezer wel zal snappen wat je bedoelt. Probeer ambiguïteiten zoveel mogelijk te vermijden. In het beste geval zullen ontwikkelaars een ambiguïteit opmerken en om verheldering vragen. In het slechtste geval nemen ze reflexief één interpretatie voor waarheid en aan en zullen ze die implementeren. Hopen dat het de juiste interpretatie was, is een twijfelachtige strategie.
@@ -90,7 +90,7 @@ Behandel, als opsteller van requirements, geïmpliceerde requirements als niet-b
 Probeer zo precies en compleet mogelijk te zijn in het uitspellen van de requirements.
 
 
-**XIV.**
+## Grootte
 
 
 Hoe meer zielen, hoe meer vreugd - en meer meningen. Hoe groter de groep, des te moeilijker is het om een productieve discussie te hebben. Het is moeilijk om mensen bij de les te houden, gesprekken ontsporen richting zijpaden die al dien niet overeenkomen met de stokpaardjes van een deel van de aanwezigen.
@@ -102,7 +102,7 @@ Houd focus in het gesprek, onder andere door het aantal aanwezigen zo klein moge
 Dat gezegd hebbende, natuurlijk verlies je informatie als je de groep klein en gefocust houdt. Wanneer je mensen met verschillende achtergronden bij elkaar zet, dan kan dat verrassende inzichten opleveren, die ze in hun eigen bubbel nooit zouden hebben opgedaan. De les is ook niet: zet nooit mensen uit diverse groepen bij elkaar. De les is: maak een bewuste afweging. Vraag je af: wat wil ik bereiken met deze discussie? - en selecteer de aanwezigen daar zorgvuldig op.
 
 
-Je kunt mensen uit andere groepen ook op een andere manier bij een discussie betrekken. Maak de resultaten van een gefocuste workshop openbaar en vraag om commentaar en feedback. niet iedereen hoeft persoonlijk bij een meeting aanwezig te zijn om waardevolle input te kunnen leveren.
+Je kunt mensen uit andere groepen ook op een andere manier bij een discussie betrekken. Maak de resultaten van een gefocuste workshop openbaar en vraag om commentaar en feedback. Niet iedereen hoeft persoonlijk bij een meeting aanwezig te zijn om waardevolle input te kunnen leveren.
 
 
 Welke vorm je ook kiest, tijdens sessies waarin je requirements verheldert, zullen er altijd conflicten ontstaan. Niet alle stakeholders hebben immers dezelfde belangen. Denk van tevoren na over hoe je die conflicten op gaat lossen. Wie heeft de volmacht om knopen door te hakken? Zorg ervoor dat alle aanwezigen akkoord zijn met het proces, om problemen achteraf te voorkomen.
@@ -114,7 +114,7 @@ Een goede facilitator vormt de sleutel tot een goede requirementsworkshop. Hij o
 Een goede facilitator zorgt ervoor dat iedereen in de groep wordt gehoord en zich ook gehoord voelt. Als iemand een suggestie doet die op dat moment niet relevant is, schrijf deze dan op. Geef aan dat jullie daar later nog op terug kunnen komen, en breng de discussie weer terug naar het onderwerp.
 
 
-**XV.**
+## Prioritering
 
 
 Prioriteer geen requirements op basis van wie het hardst schreeuwt - prioritering per decibel. Dat klinkt voor de hand liggend, maar blijkt in de praktijk vaak lastiger dan gedacht. Het is één van de vele redenen waarom ik blij dat ik geen PO ben.
@@ -126,7 +126,7 @@ Hoe belangrijk een stakeholder zijn of haar lievelingsfeature ook denkt te vinde
 Verkoop nee aan luidruchtige stakeholders wier stokpaardjes op dit moment minder belangrijk zijn. Gebruik je analyse om uit te leggen waarom je tot die prioritering bent gekomen. En zorg dat je ook echt de volmacht hebt om die prioritering te bepalen.
 
 
-**XVI.**
+## *Scope creep*
 
 
 Veel softwareprojecten hebben last van [*scope creep*](https://en.wikipedia.org/wiki/Scope_creep). Vaak gebeurt dit omdat de scope van een project überhaupt niet is gedefinieerd. Zonder zo'n kader is het moeilijk om te beslissen of een nieuwe requirement binnen de scope valt of niet. Dit leidt tot frustratie en werkt prioritering per decibel in de hand. Zorg daarom altijd voor een expliciete formulering van de scope van een project, iteratie, increment of feature.
@@ -154,6 +154,6 @@ In dat laatste geval pas je de scope aan. Maar pas op: als dit te vaak gebeurt, 
 ## Meer in deze reeks
 
 
-1. [Aantekeningen over requirements - deel 1] (LINK)
+1. [Aantekeningen over requirements - deel 1](/blog/23/03/aantekeningen-over-requirements-deel-1/)
 
 2. **Aantekeningen over requirements - deel 2**

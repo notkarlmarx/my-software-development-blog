@@ -5,7 +5,7 @@ date: 2023-03-31T09:30:18+02:00
 draft: true
 comments: true
 tags: ["atomic habits", "podcasts", "professionaliteit"]
-summary: "Het antwoord is, verrassend genoeg, niet per se: om nieuwe programmeerkennis op te doen. Ik weet niet of de IT een bij uitstek visueel vakgebied is, maar ik weet wel dat ik het bij tijden bijzonder moeilijk vind om een podcast over een mij onbekend onderwerp te kunnen volgen, als ik geen diagrammen of *code snippets* ter ondersteuning heb. Het zuivere gesproken woord lijkt maar matig geschikt te zijn om codeconcepten goed over te kunnen brengen."
+summary: "Je wordt beïnvloed door dat waar je mee omgaat. Zorg er dus voor dat je omgaat met mensen met betere ideeën dan jijzelf. Podcasts zijn een middel om een bepaalde houding te cultiveren. Die houding is er één van: ik mag tevreden zijn - trots misschien zelfs wel - met waar ik nu sta, maar ik weet dat het nog beter kan. Hoe? Door te luisteren naar hen die het beter doen dan ik."
 ---
 
 Ik ben zo iemand die jarenlang rondloopt met een telefoon met 'n kapotte homeknop en een batterijduur van krap nog een werkdag - allemaal onder het mom van "hoezo, hij werkt toch nog?" Althans, zo'n persoon *was* ik, want mijn vrouw kon het niet meer aanzien en heeft me een paar maanden terug een nieuw toestel in de hand gedrukt en me opgedragen me voortaan daarmee te behelpen.
@@ -57,6 +57,12 @@ Van tijd tot tijd brengt een podcast je concreet advies dat je de volgende dag a
 
 
 De belangrijkste reden om regelmatig naar tech podcasts te luisteren is om jezelf te omringen met professionals - nee, niet zomaar professionals: de beste van de beste professionals.[^2] Als je ervoor zorgt dat je jezelf omringt met *thought leaders*, dan merk je des te sneller de slechte gewoontes in jezelf en je team op die jullie tegenhouden om betere software op te leveren.
+
+
+Je wordt beïnvloed door dat waar je mee omgaat. Zorg er dus voor dat je omgaat met mensen met betere ideeën dan jijzelf. Podcasts zijn een middel om een bepaalde houding te cultiveren. Die houding is er één van: ik mag tevreden zijn - trots misschien zelfs wel - met waar ik nu sta, maar ik weet dat het nog beter kan. Hoe? Door te luisteren naar hen die het beter doen dan ik.
+
+
+## TDD
 
 
 Ik hamer bij mijn collega's bijvoorbeeld al tijden op het belang van [Test-Driven Development](/tags/test-driven-development/) (TDD). Dat komt natuurlijk deels voort uit mijn eigen positieve ervaringen daarmee. Maar minstens zo belangrijk is dat ik er regelmatig voor zorg dat mensen als [Kevlin Henney](http://kevlin.tel/) en [Robert *Uncle Bob* Martin](http://cleancoder.com/products) me op het hart drukken dat TDD niet optioneel is. Wie hoogwaardige software op wil leveren, schrijft afwisselend tests en code - al het andere is aanklooien.

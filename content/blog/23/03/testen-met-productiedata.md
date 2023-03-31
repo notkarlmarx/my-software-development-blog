@@ -1,17 +1,17 @@
 ---
 title: "Testen met productiedata"
 author: "Karl van Heijster"
-date: 2023-02-03T08:30:13+01:00
-draft: true
+date: 2023-03-31T07:56:37+02:00
+draft: false
 comments: true
 tags: ["documentatie", "intentie van code", "testen"]
-summary: "Laatst kwam ik een test tegen die checkte of een bepaald object 48 keer voorkwam in een lijst. Het was een hartstikke valide test, verder, daar niet van. Maar hij riep wel de vraag op: waarom 48 keer? Wat was er namelijk gebeurd: de schrijver van de test had wat data van de productieomgeving geplukt en daar een test omheen gebouwd - *et voilà*: hij had bewezen dat de feature werkte als verwacht. Er valt wat op die werkwijze af te dingen, natuurlijk. En omdat ik nu eenmaal ik ben, ga ik dat nu doen."
+summary: "Laatst kwam ik een test tegen die checkte of een bepaald object 48 keer voorkwam in een lijst. Het was een hartstikke valide test, daar niet van. Maar hij riep wel de vraag op: waarom 48 keer?"
 ---
 
 Laatst kwam ik een test tegen die checkte of een bepaald object 48 keer voorkwam in een lijst.
 
 
-Het was een hartstikke valide test, verder, daar niet van. Maar hij riep wel de vraag op: waarom 48 keer?
+Het was een hartstikke valide test, daar niet van. Maar hij riep wel de vraag op: waarom 48 keer?
 
 
 Wat was er namelijk gebeurd: de schrijver van de test had wat data van de productieomgeving - liefkozend "*PROD*" genoemd - geplukt en daar een test omheen gebouwd - *et voilà*: hij had bewezen dat de feature werkte als verwacht.
@@ -35,7 +35,7 @@ Het tweede voordeel: representativiteit. Met de hand geboetseerde testdata breng
 Maar er valt wat op die werkwijze af te dingen, natuurlijk. En omdat ik nu eenmaal ik ben, ga ik dat nu doen. Laten we beginnen met het idee dat productiedata je tijdwinst oplevert.
 
 
-Ik ben er een groot voorstander van tests te zien als documentatie. (Zie met name [deze](/blog/22/09/tests-als-documentatie/), maar ook [deze](/blog/22/06/testen-via-de-voordeur/), [deze](/blog/22/09/test-driven-code-reviews/), [deze](/blog/22/12/over-de-volgorde-van-je-unit-tests/) en [deze](/blog/22/12/tests-zijn-specs/) blog.) Eén van de belangrijkste richtlijnen bij het schrijven van documentatie is: zorg dat deze makkelijk leesbaar is. Immers, moeilijk leesbare documentatie *zal niet gelezen worden*, en verliest zo al haar waarde. Dat is waarom ik eerder schreef: [optimaliseer tests voor leesbaarheid, niet voor onderhoudbaarheid](WAAROM_DRY_WAAROM_DAMP).
+Ik ben er een groot voorstander van tests te zien als documentatie. (Zie met name [deze](/blog/22/09/tests-als-documentatie/) blog, maar ook [deze](/blog/22/06/testen-via-de-voordeur/), [deze](/blog/22/09/test-driven-code-reviews/), [deze](/blog/22/12/over-de-volgorde-van-je-unit-tests/) en [deze](/blog/22/12/tests-zijn-specs/).) Eén van de belangrijkste richtlijnen bij het schrijven van documentatie is: zorg dat deze makkelijk leesbaar is. Immers, moeilijk leesbare documentatie *zal niet gelezen worden*, en verliest zo al haar waarde. Dat is waarom ik eerder schreef: [optimaliseer tests voor leesbaarheid, niet voor onderhoudbaarheid](/blog/23/02/waarom-dry-waarom-damp/).
 
 
 Testdata van *PROD* is maar zelden geoptimaliseerd voor leesbaarheid. Zulke data heeft vaak veel toevallige eigenschappen die niet bijdragen aan het begrip van de test. 
@@ -71,7 +71,7 @@ En trouwens, ook op het representativiteitsargument valt wat af te dingen. Produ
 De truc is: baseer je bij het construeren van je testdata op productiedata, maar geef je die op zo'n manier vorm dat het de leesbaarheid ten goede komt. Zorg ervoor dat je objecten dezelfde eigenschappen hebben als *the real deal*, maar haal alles weg wat niet bijdraagt aan het begrip van de test.
 
 
-Een voorbeeld. TypeScript kent, anders dan C#, geen `Guid`-type. De ID's van onze objecten aan de front-end zijn daarom van het type `string`. Ik zie mijn collega's in hun tests die ID's vaak vullen met iets als `'objectId'`. Maar dat is niet representatief voor de data die van de back-end komt - daar zijn de ID's namelijk wél `Guid`s. Dus vul ik de ID's in die tests met een hardgecodeerde unieke identifier: `'cea5b28f-d09f-44c8-bde9-76dfa64a9b7d'`.[^2]
+Een voorbeeld. [TypeScript](https://www.typescriptlang.org/) kent, anders dan [C#](https://learn.microsoft.com/en-us/dotnet/csharp/), geen `Guid`-type. De ID's van onze objecten aan de front-end zijn daarom van het type `string`. Ik zie mijn collega's in hun tests die ID's vaak vullen met iets als `'objectId'`. Maar dat is niet representatief voor de data die van de back-end komt - daar zijn de ID's namelijk wél `Guid`s. Dus vul ik de ID's in die tests met een hardgecodeerde unieke identifier: `'cea5b28f-d09f-44c8-bde9-76dfa64a9b7d'`.[^2]
 
 
 Nu komt het (gelukkig!) nooit - of zeer zelden - voor dat de code aan de front-end breekt als de ID's niet een bepaalde vorm hebben. Maar dat is het punt ook niet. De tests slagen óók met een normale string, maar met een unieke identifier geven ze een representatiever beeld van hoe de code in productie zal werken.
@@ -80,15 +80,16 @@ Nu komt het (gelukkig!) nooit - of zeer zelden - voor dat de code aan de front-e
 ## Investeren
 
 
-Productiedata is over het algemeen slechte testdata. Maar het is niet zo dat beide niets met elkaar van doen hebben. Productiedata is een uitstekende inspiratiebron voor testdata - maar die data moet wel altijd door de schrijver van een test geoptimaliseerd worden voor het begrip van de test.
+Productiedata is over het algemeen slechte testdata. Representatieve data is niet per se de best leesbare data, en kan daarom zelfs een negatieve invloed hebben op leesbaarheid.
+
+
+Maar het is niet zo dat beide niets met elkaar van doen hebben. Productiedata is een uitstekende *inspiratiebron* voor testdata - maar die data moet wel altijd door de schrijver van een test geoptimaliseerd worden voor het begrip van de test.
 
 
 Wie de tijd neemt om te investeren in de vormgeving van testdata, krijgt dat dubbel en dwars terugbetaald - in snelheid, leesbaarheid én representativiteit.
 
 
-
-
-
 [^1]: Let wel: ik heb het hier over *functionele* tests. Bij performancetests is het bijvoorbeeld wél zinvol is om grotere lijsten te gebruiken als testdata.
 
-[^2]: [www.guidgenerator.com](https://www.guidgenerator.com/online-guid-generator.aspx) is mijn grootste vriend bij front-end tests!
+
+[^2]: [www.guidgenerator.com](https://www.guidgenerator.com/online-guid-generator.aspx) is mijn grootste vriend bij het schrijven van front-end tests!

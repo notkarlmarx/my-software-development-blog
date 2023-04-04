@@ -32,7 +32,7 @@ met geen phishingmail teveel:
 
 Je verwacht het nie’, maar de security-
 
-afdelig daar is sindsdien zwaar zuur!
+afdeling daar is sindsdien zwaar zuur!
 
 <br>
 

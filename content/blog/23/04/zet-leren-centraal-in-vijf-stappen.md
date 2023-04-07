@@ -1,14 +1,14 @@
 ---
 title: "Zet leren centraal in vijf stappen"
 author: "Karl van Heijster"
-date: 2023-02-10T08:33:20+01:00
-draft: true
+date: 2023-04-07T08:42:02+02:00
+draft: false
 comments: true
 tags: ["bloggen", "developer meet-up", "leercultuur", "leren", "zelfstudie"]
 summary: "Het is belangrijk om continu nieuwe dingen te blijven leren. Nu ben ik de laatste die zal beweren daar een expert in te zijn, maar op overmoedige momenten heb ik wel het gevoel dat ik het niet onaardig doe. Vandaar: dit zijn vijf stappen die je kunt zetten om leren een centrale plek te geven in je carrière als softwareontwikkelaar."
 ---
 
-Stilstand is achteruitgang, en wie geen nieuwe dingen leert zal daarom onvermijdelijk overbodig worden. In weinig disciplines geldt deze wetmatigheid zo snel als in de wereld van de softwareontwikkeling. Het aantal nieuwe ontwikkelingen stapelt zich zo snel op, dat je je als het professional niet kunt veroorloven om code te schrijven zoals je dat tien jaar geleden deed - of vijf jaar geleden, of misschien zelfs wel één jaar geleden. 
+Stilstand is achteruitgang, en wie geen nieuwe dingen leert zal daarom onvermijdelijk overbodig worden. In weinig disciplines geldt deze wetmatigheid zo sterk als in de wereld van de softwareontwikkeling. Het aantal nieuwe ontwikkelingen stapelt zich zo snel op, dat je je als het professional niet kunt veroorloven om code te schrijven zoals je dat tien jaar geleden deed - of vijf jaar geleden, of misschien zelfs wel één jaar geleden. 
 
 
 Hoewel, nee: één jaar geleden, dat is overdreven. Tenzij je één jaar geleden code schreef zoals je het tien jaar geleden deed, natuurlijk.
@@ -59,10 +59,10 @@ Pas als je dingen op papier zet, besef je je hoeveel leermomenten er in een dag 
 Aantekeningen op zichzelf zijn fijn, maar nóg beter is als je ook wat met die aantekeningen doet. Een steeds groter groeiende verzameling notities heeft maar een beperkte waarde, ze moeten ook gebruikt worden. 
 
 
-Aantekeningen zijn bijvoorbeeld een uitstekend startpunt voor verdere reflectie op een onderwerp. Verwerk je aantekningen tot een verhaal. Schrijf uit: wat was het probleem waar je tegenaan liep, en hoe heb je het opgelost? Waarom werkt die oplossing? Zijn er nog andere manieren waarop je het probleem had kunnen aanpakken?
+Aantekeningen zijn bijvoorbeeld een uitstekend startpunt voor verdere reflectie op een onderwerp. Verwerk ze tot een verhaal. Schrijf uit: wat was het probleem waar je tegenaan liep, en hoe heb je het opgelost? Waarom werkt die oplossing? Zijn er nog andere manieren waarop je het probleem had kunnen aanpakken?
 
 
-Zo dwing je om je gedachten concreet te maken. Vaak kom je al schrijvende tot nieuwe inzichten over een bepaald onderwerp. Hoewel, nieuw? Misschien is het: je maakt expliciet wat je impliciet al wist. Elke keer als je impliciete kennis expliciet maakt, word je een betere ontwikkelaar. Want nu kun je het ook uitleggen aan een andere ontwikkelaar - maar daar kom ik zo op.
+Zo dwing je om je gedachten concreet te maken. Vaak kom je al schrijvende tot nieuwe inzichten over een bepaald onderwerp. - Hoewel, nieuw? Misschien is het: je maakt expliciet wat je impliciet al wist. Elke keer als je impliciete kennis expliciet maakt, word je een betere ontwikkelaar. Want nu kun je het ook uitleggen aan een andere ontwikkelaar - maar daar kom ik zo op.
 
 
 Anders dan lezen of aantekeningen maken, vraagt de verwerking ervan, in mijn ervaring althans, wel meer tijd. Wanneer je eenmaal begint met het uitwerken van een gedachte, dan volgen de ideeën elkaar in rap tempo op. Dat vormgeven op een manier die ook nog voor een ander begrijpelijk is - geen vereiste, wel een pré -, vraagt aandacht. Schrijven is een vaardigheid die makkelijker wordt met de tijd, maar nooit helemaal vanzelf gaat. 

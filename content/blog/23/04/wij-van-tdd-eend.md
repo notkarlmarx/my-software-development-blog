@@ -1,8 +1,8 @@
 ---
 title: "Wij van TDD-eend..."
 author: "Karl van Heijster"
-date: 2023-02-17T10:18:05+01:00
-draft: true
+date: 2023-04-14T07:59:12+02:00
+draft: false
 comments: true
 tags: ["pair programming", "requirements", "shift left", "software ontwikkelen", "testen", "test-driven development", "the zone"]
 summary: "Het is waar: uit het feit dat er tests zijn, valt niet te concluderen dat het systeem functioneert zoals verwacht - preciezer: zoals de eindgebruiker verwacht. Er valt hooguit uit te concluderen dat het systeem functioneert zoals de schrijver van de tests verwachtte. En als de schrijver van de tests tevens de ontwikkelaar van de code is, dan vormen de tests niet meer dan een verslaglegging van de aannames die de ontwikkelaar had tijdens de implementatie. En tóch geloof ik dat TDD het probleem van mijn collega - mijn feature voldoet niet aan de (impliciete?) requirements - had kunnen verhelpen."

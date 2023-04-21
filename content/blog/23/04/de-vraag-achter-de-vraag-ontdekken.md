@@ -1,8 +1,8 @@
 ---
 title: "De vraag achter de vraag ontdekken"
 author: "Karl van Heijster"
-date: 2023-03-03T10:55:57+01:00
-draft: true
+date: 2023-04-21T09:16:33+02:00
+draft: false
 comments: true
 tags: ["agile ontwikkeling", "boeken", "informatieanalyse", "recensies", "requirements"]
 summary: "*Requirements engineering* is… moeilijk. Heel moeilijk. Het achterhalen van de systeemvereisten vraagt een enorme inspanning van requirementsanalisten. Het op te lossen probleem is immers altijd vager, minder gedefinieerd dan de absolute precisie die software verlangt. Analisten moeten belanghebbenden de juiste vragen weten te stellen om een vertaalslag te kunnen maken van business naar IT. Gelukkig hoeven ze dat niet alleen te doen. *Handboek requirements* van Nicole de Swart is een onmisbare gids in dit proces."

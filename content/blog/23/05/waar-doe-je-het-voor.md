@@ -1,8 +1,8 @@
 ---
 title: "Waar doe je het voor?"
 author: "Karl van Heijster"
-date: 2023-03-17T10:23:56+01:00
-draft: true
+date: 2023-05-05T08:49:03+02:00
+draft: false
 comments: true
 tags: ["bloggen", "clean code", "documentatie", "luie programmeur", "refactoren", "test-driven development", "testen", "verantwoordelijkheid", "werkplezier"]
 summary: "Een luie programmeur grijpt alles aan om zijn eigen werk makkelijker te maken (met uitzondering van het besparen op kwaliteit - daar is een andere term voor: een *slechte programmeur*). En makkelijker maken betekent meestal: automatiseren. Want waarom zou je zelf het werk doen, als een machine het ook voor je kan doen?"
@@ -32,7 +32,7 @@ Dat is waarom ik schrijf over [*clean code*](/tags/clean-code/) in het algemeen,
 En het is ook [waarom ik überhaupt blogs schrijf](/blog/21/08/vijf-voordelen-van-bloggen/). Elke blog is een oefening in het redeneren over code - en de manier waarop we code schrijven. Hoe beter ik erover kan redeneren, hoe makkelijker het wordt om fouten te herkennen en te voorkomen. En - dat is het fijne aan geschreven tekst -, ik hoef al die lessen niet eens te onthouden.
 
 
-(Op [FutureTech](https://futuretech.nl/) in Utrecht, woonde ik een hartstikke leuke sessie bij over de verschillende manieren waarop ChatGPT je als ontwikkelaar kan ondersteunen. Maar toen werd gesuggereerd dat je AI ook kunt gebruiken om blogs te schrijven, voelde ik een haast fysieke weerstand bij me opkomen. Het hele idee van bloggen is - als je het mij vraagt althans - nu juist dat je voor jezelf helderheid creëert over het onderwerp waar je over schrijft. AI kan de output wel vervangen, maar niet het verkrijgen van een beter begrip.)
+(Op [FutureTech](https://futuretech.nl/) in Utrecht, woonde ik een hartstikke leuke sessie bij over de verschillende manieren waarop [ChatGPT](https://chat.openai.com/auth/login) je als ontwikkelaar kan ondersteunen. Maar toen werd gesuggereerd dat je AI ook kunt gebruiken om blogs te schrijven, voelde ik een haast fysieke weerstand bij me opkomen. Het hele idee van bloggen is - als je het mij vraagt althans - nu juist dat je voor jezelf helderheid creëert over het onderwerp waar je over schrijft. AI kan de output wel vervangen, maar niet het verkrijgen van een beter begrip.)
 
 
 ## Lui
@@ -41,7 +41,7 @@ En het is ook [waarom ik überhaupt blogs schrijf](/blog/21/08/vijf-voordelen-va
 Het constant willen vereenvoudigen van je eigen werk heeft een sterke link met het idee van de *luie programmeur*. Een luie programmeur grijpt alles aan om zijn eigen werk makkelijker te maken (met uitzondering van het besparen op kwaliteit - daar is een andere term voor: een *slechte programmeur*). En makkelijker maken betekent meestal: automatiseren. Want waarom zou je zelf het werk doen, als een machine het ook voor je kan doen?
 
 
-Unittests zijn een automatisering van alle handelingen die ervoor nodig zijn om het systeem in een bepaalde staat te brengen, een actie uit te voeren en te checken of dat het juiste resultaat had. Gerefactorde code is een automatisering van een nieuw inzicht dat je op hebt gedaan over de code - in de code zelf, nota bene. En schriftelijke documentatie is een automatisering van een gesprek. In plaats van het gesprek elke keer opnieuw te voeren, kun je het één keer vastleggen en iemand in het vervolg daar naar verwijzen. 
+Unittests zijn een automatisering van alle handelingen die ervoor nodig zijn om het systeem in een bepaalde staat te brengen, een actie uit te voeren en te checken of dat het juiste resultaat had. Gerefactorde code is een automatisering van een nieuw inzicht dat je op hebt gedaan over de code - in de code zelf, nota bene. En schriftelijke documentatie is een automatisering van kennisoverdracht. In plaats van die overdracht elke keer opnieuw *face to face* te doen, kun je alle relevante informatie één keer vastleggen en iemand in het vervolg daar naar verwijzen. 
 
 
 De term "luie programmeur" is bewust prikkelend, natuurlijk. Want het automatiseren van sommige taken kan een enorme inspanning vragen. In hun inspanning om hun eigen werk makkelijker te maken, kunnen luie programmeurs zich dus absoluut geen luiheid veroorloven.
@@ -62,7 +62,7 @@ Constructieve luiheid is iets heel anders. Wie constructief lui is, neemt wél d
 Ja, weet je, daar doe ik het wel voor. 
 
 
-Blije eindgebruikers zijn voor mij meer een mooie bijvangst, als ik eerlijk ben. Maar daar worden teamgenoten die meer op Bram lijken dan weer blij van, en dat is ook wat waard. 
+Als ik eerlijk ben, zijn blije eindgebruikers voor mij eerder bijvangst. Maar van die bijvangst worden teamgenoten die meer op Bram lijken dan weer blij, en dat is ook wat waard. 
 
 
 Waar doe jij het voor?

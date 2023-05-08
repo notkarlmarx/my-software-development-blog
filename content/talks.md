@@ -10,7 +10,7 @@ draft: true
 Filosoof Ludwig Wittgenstein zei ooi: “Waarvan men niet spreken kan, daarover moet men zwijgen.” Ik geloof dat dit net zozeer geldt voor code als voor communicatie. 
 
 
-Gelukkig valt er veel te zeggen over softwareontwikkeling. Daarom spreek ik graag regelmatig op usergroups en conferenties. Ik ben te vinden op [Sessionize](https://sessionize.com/karl-van-heijster) en [Speaker Deck](https://speakerdeck.com/dotkarl).
+Gelukkig valt er veel te zeggen over softwareontwikkeling. Daarom spreek ik graag op usergroups en conferenties. Ik ben te vinden op [Sessionize](https://sessionize.com/karl-van-heijster) en [Speaker Deck](https://speakerdeck.com/dotkarl).
 
 
 <br/>

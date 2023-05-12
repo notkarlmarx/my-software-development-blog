@@ -1,8 +1,8 @@
 ---
 title: "Leren leren op het werk"
 author: "Karl van Heijster"
-date: 2023-03-25T14:50:01+01:00
-draft: true
+date: 2023-05-12T08:18:35+02:00
+draft: false
 comments: true
 tags: ["bedrijfscultuur", "boeken", "leercultuur", "leren", "procesverbetering", "recensies"]
 summary: "De mens is een lerend wezen. Wie zijn ogen ervoor openhoudt, ziet dat we haast elke dag wel een nieuw inzicht opdoen. Maar zodra men aan het werk gaat, lijkt een groot deel van de mensen die lerende houding thuis te laten. Sterker nog, goedbedoelde leerinitiatieven worden van tijd tot tijd zelfs met vijandigheid begroet. Waarom? Zijn we toch niet zo lerend als je op voorhand zou denken?"
@@ -43,7 +43,7 @@ Het gros van het boek bestaat uit een analyse van de antipatronen die Kolkhuis T
 ## Verbeteren
 
 
-Verbeteren begint bij die herkenning: het besef van de aanwezigheid van zulke patronen. De volgende stap is: leren hoe het beter kan. Hiervoor reikt Kolkhuis Tanke een methodiek van actieleerteams. Dit zijn kleine groepen van betrokkenen die empirisch en iteratief op zoek gaan naar verbetering. Aan de hand van kleine, concrete experimenten proberen ze barrières weg te nemen die leren ontmoedigen. De bedoeling van die experimenten is niet per se om direct resultaat te boeken. Belangrijker is om dieper door te dringen naar waar het probleem écht zit. Ook bij actieleerteams staat – het mag niet verbazen – het leren centraal.
+Verbeteren begint bij die herkenning: het besef van de aanwezigheid van zulke patronen. De volgende stap is: leren hoe het beter kan. Hiervoor reikt Kolkhuis Tanke een methodiek aan van actieleerteams. Dit zijn kleine groepen van betrokkenen die empirisch en iteratief op zoek gaan naar verbetering. Aan de hand van kleine, concrete experimenten proberen ze barrières weg te nemen die leren ontmoedigen. De bedoeling van die experimenten is niet per se om direct resultaat te boeken. Belangrijker is om dieper door te dringen naar waar het probleem écht zit. Ook bij actieleerteams staat – het mag niet verbazen – het leren centraal.
 
 
 Terecht merkt Kolkhuis Tanke op dat haar methodiek in lijn ligt met de [Agile methodologie](https://agilemanifesto.org/) die (in naam althans) dominant is in de wereld van softwareontwikkeling. Maar het implementeren van een Agile proces als [Scrum](https://www.scrum.org/) is niet voldoende om leren daadwerkelijk centraal te stellen in een organisatie – net zoals actieleerteams alléén geen bedrijf kunnen transformeren tot een lerende organisatie. Een proces volgen is niet genoeg. Er is een omslag in denken voor nodig. Er is een alomtegenwoordig vertrouwen nodig in het belang van continu leren. Niet alleen medewerkers moeten in de leerstand – dat geldt voor een organisatie als geheel.

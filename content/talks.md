@@ -1,16 +1,16 @@
 ---
-title: "Spreken"
-draft: true
+title: "Spreker"
+draft: false
 ---
 
 <img class="rounded center" src="/images/speaking-sm.jpg" width="300" />
 <br/>
 
 
-Filosoof Ludwig Wittgenstein zei ooi: “Waarvan men niet spreken kan, daarover moet men zwijgen.” Ik geloof dat dit net zozeer geldt voor code als voor communicatie. 
+Ludwig Wittgenstein zei ooit: "Waarvan men niet spreken kan, daarover moet men zwijgen." Gelukkig valt er over softwareontwikkeling meer dan genoeg te zeggen. 
 
 
-Gelukkig valt er veel te zeggen over softwareontwikkeling. Daarom spreek ik graag op usergroups en conferenties. Ik ben te vinden op [Sessionize](https://sessionize.com/karl-van-heijster) en [Speaker Deck](https://speakerdeck.com/dotkarl).
+Ik deel mijn inzichten graag op usergroups en conferenties. 
 
 
 <br/>
@@ -24,3 +24,9 @@ Gelukkig valt er veel te zeggen over softwareontwikkeling. Daarom spreek ik graa
 | 22 september 2022 | [Cito](https://www.cito.nl/) (intern)   | *Hoe schrijf ik (nóg) betere tests?*                             |      |
 | <br/>             |                                         |                                                                  |      |
 | 16 december 2021  | [Cito](https://www.cito.nl/) (intern)   | *Jezelf ontwikkelen met een blog*                                |      |
+
+
+<br/>
+
+
+Meer informatie over mij als spreker is te vinden op [Sessionize](https://sessionize.com/karl-van-heijster) en [Speaker Deck](https://speakerdeck.com/dotkarl).

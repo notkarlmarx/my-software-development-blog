@@ -7,16 +7,10 @@ draft: false
 <br/>
 
 
-Hoi! Mijn naam is Karl van Heijster. Sinds 2017 ben ik werkzaam als softwareontwikkelaar. Ik ben te vinden op [LinkedIn](https://www.linkedin.com/in/karl-van-heijster-833503aa/) en [GitHub](https://github.com/dotkarl).
+Hoi! Mijn naam is Karl van Heijster. Ik ben softwareontwikkelaar, [blogger](/) en [spreker](/talks). Ik interesseer me voor *software craftmanship*, agile en Test-Driven Development. 
 
 
-Ik word enthousiast van continue en stapsgewijze verbetering. 
+Op deze website houd ik wekelijks enkele van mijn observaties over de softwareontwikkelpraktijk bij. Voeg *dotkarl* toe aan je [RSS-feed](/index.xml/) om geen enkele blog te missen!
 
 
-Dat geldt bijvoorbeeld voor de code die ik schrijf (en herschrijf!). Ik hou van *clean code* - van het schrijven van unittests tot het hernoemen van variabelen. Geen grap: ik krijg er oprecht warme gevoelens van. 
-
-
-Maar het geldt ook voor het hele proces om software ontwikkelen heen. Wat maakt een goede softwareontwikkelaar? Wat stelt een team in staat zo goed mogelijke oplossingen te programmeren? En hoe bewaak je de kwaliteit van die oplossing? Ik heb een fascinatie voor *code craftmanship* en de Agile filosofie, en een honger naar alles wat mijn collega's en mij helpt om meer waarde te leveren.
-
-
-Op deze blog houd ik twee keer per week enkele van mijn observaties over de softwareontwikkelpraktijk bij. Voeg *dotkarl* toe aan je [RSS-feed](/index.xml/) om geen enkele blog te missen.
+Ik ben ook te vinden op [LinkedIn](https://www.linkedin.com/in/karl-van-heijster-833503aa/), [GitHub](https://github.com/dotkarl), [Sessionize](https://sessionize.com/karl-van-heijster) en [Speaker Deck](https://speakerdeck.com/dotkarl).

@@ -66,11 +66,17 @@ Het is op dat moment doodeenvoudig om de oorspronkelijke aanroep te vervangen vo
 
 
 1. Hernoem de method die je wil wijzigen, geef 'm een naam die duidelijk maakt dat deze implementatie aan vervanging toe is. Zorg ervoor dat je de tools in je IDE hiervoor gebruikt, zodat alle referenties naar die method meteen geupdate worden.
-2. Dupliceer de method en geef de nieuwe versie de juiste naam. 
+
+2. Dupliceer de method en geef de nieuwe versie de juiste naam.
+
 3. Wijzig de nieuwe implementatie naar eigen inzicht. 
+
 4. Vind één aanroepende method van de oorspronkelijke method, en laat deze naar de nieuwe implementatie wijzen.
+
 5. Trap je tests af. Slagen alle tests, ga dan terug naar stap 4. Faalt er een test, ga dan terug naar stap 3.
+
 6. Doe dit net zo lang totdat de oorspronkelijke method op geen enkele plek meer aangeroepen word.
+
 7. Verwijder de oorspronkelijke method.
 
 

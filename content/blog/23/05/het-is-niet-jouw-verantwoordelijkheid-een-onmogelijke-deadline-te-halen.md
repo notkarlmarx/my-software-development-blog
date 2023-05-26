@@ -5,19 +5,19 @@ date: 2023-05-26T08:07:26+02:00
 draft: false
 comments: true
 tags: ["druk", "falen", "procesverbetering", "professionaliteit", "shift left", "verantwoordelijkheid"]
-summary: "Er gebeurt iets wonderlijks wanneer je tegen een ontwikkelteam zegt dat die en die feature een deadline heeft: ze gaan hun best doen om die deadline te halen. Dat is een nobel streven, natuurlijk. Maar het is ook een gevaarlijk gegeven. Want niet elke deadline voor elke feature is even realistisch. Een team dat, ongeacht de haalbaarheid, gaat rennen om die deadline te halen, werkt zichzelf - en haar stakeholders - in de nesten."
+summary: "Er gebeurt iets wonderlijks wanneer je tegen een ontwikkelteam zegt dat die en die feature een deadline heeft: ze gaan hun best doen om die deadline te halen. Dat is een nobel streven, natuurlijk. Maar het is ook een gevaarlijk gegeven. Want niet elke deadline voor elke feature is even realistisch. Een team dat, ongeacht de haalbaarheid, gaat rennen om die deadline te halen, werkt zichzelf -- en haar stakeholders -- in de nesten."
 ---
 
 Er gebeurt iets wonderlijks wanneer je tegen een ontwikkelteam zegt dat die en die feature een deadline heeft: ze gaan hun best doen om die deadline te halen.
 
 
-Dat is een nobel streven, natuurlijk. Maar het is ook een gevaarlijk gegeven. Want niet elke deadline voor elke feature is even realistisch. Een team dat, ongeacht de haalbaarheid, gaat rennen om die deadline te halen, werkt zichzelf - en haar stakeholders - in de nesten.
+Dat is een nobel streven, natuurlijk. Maar het is ook een gevaarlijk gegeven. Want niet elke deadline voor elke feature is even realistisch. Een team dat, ongeacht de haalbaarheid, gaat rennen om die deadline te halen, werkt zichzelf -- en haar stakeholders -- in de nesten.
 
 
 ## Uitgekauwd
 
 
-Het gevaar is - in mijn ervaring - het grootst wanneer de feature al helemaal uitgekauwd is, en de deadline belangrijk. De stakeholders zijn verliefd geworden op het idee van bepaalde functionaliteit, en hebben zichzelf ervan overtuigd dat elk facet ervan absoluut noodzakelijk is. Tegelijkertijd laat de deadline geen ruimte voor fouten of nieuwe inzichten.
+Het gevaar is -- in mijn ervaring -- het grootst wanneer de feature al helemaal uitgekauwd is, en de deadline belangrijk. De stakeholders zijn verliefd geworden op het idee van bepaalde functionaliteit, en hebben zichzelf ervan overtuigd dat elk facet ervan absoluut noodzakelijk is. Tegelijkertijd laat de deadline geen ruimte voor fouten of nieuwe inzichten.
 
 
 Er lijkt voor het team niets anders op te zitten dan zich strak aan de planning te houden, te ploeteren desnoods. Dan gebeurt het volgende: men gaat bezuinigen op kwaliteit. Het team implementeert functionaliteit die in de praktijk minder goed werkt dan op papier. Teamleden snijden hoeken af als het op codekwaliteit aankomt. Ze laten de unittests voorlopig maar even voor wat het is. 

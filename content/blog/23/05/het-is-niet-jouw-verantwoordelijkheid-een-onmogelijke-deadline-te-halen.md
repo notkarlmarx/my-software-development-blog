@@ -5,10 +5,10 @@ date: 2023-05-26T08:07:26+02:00
 draft: false
 comments: true
 tags: ["druk", "falen", "procesverbetering", "professionaliteit", "shift left", "verantwoordelijkheid"]
-summary: "Er gebeurt iets wonderlijks wanneer je tegen een een ontwikkelteam zegt dat die en die feature een deadline heeft: ze gaan hun best doen om die deadline te halen. Dat is een nobel streven, natuurlijk. Maar het is ook een gevaarlijk gegeven. Want niet elke deadline voor elke feature is even realistisch. Een team dat, ongeacht de haalbaarheid, gaat rennen om die deadline te halen, werkt zichzelf - en haar stakeholders - in de nesten."
+summary: "Er gebeurt iets wonderlijks wanneer je tegen een ontwikkelteam zegt dat die en die feature een deadline heeft: ze gaan hun best doen om die deadline te halen. Dat is een nobel streven, natuurlijk. Maar het is ook een gevaarlijk gegeven. Want niet elke deadline voor elke feature is even realistisch. Een team dat, ongeacht de haalbaarheid, gaat rennen om die deadline te halen, werkt zichzelf - en haar stakeholders - in de nesten."
 ---
 
-Er gebeurt iets wonderlijks wanneer je tegen een een ontwikkelteam zegt dat die en die feature een deadline heeft: ze gaan hun best doen om die deadline te halen.
+Er gebeurt iets wonderlijks wanneer je tegen een ontwikkelteam zegt dat die en die feature een deadline heeft: ze gaan hun best doen om die deadline te halen.
 
 
 Dat is een nobel streven, natuurlijk. Maar het is ook een gevaarlijk gegeven. Want niet elke deadline voor elke feature is even realistisch. Een team dat, ongeacht de haalbaarheid, gaat rennen om die deadline te halen, werkt zichzelf - en haar stakeholders - in de nesten.

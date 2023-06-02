@@ -1,6 +1,6 @@
 ---
 title: "Overzicht"
-draft: true
+draft: false
 summary: "Een beknopt overzicht van alle praatjes die ik de afgelopen tijd heb gehouden."
 ---
 

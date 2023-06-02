@@ -7,7 +7,7 @@ draft: false
 <br/>
 
 
-Hoi! Mijn naam is Karl van Heijster. Ik ben softwareontwikkelaar, [blogger](/) en [spreker](/speaking). Ik interesseer me voor *software craftmanship*, agile en Test-Driven Development. 
+Hoi! Mijn naam is Karl van Heijster. Ik ben softwareontwikkelaar, [blogger](/) en [spreker](/public-speaking). Ik interesseer me voor *software craftmanship*, agile en Test-Driven Development. 
 
 
 Op deze website houd ik wekelijks enkele van mijn observaties over de softwareontwikkelpraktijk bij. Voeg *dotkarl* toe aan je [RSS-feed](/index.xml/) om geen enkele blog te missen!

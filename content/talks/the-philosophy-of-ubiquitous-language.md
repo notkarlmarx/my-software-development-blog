@@ -5,7 +5,7 @@ date: 2023-06-02T08:51:57+02:00
 draft: true
 comments: true
 tags: ["domain-driven design", "filosofie"]
-summary: "So, you decided to try Domain-Driven Design (DDD). You start modeling the domain using the language spoken by your domain experts. All goes well… until you discover ambiguities. What do you do now? How do you keep your model clean while still respecting the ubiquitous language?"
+summary: "Dus -- je hebt besloten Domain-Driven Design te proberen. Je begint code vorm te geven in de woorden van je stakeholders. Het gaat allemaal prima... totdat je dubbelzinnigheden ontdekt. Wat nu? Hoe houd je je domeinmodel eenduidig zonder de *ubiquitous language* te schenden?"
 speakerdeck: "f586cd7be07c4b728ea8976335a61b62"
 ---
 
@@ -13,13 +13,13 @@ speakerdeck: "f586cd7be07c4b728ea8976335a61b62"
 <br/>
 
 
-So, you decided to try Domain-Driven Design (DDD). You start modeling the domain using the language spoken by your domain experts. All goes well… until you discover ambiguities. What do you do now? How do you keep your model clean while still respecting the ubiquitous language?
+Dus -- je hebt besloten [Domain-Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design) (DDD) te proberen. Je begint code vorm te geven in de woorden van je stakeholders. Het gaat allemaal prima... totdat je dubbelzinnigheden ontdekt. Wat nu? Hoe houd je je domeinmodel eenduidig zonder de *ubiquitous language* te schenden?
 
 
-Well, it depends. It depends on your philosophical presuppositions, to be precise. The way you think language works will to a large extent determine your course of action. So instead of looking to DDD creator Eric Evans for the answer, I propose looking in an entirely different direction: the philosophy of Ludwig Wittgenstein (1889 - 1951). Wittgenstein’s revolutionary insights into the nature of meaning provide some excellent pointers for diagnosing the source of your modeling problem -- not to mention showing you the way out!
+Nou, dat hangt er van af -- van je filosofische vooronderstellingen, om precies te zijn. Je impliciete beeld van hoe taal werkt, bepaalt voor een groot gedeelte wat je zult doen. Dus in plaats van DDD-bedenker [Eric Evans](https://www.domainlanguage.com/) te raadplegen voor advies, stel ik voor om ergens anders heil te zoeken: in de filosofie van [Ludwig Wittgenstein](https://plato.stanford.edu/entries/wittgenstein/) (1889 - 1951). Wittgensteins revolutionaire inzichten in de aard van betekenis wijzen ons op de bron van ons modelleerprobleem -- en bieden een uitweg!
 
 
-At the end of this session, you’ll have gained a clearer understanding of the way language works and how you can use this knowledge to build better software. Whether you’re new to DDD or a seasoned veteran, this talk is sure to provide you with a new outlook on your development activities.
+Aan het eind van dit praatje heb je een beter begrip van hoe taal werkt en hoe je deze kennis kunt gebruiken om betere software te ontwikkelen. Of je nu nieuw bent in de wereld van DDD of een doorgewinterde veteraan, dit praatje biedt je hoe dan ook een nieuw perspectief op je ontwikkelactiviteiten.
 
 
 ## Gerelateerde blogs

@@ -3,7 +3,7 @@ title: "Spreker"
 draft: false
 ---
 
-<img class="rounded center" src="images/speaking-sm.jpg" width="300" />
+<img class="rounded center" src="images/speaking-sm.jpg" width="300" alt="Karl van Heijster als spreker" />
 <br/>
 
 

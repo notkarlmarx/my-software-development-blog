@@ -15,7 +15,7 @@ Van [Anjana Vakil](https://anjana.dev/) leerde ik een interessante les: [objectg
 <br/>
 
 
-(In [deze video](https://www.youtube.com/watch?v=Pg3UeB-5FdA) brengt Vakil hetzelfde punt naar voren in een wat bredere context van programmeerparadigma's. Hetzelfde punt wordt naar voren gebracht door [Dave Thomas](https://pragdave.me/) in [deze video](https://www.youtube.com/watch?v=kLnPXMoh0H8).)
+(In [deze video](https://www.youtube.com/watch?v=Pg3UeB-5FdA "'Programming Across Paradigms • Anjana Vakil • GOTO 2017'") brengt Vakil hetzelfde punt naar voren in een wat bredere context van programmeerparadigma's. Hetzelfde punt wordt naar voren gebracht door [Dave Thomas](https://pragdave.me/) in [deze video](https://www.youtube.com/watch?v=kLnPXMoh0H8 "'The Best OO Language is a Functional One • Pragmatic Dave Thomas • YOW! 2017'").)
 
 
 ## Objecten
@@ -27,7 +27,7 @@ Vakil brengt in haar praatje naar voren dat er bij OOP in de eerste instantie va
 Helemaal onterecht is dat natuurlijk niet, want het woord "object" zit in de naam nota bene. En daar zit ook precies het probleem, *dixit* [Alan Kay](https://nl.wikipedia.org/wiki/Alan_Kay), de naamgever van het paradigma. Want de naam suggereert dat object-zijn hét definiërende kenmerk is van OOP. 
 
 
-Het suggereert dat je classes een voorwerp in de wereld representeren dat bepaalde eigenschappen heeft -- vastgelegd in *private fields* -- en dat een zeker gedrag kan vertonen -- vastgelegd in *methods*. Ik heb [elders op deze blog](/blog/23/01/eerlijke-domeinmodellen/) eens een parallel getrokken met de substantieleer van [René Descartes](https://plato.stanford.edu/entries/descartes/) -- dat is waar objecten mij als filosoof aan doen denken. 
+Het suggereert dat je classes een voorwerp in de wereld representeren dat bepaalde eigenschappen heeft -- vastgelegd in *private fields* -- en dat een zeker gedrag kan vertonen -- vastgelegd in *methods*. Ik heb [elders op deze blog](/blog/23/01/eerlijke-domeinmodellen/ "'Eerlijke domeinmodellen'") eens een parallel getrokken met de substantieleer van [René Descartes](https://plato.stanford.edu/entries/descartes/) -- dat is waar objecten mij als filosoof aan doen denken. 
 
 
 ## Cellen
@@ -57,7 +57,7 @@ Is dat verschil subtiel? Misschien. Heeft het verstrekkend gevolgen? Geen idee. 
 ## *Actors*
 
 
-Eén concreet gevolg heeft dit nieuwe [mentale model](/blog/22/08/wat-is-jouw-mentale-model/) wel al gehad. 
+Eén concreet gevolg heeft dit nieuwe [mentale model](/blog/22/08/wat-is-jouw-mentale-model/ "'Wat is jouw mentale model?'") wel al gehad. 
 
 
 Een tijd terug op [Future Tech](https://futuretech.nl/) hoorde van het [*actor*-model](https://en.wikipedia.org/wiki/Actor_model). Dit model is geïntroduceerd om om te kunnen gaan met *mutable state* in de wereld van gedistribueerde en parallelle processen. Er bestaan verschillende frameworks die het *actor*-model implementeren, zoals [Akka.NET](https://getakka.net/) en [Microsoft Orleans](https://learn.microsoft.com/en-us/dotnet/orleans/overview). Het idee is dat bepaalde objecten -- Actors in Akka.NET, Grains in Orleans -- verantwoordelijk zijn voor *mutable state*, en dat andere *actors* deze alleen kunnen veranderen door een bericht naar die objecten te sturen.

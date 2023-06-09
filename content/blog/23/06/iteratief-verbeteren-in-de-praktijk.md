@@ -1,8 +1,8 @@
 ---
 title: "Iteratief verbeteren in de praktijk"
 author: "Karl van Heijster"
-date: 2023-04-21T10:17:53+02:00
-draft: true
+date: 2023-06-09T08:11:21+02:00
+draft: false
 comments: true
 tags: ["falen", "iteratieve ontwikkeling", "leren", "procesverbetering", "samenwerking", "succes", "verantwoordelijkheid"]
 summary: "Er was een briefje op de deur geplakt, de deur richting de wc's: \"Dicht houden in verband met de kou!\" Er was een dingetje dat je moest weten. Als die deur eenmaal dicht was, dan kon je de afdeling softwareontwikkeling alleen nog maar uit - niet meer in. Een slimme ontwikkelaar liet die deur dus op een kier staan. En we waren allemaal slimme ontwikkelaars - misschien was het daarom wel zo koud, bedenk ik nu."
@@ -14,19 +14,19 @@ Er was een briefje op de deur geplakt, de deur richting de wc's: "Dicht houden i
 Een paar maanden geleden, de ruimte van de afdeling softwareontwikkeling was zojuist verbouwd. Het was, ook met de deur dicht, vreselijk koud. Als we die deur open zouden hebben laten staan, dan zouden er vast en zeker mensen doodgevroren zijn.
 
 
-Er was een dingetje dat je moest weten. Als die deur eenmaal dicht was, dan kon je de afdeling softwareontwikkeling alleen nog maar uit - niet meer in. 
+Er was een dingetje dat je moest weten. Als die deur eenmaal dicht was, dan kon je de afdeling softwareontwikkeling alleen nog maar uit -- niet meer in. 
 
 
 Je ging naar de wc, sloot netjes de deur achter je, kwam terug, vloekte en moest omlopen naar de eerstvolgende ingang om weer bij je werkplek terug te kunnen komen.
 
 
-Een slimme ontwikkelaar liet die deur dus op een kier staan. En we waren allemaal slimme ontwikkelaars - misschien was het daarom wel zo koud, bedenk ik nu.
+Een slimme ontwikkelaar liet die deur dus op een kier staan. En we waren allemaal slimme ontwikkelaars -- misschien was het daarom wel zo koud, bedenk ik nu.
 
 
 ## Iteratie #1
 
 
-Hoe dan ook, die les, de les dat je de deur op een kiertje moest laten staan, die heb ik geleerd met vallen en opstaan. Met één keer vallen en één keer opstaan, welteverstaan. Vanaf dat moment trok ik geen deur meer achter me dicht.
+Hoe dan ook, die les, de les dat je de deur op een kiertje moest laten staan, die heb ik geleerd met vallen en opstaan. Met één keer vallen en één keer opstaan, om precies te zijn. Vanaf dat moment trok ik geen deur meer achter me dicht.
 
 
 En anderen leerden die les met hun ene keer vallen en opstaan. Met de hele afdeling keken we toe en lachten we, elke keer als iemand naar de wc ging, terugkwam, vloekte en via een omweg weer terugkwamen op de afdeling.
@@ -44,7 +44,7 @@ Ik was best tevreden met mezelf, toen.
 Een week of twee weken later was ik weer terug op kantoor, en had iemand mijn briefje weggehaald. 
 
 
-Iemand had een nieuwe oplossing gevonden. Met elastiek was er een post-it over het slot van de deur heen getrokken, zodat 'ie niet meer dicht kon vallen.
+Diegene had een nieuwe oplossing gevonden. Met elastiek was er een post-it over het slot van de deur heen getrokken, zodat 'ie niet meer dicht kon vallen.
 
 
 Ik moest daar vreselijk om lachen. Omdat het was een betere oplossing dan de mijne, dat moest ik toegeven. En het verraste me ook.
@@ -56,7 +56,7 @@ Iemand had de tijd, de moeite genomen om de menselijke fout uit het proces te ha
 Het aantal vloeken aan de rand van de afdeling daalde in één klap naar het nulpunt. (De vloeken op de rest van de afdeling bleven op hetzelfde niveau.)
 
 
-Je kon nu - als ik erover nadenk krijg ik kippenvel - de deur achter je dichttrekken én via dezelfde weg terugkeren. Het was machtig mooi.
+Je kon nu -- als ik erover nadenk krijg ik kippenvel -- de deur achter je dichttrekken én via dezelfde weg terugkeren. Het was machtig mooi.
 
 
 Maar het bleef stervenskoud.

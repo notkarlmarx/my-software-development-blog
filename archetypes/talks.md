@@ -16,7 +16,7 @@ speakerdeck: ""
 ...
 
 
-## Eerdere versies
+## Presentatieslides
 
 
 - ...

@@ -5,7 +5,7 @@ date: 2023-06-09T08:11:21+02:00
 draft: false
 comments: true
 tags: ["falen", "iteratieve ontwikkeling", "leren", "procesverbetering", "samenwerking", "succes", "verantwoordelijkheid"]
-summary: "Er was een briefje op de deur geplakt, de deur richting de wc's: \"Dicht houden in verband met de kou!\" Er was een dingetje dat je moest weten. Als die deur eenmaal dicht was, dan kon je de afdeling softwareontwikkeling alleen nog maar uit - niet meer in. Een slimme ontwikkelaar liet die deur dus op een kier staan. En we waren allemaal slimme ontwikkelaars - misschien was het daarom wel zo koud, bedenk ik nu."
+summary: "Er was een briefje op de deur geplakt, de deur richting de wc's: \"Dicht houden in verband met de kou!\" Er was een dingetje dat je moest weten. Als die deur eenmaal dicht was, dan kon je de afdeling softwareontwikkeling alleen nog maar uit -- niet meer in. Een slimme ontwikkelaar liet die deur dus op een kier staan. En we waren allemaal slimme ontwikkelaars -- misschien was het daarom wel zo koud, bedenk ik nu."
 ---
 
 Er was een briefje op de deur geplakt, de deur richting de wc's: "Dicht houden in verband met de kou!"

@@ -9,8 +9,6 @@ summary: "Veel ontwikkelaars zien code reviews als een hinderlijke onderbreking 
 speakerdeck: "f308db4400ef4e5c923d316705c902b4"
 ---
 
-<br/>
-
 Slaak je regelmatig een zucht als er een nieuw pull request aan je wordt toegewezen? En keur je ze wel eens goed om maar van het gedoe af te zijn? Dan is deze sessie voor jou!
 
 

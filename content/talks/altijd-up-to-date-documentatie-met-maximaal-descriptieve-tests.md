@@ -9,9 +9,6 @@ summary: "Door extra aandacht te besteden aan de scope en leesbaarheid van je te
 speakerdeck: "13dbfa7346764b50a57cc836617dd0f8"
 ---
 
-{{< speakerdeck speakerdeck >}}
-<br/>
-
 Niemand houdt van documentatie schrijven - en terecht! Documentatie schrijven en onderhouden kost veel energie. Tegelijkertijd wordt het nauwelijks gelezen en veroudert snel. Toch is documentatie een belangrijke hulpbron voor (nieuwe) ontwikkelaars om snel up to speed te komen over de werking van een codebase.
 
 

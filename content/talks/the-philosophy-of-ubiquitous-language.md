@@ -9,9 +9,7 @@ summary: "Dus -- je hebt besloten Domain-Driven Design te proberen. Je begint co
 speakerdeck: "f586cd7be07c4b728ea8976335a61b62"
 ---
 
-{{< speakerdeck speakerdeck >}}
 <br/>
-
 
 Dus -- je hebt besloten [Domain-Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design) (DDD) te proberen. Je begint code vorm te geven in de woorden van je stakeholders. Het gaat allemaal prima... totdat je dubbelzinnigheden ontdekt. Wat nu? Hoe houd je je domeinmodel eenduidig zonder de *ubiquitous language* te schenden?
 

@@ -9,9 +9,6 @@ summary: ""
 speakerdeck: ""
 ---
 
-{{< speakerdeck speakerdeck >}}
-<br/>
-
 
 ...
 

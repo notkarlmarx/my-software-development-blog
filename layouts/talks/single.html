@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+<main>
+	<div class="post">
+		{{ partial "single/title.html" . }}
+        
+        {{ with $.Page.Param "Speakerdeck" }}
+		<div class="newline">
+        	<script defer class="speakerdeck-embed" data-id="{{ . }}" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+		</div>
+        {{ end }}
+
+		{{ .Content }}
+
+		{{ partial "single/footer.html" . }}
+	</div>
+
+	<div class="pagination">
+		{{- if .PrevPage }}
+		<a href="{{ .PrevPage.RelPermalink }}" class="left arrow">&#8592;</a>
+		{{- end }}
+		{{- if .NextPage }}
+		<a href="{{ .NextPage.RelPermalink }}" class="right arrow">&#8594;</a>
+		{{- end }}
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+{{ end }}

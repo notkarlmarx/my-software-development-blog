@@ -1,8 +1,5 @@
 {{if (isset .Params "tags") }}
 <p>
-    <div class="catalogue-line center"></div>
-</p>
-<p>
     {{ $tags := (.GetTerms "tags")}}
     {{ $len := (len $tags)}}
     {{ range $index, $element := $tags }}

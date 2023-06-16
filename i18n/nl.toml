@@ -9,3 +9,6 @@ other = "Leestijd"
 
 [words]
 other = "woorden"
+
+[related]
+other = "Meer zoals dit"

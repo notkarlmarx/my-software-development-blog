@@ -1,10 +1,10 @@
 ---
 title: "Ode aan Bob Dylan"
 author: "Karl van Heijster"
-date: 2023-04-29T14:32:35+02:00
-draft: true
+date: 2023-06-30T08:11:05+02:00
+draft: false
 comments: true
-tags: []
+tags: ["code lezen", "muziek", "poëzie"]
 summary: "*var i = new Employee(“Bob Dylan”); / var farm = new Establishment(“Maggie’s Farm”);*"
 ---
 
@@ -24,8 +24,8 @@ summary: "*var i = new Employee(“Bob Dylan”); / var farm = new Establishment
     var brother = new Employer(“Maggie’s Brother”);
     i.Go(() => !Work.For(brother));
     i.Go(() => !Work.For(brother));
-    brother.Hands(you => you.Wallet.Add(new Nickel());
-    brother.Hands(you => you.Wallet.Add(new Dime());
+    brother.Hands(you => you.Wallet.Add(new Nickel()));
+    brother.Hands(you => you.Wallet.Add(new Dime()));
     brother.Asks(you, “Are you havin’ a good time?”, options =>
         new Options { WithGrin = true; });
     brother.Fines(you => you.SlamDoor(), Times.Every);
@@ -40,9 +40,9 @@ summary: "*var i = new Employee(“Bob Dylan”); / var farm = new Establishment
             Where = you => you.Face(156, 468),
             For = pa => pa.Kicks += 1
         });
-    _ = pa.Windows(Rooms.BedRoom) is List<Brick> bricks);
+    _ = pa.Windows(Rooms.BedRoom) is Brick[] bricks;
     var nationalGuard = new Guard<National>();
-    nationalGuard.Stands(Location.Door(pa), area: 5));
+    nationalGuard.Stands(Location.Door(pa), area: 5);
     i.Go(() => !Work.For(pa));
     
     var ma = new Employer(“Maggie’s ma”);

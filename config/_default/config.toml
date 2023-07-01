@@ -28,6 +28,30 @@ rssLimit = 20
     title = "Over mij"
     url = "/about/"
     weight = 2
+  [[menu.footer]]
+    identifier = "about"
+    name = "Over mij"
+    title = "Over mij"
+    url = "/about/"
+    weight = 1
+  [[menu.footer]]
+    identifier = "public-speaking"
+    name = "Spreker"
+    title = "Spreker"
+    url = "/public-speaking/"
+    weight = 2
+  [[menu.footer]]
+    identifier = "blog"
+    name = "Blog"
+    title = "Blog"
+    url = "/blog/"
+    weight = 3
+  [[menu.footer]]
+    identifier = "talks"
+    name = "Talks"
+    title = "Talks"
+    url = "/talks/"
+    weight = 4
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

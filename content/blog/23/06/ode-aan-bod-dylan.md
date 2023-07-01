@@ -35,11 +35,11 @@ summary: "*var i = new Employee(“Bob Dylan”); / var farm = new Establishment
     i.Go(() => !Work.For(pa));
     i.Go(() => !Work.For(pa));
     pa.PutsOut(options = new Options 
-        {
-            What = pa => pa.Items[“Cigar”],
-            Where = you => you.Face(156, 468),
-            For = pa => pa.Kicks += 1
-        });
+    {
+        What = pa => pa.Items[“Cigar”],
+        Where = you => you.Face(156, 468),
+        For = pa => pa.Kicks += 1
+    });
     _ = pa.Windows(Rooms.BedRoom) is Brick[] bricks;
     var nationalGuard = new Guard<National>();
     nationalGuard.Stands(Location.Door(pa), area: 5);
@@ -49,11 +49,11 @@ summary: "*var i = new Employee(“Bob Dylan”); / var farm = new Establishment
     i.Go(() => !Work.For(ma));
     i.Go(() => !Work.For(ma));
     ma.Talks.To(Servants.GetAll()).About(new List<Subject> 
-        {
-            new Subject(“man”),
-            new Subject(“God”),
-            new Subject(“law”)
-        });
+    {
+        new Subject(“man”),
+        new Subject(“God”),
+        new Subject(“law”)
+    });
     GetEverybody().Say((ma, pa) => pa.Brains.Behind = ma);
     var truth = ma.Age == 68;
     var whatSheSays = ma.Say(ma => ma.Age == 54);

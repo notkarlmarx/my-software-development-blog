@@ -52,6 +52,18 @@ rssLimit = 20
     title = "Talks"
     url = "/talks/"
     weight = 4
+  [[menu.footer]]
+    identifier = "tags"
+    name = "Tags"
+    title = "Tags"
+    url = "/tags/"
+    weight = 5
+  [[menu.footer]]
+    identifier = "stats"
+    name = "Stats"
+    title = "Stats"
+    url = "/stats/"
+    weight = 6
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

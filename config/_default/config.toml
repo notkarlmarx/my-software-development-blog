@@ -58,12 +58,6 @@ rssLimit = 20
     title = "Tags"
     url = "/tags/"
     weight = 5
-  [[menu.footer]]
-    identifier = "stats"
-    name = "Stats"
-    title = "Stats"
-    url = "/stats/"
-    weight = 6
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

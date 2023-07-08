@@ -1,20 +1,19 @@
 		<footer>
 			{{ if and .Params.comments (gt (len .Site.DisqusShortname) 0) }}
             <figure class="article-discussion">
-              {{ template "_internal/disqus.html" . }}
+                {{ template "_internal/disqus.html" . }}
             </figure>
 			{{ end }}
 			<p>
-
 			{{ $len := (len .Site.Menus.footer)}}
 			{{ range $index, $element := .Site.Menus.footer }}
-					<a href="{{ .URL }}">{{ lower .Name }}</a>
-					{{ if ne (add $index 1) $len }}
-					&middot;
-					{{ end }}
+				<a href="{{ .URL }}">{{ lower .Name }}</a>
+				{{ if ne (add $index 1) $len }}
+				&middot;
+				{{ end }}
 			{{ end }}
 			</p>
-			<p>
-			&copy; <time datetime="{{ now }}">{{ now.Format "2006" }}</time> {{ .Site.Author.name }}. {{ i18n "generator" | safeHTML }}
-			</p>
+			<span>
+			    &copy; <time datetime="{{ now }}">{{ now.Format "2006" }}</time> {{ .Site.Author.name }}. {{ i18n "generator" | safeHTML }}
+			</span>
 		</footer>

@@ -1,11 +1,11 @@
 ---
 title: "De tester als code reviewer"
 author: "Karl van Heijster"
-date: 2023-05-19T08:38:33+02:00
-draft: true
+date: 2023-07-14T07:54:13+02:00
+draft: false
 comments: true
 tags: ["code reviews", "pair programming", "procesverbetering", "pull requests", "samenwerking", "shift left", "software ontwikkelen", "testen", "tester (rol)", "verantwoordelijkheid"]
-summary: "Mijn team heeft onze tester onlangs tot verplichte reviewer gemaakt voor elk *pull request* (PR). Hij heeft een heel specifieke opdracht - drie, eigenlijk: 1. Ga na of het PR unit- of integratietests bevat. Zo nee, keur het PR dan af. 2. Ga na of je de unit- en/of integratietests kunt begrijpen. Zo nee, keur het PR dan af. 3. Ga op basis van de unit- en/of integratietests na of de code werkt zoals bedoeld. Zo nee, keur het PR dan af. Pas als aan alle drie de voorwaarden is voldaan, keurt onze tester het PR goed."
+summary: "Mijn team heeft onze tester onlangs tot verplichte reviewer gemaakt voor elk *pull request* (PR). Hij heeft een heel specifieke opdracht -- drie, eigenlijk: 1. Ga na of het PR unit- of integratietests bevat. Zo nee, keur het PR dan af. 2. Ga na of je de unit- en/of integratietests kunt begrijpen. Zo nee, keur het PR dan af. 3. Ga op basis van de unit- en/of integratietests na of de code werkt zoals bedoeld. Zo nee, keur het PR dan af. Pas als aan alle drie de voorwaarden is voldaan, keurt onze tester het PR goed."
 ---
 
 Het is dinsdag. Je sleept een taak op de Sprint Backlog van *to do* naar *doing* en duikt in de code. Eén, twee, drie uur later start je de applicatie op, je klikt wat rond en concludeert: het werkt. Dus je maakt een *pull request* (PR) aan. Die staat de hele middag te wachten.
@@ -85,7 +85,7 @@ Ook de leesbaarheid zullen ze flink omhoog moeten klikken. Tests moeten *vertell
 ## Nadeel?
 
 
-Een kritische (en ongeduldige) ontwikkelaar zou tegen kunnen werpen dat de verplichte goedkeuring onze tester tot een *single point of failure* (SPOF) gemaakt heeft. Als hij druk is, of ziek, dan stapelen de PR's zich op zonder manier om ze goed te keuren. 
+Een kritische (en ongeduldige) ontwikkelaar zou tegen kunnen werpen dat de verplichte goedkeuring onze tester tot een *single point of failure* gemaakt heeft. Als hij druk is, of ziek, dan stapelen de PR's zich op zonder manier om ze goed te keuren. 
 
 
 Maar dat argument gaat volgens mij niet op. In geval van ziekte kan de verplichte goedkeuring omzeild worden, en bij drukte kan een ontwikkelaar met testaffiniteit de taak op zich nemen. In wezen is het ook niet belangrijk dat de tester per se de bovenstaande drie vragen afvinkt -- eerder dat dit überhaupt gebeurt.

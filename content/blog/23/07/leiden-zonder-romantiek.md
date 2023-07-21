@@ -1,8 +1,8 @@
 ---
 title: "Leiden zonder romantiek"
 author: "Karl van Heijster"
-date: 2023-05-26T11:22:19+02:00
-draft: true
+date: 2023-07-21T07:49:09+02:00
+draft: false
 comments: true
 tags: ["bedrijfscultuur", "boeken", "leiderschap", "recensies"]
 summary: "Wat maakt een goede leider? Daar zijn bibliotheken over volgeschreven. Leiders zijn aanvoerders: moedig gaan ze voor de troepen uit. Ze maken groei mogelijk. Verheven zijn ze, een voorbeeld voor de rest. Maar ze zijn ook je maatje. Vaak bedienen we ons van dit soort romantische beelden als we het over leiders hebben. De praktijk, merkt veranderkundige Joost Kampen op in *Destructief leiderschap*, is vaak weerbarstiger."

@@ -18,7 +18,7 @@ Veel ontwikkelaars zien code reviews als een hinderlijke onderbreking van hun we
 Aan het eind van deze sessie weet je welke vragen je moet stellen voor een geslaagde code review -- en hoe je deze informatie zo effectief mogelijk overbrengt in je PR.
 
 
-Een team dat de edele kunst van het pull request beheerst, voorkomt bugs en technische schuld. Zo'n team kan zich concentreren op waar het om draait: waarde leveren  voor de klant!
+Een team dat de edele kunst van het pull request beheerst, voorkomt bugs en technische schuld. Zo'n team kan zich concentreren op waar het om draait: waarde leveren voor de klant!
 
 
 

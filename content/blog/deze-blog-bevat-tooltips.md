@@ -17,7 +17,7 @@ Het nadeel van die manier van verwijzen is natuurlijk dat je als lezer geen idee
 ## Tooltips
 
 
-En het kan ook beter, daadwerkelijk. [Markdown](https://www.markdownguide.org/ "Markdown Guide") ondersteunt [tooltips](https://nl.wikipedia.org/wiki/Tooltip "'Tooltip', Wikipedia"). Als er een tooltip aanwezig is, dan krijgt de lezer wanneer deze met z'n muis over een link gaat, een hint te zien van wat er gebeurt als 'ie erop klikt.
+En het kan ook beter, blijkt. [Markdown](https://www.markdownguide.org/ "Markdown Guide") ondersteunt [tooltips](https://nl.wikipedia.org/wiki/Tooltip "'Tooltip', Wikipedia"). Als er een tooltip aanwezig is, dan krijgt de lezer wanneer deze met z'n muis over een link gaat, een hint te zien van wat er gebeurt als 'ie erop klikt.
 
 
 Een tooltip toevoegen is een kwestie van een stringetje achter de URL te plakken in je Markdown plakken. [Kijk maar](https://www.karlvanheijster.com/ "Hé kijk, een tooltip!"):
@@ -40,7 +40,7 @@ Je hebt van die dagen, dan blog je al ruim twee jaar en dan pas ontdek je dat Ma
 Er zit een les in dit verhaal -- maar ja, welke? 
 
 
-Ik denk: gebruik je zelfstudietijd niet alleen om *nieuwe* dingen te leren. Lees af en toe een boek over een technologie die je regelmatig gebruikt. Want het is haast een zekerheid dat die technologie meer herbergt dan je nu gebruikt. 
+Ik denk: gebruik je zelfstudietijd niet alleen om *nieuwe* dingen te leren. Lees af en toe een boek over een technologie die je je al behoorlijk eigen hebt gemaakt. Want het is haast een zekerheid dat die technologie meer handige features herbergt dan je nu gebruikt. 
 
 
 In dit geval is de technologie [Hugo](https://gohugo.io/ "Hugo documentatie") in het algemeen en Markdown in het bijzonder, en het boek [*Hugo in Action*](https://www.manning.com/books/hugo-in-action "'Hugo in Action', Manning") van [Atishay Jain](https://atishay.me/ "Atishay Jains blog"). Geen *must read* -- ik bedoel, ik houd het bloggen al een hele tijd vol zonder Atishays hulp --, maar wel leerzaam en prettig geschreven. 

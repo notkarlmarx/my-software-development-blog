@@ -1,8 +1,8 @@
 ---
 title: "Waarom zou je manager jouw conferenties betalen?"
 author: "Karl van Heijster"
-date: 2023-06-16T10:35:25+02:00
-draft: true
+date: 2023-08-11T11:37:36+02:00
+draft: false
 comments: true
 tags: ["communicatie", "conferenties", "leren", "management", "motivatie", "professionaliteit", "waardering", "werkplezier", "zelfstudie"]
 summary: "Het is niet voldoende om te zeggen: \"Ik wil graag naar die en die conferentie.\" Als de manager van je manager vraagt om die kostenpost te verantwoorden, wat moet hij dan zeggen?"
@@ -11,7 +11,7 @@ summary: "Het is niet voldoende om te zeggen: \"Ik wil graag naar die en die con
 Laatst vertelde mijn collega iets wat me verraste.
 
 
-Tijdens een overleg met alle lead ontwikkelaars bracht ik de vraag in hoe zij hun leerproces vormgaven. Het idee daar achter was dat, als we van elkaar wisten hoe we nieuwe dingen leerden, we elkaar beter van dienst konden zijn kennis te delen. Je zou je boekentips kunnen delen met fervente lezers, video's met visueel ingestelde collega's, cursussen met hen die hun handen graag vies maken -- zulke dingen.
+Tijdens een overleg met alle lead ontwikkelaars bracht ik de vraag in hoe zij hun leerproces vormgaven. Het idee daar achter was dat, als we van elkaar wisten hoe we nieuwe dingen leren, we elkaar beter van dienst konden zijn kennis te delen. Je zou je boekentips kunnen delen met fervente lezers, video's met visueel ingestelde collega's, cursussen met hen die hun handen graag vuil maken -- zulke dingen.
 
 
 De manieren waarop mijn collega's leren bleek ontzettend divers -- al gaven ze allemaal aan dat ze het meest leerden tijdens het werk zelf. Maar wat me het meest van al opviel, was dat niemand van de aanwezigen meer naar conferenties ging. "Sinds corona is dat eigenlijk helemaal weggezakt," bekende er één.
@@ -62,7 +62,7 @@ Je zou tegen kunnen werpen dat die verantwoording niet jouw taak is, maar die va
 Maar dan nog, een eenvoudige uiteenzetting van wat jij van een conferentie verwacht te leren, is misschien niet voldoende. Twee interessante sessies van een uur hoeven in de inschatting van je manager niet op te wegen tegen drie dagen afwezigheid.  
 
 
-In dat geval zou je dit kunnen zeggen: "Eenmaal terug van de conferentie zal ik binnen zo en zoveel weken een presentatie geven van een onderwerp wat ik daar heb leren kennen." (Het hoeft overigens geen presentatie te zijn, misschien is een blog of een nieuwsbriefartikel al voldoende.)
+In dat geval zou je dit kunnen zeggen: "Eenmaal terug van de conferentie zal ik binnen zo en zoveel weken een presentatie geven van een onderwerp wat ik daar heb leren kennen." (Het hoeft overigens geen presentatie te zijn, misschien is een blog of een artikel in de maandelijkse nieuwsbrief al voldoende.)
 
 
 Wanneer je aangeeft je kennis te willen delen, dan komt het kosten-batenplaatje er opeens heel anders uit te zien. Je manager investeert dan niet alleen in jouw ontwikkeling, maar in die van -- potentieel -- elke ontwikkelaar in het bedrijf. De afwezigheid van één ontwikkelaar is een stuk makkelijker te rechtvaardigen als deze er vervolgens voor zorgt dat de mensen om hem heen óók verbeteren.
@@ -71,10 +71,10 @@ Wanneer je aangeeft je kennis te willen delen, dan komt het kosten-batenplaatje 
 ## Events
 
 
-Als je manager dan nóg niet overtuigd is... bezoek dan eens een gratis event. -- Ik wip bijna maandelijks even langs op [*Nimma Codes*](https://www.nimma.codes/) (en mocht er zelfs een keer presenteren), laatst was ik op [DotNet Friday](https://dotnetfriday.nl/) in Utrecht.
+Als je manager dan nóg niet overtuigd is... bezoek dan eens een gratis event. -- Ik wip bijna maandelijks even langs op [*Nimma Codes*](https://www.nimma.codes/) (en mocht er zelfs een keer [presenteren](/talks/altijd-up-to-date-documentatie-met-maximaal-descriptieve-tests/ "'Altijd up to date documentatie met maximaal descriptieve tests'")), laatst was ik op [DotNet Friday](https://dotnetfriday.nl/) in Utrecht.
 
 
-Breng iets van wat je daar leert in de praktijk, deel het met je collega's. Vooral: zorg dat je manager merkt dat je dit doet. Ik weet, als ik het zo zeg, dan klinkt het haast machiavellistisch, maar zo simpel is het wel. Als de juiste personen niet zien wat voor goeds je doet, dan zul je daar de vruchten ook niet van kunnen pluken. 
+Breng iets van wat je daar leert in de praktijk, deel het met je collega's. Vooral: zorg dat je manager merkt dat je dit doet. Ik weet, als ik het zo zeg, dan klinkt het haast [machiavellistisch](https://plato.stanford.edu/entries/machiavelli/ "'Niccolò Machiavelli', Stanford Encyclopedia of Philosophy"), maar zo simpel is het wel. Als de juiste personen niet zien wat voor goeds je doet, dan zul je daar de vruchten ook niet van kunnen pluken. 
 
 
 De belofte terug te investeren in je werkgever is een stuk sterker als je je goede staat van dienst op dat vlak al bewezen hebt. 

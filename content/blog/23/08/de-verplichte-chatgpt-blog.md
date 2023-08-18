@@ -1,8 +1,8 @@
 ---
 title: "De verplichte ChatGPT-blog"
 author: "Karl van Heijster"
-date: 2023-06-23T09:50:15+02:00
-draft: true
+date: 2023-08-18T09:47:56+02:00
+draft: false
 comments: true
 tags: ["bugs", "ChatGPT", "code lezen", "communicatie", "intentie van code", "kunstmatige intelligentie", "leermoment", "luie programmeur", "refactoren", "samenwerking", "software ontwikkelen", "testen"]
 summary: "Met hulp van ChatGPT wist ik in een uurtje het functionele equivalent te leveren van code waar ik eerder dagen op heb zitten zwoegen. De tijdwinst is onomstotelijk. En op het vlak van informatieoverdracht is ChatGPT een ons \"echte\" ontwikkelaars mijlenver vooruit."

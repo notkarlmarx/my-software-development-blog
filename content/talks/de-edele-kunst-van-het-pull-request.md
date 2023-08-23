@@ -1,8 +1,8 @@
 ---
 title: "De edele kunst van het pull request"
 author: "Karl van Heijster"
-date: 2023-06-11T14:38:45+02:00
-draft: true
+date: 2023-08-24T10:36:28+02:00
+draft: false
 comments: true
 tags: ["code reviews", "communicatie", "pull requests"]
 summary: "Veel ontwikkelaars zien code reviews als een hinderlijke onderbreking van hun werkzaamheden. Maar het goed kunnen beoordelen van een codewijziging is essentieel om de kwaliteit van een codebase op peil te houden. Gelukkig hoeft dit proces niet pijnlijk te zijn. Aan het eind van deze sessie weet je welke vragen je moet stellen voor een geslaagde code review -- en hoe je deze informatie zo effectief mogelijk overbrengt in je PR."
@@ -22,10 +22,10 @@ Een team dat de edele kunst van het pull request beheerst, voorkomt bugs en tech
 
 
 
-## Presentatieslides
+## Wanneer?
 
 
-- [TO DO]
+- Developer Meet-up @ Cito (intern), 24 augustus 2023
 
 
 ## Gerelateerde blogs

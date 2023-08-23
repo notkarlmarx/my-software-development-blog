@@ -9,6 +9,8 @@ Ik deel mijn inzichten graag op usergroups en conferenties. Bij de volgende gele
 
 |                   |                                                    |                                                                  |     |
 | ----------------- | -------------------------------------------------- | ---------------------------------------------------------------- | --- |
+| 7 september 2023  | [4Dotnet](https://www.4dotnet.nl/) (intern)        | [*De edele kunst van het pull request*](/talks/de-edele-kunst-van-het-pull-request/) |     |
+| 24 augustus 2023  | [Cito](https://www.cito.nl/) (intern)              | [*De edele kunst van het pull request*](/talks/de-edele-kunst-van-het-pull-request/) |     |
 | 9 mei 2023        | [TestNet Voorjaarsevent](https://www.testnet.org/) | [*Altijd up to date documentatie met maximaal descriptieve tests*](/talks/altijd-up-to-date-documentatie-met-maximaal-descriptieve-tests/) |     |
 | 28 februari 2023  | [Nimma Codes](https://www.nimma.codes/)            | [*Altijd up to date documentatie met maximaal descriptieve tests*](/talks/altijd-up-to-date-documentatie-met-maximaal-descriptieve-tests/) | [foto's](https://www.meetup.com/nimma-codes-meetup-group/photos/33300229/) |
 | <br/>             |                                                    |                                                                  |     |

@@ -18,6 +18,12 @@ Nou, dat hangt er van af -- van je filosofische vooronderstellingen, om precies 
 Aan het eind van dit praatje heb je een beter begrip van hoe taal werkt en hoe je deze kennis kunt gebruiken om betere software te ontwikkelen. Of je nu nieuw bent in de wereld van DDD of een doorgewinterde veteraan, dit praatje biedt je hoe dan ook een nieuw perspectief op je ontwikkelactiviteiten.
 
 
+## Wanneer?
+
+
+- ...
+
+
 ## Gerelateerde blogs
 
 - [Domain-Driven Design en Ludwig Wittgenstein](/blog/21/08/domain-driven-design-en-ludwig-wittgenstein/)

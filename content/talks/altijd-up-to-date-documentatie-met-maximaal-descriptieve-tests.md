@@ -15,10 +15,11 @@ Niemand houdt van documentatie schrijven - en terecht! Documentatie schrijven en
 Moeten we daarom door de zure appel heen bijten, en weer gaan zwoegen op uitgebreide specificatiedocumenten? Gelukkig niet! Tests bieden een uitkomst. Door extra aandacht te besteden aan de scope en leesbaarheid van je tests, kun je deze transformeren van eenvoudig validatiemechanisme naar gezaghebbende bron van informatie voor ontwikkelaars. Met maximaal descriptieve tests is je documentatie altijd up to date.
 
 
-## Presentatieslides
+## Wanneer?
 
-- [Testnet Voorjaarsevent, 9 mei 2023](https://speakerdeck.com/dotkarl/altijd-up-to-date-documentatie-met-maximaal-descriptieve-tests-09-05-2023-testnet-voorjaarsevent)
-- [Nimma Codes, 28 februari 2023](https://speakerdeck.com/dotkarl/altijd-up-to-date-documentatie-met-maximaal-descriptieve-tests-28-02-2023-nimma-codes)
+
+- [TestNet Voorjaarsevent](https://www.testnet.org/), 9 mei 2023
+- [Nimma Codes](https://www.nimma.codes/), 28 februari 2023
 
 
 ## Gerelateerde blogs

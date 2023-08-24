@@ -1,7 +1,7 @@
 ---
 title: "De edele kunst van het pull request"
 author: "Karl van Heijster"
-date: 2023-08-24T10:36:28+02:00
+date: 2023-08-24T11:07:03+02:00
 draft: false
 comments: true
 tags: ["code reviews", "communicatie", "pull requests"]

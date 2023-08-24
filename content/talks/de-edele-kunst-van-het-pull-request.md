@@ -26,6 +26,7 @@ Een team dat de edele kunst van het pull request beheerst, voorkomt bugs en tech
 
 
 - Developer Meet-up @ Cito (intern), 24 augustus 2023
+- Pizza sessie @ 4DotNet (intern), 7 september 2023
 
 
 ## Gerelateerde blogs

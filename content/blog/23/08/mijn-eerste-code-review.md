@@ -1,8 +1,8 @@
 ---
 title: "Mijn eerste code review"
 author: "Karl van Heijster"
-date: 2023-07-07T09:34:10+02:00
-draft: true
+date: 2023-08-25T07:43:32+02:00
+draft: false
 comments: true
 tags: ["boeken", "carrièrepad", "code lezen", "code reviews", "communicatie", "leren", "pull requests", "software ontwikkelen"]
 summary: "De tijd maakt alles kapot -- maar nu ben ik nog jong genoeg om me mijn eerste code review te herinneren. Althans, ik herinner me een gevoel -- want de inhoud van het *pull request* ben ik natuurlijk allang kwijt. Het gevoel laat zich denk ik het best omschrijven als een vorm van hulpeloosheid -- gevolgd door ongemak."
@@ -20,7 +20,7 @@ Althans, ik herinner me een gevoel -- want de inhoud van het *pull request* (PR)
 Het zal ergens in mijn eerste of tweede week als professioneel softwareontwikkelaar zijn geweest -- en dus mijn negende of tiende week als softwareontwikkelaar *tout court*. Als je het zo wil noemen, überhaupt, want mijn werkervaring bestond geheel en al uit een acht weken durend bootcamp [programmeren in C#](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/ "'C# programming guide', Microsoft documentatie"). 
 
 
-Ik ben nooit bijzonder geïnteresseerd geweest in computers, laat staan code. Ik had filosofie gestudeerd en rolde de IT in omdat ik mijn stage op de programma-afdeling van een filmfestival had aangedikt tot "programmeur" (zie [deze blog](/blog/21/07/mijn-loopbaanwending/ "'Mijn loopbaanwending'")).
+Ik ben nooit bijzonder geïnteresseerd geweest in computers, laat staan code. Ik had filosofie gestudeerd en rolde de IT in omdat ik mijn stage op de programma-afdeling van een filmfestival had aangedikt tot "programmeur" (zie ook [deze blog](/blog/21/07/mijn-loopbaanwending/ "'Mijn loopbaanwending'")).
 
 
 De enige applicatie die ik ooit van binnenuit had gezien, was de demo-applicatie die ik samen met een cursusgenoot uit de grond had gestampt, drie of vier weken eerder. Mijn cursusgenoot en ik, wij deden niet aan PR's of codereviews, wij waren allang blij als onze code geen compilerfouten bevatte. 

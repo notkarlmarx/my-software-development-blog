@@ -1,7 +1,7 @@
 ---
 title: "De edele kunst van het pull request"
 author: "Karl van Heijster"
-date: 2023-09-08T09:30:28+02:00
+date: 2023-09-07T09:30:28+02:00
 draft: false
 comments: true
 tags: ["code reviews", "communicatie", "pull requests"]
@@ -25,8 +25,8 @@ Een team dat de edele kunst van het pull request beheerst, voorkomt bugs en tech
 ## Wanneer?
 
 
-- Developer Meet-up @ Cito (intern), 24 augustus 2023
-- Pizzasessie @ 4DotNet (intern), 7 september 2023
+- Developer Meet-up @ [Cito](https://www.cito.nl/) (intern), 24 augustus 2023
+- Pizzasessie @ [4Dotnet](https://www.4dotnet.nl/) (intern), 7 september 2023
 
 
 ## Gerelateerde blogs

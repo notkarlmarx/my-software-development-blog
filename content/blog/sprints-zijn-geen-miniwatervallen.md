@@ -68,7 +68,7 @@ Het idee dat Scrum geen radicale breuk vormt met de traditionele manier van soft
 Alle bashing van Scrum terzijde, waren we het op dit punt met elkaar eens. Een Agile manier van werken is de sleutel tot succesvol software ontwikkelen (of in elk geval: succesvoller dan haar voorganger), niet Scrum *an sich*.
 
 
-Een terechte kritiek, luidt dan ook als volgt: de verkondigers van Scrum hebben de indruk gewekt dat je de problemen van waterval kan omzeilen *zonder de achterliggende denk- en werkwijze fundamenteel te veranderen*. Als je maar in Sprints werkt en Review en Retro's en Planningsessies houdt, dan komt het wel goed. 
+Een terechte kritiek, luidt dan ook als volgt: de verkondigers van Scrum hebben de indruk gewekt dat je de problemen van waterval kan omzeilen *zonder de achterliggende denk- en werkwijze fundamenteel te veranderen*. Als je maar in Sprints werkt en [Reviews](/tags/sprint-review/ "Blogs met de tag 'sprint review'") en [Retro's](/tags/sprint-retrospective/ "Blogs met de tag 'sprint retrospective'") en [Planningsessies](/tags/sprint-planning/ "Blogs met de tag 'sprint planning'") houdt, dan komt het wel goed. 
 
 
 En dat is inderdaad een probleem waar veel organisaties tegenaan lopen, getuige de vele managers die, tot frustratie van mijn discussiepartner, hun onzinnige interpretaties van Scrum aan teams blijven opdringen.

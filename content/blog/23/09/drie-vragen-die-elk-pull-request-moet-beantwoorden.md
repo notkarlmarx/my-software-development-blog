@@ -1,14 +1,14 @@
 ---
 title: "Drie vragen die elk pull request moet beantwoorden"
 author: "Karl van Heijster"
-date: 2023-07-15T12:39:43+02:00
-draft: true
+date: 2023-09-08T08:13:59+02:00
+draft: false
 comments: true
 tags: ["boeken", "code lezen", "code reviews", "pull requests"]
-summary: "Schrijvers van *pull requests* zijn over het algemeen helemaal niet zo goed zijn in het overbrengen van alle informatie die een lezer nodig heeft om deze goed te kunnen beoordelen. Want de meeste schrijvers weten überhaupt nauwelijks welke informatie er nodig is om dat te kunnen doen. In mijn beleving moet een PR antwoord geven op drie vragen."
+summary: "Schrijvers van *pull requests* zijn over het algemeen helemaal niet zo goed in het overbrengen van alle informatie die een lezer nodig heeft om deze goed te kunnen beoordelen. Want de meeste schrijvers weten überhaupt nauwelijks welke informatie er nodig is om dat te kunnen doen. In mijn beleving moet een PR antwoord geven op drie vragen."
 ---
 
-[Mijn eerste code review ging gepaard met een gevoel van hulpeloosheid en ongemak.] (LINK_MIJN_EERSTE_CODE_REVIEW). De herinnering staat me nog helder voor de geest -- maar niet omdat het nou zo'n heftige ervaring was. Eerder omdat ik dat gevoel nog heel vaak heb mogen beleven in mijn carrière als softwareontwikkelaar. 
+[Mijn eerste code review](/blog/23/08/mijn-eerste-code-review/) ging gepaard met een gevoel van hulpeloosheid en ongemak. De herinnering staat me nog helder voor de geest -- maar niet omdat het nou zo'n heftige ervaring was. Eerder omdat ik dat gevoel nog heel vaak heb mogen beleven in mijn carrière als softwareontwikkelaar. 
 
 
 Toen ik begon met professioneel software ontwikkelen, namen mijn team en ik aan dat dat code reviewen op een gegeven moment wel los zou lopen. Dat ik, naarmate ik meer code onder ogen had gehad, steeds makkelijker kon beoordelen of een *pull request* (PR) aan bepaalde kwaliteitsstandaarden voldeed of niet. (Waar die kwaliteitsstandaarden uit bestonden, daar hadden we allemaal hooguit een vaag idee van.)
@@ -38,7 +38,7 @@ Ook code is een tekst, en lezen is een proces van het opbouwen van een mentaal m
 ## Drie vragen
 
 
-Er is nog een reden waarom zoveel programmeurs blijven worstelen met code reviews. Schrijvers van PR's zijn over het algemeen helemaal niet zo goed zijn in het overbrengen van alle informatie die een lezer nodig heeft om deze goed te kunnen beoordelen. (Zie ook [deze blog](/blog/22/10/pull-requests-als-documentatie/ "'Pull requests als documentatie'").)
+Er is nog een reden waarom zoveel programmeurs blijven worstelen met code reviews. Schrijvers van PR's zijn over het algemeen helemaal niet zo goed in het overbrengen van alle informatie die een lezer nodig heeft om deze goed te kunnen beoordelen. (Zie ook [deze blog](/blog/22/10/pull-requests-als-documentatie/ "'Pull requests als documentatie'").)
 
 
 Want de meeste schrijvers weten überhaupt nauwelijks welke informatie er nodig is om dat te kunnen doen. In mijn beleving moet een PR antwoord geven op drie vragen:
@@ -74,7 +74,7 @@ Maar niet alle informatie is even geschikt om in code uit te drukken. Hoewel een
 Het is geen toeval dat de laatste vraag de vraag naar de code zelf is. Het is een belangrijke vraag, maar -- nota bene -- de minst belangrijke van de drie. Code is een implementatiedetail -- het *hoe* dat een noodzakelijk kwaad is om een bepaalde *wat* te bereiken. 
 
 
-Niet voor niets wordt gezegt dat code een *liability* is en geen *asset*, zie ook [deze blog](/blog/21/08/moet-je-dit-willen-testen/ "'Moet je dit willen testen?'"). Een probleem hoeft niet per se met code opgelost te worden. Sommige doelen kun je net zo goed, of misschien zelfs beter, bereiken zonder er één regel code voor te schrijven.
+Niet voor niets wordt gezegt dat code een *liability* is en geen *asset* (zie ook [deze blog](/blog/21/08/moet-je-dit-willen-testen/ "'Moet je dit willen testen?'")). Een probleem hoeft niet per se met code opgelost te worden. Sommige doelen kun je net zo goed, of misschien zelfs beter, bereiken zonder er één regel code voor te schrijven.
 
 
 Ook dat kan een conclusie zijn van een PR -- al trek je die natuurlijk liever een veel vroeger stadium. Maar waak voor de [*sunk cost fallacy*](https://en.wikipedia.org/wiki/Sunk_cost "'Sunk cost', Wikipedia"): het grootste deel van de kosten van code bevinden zich in de onderhoudsfase, niet in de ontwikkelfase. (Zie ook [deze blog](/blog/21/12/zonde-om-weg-te-gooien/ "'Zonde om weg te gooien?'").) De goedkoopste code is code die je niet hoeft te onderhouden -- en de enige code die je niet hoeft te onderhouden is *geen code*.

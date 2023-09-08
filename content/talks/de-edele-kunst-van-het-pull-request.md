@@ -1,7 +1,7 @@
 ---
 title: "De edele kunst van het pull request"
 author: "Karl van Heijster"
-date: 2023-08-24T11:07:03+02:00
+date: 2023-09-08T09:30:28+02:00
 draft: false
 comments: true
 tags: ["code reviews", "communicatie", "pull requests"]
@@ -31,9 +31,9 @@ Een team dat de edele kunst van het pull request beheerst, voorkomt bugs en tech
 
 ## Gerelateerde blogs
 
-
+- [Mijn eerste code review](/blog/23/08/mijn-eerste-code-review/)
 - [Hoe review je eigenlijk code?](/blog/22/08/hoe-review-je-eigenlijk-code/)
+- [Drie vragen die elk pull request moet beantwoorden](/blog/23/09/drie-vragen-die-elk-pull-request-moet-beantwoorden/)
 - [Pull requests als documentatie](/blog/22/10/pull-requests-als-documentatie/)
 - [Test-Driven Code Reviews](/blog/22/09/test-driven-code-reviews/)
 - [Betere documentatie door PR-templates](/blog/22/10/betere-documentatie-door-pr-templates/)
-- [Mijn eerste code review](/blog/23/08/mijn-eerste-code-review/)

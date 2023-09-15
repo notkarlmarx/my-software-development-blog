@@ -1,8 +1,8 @@
 ---
 title: "Doe je wel écht aan continuous integration?"
 author: "Karl van Heijster"
-date: 2023-07-14T10:21:21+02:00
-draft: true
+date: 2023-09-15T07:36:37+02:00
+draft: false
 comments: true
 tags: ["conferenties", "continuous integration", "procesverbetering", "teamcultuur", "trunk-based development"]
 summary: "Clare Sudbery stelde een goede vraag op GOTO Amsterdam: doe je écht aan *continuous integration* (CI), of denk je dat alleen maar? Dat roept de vraag op: wat is \"echte\" CI?"
@@ -52,7 +52,7 @@ Test-Driven Development (TDD) is één van de manieren waarop je de ontwikkelsne
 ## Trunk-Based Development
 
 
-Terug naar Sudbery. Hoe zorg je ervoor dat je als team echt continu met elkaar integreert? Eenvoudig: door maar één branch te hebben. En elke ontwikkelaar pusht zijn of haar wijzigingen continu -- het zit 'm al in de naam -- naar die branch. Er is een naam voor die stijl van ontwikkelen: [*Trunk-Based Development*](https://trunkbaseddevelopment.com/) (TBD).
+Terug naar Sudbery. Hoe zorg je ervoor dat je als team echt continu met elkaar integreert? Eenvoudig: door maar één branch te hebben. En elke ontwikkelaar pusht zijn of haar wijzigingen continu -- het zit al in de naam -- naar die branch. Er is een naam voor die stijl van ontwikkelen: [*Trunk-Based Development*](https://trunkbaseddevelopment.com/) (TBD).
 
 
 Voor kleine teams betekent dat een definitief afscheid van feature branches. Alle wijzigingen worden rechtstreeks naar *main* gepusht. Voor grotere teams worden feature branches getolereerd, maar die mogen niet langer dan een dag bestaan -- of, in het uiterste geval, enkele dagen. 
@@ -70,10 +70,10 @@ Des te sneller vinden je wijzigingen hun weg naar *main*, en des te sneller staa
 Betekent dat dat TBD een zilveren kogel is die een team in staat stelt snel en hoogwaardig nieuwe features uit te rollen? Nee en ja.
 
 
-Nee, want TBD op zichzelf garandeert niet dat het proces van software ontwikkelen op het juiste niveau is om continu te kunnen integreren in *main*. Sudbery was er heel duidelijk over: TBD veronderstelt een bepaalde teamcultuur. Je kunt geen TBD doen zonder *pair programming* en zonder goede geautomatiseerde testsuite -- het liefst ontwikkeld middels Test-Driven Development (TDD). Want de wijzigingen zullen in [veel meer, veel kleinere stapjes](https://www.geepawhill.org/2021/09/29/many-more-much-smaller-steps-first-sketch/ "'Many More Much Smaller Steps – First Sketch', GeePaw Hill") naar *main* moeten worden gebracht, wil TBD kunnen werken.
+Nee, want TBD op zichzelf garandeert niet dat het proces van software ontwikkelen op het juiste niveau is om continu te kunnen integreren in *main*. Sudbery was er heel duidelijk over: TBD veronderstelt een bepaalde teamcultuur. Je kunt geen TBD doen zonder *pair programming* en zonder goede geautomatiseerde testsuite -- het liefst ontwikkeld middels TDD. Want de wijzigingen zullen in [veel meer, veel kleinere stapjes](https://www.geepawhill.org/2021/09/29/many-more-much-smaller-steps-first-sketch/ "'Many More Much Smaller Steps – First Sketch', GeePaw Hill") naar *main* moeten worden gebracht, wil TBD kunnen werken.
 
 
-Betekent dat dat je past kunt TBD toe kunt passen nadat je teamcultuur een bepaalde vorm heeft? Niet per se -- TBD zou immers ook de impuls kunnen geven meer te *pairen*, meer tests te schrijven, kleinere stapjes te nemen. Uiteraard veronderstelt dat op zijn beurt weer een teamcultuur waarin mensen open staan om te proberen dingen op een andere manier aan te pakken dan voorheen -- en waarin de ruimte wordt geboden om dat soort experimenten te ondernemen.
+Betekent dat dat je pas kunt TBD toe kunt passen *nadat* je teamcultuur een bepaalde vorm heeft aangenomen? Niet per se -- TBD zou immers ook de impuls kunnen geven meer te *pairen*, meer tests te schrijven, kleinere stapjes te nemen. Uiteraard veronderstelt dat op zijn beurt weer een teamcultuur waarin mensen open staan om te proberen dingen op een andere manier aan te pakken dan voorheen -- en waarin de ruimte wordt geboden om dat soort experimenten te ondernemen.
 
 
 ## Aantekening
@@ -84,15 +84,15 @@ Zie ik mogelijkheden om TBD te introduceren op mijn werk? Ik twijfel. Op de twee
 
 > **Wat vind ik van *Trunk-Based Development* (TBD)?**
 >
-> 1. Geen PR's meer. Dat is (gedeeltelijk?) goed nieuws, je kunt dit met *pairen* ondervangen.[^1] Maar dat moet wel in de cultuur van je team passen.[^2]
+> 1. Geen PR's meer. Dat is (gedeeltelijk?) goed nieuws, je kunt dit met *pairen* ondervangen.[^1] Maar dat moet wel in de cultuur van je team passen.
 >
-> 2. TDD is noodzakelijk om dit te kunnen laten werken. Mijn team is daar nu nog niet -- de codebase zou snel degenereren.[^3] -- Misschien is het goed hen dit juist te laten ervaren? -- Maar zouden ze daar de juiste les uit trekken? 
+> 2. TDD is noodzakelijk om dit te kunnen laten werken. Mijn team is daar nu nog niet -- de codebase zou snel degenereren.[^2] -- Misschien is het goed hen dit juist te laten ervaren? -- Maar zouden ze daar de juiste les uit trekken? 
 >
 > 3. Features die onaf zijn zullen in de *main* branch terechtkomen. -- Hoe zou je dit als positief kunnen zien? De ultieme test voor code is hoe deze functioneert in PROD. 
 >
 > 4. Stimuleert het code te schrijven die functioneert voor zover het functioneert, i.e. geen bestaande code om zeep helpt? 
 >
-> 5. Het stimuleert misschien wel om kleine stapjes te nemen. Als je elke 10 minuten commit, dan moet je er wel voor zorgen dat het elke 10 minuten werkt, je code. Dat voor elkaar krijgen is een grote uitdaging. Het vraagt een heel andere manier van coderen -- van jezelf, van het hele team. -- Het kan wel, die kleine stapjes, dat heb ik eigenhandig ervaren.[^4] 
+> 5. Het stimuleert misschien wel om kleine stapjes te nemen. Als je elke 10 minuten commit, dan moet je er wel voor zorgen dat het elke 10 minuten werkt, je code. Dat voor elkaar krijgen is een grote uitdaging. Het vraagt een heel andere manier van coderen -- van jezelf, van het hele team. -- Het kan wel, die kleine stapjes, dat heb ik eigenhandig ervaren.[^3] 
 >
 > 6. Dit introduceren in het team is een langdurig proces. Het maakt pairen ook essentieel, want maar weinig [nieuwe] programmeurs zullen zo [i.e. in kleine stapjes] werken.
 
@@ -112,10 +112,8 @@ Er is niet één manier om software te ontwikkelen. Het proces van software ontw
 Het gaat er dus niet om of je "echt" CI doet of niet. Het gaat erom dat je zo efficiënt mogelijk waarde levert met je code. De echte vraag is dus: zie je -- in jouw specifieke context -- kansen om meer waarde te leveren door CI en TBD te omarmen?
 
 
-[^1]: [Dave Farley](https://www.davefarley.net/) is dezelfde mening toegedaan, ik schreef er [hier](/blog/23/01/wel-code-reviews-geen-pull-requests/) over. Een collega van Sudbery verwoordde de kritiek op PR's overigens heel beeldend: PR's gebruiken in een vast team dat op dezelfde locatie werkt, is als je familie vragen door de luchthavenbeveiliging te gaan, elke keer als ze je huis binnen komen. Het is op zijn best onnodig en toont op zijn slechtst een gebrek aan vertrouwen. 
+[^1]: [Dave Farley](https://www.davefarley.net/) is dezelfde mening toegedaan, ik schreef er [hier](/blog/23/01/wel-code-reviews-geen-pull-requests/ "'Wel code reviews, geen pull requests'") over. Een collega van Sudbery verwoordde de kritiek op PR's overigens heel beeldend: PR's gebruiken in een vast team dat op dezelfde locatie werkt, is als je familie vragen door de luchthavenbeveiliging te gaan, elke keer als ze je huis binnen komen. Het is op zijn best onnodig en toont op zijn slechtst een gebrek aan vertrouwen.
 
-[^2]: Het schrikbeeld dat ik in [deze blog](/blog/23/07/de-tester-als-code-reviewer/) zat op het moment van schrijven nog vers in mijn geheugen.
+[^2]: Zie met name [deze blog](blog/23/04/tijdreis/ "'Tijdreis'").
 
-[^3]: Zie met name [deze blog](blog/23/04/tijdreis/).
-
-[^4]: De beste manier om jezelf tot kleine stappen te dwingen, is door te TDD'en. Ik schreef er [hier](/blog/22/04/een-test-per-keer/) en [hier](/blog/22/06/mijn-eerste-testgedreven-stapjes/) over.
+[^3]: De beste manier om jezelf tot kleine stappen te dwingen, is door te TDD'en. Ik schreef er [hier](/blog/22/04/een-test-per-keer/ "'Eén test per keer'") en [hier](/blog/22/06/mijn-eerste-testgedreven-stapjes/ "'Mijn eerste testgedreven stapjes'") over.

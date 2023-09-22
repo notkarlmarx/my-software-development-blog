@@ -1,20 +1,20 @@
 ---
 title: "Pseudofilosofische onderzoekingen (I & II)"
 author: "Karl van Heijster"
-date: 2023-07-21T09:58:13+02:00
-draft: true
+date: 2023-09-22T07:54:36+02:00
+draft: false
 comments: true
 tags: ["bloggen", "domain-driven design", "filosofie", "leren"]
-summary: "Ik ga vandaag geen blog schrijven. Ik zal genoegen nemen met enkele aantekeningen die ik maanden geleden op papier zette, geïnspireerd door Marcus Aurelius en door Ludwig Wittgenstein. Het spreekt voor zich dat mijn overpeinzingen beduidend minder diepzinnig zijn dan van beide grootheden."
+summary: "Ik ga vandaag geen blog schrijven. Ik zal genoegen nemen met enkele aantekeningen die ik maanden geleden op papier zette, geïnspireerd door Marcus Aurelius en door Ludwig Wittgenstein. Het spreekt voor zich dat mijn overpeinzingen beduidend minder diepzinnig zijn dan die van beide grootheden."
 ---
 
 Het is -- op het moment van schrijven -- de laatste dag voor aanvang van mijn vakantie (-- op het moment dat je dit leest ben ik al lang en breed en uitgerust terug aan het werk). De eerlijkheid gebiedt me te zeggen dat mijn hoofd bij zon is, en zee en strand en bier.
 
 
-Ik ga vandaag geen blog schrijven -- ook zulke dagen zitten er tussen. Ik zal genoegen nemen met enkele aantekeningen die ik maanden geleden op papier zette, geïnspireerd door [Marcus Aurelius](https://plato.stanford.edu/entries/marcus-aurelius/ "'Marcus Aurelius', Stanford Encyclopedia of Philosophy") en door [Ludwig Wittgenstein](https://plato.stanford.edu/entries/wittgenstein/ "'Ludwig Wittgenstein', Stanford Encyclopedia of Philosophy") (zie respectievelijk [deze blog] (OVERPEINZINGEN_OVER_VAKMANSCHAP "'Overpeinzingen (over vakmanschap)'") en [deze blog](/blog/21/08/domain-driven-design-en-ludwig-wittgenstein/ "'Domain-Driven Design en Ludwig Wittgenstein'")).
+Ik ga vandaag geen blog schrijven -- ook zulke dagen zitten er tussen. Ik zal genoegen nemen met enkele aantekeningen die ik maanden geleden op papier zette, geïnspireerd door [Marcus Aurelius](https://plato.stanford.edu/entries/marcus-aurelius/ "'Marcus Aurelius', Stanford Encyclopedia of Philosophy") en door [Ludwig Wittgenstein](https://plato.stanford.edu/entries/wittgenstein/ "'Ludwig Wittgenstein', Stanford Encyclopedia of Philosophy") (zie respectievelijk [deze blog](/blog/23/08/overpeinzingen-over-vakmanschap/ "'Overpeinzingen (over vakmanschap)'") en [deze blog](/blog/21/08/domain-driven-design-en-ludwig-wittgenstein/ "'Domain-Driven Design en Ludwig Wittgenstein'")).
 
 
-Het spreekt voor zich dat mijn overpeinzingen beduidend minder diepzinnig zijn dan van beide grootheden.
+Het spreekt voor zich dat mijn overpeinzingen beduidend minder diepzinnig zijn dan die van beide grootheden.
 
 
 Fijne vakantie, iedereen!
@@ -62,7 +62,7 @@ Denk, als je *writer's block* hebt: geen enkele blog is te mager om te publicere
 ## Over *ubiquitous language*
 
 
-"Maar taal is ambigu!" -- Dat klopt, soms. Het is eerder: taal kan ambigu zijn. Merk op dat onze domeinexperts zonder problemen over “products” kunnen spreken. Blijkbaar ervaren zij de term niet als ambigu.
+"Maar taal is ambigu!" -- Dat klopt, soms. Het is eerder: taal kan ambigu zijn. Merk op dat je domeinexperts zonder problemen over “producten” kunnen spreken. Blijkbaar ervaren zij de term niet als ambigu.
 
 
 Vraag jezelf af: is de term ambigu, of suggereert ons begrip van de term een ambiguïteit? -- Het is een open vraag of die ambiguïteit in het echt bestaat of slechts in ons begrip.

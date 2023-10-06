@@ -1,8 +1,8 @@
 ---
 title: "Evolutionair programmeren"
 author: "Karl van Heijster"
-date: 2023-08-13T21:09:13+02:00
-draft: true
+date: 2023-10-06T08:06:45+02:00
+draft: false
 comments: true
 tags: ["beroepsdeformatie", "boeken", "evolutie", "filosofie", "software architect (rol)", "software architectuur", "testen"]
 summary: "Wat evolueert in de evolutieleer? Wat is de locus van evolutie? – En natuurlijk, dat is de beroepsdeformatie: wat evolueert er in onze codebase?"
@@ -20,13 +20,13 @@ Het antwoord op die eerste vraag is denk ik (ik heb [Daniel Dennetts](https://en
 Wat zijn soorten anders dan verzamelingen organismen? De menselijke soort bestaat uit ruim 7 miljard levende individuen. Wat moet er gebeuren eer een deel van die miljarden zich afsplitsen tot een andere soort? Hoe lang ik me de stamboom ook voorstel, ik kan het moment niet vastpinnen.
 
 
-(We zijn als de hoofdpersoon in [Michelangelo Antonioni](https://www.imdb.com/name/nm0000774/?ref_=tt_cl_dr_1 "'Michelangelo Antonioni', IMDB")'s [*Blow-Up*](https://www.imdb.com/title/tt0060176/ "'Blow-Up', IMDB"): hoe meer we inzoomen op het beeld, hoe vager, abstracter het moordslachtoffer wordt. Totdat het helemaal is verdwenen en je je afvraagt: was er wel een moord, en is dit niet dezelfde soort?)
+(We zijn als de hoofdpersoon in [Michelangelo Antonioni](https://www.imdb.com/name/nm0000774/?ref_=tt_cl_dr_1 "'Michelangelo Antonioni', IMDB")'s [*Blow-Up*](https://www.imdb.com/title/tt0060176/ "'Blow-Up', IMDB"): hoe meer we inzoomen op het beeld, hoe vager, abstracter het moordslachtoffer wordt. Totdat het helemaal is verdwenen en je je afvraagt: was er wel een moord -- is dit niet dezelfde soort?)
 
 
 ## Achteraf
 
 
-Dennett beantwoordt die puzzel uiteraard: de afsplitsing van een soort kunnen we pas achteraf vaststellen. Miljoenen jaren later kunnen we zeggen: toen en daar leefde de laatste gemeenschappelijke voorouders van deze soorten. Maar op het moment en op de plek waar ze leefden, waren ze niet van de rest te onderscheiden. (Eva was een vrouw als alle andere.)
+Dennett beantwoordt die puzzel uiteraard: de afsplitsing van een soort kunnen we pas achteraf vaststellen. Miljoenen jaren later kunnen we zeggen: toen en daar leefde de laatste gemeenschappelijke voorouders van deze soorten. Maar op het moment en op de plek waar ze leefden, waren ze niet van de rest te onderscheiden. Eva was een vrouw als alle andere.
 
 
 De classificatie in soorten is in de (geologische) tijd bevroren. Als je een andere tijdschaal hanteert, verliest het concept zijn grip op de materie; het is de verkeerde abstractie voor het probleem.[^1] 
@@ -47,7 +47,7 @@ Het kan niet de individuele regel code zijn: daarvan kun je je afvragen in hoeve
 Ontwerppatronen zijn samenwerkingsverbanden die worden gevormd, allianties die zich uitbreiden of dupliceren (denk: een democratie wordt gesticht), en die uiteindelijk ontbinden of vervangen worden. 
 
 
-Coderegels zijn cellen, functies/classes zijn organismen, ontwerppatronen zijn troepen. -- Maar dan zitten we nog lang niet op het abstractieniveau waarop soorten zich bevinden.
+Coderegels zijn cellen, functies/classes zijn organismen, ontwerppatronen zijn groepen. -- Maar dan zitten we nog lang niet op het abstractieniveau waarop soorten zich bevinden.
 
 
 ## Architectuur
@@ -65,10 +65,10 @@ Juli 2020, om precies te zijn. Het zou dus zomaar kunnen dat ik in deze blog sta
 Hoe het ook zij, de opvatting van evolutie die uit het boek sprak vond ik destijds fascinerend, dat weet ik nog wel.[^2]
 
 
-Volgens Ford et al. bevindt de locus van software-evolutie zich op het architecturele niveau -- de titel bood al een hint. Wat evolueert zijn systemen. En systemen zijn met elkaar samenwerkende delen code en communicatie met andere systemen. 
+Volgens Ford et al. bevindt de locus van software-evolutie zich op het architecturele niveau. (De titel bood al een hint). Wat evolueert zijn systemen. En systemen zijn met elkaar samenwerkende delen code en communicatie met andere systemen. 
 
 
-Systemen kunnen samen grotere systemen vormen. Naarmate we verder uitzoomen, zullen we andere opvattingen van wat deel is en wat het geheel (vgl. [Simon Browns](https://simonbrown.je/) [C4-model](https://c4model.com/)). In de praktijk zullen pragmatische overwegingen het abstractieniveau bepalen, bijvoorbeeld het businessdomein -- of de grenzen van de organisatie.[^3] 
+Systemen kunnen samen grotere systemen vormen. Naarmate we verder uitzoomen, zullen we andere opvattingen van wat deel is en wat het geheel (vgl. [Simon Browns](https://simonbrown.je/) [C4-model](https://c4model.com/)). In de praktijk zullen pragmatische overwegingen het abstractieniveau bepalen, bijvoorbeeld het businessdomein of de grenzen van de organisatie.[^3] 
 
 
 ## Overleven
@@ -80,13 +80,13 @@ Systemen willen overleven (-- of wij willlen dat). Maar dat kan een systeem alle
 Architecturen overleven als hun interne werking optimaal op de omgeving is afgestemd, als het de juiste oplossing is voor het juiste probleem – complex, maar niet complexer dan nodig. Een volmaakt rationele weging van kwaliteitsattributen gegeven de gestelde eisen.
 
 
-Die werkelijkheid begint op papier, een schets in lijntjes en doosjes van de applicatie. -- En verdomd, de eerste versie heeft er inderdaad verdomd veel van weg.
+Die werkelijkheid begint op papier, een schets in lijntjes en doosjes van de applicatie. -- En verdomd, de eerste versie van het systeem heeft er inderdaad verdomd veel van weg.
 
 
 ## Metafoor
 
 
-Het probleem met softwarearchitectuur is dat het architecturele proces, ander dan bij de bouw, doorlopend is. De metafoor misleidt ons als we denken dat de belangrijkste architectuurbeslissingen zijn genomen in Sprint 0 -- als het blijft bij die initiële schets.
+Het probleem met softwarearchitectuur is dat het architecturele proces, anders dan bij de bouw, doorlopend is. De metafoor misleidt ons als we denken dat de belangrijkste architectuurbeslissingen zijn genomen in Sprint 0. Je tekent geen compleet systeem op voorhand uit -- geen goed functionerend systeem in elk geval.
 
 
 "Er zijn architectuurbeslissingen genomen in Sprint 0" -- meer kunnen we er niet over zeggen. Het is een eerste versie van het diagram, en er zullen er nog veel volgen, want softwarerequirements zijn de enige entiteit ter wereld waarvan er meer ontstaan naarmate je er meer wegwerkt.[^4]
@@ -107,7 +107,7 @@ Een antwoord zou kunnen zijn: door te meten in hoeverre het daadwerkelijke syste
 Softwarearchitecten hebben (neem ik aan) andere dingen te doen dan verschillende codebases inspecteren op architecturele correctheid -- dit vraagt om automatisering. En inderdaad: er bestaat zoiets als [*NetArchTest*](https://github.com/BenMorris/NetArchTest) voor systemen die zijn ontwikkeld in .NET: "*A fluent API for .Net Standard that can enforce architectural rules in unit tests.*"[^6]
 
 
-Ik heb die library ooit nog ge-*proof of concept*'. Wat opviel was hoe moeilijk het was zulke tests -- Ford et al. noemt ze *fitness functions* -- te handhaven. Op het moment dat ik de eerste test schreef -- het systeem waar mijn team aan werkte was toen nog geen maanden oud --, bleek de applicatie al nauwelijks aan de eenvoudigste validatieregels op te leven. De architectuurtests zijn daarna grotendeels de ijskast in gegaan -- maar misschien kom ik daar nog op terug.
+Ik heb die library ooit nog ge-*proof of concept*, vlak nadat ik *Building Evolutionary Architectures* had uitgelezen. Wat opviel was hoe moeilijk het was zulke tests -- Ford et al. noemt ze *fitness functions* -- te handhaven. Op het moment dat ik de eerste test schreef -- het systeem waar mijn team aan werkte was toen nog geen maanden oud --, bleek de applicatie al nauwelijks aan de eenvoudigste validatieregels op te leven. De architectuurtests zijn daarna grotendeels de ijskast in gegaan -- maar misschien kom ik daar nog op terug.
 
 
 ## Kundig

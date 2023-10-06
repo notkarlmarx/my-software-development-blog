@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2023-10-06T09:52:00+02:00
 draft: true
 comments: true
-tags: ["code reviews", "testen"]
+tags: ["code reviews", "samenwerking", "testen"]
 summary: "Het klinkt als een natuurwet: programmeurs programmeren en testers testen. Maar die taakverdeling leidt tot inefficiënte werkprocessen met lange feedbackcycli. Om kwaliteit én snelheid te kunnen borgen, moet geautomatiseerd testen een tweede natuur worden voor het hele ontwikkelteam. Testers spelen hier een essentiële rol in."
 speakerdeck: "4aebbfbe653f485699bfa1f11afa29ed"
 ---

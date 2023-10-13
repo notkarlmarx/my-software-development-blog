@@ -1,8 +1,8 @@
 ---
 title: "Schone interfaces, simpele implementaties"
 author: "Karl van Heijster"
-date: 2023-08-25T09:50:29+02:00
-draft: true
+date: 2023-10-13T08:28:39+02:00
+draft: false
 comments: true
 tags: ["incrementele ontwikkeling", "leermoment", "mentaal model", "product backlog refinement", "representational state transfer (REST)", "samenwerking", "software ontwikkelen"]
 summary: "Het dilemma was als volgt: ofwel de deadline missen met een \"goede\" oplossing (dat wil zeggen: een oplossing die de REST-standaard volgt), ofwel de deadline halen met een slechte (die een uitzondering introduceert in de opzet van onze API). Maar: dat is een vals dilemma."
@@ -20,7 +20,7 @@ Mijn team en ik, we spraken over het implementeren van een algemene zoekfunction
 ## Duur
 
 
-Hoe dan ook, de details van die opzet doen er nu niet toe. Waar het om gaat is: we wilden een algemeen endpoint op onze [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer "'Representational state transfer', Wikipedia") [Web API](https://en.wikipedia.org/wiki/Web_API "'Web API', Wikipedia") definiëren om alle data te kunnen doorzoeken. Gedurende die refinement werden we het eens over het feit dat [Azure Elasticsearch](https://www.elastic.co/partners/microsoft-azure) een uitstekende oplossingsrichting bood voor dit probleem.
+Hoe dan ook, de details van die opzet doen er nu niet toe. Waar het om gaat is: we wilden een algemeen endpoint op onze [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer "'Representational state transfer', Wikipedia") [Web API](https://en.wikipedia.org/wiki/Web_API "'Web API', Wikipedia") definiëren om alle data te kunnen doorzoeken. Gedurende die refinement werden we het eens over het feit dat [Azure Elasticsearch](https://www.elastic.co/partners/microsoft-azure) een veelbelovende oplossingsrichting bood voor dit probleem.
 
 
 Alleen: het was wel een betrekkelijk dure oplossing. We zouden onze code grondig onder handen moeten nemen. Elke keer als we elke soort data opsloegen, zouden we de indexen van Elasticsearch bij moeten werken. Dat betekende dat we op verschillende plekken extra code toe moesten voegen (daarmee het [Single-Responsibility Principe](/tags/single-responsibility-principe/ "Blogs met de tag 'single-responsibility principe'") schendend), of we zouden de code grondig moeten herstructureren om die indexen met een [decorator](https://refactoring.guru/design-patterns/decorator "'Decorator', Refactoring.guru") in één keer toe te kunnen voegen. Welke oplossingsrichting we ook kozen, we zouden de deadline die ons gesteld werd voor deze functionaliteit, sowieso niet halen.

@@ -11,6 +11,10 @@ summary: "Clare Sudbery stelde een goede vraag op GOTO Amsterdam: doe je écht a
 [Clare Sudbery](https://www.linkedin.com/in/clare-sudbery-she-her-35939540/) stelde een goede vraag op [GOTO Amsterdam](https://gotoams.nl/2023): doe je écht aan [*continuous integration*](https://en.wikipedia.org/wiki/Continuous_integration "'Continuous integration', Wikipedia") (CI), of denk je dat alleen maar?
 
 
+{{<youtube id="97qyNQz7fxY" title="Continuous Integration: That’s Not What They Meant • Clare Sudbery • YOW! 2023" >}}
+<br>
+
+
 Dat roept de vraag op: wat is "echte" CI -- of liever: wat is CI zoals het oorspronkelijk bedacht is? Volgens Sudbery voldoet volbloed CI aan drie voorwaarden:
 
 

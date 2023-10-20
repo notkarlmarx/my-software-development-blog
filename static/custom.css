@@ -16,12 +16,16 @@ nav {
 }
 
 #darkModeToggle {
-    margin-top: 2.5rem;
+    margin-top: 1rem;
     margin-right: 1.5rem;
 }
 
 .catalogue-item p {
     text-align: justify;
+}
+
+.post {
+    padding-top: 1.5rem;
 }
 
 .introduction {

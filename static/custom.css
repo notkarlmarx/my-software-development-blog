@@ -1,11 +1,22 @@
 main, 
 .nav-container,
 footer {
-    max-width: 600px;
+    max-width: 800px;
+    margin: auto;   
+}
+
+.nav {
+    box-shadow: 0 0 0 0;
+}
+
+nav {
+    max-width: 800px;
+    margin: auto;
+    padding-top: 1rem;
 }
 
 .catalogue-item p {
-    text-align:justify;
+    text-align: justify;
 }
 
 .introduction {
@@ -35,10 +46,16 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-    .not-on-mobile {
+    .not-on-mobile, #darkModeToggle {
         visibility: hidden;
         padding: 0;
         height: 0px;
+    }
+}
+
+@media screen and (max-width: 632px) {
+    #darkModeToggle {
+        visibility: hidden;
     }
 }
 

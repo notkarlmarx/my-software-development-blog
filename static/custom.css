@@ -5,14 +5,14 @@ footer {
     margin: auto;   
 }
 
-.nav {
-    box-shadow: 0 0 0 0;
-}
-
 nav {
     max-width: 800px;
     margin: auto;
-    padding-top: 1rem;
+    padding: 1rem;
+}
+
+#darkModeToggle {
+    margin-top: 2.5rem;
 }
 
 .catalogue-item p {
@@ -46,14 +46,14 @@ nav {
 }
 
 @media screen and (max-width: 600px) {
-    .not-on-mobile, #darkModeToggle {
+    .not-on-mobile {
         visibility: hidden;
         padding: 0;
         height: 0px;
     }
 }
 
-@media screen and (max-width: 632px) {
+@media screen and (max-width: 650px) {
     #darkModeToggle {
         visibility: hidden;
     }

@@ -1,7 +1,11 @@
+html {
+    max-width: 800px;
+    margin: auto;
+}
+
 main, 
 .nav-container,
 footer {
-    max-width: 800px;
     margin: auto;   
 }
 
@@ -13,6 +17,7 @@ nav {
 
 #darkModeToggle {
     margin-top: 2.5rem;
+    margin-right: 1.5rem;
 }
 
 .catalogue-item p {
@@ -53,7 +58,7 @@ nav {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
     #darkModeToggle {
         visibility: hidden;
     }

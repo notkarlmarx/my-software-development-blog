@@ -51,7 +51,7 @@ antwoordt mijn laptop alleen met gezzz…
 ## (Naschrift)
 
 
-Het bovenstaande gedicht inspireerde me -- een hele tijd geleden al, maar ik was het vergeten -- de daad bij het woord te voegen. Als Shakespeare code had geschreven, dan zou het er ongeveer zo uit kunnen hebben gezien:
+Het bovenstaande gedicht inspireerde me -- een hele tijd geleden al, maar dat was ik vergeten -- de daad bij het woord te voegen. Als Shakespeare code had geschreven, dan zou het er ongeveer zo uit kunnen hebben gezien:
 
 
 {{< gist dotkarl a4f59e5c2b8feb7dbb3410326dd630f2 "Sonnet18.cs">}}

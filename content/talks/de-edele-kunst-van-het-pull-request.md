@@ -27,6 +27,7 @@ Een team dat de edele kunst van het pull request beheerst, voorkomt bugs en tech
 
 - Developer Meet-up @ [Cito](https://www.cito.nl/) (intern), 24 augustus 2023
 - Pizzasessie @ [4Dotnet](https://www.4dotnet.nl/) (intern), 7 september 2023
+- [devNetNoord](https://devnetnoord.nl/), 26 oktober 2023 
 
 
 ## Gerelateerde blogs
@@ -37,3 +38,4 @@ Een team dat de edele kunst van het pull request beheerst, voorkomt bugs en tech
 - [Pull requests als documentatie](/blog/22/10/pull-requests-als-documentatie/)
 - [Test-Driven Code Reviews](/blog/22/09/test-driven-code-reviews/)
 - [Betere documentatie door PR-templates](/blog/22/10/betere-documentatie-door-pr-templates/)
+- [Nog enkele reflecties op pull requests](/blog/23/10/nog-enkele-reflecties-op-pull-requests/)

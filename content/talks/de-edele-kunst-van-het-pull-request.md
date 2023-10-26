@@ -1,7 +1,7 @@
 ---
 title: "De edele kunst van het pull request"
 author: "Karl van Heijster"
-date: 2023-09-07T09:30:28+02:00
+date: 2023-10-26T11:27:30+02:00
 draft: false
 comments: true
 tags: ["code reviews", "communicatie", "pull requests"]
@@ -19,7 +19,6 @@ Aan het eind van deze sessie weet je welke vragen je moet stellen voor een gesla
 
 
 Een team dat de edele kunst van het pull request beheerst, voorkomt bugs en technische schuld. Zo'n team kan zich concentreren op waar het om draait: waarde leveren voor de klant!
-
 
 
 ## Wanneer?

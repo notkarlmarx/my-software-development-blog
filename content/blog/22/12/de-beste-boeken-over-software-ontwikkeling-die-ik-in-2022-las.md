@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2022-12-27T23:09:12+01:00
 draft: false
 comments: true
-tags: ["boeken"]
+tags: ["boeken", "toplijsten"]
 summary: "Eindejaarslijstjestijd! Net als vorig jaar en het jaar daarvoor heb ik dit jaar weer enkele fantastische boeken over softwareontwikkeling mogen lezen. Dit waren mijn vijf favorieten - en vijf eervolle vermeldingen."
 ---
 

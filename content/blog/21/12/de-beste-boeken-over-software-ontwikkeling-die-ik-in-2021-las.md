@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2021-12-17T08:12:06+01:00
 draft: false
 comments: true
-tags: ["boeken", "software ontwikkelen", "unit tests"]
+tags: ["boeken", "software ontwikkelen", "toplijsten", "unit tests"]
 summary: "Net als vorig jaar heb ik dit jaar weer vele fantastische boeken over softwareontwikkeling tot me mogen nemen. Bij dezen een overzicht van mijn vijf favorieten, en vijf eervolle vermeldingen."
 ---
 

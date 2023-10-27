@@ -3,7 +3,7 @@ title: "De beste boeken over software ontwikkeling die ik in 2020 las"
 date: 2021-05-03T08:46:29+02:00
 draft: false
 comments: true
-tags: ["boeken", "clean code", "software architectuur"]
+tags: ["boeken", "clean code", "software architectuur", "toplijsten"]
 summary: "2020 was in nogal wat opzichten... laten we zeggen: een bewogen jaar. Maar aan de andere kant: wat was er veel tijd om te lezen! Dit zijn de vijf beste boeken over software ontwikkeling die ik het afgelopen jaar las (en vijf eervolle vermeldingen)."
 ---
 

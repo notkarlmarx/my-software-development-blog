@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2023-02-10T07:58:03+01:00
 draft: false
 comments: true
-tags: ["domain-driven design", "filosofie"]
+tags: ["domain-driven design", "filosofie", "Wittgenstein, Ludwig"]
 summary: "We kunnen als softwareontwikkelaars veel leren van Socrates' filosofische houding. \"Ik weet dat ik niets weet\" betekent: ik neem niets aan, ik luister alleen goed naar wat de ander zegt en probeer diens standpunt zo helder mogelijk te krijgen. Ik hoor aan, parafraseer en controleer of die parafrase klopt. Voorzichtig trek ik conclusies - niet om de ander onderuit te halen, maar om te kijken of ik op de juiste weg ben, de ander begrijp. En ook: of het verhaal van de ander klopt - wat dat dan ook moge betekenen. "
 ---
 

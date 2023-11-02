@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2021-08-09T08:13:36+02:00
 draft: false
 comments: true
-tags: ["communicatie", "domain-driven design", "filosofie", "microservices", "software architectuur"]
+tags: ["communicatie", "domain-driven design", "filosofie", "microservices", "software architectuur", "Wittgenstein, Ludwig"]
 summary: "Vaak gebruiken verschillende delen van de business dezelfde woorden op verschillende manieren, of gebruiken ze verschillende woorden voor hetzelfde concept. Dat is een frustrerende situatie voor een softwareontwikkelaar, maar een feest voor een taalfilosoof."
 ---
 

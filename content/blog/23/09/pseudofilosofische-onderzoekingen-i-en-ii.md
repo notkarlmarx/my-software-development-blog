@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2023-09-22T07:54:36+02:00
 draft: false
 comments: true
-tags: ["bloggen", "domain-driven design", "filosofie", "leren"]
+tags: ["bloggen", "domain-driven design", "filosofie", "leren", "Wittgenstein, Ludwig"]
 summary: "Ik ga vandaag geen blog schrijven. Ik zal genoegen nemen met enkele aantekeningen die ik maanden geleden op papier zette, geïnspireerd door Marcus Aurelius en door Ludwig Wittgenstein. Het spreekt voor zich dat mijn overpeinzingen beduidend minder diepzinnig zijn dan die van beide grootheden."
 ---
 

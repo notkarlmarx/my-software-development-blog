@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2021-09-17T08:20:55+02:00
 draft: false
 comments: true
-tags: ["clean code", "filosofie", "schoonheid", "software ontwikkelen", "waarde"]
+tags: ["clean code", "filosofie", "schoonheid", "software ontwikkelen", "waarde", "Wittgenstein, Ludwig"]
 summary: "Anders dan Aristoteles, Kant en Wittgenstein, hebben we als softwareontwikkelaars de luxe ons niet bezig te hoeven houden met de metafysische grondstructuur van de werkelijkheid. Dat vereenvoudigt het ontwikkelen van onze applicaties aanzienlijk. Maar dezelfde hang naar schoonheid die ik bij filosofen zo amusant vind, duikt bij tijden ongemerkt in mijn eigen werk op. "
 ---
 

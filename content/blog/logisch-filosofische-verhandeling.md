@@ -5,22 +5,25 @@ date: 2023-11-02T13:36:21+01:00
 draft: true
 comments: true
 tags: ["boeken", "DRY", "eenvoud", "filosofie", "intentie van code", "testen", "Wittgenstein, Ludwig"]
-summary: "*Waarschuwing: ik ga heel lang over filosofie zitten zwammen en daarna zeg ik iets pseudodiepzinnigs over code.*"
+summary: "Ik spijkerde mijn Wittgenstein onlangs bij, het deed me (omdat ik, zie je, een beroepsdeformatie heb) denken aan softwareontwikkeling."
 ---
 
-*Waarschuwing: ik ga heel lang over filosofie zitten zwammen en daarna zeg ik iets pseudodiepzinnigs over code.*
+Ik spijkerde mijn Wittgenstein onlangs bij, het deed me (omdat ik, zie je, een [beroepsdeformatie](/tags/beroepsdeformatie/ "Blogs met de tag 'beroepsdeformatie'") heb) denken aan softwareontwikkeling.
+
+ 
+(Voor de luie lezer: [deel I](#i) gaat over filosofie, [deel II](#ii) over code.)
 
 
-## Tractatus
+# I.
 
 
-In TLP §5.451 schrijft Wittgenstein:
+In zijn [*Tractatus Logico-Philosophicus*](https://en.wikipedia.org/wiki/Tractatus_Logico-Philosophicus "'Tractatus Logico-Philosophicus', Wikipedia") schrijft [Ludwig Wittgenstein](https://plato.stanford.edu/entries/wittgenstein/ "'Ludwig Wittgenstein', Stanford Encyclopedia of Philosophy") (§5.451):
 
 
 > If logic has primitive ideas these must be independent of one another. If a primitive idea is introduced it must be introduced in all contexts in which it occurs at all. One cannot therefore introduce it for one context and then again for another. For example, if denial is introduced, we must understand it in propositions of the form "*~p*," just as in propositions like "*~(p v q)*," "*(∃x). ~fx*" and others. We may not first introduce it for one class of cases and then for another, for it would then remain doubtful whether its meaning in the two cases was the same, and there would be no reason to use the same way of symbolizing in the two cases.[^1]
 
 
-Ik ben maar een amateurinterpreet, maar ik geloof dat Wittgenstein hier zegt: betekenis is bepaald, is eeuwig, verandert niet. (Bedoelt hij: in een volmaakt logische taal, of in überhaupt elke taal? Ik weet het niet, ik ben maar een amateurinterpreet.) 
+Ik ben maar een amateurinterpreet, maar ik geloof dat Wittgenstein hier zegt: betekenis is bepaald, is eeuwig, verandert niet. (Bedoelt hij: in een volmaakt logische taal, of in überhaupt elke taal? -- Ik weet het niet, ik ben maar een amateurinterpreet.) 
 
 
 ## Ondubbelzinnig
@@ -29,7 +32,7 @@ Ik ben maar een amateurinterpreet, maar ik geloof dat Wittgenstein hier zegt: be
 Een teken kan niet in de ene context het ene aanduiden, en in een andere het andere. (-- Ah, een volmaakt logische taal dus.) In zulke gevallen moet de taal twee tekens introduceren, elk met één enkele ondubbelzinnige betekenis.
 
 
-Daaruit volgt dat de betekenis bij de definitie van het teken ondubbelzinnig is vastgelegd voor elke context waar deze in voor kan komen. Een volmaakte taal weerspiegelt de wereld: één teken voor één ding. -- Wat die dingen zijn? In de context van namen zijn het objecten. Logische connectieven staan voor operaties.
+Daaruit volgt dat de betekenis bij de definitie van het teken ondubbelzinnig is vastgelegd voor elke context waar deze in voor kan komen. Een volmaakte taal weerspiegelt de wereld: één teken voor één ding. -- Wat die dingen zijn? In de context van namen zijn het objecten. Logische connectieven staan voor operaties. ("Maar zijn operaties een onderdeel van de wereld?" -- De amateurinterpreet worstelt met zulke vragen)
 
 
 Wittgenstein geeft een voorbeeld van zo'n operatie: de ontkenning, negatie ("*~*"). Deze operatie keert de waarheidswaarde van een propositie om. "Het regent niet" is waar als het niet regent en onwaar als het dat wel doet. "Het regent niet niet" is waar als het regent en onwaar als het dat niet doet.
@@ -41,7 +44,7 @@ Wat het betekent om de waarheidswaarde van een propositie om te keren, is -- *mo
 ## In context
 
 
-Ik herlas de *Tractatus* omdat ik een boek recenseerde, *Tractatus in Context: The Essential Background for Appreciating Wittgenstein's Tractatus Logico-Philosophicus* van James C. Klagge. Het gros van het boek bestaat uit het propositie voor propositie becommentarieëren van Wittgensteins meesterwerk. Klagge voorziet de lezer van filosofische achtergronden -- veel Russell en Frege, hier en daar wat Schopenhauer en Kant --, wijst naar verhelderende passages uit dagboeken en brieven, wijdt uit over de historische context. Het is een feest, echt waar -- maar alleen voor de *die hard* Wittgensteiniaan.
+Ik herlas de *Tractatus* omdat ik een boek recenseerde, [*Tractatus in Context: The Essential Background for Appreciating Wittgenstein's Tractatus Logico-Philosophicus*](https://www.routledge.com/Tractatus-in-Context-The-Essential-Background-for-Appreciating-Wittgensteins/Klagge/p/book/9780367465568) van [James C. Klagge](http://jamesklagge.net/). Het gros van het boek bestaat uit het propositie voor propositie becommentarieëren van Wittgensteins meesterwerk. Klagge voorziet de lezer van filosofische achtergronden -- veel [Russell](https://plato.stanford.edu/entries/russell/ "'Bertrand Russell', Stanford Encyclopedia of Philosophy") en [Frege](https://plato.stanford.edu/entries/frege/ "'Gottlob Frege', Stanford Encyclopedia of Philosophy"), hier en daar wat [Schopenhauer](https://plato.stanford.edu/entries/schopenhauer/ "'Arthur Schopenhauer', Stanford Encyclopedia of Philosophy") en [Kant](https://plato.stanford.edu/entries/kant/ "'Immanuel Kant', Stanford Encyclopedia of Philosophy") --, wijst naar verhelderende passages uit dagboeken en brieven, wijdt uit over de historische context. Het is een feest, echt waar -- maar alleen voor de *die hard* Wittgensteiniaan.
 
 
 In zijn commentaar op §5.451 wijst Klagge op de invloed van [Freges *Grundgesetze der Arithmetik*](https://plato.stanford.edu/entries/frege-theorem/ "'Frege’s Theorem and Foundations for Arithmetic', Stanford Encyclopedia of Phisosophy"). Maar hij citeert [Giuseppe Peano](https://nl.wikipedia.org/wiki/Giuseppe_Peano "'Giuseppe Peano', Wikipedia"), een Italiaans wiskundige-filosoof-logicus:
@@ -53,10 +56,10 @@ In zijn commentaar op §5.451 wijst Klagge op de invloed van [Freges *Grundgeset
 Volgens Peano ligt de betekenis van een teken -- in sommige gevallen althans -- helemaal niet voor alle mogelijke proposities vast. Natuurlijke getallen en irrationele getallen zijn allebei getallen, maar daar volgt niet uit dat je weet hoe je *π + √2* moet uitrekenen, alleen omdat je *7 + 5* wel kan. Er ligt een betekenis vast voor het optellen van natuurlijke getallen, en een betekenis vast voor het optellen van irrationele, en beide worden vertegenwoordigd door het *+*-teken.
 
 
-## (Beroepsdeformatie)
+## *(Flash forward)*
 
 
-(Het is opmerkelijk hoezeer Peano's beschrijving van het geven van een definitie aanvoelt als het uitprogrammeren van een oplossing. We zouden zijn voorbeeld zelfs in de praktijk kunnen brengen: we zouden een type kunnen definiëren en daar [de `+`-operator van kunnen overschrijven](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/operator-overloading "'Operator overloading - predefined unary, arithmetic, equality and comparison operators', Microsoft documentatie")). We zouden dan de betekenis van het teken hebben gedefinieerd -- een instructie van het gebruik van dit teken in code.
+(Het is opmerkelijk hoezeer Peano's beschrijving van het geven van een definitie aanvoelt als het uitprogrammeren van een oplossing. We zouden zijn voorbeeld zelfs in de praktijk kunnen brengen: we zouden een type kunnen definiëren en daar [de `+`-operator van kunnen overschrijven](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/operator-overloading "'Operator overloading - predefined unary, arithmetic, equality and comparison operators', Microsoft documentatie"). We zouden dan de betekenis van het teken hebben gedefinieerd -- een instructie van het gebruik van dit teken in code.
 
 
 Maar als we een tweede type introduceren, dat al dan niet lijkt op het eerste, dan zouden instanties daarvan zich, wanneer ze bij elkaar worden "opgeteld", niet hetzelfde gedragen als die van het eerste type. We zouden de `+`-operator opnieuw moeten herdefiniëren om in lijn te zijn met die van het eerste type.)
@@ -80,7 +83,7 @@ Uiteindelijk zo Wittgenstein Peano gelijk geven. Klagge citeert enkele relevante
 > With the progress of science the meaning of this same formula is always being further extended. The various meanings of the symbol *a + b* have common properties; but these are insufficient to determine all the values that this expression can have... I do not see how they suffice to determine all the possible meanings...
 
 
-## Dupliceren
+# II.
 
 
 Deze gedachten schoten in één flits allemaal door mijn hoofd toen ik op Techorama een praatje bijwoonde van Dennis Doomen over zijn ervaringen met het oplappen van *legacy*-software. Hij had het over het dupliceren van methods. De zaal was in oproer: * -- maar hoe zit het met DRY?!*
@@ -125,7 +128,7 @@ En dus: laten we niet, zoals Wittgenstein, alle mogelijke scenario's waar deze o
 Code is niet *als* een taal -- het *is* een taal. De tekens van code -- methods, parameters, variabelen -- hebben net zoveel betekenis als de tekens van de taal. En net als de tekens van de taal, wordt hun betekenis bepaald door de contexten waarin ze gebruikt worden. Dat is een centraal Wittgensteiniaans inzicht, en het is relevant voor de manier waarop we software ontwikkelen.
 
 
-[^1]: Vertaling van C. K. Ogden.
+[^1]: Vertaling van [C. K. Ogden](https://en.wikipedia.org/wiki/Charles_Kay_Ogden "'Charles Kay Ogden', Wikipedia").
 
 
 [^2]: James C. Klagge, *Tractatus in Context*, p. 172.

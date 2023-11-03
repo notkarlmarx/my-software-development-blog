@@ -1,14 +1,14 @@
 ---
 title: "Waarom, wat en hoe"
 author: "Karl van Heijster"
-date: 2023-09-15T08:46:15+02:00
-draft: true
+date: 2023-11-03T09:32:35+01:00
+draft: false
 comments: true
 tags: ["code lezen", "intentie van code", "leermoment", "product backlog refinement", "test-driven development"]
-summary: "Waarom bestaat deze code? -- wat doet het? -- en hoe doet het dat? Ik maaide het gras van mijn achtertuin, toen me inviel dat het beantwoorden van die vragen niet beperkt blijft tot het *lezen* van code. Elke ontwikkelaar stelt zichzelf precies dezelfde vragen als deze code gaat *schrijven*. En een goede ontwikkelaar beantwoordt ze in de geijkte volgorde."
+summary: "Waarom bestaat deze code? -- wat doet het? -- en hoe doet het dat? Ik maaide het gras van mijn achtertuin, toen me inviel dat het beantwoorden van die vragen niet beperkt blijft tot het *lezen* van code. Elke ontwikkelaar stelt zichzelf precies dezelfde vragen als deze code gaat *schrijven*. En een goede ontwikkelaar beantwoordt ze in die volgorde."
 ---
 
-Een tijd geleden schreef ik over de [drie vragen die elk *pull request* (PR) moet beantwoorden](/blog/23/09/drie-vragen-die-elk-pull-request-moet-beantwoorden/). Ze luiden als volgt: (1) Waarom bestaat dit PR überhaupt? (2) Wat doet de code concreet? (3) Hoe doet de code dat?
+Een tijd geleden schreef ik over de [drie vragen die elk *pull request* (PR) moet beantwoorden](/blog/23/09/drie-vragen-die-elk-pull-request-moet-beantwoorden/).[^1] Ze luiden als volgt: (1) Waarom bestaat deze code(wijziging) überhaupt? (2) Wat doet de code concreet? (3) Hoe doet de code dat?
 
 
 Ik schreef over die vragen in de context van code reviews. Een codereviewer moet het waarom, het wat en het hoe van de code kennen -- en pas dan kan deze een goed oordeel vormen over de kwaliteit van de code. Een goedkeuring of afwijzing van de codewijziging is afhankelijk van de mate waarin die vragen bevredigend worden beantwoord.
@@ -17,7 +17,7 @@ Ik schreef over die vragen in de context van code reviews. Een codereviewer moet
 ## Code beoordelen
 
 
-Natuurlijk vormen PR's en code reviews niet de enige momenten waarop we code moeten beoordelen -- dat doen we doorlopend. Wanneer ik een volslagen onbekende codebase voor mijn neus krijg, dan kijk ik eerst de documentatie door om het waarom van de code te achterhalen. Als ik daar eenmaal mee bekend ben, en wat dieper in de code wil duiken, dan ga ik eerst op zoek naar de tests. Zo kom ik erachter wat de code doet, voordat ik me verdiep in de manieren hoe de code dat voor elkaar krijgt.
+Natuurlijk vormen PR's en code reviews niet de enige momenten waarop we code moeten beoordelen -- dat doen we doorlopend. Wanneer ik een volslagen onbekende codebase voor mijn neus krijg, dan voer ik eerst gesprekken met collega's om het waarom van de code te achterhalen. Als ik daar eenmaal mee bekend ben, en wat dieper in de code wil duiken, dan ga ik op zoek naar de tests. Zo kom ik erachter wat de code doet, voordat ik me verdiep in de manieren hoe de code dat voor elkaar krijgt.
 
 
 Eerst het waarom, dan het wat, en pas daarna het hoe.
@@ -62,7 +62,7 @@ Wat TDD doet is dat beoordelingsproces expliciet maken -- en inzichtelijk bovend
 ## Hoe
 
 
-Nog te vaak zie ik mijn collega's beginnen met het hoe. Ze hebben wel enige notie van waarom ze de code schrijven die ze schrijven, en ze hebben ook wel een idee van wat ze willen dat de code doet, maar ze hebben niet de kunde of discipline of interesse om het waarom, wat en hoe in de juiste volgorde te doorlopen. 
+Nog te vaak zie ik mijn collega's beginnen met het hoe. Ze hebben wel enige notie van waarom ze de code die ze schrijven, en ze hebben ook wel een idee van wat ze willen dat de code doet, maar ze hebben niet de kunde of discipline of interesse om het waarom, wat en hoe in de juiste volgorde te doorlopen. 
 
 
 Dat is geen kritiek, overigens. Testgedreven kunnen ontwikkelen is een vaardigheid die je maar met moeite verkrijgt. Het vereist geduld en oefening en regelmatige reflectie op wat er werkt en wat niet. De ruimte voor het ontwikkelen van die vaardigheid wordt je niet cadeau gedaan.
@@ -72,3 +72,6 @@ Maar als TDD eenmaal in je systeem zit, is het moeilijk terug te gaan naar de ou
 
 
 De conclusie kan dan ook alleen maar zijn: ik zou vaker de achtertuin moeten maaien.
+
+
+[^1]: De blog diende als voorbereidend werk voor [dit praatje](/talks/de-edele-kunst-van-het-pull-request/ "'De edele kunst van het pull request'"). Onlangs mocht ik het vertellen op [devNetNoord](https://devnetnoord.nl/) voor het grootste scherm (en het grootste aantal mensen) waar ik ooit voor gepresenteerd heb -- het was erg cool.

@@ -77,7 +77,7 @@ Wat er gebeurd is, is dat er een *keuze* gemaakt wordt bij het definiëren van e
 Is de betekenis in context *a* hetzelfde als in context *b*? In sommige gevallen wel. Maar andere gevallen komen maar in één van beide contexten voor, daar kunnen we de vergelijking niet maken. (Ongemerkt herinterpreteren we "betekent hetzelfde" als "gedraagt zich niet anders dan" -- en zo lost de verschuiving in betekenis op voor onze ogen.)
 
 
-Uiteindelijk zo Wittgenstein Peano gelijk geven. Klagge citeert enkele relevante passages uit *Philosophical Investigations* §§66-71:
+Uiteindelijk zo Wittgenstein Peano gelijk geven. Klagge citeert enkele relevante passages uit [*Philosophical Investigations*](https://en.wikipedia.org/wiki/Philosophical_Investigations "'Philosophical Investigations', Wikipedia") §§66-71:
 
 
 > With the progress of science the meaning of this same formula is always being further extended. The various meanings of the symbol *a + b* have common properties; but these are insufficient to determine all the values that this expression can have... I do not see how they suffice to determine all the possible meanings...
@@ -86,10 +86,10 @@ Uiteindelijk zo Wittgenstein Peano gelijk geven. Klagge citeert enkele relevante
 # II.
 
 
-Deze gedachten schoten in één flits allemaal door mijn hoofd toen ik op Techorama een praatje bijwoonde van Dennis Doomen over zijn ervaringen met het oplappen van *legacy*-software. Hij had het over het dupliceren van methods. De zaal was in oproer: * -- maar hoe zit het met DRY?!*
+Deze gedachten schoten in één flits allemaal door mijn hoofd toen ik op [Techorama](https://techorama.nl/) een praatje bijwoonde van [Dennis Doomen](https://www.continuousimprover.com/) over zijn ervaringen met het oplappen van *legacy*-software. Hij had het over het dupliceren van methods. De zaal was in oproer: * -- maar hoe zit het met DRY?!*
 
 
-Ik zit in team Doomen. DRY (Don't Repeat Yourself) gaat over duplicatie van informatie (en dus niet, zoals soms gedacht, over duplicatie van code!). Wanneer dezelfde informatie op verschillende plekken gedefinieerd staat in de codebase, dan moeten we deze op verschillende plekken wijzigen als deze dient te veranderen. 
+Ik zit in team Doomen. [DRY (Don't Repeat Yourself)](/tags/dry/ "Blogs met de tag 'DRY'") gaat over duplicatie van informatie (en dus niet, zoals soms gedacht, over duplicatie van code!). Wanneer dezelfde informatie op verschillende plekken gedefinieerd staat in de codebase, dan moeten we deze op verschillende plekken wijzigen als deze dient te veranderen. 
 
 
 -- Het is een slordigheid: met vier boodschappenbriefjes in omloop is de kans dat je iets vergeet meer dan verviervoudigd.
@@ -98,7 +98,7 @@ Ik zit in team Doomen. DRY (Don't Repeat Yourself) gaat over duplicatie van info
 ## Doel
 
 
-Met code is het anders. Niet alle gelijkvormige code heeft een zelfde functie. Een boodschappenlijstje lijkt op een *to do*-lijstje, maar dient een heel ander doel. We hoeven het soort papier waarop beide gekrabbeld worden niet gelijk te trekken om hen hun doel te laten vervullen.
+Met code is het anders. Niet alle gelijkvormige code heeft een zelfde functie. Een boodschappenlijstje lijkt op een *to do*-lijstje, maar dient een ander doel. We hoeven het soort papier waarop beide gekrabbeld worden niet gelijk te trekken om hen hun doel te laten vervullen.
 
 
 Sterker nog, die wens pakt regelmatig in ons nadeel uit. Wanneer je een lokale functie schrijft, dan kan en mag je aannames doen over de omstandigheden van die functie. Voor globale functies geldt die luxe niet. De prijs voor de uiterlijke contextonafhankelijkheid van zulke functies moet worden opgehoest door innerlijk alle mogelijke contexten te overwegen. -- De vraag is: wegen de kosten van die innerlijke complexiteit op tegen de baten van contextonafhankelijkheid? 

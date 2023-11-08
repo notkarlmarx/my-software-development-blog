@@ -32,7 +32,7 @@ Het doel van een blog is niet -- of: niet alleen -- een ander iets te leren, maa
 Een blog is geslaagd als het een accuraat beeld geeft van het huidige begrip. Daarom berust een uitspraak als "ik weet er niet genoeg van om erover te schrijven" op een misvatting.
 
 
-Het niet weten (er niet genoeg van weten) is de een noodzakelijke voorwaarde om te kunnen leren. En weten dat je iets niet weet -- je van je eigen beperkingen bewust zijn -- is een van de verstandigste dingen die je kunt doen.
+Het niet weten (er niet genoeg van weten) is een noodzakelijke voorwaarde om te kunnen leren. En weten dat je iets niet weet -- je van je eigen beperkingen bewust zijn -- is een van de verstandigste dingen die je kunt doen.
 
 
 Juist *omdat* je er nog niet genoeg van weet, schrijf je erover. Als je het al zou weten, zou er niets over te schrijven zijn. Een blog wordt dan een klus.

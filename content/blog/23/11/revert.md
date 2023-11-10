@@ -1,14 +1,14 @@
 ---
 title: "Revert!"
 author: "Karl van Heijster"
-date: 2023-09-22T08:17:43+02:00
-draft: true
+date: 2023-11-10T08:13:42+01:00
+draft: false
 comments: true
 tags: ["falen", "integratietests", "leermoment", "software ontwikkelen", "testen"]
-summary: "Drie dagen hebben we de boel lopen te debuggen. Bij elke nieuwe wijziging leken we verder te zakken in een onverklaarbaar moeras van verborgen afhankelijkheden. Op een gegeven moment was ik het zat. Ik zei: \"Ik ga de boel terugdraaien.\" (Mijn collega, verslagen, zag al zijn harde werk voor zijn ogen in vlammen opgaan.) \"Niet alles, maar wel alles in deze ene class. En dan ga ik je wijziging één voor één opnieuw toepassen, net zolang totdat de tests fout gaan.\""
+summary: "Drie dagen hebben we de boel lopen te debuggen. Bij elke nieuwe wijziging leken we verder te zakken in een onverklaarbaar moeras van verborgen afhankelijkheden. Op een gegeven moment was ik het zat. Ik zei: \"Ik ga de boel terugdraaien.\" (Mijn collega, verslagen, zag al zijn harde werk voor zijn ogen in vlammen opgaan.) \"Niet alles, maar wel alles in die ene class. En dan ga ik je wijziging één voor één opnieuw toepassen, net zolang totdat er tests falen.\""
 ---
 
-Ook je testcode verdient liefde. Ook unit- en integratietests dien je van tijd tot tijd te refactoren, bijvoorbeeld als je nieuwe inzichten op hebt gedaan over [hun leesbaarheid](/blog/22/01/hoe-droog-wil-je-je-test-hebben/ "'Hoe droog wil je je test hebben?'") of [de manier waarop je ze het best kunt structureren](/blog/22/12/over-de-volgorde-van-je-unit-tests/ "'Over de volgorde van je unit tests'").
+Ook je testcode verdient liefde. Unit- en integratietests dien je van tijd tot tijd te refactoren, bijvoorbeeld als je nieuwe inzichten op hebt gedaan over [hun leesbaarheid](/blog/22/01/hoe-droog-wil-je-je-test-hebben/ "'Hoe droog wil je je test hebben?'") of [de manier waarop je ze het best kunt structureren](/blog/22/12/over-de-volgorde-van-je-unit-tests/ "'Over de volgorde van je unit tests'").
 
 
 Niet lang geleden nam een collega de taak op zich om onze integratietests onder handen te nemen -- de tests die het gedrag van onze API [documenteerden](/blog/22/09/tests-als-documentatie/ "'Tests als documentatie'"). De opzet die we voor die tests gekozen hadden, piepte en kraakte aan alle kanten. Alle tests erfden van een baseclass met daarin een `HttpClient` en wat *helper methods* die de interactie daarmee vergemakkelijkten.
@@ -50,7 +50,7 @@ Hij was er een goeie dag of anderhalf mee bezig, maar daarna was de code om door
 Er was alleen één probleem: het werkte niet. Althans, het werkte wel, maar toch beduidend minder goed dan voorheen. Tests die gisteren nog slaagden, faalden ineens. Behalve als je ze nog een keer aftrapte, dan deden ze het ineens weer wel.
 
 
-De tests waren van elkaar afhankelijk geworden -- maar waarom, dat was een raadsel. Wie de code las -- en we hebben samen hele grote delen van die nieuwe code doorgekeken --, zag een heleboel prachtig van elkaar gescheiden, atomaire brokjes (test)functionaliteit. Maar zelden heb ik meegemaakt dat code zo bedrieglijk was. We zagen ons geconfronteerd met eenvoudige, verzorgde code die op sublieme wijze fouten onder de motorkap voor ons verborg.
+De tests waren van elkaar afhankelijk geworden -- maar waarom, dat was een raadsel. Wie de code las -- en we hebben samen hele grote delen van die nieuwe code doorgekeken --, zag een heleboel prachtig van elkaar gescheiden, atomaire brokjes (test)functionaliteit. Maar zelden heb ik meegemaakt dat code zó bedrieglijk was. We zagen ons geconfronteerd met eenvoudige, verzorgde code die op sublieme wijze fouten onder de motorkap voor ons verborg.
 
 
 Drie dagen hebben we de boel lopen te debuggen.
@@ -62,7 +62,7 @@ Bij elke nieuwe wijziging leken we verder te zakken in een onverklaarbaar moeras
 ## Terugdraaien
 
 
-Op een gegeven moment was ik het zat. Ik zei: "Ik ga de boel terugdraaien." (Mijn collega, verslagen, zag al zijn harde werk voor zijn ogen in vlammen opgaan.) "Niet alles, maar wel alles in deze ene class. En dan ga ik je wijziging één voor één opnieuw toepassen, net zolang totdat de tests fout gaan."
+Op een gegeven moment was ik het zat. Ik zei: "Ik ga de boel terugdraaien." (Mijn collega, verslagen, zag al zijn harde werk voor zijn ogen in vlammen opgaan.) "Niet alles, maar wel alles in die ene class. En dan ga ik je wijziging één voor één opnieuw toepassen, net zolang totdat de tests falen."
 
 
 Ik draaide de wijziging terug, moest de baseclass herstellen, gooide daar alles uit weg wat niet meer gebruikt werd, en trapte de tests af. Alles groen. Ik paste één method aan, trapte de tests af. Alles groen. Paste een tweede method aan, trapte de tests af. Alles groen.
@@ -86,7 +86,7 @@ De negatieve luidt als volgt: neem tijdens het programmeren geen grote stappen. 
 Vervolgens deed hij wat elke ontwikkelaar instinctief doet in zo'n situatie: hij haalde zijn debugger tevoorschijn. Maar dat is alsof je met een microscoop een crimineel op probeert te sporen. Het instrument is veel te precies voor het doel dat je ermee wil bereiken. Daarmee is niet gezegd dat je de oorzaak van het probleem er niet mee kunt vinden, maar wel dat dat eerder een kwestie van geluk zal zijn dan wat anders.
 
 
-Ik neem het mijn collega niet kwalijk. Zelf ben ik tientallen, honderden keren in dezelfde val getrapt. De truc is een stap terug te doen en je bewust te worden van het feit dat je werkwijze de eigenlijke oorzaak is van het probleem.
+Ik neem het mijn collega niet kwalijk. Zelf ben ik tientallen, honderden keren in dezelfde val getrapt. De truc is een stap terug te doen en je bewust te worden van het feit dat je *werkwijze*, en niet je code, de eigenlijke oorzaak is van het probleem.
 
 
 -- Moeilijk te doorgronden bugs zijn geen technisch probleem. Het is een probleem dat voortkomt uit je manier van werken.

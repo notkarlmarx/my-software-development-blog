@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2023-11-10T08:35:16+01:00
 draft: true
 comments: true
-tags: ["communicatie", "empathie", "kernwaarden" "management", "procesverbetering", "teamcultuur", "verantwoordelijkheid", "werkplezier"]
+tags: ["communicatie", "empathie", "kernwaarden", "management", "procesverbetering", "teamcultuur", "verantwoordelijkheid", "werkplezier"]
 summary: "Hoe ziet softwareontwikkeling er -- volgens jou -- idealiter uit? Hoe functioneert een ontwikkelteam op de toppen van z'n kunnen? Wat is de verhouding tot hun stakeholders en collega's? Hoe ondersteunt het management daarin? -- Als je dat plaatje eenmaal scherp hebt, wat kun je dan concluderen over de kernwaarden van waaruit je software ontwikkelt?"
 ---
 

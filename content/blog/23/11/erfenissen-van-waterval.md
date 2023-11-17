@@ -8,7 +8,7 @@ tags: ["agile ontwikkeling", "code reviews", "pair programming", "pull requests"
 summary: "Op het Najaarsevenement van TestNet betoogde ik dat testers een belangrijke rol hebben te spelen in het reviewen van code. Tijdens de voorbereiding van mijn presentatie realiseerde ik me dat mijn team, alle Agile ambities ten spijt, in zijn denken nog diep verankerd zit in het gedachtegoed van de watervalopvatting van softwareontwikkeling."
 ---
 
-Op het Najaarsevenement van [TestNet](https://www.testnet.org/) betoogde ik dat testers een belangrijke rol hebben te spelen in het reviewen van code. Ik schreef er al eerder over, [hier](/blog/23/07/de-tester-als-code-reviewer/ "'De tester als code reviewer'") (maar zie ook [deze blog](/blog/23/09/drie-vragen-die-elk-pull-request-moet-beantwoorden/ "'Drie vragen die elk pull request moet beantwoorden'")). 
+Op het Najaarsevenement van [TestNet](https://www.testnet.org/) betoogde ik dat [testers een belangrijke rol hebben te spelen in het reviewen van code](/talks/waarom-testers-code-moeten-reviewen/ "'Waarom testers code moeten reviewen'"). Ik schreef er al eerder over, [hier](/blog/23/07/de-tester-als-code-reviewer/ "'De tester als code reviewer'") (maar zie ook [deze blog](/blog/23/09/drie-vragen-die-elk-pull-request-moet-beantwoorden/ "'Drie vragen die elk pull request moet beantwoorden'")). 
 
 
 Tijdens de voorbereiding van mijn presentatie realiseerde ik me dat mijn team, alle [Agile](https://en.wikipedia.org/wiki/Agile_software_development "'Agile software development', Wikipedia") ambities ten spijt, in zijn denken nog diep verankerd zit in het gedachtegoed van de [watervalopvatting van softwareontwikkeling](https://en.wikipedia.org/wiki/Waterfall_model "'Waterfall model', Wikipedia").

@@ -5,7 +5,7 @@ date: 2023-11-17T08:05:33+01:00
 draft: true
 comments: true
 tags: ["agile ontwikkeling", "leren", "software ontwikkelaar (rol)", "tester (rol)", "verantwoordelijkheid"]
-summary: "Na afloop van mijn praatje kreeg ik de vraag of ik geloof in het idee van *first time right*. Mijn antwoord was: "Ik geloof niet dat er zoiets bestaat als *first time right*. Maar ik geloof wel in *first time een stuk beter dan we het nu doen*." Tijd om dat antwoord verder uit te werken, was er op dat moment niet. Maar de vraag bleef wel in mijn achterhoofd spoken. Is het mogelijk om een systeem in één keer goed te bouwen?"
+summary: "Na afloop van mijn praatje kreeg ik de vraag of ik geloof in het idee van *first time right*. Mijn antwoord was: \"Ik geloof niet dat er zoiets bestaat als *first time right*. Maar ik geloof wel in *first time een stuk beter dan we het nu doen*.\" Tijd om dat antwoord verder uit te werken, was er op dat moment niet. Maar de vraag bleef wel in mijn achterhoofd spoken. Is het mogelijk om een systeem in één keer goed te bouwen?"
 ---
 
 Op het Najaarsevenement van [TestNet](https://www.testnet.org/) betoogde ik dat [testers een belangrijke rol hebben te spelen in het reviewen van code](/talks/waarom-testers-code-moeten-reviewen/ "'Waarom testers code moeten reviewen'"). Hun rol zou zich niet moeten beperken tot het controleren van het werk van de ontwikkelaars. Testers moeten niet in actie komen *nadat* de code is geschreven. Die manier van werken is [een erfenis van waterval](/blog/23/11/erfenissen-van-waterval/ "'Erfenissen van waterval'"), en (daarom) vreselijk inefficiënt bovendien.

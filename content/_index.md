@@ -1,7 +1,7 @@
 ---
 headers:
   main: Karl van Heijster
-  sub: "softwareontwikkelaar · blogger · spreker"
+  sub: "softwareontwikkelaar · filosoof · spreker"
 image:
   src: /images/profile-picture-sm.jpg
   alt: Profielfoto

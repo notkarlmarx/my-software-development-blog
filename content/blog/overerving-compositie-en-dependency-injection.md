@@ -1,5 +1,5 @@
 ---
-title: "Overerving, compositie en Dependency Injection"
+title: "Overerving, compositie en dependency injection"
 author: "Karl van Heijster"
 date: 2023-11-24T08:51:19+01:00
 draft: true

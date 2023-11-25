@@ -23,7 +23,7 @@ Wanneer we programmeren, komt het regelmatig voor dat ons gevraagd wordt twee fe
 Dat werkt, maar een bijzonder nette oplossing valt het niet te noemen. Codeduplicatie levert problemen op voor de onderhoudbaarheid van code. Als er een bug in de originele code blijkt te zitten, dan zullen we deze op beide plekken aan moeten passen. Of als er een extra feature toegevoegd moet worden die in beide gevallen moet worden ondersteund, dan moeten we deze op twee plekken toevoegen. Dat is foutgevoelig en inefficiënt. (Gelukkig zijn er -- in mijn omgeving althans -- maar weinig ontwikkelaars voor wie codeduplicatie een serieuze optie is voor dit probleem.)
 
 
-We zullen dus een andere oplossing moeten vinden. Gelukkig zijn er mogelijkheden te over op dit gebied. Ik zal er in deze blog twee behandelen: overerving en compositie met [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection "'Dependency injection', Wikipedia") (DI).
+We zullen dus een andere oplossing moeten vinden. Gelukkig zijn er mogelijkheden te over op dit gebied. Ik zal er in deze blog twee behandelen: overerving en compositie met [*dependency injection*](https://en.wikipedia.org/wiki/Dependency_injection "'Dependency injection', Wikipedia") (DI).
 
 
 ## Toetsen publiceren (1)
@@ -115,61 +115,10 @@ We hebben een extra parameter toegevoegd, `metadataFormat`, die ons in staat ste
 Het probleem van deze oplossing is dat de code nu niet meer het [*Single-Responsibility Principe*](/tags/single-responsibility-principe/ "Blogs met de tag 'single-responsibility principe'") (SRP) -- de S in [SOLID](/tags/solid/ "Blogs met de tag 'SOLID'") -- respecteert. Deze class heeft, als het op de metadata aankomt, twee verantwoordelijkheden: het genereren van metadata à la *x* en het genereren van metadata à la *y*. 
 
 
-## Asymmetrische overerving
+## Overerving
 
 
-Het liefst zouden we beide verantwoordelijkheden naar elk hun eigen class abstraheren.
-
-
-In de praktijk kom ik regelmatig constructies tegen als deze:
-
-
-```cs
-public class AssessmentTestPublisherX 
-{
-    public PublishedTest Publish(AssessmentTest test)
-    {
-        var testContent = ConvertTestContent(test);
-        var metadata = ConvertMetdata(test);
-        return new PublishedTest(testContent, metadata);
-    }
-
-    private XDocument ConvertTestContent(AssessmentTest test)
-    {
-        // Transform AssessmentTest to XML 
-    }
-
-    protected virtual XDocument ConvertMetdata(AssessmentTest test)
-    {
-        // Transform Metadata to XML 
-        // for standard x
-    }
-}
-
-public class AssessmentTestPublisherY : AssessmentTestPublisherX
-{
-    protected override XDocument ConvertMetadata(AssessmentTest test)
-    {
-        // Transform Metadata to XML 
-        // for standard y
-    }
-}
-```
-
-
-Er wordt hier gebruik gemaakt van overerving om codeduplicatie te voorkomen. De delen van de code die hergebruikt worden, staan in de baseclass, de delen die moeten variëren worden in de subclass overschreven met de variant in kwestie.
-
-
-Mijn voornaamste probleem met deze oplossingsrichting is, als ik eerlijk ben, van esthetische aard. Scenario *x* en *y* zijn gelijkwaardig aan elkaar, maar om de een of andere reden is de code voor *x* in de baseclass terechtgekomen en die van *y* in de subclass. Dat suggereert dat *x* op de een of andere manier primair is ten opzichte van *y*, en dat is niet het geval.
-
-
-Ik heb geen idee of er al een term bestaat voor deze praktijk. Ik noem het "asymmetrische overerving" -- de redenen waarom laten zich hopelijk raden.
-
-
-## Symmetrische overerving
-
-
-Een nettere oplossing zou de volgende zijn:
+Het liefst zouden we beide verantwoordelijkheden naar elk hun eigen class abstraheren. Overerving biedt ons de mogelijkheid dat te doen. We zouden een ervende class kunnen introduceren met de verantwoordelijkheid voor het genereren van de correcte metadata:
 
 
 ```cs
@@ -210,10 +159,10 @@ public class AssessmentTestPublisherY : AssessmentTestPublisher
 ```
 
 
-De gedeelde logica zit in een baseclass, en de varianten zijn nu elk in hun eigen subclass ondergebracht. De manier van overerven is symmetrisch, zou je kunnen zeggen. De code voelt alsof deze in evenwicht is.
+De gedeelde logica zit in een baseclass, en de varianten zijn elk in hun eigen subclass ondergebracht. 
 
 
-Maar ook deze oplossingsrichting is niet ideaal. Want de overerving heeft gezorgd voor een sterke koppeling tussen de code in de baseclass en die in de subclasses. De code om de metadata in het juiste formaat te genereren kan niet los worden gezien van de code om toetsen naar QTI om te zetten.
+Maar ook deze oplossingsrichting is niet ideaal. Want de overerving heeft gezorgd voor een sterke [koppeling](https://en.wikipedia.org/wiki/Coupling_(computer_programming) "'Coupling (computer programming)', Wikipedia") tussen de code in de baseclass en die in de subclasses. De code om de metadata in het juiste formaat te genereren kan niet los worden gezien van de code om toetsen naar QTI om te zetten.
 
 
 Dat hoeft niet erg te zijn -- en in ons versimpelde voorbeeld is het dat ook niet. Maar een vaak gezien gevolg hiervan is dat code die in base- en subclasses leeft, steeds meer met elkaar verweven raakt. Methods in subclasses roepen methods in baseclasses aan, methods in baseclasses vertrouwen op logica in subclasses. Dat komt de onderhoudbaarheid van de code niet ten goede. Code wijzigen wordt een netelige onderneming.
@@ -228,7 +177,7 @@ Met name wanneer de overervingsstructuren dieper worden, neemt de complexiteit e
 Dit is het punt waarop ik voorzichtig het punt in zou willen brengen dat overerving niet de enige manier is om codeduplicatie tegen te gaan. Als we onze classes op een andere manier op zouden zetten, dan zouden we helemaal geen behoefte hebben aan overerving -- en zo alle problemen voorkomen die erbij komen kijken.
 
 
-In de objectgeoriënteerde wereld is het een mantra: [*composition over inheritance*](https://en.wikipedia.org/wiki/Composition_over_inheritance "'Composition over inheritance', Wikipedia"). Je zou compositie kunnen karakteriseren als het opbouwen van een complex type uit meerdere eenvoudiger typen. 
+In de objectgeoriënteerde wereld is het een mantra: [*composition over inheritance*](https://en.wikipedia.org/wiki/Composition_over_inheritance "'Composition over inheritance', Wikipedia"). Je zou compositie kunnen karakteriseren als het opbouwen van een complex type uit eenvoudiger typen. 
 
 
 In plaats van één class te hebben met daarin alle functionaliteit, splits je deze op in kleinere classes die elk verantwoordelijk zijn voor hun eigen deelfunctionaliteit. De uiteindelijke functionaliteit ontstaat uit de samenwerking tussen de verschillende classes.
@@ -329,7 +278,7 @@ public interface IMetadataConverter
 ```
 
 
-De `AssessmentTestPublisher` moet gebruik gaan maken van deze interface, in plaats van de concrete class. Daarvoor moeten er twee dingen gebeuren. Ten eerste moet het type van `_metadata` omgezet worden naar de interface -- eenvoudig genoeg. Ten tweede moet de instantiatie van de `MetadataConverter` uit de constructor van de `AssessmentTestPublisher` worden gehaald. Die verantwoordelijkheid delegeren we naar de class die de `AssessmentTestPublisher` instantieert: we gebruiken *dependency injection* (DI):
+De `AssessmentTestPublisher` moet gebruik gaan maken van deze interface, in plaats van de concrete class. Daarvoor moeten er twee dingen gebeuren. Ten eerste moet het type van `_metadata` omgezet worden naar de interface -- eenvoudig genoeg. Ten tweede moet de instantiatie van de `MetadataConverter` uit de constructor van de `AssessmentTestPublisher` worden gehaald. Die verantwoordelijkheid delegeren we naar de class die de `AssessmentTestPublisher` instantieert: we gebruiken DI:
 
 
 ```cs
@@ -394,7 +343,7 @@ var y = new AssessmentTestPublisher(new MetadataConverterY());
 ## Krachtig
 
 
-We hebben ons doel bereikt. We kunnen toetsen publiceren voor verschillende afnameomgevingen zonder onnodige codeduplicatie te hebben geïntroduceerd. Maar belangrijker nog: we hebben dat gedaan zonder een harde koppeling tussen de logica die toetsen publiceert en die metadata converteert. Daarmee houden we de code flexibel en voorkomen we dat beide verantwoordelijkheden met elkaar verknoopt raken.
+We hebben ons doel bereikt. We kunnen toetsen publiceren voor verschillende afnameomgevingen zonder onnodige codeduplicatie te hebben geïntroduceerd. Maar belangrijker nog: we hebben dat gedaan zonder een harde koppeling tussen de logica die toetsen publiceert en die metadata converteert. Daarmee houden we de code flexibel en leesbaar, en voorkomen we dat beide verantwoordelijkheden met elkaar verknoopt raken.
 
 
 Compositie is -- zeker in combinatie met DI -- een krachtig middel in objectgeoriënteerd programmeren. Helaas zie ik mijn collega's nog te vaak reflexief grijpen naar overerving, daar waar betere oplossingsrichtingen voorhanden zijn. (Waarmee ik overigens niet wil impliceren dat overerving *nooit* de juiste oplossing is voor een probleem, integendeel. Mijn probleem ligt bij het *gedachteloos* grijpen naar overerving als oplossingsrichting, in plaats van verschillende mogelijkheden af te wegen.) 

@@ -148,7 +148,7 @@ De symmetrische ("mooie") variant voelt alsof deze in evenwicht is. De code comm
 De asymmetrische ("lelijke") legt daarentegen de nadruk op de ene optie, en presenteert de tweede duidelijk *als alternatief*, secundair ten opzichte van de eerste. De lelijke code communiceert naar haar lezer -- je collega, of jijzelf over een paar maanden --: "Deze variant is echt alleen in *dit* geval relevant. Kies in normale gevallen liever de normale versie."
 
 
-De vraag die we ons moeten stellen is niet: is deze code mooi? Dit gaat niet over mooi of lelijk. De vraag die we ons moeten stellen is: is deze code *waar*? Zijn scenario *x* en *y* inderdaad gelijkwaardig aan elkaar -- of juist niet? Zo nee, dan is het wellicht beter om de alternatieve, "lelijke" implementatie te verkiezen boven de "mooie".
+De vraag die we ons moeten stellen is niet: is deze code mooi? Dit gaat niet over mooi of lelijk. De vraag die we ons moeten stellen is: is deze code *waar*? (Zie ook [deze blog](/blog/21/09/waarheid-boven-schoonheid/ "'Waarheid boven schoonheid'")) Zijn scenario *x* en *y* inderdaad gelijkwaardig aan elkaar -- of juist niet? Zo nee, dan is het wellicht beter om de alternatieve, "lelijke" implementatie te verkiezen boven de "mooie".
 
 
 ## Nuance
@@ -160,7 +160,7 @@ Code -- alle code, ook wegwerpwegcode -- zit bomvol betekenisnuances als deze. O
 De manier waarop we onze boodschap overbrengen, verdient onze zorg en aandacht. Hoe meer aandacht we tijdens het schrijven van de code besteden aan de manier waarop deze gelezen zal worden, hoe eenvoudiger ons dat lezen af zal gaan. En het is een algemeen bekend feit dat code veel vaker gelezen wordt dan dat het wordt geschreven.
 
 
-Het is precies om deze reden dat ik (in bijvoorbeeld [mijn vorige blog] (OVERERVING_COMPOSITIE)) zo ageer tegen de (of: de vermeende) gedachteloosheid waarmee ik soms zie dat er ook code is en wordt geschreven -- ook door mezelf, overigens. Wie op de automatische piloot schrijft, mist een kans -- de kans om te stoppen met schrijven, na te denken over wat je code zegt, en jezelf af te vragen of dat een accurate afspiegeling vormt van je begrip op dat moment.
+Het is precies om deze reden dat ik (in bijvoorbeeld [mijn vorige blog] (OVERERVING_COMPOSITIE)) zo ageerde tegen de (of: de vermeende) gedachteloosheid waarmee ik soms zie dat er ook code is en wordt geschreven -- ook door mezelf, overigens. Wie op de automatische piloot schrijft, mist een kans -- de kans om te stoppen met schrijven, na te denken over wat je code zegt, en jezelf af te vragen of dat een accurate afspiegeling vormt van je begrip op dat moment.
 
 
 Wie dat doet, kan alleen maar winnen. Want het antwoord is ofwel "ja" -- en dan kun je vrolijk doorschrijven --, of het is "nee" -- en dan is het niet alleen handig om je code (en daarmee je begrip) te verfijnen, het is noodzaak.

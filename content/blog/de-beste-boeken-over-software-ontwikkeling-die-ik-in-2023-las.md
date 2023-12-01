@@ -76,7 +76,7 @@ Ford heeft een interessant perspectief op de materie: met FP besteden ontwikkela
 ### Daniel C. Dennett - [Darwin's Dangerous Idea: Evolution and the Meanings of Life](https://www.penguin.co.uk/books/15596/darwins-dangerous-idea-by-daniel-cdennett/9780140167344)
 
 
-Dit is geen boek over softwareontwikkeling, maar het is -- en dat had ik op voorhand niet verwacht -- wel een boek over *design*. Dat maakte Daniel Dennetts filosofische ontleding van de evolutietheorie een fascinerende leeservaring voor mij als filosoof-annex-softwareontwikkelaar. Die fascinatie legde ik in mijn zomervakantie vast in twee blogs -- [hier](/blog/23/09/coderen-met-luchthaken-en-hijskranen/ "'Coderen met luchthaken en hijskranen'") en [hier](/blog/23/10/evolutionair-programmeren/ "'Evolutionair programmeren'") --, en dat zegt wat, want tijdens mijn vakantie wil ik helemaal niet over mijn werk nadenken.
+Dit is geen boek over softwareontwikkeling, maar het is -- en dat had ik op voorhand niet verwacht -- wel een boek over ontwerp, *design*. Dat maakte Daniel Dennetts filosofische ontleding van de evolutietheorie een fascinerende leeservaring voor mij als filosoof-annex-softwareontwikkelaar. Die fascinatie legde ik in mijn zomervakantie vast in twee blogs -- [hier](/blog/23/09/coderen-met-luchthaken-en-hijskranen/ "'Coderen met luchthaken en hijskranen'") en [hier](/blog/23/10/evolutionair-programmeren/ "'Evolutionair programmeren'") --, en dat zegt wat, want tijdens mijn vakantie wil ik helemaal niet over mijn werk nadenken.
 
 
 Evolutie is sowieso een terugkerend thema in deze toplijst. *Monolith to Microservices* is het meest voor de hand liggende voorbeeld -- evolutie zit nota bene in de ondertitel van het boek. Maar ook *The Mikado Method* beziet code als een evoluerende entiteit, en hetzelfde kan gezegd worden van de voorbeelden in *Dependency Injection*.
@@ -85,4 +85,4 @@ Evolutie is sowieso een terugkerend thema in deze toplijst. *Monolith to Microse
 Het afgelopen jaar is me meer dan ooit duidelijk geworden dat softwaresystemen niet statisch zijn. Goede software kent geen bouwfase en geen onderhoudsfase: beide lopen naadloos in elkaar over. Goede software past zich continu aan aan zijn omgeving. Daar zijn kleine, gecontroleerde veranderingen in gedrag (en onderliggend: code) voor nodig, die gevalideerd moeten worden door het systeem "in het wild" los te laten.
 
 
-Als softwaresystemen (noodgedwongen) evolutionerende entiteiten zijn, dan kunnen wij als ontwikkelaars veel over ons vak leren door ons te verdiepen in de evolutietheorie.
+Als softwaresystemen (noodgedwongen) evoluerende entiteiten zijn, dan kunnen wij als ontwikkelaars veel over ons vak leren door ons te verdiepen in de evolutietheorie.

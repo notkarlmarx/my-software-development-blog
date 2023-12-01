@@ -1,14 +1,14 @@
 ---
 title: "Codefluisteren"
 author: "Karl van Heijster"
-date: 2023-10-20T13:01:29+02:00
-draft: true
+date: 2023-12-01T04:23:21+01:00
+draft: false
 comments: true
 tags: ["beroepsdeformatie", "clean code", "intentie van code", "software ontwikkelaar (rol)"]
 summary: "Een goede codefluisteraar kan in een stuk code werken en hoort dan -- aanvankelijk zachtjes, maar met ervaring steeds duidelijker -- plots een probleem. Het probleem is niet: de code werkt niet. Het probleem is: ik als ontwikkelaar ben nu harder aan het werk dan de code."
 ---
 
-Eén van de dingen die een alleraardigste programmeur van een goede softwareontwikkelaar onderscheidt, is iets wat ik tijdens mijn filosofische overpeinzingen "codefluisteren" ben gaan noemen.
+Eén van de dingen die een alleraardigste programmeur van een goede softwareontwikkelaar onderscheidt, is iets wat ik tijdens mijn [filosofische overpeinzingen](/tags/filosofie/ "Blogs met de tag 'filosofie'") "codefluisteren" ben gaan noemen.
 
 
 Codefluisteren is het vermogen te horen wat de code niet hardop zegt.
@@ -41,7 +41,7 @@ Maar mensen, waaronder jijzelf, *lezen* niet alleen code, ze *werken* er ook mee
 Sommige ontwikkelaars accepteren dat programmeren moeilijk is, frustrerend. Zij zijn doof voor wat de code hen, soms oorverdovend, toefluistert -- en programmeren stug verder.
 
 
-Een codefluisteraar stopt regelmatig met het schrijven van nieuwe functionaliteit, om de structuur van de code tegen het licht te kunnen houden -- en te beslissen of zijn volgende stap moet zijn: meer functionaliteit ontwikkelen, of de structuur opschonen?
+Een codefluisteraar stopt regelmatig met het schrijven van nieuwe functionaliteit, om de structuur van de code tegen het licht te kunnen houden -- en te beslissen of zijn volgende stap moet zijn: meer functionaliteit ontwikkelen, of de structuur veranderen?
 
 
 Welke keuze de codefluisteraar maakt, hangt af van wat de code hem influistert.

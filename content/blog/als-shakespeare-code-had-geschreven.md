@@ -8,6 +8,10 @@ tags: ["poëzie"]
 summary: "*Zouden jij en ik elkaar zijn sonnetten geven, / als William Shakespeare code had geschreven? / Zeg maar: brengt `i.Compare(thee, summersDay)` / je in vervoering of valt dat wel mee?*"
 ---
 
+
+[1 januari bonusblog!]
+
+
 **Codeklaagzang**
 
 <br>

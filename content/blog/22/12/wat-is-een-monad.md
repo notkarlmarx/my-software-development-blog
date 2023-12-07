@@ -48,7 +48,7 @@ Geen wonder dat [Sander Hoogendoorn](https://sanderhoogendoorn.com/) *monads* [Ã
 ## `Bind` en `Map`
 
 
-[Eerder heb ik het over *functors* gehad](/blog/22/10/wat-is-een-functor/) - en *monads* hebben daar wel wat van weg. Een *functor* implementeert de `Map`-functie, en die heeft wel wat weg van de `Bind` (waarbij `F` staat foor "*functor*"): `(F<T>, (T -> R)) -> F<R>`. 
+[Eerder heb ik het over *functors* gehad](/blog/22/10/wat-is-een-functor/) - en *monads* hebben daar wel wat van weg. Een *functor* implementeert de `Map`-functie, en die heeft wel wat weg van de `Bind` (waarbij `F` staat voor "*functor*"): `(F<T>, (T -> R)) -> F<R>`. 
 
 
 Het verschil tussen beide zit 'm in de tweede parameter. `Bind` is bedoeld om *monads* te kunnen chainen. `Map` is daar niet voor geschikt. Als je `Map` zou loslaten op een *monad* dan levert dat geneste *monads* op. [Enrico Buonanno](https://twitter.com/la_yumba) geeft in [*Functional Programming in C# (Second Edition)*](https://www.manning.com/books/functional-programming-in-c-sharp-second-edition) het volgende voorbeeld daarvan:

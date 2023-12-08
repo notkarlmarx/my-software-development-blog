@@ -16,7 +16,7 @@ Als een functie me een object `T` teruggeeft *of niet*, dan codeer ik dat netjes
 
 ```cs
 var result = GetOption(true).Match(
-    o => o,
+    value => value,
     () => "No value");
 
 private Option<string> GetOption(bool some) =>
@@ -37,12 +37,12 @@ Hartstikke handig!
 
 ```cs
 var result = GetOption1().Match(
-    o1 => GetOption2(o1).Match(
-        o2 => GetOption3(o2).Match(
-            o3 => DoSomething(o3),
-            () => "No Option 3"),
-        () => "No Option 2"),
-    () => "No Option 1");
+    v1 => GetOption2(v1).Match(
+        v2 => GetOption3(v2).Match(
+            v3 => DoSomething(v3),
+            () => "No value 3"),
+        () => "No value 2"),
+    () => "No value 1");
 ```
 
 
@@ -65,7 +65,7 @@ Maar we kunnen de afhandeling van beide scenario's ook uitstellen. Dat krijgen w
 var result = GetOption1()
     .Bind(GetOption2)
     .Bind(GetOption3)
-    .Match(DoSomething, () => "No Option 1, 2 or 3");
+    .Match(DoSomething, () => "No value 1, 2 or 3");
 ```
 
 
@@ -80,12 +80,12 @@ De code hierboven is functioneel (*no pun intended*) equivalent aan deze:
 
 ```cs
 var result = GetOption1().Match(
-    o1 => GetOption2(o1).Match(
-        o2 => GetOption3(o2).Match(
-            o3 => DoSomething(o3),
-            () => "No Option 1, 2 or 3"),
-        () => "No Option 1, 2 or 3"),
-    () => "No Option 1, 2 or 3");
+    v1 => GetOption2(v1).Match(
+        v2 => GetOption3(v2).Match(
+            v3 => DoSomething(v3),
+            () => "No value 1, 2 or 3"),
+        () => "No value 1, 2 or 3"),
+    () => "No value 1, 2 or 3");
 ```
 
 Dat lijkt redelijk op de oorspronkelijke *pyramid of doom*, maar niet helemaal. Wat we nog missen is een unieke afhandeling voor elk individueel geval van `None`. Hoe krijgen we dat voor elkaar?
@@ -110,9 +110,9 @@ Dat leidt tot:
 
 
 ```cs
-var result = GetOption1().ToEither("No Option 1")
-    .Bind(o1 => GetOption2(o1).ToEither("No Option 2"))
-    .Bind(o2 => GetOption3(o2).ToEither("No Option 3"))
+var result = GetOption1().ToEither("No value 1")
+    .Bind(v1 => GetOption2(v1).ToEither("No value 2"))
+    .Bind(v2 => GetOption3(v2).ToEither("No value 3"))
     .Match(DoSomething, errorMessage => errorMessage);
 ```
 
@@ -124,10 +124,10 @@ Is dit fantastisch leesbare code? Ik ben er nog niet over uit. Maar onze reis st
 
 
 ```cs
-var result = (from o1 in GetOption().ToEither("No Option 1")
-             from o2 in GetOption2(o1).ToEither("No Option 2")
-             from o3 in GetOption3(o2).ToEither("No Option 3")
-             select o3)
+var result = (from v1 in GetOption().ToEither("No value 1")
+             from v2 in GetOption2(v1).ToEither("No value 2")
+             from v3 in GetOption3(v2).ToEither("No value 3")
+             select v3)
              .Match(DoSomething, errorMessage => errorMessage)
 ```
 

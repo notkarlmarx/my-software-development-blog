@@ -67,7 +67,7 @@ Dat is in een notendop wat de auteurs de Mikado-methode noemen. Het is een eenvo
 ### 5. Neal Ford - [*Functional Thinking: Paradigm Over Syntax*](https://www.oreilly.com/library/view/functional-thinking/9781449365509/)
 
 
-Mijn *aha!-erlebnis* met betrekking tot functioneel programmeren (FP) had ik vorig jaar al, toen ik [Enrico Buonanno](https://twitter.com/la_yumba)'s [Functional Programming in C#](https://www.manning.com/books/functional-programming-in-c-sharp-second-edition) las, maar deze handzame inleiding in het functionele paradigma vormt daar een prima aanvulling op. 
+Mijn *aha!-erlebnis* met betrekking tot functioneel programmeren (FP) had ik vorig jaar al, toen ik [Enrico Buonanno](https://twitter.com/la_yumba)'s [*Functional Programming in C#*](https://www.manning.com/books/functional-programming-in-c-sharp-second-edition) las, maar deze handzame inleiding in het functionele paradigma vormt daar een prima aanvulling op. 
 
 
 [Ford](https://nealford.com/) heeft een interessant perspectief op de materie: met FP besteden ontwikkelaars *low level concerns* uit aan de ontwikkelaars van functionele talen. Het wordt niet meer de taak van een ontwikkelaar om te specificeren *hoe* een systeem iets moet doen, maar zoveel mogelijk *wat* deze moet doen. Dat maakt ons leven eenvoudiger -- om voor de hand liggende redenen. Maar komt ook de kwaliteit (waaronder performance) van de code ten goede, want de kans dat de ontwerpers van een taal die *low level concerns* beter zullen implementeren dan jij is -- wees eerlijk -- aanzienlijk.

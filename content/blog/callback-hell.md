@@ -147,13 +147,13 @@ En tóch ben ik nog niet helemaal uitgepraat over dit stuk code. Want hoe leuk i
 Dit is de gewetensvraag die elke ontwikkelaar zich moet stellen: *is het verstandig dit soort code te introduceren in je codebase?*
 
 
-Want hoe elegant en leesbaar het resultaat ook is, functionele C# is verre van idiomatische C#. Wat gebeurt er wanneer mijn teamgenoten een bug in mijn code lokaliseren? Kunnen ze deze nog zonder mijn hulp oplossen? En wat gebeurt er wanneer het team een nieuwe collega mag verwelkomen? Begrijpt deze wat er hier gebeurt? Wat als 'ie vers is afgestudeerd van de hogeschool? En als 'ie een doorgewinterde C#-veteraan is?
+Want hoe elegant en leesbaar het resultaat ook is, functionele C# is verre van idiomatische C#. Wat gebeurt er wanneer mijn teamgenoten een bug in mijn code lokaliseren? Kunnen ze deze nog zonder hulp (of zonder onnodig lange debugsesies) oplossen? En wat gebeurt er wanneer het team een nieuwe collega mag verwelkomen? Begrijpt deze wat er hier gebeurt? Wat als 'ie vers is afgestudeerd van de hogeschool? En als 'ie een doorgewinterde C#-veteraan is?
 
 
 Ik zal eerlijk zijn. Hoe mooi ik functionele code ook vind, ik weet niet of het nu per se zo'n goede keus was om mijn code op die manier te schrijven. 
 
 
--- Maar het duiveltje op mijn linkerschouder voegt daaraan toe: maar zo lang niemand me tegenhoudt, zal ik er mee doorgaan. Het engeltje aan de rechterkant brengt hoopvol in dat het team er misschien nog wat van opsteekt.
+-- Maar het duiveltje op mijn linkerschouder voegt daaraan toe: maar zo lang niemand me tegenhoudt, zal ik er mee doorgaan. Het engeltje aan de rechterkant brengt hoopvol in dat het team em ik er misschien nog wat van opsteken.
 
 
 

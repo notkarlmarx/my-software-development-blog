@@ -110,7 +110,7 @@ Het is eenvoudiger een functie te hergebruiken dan een nieuwe te schrijven. Maar
 In onze wens om code eenvoudig te houden introduceren we lokale instanties van nodeloze complexiteit.
 
 
-(Dat is ook waarom er andere testdesiderate bestaan voor globale en lokale functies. Een vuistregel: een lokale functie kun je als implementatiedetail testen van een groter geheel; globale functies test je in isolatie. Beide soorten tests vertellen de lezer wat over de intentie van de code: *dit* is niet bedoeld om door iets anders aangeroepen te worden, en daarom gebeurt dat ook niet in deze test; *dat* is wél bedoeld om op verschillende plekken in de codebase gebruikt te worden, en deze tests tonen hoe je dat doet.)
+(Dat is ook waarom er andere testdesiderata bestaan voor globale en lokale functies. Een vuistregel: een lokale functie kun je als implementatiedetail testen van een groter geheel; globale functies test je in isolatie. Beide soorten tests vertellen de lezer wat over de intentie van de code: *dit* is niet bedoeld om door iets anders aangeroepen te worden, en daarom gebeurt dat ook niet in deze test; *dat* is wél bedoeld om op verschillende plekken in de codebase gebruikt te worden, en deze tests tonen hoe je dat doet.)
 
 
 ## Taal en betekenis

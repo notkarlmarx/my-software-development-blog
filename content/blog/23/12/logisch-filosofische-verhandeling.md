@@ -1,8 +1,8 @@
 ---
 title: "Logisch-filosofische verhandeling"
 author: "Karl van Heijster"
-date: 2023-11-02T13:36:21+01:00
-draft: true
+date: 2023-12-15T07:57:51+01:00
+draft: false
 comments: true
 tags: ["boeken", "DRY", "eenvoud", "filosofie", "intentie van code", "testen", "Wittgenstein, Ludwig"]
 summary: "Ik spijkerde mijn Wittgenstein onlangs bij, het deed me (omdat ik, zie je, een beroepsdeformatie heb) denken aan softwareontwikkeling."
@@ -38,22 +38,22 @@ Daaruit volgt dat de betekenis bij de definitie van het teken ondubbelzinnig is 
 Wittgenstein geeft een voorbeeld van zo'n operatie: de ontkenning, negatie ("*~*"). Deze operatie keert de waarheidswaarde van een propositie om. "Het regent niet" is waar als het niet regent en onwaar als het dat wel doet. "Het regent niet niet" is waar als het regent en onwaar als het dat niet doet.
 
 
-Wat het betekent om de waarheidswaarde van een propositie om te keren, is -- *moet*? -- voor elke mogelijke propositie bepaald zijn. Dat is waarom we precies kunnen berekenen wat de omgekeerde waarheidswaarde van de ontkenning van een samengestelde propositie ("*p v q*") vormt.
+Wat het betekent om de waarheidswaarde van een propositie om te keren, is voor elke mogelijke propositie bepaald. Dat is waarom we precies kunnen berekenen wat de omgekeerde waarheidswaarde van de ontkenning van een samengestelde propositie ("*p v q*") vormt.
 
 
 ## In context
 
 
-Ik herlas de *Tractatus* omdat ik een boek recenseerde, [*Tractatus in Context: The Essential Background for Appreciating Wittgenstein's Tractatus Logico-Philosophicus*](https://www.routledge.com/Tractatus-in-Context-The-Essential-Background-for-Appreciating-Wittgensteins/Klagge/p/book/9780367465568) van [James C. Klagge](http://jamesklagge.net/). Het gros van het boek bestaat uit het propositie voor propositie becommentarieëren van Wittgensteins meesterwerk. Klagge voorziet de lezer van filosofische achtergronden -- veel [Russell](https://plato.stanford.edu/entries/russell/ "'Bertrand Russell', Stanford Encyclopedia of Philosophy") en [Frege](https://plato.stanford.edu/entries/frege/ "'Gottlob Frege', Stanford Encyclopedia of Philosophy"), hier en daar wat [Schopenhauer](https://plato.stanford.edu/entries/schopenhauer/ "'Arthur Schopenhauer', Stanford Encyclopedia of Philosophy") en [Kant](https://plato.stanford.edu/entries/kant/ "'Immanuel Kant', Stanford Encyclopedia of Philosophy") --, wijst naar verhelderende passages uit dagboeken en brieven, wijdt uit over de historische context. Het is een feest, echt waar -- maar alleen voor de *die hard* Wittgensteiniaan.
+Ik herlas de *Tractatus* omdat ik een boek recenseerde, [*Tractatus in Context: The Essential Background for Appreciating Wittgenstein's Tractatus Logico-Philosophicus*](https://www.routledge.com/Tractatus-in-Context-The-Essential-Background-for-Appreciating-Wittgensteins/Klagge/p/book/9780367465568) van [James C. Klagge](http://jamesklagge.net/).[^2] Het gros van het boek bestaat uit het propositie voor propositie becommentarieëren van Wittgensteins meesterwerk. Klagge voorziet de lezer van filosofische achtergronden -- veel [Russell](https://plato.stanford.edu/entries/russell/ "'Bertrand Russell', Stanford Encyclopedia of Philosophy") en [Frege](https://plato.stanford.edu/entries/frege/ "'Gottlob Frege', Stanford Encyclopedia of Philosophy"), hier en daar wat [Schopenhauer](https://plato.stanford.edu/entries/schopenhauer/ "'Arthur Schopenhauer', Stanford Encyclopedia of Philosophy") en [Kant](https://plato.stanford.edu/entries/kant/ "'Immanuel Kant', Stanford Encyclopedia of Philosophy") --, wijst naar verhelderende passages uit dagboeken en brieven, wijdt uit over de historische context. Het is een feest, echt waar -- maar alleen voor de *die hard* Wittgensteiniaan.
 
 
 In zijn commentaar op §5.451 wijst Klagge op de invloed van [Freges *Grundgesetze der Arithmetik*](https://plato.stanford.edu/entries/frege-theorem/ "'Frege’s Theorem and Foundations for Arithmetic', Stanford Encyclopedia of Phisosophy"). Maar hij citeert [Giuseppe Peano](https://nl.wikipedia.org/wiki/Giuseppe_Peano "'Giuseppe Peano', Wikipedia"), een Italiaans wiskundige-filosoof-logicus:
 
 
-> But if the *definiendum* contains variable letters,... then, so far as I can see, it is in general necessary to give conditional or hypothetical definitions of the expression, and to give as many definitions as there are kinds of entities on which we perform this operation. Thus, the formula *a + b* will be first defined when *a* and *b* are integers, then a second time when they are fractions, then again when they are irrational or complex...[^2]
+> But if the *definiendum* contains variable letters,... then, so far as I can see, it is in general necessary to give conditional or hypothetical definitions of the expression, and to give as many definitions as there are kinds of entities on which we perform this operation. Thus, the formula *a + b* will be first defined when *a* and *b* are integers, then a second time when they are fractions, then again when they are irrational or complex...[^3]
 
 
-Volgens Peano ligt de betekenis van een teken -- in sommige gevallen althans -- helemaal niet voor alle mogelijke proposities vast. Natuurlijke getallen en irrationele getallen zijn allebei getallen, maar daar volgt niet uit dat je weet hoe je *π + √2* moet uitrekenen, alleen omdat je *7 + 5* wel kan. Er ligt een betekenis vast voor het optellen van natuurlijke getallen, en een betekenis vast voor het optellen van irrationele, en beide worden vertegenwoordigd door het *+*-teken.
+Volgens Peano ligt de betekenis van een teken -- in sommige gevallen althans -- helemaal niet voor alle mogelijke proposities vast. Natuurlijke getallen en irrationele getallen zijn allebei getallen, maar daar volgt niet uit dat je weet hoe je *π + √2* moet uitrekenen, alleen omdat je dat voor *7 + 5* wel weet. Er ligt een betekenis vast voor het optellen van natuurlijke getallen, en een betekenis vast voor het optellen van irrationele, en beide worden vertegenwoordigd door het *+*-teken.
 
 
 ## *(Flash forward)*
@@ -77,7 +77,7 @@ Wat er gebeurd is, is dat er een *keuze* gemaakt wordt bij het definiëren van e
 Is de betekenis in context *a* hetzelfde als in context *b*? In sommige gevallen wel. Maar andere gevallen komen maar in één van beide contexten voor, daar kunnen we de vergelijking niet maken. (Ongemerkt herinterpreteren we "betekent hetzelfde" als "gedraagt zich niet anders dan" -- en zo lost de verschuiving in betekenis op voor onze ogen.)
 
 
-Uiteindelijk zo Wittgenstein Peano gelijk geven. Klagge citeert enkele relevante passages uit [*Philosophical Investigations*](https://en.wikipedia.org/wiki/Philosophical_Investigations "'Philosophical Investigations', Wikipedia") §§66-71:
+Uiteindelijk zou Wittgenstein Peano gelijk geven. Klagge citeert enkele relevante passages uit [*Philosophical Investigations*](https://en.wikipedia.org/wiki/Philosophical_Investigations "'Philosophical Investigations', Wikipedia") §§66-71:
 
 
 > With the progress of science the meaning of this same formula is always being further extended. The various meanings of the symbol *a + b* have common properties; but these are insufficient to determine all the values that this expression can have... I do not see how they suffice to determine all the possible meanings...
@@ -86,7 +86,7 @@ Uiteindelijk zo Wittgenstein Peano gelijk geven. Klagge citeert enkele relevante
 # II.
 
 
-Deze gedachten schoten in één flits allemaal door mijn hoofd toen ik op [Techorama](https://techorama.nl/) een praatje bijwoonde van [Dennis Doomen](https://www.continuousimprover.com/) over zijn ervaringen met het oplappen van *legacy*-software. Hij had het over het dupliceren van methods. De zaal was in oproer: * -- maar hoe zit het met DRY?!*
+Deze gedachten schoten in één flits allemaal door mijn hoofd toen ik op [Techorama](https://techorama.nl/) een praatje bijwoonde van [Dennis Doomen](https://www.continuousimprover.com/) over zijn ervaringen met het oplappen van *legacy*-software. Hij had het over het dupliceren van methods. De zaal was in oproer: *-- maar hoe zit het met DRY?!*
 
 
 Ik zit in team Doomen. [DRY (Don't Repeat Yourself)](/tags/dry/ "Blogs met de tag 'DRY'") gaat over duplicatie van informatie (en dus niet, zoals soms gedacht, over duplicatie van code!). Wanneer dezelfde informatie op verschillende plekken gedefinieerd staat in de codebase, dan moeten we deze op verschillende plekken wijzigen als deze dient te veranderen. 
@@ -101,7 +101,7 @@ Ik zit in team Doomen. [DRY (Don't Repeat Yourself)](/tags/dry/ "Blogs met de ta
 Met code is het anders. Niet alle gelijkvormige code heeft een zelfde functie. Een boodschappenlijstje lijkt op een *to do*-lijstje, maar dient een ander doel. We hoeven het soort papier waarop beide gekrabbeld worden niet gelijk te trekken om hen hun doel te laten vervullen.
 
 
-Sterker nog, die wens pakt regelmatig in ons nadeel uit. Wanneer je een lokale functie schrijft, dan kan en mag je aannames doen over de omstandigheden van die functie. Voor globale functies geldt die luxe niet. De prijs voor de uiterlijke contextonafhankelijkheid van zulke functies moet worden opgehoest door innerlijk alle mogelijke contexten te overwegen. -- De vraag is: wegen de kosten van die innerlijke complexiteit op tegen de baten van contextonafhankelijkheid? 
+Sterker nog, die wens pakt regelmatig in ons nadeel uit. Wanneer je een lokale functie schrijft, dan kan en mag je aannames doen over de context van die functie. Voor globale functies geldt die luxe niet. De prijs voor de uiterlijke contextonafhankelijkheid van zulke functies moet worden opgehoest door innerlijk alle mogelijke contexten te overwegen. -- De vraag is: wegen de kosten van die innerlijke complexiteit op tegen de baten van contextonafhankelijkheid? 
 
 
 Het is eenvoudiger een functie te hergebruiken dan een nieuwe te schrijven. Maar het is eenvoudiger een nieuwe te schrijven dan een bestaande te herschrijven.
@@ -110,7 +110,7 @@ Het is eenvoudiger een functie te hergebruiken dan een nieuwe te schrijven. Maar
 In onze wens om code eenvoudig te houden introduceren we lokale instanties van nodeloze complexiteit.
 
 
-(Dat is ook waarom er andere testdesiderate bestaan voor globale en lokale functies. Een vuistregel: lokale code kun je als implementatiedetail testen van een groter geheel; globale code test je in isolatie. Beide soorten tests vertellen de lezer (en debugger) wat over de intentie van de code: *dit* is niet bedoeld om door iets anders aangeroepen te worden, en daarom gebeurt dat ook niet in deze test; *dat* is wél bedoeld om door een ontwikkelaar aangeroepen te worden, en deze tests tonen hoe je dat doet.)
+(Dat is ook waarom er andere testdesiderate bestaan voor globale en lokale functies. Een vuistregel: een lokale functie kun je als implementatiedetail testen van een groter geheel; globale functies test je in isolatie. Beide soorten tests vertellen de lezer wat over de intentie van de code: *dit* is niet bedoeld om door iets anders aangeroepen te worden, en daarom gebeurt dat ook niet in deze test; *dat* is wél bedoeld om op verschillende plekken in de codebase gebruikt te worden, en deze tests tonen hoe je dat doet.)
 
 
 ## Taal en betekenis
@@ -130,5 +130,6 @@ Code is niet *als* een taal -- het *is* een taal. De tekens van code -- methods,
 
 [^1]: Vertaling van [C. K. Ogden](https://en.wikipedia.org/wiki/Charles_Kay_Ogden "'Charles Kay Ogden', Wikipedia").
 
+[^2]: De recensie is [hier](https://bazarow.com/recensie/recensie-filosofie-tractatus-in-context/) te vinden.
 
-[^2]: James C. Klagge, *Tractatus in Context*, p. 172.
+[^3]: James C. Klagge, *Tractatus in Context*, p. 172.

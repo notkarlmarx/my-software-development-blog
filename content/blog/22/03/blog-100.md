@@ -100,6 +100,6 @@ Enfin, dat was blog nummer 100! Dat er nog vele moge volgen! *\*champagne ontkur
 
 [^1]: Onlangs verscheen bij [Uitgeverij Boom](https://www.boomfilosofie.nl/) een herdruk van [Bert Keizers](https://nl.wikipedia.org/wiki/Bert_Keizer) [vlotte introductie in diens leven en werk](https://www.boomfilosofie.nl/product/100-10271_Leven-en-werk-van-Ludwig-Wittgenstein). Ik schreef er [hier](https://deleesclubvanalles.nl/recensie/leven-en-werk-van-ludwig-wittgenstein-2/) een recensie over. Ook Wittgensteins [*Tractatus*](https://www.boomfilosofie.nl/product/100-10270_Tractatus) en [*Filosofische Onderzoekingen*](https://www.boomfilosofie.nl/product/100-10272_Filosofische-onderzoekingen) verschenen opnieuw, en ook dáár schreef ik recensies over: [hier](https://deleesclubvanalles.nl/recensie/tractatus-logisch-filosofische-verhandeling/) en [hier](https://deleesclubvanalles.nl/recensie/filosofische-onderzoekingen/).
 
-[^2]: Al denkt [Felienne Hermans](https://felienne.com/) [daar waarschijnlijk naders over](https://www.felienne.com/coetry).
+[^2]: Al denkt [Felienne Hermans](https://felienne.com/) [daar waarschijnlijk anders over](https://www.felienne.com/coetry).
 
 [^3]: Niet te verwarren met *The Beginning Is the End Is the Beginning*, da's [een liedje van Smashing Pumpkins](https://www.youtube.com/watch?v=59g5R8rwqpY).

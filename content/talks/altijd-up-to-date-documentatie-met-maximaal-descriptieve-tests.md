@@ -19,7 +19,7 @@ Moeten we daarom door de zure appel heen bijten, en weer gaan zwoegen op uitgebr
 
 
 - [TestNet Voorjaarsevenement](https://www.testnet.org/), 9 mei 2023
-- [Nimma Codes](https://www.nimma.codes/), 28 februari 2023
+- [Nimma Codes](https://www.nimma.codes/), 28 februari 2023 ([foto's](https://www.meetup.com/nimma-codes-meetup-group/photos/33300229/))
 
 
 ## Gerelateerde blogs

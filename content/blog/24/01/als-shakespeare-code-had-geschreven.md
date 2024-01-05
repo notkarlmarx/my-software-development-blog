@@ -1,16 +1,12 @@
 ---
 title: "Als Shakespeare code had geschreven"
 author: "Karl van Heijster"
-date: 2023-10-20T11:58:54+02:00
-draft: true
+date: 2024-01-05T07:57:34+01:00
+draft: false
 comments: true
 tags: ["poëzie"]
 summary: "*Zouden jij en ik elkaar zijn sonnetten geven, / als William Shakespeare code had geschreven? / Zeg maar: brengt `i.Compare(thee, summersDay)` / je in vervoering of valt dat wel mee?*"
 ---
-
-
-[1 januari bonusblog!]
-
 
 **Codeklaagzang**
 
@@ -55,10 +51,10 @@ antwoordt mijn laptop alleen met gezzz…
 ## (Naschrift)
 
 
-Het bovenstaande gedicht inspireerde me -- een hele tijd geleden al, maar dat was ik vergeten -- de daad bij het woord te voegen. Als Shakespeare code had geschreven, dan zou het er ongeveer zo uit kunnen hebben gezien:
+De overpeinzingen in het bovenstaande gedicht inspireerden me de daad bij het woord te voegen. Als Shakespeare geen sonnetten maar `sonnetten` had geschreven, dan zou het er ongeveer zo uit kunnen hebben gezien:
 
 
 {{< gist dotkarl a4f59e5c2b8feb7dbb3410326dd630f2 "Sonnet18.cs">}}
 
 
-De broncode van dit gedicht is [hier](https://github.com/dotkarl/Sonnet18 "'dotkarl/Sonnet18', GitHub") beschikbaar. Wanneer het programma wordt gerund, dan print het [Shakespeares oorspronkelijke sonnet](https://en.wikipedia.org/wiki/Sonnet_18 "'Sonnet 18', Wikipedia") naar de console. 
+De broncode van dit gedicht is [hier](https://github.com/dotkarl/Sonnet18 "'dotkarl/Sonnet18', GitHub") beschikbaar. Wanneer het programma wordt gerund, dan print het [Shakespeares oorspronkelijke sonnet](https://en.wikipedia.org/wiki/Sonnet_18 "'Sonnet 18', Wikipedia") naar de console.

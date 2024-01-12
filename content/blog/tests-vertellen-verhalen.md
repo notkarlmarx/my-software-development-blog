@@ -11,7 +11,7 @@ summary: "Op een dag schoot me het idee te binnen: een test vertelt een verhaal.
 Op een dag schoot me het idee te binnen: een test vertelt een verhaal. In een test gebeurt er -- iets. Een test kent een (a) subject dat (b) in een bepaalde situatie (c) een bepaalde handeling verricht met (d) een bepaalde uitkomst.
 
 
-(a) Het subject is het systeem dat wordt getest. Het systeem kan alles beslaan van een éénregelige functie tot een aaneenreiging van modules. -- We kunnen mijmeren over een enkelvoudige gedachte of een episch avontuur neerpennen. 
+(a) Het subject is het systeem dat wordt getest. Het systeem kan alles beslaan van een éénregelige functie tot een aaneenrijging van modules. -- We kunnen mijmeren over een enkelvoudige gedachte of een episch avontuur neerpennen. 
 
 
 (b) De situatie waarin het subject zich bevindt, wordt in de *Arrange*-sectie van de test beschreven. Het is de context waarbinnen het subject handelt. Die context kan zich beperken tot het systeem zelf, maar het kan ook de objecten omschrijven waarmee deze interacteert.

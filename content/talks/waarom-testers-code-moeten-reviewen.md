@@ -29,4 +29,6 @@ Aan het eind van deze sessie weet je hoe je een team kunt stimuleren sneller en 
 
 - [De tester als code reviewer](/blog/23/07/de-tester-als-code-reviewer/)
 - [Drie vragen die elk pull request moet beantwoorden](/blog/23/09/drie-vragen-die-elk-pull-request-moet-beantwoorden/)
+- [Drie feedbackloops die verbeteren met unit tests](/blog/23/11/drie-feedbackloops-die-verbeteren-met-unit-tests/)
 - [Tijdreis](/blog/23/04/tijdreis/)
+- [Erfenissen van waterval](/blog/23/11/erfenissen-van-waterval/)

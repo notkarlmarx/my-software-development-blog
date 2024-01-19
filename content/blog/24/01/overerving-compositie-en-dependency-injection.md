@@ -1,17 +1,17 @@
 ---
 title: "Overerving, compositie en dependency injection"
 author: "Karl van Heijster"
-date: 2023-11-24T08:51:19+01:00
-draft: true
+date: 2024-01-19T07:43:40+01:00
+draft: false
 comments: true
 tags: ["classes", "compositie", "dependency injection", "inheritance", "intentie van code", "objectgeoriënteerd programmeren", "single-responsibility principe", "software ontwikkelen", "SOLID"]
-summary: "Mijn collega had -- gedachteloos, naar mijn idee -- overerving toegepast om de nieuwe functionaliteit een plek te kunnen geven. De afgelopen maanden had ik gemerkt dat dit voor hem, en veel van mijn andere teamgenoten, een *go to*-oplossing vormt. Maar ik was niet helemaal tevreden met de code die dat oplevert. Ik voelde meer voor een oplossing die gebruik maakt van compositie. Het leek me een mooie gelegenheid om wat ideeën over deze concepten op papier te zetten."
+summary: "Mijn collega had overerving toegepast om de nieuwe functionaliteit een plek te kunnen geven. De afgelopen maanden had ik gemerkt dat dit voor hem, en veel van mijn andere teamgenoten, een *go to*-oplossing vormt om code te kunnen hergebruiken. Maar ik was niet helemaal tevreden met het resultaat van die strategie. Ik voelde meer voor een oplossing die gebruik maakt van compositie. Het leek me een mooie gelegenheid om wat ideeën over deze concepten op papier te zetten."
 ---
 
 Onlangs had ik wat interessante discussies met een collega over het ontwerp van onze code. Onze twistpunten waren allesbehalve theoretisch, we spraken niet over een classdiagram van een stuk nieuwbouw. Nee, onze handen waren vuil, we zaten midden in de herstructering van een bestaand stuk code om nieuwe functionaliteit mogelijk te maken. 
 
 
-Mijn collega had [overerving](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming) "'Inheritance (object-oriented programming)', Wikipedia") toegepast om de nieuwe functionaliteit een plek te kunnen geven. De afgelopen maanden had ik gemerkt dat dit voor hem, en veel van mijn andere teamgenoten, een *go to*-oplossing vormt. Maar ik was niet helemaal tevreden met de code die dat oplevert. Ik voelde meer voor een oplossing die gebruik maakt van [compositie](https://en.wikipedia.org/wiki/Object_composition "'Object composition', Wikipedia"). Het leek me een mooie gelegenheid om wat ideeën over deze concepten op papier te zetten.
+Mijn collega had [overerving](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming) "'Inheritance (object-oriented programming)', Wikipedia") toegepast om de nieuwe functionaliteit een plek te kunnen geven. De afgelopen maanden had ik gemerkt dat dit voor hem, en veel van mijn andere teamgenoten, een *go to*-oplossing vormt om code te kunnen hergebruiken. Maar ik was niet helemaal tevreden met het resultaat van die strategie. Ik voelde meer voor een oplossing die gebruik maakt van [compositie](https://en.wikipedia.org/wiki/Object_composition "'Object composition', Wikipedia"). Het leek me een mooie gelegenheid om wat ideeën over deze concepten op papier te zetten.
 
 
 ## Duplicatie
@@ -20,7 +20,7 @@ Mijn collega had [overerving](https://en.wikipedia.org/wiki/Inheritance_(object-
 Wanneer we programmeren, komt het regelmatig voor dat ons gevraagd wordt twee features te implementeren die sterk op elkaar lijken, op één ding na. Dat is een probleem dat we op verschillende manieren op zouden kunnen lossen. Eén oplossing zou bijvoorbeeld kunnen zijn om de code van de ene feature te dupliceren en in het duplicaat het relevante deel te wijzigen. 
 
 
-Dat werkt, maar een bijzonder nette oplossing valt het niet te noemen. Codeduplicatie levert problemen op voor de onderhoudbaarheid van code. Als er een bug in de originele code blijkt te zitten, dan zullen we deze op beide plekken aan moeten passen. Of als er een extra feature toegevoegd moet worden die in beide gevallen moet worden ondersteund, dan moeten we deze op twee plekken toevoegen. Dat is foutgevoelig en inefficiënt. (Gelukkig zijn er -- in mijn omgeving althans -- maar weinig ontwikkelaars voor wie codeduplicatie een serieuze optie is voor dit probleem.)
+Dat werkt, maar een bijzonder nette oplossing valt het niet te noemen. Codeduplicatie levert problemen op voor de onderhoudbaarheid van code. Als er een bug in de originele code blijkt te zitten, dan zullen we deze op beide plekken aan moeten passen. En als een nieuwe feature in beide scenario's moet worden ondersteund, dan moeten we deze op twee plekken toevoegen. Dat is foutgevoelig en inefficiënt. (Gelukkig zijn er -- in mijn omgeving althans -- maar weinig ontwikkelaars voor wie codeduplicatie een serieuze optie is voor dit probleem.)
 
 
 We zullen dus een andere oplossing moeten vinden. Gelukkig zijn er mogelijkheden te over op dit gebied. Ik zal er in deze blog twee behandelen: overerving en compositie met [*dependency injection*](https://en.wikipedia.org/wiki/Dependency_injection "'Dependency injection', Wikipedia") (DI).
@@ -82,7 +82,9 @@ Dit zou een mogelijke oplossing kunnen zijn:
 ```cs
 public class AssessmentTestPublisher 
 {
-    public PublishedTest Publish(AssessmentTest test, string metadataFormat)
+    public PublishedTest Publish(
+        AssessmentTest test, 
+        string metadataFormat)
     {
         var testContent = ConvertTestContent(test);
         var metadata = ConvertMetdata(test, metdataFormat);
@@ -94,7 +96,9 @@ public class AssessmentTestPublisher
         // Transform AssessmentTest to XML 
     }
 
-    private XDocument ConvertMetdata(AssessmentTest test, string metadataFormat)
+    private XDocument ConvertMetdata(
+        AssessmentTest test, 
+        string metadataFormat)
     {
         if (metadataFormat == "x")
         {
@@ -278,7 +282,7 @@ public interface IMetadataConverter
 ```
 
 
-De `AssessmentTestPublisher` moet gebruik gaan maken van deze interface, in plaats van de concrete class. Daarvoor moeten er twee dingen gebeuren. Ten eerste moet het type van `_metadata` omgezet worden naar de interface -- eenvoudig genoeg. Ten tweede moet de instantiatie van de `MetadataConverter` uit de constructor van de `AssessmentTestPublisher` worden gehaald. Die verantwoordelijkheid delegeren we naar de class die de `AssessmentTestPublisher` instantieert: we gebruiken DI:
+De `AssessmentTestPublisher` moet gebruik gaan maken van deze interface, in plaats van de concrete class. Daarvoor moeten er twee dingen gebeuren. Ten eerste moet het type van `_metadata` omgezet worden naar de interface -- eenvoudig genoeg. Ten tweede moet de instantiatie van de `MetadataConverter` uit de constructor van de `AssessmentTestPublisher` worden gehaald. Die verantwoordelijkheid delegeren we naar de class die de `AssessmentTestPublisher` instantieert. We gebruiken, kortom, DI:
 
 
 ```cs
@@ -346,7 +350,7 @@ var y = new AssessmentTestPublisher(new MetadataConverterY());
 We hebben ons doel bereikt. We kunnen toetsen publiceren voor verschillende afnameomgevingen zonder onnodige codeduplicatie te hebben geïntroduceerd. Maar belangrijker nog: we hebben dat gedaan zonder een harde koppeling tussen de logica die toetsen publiceert en die metadata converteert. Daarmee houden we de code flexibel en leesbaar, en voorkomen we dat beide verantwoordelijkheden met elkaar verknoopt raken.
 
 
-Compositie is -- zeker in combinatie met DI -- een krachtig middel in objectgeoriënteerd programmeren. Helaas zie ik mijn collega's nog te vaak reflexief grijpen naar overerving, daar waar betere oplossingsrichtingen voorhanden zijn. (Waarmee ik overigens niet wil impliceren dat overerving *nooit* de juiste oplossing is voor een probleem, integendeel. Mijn probleem ligt bij het *gedachteloos* grijpen naar overerving als oplossingsrichting, in plaats van verschillende mogelijkheden af te wegen.) 
+Compositie is -- zeker in combinatie met DI -- een krachtig middel in objectgeoriënteerd programmeren. Helaas zie ik mijn collega's nog te vaak reflexief grijpen naar overerving, daar waar betere oplossingsrichtingen voorhanden zijn. (Waarmee ik overigens niet wil impliceren dat overerving *nooit* de juiste oplossing is voor een probleem, integendeel. Mijn probleem ligt bij het *lichtzinnig* grijpen naar overerving als oplossingsrichting, in plaats van verschillende mogelijkheden af te wegen.) 
 
 
 Voer jij ook regelmatig interessante discussies met je collega's over de structuur van jullie codebase? Waarover botsen jullie ontwerpintuïties?

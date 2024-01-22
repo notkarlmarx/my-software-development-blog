@@ -1,4 +1,4 @@
-{{ $blogcount := len (where .Site.RegularPages "Section" "!=" "") }}
+{{ $blogcount := len (where .Site.RegularPages "Section" "==" "blog") }}
 
 {{ $scratch := newScratch }}
 {{ range (where .Site.RegularPages "Type" "in" (slice "blog")) }}

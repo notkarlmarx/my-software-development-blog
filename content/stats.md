@@ -3,7 +3,7 @@ title: "Statistieken voor nerds"
 draft: false
 ---
 
-Totaal aantal blogs: {{< stats/totalblogcount >}}.
+Totaal aantal blogs: {{< stats/totalpostcount section="blog" >}}.
 
 
 <br>
@@ -13,6 +13,12 @@ Totaal aantal woorden: {{< stats/totalwordcount >}}.
 
 
 Gemiddeld aantal woorden per blog: {{< stats/averagewordcount >}}.
+
+
+<br>
+
+
+Totaal aantal talks: {{< stats/totalpostcount section="talks" >}}.
 
 
 <br>

@@ -51,3 +51,6 @@ Maar dat is een consequentie die wat mij betreft meer dan gerechtvaardigd is van
 
 
 En hoewel ik blij ben dat ik dankzij De Sanctis nu wat meer weet over de gebruiksvriendelijke features van ASP.NET Core, betreur ik het dat die wereld dankzij *Building Web APIs with ASP.NET Core* niet een stap dichterbij is gekomen.
+
+
+[^1]: Mocht je denken: hé, dat zou ik ook wel eens interessant vinden!, klik dan [hier](https://www.manning.com/manuscript-reviews) voor meer informatie over het reviewen van manuscripten bij [uitgeverij Manning](https://www.manning.com/).

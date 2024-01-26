@@ -1,14 +1,14 @@
 ---
 title: "Symmetrische en asymmetrische overerving"
 author: "Karl van Heijster"
-date: 2023-11-25T20:10:52+01:00
-draft: true
+date: 2024-01-26T07:47:18+01:00
+draft: false
 comments: true
 tags: ["classes", "code lezen", "inheritance", "intentie van code", "objectgeoriënteerd programmeren", "schoonheid"]
 summary: "Code heeft niet alleen esthetische kwaliteiten. Het communiceert ook een intentie, een bedoeling. Code vertelt een verhaal. Zoals de manier waarop een personage wordt geïntroduceerd in een roman, ons iets vertelt over de rol en het karakter van dat personage, zo vertelt de manier waarop we bepaalde concepten in onze codebase vastleggen hoe we deze moeten \"lezen\". -- Code heeft, net als onze natuurlijke taal, een betekenis."
 ---
 
-Onlangs schreef ik [over overerving en compositie] (BLOG). Vandaag wil ik het wat uitgebreider over die eerste hebben.
+Onlangs schreef ik [over overerving en compositie](/blog/24/01/overerving-compositie-en-dependency-injection/ "'Overerving, compositie en dependency injection'"). Vandaag wil ik het wat uitgebreider over die eerste hebben.
 
 
 Overerving is een techniek in het objectgeoriënteerd programmeren die ons in staat stelt om code te hergebruiken. We specificeren een baseclass met daarin code die hetzelfde is voor haar erfgenamen, en subclasses met daarin variërende logica.[^1] 
@@ -133,7 +133,7 @@ Is dat louter een kwestie van smaak?
 ## Intentioneel
 
 
-Misschien, misschien niet. Code heeft niet alleen esthetische kwaliteiten. Het communiceert ook een intentie, een bedoeling. (Zie ook [deze blog] (CODEFLUISTEREN).) 
+Misschien, misschien niet. Code heeft niet alleen esthetische kwaliteiten. Het communiceert ook een intentie, een bedoeling. (Zie ook [deze blog](/blog/23/12/codefluisteren/ "'Codefluisteren'").) 
 
 
 Code vertelt een verhaal. Zoals de manier waarop een personage wordt geïntroduceerd in een roman, ons iets vertelt over de rol en het karakter van dat personage, zo vertelt de manier waarop we bepaalde concepten in onze codebase vastleggen hoe we deze moeten "lezen". 
@@ -160,10 +160,10 @@ Code -- alle code, ook wegwerpwegcode -- zit bomvol betekenisnuances als deze. O
 De manier waarop we onze boodschap overbrengen, verdient onze zorg en aandacht. Hoe meer aandacht we tijdens het schrijven van de code besteden aan de manier waarop deze gelezen zal worden, hoe eenvoudiger ons dat lezen af zal gaan. En het is een algemeen bekend feit dat code veel vaker gelezen wordt dan dat het wordt geschreven.
 
 
-Het is precies om deze reden dat ik (in bijvoorbeeld [mijn vorige blog] (OVERERVING_COMPOSITIE)) zo ageerde tegen de (of: de vermeende) gedachteloosheid waarmee ik soms zie dat er ook code is en wordt geschreven -- ook door mezelf, overigens. Wie op de automatische piloot schrijft, mist een kans -- de kans om te stoppen met schrijven, na te denken over wat je code zegt, en jezelf af te vragen of dat een accurate afspiegeling vormt van je begrip op dat moment.
+Het is precies om deze reden dat ik zo allergisch ben voor de (of: de vermeende) gedachteloosheid waarmee ik soms zie dat er ook code is en wordt geschreven -- ook door mezelf, overigens. Wie op de automatische piloot schrijft, mist een kans -- de kans om te stoppen met schrijven, na te denken over wat je code zegt, en jezelf af te vragen of dat een accurate afspiegeling vormt van je begrip op dat moment.
 
 
-Wie dat doet, kan alleen maar winnen. Want het antwoord is ofwel "ja" -- en dan kun je vrolijk doorschrijven --, of het is "nee" -- en dan is het niet alleen handig om je code (en daarmee je begrip) te verfijnen, het is noodzaak.
+Wie dat doet, kan alleen maar winnen. Want het antwoord is ofwel "ja" -- en dan kun je vrolijk doorschrijven. Of het is "nee" -- en dan is het niet alleen handig om je code (en daarmee je begrip) te verfijnen, nee: dan is het noodzakelijk dat te doen.
 
 
 [^1]: Al gaat het in de praktijk vaak ook zo: we merken dat we twee classes hebben met codeduplicatie, en abstraheren die duplicatie naar een derde class waar we de andere van laten erven.

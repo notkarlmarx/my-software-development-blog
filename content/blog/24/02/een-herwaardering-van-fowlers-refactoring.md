@@ -1,8 +1,8 @@
 ---
 title: "Een herwaardering van Fowlers Refactoring"
 author: "Karl van Heijster"
-date: 2023-12-01T04:35:42+01:00
-draft: true
+date: 2024-02-02T08:25:54+01:00
+draft: false
 comments: true
 tags: ["boeken", "refactoren", "software ontwikkelaar (rol)"]
 summary: "Martin Fowlers *Refactoring* is een klassieker in het genre -- en baanbrekend voor zijn tijd. Boeken over het ontwerp van nieuwe software bestaan al zo lang als dat software bestaat. Maar het idee dat je bestaande code *aan kon passen* -- niet als noodzakelijk kwaad, maar als essentiële vaardigheid van elke programmeur --, dat was ongekend. -- En toch was ik teleurgesteld toen ik het boek uitlas, drie jaar geleden."
@@ -26,7 +26,7 @@ Maar dat is niet wat *Refactoring* biedt. Fowler houdt zich niet bezig met de in
 De technieken zelf dan. *Refactoring* bestaat voor het grootste deel uit een catalogus van diverse refactorings: hoe je een functie extraheert of juist weer *inline* maakt, hoe je een veld van een subclass naar een baseclass verplaats en andersom, hoe je een constructor vervangt door een *factory* method. Van elke techniek legt Fowler in -- ik wil haast zeggen: pijnlijk -- detail bloot hoe je deze toe dient te passen.
 
 
-De meeste van deze refactortechnieken zijn geen hogere wiskunde. Sterker nog, het gros ervan kan eenvoudig worden geautomatiseerd -- en dat is precies wat er in de jaren na publicatie is gebeurd. Wie tegenwoordig een method wil abstraheren, hoeft niet meer de moeite te nemen een nieuwe method te declareren, de oorspronkelijke code te kopiëren en plakken, en de compileerfouten op te lossen. Dat zijn taken die je aan je [IDE](https://nl.wikipedia.org/wiki/Integrated_development_environment "'Integrated development environment', Wikipedia") overlaat.
+De meeste van zijn refactortechnieken zijn geen hogere wiskunde. Sterker nog, het gros ervan kan eenvoudig worden geautomatiseerd -- en dat is precies wat er in de jaren na publicatie is gebeurd. Wie tegenwoordig een method wil abstraheren, hoeft niet meer de moeite te nemen een nieuwe method te declareren, de oorspronkelijke code te kopiëren en plakken, en de compileerfouten op te lossen. Dat zijn taken die je aan je [IDE](https://nl.wikipedia.org/wiki/Integrated_development_environment "'Integrated development environment', Wikipedia") overlaat.
 
 
 ## Miniscuul

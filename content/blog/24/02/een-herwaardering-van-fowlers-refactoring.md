@@ -29,13 +29,13 @@ De technieken zelf dan. *Refactoring* bestaat voor het grootste deel uit een cat
 De meeste van zijn refactortechnieken zijn geen hogere wiskunde. Sterker nog, het gros ervan kan eenvoudig worden geautomatiseerd -- en dat is precies wat er in de jaren na publicatie is gebeurd. Wie tegenwoordig een method wil abstraheren, hoeft niet meer de moeite te nemen een nieuwe method te declareren, de oorspronkelijke code te kopiëren en plakken, en de compileerfouten op te lossen. Dat zijn taken die je aan je [IDE](https://nl.wikipedia.org/wiki/Integrated_development_environment "'Integrated development environment', Wikipedia") overlaat.
 
 
-## Miniscuul
+## Minuscuul
 
 
 De vraag wordt dan: als ik als ontwikkelaar niet meer de stappen voor elke individuele refactortechniek hoef te onthouden, wat is het nut nog van *Refactoring* (het boek dus, niet de techniek *an sich*)? -- Het antwoord zit 'm niet in de inhoud van elke refactorslag, maar in hun reikwijdte. Meer specifiek: hun miniscule reikwijdte.
 
 
-Want de technieken die Fowler presenteert *zijn* miniscuul -- en dat is precies waarom ze zo waardevol zijn. Veel ontwikkelaars -- ook ik, bijvoorbeeld in [deze blog](/blog/22/08/twee-stijlen-van-refactoren/ "'Twee stijlen van refactoren'") -- nemen veel te grote stappen wanneer ze hun code aanpassen. Ze smijten met variabelen, properties en methods en kijken vervolgens vreemd op wanneer hun code een zooitje is geworden.
+Want de technieken die Fowler presenteert *zijn* minuscuul -- en dat is precies waarom ze zo waardevol zijn. Veel ontwikkelaars -- ook ik, bijvoorbeeld in [deze blog](/blog/22/08/twee-stijlen-van-refactoren/ "'Twee stijlen van refactoren'") -- nemen veel te grote stappen wanneer ze hun code aanpassen. Ze smijten met variabelen, properties en methods en kijken vervolgens vreemd op wanneer hun code een zooitje is geworden.
 
 
 Schade en schande heeft me geleerd: code schrijven gaat het best in heel veel heel kleine stapjes.[^2] Sterker nog, het nemen van kleine stappen is onderdeel van de kern van ons vak. Eén van de belangrijkste vaardigheden van elke ontwikkelaar is het vermogen om een groot probleem op te delen in deelproblemen -- en, als het nodig is, die deelproblemen in kleinere deelproblemen.

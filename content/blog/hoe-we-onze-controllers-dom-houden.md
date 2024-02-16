@@ -222,8 +222,10 @@ public class QueryResult
 
     private QueryResult() { }
 
-    public static QueryResult Value(Item value) => new() { Value = value };
-    public static QueryResult AccessDenied() => new() { AccessDenied = true };
+    public static QueryResult Value(Item value) => 
+        new() { Value = value };
+    public static QueryResult AccessDenied() => 
+        new() { AccessDenied = true };
 }
 ```
 
@@ -287,18 +289,17 @@ Maar we hebben nu de mogelijkheidsvoorwaarden geschapen om onze Controller metho
 ```cs
 public static QueryResultExtensions
 {
-        public static ActionResult ToActionResult<T>(this QueryResult<T> queryResult)
+    public static ActionResult ToActionResult<T>(
+        this QueryResult<T> queryResult)
     {
         if (queryResult.AccessDenied)
         {
             return new ForbidResult();
         }
-
         if (queryResult.NotFound)
         {
             return new NotFoundResult();
         }
-
         return new OkObjectResult(queryResult.Value);
     }
 }

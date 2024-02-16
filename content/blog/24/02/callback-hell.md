@@ -1,8 +1,8 @@
 ---
 title: "Callback hell"
 author: "Karl van Heijster"
-date: 2023-12-08T10:31:21+01:00
-draft: true
+date: 2024-02-16T07:56:25+01:00
+draft: false
 comments: true
 tags: ["functioneel programmeren", "leermoment", "LINQ",  "monads", "options", "refactoren"]
 summary: "In mijn werk als C#-ontwikkelaar maak ik veelvuldig gebruik van functionele programmeerconcepten. Als een functie me een object `T` teruggeeft *of niet*, dan codeer ik dat netjes in de signatuur van die functie door een `Option<T>` terug te geven. Dat dwingt de aanroepende partij om beide scenario's expliciet af te handelen. Hartstikke handig! -- Maar: niet zonder zijn eigen set problemen. Want wat gebeurt er als je meerdere functies achter elkaar aanroept die allemaal een `Option<T>` teruggeven? Dan komen we terecht in wat men *callback hell* noemt."
@@ -46,7 +46,7 @@ var result = GetOption1().Match(
 ```
 
 
-Dit is wat [Enrico Buonanno](https://twitter.com/la_yumba) *callback hell* noemt in [*Functional Programming in C#*](https://www.manning.com/books/functional-programming-in-c-sharp-second-edition) (een [aanrader](/blog/22/12/de-beste-boeken-over-software-ontwikkeling-die-ik-in-2022-las/ "'De beste boeken over software ontwikkeling die ik in 2022 las'")!). Wie die benaming wat te heftig vindt, suggereert hij het niet minder heftige "*pyramid of doom*."
+Dit is wat [Enrico Buonanno](https://twitter.com/la_yumba) *callback hell* noemt in [*Functional Programming in C#*](https://www.manning.com/books/functional-programming-in-c-sharp-second-edition) (een [aanrader](/blog/22/12/de-beste-boeken-over-software-ontwikkeling-die-ik-in-2022-las/ "'De beste boeken over software ontwikkeling die ik in 2022 las'")!). Voor wie die benaming wat te heftig vindt, suggereert hij het niet minder heftige "*pyramid of doom*."
 
 
 De reden voor beide benamingen spat van het scherm. De opeenstapeling van *callback*-functies leidt tot een geneste structuur. De code neemt de vorm van een piramide aan, wat de leesbaarheid van de code niet ten goede komt. We doen hier iets verkeerd -- maar wat?
@@ -58,7 +58,7 @@ De reden voor beide benamingen spat van het scherm. De opeenstapeling van *callb
 Ik heb een goede middag lopen stoeien met de code voordat ik 'm in een acceptabele vorm geduwd kreeg. Het probleem zit 'm in het overmatig gebruik van `Match`. `Match` dwingt de gebruiker van de `Option<T>` af om `Some` en `None` af te handelen -- *direct* af te handelen.
 
 
-Maar we kunnen de afhandeling van beide scenario's ook uitstellen. Dat krijgen we voor elkaar door niet `Bind` aan te roepen.[^2] `Bind` stelt ons in staat de ene monad naar de andere te transformeren. En dat stelt ons in staat om functies te *chainen*. Zo dus::
+Maar we kunnen de afhandeling van beide scenario's ook uitstellen. Dat krijgen we voor elkaar door `Bind` aan te roepen.[^2] `Bind` stelt ons in staat de ene monad naar de andere te transformeren. En dat stelt ons in staat om functies te *chainen*. Zo dus:
 
 
 ```cs
@@ -69,7 +69,7 @@ var result = GetOption1()
 ```
 
 
-Het resultaat van `GetOption1` wordt, *als deze `Some` is*, doorgegeven aan `GetOption2`; het resultaat van `GetOption2` wordt, *als deze `Some` is*, doorgegeven aan `GetOption3`, enzovoort. Als één van de resultaten `None` is, dan wordt de keten afgekapt, en handelen we de `None`-conditie af in de `Match` onderaan.
+Het resultaat van `GetOption1` wordt, *als deze `Some` is*, doorgegeven aan `GetOption2`; het resultaat van `GetOption2` wordt, *als deze `Some` is*, doorgegeven aan `GetOption3`. Als één van de resultaten `None` is, dan wordt de keten afgekapt, en handelen we de `None`-conditie af in de `Match` onderaan.
 
 
 ## Option, of...?
@@ -94,13 +94,13 @@ Dat lijkt redelijk op de oorspronkelijke *pyramid of doom*, maar niet helemaal. 
 Laten we een stapje terug doen. Waar zijn we mee bezig? We *chainen* enkele functies aan elkaar die een `Option<T>` teruggeven. Voor elk van die functies geldt dat we een `string` terug willen geven met een foutmelding erin, als de uitkomst van die functie `None` is. -- Dat komt er in wezen op neer: we willen ofwel een `T` terugkrijgen, ofwel een `string`.
 
 
-*Wat we nodig hebben is niet een* `Option<T>`, *maar een* `Either<string, T>`.
+Kortom, we gebruiken de verkeerde soort monad voor wat we willen bereiken. Wat we nodig hebben is niet een `Option<T>`, maar een `Either<string, T>`.
 
 
 ## Conversie
 
 
-Betekent dat dat we onze methods moeten herschrijven om een `Either<string, T>` terug te geven? -- Dat zou een optie (*no pun intended*) kunnen zijn als de functies alleen in deze specifieke context gebruikt worden. Maar als het een functie betreft die op verschillende plekken in de codebase wordt gebruikt, dan is deze oplossingsrichting van tafel.
+Betekent dat dat we onze methods moeten herschrijven om een `Either<string, T>` terug te geven? -- Dat zou een optie (*no pun intended*) kunnen zijn als de functies alleen in deze specifieke context gebruikt worden. Maar als het een functie betreft die op verschillende plekken in de codebase wordt gebruikt, dan is deze oplossingsrichting van tafel. We zouden dan code op andere plekken aan moeten passen om de functionaliteit op deze ene plek het gewenste gedrag te laten vertonen.
 
 
 Gelukkig hoeven we niets te herschrijven. `Option<T>` en `Either<L, R>` liggen in elkaars verlengde. Het zijn beide monads die twee scenario's ondersteunen. Sterker nog, je zou `Option<T>` kunnen zien als een `Either<None, T>`.[^3] Het hoeft dan ook niet te verbazen dat *LanguageExt* een conversiemethode op `Option<T>` biedt: `ToEither`.
@@ -153,8 +153,7 @@ Want hoe elegant en leesbaar het resultaat ook is, functionele C# is verre van i
 Ik zal eerlijk zijn. Hoe mooi ik functionele code ook vind, ik weet niet of het nu per se zo'n goede keus was om mijn code op die manier te schrijven. 
 
 
--- Maar het duiveltje op mijn linkerschouder voegt daaraan toe: maar zo lang niemand me tegenhoudt, zal ik er mee doorgaan. Het engeltje aan de rechterkant brengt hoopvol in dat het team em ik er misschien nog wat van opsteken.
-
+-- Maar het duiveltje op mijn linkerschouder voegt daaraan toe: maar zo lang niemand me tegenhoudt, zal ik er mee doorgaan. Het engeltje aan de rechterkant brengt hoopvol in dat het team, net als ikzelf, er misschien nog wat van opsteekt.
 
 
 [^1]: Voor het gemak beperk ik me in deze blog tot voorbeelden met `Option<T>`'s, omdat ik deze in het dagelijks werk het meest gebruik. Maar *LanguageExt* kan nog verschillende andere handige monads als [`Either<L, R>`](https://louthy.github.io/language-ext/LanguageExt.Core/Monads/Alternative%20Value%20Monads/Either/Either/index.html "'Either', LanguageExt documentatie") en [`Try<A>`](https://louthy.github.io/language-ext/LanguageExt.Core/Monads/Alternative%20Value%20Monads/Try/Try/index.html "'Try', LanguageExt documentatie").

@@ -9,6 +9,8 @@ Ik deel mijn inzichten graag op usergroups en conferenties. Bij de volgende gele
 
 |                   |                                                      |                                                                  |
 | ----------------- | ---------------------------------------------------- | ---------------------------------------------------------------- |
+| 12 maart 2024     | [DomCode](https://www.meetup.com/nl-NL/domcode/)     | [*Always up to date documentation with descriptive tests*](/talks/altijd-up-to-date-documentatie-met-maximaal-descriptieve-tests/) |
+| <br/>             |                                                      |                                                                  |
 | 26 oktober 2023   | [devNetNoord](https://devnetnoord.nl/)               | [*De edele kunst van het pull request*](/talks/de-edele-kunst-van-het-pull-request/) |
 | 11 oktober 2023   | [TestNet Najaarsevenement](https://www.testnet.org/) | [*Waarom testers code moeten reviewen*](/talks/waarom-testers-code-moeten-reviewen/) |
 | 7 september 2023  | [4Dotnet](https://www.4dotnet.nl/) (intern)          | [*De edele kunst van het pull request*](/talks/de-edele-kunst-van-het-pull-request/) |

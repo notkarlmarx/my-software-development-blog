@@ -4,7 +4,6 @@ title = "dotkarl"
 theme = "tale" 
 defaultContentLanguage = "nl"
 disqusShortname = "notkarlmarx"
-googleAnalytics = "G-BNBE2EVXJS"
 rssLimit = 20
 [params]
   commentoEnable = true

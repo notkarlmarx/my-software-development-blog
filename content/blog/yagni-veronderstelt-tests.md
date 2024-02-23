@@ -8,7 +8,7 @@ tags: ["leermoment", "mentaal model", "testen", "vertrouwen", "YAGNI"]
 summary: "Er zijn twee soorten ontwikkelaars: ontwikkelaars die roepen: \"*You ain't gonna need it*\", en ontwikkelaars die mompelen: \"Ja ja, dat roep je wel, maar ik bouw het voor de zekerheid toch maar in.\" Ik behoor tot het eerste kamp; enkele van mijn collega's tot het tweede. -- Maar waarom?"
 ---
 
-Er zijn twee soorten ontwikkelaars: ontwikkelaars die roepen: "*You ain't gonna need it*" ([YAGNI](/tags/yagni/ "Blogs met de tag 'YAGNI'"), en ontwikkelaars die mompelen: "Ja ja, dat roep je wel, maar ik bouw het voor de zekerheid toch maar in." Ik behoor tot het eerste kamp; enkele van mijn collega's tot het tweede. 
+Er zijn twee soorten ontwikkelaars: ontwikkelaars die roepen: "*You ain't gonna need it*" ([YAGNI](/tags/yagni/ "Blogs met de tag 'YAGNI'")), en ontwikkelaars die mompelen: "Ja ja, dat roep je wel, maar ik bouw het voor de zekerheid toch maar in." Ik behoor tot het eerste kamp; enkele van mijn collega's tot het tweede. 
 
 
 Mijn redenering is als volgt. Alle code die ik niet schrijf hoef ik niet te schrijven, dus dat bespaart me tijd. Alle code die ik niet schrijf hoef ik niet te onderhouden, dus dat bespaart me werk. Alle code die ik niet schrijf hoef ik niet te debuggen, dus dat scheelt me hoofdbrekens. Dus hoe minder code ik schrijf *die geen onmiddellijke waarde toevoegt* (een belangrijke kwalificatie!), hoe beter.

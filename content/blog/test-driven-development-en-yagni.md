@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2024-02-09T12:03:04+01:00
 draft: true
 comments: true
-tags: []
+tags: ["test-driven development", "testen", "yagni"]
 summary: "Vaak werkt het zo: tests maken *x* mogelijk, Test-Driven Development (TDD) tilt *x* naar een volgend niveau. Welnu, het idee van YAGNI -- *You Ain't Gonna Need It* -- veronderstelt tests. TDD tilt het naar een volgend niveau. Tests faciliteren YAGNI, TDD radicaliseert het."
 ---
 

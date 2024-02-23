@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2024-02-02T11:14:31+01:00
 draft: true
 comments: true
-tags: ["exceptions", "software ontwikkelen", "web API's"]
+tags: ["exceptions", "refactoren", "software ontwikkelen", "web API's"]
 summary: "Het is zaak je Controller-methods zo compact, zo \"dom\" mogelijk te houden. Valerio De Sanctis' *Building Web APIs with ASP.NET Core* deed me denken aan de verschillende manieren waarop mijn team dat de afgelopen jaren voor elkaar heeft proberen te krijgen. Want het dom houden van je Controllers -- zonder aan expressiviteit in te boeten -- is geen triviale zaak. Vandaag: hoe het niet moet."
 ---
 
@@ -142,7 +142,7 @@ Wat we moeten doen is de logica verplaatsen naar een class wiens enige verantwoo
 ```cs
 public interface IItemService 
 {
-    Task<Item> GetItemByIdAsync(int id, ClaimsPrincipal user);
+    Task<Item> GetByIdAsync(int id, ClaimsPrincipal user);
 }
 ```
 
@@ -198,7 +198,7 @@ public class ItemService : IItemService
         _items = items;
     }
 
-    public async Task<Item> GetItemByIdAsync(
+    public async Task<Item> GetByIdAsync(
         int id, 
         ClaimsPrincipal user)
     {
@@ -219,7 +219,7 @@ Wat retourneren we wanneer de gebruiker niet de juiste toegangsrechten heeft om 
 Een item teruggeven is geen optie -- er is immers geen item om aan de gebruiker terug te geven. We zouden `null` terug kunnen geven. Maar dan zou onze Controller het onderscheid niet meer kunnen maken tussen een item waar de gebruiker geen toegang toe heeft en een item dat niet bestaat. We zouden daarmee de bestaande functionaliteit wijzigen: zowel een verboden als niet gevonden item zouden in een statuscode 404 resulteren.
 
 
-Welke opties staan er tot onze beschikking, gegeven het feit dat de `GetItemByIdAsync` een `Item` retourneert?
+Welke opties staan er tot onze beschikking, gegeven het feit dat de `GetByIdAsync` een `Item` retourneert?
 
 
 ## Een oplossing
@@ -233,7 +233,7 @@ public class ItemService : IItemService
 {
     // ...
 
-    public async Task<Item> GetItemByIdAsync(
+    public async Task<Item> GetByIdAsync(
         int id, 
         ClaimsPrincipal user)
     {
@@ -248,7 +248,7 @@ public class ItemService : IItemService
 ```
 
 
-Als de gebruiker toegang heeft, dan retourneren we een `Item` (of `null`), en als de gebruiker geen toegang heeft, dan gooien we een exception op. Maar daarmee zijn we er nog niet. Als we de `UnauthorizedException` niet opvangen, dan resulteert dat in een response met [statuscode 500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500 "'500 Internal Server Error', MDN web docs"), wat aangeeft dat er een fout op de server heeft plaatsgevonden. Dat is nog steeds niet het gedrag dat we willen.
+Als de gebruiker toegang heeft, dan retourneren we een `Item` (of `null`), en als de gebruiker geen toegang heeft, dan gooien we een [exception](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/ "'Exceptions and Exception Handling', Microsoft documentatie") op. Maar daarmee zijn we er nog niet. Als we de `UnauthorizedException` niet opvangen, dan resulteert dat in een response met [statuscode 500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500 "'500 Internal Server Error', MDN web docs"), wat aangeeft dat er een fout op de server heeft plaatsgevonden. Dat is nog steeds niet het gedrag dat we willen.
 
 
 We zouden de exception op kunnen vangen in de Controller method:
@@ -350,7 +350,7 @@ public class ItemService : IItemService
 {
     // ...
 
-    public async Task<Item> GetItemByIdAsync(
+    public async Task<Item> GetByIdAsync(
         int id, 
         ClaimsPrincipal user)
     {

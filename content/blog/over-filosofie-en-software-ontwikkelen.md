@@ -86,16 +86,13 @@ De rest is, zoals dat heet, [geschiedenis](/blog/21/07/mijn-loopbaanwending/ "'M
 Als filosoof leerde ik: dat wat op het eerste gezicht eenvoudig lijkt, blijkt bij nader inzien enorm complex. Dit is een goede les om te leren vóórdat je je eerste blik werpt op de code die in productie draait van om het even welk systeem.
 
 
-Volgens [Aristoteles](https://plato.stanford.edu/ENTRIES/aristotle/ "'Aristotle', Stanford Encyclopedia of Philosophy") begint filosofie met verwondering. Softwareontwikkeling begint vaak op dezelfde manier. Ik ken geen ontwikkelaar die niet bijna dagelijks uitroept: waarom zit deze code in hemelsnaam *zo* in elkaar?!
-
-
 Software ontwikkelen is moeilijk, bleek. [Socrates](https://plato.stanford.edu/entries/socrates/ "'Socrates', Stanford Encyclopedia of Philosophy") zei: ik weet dat ik niets weet. De eerste paar maanden van mijn baan als softwareontwikkelaar, was ik sterk van dat sentiment doordrongen.
 
 
-Het duurde zeker een jaar of twee voordat ik het gevoel had dat ik het enigszins onder de knie had. Al die tijd had ik niets aan mijn filosofieachtergrond. Alle ruimte in mijn hoofd werd opgeslokt door mijn worstelingen met syntax en architectuur en proces en bugs. 
+Het duurde zeker een jaar of twee voordat ik het gevoel had dat ik het enigszins onder de knie had. Al die tijd had ik niets aan mijn filosofieachtergrond. Alle ruimte in mijn hoofd werd opgeslokt door mijn worstelingen met syntax en architectuur en proces.
 
 
-Heel veel bugs.
+En bugs. Heel veel bugs.
 
 
 ## Wat is een softwareontwikkelaar?
@@ -143,4 +140,7 @@ Eén van de grootste zegeningen die de studie filosofie mij heeft gegeven, is he
 Ik zal niet beweren een *goede* ontwikkelaar te zijn -- dat is aan andere mensen, als zij dat zo vinden. Maar ik durf wel te stellen dat ik geen *slechte* ontwikkelaar ben. En dat ben ik niet omdat ik regelmatig ophoud code te schrijven en me af te vragen waarom ik eigenlijk de dingen doe die ik doe, of de dingen laat die ik laat.
 
 
-In zekere zin ben ik nooit opgehouden te filosoferen. En daarom verwacht ik nog wel een tijdje softwareontwikkelaar te blijven.
+In zekere zin ben ik nooit opgehouden te filosoferen. (Volgens [Aristoteles](https://plato.stanford.edu/ENTRIES/aristotle/ "'Aristotle', Stanford Encyclopedia of Philosophy") begint filosofie met verwondering. Softwareontwikkeling begint vaak net zo. Ik ken geen ontwikkelaar die niet bijna dagelijks uitroept: waarom zit deze code in hemelsnaam *zo* in elkaar?!) 
+
+
+En daarom verwacht ik nog wel een tijdje softwareontwikkelaar te blijven.

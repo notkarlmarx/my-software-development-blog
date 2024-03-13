@@ -9,6 +9,8 @@ Ik deel mijn inzichten graag op usergroups en conferenties. Bij de volgende gele
 
 |                   |                                                      |                                                                  |
 | ----------------- | ---------------------------------------------------- | ---------------------------------------------------------------- |
+| 18 april 2024     | [Living Documentation Event](https://www.ict.eu/en/events/lde24) | [*Why testers should review code*](/talks/waarom-testers-code-moeten-reviewen/) |
+| 28 maart 2024     | [Cito](https://www.cito.nl/) (intern)                | [*Waarom testers code moeten reviewen*](/talks/waarom-testers-code-moeten-reviewen/) |
 | 12 maart 2024     | [DomCode](https://www.meetup.com/nl-NL/domcode/)     | [*Always up to date documentation with descriptive tests*](/talks/altijd-up-to-date-documentatie-met-maximaal-descriptieve-tests/) |
 | <br/>             |                                                      |                                                                  |
 | 26 oktober 2023   | [devNetNoord](https://devnetnoord.nl/)               | [*De edele kunst van het pull request*](/talks/de-edele-kunst-van-het-pull-request/) |

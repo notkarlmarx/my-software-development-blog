@@ -1,7 +1,7 @@
 ---
 title: "Altijd up to date documentatie met maximaal descriptieve tests"
 author: "Karl van Heijster"
-date: 2023-05-09T08:24:01+02:00
+date: 2024-03-12T11:28:54+01:00
 draft: false
 comments: true
 tags: ["documentatie", "testen"]
@@ -20,7 +20,7 @@ Moeten we daarom door de zure appel heen bijten, en weer gaan zwoegen op uitgebr
 
 - [Nimma Codes](https://www.nimma.codes/), 28 februari 2023 ([foto's](https://www.meetup.com/nimma-codes-meetup-group/photos/33300229/))
 - [TestNet Voorjaarsevenement](https://www.testnet.org/), 9 mei 2023
-- [DomCode](https://www.meetup.com/nl-NL/domcode/), 12 maart 2024 
+- [DomCode](https://www.meetup.com/nl-NL/domcode/), 12 maart 2024 ([foto's](https://www.meetup.com/domcode/photos/34334930/))
 
 
 ## Gerelateerde blogs

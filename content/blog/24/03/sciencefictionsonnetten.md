@@ -1,11 +1,11 @@
 ---
 title: "Sciencefictionsonnetten"
 author: "Karl van Heijster"
-date: 2024-01-19T11:20:24+01:00
-draft: true
+date: 2024-03-15T08:02:11+01:00
+draft: false
 comments: true
 tags: ["poëzie"]
-summary: "*Ik ontdek hightech, ja zo kek als Neo / zo hack ik krek. Maar dan zonder trenchcoat / of lenig liefje, geen zonnebril ook, / vandaar dat ik er minder cool uitzie-o.*"
+summary: "*Ik ontdek hightech, ja zo kek als Neo / zo hack ik krek. Maar dan zonder trenchcoat / of lenig liefje, geen zonnebril ook, / vandaar dat ik er minder cool uitzie--o.*"
 ---
 
 **Borrelmix Reloaded**
@@ -28,7 +28,7 @@ zo hack ik krek. Maar dan zonder trenchcoat
 
 of lenig liefje, geen zonnebril ook,
 
-vandaar dat ik er minder cool uitzie-o,
+vandaar dat ik er minder cool uitzie--o,
 
 <br>
 

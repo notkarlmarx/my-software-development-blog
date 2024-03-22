@@ -14,7 +14,7 @@ Onlangs las ik [*Building Web APIs with ASP.NET Core*](https://www.manning.com/b
 Lang verhaal kort: het is een uitstekende inleiding geworden voor iedereen die Web API's in ASP.NET Core wil leren ontwikkelen. Het boek is een ruim vierhonderd pagina lange technische tutorial, waarin De Sanctis de lezer op een aangenaam rustig tempo bij de hand neemt tijdens de ontwikkeling van een [REST API](https://en.wikipedia.org/wiki/REST "'REST', Wikipedia") in .NET. Het boek is daarom een aanrader voor met name junior ontwikkelaars.
 
 
-## Technische
+## Technisch
 
 
 Meer ervaren ontwikkelaars zullen het boek wellicht wat minder enthousiast dichtslaan. De focus van *Building Web APIs* ligt namelijk voornamelijk op het technische: welke (framework-specifieke) code moet ik schrijven om bepaalde functionaliteit voor elkaar te krijgen? 

@@ -2,7 +2,7 @@
 title: "Moet testen een onderdeel van een tutorial zijn?"
 author: "Karl van Heijster"
 date: 2024-03-22T08:01:01+01:00
-draft: true
+draft: false
 comments: true
 tags: ["boeken", "recensies", "testen", "web API's"]
 summary: "Onlangs las ik *Building Web APIs with ASP.NET Core* van Valerio De Sanctis -- niet omdat het ontwikkelen van Web API's in ASP.NET Core onontgonnen terrein voor me was, maar omdat het nooit kwaad kan om op zoek te gaan naar gaten in je kennis, ook als je een techniek al tijden gebruikt. Bovendien had ik het boek in een vroege fase gereviewd, en ik was benieuwd wat er uiteindelijk van was geworden."

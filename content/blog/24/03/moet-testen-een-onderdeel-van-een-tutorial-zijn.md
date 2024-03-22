@@ -1,17 +1,17 @@
 ---
 title: "Moet testen een onderdeel van een tutorial zijn?"
 author: "Karl van Heijster"
-date: 2024-01-26T10:48:54+01:00
+date: 2024-03-22T08:01:01+01:00
 draft: true
 comments: true
 tags: ["boeken", "recensies", "testen", "web API's"]
-summary: "Onlangs las ik *Building Web APIs with ASP.NET Core* van Valerio De Sanctis -- niet omdat het ontwikkelen van Web API's in ASP.NET Core onontgonnen terrein voor me was, maar omdat het nooit kwaad kan om op zoek te gaan naar gaten in je kennis rondom een techniek die je al tijden gebruikt. Bovendien had ik het boek in een vroege fase gereviewd, en ik was benieuwd wat er uiteindelijk van was geworden."
+summary: "Onlangs las ik *Building Web APIs with ASP.NET Core* van Valerio De Sanctis -- niet omdat het ontwikkelen van Web API's in ASP.NET Core onontgonnen terrein voor me was, maar omdat het nooit kwaad kan om op zoek te gaan naar gaten in je kennis, ook als je een techniek al tijden gebruikt. Bovendien had ik het boek in een vroege fase gereviewd, en ik was benieuwd wat er uiteindelijk van was geworden."
 ---
 
-Onlangs las ik [*Building Web APIs with ASP.NET Core*](https://www.manning.com/books/building-web-apis-with-asp-net-core) van [Valerio De Sanctis](https://mvp.microsoft.com/en-US/mvp/profile/f42bd1d8-aa90-e811-813c-3863bb2bca60) -- niet omdat het ontwikkelen van Web API's in ASP.NET Core onontgonnen terrein voor me was, maar omdat het nooit kwaad kan om op zoek te gaan naar gaten in je kennis rondom een techniek die je al tijden gebruikt. (Zie ook [deze blog](/blog/23/07/deze-blog-bevat-tooltips/ "'Deze blog bevat tooltips'"), bijvoorbeeld.) Bovendien had ik het boek in een vroege fase gereviewd[^1], en ik was benieuwd wat er uiteindelijk van was geworden. 
+Onlangs las ik [*Building Web APIs with ASP.NET Core*](https://www.manning.com/books/building-web-apis-with-asp-net-core) van [Valerio De Sanctis](https://mvp.microsoft.com/en-US/mvp/profile/f42bd1d8-aa90-e811-813c-3863bb2bca60) -- niet omdat het ontwikkelen van Web API's in ASP.NET Core onontgonnen terrein voor me was, maar omdat het nooit kwaad kan om op zoek te gaan naar gaten in je kennis, ook als je een techniek al tijden gebruikt. (Zie ook [deze blog](/blog/23/07/deze-blog-bevat-tooltips/ "'Deze blog bevat tooltips'"), bijvoorbeeld.) Bovendien had ik het boek in een vroege fase gereviewd[^1], en ik was benieuwd wat er uiteindelijk van was geworden. 
 
 
-Lang verhaal kort: het is een uitstekende inleiding geworden voor iedereen die Web API's in ASP.NET Core wil leren ontwikkelen. Het boek is een ruim vierhonderd pagina lange technische tutorial, waarin De Sanctis de lezer op een aangenaam rustig tempo bij de hand neemt tijdens de ontwikkeling van een [REST API](https://en.wikipedia.org/wiki/REST "'REST', Wikipedia") in .NET. Het boek is daarom een aanrader voor junior ontwikkelaars.
+Lang verhaal kort: het is een uitstekende inleiding geworden voor iedereen die Web API's in ASP.NET Core wil leren ontwikkelen. Het boek is een ruim vierhonderd pagina lange technische tutorial, waarin De Sanctis de lezer op een aangenaam rustig tempo bij de hand neemt tijdens de ontwikkeling van een [REST API](https://en.wikipedia.org/wiki/REST "'REST', Wikipedia") in .NET. Het boek is daarom een aanrader voor met name junior ontwikkelaars.
 
 
 ## Technische
@@ -26,7 +26,7 @@ Dat is een valide invalshoek, maar hij matcht niet helemaal met de opzet van het
 ## Bochten afsnijden
 
 
-Het probleem is alleen dat de code die aan het eind van het boek is geschreven, op belangrijke punten (nog) helemaal niet productierijp is. Om de functionaliteit van ASP.NET Core zo duidelijk mogelijk naar voren te brengen, snijdt De Sanctis regelmatig een bocht af in zijn codevoorbeelden. 
+Maar pas op: de code die je aan het eind van het boek hebt geschreven, is op belangrijke punten (nog) helemaal niet productierijp. Om de functionaliteit van ASP.NET Core zo duidelijk mogelijk naar voren te brengen, snijdt De Sanctis regelmatig een bocht af in zijn codevoorbeelden. 
 
 
 Eén van de meest in het oog lopende *bad practices* die hij bijvoorbeeld etaleert, is het volstoppen van de methods in zijn [Controllers](https://learn.microsoft.com/en-us/aspnet/core/web-api/ "'Create web APIs with ASP.NET Core', Microsoft documentatie") met logica -- tot aan het ophalen van data uit de database aan toe. In een productierijpe applicatie is dat uiteraard een *no go*, een schending van het [Single-Responsiblity Principe](/tags/single-responsibility-principe/ "Blogs met de tag 'single-responsibility principe'") (SRP). Het is namelijk niet de verantwoordelijkheid van een Controller-method om *business rules* te handhaven of om data op te halen. Zo'n method zou een zo dun mogelijke schil moeten zijn rondom classes die die verantwoordelijkheid wél hebben. De enige verantwoordelijkheid die aan de Controller-method toebehoort, is het ontsluiten van die classes aan de gebruikers van de Web API.

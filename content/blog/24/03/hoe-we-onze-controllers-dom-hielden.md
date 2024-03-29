@@ -1,14 +1,14 @@
 ---
 title: "Hoe we onze Controllers dom hielden"
 author: "Karl van Heijster"
-date: 2024-02-02T11:14:31+01:00
-draft: true
+date: 2024-03-29T08:51:32+01:00
+draft: false
 comments: true
 tags: ["exceptions", "refactoren", "software ontwikkelen", "web API's"]
 summary: "Het is zaak je Controller-methods zo compact, zo \"dom\" mogelijk te houden. Valerio De Sanctis' *Building Web APIs with ASP.NET Core* deed me denken aan de verschillende manieren waarop mijn team dat de afgelopen jaren voor elkaar heeft proberen te krijgen. Want het dom houden van je Controllers -- zonder aan expressiviteit in te boeten -- is geen triviale zaak. Vandaag: hoe het niet moet."
 ---
 
-Niet lang geleden las ik [*Building Web APIs with ASP.NET Core*](https://www.manning.com/books/building-web-apis-with-asp-net-core) van [Valerio De Sanctis](https://mvp.microsoft.com/en-US/mvp/profile/f42bd1d8-aa90-e811-813c-3863bb2bca60) (en schreef er een recensie over, [hier] (BLOG)). Een kritiekpunt die ik op De Sanctis' codevoorbeelden had, was dat hij teveel logica in zijn Controller methods stopte. Nu is dat in de context van een tutorial niet zo problematisch, maar het loont zich -- buiten die context dus -- denk ik wel om wat langer bij dit punt stil te staan.
+Niet lang geleden las ik [*Building Web APIs with ASP.NET Core*](https://www.manning.com/books/building-web-apis-with-asp-net-core) van [Valerio De Sanctis](https://mvp.microsoft.com/en-US/mvp/profile/f42bd1d8-aa90-e811-813c-3863bb2bca60) (en schreef er een [blog](/blog/24/03/moet-testen-een-onderdeel-van-een-tutorial-zijn/) over). Een kritiekpunt dat ik op De Sanctis' codevoorbeelden had, was dat hij teveel logica in zijn Controller-methods stopte. Nu is dat in de context van een tutorial niet zo problematisch, maar het loont zich -- buiten die context dus -- denk ik wel om wat langer bij dit punt stil te staan.
 
 
 Het is zaak je Controller-methods zo compact, zo "dom" mogelijk te houden. De Sanctis' boek deed me denken aan de verschillende manieren waarop mijn team dat de afgelopen jaren voor elkaar heeft proberen te krijgen. Want het dom houden van je Controllers -- zonder aan expressiviteit in te boeten -- is geen triviale zaak. 
@@ -136,7 +136,7 @@ Voordat we het item op proberen te halen, controleren we op toegangsrechten via 
 Opnieuw is onze Controller method een stukje slimmer geworden. Te slim zelfs. `GetItem` schendt het SRP. De method is zowel de ingang voor gebruikers van onze Web API én codificeert een *business rule*: een item is alleen op te vragen voor gebruikers die over de juiste rechten beschikken. We zullen na moeten denken over de introductie van een abstractielaag. 
 
 
-Wat we moeten doen is de logica verplaatsen naar een class wiens enige verantwoordelijkheid het is om de logica te codificeren. Dat heeft tot gevolg dat de Controller als enige verantwoordelijkheid overhoudt bepaalde functionaliteit te ontsluiten voor gebruikers. Traditioneel losten we dit in ons team op met een service.[^3] Een -- opnieuw -- naïeve interfacedefinitie zou er als volgt uit kunnen zien: 
+Wat we moeten doen is de logica verplaatsen naar een class wiens enige verantwoordelijkheid het is om de logica te codificeren. Dat heeft tot gevolg dat de Controller als enige verantwoordelijkheid overhoudt door te verwijzen naar die class. Traditioneel losten we dit in ons team op met een service.[^3] Een -- opnieuw -- naïeve interfacedefinitie zou er als volgt uit kunnen zien: 
 
 
 ```cs

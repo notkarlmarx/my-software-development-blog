@@ -1,8 +1,8 @@
 ---
 title: "YAGNI veronderstelt tests"
 author: "Karl van Heijster"
-date: 2024-02-09T11:25:44+01:00
-draft: true
+date: 2024-04-05T07:49:51+02:00
+draft: false
 comments: true
 tags: ["leermoment", "mentaal model", "testen", "vertrouwen", "YAGNI"]
 summary: "Er zijn twee soorten ontwikkelaars: ontwikkelaars die roepen: \"*You ain't gonna need it*\", en ontwikkelaars die mompelen: \"Ja ja, dat roep je wel, maar ik bouw het voor de zekerheid toch maar in.\" Ik behoor tot het eerste kamp; enkele van mijn collega's tot het tweede. -- Maar waarom?"
@@ -17,16 +17,16 @@ Mijn redenering is als volgt. Alle code die ik niet schrijf hoef ik niet te schr
 ## Verbaasd
 
 
-Lang heb ik me erover verbaasd dat mijn collega's daar anders tegenaan keken. Als er werd gevraagd om te kunnen zoeken op een titelveld, bijvoorbeeld, dan bouwden ze óók de mogelijkheid in op de beschrijving te zoeken. Omdat ze dachten: nu vraag je om de titel, tuurlijk, maar straks ga je ook om de beschrijving vragen, en dan heb ik dan geen werk meer aan. Ze redeneerden: het is nu voor mij een kleine moeite, dus waarom zou ik het niet doen? 
+Lang heb ik me erover verbaasd dat mijn collega's daar anders tegenaan keken. Als er werd gevraagd om te kunnen zoeken op een titelveld, bijvoorbeeld, dan bouwden ze óók de mogelijkheid in op de beschrijving te zoeken. Omdat ze dachten: nu vraag je om de titel, tuurlijk, maar later ga je ook om de beschrijving vragen, en dan heb ik daar straks geen werk meer aan. Ze redeneerden: het is nu voor mij een kleine moeite, dus waarom zou ik het niet doen? 
 
 
-Maar als blijkt dat er nooit om de functionaliteit wordt gevraagd om te kunnen zoeken op de beschrijving, dan is de code complexer dan nodig -- met alle onderhoudslast die daarbij komt kijken. Denk eens aan alle frustratie die je je had kunnen besparen wanneer blijkt dat een moeilijk reproduceerbare bug voort bleek te komen uit een stuk code waar niemand om heeft gevraagd en daarom door helemaal niemand wordt gebruikt!
+Maar als blijkt dat er nooit om de functionaliteit wordt gevraagd om te kunnen zoeken op de beschrijving, dan is de code complexer dan nodig -- met alle onderhoudslast die daarbij komt kijken. Denk eens aan alle frustratie die je je had kunnen besparen wanneer blijkt dat een moeilijk reproduceerbare bug voort bleek te komen uit een stuk code waar niemand om heeft gevraagd en dat daarom door helemaal niemand wordt gebruikt!
 
 
 ## Een wereld zonder tests
 
 
-Opeens viel er een kwartje: mijn collega's leven nog altijd in een wereld zonder tests, zonder vangnet.[^1] Hun [mentale model](/tags/mentaal-model/ "Blogs met de tag 'mentaal model'") is nog niet aangepast naar een nieuwe situatie, waarin code eenvoudig te wijzigen is omdat er een uitgebreide testsuite is die je onmiddellijke feedback geeft over de werking van het systeem. Ze voelen de implicaties van een goede testcoverage nog niet in hun vezels. 
+Opeens viel er een kwartje: mijn collega's leven nog altijd in een wereld zonder tests, zonder [vangnet](/blog/22/09/tests-als-vangnet/ "'Tests als vangnet'").[^1] Hun [mentale model](/tags/mentaal-model/ "Blogs met de tag 'mentaal model'") is nog niet aangepast naar een nieuwe situatie, waarin code eenvoudig te wijzigen is omdat er een uitgebreide testsuite is die je onmiddellijke feedback geeft over de werking van het systeem. Ze voelen de implicaties van een goede testcoverage nog niet in hun vezels. 
 
 
 Ga maar na hoe de wereld eruitziet zonder zo'n vangnet. In zo'n situatie vormt elke codewijziging een risico. Een verandering in het ene deel van het systeem kan, zonder dat je het weet, een ander deel van het systeem om zeep helpen. Je denkt als ontwikkelaar daarom wel twee keer na voordat je code aanraakt -- ofwel om het gedrag te wijzigen, ofwel om de code te refactoren. In zo'n wereld loont het zich om te denken: ik bouw deze feature nu alvast in, want nu zit ik diep in deze materie en nu zie ik het wanneer ik iets kapotmaak. Inderdaad: nu is het nog een kleine moeite. Als ik het straks doe, is alle context die ik nu in mijn hoofd heb verdwenen, en ik heb geen garantie dat ik die dan terug kan halen.

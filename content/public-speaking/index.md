@@ -7,10 +7,10 @@ draft: false
 <br/>
 
 
-Ludwig Wittgenstein zei ooit: "Waarvan men niet spreken kan, daarover moet men zwijgen." Gelukkig valt er over softwareontwikkeling meer dan genoeg te zeggen. 
+Ik heb het geluk gehad de afgelopen jaren regelmatig te mogen spreken op usergroups en conferenties. [Klik hier](/talks/overview/) voor een beknopt overzicht.
 
 
-Ik deel mijn inzichten graag op usergroups en conferenties. [Klik hier](/talks/overview/) voor een beknopt overzicht.
+In mijn presentaties reflecteer ik over onder andere op [testen](/tags/testen/) en [Test-Driven Development](/tags/test-driven-development/) (TDD), [refactoren](/tags/refactoren/) en het [ontwerp van code](/tags/clean-code/), en de [filosofie](/tags/filosofie/) achter softwareontwikkeling.
 
 
 Meer informatie over mij als spreker is te vinden op [Sessionize](https://sessionize.com/karl-van-heijster) en [Speaker Deck](https://speakerdeck.com/dotkarl).

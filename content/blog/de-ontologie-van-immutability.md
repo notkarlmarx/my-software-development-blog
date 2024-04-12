@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2024-04-06T21:21:48+02:00
 draft: true
 comments: true
-tags: []
+tags: ["filosofie", "immutability", "mentaal model"]
 summary: "Het gebruik van *immutable* datastructuren maak je code veiliger, eenvoudiger en beter onderhoudbaar. Toch voelt het voor de meesten van ons vreemd, een totaal nieuw object te instantiëren wanneer één property wijzigt. -- Waarom?"
 ---
 

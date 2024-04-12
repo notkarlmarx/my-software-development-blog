@@ -12,7 +12,7 @@ summary: "Vaak werkt het zo: tests maken *x* mogelijk, Test-Driven Development (
 Vaak werkt het zo: tests maken *x* mogelijk, [Test-Driven Development](/tags/test-driven-development/ "Blogs met de tag 'test-driven development'") (TDD) tilt *x* naar een volgend niveau.
 
 
-Welnu, het idee van [YAGNI](/tags/yagni/ "Blogs met de tag 'YAGNI'") -- *You Ain't Gonna Need It* -- [veronderstelt tests](/blog/24/04/yagni-veronderstelt-tests/). TDD tilt het naar een volgend niveau. Tests faciliteren YAGNI, TDD radicaliseert het.
+Welnu, het idee van [YAGNI](/tags/yagni/ "Blogs met de tag 'YAGNI'") -- *You Ain't Gonna Need It* -- [veronderstelt tests](/blog/24/04/yagni-veronderstelt-tests/). TDD tilt het naar een volgend niveau. Tests faciliteren YAGNI, TDD radicaliseert het. (Zie ook [deze blog](/blog/22/03/agile-en-test-driven-development/ "'Agile en Test-Driven Development'").)
 
 
 TDD schrijft voor: *red*-*green*-*refactor*. Schrijf een falende test, schrijf precies genoeg code om die test te laten slagen, en refactor je code daarna. De crux van dit verhaal zit 'm in het "precies genoeg code": dát is YAGNI bij uitstek.

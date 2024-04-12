@@ -1,8 +1,8 @@
 ---
 title: "Test-Driven Development en YAGNI"
 author: "Karl van Heijster"
-date: 2024-02-09T12:03:04+01:00
-draft: true
+date: 2024-04-12T07:52:24+02:00
+draft: false
 comments: true
 tags: ["test-driven development", "testen", "yagni"]
 summary: "Vaak werkt het zo: tests maken *x* mogelijk, Test-Driven Development (TDD) tilt *x* naar een volgend niveau. Welnu, het idee van YAGNI -- *You Ain't Gonna Need It* -- veronderstelt tests. TDD tilt het naar een volgend niveau. Tests faciliteren YAGNI, TDD radicaliseert het."
@@ -12,7 +12,7 @@ summary: "Vaak werkt het zo: tests maken *x* mogelijk, Test-Driven Development (
 Vaak werkt het zo: tests maken *x* mogelijk, [Test-Driven Development](/tags/test-driven-development/ "Blogs met de tag 'test-driven development'") (TDD) tilt *x* naar een volgend niveau.
 
 
-Welnu, het idee van [YAGNI](/tags/yagni/ "Blogs met de tag 'YAGNI'") -- *You Ain't Gonna Need It* -- [veronderstelt tests] (BLOG). TDD tilt het naar een volgend niveau. Tests faciliteren YAGNI, TDD radicaliseert het.
+Welnu, het idee van [YAGNI](/tags/yagni/ "Blogs met de tag 'YAGNI'") -- *You Ain't Gonna Need It* -- [veronderstelt tests](/blog/24/04/yagni-veronderstelt-tests/). TDD tilt het naar een volgend niveau. Tests faciliteren YAGNI, TDD radicaliseert het.
 
 
 TDD schrijft voor: *red*-*green*-*refactor*. Schrijf een falende test, schrijf precies genoeg code om die test te laten slagen, en refactor je code daarna. De crux van dit verhaal zit 'm in het "precies genoeg code": dát is YAGNI bij uitstek.
@@ -21,7 +21,7 @@ TDD schrijft voor: *red*-*green*-*refactor*. Schrijf een falende test, schrijf p
 ## FizzBuzz
 
 
-Laten we de bekende [FizzBuzz](https://codingdojo.org/kata/FizzBuzz/ "'FizzBuzz', Coding Dojo") [kata](https://nl.wikipedia.org/wiki/Kata "'Kata', Wikipedia")[^1] nemen om dit te illustreren. In deze kata word je gevraagd om een systeem te implementeren met eenvoudige requirements. Het systeem accepteert een `integer` als input, en retourneert een `string` als output. In de meeste gevallen zal de output de `string`-representatie van de input zijn: `1` staat tot `"1"`, `2` tot `"2"`, enzovoort. Er zijn drie afwijkingen van deze regel. Een getal dat deelbaar is door 3, retourneert `"Fizz"`; een getal dat deelbaar is door 5 retourneert `"Buzz"`, en een getal dat deelbaar is door 3 én 5 retourneert `"FizzBuzz"`.
+Laten we de bekende [FizzBuzz](https://codingdojo.org/kata/FizzBuzz/ "'FizzBuzz', Coding Dojo") [kata](https://nl.wikipedia.org/wiki/Kata "'Kata', Wikipedia") nemen om dit te illustreren. In deze kata word je gevraagd om een systeem te implementeren met eenvoudige requirements. Het systeem accepteert een `integer` als input, en retourneert een `string` als output. In de meeste gevallen zal de output de `string`-representatie van de input zijn: `1` staat tot `"1"`, `2` tot `"2"`, enzovoort. Er zijn drie afwijkingen van deze regel. Een getal dat deelbaar is door 3, retourneert `"Fizz"`, een getal dat deelbaar is door 5 retourneert `"Buzz"`, en een getal dat deelbaar is door 3 én 5 retourneert `"FizzBuzz"`.
 
 
 Het doel van de kata is niet de juiste logica te schrijven -- dat is een triviale opgave. Het doel van de kata is de juiste logica te schrijven *door middel van TDD*. Dus dat is wat we gaan doen.
@@ -72,7 +72,6 @@ Merk op: we schrijven precies genoeg code om de compileerfout te verhelpen *en g
 
 
 Pas daarna gaan we verder met de test:
-
 
 
 ```cs
@@ -129,7 +128,7 @@ public string FizzBuzz(int input)
 ```
 
 
-Opnieuw: je weet heus wel dat de code die je schrijft de volgende test niet zal overleven -- dat is het punt niet. Het punt is: op dit moment is het nog niet nodig dat je code meer doet dan dit. Dit is programmeren op z'n YAGNI in zijn meest pure vorm -- en het is aanvankelijk verwarrend en ongemakkelijk en voelt inefficiënt, dat is allemaal waar.
+Opnieuw: je weet heus wel dat de code die je schrijft de volgende test niet zal overleven -- dat is het punt niet. Het punt is: op dit moment is het nog niet nodig dat je code meer doet dan dit. Dit is programmeren à la YAGNI in zijn meest pure vorm -- en het is aanvankelijk verwarrend en ongemakkelijk en voelt inefficiënt, dat is allemaal waar.
 
 
 ## Test #3 & #4

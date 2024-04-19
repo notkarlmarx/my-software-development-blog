@@ -1,14 +1,14 @@
 ---
 title: "Hoe we onze controllers dom houden"
 author: "Karl van Heijster"
-date: 2024-02-16T11:30:46+01:00
+date: 2024-04-19T08:23:57+02:00
 draft: true
 comments: true
 tags: ["eerlijke functies", "exceptions", "functioneel programmeren", "refactoren", "software ontwikkelen", "web API's"]
-summary: "Onlangs schreef ik over Controllers en de manier waarop mijn team ervoor zorgde dat er zo min mogelijk logica in die dingen terechtkwam. Onze opzet had impact op de manier waarop we onze logica structureerden. Het betekende dat de methods in onze services exceptions op moesten gooien zodra deze van het succespad afwijkten. Je kunt je vraagtekens hebben bij deze oplossingsrichting -- en die kregen we uiteindelijk ook."
+summary: "Onlangs schreef ik over Controllers en de manier waarop mijn team ervoor zorgde dat er zo min mogelijk logica in die dingen terechtkwam. Onze opzet had impact op de manier waarop we onze logica structureerden. Het betekende dat de methods in onze services exceptions op moesten gooien zodra deze van het succespad afwijkten. Je kunt zo je vraagtekens zetten bij deze oplossingsrichting -- en dat deden we uiteindelijk ook."
 ---
 
-Onlangs schreef ik over [Controllers](https://learn.microsoft.com/en-us/aspnet/core/web-api/ "'Create web APIs with ASP.NET Core', Microsoft documentatie") en [de manier waarop mijn team ervoor zorgde dat er zo min mogelijk logica in die dingen terechtkwam] (BLOG). Lang verhaal kort: in de Controller method zelf handelden we alleen de succesconditie af; de verantwoordelijkheid foutcondities af te handelen delegeerden we naar een een stukje [middleware](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-8.0 "'ASP.NET Core Middleware', Microsoft documentatie"). Zo maakten we het voor onszelf mogelijk om verschillende [statuscodes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes "'List of HTTP status codes', Wikipedia") terug te geven in verschillende scenario's.
+Onlangs schreef ik over [Controllers](https://learn.microsoft.com/en-us/aspnet/core/web-api/ "'Create web APIs with ASP.NET Core', Microsoft documentatie") en [de manier waarop mijn team ervoor zorgde dat er zo min mogelijk logica in die dingen terechtkwam](/blog/24/03/hoe-we-onze-controllers-dom-hielden/ "'Hoe we onze Controllers dom hielden'"). Lang verhaal kort: in de Controller method zelf handelden we alleen de succesconditie af; de verantwoordelijkheid foutcondities af te handelen delegeerden we naar een een stukje [middleware](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-8.0 "'ASP.NET Core Middleware', Microsoft documentatie"). Zo maakten we het voor onszelf mogelijk om verschillende [statuscodes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes "'List of HTTP status codes', Wikipedia") terug te geven in verschillende scenario's.
 
 
 Deze opzet had impact op de manier waarop we onze logica structureerden. Het betekende dat de methods in onze services [exceptions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/ "'Exceptions and Exception Handling', Microsoft documentatie") op moesten gooien zodra deze van het succespad afwijkten. Exceptions werden een integraal onderdeel van onze [*control flow*](https://en.wikipedia.org/wiki/Control_flow "'Control flow', Wikipedia").
@@ -17,7 +17,7 @@ Deze opzet had impact op de manier waarop we onze logica structureerden. Het bet
 ## Vraagtekens
 
 
-Je kunt je vraagtekens hebben bij deze oplossingsrichting -- en die kregen we uiteindelijk ook. Er zijn verschillende problemen met het gebruik van exceptions voor de afhandeling van businesslogica. 
+Je kunt zo je vraagtekens zetten bij deze oplossingsrichting -- en dat deden we uiteindelijk ook. Er zijn verschillende problemen met het gebruik van exceptions voor de afhandeling van businesslogica. 
 
 
 Eén zo'n probleem is de [performanceimpact van het gebruik van exceptions](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/exceptions-and-performance "'Exceptions and Performance', Microsoft documentatie"). Maar ik zal eerlijk zijn: dit is wat mij betreft niet een doorslaggevend argument om van het gebruik van exceptions af te stappen. Hoewel het routinematig gebruik van exceptions een negatieve impact heeft op de performance, vormen exceptions in mijn ervaring maar zelden de bottleneck voor de snelheid van een systeem.
@@ -26,7 +26,7 @@ Eén zo'n probleem is de [performanceimpact van het gebruik van exceptions](http
 ## Semantisch
 
 
-Dit is een interessanter vraagstuk: zijn exceptions semantisch bezien het juiste middel om afwijkingen van het succespad mee uit te programmeren? Communiceren deze de juiste intentie? In het voorbeeld dat ik in [mijn vorige blog] (BLOG) uitwerkte, gebruikten we exceptions om te signaleren dat de gebruiker geen toegang had tot een resource, of dat een resource niet gevonden kon worden. 
+Dit is een interessanter vraagstuk: zijn exceptions semantisch bezien het juiste middel om afwijkingen van het succespad mee uit te programmeren? Communiceren deze de juiste intentie? In het voorbeeld dat ik in [mijn vorige blog](/blog/24/03/hoe-we-onze-controllers-dom-hielden/ "'Hoe we onze Controllers dom hielden'") uitwerkte, gebruikten we exceptions om te signaleren dat de gebruiker geen toegang had tot een resource, of dat een resource niet gevonden kon worden. 
 
 
 ```cs
@@ -45,16 +45,16 @@ public async Task<Item> GetByIdAsync(
 ```
 
 
-Vraag jezelf af: zijn deze scenario's inderdaad uitzonderlijk, *exceptioneel*? Horen foutcondities als geen toegang hebben of een resource niet kunnen vinden bij de "normale" flow van een systeem? -- Het klinkt als een gewetensvraag: is falen een geaccepteerde mogelijkheid of niet?
+Vraag jezelf af: zijn deze scenario's inderdaad uitzonderlijk, *exceptioneel*? Horen foutcondities als geen toegang hebben of een resource niet kunnen vinden bij de "normale" flow van een systeem? -- Het klinkt als een gewetensvraag: is falen een erkende mogelijkheid of niet?
 
 
 ## Over exceptions
 
 
-Het loont zich om te reflecteren op wat de structuur van exceptions ons vertellen over de scenario's waarin ze toepasselijk zijn. Exceptions onderbreken de normale flow van een programma. De meeste code valt van boven naar beneden te lezen, als een verhaal: eerst gebeurt er dit, dan gebeurt er dat. Maar op het punt dat er een exception wordt opgegooid, doen de regels daar onder er niet meer toe. Wie wil weten hoe het verhaal afloopt, moet naar een heel andere bladzijde bladeren, zogezegd.
+Het loont zich om te reflecteren op wat de structuur van exceptions ons vertellen over de scenario's waarin ze van toepassing zijn. Exceptions onderbreken de normale flow van een programma. De meeste code valt van boven naar beneden te lezen, als een verhaal: eerst gebeurt er dit, dan gebeurt er dat. Maar op het punt dat er een exception wordt opgegooid, doen de regels daar onder er niet meer toe. Wie wil weten hoe het verhaal afloopt, moet naar een heel andere bladzijde bladeren, zogezegd.
 
 
-Exceptions coderen (*pun intended*) hun exceptionele status dus niet alleen in hun naam, maar ook in hun gedrag, en in de reactie die ze van de lezer van de code vragen. (Voor meer bespiegelingen over de communicatieve eigenschappen van code, zie [deze blog](/blog/24/01/symmetrische-en-asymmetrische-overerving/ "'Symmetrische en asymmetrische overerving'").)
+Exceptions coderen (*pun intended*) hun exceptionele status dus niet alleen in hun naam, maar ook in hun gedrag, en in de reactie die ze van de lezer van de code vragen. (Voor meer bespiegelingen over de communicatieve eigenschappen van code, zie [deze](/blog/24/01/symmetrische-en-asymmetrische-overerving/ "'Symmetrische en asymmetrische overerving'") en [deze blog](/blog/23/12/codefluisteren/ "'Codefluisteren'").)
 
 
 Als we beslissen dat deze scenario's inderdaad uitzonderlijk zijn, dan kunnen we de implementatie laten zoals deze is. Maar dat is niet de beslissing die we als team namen. Nee, het is niet uitzonderlijk dat een bepaalde gebruiker geen toegang heeft tot een bepaald Item; niet elke gebruiker mag immers elk Item bekijken. En het is evenmin uitzonderlijk dat een databasequery met een bepaald `id` geen resultaat oplevert; het kan nu eenmaal zo zijn dat er geen record met dat `id` bestaat. Exceptions zijn semantisch dus niet het juiste middel voor wat we willen bereiken.
@@ -66,7 +66,7 @@ Als we beslissen dat deze scenario's inderdaad uitzonderlijk zijn, dan kunnen we
 Bovendien, hun gedrag heeft -- dit is het derde probleem -- impact op de leesbaarheid van de code. Exceptions maken het gedrag van een method ondoorzichtig. Het is moeilijk om aannames te doen over de gevolgen die een bepaalde method call kan hebben. Je zal als lezer de context waarin de method method wordt aangeroepen, moeten inspecteren om erachter te komen wat die aanroep voor allemaal gevolgen voor gevolgen kan hebben.
 
 
-Dat geldt in het bijzonder voor de code waar ik [mijn vorige blog] (BLOG) mee eindigde:
+Dat geldt in het bijzonder voor de code waar ik [mijn vorige blog](/blog/24/03/hoe-we-onze-controllers-dom-hielden/ "'Hoe we onze Controllers dom hielden'") mee eindigde:
 
 
 ```cs
@@ -92,7 +92,7 @@ Deze code lijkt eenvoudig: je roept iets aan, je krijgt een antwoord terug, en j
 ## (On)eerlijk
 
 
-De bovenstaande method is -- in het jargon van [functioneel programmeren](/tags/functioneel-programmeren/ "Blogs met de tag 'functioneel programmeren'") -- niet [eerlijk](/blog/22/07/wat-zijn-eerlijke-functies/ "'Wat zijn eerlijke functies?'"). (Zie ook [deze blog](/blog/23/01/eerlijke-domeinmodellen/ "'Eerlijke domeinmodellen'").) Een eerlijke functie is transparant wat ze doet: gegeven input *x* retourneert deze ouput *y* -- en meer niet.
+De bovenstaande method is, in het jargon van [functioneel programmeren](/tags/functioneel-programmeren/ "Blogs met de tag 'functioneel programmeren'"), niet [eerlijk](/blog/22/07/wat-zijn-eerlijke-functies/ "'Wat zijn eerlijke functies?'"). (Zie ook [deze blog](/blog/23/01/eerlijke-domeinmodellen/ "'Eerlijke domeinmodellen'").) Een eerlijke functie is transparant over wat ze doet: gegeven input *x* retourneert deze ouput *y* -- en meer niet.
 
 
 Kunnen we deze method zodanig herschrijven dat deze eerlijk is? Ja: we zouden de verschillende scenario's die plaats kunnen vinden -- succes, geen toegang, of niet gevonden -- kunnen vastleggen in object van hoger abstractieniveau. Laten we deze `QueryResult` noemen. Een naïeve implementatie zou er als volgt uit kunnen zien:
@@ -132,7 +132,7 @@ public async Task<QueryResult> GetByIdAsync(
 Ook onze Controller method behoeft wat aanpassing -- maar daar kom ik later op terug. Eerst wil ik reflecteren op de winst die we geboekt hebben. 
 
 
-Merk op dat we middels het `QueryResult`-object communiceren dat het *niet* uitzonderlijk is dat een gebruiker geen toegang heeft tot een bepaald Item, of dat een Item niet kan worden gevonden. En dat heeft direct impact op de leesbaarheid van de code. We zouden ons kunnen beperken tot het lezen van de signatuur van de functie -- `GetItemByIdasync: (int, ClaimsPrincipal) -> QueryResult` -- om erachter te komen wat deze doet. We hoeven niet langer de functie zelf te inspecteren om te zien of we niet voor nare verrassingen worden gesteld.
+Merk op dat we middels het `QueryResult`-object communiceren dat het *niet* uitzonderlijk is dat een gebruiker geen toegang heeft tot een bepaald Item, of dat een Item niet kan worden gevonden. En dat heeft direct impact op de leesbaarheid van de code. We zouden ons kunnen beperken tot het lezen van de signatuur van de functie -- `GetItemByIdAsync: (int, ClaimsPrincipal) -> QueryResult` -- om erachter te komen wat deze doet. We hoeven niet langer de functie zelf te inspecteren om te zien of we niet voor nare verrassingen worden gesteld.
 
 
 ## Problemen
@@ -210,7 +210,7 @@ Dit maakt het onmogelijk voor een ontwikkelaar om te vergeten `NotFound` de juis
 ## Beperken
 
 
-Om het tweede probleem op te kunnen lossen, moeten we ervoor kunnen zorgen dat we een `QueryResult` kunnen instantiëren waarin ofwel `AccessDenied` ofwel `NotFound` op `true` is geset, maar niet allebei. We moeten de gebruiker van deze class dus beperken in zijn mogelijkheden de waarden van deze properties handmatig aan te passen. Dat doen we door dit te controleren via [factory methods](https://en.wikipedia.org/wiki/Factory_method_pattern "'Factory method pattern', Wikipedia"):
+Om het tweede probleem op te kunnen lossen, moeten we ervoor kunnen zorgen dat we een `QueryResult` kunnen instantiëren waarin ofwel `AccessDenied` ofwel `NotFound` op `true` is geset, maar niet allebei. We moeten de gebruiker van deze class dus beperken in zijn mogelijkheden de waarden van deze properties handmatig aan te passen. Dat doen we middels [factory methods](https://en.wikipedia.org/wiki/Factory_method_pattern "'Factory method pattern', Wikipedia"):
 
 
 ```cs
@@ -332,4 +332,4 @@ public class ItemsController : ControllerBase
 In twee regels code (plus de code in `QueryResult<T>` en diens extension method) hebben we onszelf de mogelijkheid gegeven om verschillende statuscodes terug te geven in verschillende scenario's zonder in te leveren op leesbaarheid dankzij een onnavolgbare *control flow*.
 
 
-En dat is dus hoe we onze Controllers dom houden. -- In elk geval, totdat we een betere manier hebben gevonden.
+En dat is dus hoe we onze Controllers dom houden. -- In elk geval totdat we een betere manier hebben gevonden.

@@ -1,5 +1,5 @@
 ---
-title: "Hoe we onze controllers dom houden"
+title: "Hoe we onze Controllers dom houden"
 author: "Karl van Heijster"
 date: 2024-04-19T08:23:57+02:00
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "Waarom testers code moeten reviewen"
 author: "Karl van Heijster"
-date: 2024-03-28T11:17:40+01:00
+date: 2024-04-18T09:33:28+02:00
 draft: false
 comments: true
 tags: ["code reviews", "samenwerking", "testen"]

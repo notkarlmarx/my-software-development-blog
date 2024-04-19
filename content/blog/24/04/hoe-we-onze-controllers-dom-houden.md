@@ -2,7 +2,7 @@
 title: "Hoe we onze controllers dom houden"
 author: "Karl van Heijster"
 date: 2024-04-19T08:23:57+02:00
-draft: true
+draft: false
 comments: true
 tags: ["eerlijke functies", "exceptions", "functioneel programmeren", "refactoren", "software ontwikkelen", "web API's"]
 summary: "Onlangs schreef ik over Controllers en de manier waarop mijn team ervoor zorgde dat er zo min mogelijk logica in die dingen terechtkwam. Onze opzet had impact op de manier waarop we onze logica structureerden. Het betekende dat de methods in onze services exceptions op moesten gooien zodra deze van het succespad afwijkten. Je kunt zo je vraagtekens zetten bij deze oplossingsrichting -- en dat deden we uiteindelijk ook."

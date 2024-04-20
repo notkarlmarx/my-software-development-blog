@@ -80,7 +80,7 @@ Mijn mening over wat refactoren *is*, is in de loop der jaren veranderd. Vroeger
 Er werd ook [filosofisch](/tags/filosofie/ "Blogs met de tag 'filosofie'") op ontwerp gereflecteerd. Ik begon [mijn honderste blog](/blog/22/03/blog-100/ "'Blog #100!'") met wat gedachten over [Domain-Driven Design en Ludwig Wittgenstein](/blog/21/08/domain-driven-design-en-ludwig-wittgenstein/ "'Domain-Driven Design en Ludwig Wittgenstein'"). Het lijkt me passend om dit overzicht van de afgelopen 150 blogs af te sluiten in diezelfde hoek. 
 
 
-De Wittgensteinbibliotheek is sindsdien aangevuld met [pseudofilosfische onderzoekingen](/blog/23/09/pseudofilosofische-onderzoekingen-i-en-ii/ "'Pseudofilosofische onderzoekingen (I & II)'") en een [logisch-filosofische *Abhandlung*](/blog/23/12/logisch-filosofische-verhandeling/ "'Logisch-filosofische verhandeling'"). Ik schreef daarnaast over het werk van [Daniel Dennett](https://en.wikipedia.org/wiki/Daniel_Dennett "'Daniel Dennett', Wikipedia") over evolutie. In die kruisbestuiving schreef ik over [evolutionair programmeren](/blog/23/10/evolutionair-programmeren/ "'Evolutionair programmeren'") en [luchthaken en hijskranen](/blog/23/09/coderen-met-luchthaken-en-hijskranen/ "'Coderen met luchthaken en hijskranen'"). Ik weet niet zeker of het overal filosofisch hout snijdt, maar het was een leuke intellectuele oefening.
+De Wittgensteinbibliotheek is sindsdien aangevuld met [pseudofilosfische onderzoekingen](/blog/23/09/pseudofilosofische-onderzoekingen-i-en-ii/ "'Pseudofilosofische onderzoekingen (I & II)'") en een [logisch-filosofische *Abhandlung*](/blog/23/12/logisch-filosofische-verhandeling/ "'Logisch-filosofische verhandeling'"). Ik schreef daarnaast over het werk van (de [vorige week helaas overleden](https://nos.nl/artikel/2517489-amerikaanse-filosoof-en-uitgesproken-atheist-daniel-dennett-82-overleden "'Amerikaanse filosoof en uitgesproken atheïst Daniel Dennett (82) overleden', NOS")) [Daniel Dennett](https://en.wikipedia.org/wiki/Daniel_Dennett "'Daniel Dennett', Wikipedia") over evolutie. In die kruisbestuiving schreef ik over [evolutionair programmeren](/blog/23/10/evolutionair-programmeren/ "'Evolutionair programmeren'") en [luchthaken en hijskranen](/blog/23/09/coderen-met-luchthaken-en-hijskranen/ "'Coderen met luchthaken en hijskranen'"). Ik weet niet zeker of het overal filosofisch hout snijdt, maar het was een leuke intellectuele oefening.
 
 
 Ook vakinhoudelijk was er ruimte voor fundamentele reflectie. Van [Anjana Vakil](https://anjana.dev/) leerde ik dat [objectgeoriënteerde code niet om objecten draait](/blog/23/06/objectgeorienteerd-programmeren-draait-niet-om-objecten/ "'Objectgeoriënteerd programmeren draait niet om objecten'"). Denk daar maar eens over na!
@@ -89,10 +89,10 @@ Ook vakinhoudelijk was er ruimte voor fundamentele reflectie. Van [Anjana Vakil]
 ## Het goed doen
 
 
-Code ontwerpen, testen, beoordelen, schrijven en herschrijven (maar niet per se in die volgorde) en daar dan weer op reflecteren -- het zijn de hoofdingrediënten van de afgelopen twee jaar *dotkarl*. 
+Code ontwerpen, testen, beoordelen, schrijven en herschrijven (maar niet per se in die volgorde) en daar dan weer op reflecteren (en soms [een nummer van Bob Dylan coderen](/blog/23/06/ode-aan-bod-dylan/ "'Ode aan Bob Dylan'")) -- het zijn de hoofdingrediënten van de afgelopen twee jaar *dotkarl*. 
 
 
-Ik heb me in die tijd wel eens afgevraagd wat het is wat me drijft al die woorden aan elkaar te rijgen. Een antwoord waar ik mee kon leven was: "Om antwoord te krijgen op de vraag: hoe doe ik het *goed*?" 
+Ik heb me in die tijd wel eens afgevraagd wat het is wat me drijft al die woorden aan elkaar te rijgen. Een antwoord waar ik mee kon leven was: "Om antwoord te krijgen op de vraag: hoe doe ik het *goed*?" Mijn gevoel zegt me dat ik de afgelopen jaren iets dichter bij dat doel ben gekomen.
 
 
-En soms [om een nummer van Bob Dylan te hertalen naar code](/blog/23/06/ode-aan-bod-dylan/ "'Ode aan Bob Dylan'"). -- Enniewee, op naar #500!
+-- Dus: op naar #500!

@@ -23,7 +23,7 @@ Aan het eind van deze sessie weet je hoe je een team kunt stimuleren sneller en 
 
 - [TestNet Najaarsevenement](https://www.testnet.org/), 11 oktober 2023
 - Developer Meet-up @ [Cito](https://www.cito.nl/) (intern), 28 maart 2024
-- [Living Documentation Event](https://www.ict.eu/en/events/lde24), 18 april 2024
+- [Living Documentation Event](https://www.ict.eu/en/events/lde24), 18 april 2024 ([foto's](https://www.ict.eu/en/newsroom/news/recap-living-documentation-event-2024))
 
 
 ## Gerelateerde blogs

@@ -5,10 +5,10 @@ date: 2024-03-08T14:05:06+01:00
 draft: true
 comments: true
 tags: ["software ontwikkelaar (rol)", "werkplezier"]
-summary: "Onlangs mocht ik op mijn oude universiteit jonge studenten (en hun ouders) geruststellen: het is goed mogelijk een leuke en degelijk betaalde baan te bemachtigen met een studie filosofie. Na afloop had ik een leuk gesprek met een Steve Jobs-lookalike -- een vader, geen student --, die me vertelde dat ook hij overwoog om te leren programmeren. Hij zei wat iedereen zegt die overweegt te leren programmeren: \"Ik heb het altijd leuk gevonden om dingen uit elkaar te halen om te kijken hoe ze werken.\" -- En ik besefte me opeens: ik heb dat *totaal* niet."
+summary: "Onlangs mocht ik op mijn oude universiteit jonge studenten (en hun ouders) geruststellen: het is goed mogelijk een leuke en En uitdagende baan te bemachtigen met een studie filosofie. Na afloop had ik een leuk gesprek met een Steve Jobs-lookalike -- een vader, geen student --, die me vertelde dat ook hij overwoog om te leren programmeren. Hij zei wat iedereen zegt die overweegt te leren programmeren: \"Ik heb het altijd leuk gevonden om dingen uit elkaar te halen om te kijken hoe ze werken.\" -- En ik besefte me opeens: ik heb dat *totaal* niet."
 ---
 
-Onlangs mocht ik op mijn oude universiteit jonge studenten (en hun ouders) geruststellen: -- je hóeft niet in de goot te eindigen als afgestudeerd filosoof, dat is optioneel. Het is goed mogelijk een leuke en degelijk betaalde baan te bemachtigen met een studie filosofie. (Zie ook [deze](/blog/21/07/mijn-loopbaanwending/ "'Mijn loopbaanwending'") [deze blog] (OVER_FILOSOFIE_EN_SOFTWARE_ONTWIKKELEN).) Na afloop had ik een leuk gesprek met een Steve Jobs-lookalike -- een vader, geen student --, die me vertelde dat ook hij overwoog om te leren programmeren. 
+Onlangs mocht ik op mijn oude universiteit jonge studenten (en hun ouders) geruststellen: -- je hóeft niet in de goot te eindigen als afgestudeerd filosoof, dat is optioneel. Het is goed mogelijk een leuke en uitdagende (en degelijk betaalde) baan te bemachtigen met een studie filosofie. (Zie ook [deze](/blog/21/07/mijn-loopbaanwending/ "'Mijn loopbaanwending'") en[deze blog] (OVER_FILOSOFIE_EN_SOFTWARE_ONTWIKKELEN).) Na afloop had ik een leuk gesprek met een Steve Jobs-lookalike -- een vader, geen student --, die me vertelde dat ook hij overwoog om te leren programmeren. 
 
 
 Hij zei wat iedereen zegt die overweegt te leren programmeren: "Ik heb het altijd leuk gevonden om dingen uit elkaar te halen om te kijken hoe ze werken." En: "Ik ben zo iemand die graag met iets loopt prutsen te totdat het werkt."
@@ -47,7 +47,7 @@ Na mijn gesprek zag ik plots sommige keuzes van mijn collega-ontwikkelaars[^2] i
 (Natuurlijk -- dat begrijp ik heel goed -- is dat niet het hele verhaal. Er spelen ook andere zaken mee, zoals werkdruk en/of deadlines en/of teamcultuur en/of het feit dat sommige ontwikkelaars überhaupt nog nooit diepgaand hebben overwogen dat code ook *mooi* -- eenvoudig, helder, expressief -- kan zijn; laat staan dat het dat *moet* zijn.)
 
 
-Dit is geen excuus om genoegen te nemen met "slechts" werkende code. Maar het verklaart wel waarom een team vol mensen die ervan houden dingen uit elkaar te halen en weer in elkaar te prutsen, de code oplevert die ze soms oplevert. Het is niet zo dat ze niet capabel zijn hun creatie onder controle te houden -- daar zijn ze slim genoeg voor. Maar hun interesses drijven hen tot het ontwerpen -- of liever: niet-ontwerpen -- van een systeem dat vol toffe technieken zit maar niet onderhoudbaar is.
+Dit is geen excuus om genoegen te nemen met "slechts" werkende code. Maar het verklaart wel waarom een team vol mensen die ervan houden dingen uit elkaar te halen en weer in elkaar te prutsen, de code oplevert die ze soms oplevert. Het is niet zo dat ze niet capabel zijn hun creatie onder controle te houden -- daar zijn ze slim genoeg voor. Maar hun interesses drijven hen tot het ontwerpen (soms verborgen onder uitbreidingen) van een systeem dat vol toffe technieken zit maar niet onderhoudbaar is.
 
 
 Veel programmeurs worden er blij van aan nieuwe, spannende dingen te mogen beginnen. Te weinig programmeurs worden er blij van oude, bekende dingen te onderhouden en verfijnen.

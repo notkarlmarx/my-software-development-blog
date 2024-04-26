@@ -1,8 +1,8 @@
 ---
 title: "Blog #250!"
 author: "Karl van Heijster"
-date: 2024-04-19T13:14:11+02:00
-draft: true
+date: 2024-04-26T06:33:44+02:00
+draft: false
 comments: true
 tags: ["code reviews", "dotkarl", "filosofie", "functioneel programmeren", "intentie van code", "refactoren", "testen"]
 summary: "Jeetje, ik blog alweer een tijdje! Er zijn 767 dagen voorbij gegaan sinds ik mijn honderdste blog schreef. Dus: feest! Vandaag blik ik terug op de laatste 150 blogs."
@@ -29,7 +29,7 @@ De kwaliteit (gebruiksgemak, schoonheid -- eenvoud, onderhoudbaarheid etc.) van 
 Ik schuwde daarbij niet om over de grenzen van het objectgeoriënteerde paradigma te kijken. [Functioneel programmeren](/tags/functioneel-programmeren/ "Blogs met de tag 'functioneel programmeren'") was voor mij de openbaring van het afgelopen jaar. Ik schreef over [functors](/blog/22/10/wat-is-een-functor/ "'Wat is een functor?'") en [monaden](/blog/22/12/wat-is-een-monad/ "'Wat is een monad?'") (waaronder [Options](/blog/22/08/spelen-met-options/ "'Spelen met Options'")), [het verschil tussen `.Select` en `.ForEach`](/blog/22/10/de-foreach-aan-het-eind-van-je-functieketen/ "'De ForEach aan het eind van je functieketen'") en ook [over `.Aggregate`](/blog/23/03/foreach-aggregate-en-select/ "'ForEach, Aggregate en Select'"), over [eerlijke functies](/blog/22/07/wat-zijn-eerlijke-functies/ "'Wat zijn eerlijke functies?'") (en [modellen](/blog/23/01/eerlijke-domeinmodellen/ "'Eerlijke domeinmodellen'")) en [*callback hell*](/blog/24/02/callback-hell/ "'Callback hell'").
 
 
-Functioneel programmeren heeft mijn code eenvoudiger gemaakt, robuuster, descriptiever en eleganter. De vragen die ik me tegenwoordig stel als ik een stuk code voor mijn neus krijg, zijn niet meer dezelfde als vroeger. -- Ik ben gegroeid als ontwikkelaar (je kunt erover twisten of het de juiste kant op was).
+Functioneel programmeren heeft mijn code eenvoudiger gemaakt, robuuster, descriptiever en eleganter. De vragen die ik me tegenwoordig stel als ik een stuk code voor mijn neus krijg, zijn niet meer dezelfde als vroeger. -- Ik ben gegroeid als ontwikkelaar (al kun je er natuurlijk altijd over twisten of het de juiste kant op was).
 
 
 Boven alles ben ik [Enrico Buonanno](https://medium.com/@enrico.buonanno) dank verschuldigd, zijn [*Functional Programming in C#*](https://www.manning.com/books/functional-programming-in-c-sharp-second-edition) (mijn [favoriete boek van 2022](/blog/22/12/de-beste-boeken-over-software-ontwikkeling-die-ik-in-2022-las/ "'De beste boeken over software ontwikkeling die ik in 2022 las'")) heeft mijn manier van code schrijven voorgoed veranderd. ([Simon Painters](https://www.thecodepainter.co.uk/) [*Functional Programming with C#*](https://www.oreilly.com/library/view/functional-programming-with/9781492097068/) is ook leuk!) Ik pak het boek nog regelmatig uit de kast als ik mijn functionele vaardigheden wil slijpen.
@@ -38,10 +38,10 @@ Boven alles ben ik [Enrico Buonanno](https://medium.com/@enrico.buonanno) dank v
 ## Testen
 
 
-Maar codekwaliteit houdt niet op bij de grenzen van de code zelf, in welke stijl die ook geschreven is. Dat wat om de code ("dé code") heen gebeurt is net zo belangrijk. -- Mijn collega's zullen het onderhand wel moe zijn me over geautomatiseerd [testen](/tags/testen/ "Blogs met de tag 'testen'") te horen praten. 
+Maar codekwaliteit houdt niet op bij de grenzen van de code zelf, in welke stijl die ook geschreven is. Dat wat om de code ("dé code") heen gebeurt is net zo belangrijk. -- Collega's van me weten dat als ik zulke dingen zeg, het niet lang kan duren voordat ik over geautomatiseerd [testen](/tags/testen/ "Blogs met de tag 'testen'") begin te oreren. 
 
 
-Want erover praten deed ik. [Mijn honderdenéénste blog](/blog/22/03/agile-en-test-driven-development/ "'Agile en Test-Driven Development'") ging over [Test-Driven Development](/tags/test-driven-development/ "Blogs met de tag 'test-driven development'"), en [er](/blog/22/04/een-test-per-keer/ "'Eén test per keer'") [volgden](/blog/22/04/legacy-code-en-test-driven-development/ "'Legacy code en Test-Driven Development'") [er](/blog/22/05/nog-een-reden-om-testgedreven-te-ontwikkelen/ "'Nóg een reden om testgedreven te ontwikkelen'") [nog](/blog/22/06/mijn-eerste-testgedreven-stapjes/ "'Mijn eerste testgedreven stapjes'") [velen](/blog/22/08/test-driven-development-is-een-ontwerpdiscipline/ "'Test-driven development is een ontwerpdiscipline'"). TDD is een idee dat tegelijkertijd simpel en diep is. De basis leer je in vijf minuten, maar er meester in worden duurt jaren.
+Want oreren deed ik. [Mijn honderdenéénste blog](/blog/22/03/agile-en-test-driven-development/ "'Agile en Test-Driven Development'") ging over [Test-Driven Development](/tags/test-driven-development/ "Blogs met de tag 'test-driven development'"), en [er](/blog/22/04/een-test-per-keer/ "'Eén test per keer'") [volgden](/blog/22/04/legacy-code-en-test-driven-development/ "'Legacy code en Test-Driven Development'") [er](/blog/22/05/nog-een-reden-om-testgedreven-te-ontwikkelen/ "'Nóg een reden om testgedreven te ontwikkelen'") [nog](/blog/22/06/mijn-eerste-testgedreven-stapjes/ "'Mijn eerste testgedreven stapjes'") [velen](/blog/22/08/test-driven-development-is-een-ontwerpdiscipline/ "'Test-driven development is een ontwerpdiscipline'"). TDD is een idee dat tegelijkertijd simpel en diep is. De basis leer je in vijf minuten, maar er meester in worden duurt jaren.
 
 
 Ook voor de rol en inhoud van mijn tests was er uitgebreide aandacht. Ik schreef over [tests als documentatie](/blog/22/09/tests-als-documentatie/ "'Tests als documentatie'"), [vangnet](/blog/22/09/tests-als-vangnet/ "'Tests als vangnet'") en [ontwerpmiddel](/blog/22/09/tests-als-ontwerpmiddel/ "'Tests als ontwerpmiddel'"); [testscope](/blog/22/06/testen-via-de-voordeur/ "'Testen via de voordeur'") (ook [hier](/blog/22/11/test-het-systeem-niet-de-class/ "'Test het systeem, niet de class'") en [hier](/blog/22/12/tests-zijn-specs/ "'Tests zijn specs'")), [de unit in unit tests](http://blog/22/11/wat-is-een-unit/ "'Wat is een unit?'"), [testpiramides en -diamanten](/blog/22/07/zelfs-de-testpiramide-is-niet-meer-heilig/ "'Zelfs de testpiramide is niet meer heilig!'"), [het structureren van testclasses](/blog/22/12/over-de-volgorde-van-je-unit-tests/ "'Over de volgorde van je unit tests'"), [codeduplicatie in tests](/blog/23/02/waarom-dry-waarom-damp/ "'Waarom DRY? Waarom DAMP?'"), [het gebruik van productiedata](/blog/23/03/testen-met-productiedata/ "'Testen met productiedata'") -- de lijst gaat maar door en door.
@@ -53,10 +53,10 @@ Een deel van die inzichten bundelde ik in [*Altijd up to date documentatie met m
 ## Code review
 
 
-De noodzaak van al dat gezwam over tests bleek [toen enkele van mijn collega's die praktijk lieten vallen](/blog/23/04/tijdreis/ "'Tijdreis'") en ze de waardevolle les leerden dat [het niet jouw verantwoordelijkheid is een onmogelijke deadline te halen](/blog/23/05/het-is-niet-jouw-verantwoordelijkheid-een-onmogelijke-deadline-te-halen/ "'Het is niet jouw verantwoordelijkheid een onmogelijke deadline te halen'") (en al helemaal niet door op kwaliteit te bezuinigen!). 
+De noodzaak van al dat gezwam over tests bleek [toen enkele van mijn collega's die praktijk lieten vallen](/blog/23/04/tijdreis/ "'Tijdreis'") en ze de waardevolle les leerden dat [het niet jouw verantwoordelijkheid is een onmogelijke deadline te halen](/blog/23/05/het-is-niet-jouw-verantwoordelijkheid-een-onmogelijke-deadline-te-halen/ "'Het is niet jouw verantwoordelijkheid een onmogelijke deadline te halen'"). (En al helemaal niet door op kwaliteit te bezuinigen!) 
 
 
-Het deed me mijn blik op [*pull requests*](/tags/pull-requests/ "Blogs met de tag 'pull requests'") (PR's) en [code reviews](/tags/code-reviews/ "Blogs met de tag 'code reviews'") richten. [We maakten onze tester een verplichte reviewer](/blog/23/07/de-tester-als-code-reviewer/ "'De tester als code reviewer'") en dat deed me denken aan [mijn eigen eerste code review](/blog/23/08/mijn-eerste-code-review/ "'Mijn eerste code review'"). Het wierp vragen op over [hoe je PR's -- en dus code -- eigenlijk leest](/blog/23/09/drie-vragen-die-elk-pull-request-moet-beantwoorden/ "'Drie vragen die elk pull request moet beantwoorden'") (ook in [deze](/blog/23/10/nog-enkele-reflecties-op-pull-requests/ "'Nog enkele reflecties op pull requests'") en [deze blog](/blog/23/11/waarom-wat-en-hoe/ "'Waarom, wat en hoe'")). En ook daar [vertelde](/talks/de-edele-kunst-van-het-pull-request/ "'De edele kunst van het pull request'") ik weer over op diverse gelegenheden.
+Het deed me mijn blik op [*pull requests*](/tags/pull-requests/ "Blogs met de tag 'pull requests'") (PR's) en [code reviews](/tags/code-reviews/ "Blogs met de tag 'code reviews'") richten. [We maakten onze tester een verplichte reviewer](/blog/23/07/de-tester-als-code-reviewer/ "'De tester als code reviewer'") en dat deed me denken aan [mijn eigen eerste code review](/blog/23/08/mijn-eerste-code-review/ "'Mijn eerste code review'"). Het wierp vragen op over [hoe je PR's -- en dus code -- eigenlijk leest](/blog/23/09/drie-vragen-die-elk-pull-request-moet-beantwoorden/ "'Drie vragen die elk pull request moet beantwoorden'") (ook in [deze](/blog/23/10/nog-enkele-reflecties-op-pull-requests/ "'Nog enkele reflecties op pull requests'") en [deze blog](/blog/23/11/waarom-wat-en-hoe/ "'Waarom, wat en hoe'")). Ook [over PR's](/talks/de-edele-kunst-van-het-pull-request/ "'De edele kunst van het pull request'") en [de noodzaak van het reviewen van testcode](/talks/waarom-testers-code-moeten-reviewen/ "'Waarom testers code moeten reviewen'") sprak ik op diverse gelegenheden.
 
 
 Goed ontworpen code kan alleen gedijen in een goedaardige omgeving. Tests en (continue) code reviews zijn noodzakelijke voorwaarden voor het creëren van zo'n omgeving.
@@ -65,13 +65,13 @@ Goed ontworpen code kan alleen gedijen in een goedaardige omgeving. Tests en (co
 ## Refactoren
 
 
-Daarbij is het belangrijk om je te realiseren dat goed ontworpen code nooit -- ineens opduikt, ook niet in een ideale omgeving. Softwareontwikkeling is een empirische discipline: je probeert iets, inspecteert het resultaat, en past je code daarop aan. Die aanpassing kan -- nee, moet -- een wijziging in het ontwerp inhouden.
+Daarbij is het belangrijk om je te realiseren dat goed ontworpen code nooit -- ineens opduikt, ook niet in een ideale omgeving. Softwareontwikkeling is een empirische discipline: je probeert iets, inspecteert het resultaat, en past je code daarop aan. Die aanpassing kan een wijziging in het ontwerp inhouden -- vaak is zo'n wijziging noodzakelijk om de kwaliteit van de code te kunnen blijven waarborgen.
 
 
 Ik heb op refactoren gereflecteerd [aan de hand van afwas](/blog/22/09/over-afwas-en-software/ "'Over afwas en software'"), [Tolstoj](/blog/22/05/refactoren-na-tolstoj/ "'Refactoren na Tolstoj'") en [chirurgie](/blog/22/04/de-ontwikkelaar-als-chirurg/ "'De ontwikkelaar als chirurg'"). Ik onderscheidde [twee stijlen van refactoren](/blog/22/08/twee-stijlen-van-refactoren/ "'Twee stijlen van refactoren'"), [dupliceerde methods (tijdelijk!)](/blog/23/07/waarom-ik-die-method-dupliceer/ "'Waarom ik die method dupliceer'") en [scheidde data ophalen van data manipuleren](/blog/22/08/scheid-data-ophalen-van-data-manipuleren/ "'Scheid data ophalen van data manipuleren'"). Het nauwgezet bekijken van je eigen refactorslagen zet je eigen verhouding tot je code op scherp.
 
 
-Mijn mening over wat refactoren *is*, is in de loop der jaren veranderd. Vroeger zag ik het als het moment waarop je de ontwikkeling van nieuwe features officieel stilzette om je code grootscheeps onder handen te nemen. Tegenwoordig wordt elke wijziging die ik in een codebase doe omkranst door kleine refactorslagen: het herstructureren van een class of method voordat ik nieuwe functionaliteit toevoeg, het opruimen van de rommel die ik noodzakelijkerwijs maak wanneer die nieuwe functionaliteit vorm krijgt. Het leidde tot [een herwaardering](/blog/24/02/een-herwaardering-van-fowlers-refactoring/ "'Een herwaardering van Fowlers Refactoring'") van [Martin Fowlers](https://martinfowler.com/).
+Mijn mening over de essentie van refactoren, dat wat refactoren *is*, is in de loop der jaren veranderd. Vroeger zag ik het als het moment waarop je de ontwikkeling van nieuwe features officieel stilzette om je code grootscheeps onder handen te nemen. Tegenwoordig wordt elke wijziging die ik in een codebase doe, omkranst door kleine refactorslagen: het herstructureren van een class of method voordat ik nieuwe functionaliteit toevoeg, het opruimen van de rommel die ik noodzakelijkerwijs maak wanneer die nieuwe functionaliteit vorm krijgt. Het leidde tot [een herwaardering](/blog/24/02/een-herwaardering-van-fowlers-refactoring/ "'Een herwaardering van Fowlers Refactoring'") van [Martin Fowlers](https://martinfowler.com/) klassieke werk over het onderwerp, [*Refactoring: Improving the Design of Existing Code*](https://martinfowler.com/books/refactoring.html).
 
 
 ## Filosofie
@@ -89,7 +89,7 @@ Ook vakinhoudelijk was er ruimte voor fundamentele reflectie. Van [Anjana Vakil]
 ## Het goed doen
 
 
-Code ontwerpen, testen, beoordelen, schrijven en herschrijven (maar niet per se in die volgorde) en daar dan weer op reflecteren (en soms [een nummer van Bob Dylan coderen](/blog/23/06/ode-aan-bod-dylan/ "'Ode aan Bob Dylan'")) -- het zijn de hoofdingrediënten van de afgelopen twee jaar *dotkarl*. 
+Code ontwerpen, testen, beoordelen, schrijven en herschrijven (maar niet per se in die volgorde) en daar dan weer op reflecteren (en soms [een nummer van Bob Dylan uitprogrammeren](/blog/23/06/ode-aan-bod-dylan/ "'Ode aan Bob Dylan'")) -- het zijn de hoofdingrediënten van de afgelopen twee jaar *dotkarl*. 
 
 
 Ik heb me in die tijd wel eens afgevraagd wat het is wat me drijft al die woorden aan elkaar te rijgen. Een antwoord waar ik mee kon leven was: "Om antwoord te krijgen op de vraag: hoe doe ik het *goed*?" Mijn gevoel zegt me dat ik de afgelopen jaren iets dichter bij dat doel ben gekomen.

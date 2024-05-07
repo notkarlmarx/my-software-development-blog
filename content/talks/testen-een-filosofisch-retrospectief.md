@@ -6,11 +6,8 @@ draft: true
 comments: true
 tags: ["filosofie", "leermoment", "procesverbetering", "testen"]
 summary: "Eerst programmeren de programmeurs, dan testen de testers: het komt niet vaak voor dat zo'n voor de hand liggend idee zoveel misvattingen herbergt. Welk aannames liggen ten grondslag aan dat idee? En wat gebeurt er wanneer we die aannames kritisch tegen het licht houden?"
-speakerdeck: ""
+speakerdeck: "352b5546ab0543a4b5670642764d0090"
 ---
-
-[TODO: speakerdeck]
-
 
 Eerst programmeren de programmeurs, dan testen de testers: het komt niet vaak voor dat zo'n voor de hand liggend idee zoveel misvattingen herbergt. Welk aannames liggen ten grondslag aan dat idee? En wat gebeurt er wanneer we die aannames kritisch tegen het licht houden?
 

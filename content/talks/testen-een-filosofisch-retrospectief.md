@@ -1,8 +1,8 @@
 ---
 title: "Testen: Een filosofisch retrospectief"
 author: "Karl van Heijster"
-date: 2024-04-27T21:26:33+02:00
-draft: true
+date: 2024-05-15T08:05:52+02:00
+draft: false
 comments: true
 tags: ["filosofie", "leermoment", "procesverbetering", "testen"]
 summary: "Eerst programmeren de programmeurs, dan testen de testers: het komt niet vaak voor dat zo'n voor de hand liggend idee zoveel misvattingen herbergt. Welk aannames liggen ten grondslag aan dat idee? En wat gebeurt er wanneer we die aannames kritisch tegen het licht houden?"

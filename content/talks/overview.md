@@ -9,6 +9,8 @@ Ik deel mijn inzichten graag op usergroups en conferenties. Bij de volgende gele
 
 |                   |                                                      |                                                                  |
 | ----------------- | ---------------------------------------------------- | ---------------------------------------------------------------- |
+| 21 juni 2024      | [Joy of Coding](https://joyofcoding.org/index.html)  | *A note on dental hygiene*                                       |
+| 2 juni 2024       | [T-DOSE](https://t-dose.org/2024/)                   | [*The art of the pull request*](/talks/de-edele-kunst-van-het-pull-request/) |
 | 15 mei 2024       | [TestNet Voorjaarsevenement](https://www.testnet.org/) | [*Testen: Een filosofisch retrospectief*](/talks/testen-een-filosofisch-retrospectief/) |
 | 18 april 2024     | [Living Documentation Event](https://www.ict.eu/en/events/lde24) | [*Why testers should review code*](/talks/waarom-testers-code-moeten-reviewen/) |
 | 28 maart 2024     | [Cito](https://www.cito.nl/) (intern)                | [*Waarom testers code moeten reviewen*](/talks/waarom-testers-code-moeten-reviewen/) |

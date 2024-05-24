@@ -5,7 +5,7 @@ date: 2024-05-18T21:45:44+02:00
 draft: true
 comments: true
 tags: ["agile ontwikkeling", "clean code", "kwaliteitsattributen", "test-driven development", "testen"]
-summary: "Goede code is geteste code. Het is testbare code, zeker -- en er zijn tests die het bewijzen. Als er geen tests zijn, dan is het geen goede code. -- De vraag hier is natuurlijk: wat is goede code, wat betekent "goede code"? Is het code die doet wat het moet doen? Die netjes gestructureerd is? Die er goed uitziet?"
+summary: "Goede code is geteste code. Het is testbare code, zeker -- en er zijn tests die het bewijzen. Als er geen tests zijn, dan is het geen goede code. -- De vraag hier is natuurlijk: wat is goede code, wat betekent \"goede code\"? Is het code die doet wat het moet doen? Die netjes gestructureerd is? Die er goed uitziet?"
 ---
 
 # I

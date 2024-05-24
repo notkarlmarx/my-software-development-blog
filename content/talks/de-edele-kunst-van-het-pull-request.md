@@ -27,6 +27,7 @@ Een team dat de edele kunst van het pull request beheerst, voorkomt bugs en tech
 - Developer Meet-up @ [Cito](https://www.cito.nl/) (intern), 24 augustus 2023
 - Pizzasessie @ [4Dotnet](https://www.4dotnet.nl/) (intern), 7 september 2023
 - [devNetNoord](https://devnetnoord.nl/), 26 oktober 2023 
+- [T-DOSE](https://t-dose.org/2024/), 2 juni 2024
 
 
 ## Gerelateerde blogs

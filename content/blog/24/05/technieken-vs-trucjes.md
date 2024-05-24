@@ -1,8 +1,8 @@
 ---
 title: "Technieken vs trucjes"
 author: "Karl van Heijster"
-date: 2024-03-15T09:36:27+01:00
-draft: true
+date: 2024-05-24T07:42:13+02:00
+draft: false
 comments: true
 tags: ["domain-driven design", "functioneel programmeren", "luie programmeur", "refactoren", "software ontwikkelen", "testen", "verantwoordelijkheid"]
 summary: "Een goede programmeur is een luie programmeur -- dat is een bekende wijsheid in softwareontwikkelland. Want: een luie programmeur automatiseert oninteressante, repetitieve taken, en creëert op die manier de ruimte om zich bezig te houden met interessante, afwisselende taken. -- Althans, dat is één opvatting van wat het betekent om een luie programmeur te zijn. Maar er zijn nog veel meer manieren om lui te zijn. Vandaag wil ik het hebben over zo'n andere manier. Vandaag wil ik het hebben over de wens, behoefte of neiging om een techniek te reduceren tot een trucje."
@@ -14,7 +14,7 @@ Een goede programmeur is een [luie programmeur](/tags/luie-programmeur/ "Blogs m
 Althans, dat is één opvatting van wat het betekent om een luie programmeur te zijn. Maar er zijn nog veel meer manieren om lui te zijn. (Zie ook [deze blog](/blog/23/05/waar-doe-je-het-voor/ "'Waar doe je het voor?'").) Vandaag wil ik het hebben over zo'n andere manier. Vandaag wil ik het hebben over de wens, behoefte of neiging om een techniek te reduceren tot een trucje.
 
 
-Wat ik daarmee bedoel? Laat ik drie voorbeelden schetsen, hopelijk wordt dan duidelijk wat ik bedoel.
+Wat ik daarmee bedoel? Laat ik drie voorbeelden schetsen.
 
 
 ## "Domain"-Driven "Design"
@@ -26,14 +26,14 @@ Er was een tijd dat de back-end van onze applicatie bestond uit [drie horizontal
 Concreet betekende dat: in de presentatielaag vonden we Controllers, in de domeinlaag Services en in de datalaag Repositories. We hadden zulke classes voor elk object in ons domeinmodel: een `ItemsController`, `ItemsService`, `ItemsRepository`; een `AssessmentTestsController`, `AssessmentTestsService`, `AssessmentTestsRepository`, etc..
 
 
-Nu ik erop terugkijk, klinkt die opzet beschamend simplistisch. Maar op het moment dat we aan het ontwikkelen waren, dachten we oprecht dat we [Domain-Driven Design](/tags/domain-driven-design/ "Blogs met de tag 'domain-driven design'") (DDD) aan het doen waren. De code gebruikte immers dezelfde taal als onze stakeholder: *items*, *assessment tests* -- en we gebruikten de patronen die [Eric Evans](https://www.domainlanguage.com/) in [zijn boek](https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/ "'Domain-Driven Design: Tackling Complexity in the Heart of Software', Eric Evans") noemde: *services*, *repositories*.
+Nu ik erop terugkijk, klinkt die opzet beschamend simplistisch. Maar op het moment dat we aan het ontwikkelen waren, dachten we oprecht dat we [Domain-Driven Design](/tags/domain-driven-design/ "Blogs met de tag 'domain-driven design'") (DDD) aan het doen waren. De code gebruikte immers dezelfde taal als onze stakeholders: *items*, *assessment tests* -- en we gebruikten de patronen die [Eric Evans](https://www.domainlanguage.com/) in [zijn boek](https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/ "'Domain-Driven Design: Tackling Complexity in the Heart of Software', Eric Evans") noemde: *services*, *repositories*.
 
 
 Natuurlijk hadden we geen van allen dat boek daadwerkelijk gelezen. We hadden de woorden gehoord die hij gebruikte, en we namen die woorden over zonder echt te snappen wat 
 ze betekenden. We hadden Evans' rijke inzichten platgeslagen tot een simpel trucje: *elk domeinobject moet zijn eigen* service *en zijn eigen* repository *hebben*.
 
 
-Natuurlijk leverde dat problemen op. Want de objecten in ons domeinmodel hingen met elkaar samen: *items* zijn onderdeel van een *assessment test*. Dat betekende dat de `AssessmentTestsService` ook een afhankelijkheid naar de `ItemsRepository` moest hebben. Maar toen we die lijn van redeneren doortrokken, kwamen we uit op een punt waarop bijna elke *service* een afhankelijkheid had op bijna elke *repository*.
+Natuurlijk leverde dat problemen op. Want de objecten in ons domeinmodel hingen met elkaar samen: *items* zijn onderdeel van een *assessment test*. Dat betekende dat de `AssessmentTestsService` ook een afhankelijkheid naar de `ItemsRepository` moest hebben. Maar toen we die lijn van redeneren doortrokken, kwamen we uit op een punt waarop bijna elke *service* een afhankelijkheid had naar bijna elke *repository*.
 
 
 In plaats van de oorzaak van onze modelleerproblemen te doorgronden, probeerden we de oplossing te zoeken in de introductie van een nieuw trucje: *een* service *mag alleen een afhankelijkheid hebben naar de* repository *van zijn "eigen" object, en voor elk ander object moesten ze maar bij de daarmee corresponderende* service *zijn.* Dus de `AssessmentTestsService` had een afhankelijkheid naar de `AssessmentTestsRepository` en naar de `ItemsService` (en naar de *zus*, en naar de *zo*...) -- en we waren heel tevreden met onszelf.
@@ -120,7 +120,7 @@ Pas later besefte ik waar de bron van zijn teleurstelling in zat. -- Hij was op 
 Het verschil tussen een trucje en een techniek, is dat de eerste zonder nadenken kan worden toegepast, daar waar de tweede om ons oordeelsvermogen vraagt. Technieken helpen (!) ons bij het doorgronden van een probleem of bij het formuleren van een oplossing. Maar wij zijn nog steeds *zelf* verantwoordelijk voor dat wat we met hulp van die technieken bewerkstelligen.
 
 
-Wie software probeert te reduceren tot de toepassing van een reeks trucjes, zal steevast teleurgesteld raken. Want de werkelijkheid van softwareontwikkeling is te weerbarstig om zich te laten reduceren tot trucjes.
+Wie software probeert te reduceren tot de toepassing van een reeks trucjes, zal steevast teleurgesteld raken. Want de werkelijkheid van softwareontwikkeling is te weerbarstig om zich daartoe te laten reduceren.
 
 
 En bovendien, een probleem écht doorgronden en oplossen is toch veel leuker dan het blind toepassen van een trucje?

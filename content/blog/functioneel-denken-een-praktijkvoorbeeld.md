@@ -173,7 +173,7 @@ Nu we een DTO hebben met daarin alle informatie die we nodig hebben, hoeven de d
 ```cs
 private IEnumerable<Either<string, IndexRepresentation>> TryConvertDtos(
     IEnumerable<IndexDto> dtos) =>
-    dtos.Select(ConvertIfPresent);
+    dtos.Select(TryConvertIfPresent);
 
 private Either<string, IndexRepresentation> TryConvertIfPresent(
     IndexDto dto) =>

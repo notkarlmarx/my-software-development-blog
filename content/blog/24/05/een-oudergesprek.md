@@ -11,7 +11,7 @@ summary: "Onlangs mocht ik op mijn oude universiteit jonge studenten (en hun oud
 Onlangs mocht ik op mijn oude universiteit jonge studenten (en hun ouders) geruststellen: -- je hóeft niet in de goot te eindigen als afgestudeerd filosoof, dat is optioneel. Het is goed mogelijk een leuke en uitdagende baan te bemachtigen met een studie filosofie. (Zie ook [deze](/blog/21/07/mijn-loopbaanwending/ "'Mijn loopbaanwending'") en [deze blog](/blog/24/05/over-filosofie-en-software-ontwikkelen/ "'Over filosofie en software ontwikkelen'").) 
 
 
-Na afloop had ik een leuk gesprek met een Steve Jobs-lookalike -- een vader, geen student --, die me vertelde dat ook hij overwoog om te leren programmeren. Hij zei wat iedereen zegt die overweegt te leren programmeren: "Ik heb het altijd leuk gevonden om dingen uit elkaar te halen om te kijken hoe ze werken." En: "Ik ben zo iemand die graag met iets loopt prutsen te totdat het werkt."
+Na afloop had ik een leuk gesprek met een Steve Jobs-lookalike -- een vader, geen student --, die me vertelde dat ook hij overwoog om te leren programmeren. Hij zei wat iedereen zegt die overweegt te leren programmeren: "Ik heb het altijd leuk gevonden om dingen uit elkaar te halen om te kijken hoe ze werken." En: "Ik ben zo iemand die graag met iets loopt te prutsen totdat het werkt."
 
 
 En ik besefte me opeens: ik heb dat *totaal* niet. -- Ik peins er niet over dingen uit elkaar te halen, want ik als ik het per ongeluk sloop weet ik dat ik een hele middag bezig ben met het weer werkend krijgen. En dat gepruts, dat vind ik eigenlijk maar zonde van mijn tijd.

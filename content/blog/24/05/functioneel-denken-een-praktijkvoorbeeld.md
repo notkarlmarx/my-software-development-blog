@@ -1,8 +1,8 @@
 ---
 title: "Functioneel denken: een praktijkvoorbeeld"
 author: "Karl van Heijster"
-date: 2024-03-22T07:51:53+01:00
-draft: true
+date: 2024-05-31T06:15:29+02:00
+draft: false
 comments: true
 tags: ["declaratief programmeren", "eenvoud", "functioneel programmeren", "imperatief programmeren", "refactoren", "software ontwikkelen"]
 summary: "Onlangs hielp ik een collega een moeilijk volgbare berg code te reduceren tot enkele eenvoudig leesbare regels. Door onze oorspronkelijke, imperatieve redeneertrant van ons af te werpen, en deze te vervangen door een declaratieve stijl, reduceerden we het netelige origineel tot een elegante functionele oplossing. -- Het was een schoolvoorbeeld van de kracht van functioneel denken."
@@ -29,7 +29,7 @@ Dat klinkt mooi, maar om ons doel te bereiken moeten we *a* en *b* natuurlijk we
 De flow van de tool zat ongeveer als volgt in elkaar. Eerst werd er een lijst opgehaald met de ID's van met elkaar gecorreleerde objecten. Daarna werd een lijst van *a* opgehaald en omgezet naar de juiste representatie voor de zoekindex. Vervolgens werd een lijst van *b* opgehaald en omgezet naar de juiste representatie. En die werd daarna samengevoegd aan de representatie van *a*.
 
 
-Dat wil zeggen, als er een associatie tussen beide bestond. Want het kon ook voorkomen dat er geen enkele *b* met *a* correspondeerde. Dus om die associatie goed en wel te kunnen leggen, werd er voor elke geconverteerde *a* gekeken of er een *b* mee correspondeerde, en zo ja, dan werd die geconverteerde *b* aan de nieuwe representatie van *a* toegevoegd.
+Dat wil zeggen, *als* er een associatie tussen beide bestond. Want het kon ook voorkomen dat er geen enkele *b* met *a* correspondeerde. Dus om die associatie goed en wel te kunnen leggen, werd er voor elke geconverteerde *a* gekeken of er een *b* mee correspondeerde, en zo ja, dan werd die geconverteerde *b* aan de nieuwe representatie van *a* toegevoegd.
 
 
 Daarna werd dit complete plaatje richting de index gestuurd.
@@ -68,7 +68,7 @@ Het was erg veel -- veel om in je hoofd te kunnen houden, maar ook: heel veel co
 ## Declaratief
 
 
-Waarom was deze code zo complex? Het had verschillende oorzaken, naar mijn idee. Ten eerste -- excuses, ik haal mijn stokpaardje weer even van stal -- had mijn collega de oorspronkelijke code zonder [Test-Driven Development](/tags/test-driven-development/ "Blogs met de tag 'test-driven development'") (TDD) ontwikkeld. Daardoor had hij zichzelf niet in staat gesteld om de code continu eenvoudig te refactoren. En dat had tot gevolg dat hij functionaliteit op functionaliteit had gestapeld, zonder het ontwerp van zijn code aan te passen aan nieuwe inzichten. Zo werd de flow met elke nieuwe toevoeging iets complexer.
+Waarom was deze code zo complex? Het had verschillende oorzaken, naar mijn idee. Ten eerste -- excuses, ik haal mijn stokpaardje weer even van stal -- had mijn collega de oorspronkelijke code zonder [Test-Driven Development](/tags/test-driven-development/ "Blogs met de tag 'test-driven development'") (TDD) ontwikkeld. Daardoor had hij zichzelf niet in staat gesteld om de code continu veilig te refactoren. En dat had tot gevolg dat hij functionaliteit op functionaliteit had gestapeld, zonder het ontwerp van zijn code aan te passen aan nieuwe inzichten. Zo werd de flow met elke nieuwe toevoeging iets complexer.
 
 
 Maar de tweede, voor deze blog relevantere, observatie is dat zijn code werd gekenmerkt door een hoogst imperatieve stijl. Die stijl kenmerkt zich doordat een ontwikkelaar nauwgezet uitschrijft *hoe* een bepaald probleem moet worden opgelost. *Doe eerst dit, en doe dit op die manier, en doe daarna dat, en doe dat op deze manier* -- dat is hoe dit soort code leest.
@@ -253,7 +253,7 @@ Valt er nog genoeg te verbeteren aan deze oplossing? Ongetwijfeld -- want ook ik
 Dat heeft twee redenen. De eerste is dat de code in een declaratieve stijl is geschreven. In plaats van in detail te specificeren *hoe* de code een probleem op dient te lossen, vertelt deze nu vooral *wat* er wordt gedaan: `TryConvertDtos`, `TryConvertIfPresent`, `TryConvert`, `Convert`. De precieze implementatiedetails zijn minder interessant. Waar het om gaat is wat er in de functie gaat en wat je ervoor terugkrijgt.
 
 
-De tweede reden voor de gevonden eenvoud komt voort uit het feit dat het probleem opnieuw is bekeken vanuit een functionele bril. De opdracht wordt dan: de juiste datatypen vinden om mee te werken. In plaats van direct met `A` en `B` te werken en deze later samen te voegen, blijkt het veel eenvoudiger ze in een vroeg stadium te verenigen in een nieuwe type. Wanneer dit soort typen eenmaal gevonden zijn, is het een kwestie van de juiste transformaties op het juiste moment door te voeren. 
+De tweede reden voor de gevonden eenvoud komt voort uit het feit dat het probleem opnieuw is bekeken vanuit een functionele bril. De opdracht wordt dan: de juiste datatypen vinden om mee te werken. In plaats van direct met `A` en `B` te werken en deze later samen te voegen, blijkt het veel eenvoudiger ze in een vroeg stadium te verenigen in een nieuw type. Wanneer dit soort typen eenmaal gevonden zijn, is het een kwestie van de juiste transformaties op het juiste moment door te voeren. 
 
 
 Wie een probleem kan terugbrengen tot een reeks datatransformaties, houdt zijn code simpel en elegant. Daarin zit de kracht van functioneel denken. 

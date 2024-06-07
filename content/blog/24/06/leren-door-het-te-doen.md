@@ -1,8 +1,8 @@
 ---
 title: "Leren door het te doen?"
 author: "Karl van Heijster"
-date: 2024-04-05T08:04:12+02:00
-draft: true
+date: 2024-06-07T08:34:04+02:00
+draft: false
 comments: true
 tags: ["carrièrepad", "leren", "Wittgenstein, Ludwig"]
 summary: "Onlangs had ik een sollicitatiegesprek -- ik bedoel: ik had een gesprek met een junior ontwikkelaar die bij ons kwam solliciteren. Ik stelde een vraag die ik elke sollicitant stel: hoe leer je? Ze gaf het antwoord dat elke sollicitant tot nog toe heeft gegeven: door het te doen. De cynicus in mij vertaalt dat naar: ik doe maar wat. Maar een realistischer vertaling is waarschijnlijk: ik heb er nog nooit echt over nagedacht."
@@ -20,7 +20,7 @@ De cynicus in mij vertaalt dat naar: ik doe maar wat. Maar een realistischer ver
 Begrijp me niet verkeerd, ik zal niet ontkennen dat "het doen" een leerzame ervaring kan zijn. Integendeel: het in de praktijk toepassen van een nieuwe programmeertechniek -- een onbekende API, een nieuw framework, een vreemde taal of ander [paradigma](/tags/paradigmas/ "Blogs met de tag 'paradigma's'") -- is een geijkte manier om deze je eigen te maken.
 
 
-Maar het is bepaald niet de *beste* manier om iets nieuws te leren (zie ook [deze blog](/blog/22/01/hoe-leer-je-eigenlijk-programmeren/ "'Hoe leer je eigenlijk programmeren?'")). Wanneer je domweg code begint te schrijven, zonder enige notie te hebben van wat je aan het doen bent, zul je al gauw tegen muren opbotsen. En omdat je de nodige achtergrondkennis ontbeert, verwordt het omzeilen (of beklimmen) van die muren een kwestie van *trial and error*. 
+Maar is het de *beste* manier om iets nieuws te leren (zie ook [deze blog](/blog/22/01/hoe-leer-je-eigenlijk-programmeren/ "'Hoe leer je eigenlijk programmeren?'"))? Wanneer je domweg code begint te schrijven, zonder enige notie te hebben van wat je aan het doen bent, zul je al gauw tegen muren opbotsen. En omdat je de nodige achtergrondkennis ontbeert, verwordt het omzeilen (of beklimmen) van die muren een kwestie van *trial and error*. 
 
 
 Leren wordt dan synoniem met keer op keer je hoofd stoten totdat het lukt. Het is een inefficiënte en onnodig frustrerende manier van dingen leren.

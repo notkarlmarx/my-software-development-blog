@@ -1,8 +1,8 @@
 ---
 title: "Immutability en het Single-Responsibility Principe"
 author: "Karl van Heijster"
-date: 2024-04-12T11:02:46+02:00
-draft: true
+date: 2024-06-14T08:29:05+02:00
+draft: false
 comments: true
 tags: ["clean code", "code reviews", "eenvoud", "functioneel programmeren", "immutability", "single-responsibility principe"]
 summary: "Het correct -- en dus volledig -- instantiëren van een object is één verantwoordelijkheid. Het geïnstantieerde object gebruiken is een andere. Wie beide met elkaar vermengt, schrijft onnodig complexe code. Dat is waarom we er naar moeten streven onze objecten nooit aan te willen passen."
@@ -33,8 +33,6 @@ var example = new Example("example", 1);
 
 // This won't compile:
 example.Name = "updated";
-
-// ...
 ```
 
 
@@ -42,8 +40,6 @@ De waarden voor `Name` en `Number` kunnen alleen worden geset bij het aanmaken v
 
 
 ```cs
-// ...
-
 var updated = example with 
 {
     Name = "updated"
@@ -69,7 +65,7 @@ Het aanpassen van een object zou ons de kriebels moeten geven.
 ## Code review
 
 
-En onlangs overkwam mij ook precies dat. Ik deed een [code review](/tags/code-reviews/ "Blogs met de tag 'code reviews'") en stuitte op een call naar een eenvoudige mapping-functie, waarin het ene object naar het andere werd getransformeerd. Maar zodra die conversie erop zat, was mijn collega nog niet klaar met het resultaat. Wat hij na die call deed, was vrolijk het object verder aanpassen op basis van twee andere objecten.
+En onlangs overkwam mij ook precies dat. Ik deed een [code review](/tags/code-reviews/ "Blogs met de tag 'code reviews'") en stuitte op een call naar een eenvoudige mapping-functie, waarin het ene object naar het andere werd getransformeerd. Maar zodra die conversie erop zat, was mijn collega nog niet klaar met het resultaat. Wat hij na die call deed, was vrolijk het resultaat verder aanpassen op basis van twee andere objecten.
 
 
 Het was voor mijn gevoel niet het gebrek aan *immutability* die mij voor deze code deed terugdeinzen, eerlijk gezegd. Het was dat knagende gevoel (zie ook [deze blog](/blog/23/12/codefluisteren/ "'Codefluisteren'")) dat je krijgt wanneer een verantwoordelijkheid niet duidelijk is gedefinieerd. Want wie had hier nu precies de taak om de juiste waarden in dat nieuwe object te fietsen, die mapping-functie of de aanroepende code? Wat het antwoord ook was, het kon niet zijn: allebei een beetje.

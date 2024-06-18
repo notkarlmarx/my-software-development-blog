@@ -1,7 +1,7 @@
 ---
 title: "Altijd up to date documentatie met maximaal descriptieve tests"
 author: "Karl van Heijster"
-date: 2024-03-12T11:28:54+01:00
+date: 2024-06-13T13:11:44+02:00
 draft: false
 comments: true
 tags: ["documentatie", "testen"]

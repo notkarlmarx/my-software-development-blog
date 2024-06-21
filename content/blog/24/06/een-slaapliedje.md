@@ -1,8 +1,8 @@
 ---
 title: "Een slaapliedje"
 author: "Karl van Heijster"
-date: 2024-05-31T07:11:30+02:00
-draft: true
+date: 2024-06-21T06:27:11+02:00
+draft: false
 comments: true
 tags: ["performance", "poëzie"]
 summary: "*Slaap, draadje, slaap, / daar buiten loopt een schaap / een millisec. of honderd. / Maar jij slaapt er vijfhonderd. / Slaap, draadje, slaap, / daar buiten loopt een schaap.*"

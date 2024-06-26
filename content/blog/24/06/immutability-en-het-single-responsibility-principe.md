@@ -8,7 +8,7 @@ tags: ["clean code", "code reviews", "eenvoud", "functioneel programmeren", "imm
 summary: "Het correct -- en dus volledig -- instantiëren van een object is één verantwoordelijkheid. Het geïnstantieerde object gebruiken is een andere. Wie beide met elkaar vermengt, schrijft onnodig complexe code. Dat is waarom we er naar moeten streven onze objecten nooit aan te willen passen."
 ---
 
-[Simon Painter](https://www.thecodepainter.co.uk/functionalcsharp.html) noemt in het eerste hoofdstuk van [*Functional Programming with C#](https://www.oreilly.com/library/view/functional-programming-with/9781492097068/ "Simon Painter, 'Functional Programming with C#', O'Reilly") zeven kenmerken van functionele code. De eerste daarvan is [*immutability*](/tags/immutability/ "Blogs met de tag 'immutability'") (onveranderlijkheid).
+[Simon Painter](https://www.thecodepainter.co.uk/functionalcsharp.html) noemt in het eerste hoofdstuk van [*Functional Programming with C#*](https://www.oreilly.com/library/view/functional-programming-with/9781492097068/ "Simon Painter, 'Functional Programming with C#', O'Reilly") zeven kenmerken van functionele code. De eerste daarvan is [*immutability*](/tags/immutability/ "Blogs met de tag 'immutability'") (onveranderlijkheid).
 
 
 Functionele code is *immutable* code. Het is code waarin objecten één keer worden geïnstantieerd en daarna niet meer worden aangepast. Het resultaat van een functie -- en alles in de wereld van [functioneel programmeren](/tags/functioneel-programmeren/ "Blogs met de tag 'functioneel programmeren'") is uiteindelijk een functie -- is een gloednieuw object, nooit een geupdatete versie van een al bestaande. 

@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2024-06-28T10:11:35+02:00
 draft: true
 comments: true
-tags: []
+tags: ["communicatie", "documentatie", "intentie van code", "software ontwikkelaar (rol)", "refactoren", "testen", "vakmanschap", "verantwoordelijkheid", "zorg"]
 summary: "\"Wat zegt deze test?\" -- Het meest voor de hand liggende antwoord is natuurlijk: wat de code doet. Maar dat is slechts wat een test *expliciet* zegt, de informatie die een test *inhoudelijk* overbrengt. Dat is niet het enige wat het zegt -- verre van."
 ---
 

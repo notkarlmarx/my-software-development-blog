@@ -1,14 +1,14 @@
 ---
 title: "De ontologie van immutability"
 author: "Karl van Heijster"
-date: 2024-04-06T21:21:48+02:00
-draft: true
+date: 2024-06-28T08:19:23+02:00
+draft: false
 comments: true
 tags: ["filosofie", "immutability", "mentaal model"]
 summary: "Het gebruik van *immutable* datastructuren maak je code veiliger, eenvoudiger en beter onderhoudbaar. Toch voelt het voor de meesten van ons vreemd, een totaal nieuw object te instantiëren wanneer één property wijzigt. -- Waarom?"
 ---
 
-Het gebruik van [*immutable*](/tags/immutability/ "Blogs met de tag 'immutability'") (onveranderlijke) datastructuren maak je code veiliger, eenvoudiger en beter onderhoudbaar. (Zie [deze](/blog/22/05/heb-je-die-setter-echt-nodig/ "'Heb je die setter echt nodig?'") en [deze blog] (IMMUTABILITY_EN_SRP "'Immutability en het Single-Responsibility Principe'").) Toch voelt het voor de meesten van ons vreemd, een totaal nieuw object te instantiëren wanneer één property wijzigt. -- Waarom?
+Het gebruik van [*immutable*](/tags/immutability/ "Blogs met de tag 'immutability'") (onveranderlijke) datastructuren maak je code veiliger, eenvoudiger en beter onderhoudbaar. (Zie [deze](/blog/22/05/heb-je-die-setter-echt-nodig/ "'Heb je die setter echt nodig?'") en [deze blog](/blog/24/06/immutability-en-het-single-responsibility-principe/ "'Immutability en het Single-Responsibility Principe'").) Toch voelt het voor de meesten van ons vreemd, een totaal nieuw object te instantiëren wanneer één property wijzigt. -- Waarom?
 
 
 ## Performance
@@ -44,25 +44,34 @@ thing.Color = "red";
 En dat is waarom er van [objectgeoriënteerde code](/tags/objectgeoriënteerd-programmeren/ "Blogs met de tag 'objectgeoriënteerd programmeren'") zo vaak wordt gezegd dat het ons in staat stelt om onze manier van denken te spiegelen in onze code. We kunnen onze mentale modellen uitprogrammeren, want we denken vaak in termen van objecten die bestaan in de tijd.
 
 
-## Vierdimensionaal
+## Ruimte(tijd)
 
 
 Maar -- vervolgt de, *excusez-moi*, filosoof -- deze dingenontologie is slechts één manier om de werkelijkheid te duiden. We hoeven de wereld niet per se in te delen in dingen die blijven voortbestaan in de tijd. En als we willen programmeren met *immutable* datastructuren, dan zullen we dit mentale model ook los moeten laten.
 
 
-Je zou het zo kunnen zien: we zien de dingen doorgaans als driedimensionaal. Een object heeft een hoogte, een breedte en een diepte. Elk object heeft drie coördinaten, die de plek definiëren waar ze zich op dat moment bevinden. Deze driedimensionale objecten bestaan in een container die we tijd noemen. Op het ene moment (op de ene plek in de container) heeft het object de coördinaten 1-1-1, en op het volgende moment heeft het de coördinaten 2-2-2. We zeggen dan dat het object zich verplaatst heeft.
+Je zou het zo kunnen zien: we zien de dingen doorgaans als bestaand in een container. We zouden die container als driedimensionaal (ruimte) of vierdimensionaal (ruimtetijd) kunnen karakteriseren. In een driedimensionaal model zeggen we dingen als: het object heeft op tijdstip *t<sub>1</sub>* de coördinaten 1-1-1, en op tijdstip *t<sub>2</sub>* 1-1-2 -- oftewel: het object is de hoogte in gegaan. In het vierdimensionale model zeggen we: het object had eerst de coördinaten 1-1-1-1, en nu 1-1-2-2.
 
 
-Maar we zouden de dingen ook als vierdimensionaal kunnen karakteriseren: breedte, hoogte, diepte én tijd. In plaats van over één object te spreken dat zich op een andere plek bevindt op een ander tijdstip, wordt het natuurlijk om te spreken van twee objecten: één met de coördinaten 1-1-1-1 en één met de coördinaten 2-2-2-2.
+Welk model we hanteren, de onderliggende premissen blijft hetzelfde: we hebben objecten en we hebben containers waarin deze objecten bestaan. Dat zijn twee verschillende dingen: de containers zijn geen onderdeel van het object. 
+
+
+## Waarden
+
+
+Maar we zouden de objecten ook anders kunnen karakteriseren. We zouden ze ook kunnen definiëren op basis van de eigenschappen die we hen normaal toeschrijven én hun plek in de ruimte(tijd). We zouden de coördinaten ook onderdeel kunnen maken van het object zelf. We beschrijven de objecten dan, om wat programmeurstaal te lenen, zuiver in termen van hun waarden, en niet op basis van hun referentie.
+
+
+Objecten in de traditionele zin van het woord, houden dan op te bestaan. Er is geen "ding" meer wat bestaat in ruimte en tijd. Dat wat vroeger één object was, is nu een opeenvolging van clusters van waarden. Er is niet één voortdurend object op *t<sub>1</sub>* en *t<sub>2</sub>*, er zijn twee "objecten" waarvan de eerste *t<sub>1</sub>*  als waarde heeft, en de tweede *t<sub>2</sub>*.
 
 
 ## Refactoring
 
 
-Deze zienswijzen zijn functioneel (*no pun intended*) equivalent aan elkaar. Het enige wat verschilt is het onderliggende model op basis waarvan we de dingen interpreteren. Er wordt als het ware een ander raster op de wereld gelegd, waardoor de coördinaten verschillen, ook al blijft de wereld hetzelfde. 
+Deze zienswijzen zijn functioneel (*no pun intended*) equivalent aan elkaar. Het enige wat verschilt is het onderliggende model op basis waarvan we de dingen interpreteren. Er wordt als het ware een ander raster op de wereld gelegd, waardoor er verschillende soorten onderverdelingen ontstaan, ook al blijft de wereld hetzelfde. 
 
 
-Je zou kunnen zeggen: we hebben ons denkmodel gerefactord. Wat eerst onderdeel was van de container waarin driedimensionale objecten zich bevonden, is nu onderdeel van de objecten zelf gemaakt. 
+Je zou kunnen zeggen: we hebben ons denkmodel gerefactord. Wat eerst onderdeel was van de container waarin drie- of vierdimensionale objecten zich bevonden, is nu onderdeel van de objecten zelf gemaakt. 
 
 
 Je zou het kunnen vergelijken met het verhuizen van een variabele op class-niveau naar een functieparameter, waardoor de functie `static` gemaakt kan worden. Het gedrag van de code blijft hetzelfde -- onze tests slagen nog altijd --, maar haar structuur is veranderd. 
@@ -77,7 +86,7 @@ Het werpt een interessante vraag op. Laten we aannemen dat *immutable* code de v
 Wat is onze opdracht als programmeurs? Onze huidige manier van denken zo goed mogelijk in code zien te vatten? Of onze manier van denken zodanig aanpassen dat dit de beste (veiligste, eenvoudigste, makkelijkst onderhoudbare) code oplevert?
 
 
-Of duik ik dan, *excusez-moi*, te diep een filosofisch konijnengat in?
+Of duik ik dan, *excusez-moi*, te diep een filosofisch konijnenhol in?
 
 
 [^1]: Op basis van het onveranderlijke deel beschouwen we het object als nog altijd hetzelfde object. Het veranderlijke wordt daarmee gedegradeerd naar "maar" een toevallige eigenschap van dat object. Zie ook [deze blog](/blog/23/01/eerlijke-domeinmodellen/ "'Eerlijke domeinmodellen'").

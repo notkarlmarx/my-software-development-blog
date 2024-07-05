@@ -50,13 +50,13 @@ Het ergst zijn de classes met `Helper` in de naam -- een [antipatroon waar ik al
 De method werd op één plek gebruikt. Op die plek werd de XML gegenereerd die als input diende voor de method in de helper. Dat deed die code op basis van een ander object uit ons datamodel.
 
 
-Je zou de flow van het stuk code als volgt kunnen karakteriseren: *(a -> x) & ((x, b) -> x')*. Of: *((a -> x), b) -> x'*.
+Je zou de flow van het stuk code als volgt kunnen karakteriseren: `(a -> x) & ((x, b) -> x')`. Of: `((a -> x), b) -> x'`.
 
 
 ## Waarom?
 
 
-Er zijn twee vragen die beantwoord moeten worden rondom dit stuk code. De eerste is: is dit de beste manier om dit te doen? Het antwoord daarop is: nee. De code bevat onnodige complexiteit. We kunnen immers ook zo bij het gewenste resultaat komen: door in één keer de juiste QTI te produceren op basis van beide objecten uit het datamodel -- oftewel *(a, b) -> x'*.
+Er zijn twee vragen die beantwoord moeten worden rondom dit stuk code. De eerste is: is dit de beste manier om dit te doen? Het antwoord daarop is: nee. De code bevat onnodige complexiteit. We kunnen immers ook zo bij het gewenste resultaat komen: door in één keer de juiste QTI te produceren op basis van beide objecten uit het datamodel -- oftewel `(a, b) -> x'`.
 
 
 De tweede vraag is interessanter. Die luidt: waarom is de code dan desondanks *zo* opgezet, met al die onnodige complexiteit? En het antwoord daarop is: het was *op het moment van schrijven* eenvoudiger om de nieuwe feature (neem het tweede object mee in het produceren van de QTI) in de code te forceren, dan om 'm te integreren. 

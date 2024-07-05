@@ -1,8 +1,8 @@
 ---
 title: "Testen is als flossen"
 author: "Karl van Heijster"
-date: 2024-04-26T11:39:58+02:00
-draft: true
+date: 2024-07-05T07:54:55+02:00
+draft: false
 comments: true
 tags: ["beroepsdeformatie", "test-driven development"]
 summary: "Code unittesten is als je tanden flossen: de meeste mensen doen het niet, en als ze het doen, doen ze het op het verkeerde moment."
@@ -41,7 +41,7 @@ Handmatig testen is niet voldoende om kwalitatief hoogwaardige software op te le
 *2(b)*. Als je test *nadat* je je code hebt geschreven, maak je het jezelf onnodig moeilijk. 
 
 
-De code kan op zo'n manier opgezet zijn dat het nagenoeg onmogelijk is de boel goed en wel te testen.[^2] Je tests zijn een feedbackmechanisme: ze vertellen je iets over de kwaliteit van je ontwerp. Wanneer het nagenoeg onmogelijk is je code goed te testen, dan is je ontwerp ondermaats. Het probleem is: daar kom je pas achter op het moment dat je je code test. Als je dat doet nadat de feature geïmplementeerd is -- is dat te laat.
+De code kan op zo'n manier opgezet zijn dat het nagenoeg onmogelijk is de boel goed en wel te testen.[^2] Je tests zijn een feedbackmechanisme: ze vertellen je iets over de kwaliteit van je ontwerp. Wanneer het nagenoeg onmogelijk is je code goed te testen, dan is je ontwerp ondermaats. Het probleem is: daar kom je pas achter op het moment dat je je code test. Als je dat doet nadat de feature geïmplementeerd is -- is het al te laat.
 
 
 Tests helpen je bovendien een probleem op te delen in kleinere brokken. Een falende test geeft jezelf een concreet doel: mijn code moet nu *deze* test doen slagen (en de al bestaande tests niet breken). Dit structureert je ontwikkelwerkzaamheden. Zo lang er geen falende test is voor feature *x*, hoef je je nog niet met feature *x* bezig te houden.
@@ -56,7 +56,7 @@ Tests helpen je bovendien een probleem op te delen in kleinere brokken. Een fale
 TDD produceert tevreden ontwikkelaars. En flossen produceert sprankelend schone tanden. Testen is als flossen: het levert een stralende lach op.
 
 
-[^1]: Want "kwalitatief hoogwaardige software" betekent o.a.: automatisch geteste software. Ik sprak erover in [deze talk](/talks/waarom-testers-code-moeten-reviewen/ "'Waarom testers code moeten reviewen'").
+[^1]: Want "kwalitatief hoogwaardige software" betekent onder andere: automatisch geteste software. Ik sprak erover in [deze talk](/talks/waarom-testers-code-moeten-reviewen/ "'Waarom testers code moeten reviewen'").
 
 
-[^2]: Dit speelt vooral bij *legacy* systemen. Maar ook hier speelt: "*legacy*" betekent o.a. dat het moeilijk te testen is. [Michael Feathers](https://michaelfeathers.silvrback.com/) definieert *legacy* code als ongeteste code, zie [deze blog](/blog/22/04/de-ontwikkelaar-als-chirurg/ "'De ontwikkelaar als chirurg'").
+[^2]: Dit speelt vooral bij *legacy* systemen. Maar ook hier speelt: "*legacy*" betekent o.a. dat het moeilijk te testen is. [Michael Feathers](https://michaelfeathers.silvrback.com/) definieert *legacy* code zelfs als ongeteste code, zie [deze blog](/blog/22/04/de-ontwikkelaar-als-chirurg/ "'De ontwikkelaar als chirurg'").

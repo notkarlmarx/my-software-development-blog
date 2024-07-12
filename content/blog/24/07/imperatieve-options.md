@@ -1,8 +1,8 @@
 ---
 title: "Imperatieve Options?"
 author: "Karl van Heijster"
-date: 2024-04-27T21:53:03+02:00
-draft: true
+date: 2024-07-12T07:55:29+02:00
+draft: false
 comments: true
 tags: ["clean code", "code reviews", "declaratieve code", "eenvoud", "eerlijke functies", "imperatieve code", "intentie van code", "functioneel programmeren", "leermoment", "monads", "options", "procedureel programmeren", "refactoren", "samenwerking"]
 summary: "Ik gebruik Options graag, ze voorkomen een hoop foutmeldingen. Maar, belangrijker nog, ze maken mijn code expressiever en eleganter. Of liever: ze hebben de potentie dat te doen. Laatst kwam ik tijdens een codereview een functie tegen, waarop mijn primaire reactie was: dit *moet* anders. -- Maar waarom?"
@@ -55,7 +55,7 @@ Ik gebruik Options graag, ze voorkomen een hoop foutmeldingen. -- Maar, belangri
 ## Elegant?
 
 
-Of liever: ze hebben de potentie dat te doen. Laatst kwam ik tijdens een codereview[^1] een functie tegen, die er ongeveer als volgt uitzag:
+Of liever: ze hebben de potentie dat te doen. Laatst kwam ik tijdens een code review[^1] een functie tegen, die er ongeveer als volgt uitzag:
 
 
 ```cs
@@ -84,7 +84,7 @@ Mijn primaire reactie op de code was: dit *moet* anders. -- Maar waarom?
 Is de code veilig? Ja, want het gebruik van de Option voorkomt een `NullReferenceException`. -- Is de code expressief? Ja, in die zin dat de signatuur van de functie duidelijk aangeeft wat de code beoogt. 
 
 
--- Maar is de code elegant? Nou... nee. De code oogt als klassieke procedurele of objectgeoriënteerde code. Sterker nog, de code is overduidelijk *geschreven* als klassieke procedurele code -- maar dan met een `IfSome` erin verwerkt, gevolgd door een `Action<SomeType>`, daar waar je normaliter een eenvoudige `if (someType is null)` zou verwachten. Je zou kunnen beargumenteren dat het gebruik van de Option de code hier zelfs minder leesbaar maakt, zeker voor junior ontwikkelaars of ervaren ontwikkelaars die nog niet eerder met deze techniek gewerkt hebben.
+-- Maar is de code elegant? Nou... nee. De code oogt als klassieke procedurele of objectgeoriënteerde code. Sterker nog, de code is overduidelijk *geschreven* als klassieke procedurele code -- maar dan met een `IfSome` erin verwerkt, gevolgd door een `Action<SomeType>`, daar waar je normaliter een eenvoudige `if (someType is null)` zou verwachten. Je zou kunnen beargumenteren dat het gebruik van de Option de code hier zelfs minder leesbaar maakt, zeker voor junior ontwikkelaars of ervaren ontwikkelaars die nog niet eerder met *monads* gewerkt hebben.
 
 
 ## Oneerlijk
@@ -96,13 +96,13 @@ Het probleem van deze code is: het maakt gebruik van een functioneel construct, 
 Waar gaat het mis, vanuit functioneel standpunt gezien? Het begint met de `Action<T>`. Deze wordt gebruikt om een waarde toe te kunnen wijzen aan een variabele die *buiten* die method gedefinieerd wordt: een klassiek voorbeeld van een neveneffect.
 
 
-[De method communiceert niet eerlijk](/blog/22/07/wat-zijn-eerlijke-functies/ "'Wat zijn eerlijke functies?'") haar intentie. De signatuur van die action is namelijk als volgt: `SomeType -> void`. (Dit is wat het type `Action<SomeType>` *de facto* uitdrukt.) Maar wat er feitelijk wordt bewerkstelligt heeft de volgende vorm: `SomeType -> Option<Transformed>`.
+[De method communiceert niet eerlijk](/blog/22/07/wat-zijn-eerlijke-functies/ "'Wat zijn eerlijke functies?'") over haar intentie. De signatuur van de actie is namelijk als volgt: `SomeType -> void`. (Dit is wat het type `Action<SomeType>` *de facto* uitdrukt.) Maar wat er feitelijk wordt bewerkstelligt heeft de volgende vorm: `SomeType -> Option<Transformed>`.
 
 
-## `if`
+## Als...
 
 
-Een tweede probleem ontstaat met het `if`-statement. Typische functionele code bevat geen statements, louter expressies. Statements zijn imperatief. Ze lezen als instructies aan de computer: *doe nu dit*. Expressies zijn declaratief. Ze produceren waarden. Ze lezen als een samenvatting naar de lezer: *zus levert zo op*.
+Een tweede probleem ontstaat met het `if`-statement. Typische functionele code bevat geen statements, louter expressies.[^2] Statements zijn imperatief. Ze lezen als instructies aan de computer: *doe nu dit*. Expressies zijn declaratief. Ze produceren waarden. Ze lezen als een samenvatting naar de lezer: *zus levert zo op*.
 
 
 De schrijver van de bovenstaande functie wilde dat `SomeType` alleen zou worden omgezet naar `Transformed` *als* er aan een bepaalde conditie werd voldaan. Maar hij wist zo gauw niet hoe hij dat binnen het functionele paradigma voor elkaar moest krijgen, en viel daarom terug op de overbekende manier van onderscheidingen maken.
@@ -150,13 +150,15 @@ Declaratieve code is over het algemeen leesbaarder dan imperatieve code.
 ## Les
 
 
-Toch is de les die ik uit deze code review haalde niet: schrijf voortaan alleen maar declaratieve code. Nee, de les is eerder: denk goed na over wat het betekent voor een team wanneer je functionele (i.e. declaratieve) programmeertechnieken introduceert in een traditioneel objectgeoriënteerde (i.e. imperatieve) omgeving. 
+Toch is de les die ik uit deze code review haalde niet: schrijf voortaan alleen maar declaratieve code. Nee, de les is eerder: denk goed na over wat het betekent voor een team wanneer je functionele (i.e. declaratieve) programmeertechnieken introduceert in een traditioneel objectgeoriënteerde (i.e. imperatieve) omgeving. (Zie ook [deze blog](/blog/24/02/callback-hell/ "'Callback hell'").)
 
 
-Functioneel programmeren vraagt een andere manier van denken dan objectgeoriënteerd programmeren. -- Is het team bereid om zich die nieuwe manier van denken eigen te maken? Zijn ze zich überhaupt bewust van het feit dat ze dat zullen moeten doen? En is er ruimte om hen daarin te begeleiden?
+Functioneel programmeren vraagt niet alleen een andere manier van programmeren dan objectgeoriënteerd programmeren, het vraagt om een andere manier van *denken*. -- Is het team bereid om zich die nieuwe manier van denken eigen te maken? Zijn ze zich überhaupt bewust van het feit dat ze dat zullen moeten doen? En is er ruimte om hen daarin te begeleiden?
 
 
 Softwareontwikkeling is een ten diepste sociale aangelegenheid. Hoe plezierig het ook is om mooiere code te schrijven dankzij nieuwe technieken, je mag nooit uit het oog verliezen dat er ook andere mensen voor nodig zijn om die code te kunnen blijven onderhouden.
 
 
-[^1]: Het was toevallig (of niet) dezelfde code review die me ertoe aanzette [deze blog] (FUNCTIONEEL_DENKEN_EEN_PRAKTIJKVOORBEELD) te schrijven.
+[^1]: Het was toevallig (of niet) dezelfde code review die me ertoe aanzette [deze blog](/blog/24/05/functioneel-denken-een-praktijkvoorbeeld/ "'Functioneel denken: een praktijkvoorbeeld'") te schrijven.
+
+[^2]: Zie [deze blog](https://fsharpforfunandprofit.com/posts/expressions-vs-statements/ "'Expressions vs. statements: Why expressions are safer and make better building blocks', F# for Fun and Profit") van [Scott Wlaschin](https://scottwlaschin.com/) voor een uiteenzetting over het verschil tussen die twee. Op het moment van schrijven lees ik zijn [*Domain Modeling Made Functional*](https://pragprog.com/titles/swdddf/domain-modeling-made-functional/) -- een aanrader! Zie [deze blog](/blog/23/01/eerlijke-domeinmodellen/ "'Eerlijke domeinmodellen'") voor een inleiding in de ideeën uit dat boek.

@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2024-05-31T06:15:29+02:00
 draft: false
 comments: true
-tags: ["declaratief programmeren", "eenvoud", "functioneel programmeren", "imperatief programmeren", "refactoren", "software ontwikkelen"]
+tags: ["declaratief programmeren", "eenvoud", "functioneel programmeren", "imperatieve code", "refactoren", "software ontwikkelen"]
 summary: "Onlangs hielp ik een collega een moeilijk volgbare berg code te reduceren tot enkele eenvoudig leesbare regels. Door onze oorspronkelijke, imperatieve redeneertrant van ons af te werpen, en deze te vervangen door een declaratieve stijl, reduceerden we het netelige origineel tot een elegante functionele oplossing. -- Het was een schoolvoorbeeld van de kracht van functioneel denken."
 ---
 

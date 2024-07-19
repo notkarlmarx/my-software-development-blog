@@ -1,11 +1,11 @@
 ---
 title: "Grote refactorslagen ondermijnen vertrouwen"
 author: "Karl van Heijster"
-date: 2024-05-17T09:58:49+02:00
-draft: true
+date: 2024-07-19T07:55:35+02:00
+draft: false
 comments: true
 tags: ["boeken", "leermoment", "professionaliteit", "refactoren", "software ontwikkelaar (rol)", "software ontwikkelen", "stakeholders", "verantwoordelijkheid", "vertrouwen", "werkplezier"]
-summary: "Wat een stakeholder betreft is een grote refactorslag een enorme kostenpost zonder aantoonbaar resultaat. Een team dat erop staat niet verder te kunnen werken zonder eerst een hele tijd heel veel geld uit te geven zonder daar iets voor terug te geven, ondermijnt het vertrouwen dat de stakeholder hen daarmee geeft."
+summary: "Wat een stakeholder betreft is een grote refactorslag een enorme kostenpost zonder aantoonbaar resultaat. Een team dat erop staat niet verder te kunnen werken zonder eerst een hele tijd heel veel geld uit te geven -- nota bene zonder daar iets voor terug te geven! --, ondermijnt het vertrouwen dat de stakeholder hen daarmee geeft."
 ---
 
 Het primaire uitgangspunt van [Kent Becks](https://www.kentbeck.com/) nieuwste boek[^1], [*Tidy First?*](https://www.oreilly.com/library/view/tidy-first/9781098151232/ "Kent Beck, 'Tidy First?: A Personal Exercise in Empirical Software Design', O'Reilly Media, 2023"), luidt als volgt:
@@ -14,7 +14,7 @@ Het primaire uitgangspunt van [Kent Becks](https://www.kentbeck.com/) nieuwste b
 > "Software development is an exercise in human relationships."
 
 
-*Tidy First?* gaat over de relatie die een ontwikkelaar heeft tot zichzelf. De mate waarin ontwikkelaars hun codebase bijhouden, vertelt hen iets over die relatie. Gunnen ze het zichzelf te werken in een omgeving die hun geen onnodige frustratie oplevert? Of gaat de deadline altijd voor, en accepteren ze het dat hun werk nu eenmaal moeizaam en onplezierig is? 
+*Tidy First?* gaat over de relatie die een ontwikkelaar heeft tot zichzelf. De mate waarin ontwikkelaars hun codebase bijhouden, vertelt iets over die relatie. Gunnen ze het zichzelf te werken in een omgeving die hun geen onnodige frustratie oplevert? Of gaat de deadline altijd voor, en accepteren ze het dat hun werk nu eenmaal moeizaam en onplezierig is? 
 
 
 Ontwikkelaars in de eerste categorie ruimen hun code regelmatig op, vaak voordat ze een nieuwe feature implementeren (en soms erna). Ontwikkelaars in de tweede categorie doen dat niet -- en dragen de gevolgen.
@@ -50,7 +50,7 @@ Dat punt landde bij mij pas echt toen Beck in [een aflevering](https://open.spot
 Zijn antwoord was: "Omdat dit de relatie met je stakeholders beschadigt." En hij heeft gelijk. Als je een grote refactorslag uitvoert, dan heeft de stakeholder aan het eind van de rit -- een sprint, een maand, een halfjaar later -- precies hetzelfde systeem als voorheen, vanuit zijn perspectief in elk geval. Erger nog, dat is de uitkomst *in het beste geval*. Want het komt regelmatig voor dat zulke grote verbouwingen gepaard gaan met regressiebugs.
 
 
-Wat een stakeholder betreft is een grote refactorslag een enorme kostenpost zonder aantoonbaar resultaat. Een team dat erop staat niet verder te kunnen werken zonder eerst een hele tijd heel veel geld uit te geven zonder daar iets voor terug te geven, ondermijnt het vertrouwen dat de stakeholder hen daarmee geeft.
+Wat een stakeholder betreft is een grote refactorslag een enorme kostenpost zonder aantoonbaar resultaat. Een team dat erop staat niet verder te kunnen werken zonder eerst een hele tijd heel veel geld uit te geven -- nota bene zonder daar iets voor terug te geven! --, ondermijnt het vertrouwen dat de stakeholder hen daarmee geeft.
 
 
 ## Balans

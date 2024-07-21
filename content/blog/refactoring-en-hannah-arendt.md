@@ -1,5 +1,5 @@
 ---
-title: "Arbeid en werk"
+title: "Refactoring en Hannah Arendt"
 author: "Karl van Heijster"
 date: 2024-07-20T13:25:20+02:00
 draft: true

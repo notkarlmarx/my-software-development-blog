@@ -26,10 +26,10 @@ Het deed me aan [Hannah Arendt](https://plato.stanford.edu/entries/arendt/ "'Han
 ## De menselijke conditie
 
 
-In [*The Human Condition*](https://en.wikipedia.org/wiki/The_Human_Condition "'The Human Condition', Wikipedia") onderscheidt de filosofe [fenomenologisch](https://plato.stanford.edu/entries/phenomenology/ "'Phenomenology', Stanford Encyclopedia of Philosophy") drie fundamentele activiteiten van het menselijk zijn[^4] -- arbeid (*labor*), werk (*work*) en actie (*action*). 
+In [*The Human Condition*](https://en.wikipedia.org/wiki/The_Human_Condition "'The Human Condition', Wikipedia") onderscheidt de filosofe [fenomenologisch](https://plato.stanford.edu/entries/phenomenology/ "'Phenomenology', Stanford Encyclopedia of Philosophy") drie fundamentele activiteiten van het menselijk zijn[^4] -- arbeid (*labor*), werk (*work*) en handelen (*action*). 
 
 
-Arbeid is geassocieerd met het *animal laborans*, werk met *homo faber*, actie met *homo sapiens*; arbeid is circulair, werk is lineair, actie: initiatie. Arbeid keert steeds opnieuw terug, werk doen we richting een doel, actie is het in gang zetten van iets nieuws. (-- Maar natuurlijk doet deze schets geen recht aan de diepgang van haar analyse. In het vervolg van deze blog zal ik me op de eerste twee activiteiten richten.)
+Arbeid is geassocieerd met het *animal laborans*, werk met *homo faber*, handelen met *homo sapiens*; arbeid is circulair, werk is lineair, handelen: initiatie. Arbeid keert steeds opnieuw terug, werk doen we richting een doel, handelen is het in gang zetten van iets nieuws. (-- Maar natuurlijk doet deze schets geen recht aan de diepgang van haar analyse. In het vervolg van deze blog zal ik me op de eerste twee activiteiten richten.)
 
 
 Wat heeft dit met Lams tweet te maken? De metafoor die we gebruiken wanneer we technische schuld "afbetalen" is een fundamenteel andere metafoor dan die van doen van je huishouden -- koken, wassen, schoonmaken (uitgaan, de financiën op orde houden); [zorgen](/tags/zorg/ "Blogs met de tag 'zorg'"). 

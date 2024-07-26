@@ -14,19 +14,20 @@ Geen test is beter dan een flaky test.
 Een eenvoudige test is beter dan een complexe test.
 Maar eenvoud betekent niet: simpel.
 Een test bestaat om te lezen, niet om over na te denken.
-Een test vertelt wat code doet, niet hoe het dat doet.
+Een test vertelt wat niet hoe.
 Triviale code behoeft geen test, net als overgecompliceerde.
 Maar bij afwezigheid, test overgecompliceerde code.
 Tests zijn niet optioneel.
 Tests zijn specs.
-Een test vertelt een verhaal.
+Tests vertellen een verhaal.
 Laat het verhaal niet zijn: deze codebase is een puinhoop.
-Code zonder tests zijn een zonde, een test zonder code een opmaat.
-Refactoren zonder tests is voor experts en dwazen.
+Code zonder tests zijn het begin van het eind, een test zonder code 
+  het eind van het begin.
+Refactoren zonder tests is voor kenners en dwazen.
 Goede code is geteste code.
 Het beste moment om een test te schrijven is nu.
 De beste persoon om die test te schrijven ben jij.
-Maar twee geesten testen beter dan één.
+Maar twee testen beter dan één.
 Elke test faalt ten minste één keer.
 Testen en programmeren zijn één.
 ```

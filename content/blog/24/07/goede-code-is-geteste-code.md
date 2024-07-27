@@ -23,7 +23,7 @@ Goede code is veilig aanpasbare code. Code is veilig aanpasbaar als deze gedekt 
 {{< asterisk >}}
 
 
-[Robert *uncle Bob* Martin](https://en.wikipedia.org/wiki/Robert_C._Martin) vergelijkt [Test-Driven Development](/tags/test-driven-development/ "Blogs met de tag 'test-driven development'") (TDD) in [*Clean Craftsmanship*](https://www.pearson.com/en-us/subject-catalog/p/clean-craftsmanship-disciplines-standards-and-ethics/P200000009529/9780136915713) met het [dubbel boekhoudsysteem](https://nl.wikipedia.org/wiki/Dubbel_boekhouden "'Dubbel boekhouden', Wikipedia"). 
+[Robert "*uncle Bob*" Martin](https://en.wikipedia.org/wiki/Robert_C._Martin) vergelijkt [Test-Driven Development](/tags/test-driven-development/ "Blogs met de tag 'test-driven development'") (TDD) in [*Clean Craftsmanship*](https://www.pearson.com/en-us/subject-catalog/p/clean-craftsmanship-disciplines-standards-and-ethics/P200000009529/9780136915713) met het [dubbel boekhoudsysteem](https://nl.wikipedia.org/wiki/Dubbel_boekhouden "'Dubbel boekhouden', Wikipedia"). 
 
 
 Binnen dat systeem wordt elke transactie op zijn minst op twee verschillende manieren geadministreerd. Elke transactie heeft zijn plaats aan de credit- én debetkant van een grootboekrekening. Worden beide kanten bij elkaar opgeteld, dan is het resultaat 0 -- altijd een eeuwig, en als dat niet zo is, dan weten we dat we een fout moeten hebben gemaakt. 

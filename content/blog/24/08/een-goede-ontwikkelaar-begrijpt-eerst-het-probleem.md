@@ -1,17 +1,17 @@
 ---
 title: "Een goede ontwikkelaar begrijpt eerst het probleem"
 author: "Karl van Heijster"
-date: 2024-05-31T12:24:03+02:00
-draft: true
+date: 2024-08-02T08:10:32+02:00
+draft: false
 comments: true
 tags: ["software ontwikkelaar (rol)", "vakmanschap", "verantwoordelijkheid", "waarde"]
-summary: "Een softwareontwikkelaar is niet *iemand die code schrijft*. Iemand die slechts dat doet, kan ondanks al zijn inspanningen van geen enkele toegevoegde waarde zijn. Want uiteindelijk gaat het niet om de code. Het gaat niet om de code, zelfs niet als die code precies doet wat er gevraagd wordt. -- Software ontwikkelen gaat om het oplossen van problemen."
+summary: "Een softwareontwikkelaar is niet *iemand die code schrijft*. Iemand die slechts dat doet, kan, ondanks al zijn inspanningen, van geen enkele toegevoegde waarde zijn. Want uiteindelijk gaat het niet om de code. Het gaat niet om de code, zelfs niet als die code precies doet wat er gevraagd wordt. -- Software ontwikkelen gaat om het oplossen van problemen."
 ---
 
-Onlangs zijn enkele teamgenoten en ik een boekenclub begonnen -- de start van een nieuwe junior ontwikkelaar vormde een ideale aanleiding. We lezen [Robert C. Martins]((https://en.wikipedia.org/wiki/Robert_C._Martin)) [*Clean Craftsmanship*](https://www.pearson.com/en-us/subject-catalog/p/clean-craftsmanship-disciplines-standards-and-ethics/P200000009529/9780136915713). Dat bleek een ideale aanleiding voor de meer ervaren softwareontwikkelaars om herinneringen op te halen aan alle ellende die komt kijken bij het in de wind slaan van Martins inzichten.
+Onlangs zijn enkele teamgenoten en ik een boekenclub begonnen -- de start van een nieuwe junior ontwikkelaar (zie ook [deze blog](/blog/24/06/leren-door-het-te-doen/ "'Leren door het te doen?'")) vormde een ideale aanleiding. We lezen [Robert C. Martins]((https://en.wikipedia.org/wiki/Robert_C._Martin)) [*Clean Craftsmanship*](https://www.pearson.com/en-us/subject-catalog/p/clean-craftsmanship-disciplines-standards-and-ethics/P200000009529/9780136915713). Dat bleek een mooie gelegenheid voor de meer ervaren softwareontwikkelaars om herinneringen op te halen aan alle ellende die komt kijken bij het in de wind slaan van Martins inzichten.
 
 
-Het ontbreken van unittests zorgt ervoor dat ontwikkelaars bang worden de code te wijzigen. Het gevolg is dat ze aanpassingen aan de code doen die het veiligst zijn op de korte termijn, en niet het beste voor de code. Continu refactoren is uit den boze: de kans het systeem om zeep te helpen is te groot. Wijzigingen aan de codestructuur worden uitgesteld totdat het niet anders kan, en dan zijn ze des te complexer omdat feature op feature is gestapeld -- en helpen vervolgens inderdaad het systeem om zeep.
+Het ontbreken van unittests zorgt ervoor dat ontwikkelaars bang worden de code te wijzigen. Het gevolg is dat ze aanpassingen aan de code doen die het veiligst zijn op de korte termijn, en niet het beste voor de integriteit van de code. Continu refactoren is uit den boze: de kans het systeem om zeep te helpen is te groot. Wijzigingen aan de codestructuur worden uitgesteld totdat het niet anders kan, en dan zijn ze des te complexer omdat feature op feature is gestapeld -- en helpen vervolgens inderdaad het systeem om zeep.
 
 
 Maar het zijn niet alleen technische vaardigheden die de senioren voorheen ontbeerden. Een collega merkte op: "Eén van de dingen die we tegenwoordig beter doen, is dat we niet overal meer ja op zeggen. We bouwen niet zomaar meer wat er gevraagd wordt." 
@@ -35,7 +35,7 @@ Zij zijn in hun ogen niet verantwoordelijk voor het begrijpen van het probleem, 
 ## Problemen oplossen
 
 
-Maar een softwareontwikkelaar is niet *iemand die code schrijft*. Iemand die slechts dat doet, kan ondanks al zijn inspanningen van geen enkele toegevoegde waarde zijn. Want uiteindelijk gaat het niet om de code. Het gaat niet om de code, zelfs niet als die code precies doet wat er gevraagd wordt. (Merk op dat dit net zozeer geldt voor de lelijke, slecht gestructureerde en ongeteste code die mijn collega's vroeger schreven, als voor de mooie, doorlopend gerefactorde en geteste code die ze vandaag de dag opleveren.)
+Maar een softwareontwikkelaar is niet *iemand die code schrijft*. Iemand die slechts dat doet, kan, ondanks al zijn inspanningen, van geen enkele toegevoegde waarde zijn. Want uiteindelijk gaat het niet om de code. Het gaat niet om de code, zelfs niet als die code precies doet wat er gevraagd wordt. (Merk op dat dit net zozeer geldt voor de lelijke, slecht gestructureerde en ongeteste code die mijn collega's vroeger schreven, als voor de mooie, doorlopend gerefactorde en geteste code die ze vandaag de dag opleveren.)
 
 
 Waar gaat het dan wel om? Software ontwikkelen gaat om het oplossen van problemen. Specifieker: het oplossen van *businessproblemen*. (Wanneer software ontwikkelen te vaak gaat over het oplossen van *codeerproblemen*, dan is dat een teken dat je betere code moet schrijven.) De waarde van een ontwikkelaar is af te lezen van de mate waarin deze die problemen oplost.

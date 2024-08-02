@@ -21,8 +21,8 @@ Tests zijn niet optioneel.
 Tests zijn specs.
 Tests vertellen een verhaal.
 Laat het verhaal niet zijn: deze codebase is een puinhoop.
-Code zonder tests zijn het begin van het eind, een test zonder code 
-  het eind van het begin.
+Een test zonder code is een goed begin, code zonder tests 
+  het begin van het eind.
 Refactoren zonder tests is voor kenners en dwazen.
 Goede code is geteste code.
 Het beste moment om een test te schrijven is nu.

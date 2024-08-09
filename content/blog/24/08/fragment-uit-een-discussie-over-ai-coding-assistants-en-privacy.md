@@ -1,11 +1,11 @@
 ---
 title: "Fragment (uit een discussie over AI coding assistants en privacy)"
 author: "Karl van Heijster"
-date: 2024-07-05T21:11:55+02:00
-draft: true
+date: 2024-08-09T09:34:17+02:00
+draft: false
 comments: true
 tags: ["kunstmatige intelligentie", "software ontwikkelen"]
-summary: "*Hij, apodictisch: \"Als we onze code delen met AI coding assistants, zodat zij daarop kunnen trainen, dan geven we onze concurrenten toegang tot onze code, en daarmee een marktvoordeel.\" -- Ik, grijnzend: \"Ben ik heel cynisch als ik suggereer dat we onze concurrenten in dat geval misschien juist een *nadeel* bezorgen?\"*"
+summary: "*Hij, apodictisch: \"Als we onze code delen met AI coding assistants, zodat zij daarop kunnen trainen, dan geven we onze concurrenten toegang tot onze code, en daarmee een marktvoordeel.\" -- Ik, grijnzend: \"Ben ik heel cynisch als ik suggereer dat we onze concurrenten in dat geval misschien juist een* nadeel *bezorgen?\"*"
 ---
 
 

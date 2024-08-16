@@ -1,8 +1,8 @@
 ---
 title: "Wat zegt deze code?"
 author: "Karl van Heijster"
-date: 2024-06-22T21:26:54+02:00
-draft: true
+date: 2024-08-16T10:07:52+02:00
+draft: false
 comments: true
 tags: ["bedrijfscultuur", "betekenis", "code lezen", "communicatie", "eerlijke functies", "filosofie", "functioneel programmeren", "intentie van code", "kernwaarden", "LINQ", "naamgeving", "objectgeoriënteerd programmeren", "refactoren", "teamcultuur", "technische schuld", "verantwoordelijkheid", "werkplezier", "zorg"]
 summary: "De namen in onze code -- van variabelen, velden, methoden, parameters -- beschrijven wat de code doet. De naam van een class beschrijft haar wezen: `integer`, `Url`, `ResourceHelper`. Anders dan bij mensen gaat de existentie van code niet vooraf aan haar essentie. Code is bepaald, bepaald door haar functie. Wat die functie is, weet een goede programmeur in een naam te vangen."
@@ -114,7 +114,7 @@ Een tijd terug kwam ik een stuk code tegen dat *a* omzette naar *b*, en *b* daar
 En dat signaleert dat de programmeur niet voldoende tijd heeft genomen om zijn code te [refactoren](/tags/refactoren/ "Blogs met de tag 'refactoren'"). De volgorde waarin code opgebouwd is, is accidenteel -- irrelevant voor haar lezer. Een gevolg van continu refactoren is dat de code er altijd uitziet alsof ze van begin af aan zo bedoeld was. (Ik refactorde de code om *b* te construeren op basis van *a* en *c*.)
 
 
-Code vertelt me iets over mijn relatie tot mezelf. Gun ik mezelf om in een makkelijk werkbare codebase te werken? ([Kent Beck](https://www.kentbeck.com/) maakt dit punt; zie ook [deze blog] (GROTE_REFACTORSLAGEN_ONDERMIJNEN_VERTROUWEN).)
+Code vertelt me iets over mijn relatie tot mezelf. Gun ik mezelf om in een makkelijk werkbare codebase te werken? ([Kent Beck](https://www.kentbeck.com/) maakt dit punt; zie ook [deze blog](/blog/24/07/grote-refactorslagen-ondermijnen-vertrouwen/ "'Grote refactorslagen ondermijnen vertrouwen'").)
 
 
 ## Cultuur
@@ -147,7 +147,7 @@ Maar dat laat onverklaard waarom de code me iets kan vertellen over alles waar d
 ("[De auteur is dood](https://en.wikipedia.org/wiki/The_Death_of_the_Author "'The Death of the Author', Wikipedia")," in de woorden van [Roland Barthes](https://en.wikipedia.org/wiki/Roland_Barthes "'Roland Barthes', Wikipedia").)
 
 
-Code zegt meer dan je denkt. En dat toont dat code meer is dan "het jasje" dat we onze gedachten aan moeten trekken om ze te communiceren aan een ander. Zoals [Hilary Putnam](https://en.wikipedia.org/wiki/Hilary_Putnam "'Hilary Putnam', Wikipedia") ooit zei: "*Cut the pie any way you leaking, "meanings" just ain't in the* head!"
+Code zegt meer dan je denkt. En dat toont dat code meer is dan "het jasje" dat we onze gedachten aan moeten trekken om ze te communiceren aan een ander. Zoals [Hilary Putnam](https://en.wikipedia.org/wiki/Hilary_Putnam "'Hilary Putnam', Wikipedia") ooit zei: "*Cut the pie any way you like, "meanings" just ain't in the* head!"
 
 
 [^1]: Al kunnen onze eerste pogingen tot naamgeving het wezen van de code missen.

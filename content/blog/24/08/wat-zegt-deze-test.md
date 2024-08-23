@@ -1,8 +1,8 @@
 ---
 title: "Wat zegt deze test?"
 author: "Karl van Heijster"
-date: 2024-06-28T10:11:35+02:00
-draft: true
+date: 2024-08-23T09:32:09+02:00
+draft: false
 comments: true
 tags: ["communicatie", "documentatie", "intentie van code", "software ontwikkelaar (rol)", "refactoren", "testen", "vakmanschap", "verantwoordelijkheid", "zorg"]
 summary: "\"Wat zegt deze test?\" -- Het meest voor de hand liggende antwoord is natuurlijk: wat de code doet. Maar dat is slechts wat een test *expliciet* zegt, de informatie die een test *inhoudelijk* overbrengt. Dat is niet het enige wat het zegt -- verre van."
@@ -11,7 +11,7 @@ summary: "\"Wat zegt deze test?\" -- Het meest voor de hand liggende antwoord is
 "Wat zegt deze test?" -- Het meest voor de hand liggende antwoord is natuurlijk: wat de code doet. Of, preciezer: *gegeven* deze omstandigheid, *wanneer* deze code wordt uitgevoerd, *dan* zal dat dit tot gevolg hebben. (Wat je overigens ook uitstekend in de naamgeving van een test terug kunt laten komen, zie [deze blog](/blog/22/09/tests-als-documentatie/ "'Tests als documentatie'").)
 
 
-Tests zijn uitvoerbare requirementsspecificaties (zie ook [deze blog](/blog/22/12/tests-zijn-specs/ "'Tests zijn specs'")). In tests is vastgelegd wat de [requirements](https://www.karlvanheijster.com/tags/requirements/ "Blogs met de tag 'requirements'") van een systeem zijn -- en ze gaan na of het systeem inderdaad aan die requirements voldoet.
+Tests zijn uitvoerbare requirementsspecificaties (zie ook [deze blog](/blog/22/12/tests-zijn-specs/ "'Tests zijn specs'")). In tests is vastgelegd wat de [requirements](/tags/requirements/ "Blogs met de tag 'requirements'") van een systeem zijn -- en ze gaan na of het systeem inderdaad aan die requirements voldoet.
 
 
 Tests zijn een vorm van [documentatie](/tags/documentatie/ "Blogs met de tag 'documentatie'") -- en een verdomd handige vorm daarvan, want het is de enige vorm van documentatie die onmiddellijk een signaal geeft wanneer ze verouderd is.
@@ -26,7 +26,7 @@ Maar dat is slechts wat een test *expliciet* zegt, de informatie die een test *i
 "Wat zegt deze test?" -- Een test zegt: deze code is belangrijk. Immers: niet alle onderdelen van een systeem zijn deel van de requirements ervan -- niet alle onderdelen zouden er deel van *moeten* zijn. Niet elk deel van de code is het waard om gedocumenteerd te worden.
 
 
-Sommige delen van de code zijn implementatiedetails -- *slechts* implementatiedetails. Sterker nog, het overgrote deel van een codebase bestaat uit implementatiedetails. Die code brengt een bepaald gedrag tot stand. Maar *hoe* ze dat gedrag tot stand brengen, is oninteressant. (Dat wil zeggen: voor een gebruiker van de code. Voor iemand die een codebase probeert te doorgronden, bijvoorbeeld om hem aan te passen, kan het daarentegen razendinteressant zijn!) 
+Sommige delen van de code zijn implementatiedetails -- *slechts* implementatiedetails. Sterker nog, het overgrote deel van een codebase bestaat uit implementatiedetails. Die code brengt een bepaald gedrag tot stand. Maar *hoe* ze dat gedrag tot stand brengen, is oninteressant. (Dat wil zeggen: voor een gebruiker van de code. Voor iemand die een codebase probeert te doorgronden, bijvoorbeeld om hem aan te passen, kan het razendinteressant zijn!) 
 
 
 Implementatiedetails hoeven niet in tests gevat te worden. Reserveer tests voor de belangrijke delen van de code. (Ik behandel dit punt uitgebreid in [deze](/talks/altijd-up-to-date-documentatie-met-maximaal-descriptieve-tests/ "'Altijd up to date documentatie met maximaal descriptieve tests'") en [deze talk](/talks/de-edele-kunst-van-het-pull-request/ "'De edele kunst van het pull request'").)

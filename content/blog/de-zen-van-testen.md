@@ -55,7 +55,7 @@ Referenties:
 [9(2)](/blog/21/12/hoe-nooglers-testen-de-norm-maakten/ "'Hoe Nooglers testen de norm maakten'"),
 [10](/blog/22/12/tests-zijn-specs/ "'Tests zijn specs'"),
 [11](/blog/24/02/tests-vertellen-verhalen/ "'Tests vertellen verhalen'"),
-[12](WAT_ZEGT_DEZE_TEST),
+[12](/blog/24/08/wat-zegt-deze-test/ "'Wat zegt deze test?'"),
 [13(1)](/blog/22/03/agile-en-test-driven-development/ "'Agile en Test-Driven Development'"),
 [13(2)](/blog/22/04/een-test-per-keer/ "'Eén test per keer'"),
 [13(3)](/blog/22/04/legacy-code-en-test-driven-development/ "'Legacy code en Test-Driven Development'"),

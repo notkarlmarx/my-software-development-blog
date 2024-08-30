@@ -1,8 +1,8 @@
 ---
 title: "Refactoring als communicatiemiddel"
 author: "Karl van Heijster"
-date: 2024-07-05T08:05:09+02:00
-draft: true
+date: 2024-08-30T09:29:37+02:00
+draft: false
 comments: true
 tags: ["clean code", "communicatie", "eenvoud", "intentie van code", "refactoren", "software ontwikkelen", "zorg"]
 summary: "We refactoren niet alleen om het makkelijker te maken de code te wijzigen, we refactoren ook om de code zo helder mogelijk te laten communiceren. En code die helder communiceert is op zijn beurt weer makkelijker om te wijzigen."
@@ -17,7 +17,7 @@ Ik antwoordde: "Ik refactor niet omdat ik dat *leuk* vind," -- en corrigeerde me
 ## Eerst opruimen?
 
 
-Dit komt ruwweg overeen met het beeld van refactoren dat [Kent Beck](https://www.kentbeck.com/) schetst in [*Tidy First?*](https://www.oreilly.com/library/view/tidy-first/9781098151232/ "Kent Beck, 'Tidy First?: A Personal Exercise in Empirical Software Design', O'Reilly Media, 2023"). In dat boek stelt hij de vraag: moet ik de code eerst opruimen, of zal ik de feature meteen toevoegen? De inzet van die vraag is duidelijk: het eenvoudiger maken om het gedrag te wijzigen.
+Dit komt ruwweg overeen met het beeld van refactoren dat [Kent Beck](https://www.kentbeck.com/) schetst in [*Tidy First?*](https://www.oreilly.com/library/view/tidy-first/9781098151232/ "Kent Beck, 'Tidy First?: A Personal Exercise in Empirical Software Design', O'Reilly Media, 2023"). In dat boek stelt hij de vraag: moet ik de code eerst opruimen, of zal ik de feature meteen toevoegen?
 
 
 Maar het antwoord is natuurlijk: *it depends*. Er zit een vraagteken in de titel van Becks boek, en dat is niet voor niets. Soms is het een goed idee om eerst te refactoren, maar soms ook niet. Dat hangt af van de staat van de code, de grootte van de wijziging, de tijdsdruk waaronder deze doorgevoerd wordt, de waarde die het (*nu*) oplevert, etc..
@@ -41,7 +41,7 @@ Maar het is wel waar: ongerefactorde code is vaak lelijke code. Bestaande code w
 ## Helper
 
 
-Laatst kwam ik zo'n stuk code tegen (ik schreef er [hier](WAT_ZEGT_DEZE_CODE) terloops over). Een feature van ons systeem is om de data erin te kunnen exporteren naar een op [XML](https://nl.wikipedia.org/wiki/Extensible_Markup_Language "'Extensible Markup Language', Wikipedia") gebaseerd uitwisselingsformaat, genaamd [QTI](https://nl.wikipedia.org/wiki/QTI_(bestandstype) "'QTI (bestandstype)', Wikipedia"). De code om de conversie van ons eigen datamodel naar QTI te maken is flink. Sommige delen ervan zijn om door een ringetje te halen, andere zijn wat rommeliger.
+Laatst kwam ik zo'n stuk code tegen (ik schreef er [hier](/blog/24/08/wat-zegt-deze-code/ "'Wat zegt deze code?'") terloops over). Een feature van ons systeem is om de data erin te kunnen exporteren naar een op [XML](https://nl.wikipedia.org/wiki/Extensible_Markup_Language "'Extensible Markup Language', Wikipedia") gebaseerd uitwisselingsformaat, genaamd [QTI](https://nl.wikipedia.org/wiki/QTI_(bestandstype) "'QTI (bestandstype)', Wikipedia"). De code om de conversie van ons eigen datamodel naar QTI te maken is flink. Sommige delen ervan zijn om door een ringetje te halen, andere zijn wat rommeliger.
 
 
 Het ergst zijn de classes met `Helper` in de naam -- een [antipatroon waar ik al eerder over schreef](/blog/21/04/neem-afscheid-van-helpers/ "'Neem afscheid van helpers'"). Ik had mezelf tot doel gesteld één van die helpers op te schonen. Die class bevatte een method die een stukje XML (*x*) als input nam, deze aanpaste (*x'*) op basis van een object uit ons datamodel, en vervolgens weer teruggaf. 
@@ -77,7 +77,7 @@ En *dat* is precies wat mijn handen doet jeuken om te refactoren. Want code hoor
 Goede code communiceert *alleen* de inhoud van het probleem en de oplossing. Goede code communiceert *niet* hoe ons begrip van de het probleem door de tijd heen is veranderd, en hoe onze oplossing tot stand is gekomen.
 
 
-(Natuurlijk betekent dat niet dat zulke code geen enkele plek heeft in een codebase -- soms ontkom je er zelfs niet aan. De databasemigratiescripts die wij in versiebeheer hebben, doen keurig verslag van de manier waarop dat deel van onze code is geëvolueerd. Maar, en dat is het belangrijke punt, het datamodel zoals het er nu uitziet, zou eruit moeten zien alsof het altijd zo is geweest.)
+(Natuurlijk betekent dat niet dat zulke code geen enkele plek heeft in een codebase -- soms ontkom je er zelfs niet aan. De [databasemigratiescripts](/blog/21/10/evolutionaire-datamigratie-met-fluentmigrator/ "'Evolutionaire datamigratie met FluentMigrator'") die wij in versiebeheer hebben, doen keurig verslag van de manier waarop dat deel van onze code is geëvolueerd. Maar, en dat is het belangrijke punt, het datamodel zoals het er nu uitziet, zou eruit moeten zien alsof het altijd zo is geweest.)
 
 
 ## Communiceren
@@ -89,6 +89,6 @@ De schoonheid van code zit 'm in de helderheid waarmee ze een idee communiceert 
 We refactoren niet alleen om het makkelijker te maken de code te wijzigen, we refactoren ook om de code zo helder mogelijk te laten communiceren. En code die helder communiceert is op zijn beurt weer makkelijker om te wijzigen.
 
 
-[^1]: Op [Joy of Coding](https://joyofcoding.org/) zat ik op de eerste rij toen [Kevlin Henney](http://kevlin.tel/) een fantastisch praatje ([klik hier](https://www.youtube.com/watch?v=NMPeAW2RWdc "Refactoring Is Not Just Clickbait - Kevlin Henney - NDC London 2023") voor een versie daarvan) gaf over dit onderwerp. Na afloop stond 'ie ineens naast me en bracht ik prompt mijn bewondering voor 'm over. Wat Henney zo fascinerend maakt om te horen spreken, is dat zijn praatjes geen oplossing presenteren, maar een probleem verhelderen.
+[^1]: Op [Joy of Coding](https://joyofcoding.org/) zat ik op de eerste rij toen [Kevlin Henney](http://kevlin.tel/) een [fantastisch praatje](https://www.youtube.com/watch?v=Q91d59tW75s "'Kevlin Henney - Refactoring Is Not Just Clickbait - Joy of Coding 2024', YouTube") gaf over dit onderwerp. Na afloop stond 'ie ineens naast me en bracht ik prompt mijn bewondering voor 'm over. Wat Henney zo fascinerend maakt om te horen spreken, is dat zijn praatjes geen oplossing presenteren, maar een probleem verhelderen.
 
-[^2]: Dat wil zeggen, wie de code *vanuit een bepaalde invalshoek* leest, zal die informatie eruit weten te destilleren. [Codefluisteren](/blog/23/12/codefluisteren/ "'Codefluisteren'") is een vaardigheid die niet in iedereen even goed ontwikkeld is. Ook Henney spreekt in sommige van zijn praatjes over softwareontwikkeling als een vorm van archeologie.
+[^2]: Dat wil zeggen, wie de code *vanuit een bepaalde invalshoek* leest, zal die informatie eruit weten te destilleren. [Codefluisteren](/blog/23/12/codefluisteren/ "'Codefluisteren'") is een vaardigheid die niet in iedereen even goed ontwikkeld is. Henney spreekt in sommige van zijn praatjes over softwareontwikkeling als een vorm van archeologie.

@@ -1,8 +1,8 @@
 ---
 title: "Semantische bugs"
 author: "Karl van Heijster"
-date: 2024-07-12T10:06:05+02:00
-draft: true
+date: 2024-09-06T08:22:56+02:00
+draft: false
 comments: true
 tags: ["bugs", "clean code", "falen", "intentie van code", "naamgeving", "professionaliteit", "requirements", "software ontwikkelaar (rol)", "vakmanschap", "verantwoordelijkheid", "werkplezier"]
 summary: "Voor een presentatie klooide ik wat variaties op het FizzBuzz-algoritme in elkaar. En ergens in de loop van die codeeroefening stuitte ik op een interessante bug -- hoewel, ik weet niet eens zeker of het wel een bug was. Dus: wat is een bug eigenlijk?"
@@ -18,13 +18,9 @@ Voor een presentatie klooide ik wat variaties op het [FizzBuzz](https://en.wikip
 
 
 > Voor elk geheel getal:
->
 > - als deze deelbaar is door 3, retourneer "Fizz";
->
 > - als deze deelbaar is door 5, retourneer "Buzz";
->
 > - als deze deelbaar is door 3 en 5, retourneer "FizzBuzz";
->
 > - anders, retourneer het getal.
 
 
@@ -116,7 +112,7 @@ Daar klopt natuurlijk helemaal niets van. Want (dacht ik in mijn oneindige gaarh
 ## Schrödinger
 
 
-Dat was waarom de fout me nooit opgevallen was: de tests stonden allemaal op groen. Mijn implementatie klopte. -- Maar tegelijkertijd klopte mijn implementatie niet, want de code zei iets heel anders te doen dan het daadwerkelijk deed. (Zie ook [deze blog](WAT_ZEGT_DEZE_CODE "'Wat zegt deze code?'").)
+Dat was waarom de fout me nooit opgevallen was: de tests stonden allemaal op groen. Mijn implementatie klopte. -- Maar tegelijkertijd klopte mijn implementatie niet, want de code zei iets heel anders te doen dan het daadwerkelijk deed. (Zie ook [deze blog](/blog/24/08/wat-zegt-deze-code/ "'Wat zegt deze code?'").)
 
 
 Mijn code bevatte tegelijkertijd wel en niet een bug, leek het: -- [Schrödingers FizzBuzz](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat "'Schrödinger's cat', Wikipedia").
@@ -140,7 +136,7 @@ Het is verleidelijk om te zeggen: het is maar net hoe je "bug" definieert. En in
 ## Ongewenst
 
 
-Maar als we de [Engelse variant](https://en.wikipedia.org/wiki/Bug_(engineering) "'Bug (engineering)', Wikipedia") erbij pakken, dan wordt het beeld wat minder eenduidig: "*In engineering, a bug is a design defect in an engineered system that causes an undesired result.*" -- Wat de vraag oproept: wat is een "*undesired result*" (ongewenst resultaat)?[^1]
+Maar als we de [Engelse variant](https://en.wikipedia.org/wiki/Bug_(engineering) "'Bug (engineering)', Wikipedia") erbij pakken, dan wordt het beeld wat minder eenduidig: "*In engineering, a bug is a design defect in an engineered system that causes an undesired result.*" -- Wat de vraag oproept: wat is een "*undesired result*" of ongewenst resultaat?[^1] (Let ook op de term "*design defect*": een fout in het *ontwerp*!)
 
 
 Ik zou de verwarrende minuten die ik doormaakte terwijl ik de code probeerde te fixen, wel degelijk als ongewenst willen kenmerken. -- Maar, en daar zit 'm, denk ik, de crux: het was ongewenst *voor mij* als ontwikkelaar. En daarin verschilt deze "bug" van de traditionele bug. In het dagelijks gebruik van die term bedoelen we doorgaans: ongewenst *voor de eindgebruiker*.

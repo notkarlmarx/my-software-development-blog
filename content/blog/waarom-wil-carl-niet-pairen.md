@@ -1,5 +1,5 @@
 ---
-title: "Alice, Bob & Carl"
+title: "Waarom wil Carl niet pairen?"
 author: "Karl van Heijster"
 date: 2024-08-23T22:19:23+02:00
 draft: true

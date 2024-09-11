@@ -9,6 +9,7 @@ Ik deel mijn inzichten graag op usergroups en conferenties. Bij de volgende gele
 
 |                   |                                                      |                                                                  |
 | ----------------- | ---------------------------------------------------- | ---------------------------------------------------------------- |
+| 9 oktober 2024    | [TestNet Najaarsevenement](https://www.testnet.org/) | *Wat zegt deze test?*                                            |
 | 21 juni 2024      | [Joy of Coding](https://joyofcoding.org/index.html)  | *A note on dental hygiene*                                       |
 | 13 juni 2024      | [TopiConf](https://werkenbijtopicus.nl/evenementen/7149/topiconf-2024) (intern) | [*Always up to date documentation with descriptive tests*](/talks/altijd-up-to-date-documentatie-met-maximaal-descriptieve-tests/) |
 | 2 juni 2024       | [T-DOSE](https://t-dose.org/2024/)                   | [*The art of the pull request*](/talks/de-edele-kunst-van-het-pull-request/) |

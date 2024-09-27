@@ -5,7 +5,7 @@ date: 2024-09-20T09:54:53+02:00
 draft: true
 comments: true
 tags: ["bugs", "datamigratie", "leermoment", "software ontwikkelen", "test-driven development", "testen", "unit tests"]
-summary: "Mijn collega bracht een argument in dat vaak wordt genoemd als ik mensen vertel over testen via de voordeur: maar door de code direct aan te roepen, geven mijn tests onmiddellijk feedback over *waar* de fout zit. Als de tests van *deze* migratie beginnen te falen, dan weet ik zeker dat *daar* de fout zit. En dat scheelt tijd in het debuggen van de code. -- Maar dat laat de volgende vraag onverlet: is een unittest (waarbij \"unit\" wordt opgevat als "eenheid van code") het beste middel om erachter te komen waar de fout zit?"
+summary: "Mijn collega bracht een argument in dat vaak wordt genoemd als ik mensen vertel over testen via de voordeur: maar door de code direct aan te roepen, geven mijn tests onmiddellijk feedback over *waar* de fout zit. Als de tests van *deze* migratie beginnen te falen, dan weet ik zeker dat *daar* de fout zit. En dat scheelt tijd in het debuggen van de code. -- Maar dat laat de volgende vraag onverlet: is een unittest (waarbij \"unit\" wordt opgevat als \"eenheid van code\") het beste middel om erachter te komen waar de fout zit?"
 ---
 
 Mijn team gebruikt [Migrations.Json.Net](https://github.com/Weingartner/Migrations.Json.Net "'WeinGartner/Migrations.Json.Net', GitHub") om de modelwijzigingen in onze [NoSQL-database](https://nl.wikipedia.org/wiki/NoSQL "'NoSQL', Wikipedia") [stapje voor stapje te kunnen migreren](/blog/21/09/stapje-voor-stapje-data-migreren/ "'Stapje voor stapje data migreren'") -- al een hele tijd, getuige ook de vele migraties die we in de loop van de tijd hebben geschreven.

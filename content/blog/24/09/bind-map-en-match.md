@@ -1,8 +1,8 @@
 ---
 title: "Bind, Map en Match"
 author: "Karl van Heijster"
-date: 2024-07-26T08:26:21+02:00
-draft: true
+date: 2024-09-27T08:22:09+02:00
+draft: false
 comments: true
 tags: ["functioneel programmeren", "mentaal model", "refactoren", "software ontwikkelen"]
 summary: "Ik schrijf al twee jaar op dit blog over functioneel programmeren in C#, dus je zou denken dat ik de basis inmiddels wel een beetje zou moeten beheersen -- en toch overkomt het me nog regelmatig dat ik uitroep: och, zit het *zo*! Zo had ik onlangs -- na een hoop gepiel (en een beetje hulp van Scott Wlaschin) -- een openbaring met betrekking tot de `Map`- en `Bind`-functies."
@@ -22,13 +22,13 @@ public async Task<CommandResult> Handle(
     UpdateCommand request, CancellationToken cancellationToken)
 {
     var option = await _repository.Get(request.Id);
-    return await option.Match(async original => {
-        if (!IsValid(original, request.Updated))
+    return await option.MatchAsync(async resource => {
+        if (!IsValid(resource, request.Updated))
         {
             return CommandResult.ValidationFailed;
         }
-        original.Update(request.Updated);
-        await _repository.Save(original);
+        resource.Update(request.Updated);
+        await _repository.Save(resource);
         return CommandResult.Success;
     },
     () => CommandResult.NotFound);
@@ -36,7 +36,7 @@ public async Task<CommandResult> Handle(
 ```
 
 
-Oftewel: we halen een object op uit onze [repository](https://martinfowler.com/eaaCatalog/repository.html "Edward Hieatt & Rob Mee, 'Repository' @ Martin Fowler") op basis van het meegegeven `Id`. De `Get`-method retourneert een `Option`, want er kan ofwel een object bestaan met dat `Id` ofwel niet. We handelen beide scenario's af met `.Match`. Als deze wel bestaat, dan doen we een validatie, updaten het oorspronkelijke object,[^1] slaan deze op in de repository en geven aan dat de operatie succesvol is verlopen. Als deze niet bestaat, geven we aan dat het oorspronkelijke object niet gevonden kan worden.
+Oftewel: we halen een object op uit onze [repository](https://martinfowler.com/eaaCatalog/repository.html "Edward Hieatt & Rob Mee, 'Repository' @ Martin Fowler") op basis van het meegegeven `Id`. De `Get`-method retourneert een `Option`, want er kan ofwel een object bestaan met dat `Id` ofwel niet. We handelen beide scenario's af met `.MatchAsync`. Als deze wel bestaat, dan doen we een validatie, updaten het oorspronkelijke object,[^1] slaan deze op in de repository en geven aan dat de operatie succesvol is verlopen. Als deze niet bestaat, geven we aan dat het oorspronkelijke object niet gevonden kan worden.
 
 
 ## Niet lekker
@@ -66,13 +66,13 @@ public async Task<CommandResult> Handle(
 {
     var option = await _repository.Get(request.Id);
     return await option.ToEither(CommandResult.NotFound)
-        .Match(async original => {
-            if (!IsValid(original, request.Updated))
+        .MatchAsync(async resource => {
+            if (!IsValid(resource, request.Updated))
             {
                 return CommandResult.ValidationFailed;
             }
-            original.Update(request.Updated);
-            await _repository.Save(original);
+            resource.Update(request.Updated);
+            await _repository.Save(resource);
             return CommandResult.Success;
         },
         error => error);
@@ -92,19 +92,19 @@ public async Task<CommandResult> Handle(
 {
     var option = await _repository.Get(request.Id);
     return await option.ToEither(CommandResult.NotFound)
-        .Bind(original => Validate(original, request.Updated))
-        .Match(async original => {
-            original.Update(request.Updated);
-            await _repository.Save(original);
+        .Bind(resource => Validate(resource, request.Updated))
+        .MatchAsync(async resource => {
+            resource.Update(request.Updated);
+            await _repository.Save(resource);
             return CommandResult.Success;
         },
         error => error);
 }
 
 private EitherAsync<CommandResult, SomeObject> Validate(
-    SomeObject original, SomeObject updated) =>
-    IsValid(original, updated)
-        ? original
+    SomeObject resource, SomeObject updated) =>
+    IsValid(resource, updated)
+        ? resource
         : CommandResult.ValidationFailed;
 ```
 
@@ -121,11 +121,11 @@ public async Task<CommandResult> Handle(
 {
     var option = await _repository.Get(request.Id);
     return await option.ToEither(CommandResult.NotFound)
-        .Bind(original => Validate(original, request.Updated))
-        .Bind(original => 
-            original.Update(request.Updated)) // Compiler error!
-        .Match(async original => {
-            await _repository.Save(original);
+        .Bind(resource => Validate(resource, request.Updated))
+        .Bind(resource => 
+            resource.Update(request.Updated)) // Compiler error!
+        .MatchAsync(async resource => {
+            await _repository.Save(resource);
             return CommandResult.Success;
         },
         error => error);
@@ -142,11 +142,11 @@ public async Task<CommandResult> Handle(
 {
     var option = await _repository.Get(request.Id);
     return await option.ToEither(CommandResult.NotFound)
-        .Bind(original => Validate(original, request.Updated))
-        .Bind<SomeObject>(original => 
-            original.Update(request.Updated))
-        .Match(async original => {
-            await _repository.Save(original);
+        .Bind(resource => Validate(resource, request.Updated))
+        .Bind<SomeObject>(resource => 
+            resource.Update(request.Updated))
+        .MatchAsync(async resource => {
+            await _repository.Save(resource);
             return CommandResult.Success;
         },
         error => error);
@@ -163,18 +163,18 @@ public async Task<CommandResult> Handle(
 {
     var option = await _repository.Get(request.Id);
     return await option.ToEither(CommandResult.NotFound)
-        .Bind(original => Validate(original, request.Updated))
-        .Bind(original => Update(original, request.Updated))
-        .Match(async original => {
-            await _repository.Save(original);
+        .Bind(resource => Validate(resource, request.Updated))
+        .Bind(resource => Update(resource, request.Updated))
+        .MatchAsync(async resource => {
+            await _repository.Save(resource);
             return CommandResult.Success;
         },
         error => error);
 }
 
 private static EitherAsync<CommandResult, SomeObject> Update(
-    SomeObject original, SomeObject updated) =>
-    original.Update(updated);
+    SomeObject resource, SomeObject updated) =>
+    resource.Update(updated);
 ```
 
 
@@ -184,10 +184,10 @@ Maar beide opties voelen niet helemaal goed. Het is alsof we een vierkant blokje
 ## Spoorweg
 
 
-Dit is het moment waarop het kwartje bij mij eindelijk viel, over wat nu het verschil is tussen `Bind` en `Map`. `Bind` gebruik je wanneer je functie een *monad* retourneert -- dat is `Bind`, eh, `Bind` maakt: dat deze met *monads* om kan gaan. `Map` gebruik je wanneer je functie een "gewoon" object retourneert -- dat is wat `Map` `Map` maakt. (En dat is waarom je een *monad* in een *monad* krijgt, wanneer je `Map` gebruikt op een functie die een *monad* retourneert.)
+Dit is het moment waarop het kwartje bij mij eindelijk viel, over wat nu het verschil is tussen `Bind` en `Map`. `Bind` gebruik je wanneer je functie een *monad* retourneert -- dat is wat `Bind`, eh, `Bind` maakt: dat deze met *monads* om kan gaan. `Map` gebruik je wanneer je functie een "gewoon" object retourneert -- dat is wat `Map` `Map` maakt. (En dat is waarom je een *monad* in een *monad* krijgt, wanneer je `Map` gebruikt op een functie die een *monad* retourneert.)
 
 
-Wlaschin gebruikt in [*Domain Modeling Made Functional*](https://pragprog.com/titles/swdddf/domain-modeling-made-functional/) een spoorwegenmetafoor.[^2] Er zijn twee sporen in onze keten van functies: ofwel we krijgen een `CommandResult` terug, ofwel het object zelf. Je zou `Bind` en `Map` kunnen zien als de spoorwissels. `Bind` is gebruik je in de context van een dubbel spoor, `Map` in de context van een enkel spoor.
+Wlaschin gebruikt in [*Domain Modeling Made Functional*](https://pragprog.com/titles/swdddf/domain-modeling-made-functional/) een spoorwegmetafoor.[^2] Er zijn twee sporen in onze keten van functies: ofwel we krijgen een `CommandResult` terug, ofwel het object zelf. Je zou `Bind` en `Map` kunnen zien als de spoorwissels. `Bind` is gebruik je in de context van een dubbel spoor, `Map` in de context van een enkel spoor.
 
 
 Visueel ziet dat er zo uit (vergeef me mijn vreselijke [ASCII-art](https://en.wikipedia.org/wiki/ASCII_art "'ASCII art', Wikipedia")):
@@ -213,10 +213,10 @@ public async Task<CommandResult> Handle(
 {
     var option = await _repository.Get(request.Id);
     return await option.ToEither(CommandResult.NotFound)
-        .Bind(original => Validate(original, request.Updated))
-        .Map(original => original.Update(request.Updated))
-        .Match(async original => {
-            await _repository.Save(original);
+        .Bind(resource => Validate(resource, request.Updated))
+        .Map(resource => resource.Update(request.Updated))
+        .MatchAsync(async resource => {
+            await _repository.Save(resource);
             return CommandResult.Success;
         },
         error => error);
@@ -227,7 +227,7 @@ public async Task<CommandResult> Handle(
 ## Resultaat
 
 
-De rest van de refactorslag is betrekkelijk eenvoudig. We gebruiken `Do` om het object op te slaan (want opslaan is een [*side effect*](https://en.wikipedia.org/wiki/Side_effect_(computer_science) "'Side effect (computer science)', Wikipedia")) en duwen op die manier de `Match` helemaal naar het eind van de keten. En als we de `ToEither` rechtstreeks aan onze eerste call naar de *repository* plakken, houden we één lange, ononderbroken reeks aaneengeregen functies over:
+De rest van de refactorslag is betrekkelijk eenvoudig (-- althans, dat dacht ik; zie het postscript hier onder). We gebruiken `Do` om het object op te slaan (want opslaan is een [*side effect*](https://en.wikipedia.org/wiki/Side_effect_(computer_science) "'Side effect (computer science)', Wikipedia")) en duwen op die manier de `Match` helemaal naar het eind van de keten. En als we de `ToEither` rechtstreeks aan onze eerste call naar de *repository* plakken, houden we één lange, ononderbroken reeks aaneengeregen functies over:
 
 
 ```cs
@@ -235,9 +235,9 @@ public async Task<CommandResult> Handle(
     UpdateCommand request, CancellationToken cancellationToken) => 
     await _repository.Get(request.Id)
         .ToEither(CommandResult.NotFound)
-        .Bind(original => Validate(original, request.Updated))
-        .Map(original => original.Update(request.Updated))
-        .Do(async original => await _repository.Save(original))
+        .Bind(resource => Validate(resource, request.Updated))
+        .Map(resource => resource.Update(request.Updated))
+        .Do(async resource => await _repository.Save(resource))
         .Match(_ => CommandResult.Success, error => error);
 ```
 
@@ -245,7 +245,18 @@ public async Task<CommandResult> Handle(
 Onze method is een *pipeline* geworden (zie [dit praatje](https://www.youtube.com/watch?v=ipceTuJlw-M "'Pipeline-oriented programming - Scott Wlaschin - NDC Porto 2023', YouTube") van meester Wlaschin voor een uitgebreide inleiding) -- en ik ben een stapje dichterbij het begrijpen van functioneel programmeren in C#. *Tuut-tuut!*
 
 
+## Postscript
 
-[^1]: Liefhebbers van functioneel programmeren zal het opgevallen zijn dat `original` gewijzigd wordt en vervolgens opgeslagen -- het is een *mutable* object. Dit is, helaas, een gevolg van de database die we gebruiken. Deze gooit een foutmelding op als we een "nieuw" object (i.e. de binnenkomende update) opslaan op de plek van de oorspronkelijke. De database sluit zo het gebruik van [*immutable*](/tags/immutability/ "Blogs met de tag 'immutability'") datastructuren uit.
+
+De rest van de refactorslag bleek minder eenvoudig dan ik dacht. Na een paar dagen kwam onze front end-ontwikkelaar in de lucht met een melding van vreemd inconsistent gedrag van de API: de update slaagde soms wel en soms niet. Een raadselachtig verschijnsel, want mijn integratietests slaagden consequent.
+
+
+Het probleem bleek uiteindelijk in die `Do`-functie te zitten. Deze kan niet omgaan met asynchrone methods, althans niet in de vorm zoals ik 'm geschreven had. `Do` wacht de `await` niet af en "valt" meteen door naar de volgende functie. Het gevolg is dat de `Save`-method in sommige gevallen al wel geslaagd was op het moment dat het resultaat van de update geretourneerd werd, en soms niet.
+
+
+Dit probleem trad niet op in onze integratietests, bleek, omdat daar een *in memory*-versie van de database wordt gebruikt. Deze is snel genoeg om dit probleem niet te signaleren. Zo zie je maar: hoe goed je testsuite ook is, soms is de *echte* test het systeem daadwerkelijk te gebruiken!
+
+
+[^1]: Liefhebbers van functioneel programmeren zal het opgevallen zijn dat `resource` gewijzigd wordt en vervolgens opgeslagen -- het is een *mutable* object. Dit is, helaas, een gevolg van de database die we gebruiken. Deze gooit een foutmelding op als we een "nieuw" object (i.e. de binnenkomende update) opslaan op de plek van de oorspronkelijke. De database sluit zo het gebruik van [*immutable*](/tags/immutability/ "Blogs met de tag 'immutability'") datastructuren uit.
 
 [^2]: We zaten zojuist dus letterlijk metaforisch op het verkeerde spoor!

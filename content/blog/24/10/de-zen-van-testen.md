@@ -1,28 +1,27 @@
 ---
 title: "De zen van testen"
 author: "Karl van Heijster"
-date: 2024-07-26T10:54:32+02:00
-draft: true
+date: 2024-10-04T08:16:16+02:00
+draft: false
 comments: true
 tags: ["poëzie", "testen"]
-summary: "*Een test is beter dan geen test. / Geen test is beter dan een flaky test. / Een eenvoudige test is beter dan een complexe test. / Maar eenvoud betekent niet: simpel.*"
+summary: "*Een test is beter dan geen test. / Geen test is beter dan een flaky test. / Een eenvoudige test is beter dan een complexe test. / Maar eenvoud betekent niet: simplistisch.*"
 ---
 
 ```
 Een test is beter dan geen test.
 Geen test is beter dan een flaky test.
 Een eenvoudige test is beter dan een complexe test.
-Maar eenvoud betekent niet: simpel.
+Maar eenvoud betekent niet: simplistisch.
 Een test bestaat om te lezen, niet om over na te denken.
-Een test vertelt wat niet hoe.
+Een test beschrijft het wat, niet het hoe.
 Triviale code behoeft geen test, net als overgecompliceerde.
 Maar bij afwezigheid, test overgecompliceerde code.
 Tests zijn niet optioneel.
 Tests zijn specs.
 Tests vertellen een verhaal.
 Laat het verhaal niet zijn: deze codebase is een puinhoop.
-Een test zonder code is een goed begin, code zonder tests 
-  het begin van het eind.
+Een test is een goed begin.
 Refactoren zonder tests is voor kenners en dwazen.
 Goede code is geteste code.
 Het beste moment om een test te schrijven is nu.

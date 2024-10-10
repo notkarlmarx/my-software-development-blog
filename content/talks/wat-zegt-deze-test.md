@@ -1,8 +1,8 @@
 ---
 title: "Wat zegt deze test?"
 author: "Karl van Heijster"
-date: 2024-09-13T11:21:36+02:00
-draft: true
+date: 2024-10-09T08:36:28+02:00
+draft: false
 comments: true
 tags: []
 summary: "Geautomatiseerde tests verhogen de kwaliteit van een systeem en houden ontwikkelteams op het juiste pad. Maar tests zijn ook een diagnostisch middel: ze vertellen ons waar een team staat én waar het mee worstelt -- en helpen ons zo de handen in het haar te voorkomen."

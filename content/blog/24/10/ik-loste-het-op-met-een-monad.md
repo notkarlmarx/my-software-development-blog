@@ -1,14 +1,14 @@
 ---
 title: "Ik loste het op met een monad"
 author: "Karl van Heijster"
-date: 2024-08-02T08:26:33+02:00
-draft: true
+date: 2024-10-11T08:34:29+02:00
+draft: false
 comments: true
-tags: []
+tags: ["functioneel programmeren", "monads", "refactoren", "software ontwikkelen"]
 summary: "Een soort van *monad*. Denk ik."
 ---
 
--- Een soort van *monad*. Denk ik. (Zie ook [deze blog](/blog/22/12/wat-is-een-monad/ "'Wat is een monad?'"))
+-- Een soort van *monad*. Denk ik. (Zie ook [deze](/blog/22/12/wat-is-een-monad/ "'Wat is een monad?'") en [deze blog](/blog/24/09/bind-map-en-match/ "'Bind, Map en Match'").)
 
 
 Laatst lag onze [Redis](https://redis.io/) cache eruit. Niet lang, en 'm een schop geven was voldoende om 'm weer aan de praat te krijgen, maar toch: hij lag eruit. En we deden toen een interessante ontdekking als team: als de cache eruit lag, dan kon je niet alleen niet meer de gecachte data ophalen, dan kon je bepaalde data überhaupt niet meer ophalen.
@@ -85,13 +85,10 @@ Het is duidelijk: deze code moest gerefactord worden. De vraag was alleen: hoe?[
 Laat ik een andere vraag stellen: met wat voor soort probleem hebben we hier te maken?[^3] Het is duidelijk dat de oorspronkelijke schrijver van de code het zag als een *control flow* probleem: zijn code stond vol met `if`-statements die aangaven dat er in het ene geval *zus* moest gebeuren en in het andere geval *zo*.
 
 
-Maar al [mijn gefilosofeer over functioneel programmeren](/tags/functioneel-programmeren/ "Blogs met de tag 'functioneel programmeren'") heeft mijn hersenen inmiddels dusdanig aangetast dat ik dit soort opgaven veeleer als datatransformatieproblemen ben gaan zien. (Zie ook [deze blog](/blog/24/05/functioneel-denken-een-praktijkvoorbeeld/ "'Functioneel denken: een praktijkvoorbeeld'").) De datatransformatie is in dit geval: het transformeren van een lijst ID's naar een lijst met gebruikersinformatie -- in dit geval, met drie databronnen in het midden.
+Maar al [mijn gefilosofeer over functioneel programmeren](/tags/functioneel-programmeren/ "Blogs met de tag 'functioneel programmeren'") heeft mijn hersenen inmiddels dusdanig aangetast dat ik dit soort opgaven veeleer als datatransformatieproblemen ben gaan zien. (Zie ook [deze blog](/blog/24/05/functioneel-denken-een-praktijkvoorbeeld/ "'Functioneel denken: een praktijkvoorbeeld'").) De datatransformatie is in dit geval: het transformeren van een lijst ID's naar een lijst met gebruikersinformatie -- met, in dit geval, drie databronnen in het midden.
 
 
-Dit was hoe ik de flow zag.
-
-
-(1) Haal de gevraagde gebruikers op uit de cache. (2) Als niet alle gevraagde gebruikers daar gevonden kunnen worden, haal ze dan op uit [Microsoft Entra](https://www.microsoft.com/nl-nl/security/business/microsoft-entra?market=nl). (3) Als ze daar niet allemaal gevonden kunnen worden (bijvoorbeeld omdat ze niet meer voor ons werken), haal ze dan op uit een SQL-tabel van historische gebruikers van onze applicatie. (4) Als ze daar niet gevonden kunnen worden, behandel hen dan als niet-gevonden gebruikers. (5) Voeg alle gebruikers die niet in de cache zaten, toe aan de cache. (6) Retourneer de opgevraagde gebruikers.
+Dit was hoe ik de flow zag. (1) Haal de gevraagde gebruikers op uit de cache. (2) Als niet alle gevraagde gebruikers daar gevonden kunnen worden, haal ze dan op uit [Microsoft Entra](https://www.microsoft.com/nl-nl/security/business/microsoft-entra?market=nl). (3) Als ze daar niet allemaal gevonden kunnen worden (bijvoorbeeld omdat ze niet meer voor ons werken), haal ze dan op uit een SQL-tabel van historische gebruikers van onze applicatie. (4) Als ze daar niet gevonden kunnen worden, behandel hen dan als niet-gevonden gebruikers. (5) Voeg alle gebruikers die niet in de cache zaten, toe aan de cache. (6) Retourneer de opgevraagde gebruikers.
 
 
 De signatuur (zie [deze blog](/blog/22/07/wat-zijn-eerlijke-functies/ "'Wat zijn eerlijke functies?'")) van het geheel is en blijft `int[] -> UserInformation[]`. Maar om de datatransformaties van de tussenstappen mogelijk te maken, had ik een ander object nodig: een object waarin ik bijhield (1) welke gebruikers er nog niet gevonden waren, (2) welke gebruikers er al wel gevonden waren, en (3) welke gebruikers ik toe moest voegen aan de cache. Oftewel:
@@ -152,7 +149,7 @@ private async Task<UserInformation[]> GetUserInformations(
 Is dit mooie code? Absoluut niet. Maar het werkte wel, en het was makkelijk leesbaar, van boven naar beneden. De code is één op één een weergave van de flow zoals ik die hierboven heb beschreven. Dus het was nu in elk geval helder welke stappen er werden ondernomen.
 
 
-Wat er natuurlijk aan scheelt, is die vreselijke codeduplicatie. Hoe daarmee om te gaan? -- Het antwoord schoot me te binnen onder de douche, en de hele zweterige nacht zat ik me te verkneukelen om het te verwachten resultaat.
+Wat er natuurlijk aan scheelt, is die vreselijke codeduplicatie. Hoe daarmee om te gaan? -- Het antwoord schoot me te binnen onder de douche, en de zweterige nacht lang zat ik me te verkneukelen om het te verwachten resultaat.
 
 
 ## `Bind`
@@ -236,7 +233,7 @@ Dan kunnen we het nu eindelijk over (soort van, denk ik) [*monads*](/tags/monads
 Het is een object dat op een hoger abstractieniveau leeft dan de input (`int[]`) of uiteindelijke output (`UserInformation[]`). En het moet daarom mogelijk zijn om die inputs en outputs te "verheffen" naar dat hogere niveau, en de resultaten aan elkaar te knopen. -- Is het *formeel* bezien een *monad*? Nee, volgens mij niet. Maar de denkwijze is hetzelfde.
 
 
-Het resultaat is een eenvoudige *pipeline* (zie ook [deze blog](SEMANTISCHE_BUGS)) die op [declaratieve wijze](/tags/declaratief-programmeren/ "Blogs met de tag 'declaratief programmeren'") aangeeft *wat* er allemaal gebeurt, en voor de lezer abstraheert *hoe* dat gebeurt.
+Het resultaat is een eenvoudige *pipeline* (zie ook [deze blog](/blog/24/09/semantische-bugs/ "'Semantische bugs'")) die op [declaratieve wijze](/tags/declaratief-programmeren/ "Blogs met de tag 'declaratief programmeren'") aangeeft *wat* er allemaal gebeurt, en voor de lezer abstraheert *hoe* dat gebeurt.
 
 
 `Do`, ten slotte, is een functie om *side effects* mee te bewerkstelligen.
@@ -282,6 +279,6 @@ Maar wat ik wel weet, is dat het een verdomd leuk codeerexperiment was. En dat i
 
 [^2]: Een andere vraag is: wanneer? (Vgl. [Kent Beck](https://www.kentbeck.com/), [*Tidy First?*](https://www.oreilly.com/library/view/tidy-first/9781098151232/ "Kent Beck, 'Tidy First?: A Personal Exercise in Empirical Software Design', O'Reilly Media, 2023") -- al is "*tidying*" voor deze casus waarschijnlijk een te zwakke uitdrukking!) In dit geval refactorde ik achteraf. Mijn eerste oplossing bestond uit het wrappen van het geheel in een [`try-catch`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/exception-handling-statements "'Exception-handling statements - throw, try-catch, try-finally, and try-catch-finally', Microsoft documentatie"). De wetenschap dat het oorspronkelijk probleem daarmee opgelost was, gaf me de ruimte in mijn hoofd om rustig te kunnen refactoren.
 
-[^3]: Opnieuw ontleen ik inspiratie uit [dit praatje](https://www.youtube.com/watch?v=NMPeAW2RWdc "Refactoring Is Not Just Clickbait - Kevlin Henney - NDC London 2023") (zie ook [deze](REFACTORING_ALS_COMMUNICATIEMIDDEL) en [deze blog](REFACTORING_EN_HANNAH_ARENDT)) van [Kevlin Henney](http://kevlin.tel/).
+[^3]: Opnieuw ontleen ik inspiratie uit [dit praatje](https://www.youtube.com/watch?v=NMPeAW2RWdc "Refactoring Is Not Just Clickbait - Kevlin Henney - NDC London 2023") van [Kevlin Henney](http://kevlin.tel/) (zie ook [deze](/blog/24/08/refactoring-als-communicatiemiddel/ "'Refactoring als communicatiemiddel'") en [deze blog](/blog/24/09/refactoring-en-hannah-arendt/ "'Refactoring en Hannah Arendt'")).
 
 [^4]: Omdat ik werk met [asynchrone functies](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/ "'Asynchronous programming with async and await', Microsoft documentatie"), definieerde ik daarnaast een variant op `Bind` die met een `Task<GetUserInformationDto>` werkt. Het enige wat die doet, is de task *awaiten*, en daarna de bovenstaande aanroepen. Zie de implementatie van `Do` verderop.

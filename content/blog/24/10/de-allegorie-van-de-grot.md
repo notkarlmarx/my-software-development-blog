@@ -1,8 +1,8 @@
 ---
 title: "De allegorie van de grot"
 author: "Karl van Heijster"
-date: 2024-08-18T20:50:29+02:00
-draft: true
+date: 2024-10-18T08:50:10+02:00
+draft: false
 comments: true
 tags: ["agile ontwikkeling", "intentie van code", "filosofie", "objectgeoriënteerd programmeren"]
 summary: "Plato zegt: stel je een groep mensen voor, vastgebonden -- in een grot dus. Hun hele leven lang zien ze alleen de schaduwen op de muren, van bewakers die verhalen vertellen voor een groot vuur. Die groep mensen zou denken dat de schaduwen op de muur de echte dingen zijn."
@@ -26,7 +26,7 @@ En als hij terug zou gaan naar zijn medegevangenen, zouden zij hem niet geloven.
 De schaduwen in de grot zijn niet de werkelijkheid. Ze zijn een afbeelding van een hogere werkelijkheid. (Eigenlijk zijn ze een afbeelding van een afbeelding; de tableau vivants van de bewakers worden met *beelden van* bomen, paarden etc. gemaakt.[^3])
 
 
-De clou is natuurlijk: wij -- wij, mensen, stervelingen zijn als de gevangenen in de grot. -- Wij zien schaduwen voor de werkelijkheid aan. -- Wij zijn vastgeketend, gedwongen tot een afgeleide werkelijkheid. *(-- En wij zullen de gevangene die is losgebroken niet geloven!)*
+De clou is natuurlijk: wij -- wij, mensen, stervelingen, wij zijn als de gevangenen in de grot. -- Wij zien schaduwen voor de werkelijkheid aan. -- Wij zijn vastgeketend, gedwongen tot een afgeleide werkelijkheid. *(-- En wij zullen de gevangene die is losgebroken niet geloven!)*
 
 
 In Plato’s wereld zijn er twee werkelijkheden, die van de veranderlijke ervaring en die van de eeuwige Ideeën.[^4] Het is de taak van de filosoof de hogere werkelijkheid te kennen. Vandaar de vraag: hoe verhouden die werkelijkheden zich tot elkaar? 
@@ -35,10 +35,10 @@ In Plato’s wereld zijn er twee werkelijkheden, die van de veranderlijke ervari
 ## Paarden
 
 
-In de werkelijkheid zijn er een heleboel paarden. Al die paarden zijn verschillend – ze hebben verschillende groottes, kleur, blik in de ogen –, maar toch zijn het allemaal paarden. Dat is wat ze gemeenschappelijk hebben: ze delen in de Idee Paard (cf. ze hebben *de Vorm van Paard*).
+In de werkelijkheid zijn er een heleboel paarden. Al die paarden zijn verschillend -- ze hebben verschillende groottes, kleur, blik in de ogen --, maar toch zijn het allemaal paarden. Dat is wat ze gemeenschappelijk hebben: ze delen in de Idee Paard (cf. ze hebben *de Vorm van Paard*).
 
 
-(Maar die weergave is wellicht te statisch. Vergeet niet dat de bewakers <span style="text-decoration:underline">verhalen</span> uitbeeldden met hun tableau vivants. We lopen het risico Plato’s metafysica plat te slaan tot een dingenontologie[^5] – maar misschien was zijn universum betekenisvol op een andere manier. *(einde bericht)*)
+(Maar die weergave is wellicht te statisch. Vergeet niet dat de bewakers <span style="text-decoration:underline">verhalen</span> uitbeeldden met hun tableau vivants. We lopen het risico Plato’s metafysica plat te slaan tot een dingenontologie[^5] -- maar misschien was zijn universum betekenisvol op een andere manier. *(einde bericht)*)
 
 
 De Idee is wat de dingen tot de dingen maakt. De Idee legt betekenis in de wereld. Zonder Boom geen schaduw van een boom. En zoals zijn schaduw verdwijnt als de boom gekapt wordt, verdwijnt rechtvaardigheid als Rechtvaardigheid ophoudt te bestaan (cf. verdwijnt *het bos als Boom ophoudt te bestaan*).
@@ -53,7 +53,7 @@ Als softwareontwikkelaar -- ik heb een [beroepsdeformatie](/tags/beroepsdeformat
 Wat is een [object](https://en.wikipedia.org/wiki/Object-oriented_programming "'Object-oriented programming', Wikipedia")? Een instantiatie van een [class](https://en.wikipedia.org/wiki/Class_(computer_programming) "'Class (computer programming)', Wikipedia"). Wat is een class? De definitie van een object. Een class beschrijft welke eigenschappen (properties) en gedragingen (methods) een object kan hebben. -- Een object is een paard. Een class is een `Horse`. (Ik schreef [hier](/blog/21/07/objectgeorienteerd-denken/ "'Objectgeoriënteerd denken'"), [hier](/blog/23/01/eerlijke-domeinmodellen/ "'Eerlijke domeinmodellen'") en [hier](/blog/23/06/objectgeorienteerd-programmeren-draait-niet-om-objecten/ "'Objectgeoriënteerd programmeren draait niet om objecten'") over objectgeoriënteerd programmeren.)
 
 
-In de Idee is vastgelegd hoe een ding eruitziet (zoals in een class is vastgelegd hoe een object gebruikt kan worden). (-- En ik vroeg me af: interpreteer ik mijn code aan de hand van Plato of Plato aan de hand van mijn code?) 
+In de Idee is vastgelegd hoe een ding eruitziet zoals in een class is vastgelegd hoe een object gebruikt kan worden. (-- En ik vroeg me af: interpreteer ik mijn code aan de hand van Plato of Plato aan de hand van mijn code?) 
 
 
 Paard `"Betty"` (de instantiatie) kan alleen de naam Betty hebben als het ding dat haar definitie vormt (de class), een property `Name` heeft. -- En wat is `Name`? Een simpele `string`? Of heeft het zijn eigen definitie, `Name`? (Vraag je af: mag een paard een naam hebben met een cijfer erin? Of een "#"? Waarom wel of niet?) 
@@ -100,6 +100,6 @@ Dat zal dan wel vergelijkbaar zijn met Plato’s Idee van het Goede – daar heb
 
 [^4]: Grieks: εἶδος (eîdos); in het Engels ook wel vertaald als “Forms”. Een vertaling als “Vorm” brengt interessante connecties mee, zoals de [vormelijke oorzaak](https://en.wikipedia.org/wiki/Four_causes "'Four causes', Wikipedia") van [Aristoteles](https://plato.stanford.edu/entries/aristotle/ "'Aristotle', Stanford Encyclopedia of Philosophy").
 
-[^5]: Ja jeetje, wat betekent dat? In de woorden van [Heidegger](https://plato.stanford.edu/entries/heidegger/ "'Martin Heidegger', Stanford Encyclopedia of Philosophy") (of hoe ik me ze herinner): metafysica als de leer van de zijnden (de taxonomie van dingen die bestaan). Maar daar staat een ander soort metafysica tegenover, die van het zijn (van *de manier waarop* de zijnden zijn). Heidegger schetst het zijn van de mens, het erzijn, in zijn hoofdwerk [*Sein und Zeit*](https://en.wikipedia.org/wiki/Being_and_Time "'Being and Time', Wikipedia") (1927). (Zie ook [voetnoot 4](REFACTORING_EN_HANNAH_ARENDT/#fn:4) van [deze blog](REFACTORING_EN_HANNAH_ARENDT).)
+[^5]: Ja jeetje, wat betekent dat? In de woorden van [Heidegger](https://plato.stanford.edu/entries/heidegger/ "'Martin Heidegger', Stanford Encyclopedia of Philosophy") (of hoe ik me ze herinner): metafysica als de leer van de zijnden (de taxonomie van dingen die bestaan). Maar daar staat een ander soort metafysica tegenover, die van het zijn (van *de manier waarop* de zijnden zijn). Heidegger schetst het zijn van de mens, het erzijn, in zijn hoofdwerk [*Sein und Zeit*](https://en.wikipedia.org/wiki/Being_and_Time "'Being and Time', Wikipedia") (1927). (Zie ook [voetnoot 4](/blog/24/09/refactoring-en-hannah-arendt/#fn:4) van [deze blog](/blog/24/09/refactoring-en-hannah-arendt/).)
 
 [^6]: [Barry O'Reilly](https://leanpub.com/u/barrymoreilly "Barry O'Reilly @ Leanpub") maakt hetzelfde punt in [dit uitstekende praatje](https://www.youtube.com/watch?v=H8ZOp8ayluU "'The Philosophy of Architecture - Barry O'Reilly - NDC Oslo 2024', YouTube") over filosofie en softwarearchitectuur.

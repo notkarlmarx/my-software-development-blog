@@ -1,16 +1,16 @@
 ---
 title: "Karl overdenkt een metafoor"
 author: "Karl van Heijster"
-date: 2024-08-21T20:48:41+02:00
-draft: true
+date: 2024-10-25T08:31:02+02:00
+draft: false
 comments: true
 tags: ["code lezen", "filosofie"]
 summary: "Via code praat je met de geest van een andere ontwikkelaar. Hij zegt: dit is in hoeverre ik het probleem heb gesnapt. Soms antwoord je: maar ik weet nu beter!, of: over dat scenario had ik nog niet nagedacht! -- Via code praat je met een ontwikkelaar zoals je met een schrijver praat via een boek. -- Maar tegelijkertijd zegt men toch ook: de Auteur is dood."
 ---
 
-
 <span class="center">*(aantekeningen uit augustus)*</span>
 <br>
+
 
 Via code praat je met de geest van een andere ontwikkelaar. Hij zegt: dit is in hoeverre ik het probleem heb gesnapt. Soms antwoord je: maar ik weet nu beter!, of: over dat scenario had ik nog niet nagedacht! ([Legacy code](/tags/legacy-code/ "Blogs met de tag 'legacy code'") is óók zo complex omdat de werkelijkheid al te simpele modellen weerstaat.)
 
@@ -99,7 +99,7 @@ Wanneer ik boeken lees, heb ik (meestal) de vrijheid te kiezen waar ik mijn tijd
 {{< asterisk >}}
 
 
-Er is een boek *De wereld zoals ik hem aantrof* (cf. *TLP* §5.631) en in dat boek lees ik boeken, en code ook. En het boek (de code) vertelt op zijn beurt weer een verhaal. (-- Hoeveel verhalen diep zullen we het [atomaire feit](https://plato.stanford.edu/entries/wittgenstein-atomism/ "'Wittgenstein’s Logical Atomism', Stanford Encyclopedia of Philosophy") ontdekken?)
+Er is een boek *De wereld zoals ik hem aantrof* (cf. *TLP* §5.631) en in dat boek lees ik boeken, en code ook. En het boek (de code) vertelt op zijn beurt weer een verhaal. (-- Hoeveel verhalen diep zullen we het [atomaire feit](https://plato.stanford.edu/entries/wittgenstein-atomism/ "'Wittgenstein's Logical Atomism', Stanford Encyclopedia of Philosophy") ontdekken?)
 
 
 {{< asterisk >}}
@@ -141,19 +141,19 @@ Ik wou dat ik me ze kon herinneren.
 {{< asterisk >}}
 
 
-Net als bij de boeken die ik lees, vergeet ik het het gros van de code. Als een collega me vraagt hoe dit of dat stuk in elkaar zit, zucht ik: dat is even geleden!
+Net als bij boeken, vergeet ik het het gros van de code die ik lees. Als een collega me vraagt hoe dit of dat stuk in elkaar zit, zucht ik: dat is even geleden!
 
 
 {{< asterisk >}}
 
 
-Een taalspel: je leest code in een boek over softwareontwikkeling. Hoe lees je die code? Waar beoordeel je haar op? -- We bevinden ons in [Plato's grot](DE_ALLEGORIE_VAN_DE_GROT), bekijken een schaduw van een afbeelding.
+Een taalspel: je leest code in een boek over softwareontwikkeling. Hoe lees je die code? Waar beoordeel je haar op? -- We bevinden ons in [Plato's grot](/blog/24/10/de-allegorie-van-de-grot/ "'De allegorie van de grot'"), bekijken een schaduw van een afbeelding.
 
 
 En toch is dat codevoorbeeld instructief. Want het doel van het taalspel is ons iets te leren. -- Zoals de vrijgelaten gevangene, moeten we leren waar naar te kijken.
 
 
-We lezen ook de natuur, wanneer we waar proberen te doorgronden (het [boek van de natuur](https://en.wikipedia.org/wiki/Book_of_Nature "'Book of Nature', Wikipedia")).
+We lezen immers ook de werkelijkheid, wanneer we waar proberen te doorgronden (het [boek van de natuur](https://en.wikipedia.org/wiki/Book_of_Nature "'Book of Nature', Wikipedia")).
 
 
 [^1]: [Deze](https://bazarow.com/recensie/recensie-filosofie-tractatus-in-context/ "'De Tractatus begrijpelijk gemaakt', recensie van Tractatus in Context @ Bazarow") is ook een aanrader!

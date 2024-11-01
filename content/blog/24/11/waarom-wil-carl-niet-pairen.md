@@ -1,8 +1,8 @@
 ---
 title: "Waarom wil Carl niet pairen?"
 author: "Karl van Heijster"
-date: 2024-08-23T22:19:23+02:00
-draft: true
+date: 2024-11-01T07:38:18+01:00
+draft: false
 comments: true
 tags: ["pair programming", "software ontwikkelaar (rol)", "sprint retrospective", "test-driven development"]
 summary: "*Scenario:* Alice en Bob bespreken hun positieve ervaringen met *pair programming* in de Sprint Retrospective. Ze stellen voor het vaker te doen. Carl is defensief. \"Ik vind het niet fijn als een ontwikkelaar op mijn vingers meekijkt hoe ik code typ.\" -- Wat is hier aan de hand?"
@@ -49,10 +49,10 @@ Dat is een intiem moment, het is iets van jezelf. -- Zo denkt Carl, wellicht.
 Carl wil niet laten zien dat hij fouten maakt.
 
 
-Een junior wil niet constant eraan herinnerd worden hoe weinig hij weet. Een senior wil niet laten merken dat hij het ook niet weet. (-- Niet willen *pairen* is ook: sociaal ongemak vermijden.)
+Een junior wil niet constant eraan herinnerd worden hoe weinig hij weet. Een senior wil niet laten merken dat hij het ook niet weet. -- Niet willen *pairen* is ook: sociaal ongemak vermijden.
 
 
-Natuurlijk, daarmee berooft hij zich van de ervaring zijn collega te zien worstelen. Elke ontwikkelaar maakt [fouten](/tags/falen/ "Blogs met de tag 'falen'"). (Ik heb mezelf al zo vaak dood gestaard op een falende test die het gevolg was van gekopieerde code.)
+Natuurlijk, daarmee berooft hij zich van de ervaring zijn collega te zien worstelen. Elke ontwikkelaar maakt [fouten](/tags/falen/ "Blogs met de tag 'falen'"). Ik heb mezelf vaak genoeg dood gestaard op een falende test die het gevolg was van gekopieerde code.
 
 
 > "De beste manier om te groeien als softwareontwikkelaar is door [*Het Bureau*](https://nl.wikipedia.org/wiki/Het_Bureau "'Het Bureau', Wikipedia") te lezen, van [J.J. Voskuil](https://nl.wikipedia.org/wiki/J.J._Voskuil_(schrijver) "'J.J. Voskuil (schrijver)', Wikipedia"). (-- Ik kan me niet herinneren dat er in die roman veel samen werd gewerkt overigens.)" --- <span style="font-variant:small-caps;">Bob</span>
@@ -70,7 +70,7 @@ Natuurlijk, daarmee berooft hij zich van de ervaring zijn collega te zien worste
 {{< asterisk >}}
 
 
-Programmeren, coderen is als schrijven (opnieuw die [boekmetafoor](KARL_OVERDENKT_EEN_METAFOOR)!) -- dat doe je ook alleen. 
+Programmeren, coderen is als schrijven (opnieuw die [boekmetafoor](/blog/24/10/karl-overdenkt-een-metafoor/ "'Karl overdenkt een metafoor'")!) -- dat doe je ook alleen. 
 
 
 Tenzij je een komedie schrijft, dan werkt het samenspel.
@@ -102,14 +102,21 @@ Nadenken, het probleem begrijpen, is een groter deel van het werk. Het risico be
 De meesten van ons hebben een ander nodig om te kunnen nadenken -- goed te kunnen nadenken. 
 
 
+> <span style="font-variant:small-caps;">Alice</span>
+> <br>
+> De aanwezigheid van de ander helpt, niet omdat je dom bent, maar omdat je hersencapaciteit beperkt is.
+
 
 {{< asterisk >}}
 
 
-Carl wil niet laten zien dat hij fouten maakt. De uitweg is: fouten te omarmen. Je pair inlichten: "Ik ga dit eerst lelijk doen." -- en het dan lelijk doen.
+Carl wil niet laten zien dat hij fouten maakt, dat hij zich richting een oplossing klungelt. De uitweg is: fouten, klungelen te omarmen. Je pair inlichten: "Ik ga dit eerst lelijk doen" -- en het dan lelijk doen.
 
 
 *Red* -- *green*: dat is nog niet het moment waarop je je druk maakt over de integriteit van de code. Dat komt straks, in de *refactor*. (Zie ook [deze blog](/blog/22/03/agile-en-test-driven-development/ "'Agile en Test-Driven Development'").) Het is een gewoonte die je je al TDD'end eigen hebt gemaakt: scheid het aanpassen van het gedrag (*green*) van het aanpassen van de structuur (*refactor*).
+
+
+Klungelen is onderdeel van het proces. Het is de stap die voorafgaat aan opruimen.
 
 
 {{< asterisk >}}
@@ -165,17 +172,20 @@ Dat soort reflectie is niet voor iedereen weggelegd -- [Socrates](https://plato.
 > Stel je voor: pair programmen met Socrates.
 >
 >
-> Zo’n zweterige ouwe vent. In een toga. Griekse dingen te zeggen. "Ja Socrates!" knikken. Wat voor code levert dat aan ‘t eind van de dag op?
+> Zo’n zweterige ouwe vent. In een toga. Griekse dingen te zeggen. "Ja Socrates!" knikken. 
+>
+> 
+> Wat voor code levert dat aan ‘t eind van de dag op?
 > <br>
 > <br>
 > <span style="font-variant:small-caps;">Carl</span>
 > <br>
-> [De Idee van Goede Code.](DE_ALLEGORIE_VAN_DE_GROT)
+> [De Idee van Goede Code.](/blog/24/10/de-allegorie-van-de-grot/ "'De allegorie van de grot'")
 > <br>
 > <br>
 > <span style="font-variant:small-caps;">Alice</span>
 > <br>
-Maar toch: ik garandeer je dat je aan ‘t eind van zo’n sessie met Socrates wijzer bent geworden – al was het maar omdat je weet dat je minder weet dan je dacht. 
+> Maar toch: ik garandeer je dat je aan ‘t eind van zo’n sessie met Socrates wijzer bent geworden – al was het maar omdat je weet dat je minder weet dan je dacht. 
 
 
 <br>

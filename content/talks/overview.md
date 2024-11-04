@@ -9,6 +9,7 @@ Ik deel mijn inzichten graag op usergroups en conferenties. Bij de volgende gele
 
 |                   |                                                      |                                                                  |
 | ----------------- | ---------------------------------------------------- | ---------------------------------------------------------------- |
+| 29 november 2024  | [Nimma Codes](https://www.nimma.codes/)              | *De filosofische geschiedenis van een ontwerpkeuze*              |
 | 9 oktober 2024    | [TestNet Najaarsevenement](https://www.testnet.org/) | [*Wat zegt deze test?*](/talks/wat-zegt-deze-test/)              |
 | 21 juni 2024      | [Joy of Coding](https://joyofcoding.org/index.html)  | *A note on dental hygiene*                                       |
 | 13 juni 2024      | [TopiConf](https://werkenbijtopicus.nl/evenementen/7149/topiconf-2024) (intern) | [*Always up to date documentation with descriptive tests*](/talks/altijd-up-to-date-documentatie-met-maximaal-descriptieve-tests/) |

@@ -9,9 +9,9 @@ Ik deel mijn inzichten graag op usergroups en conferenties. Bij de volgende gele
 
 |                   |                                                      |                                                                  |
 | ----------------- | ---------------------------------------------------- | ---------------------------------------------------------------- |
-| 29 november 2024  | [Nimma Codes](https://www.nimma.codes/)              | *De filosofische geschiedenis van een ontwerpkeuze*              |
+| 29 november 2024  | [Nimma Codes](https://www.nimma.codes/)              | *De filosofische geschiedenis van een ontwerpkeuze*[^2]          |
 | 9 oktober 2024    | [TestNet Najaarsevenement](https://www.testnet.org/) | [*Wat zegt deze test?*](/talks/wat-zegt-deze-test/)              |
-| 21 juni 2024      | [Joy of Coding](https://joyofcoding.org/index.html)  | *A note on dental hygiene*                                       |
+| 21 juni 2024      | [Joy of Coding](https://joyofcoding.org/index.html)  | *A note on dental hygiene*[^1]                                   |
 | 13 juni 2024      | [TopiConf](https://werkenbijtopicus.nl/evenementen/7149/topiconf-2024) (intern) | [*Always up to date documentation with descriptive tests*](/talks/altijd-up-to-date-documentatie-met-maximaal-descriptieve-tests/) |
 | 2 juni 2024       | [T-DOSE](https://t-dose.org/2024/)                   | [*The art of the pull request*](/talks/de-edele-kunst-van-het-pull-request/) |
 | 15 mei 2024       | [TestNet Voorjaarsevenement](https://www.testnet.org/) | [*Testen: Een filosofisch retrospectief*](/talks/testen-een-filosofisch-retrospectief/) |
@@ -29,3 +29,8 @@ Ik deel mijn inzichten graag op usergroups en conferenties. Bij de volgende gele
 | 22 september 2022 | [Cito](https://www.cito.nl/) (intern)                | *Hoe schrijf ik (nóg) betere tests?*                             |
 | <br/>             |                                                      |                                                                  |
 | 16 december 2021  | [Cito](https://www.cito.nl/) (intern)                | *Jezelf ontwikkelen met een blog*                                |
+
+
+[^2]: Lightning talk, blog aanstaande.
+
+[^1]: Lightning talk, gebaseerd op [deze blog](/blog/24/07/testen-is-als-flossen/).

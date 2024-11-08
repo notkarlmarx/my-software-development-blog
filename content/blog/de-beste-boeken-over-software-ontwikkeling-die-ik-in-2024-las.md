@@ -26,22 +26,25 @@ Helemaal aan het begin van het jaar las ik de tweede editie van [*Extreme Progra
 ### 2. David Farley - [*Modern Software Engineering: Doing What Works to Build Better Software Faster*](https://www.oreilly.com/library/view/modern-software-engineering/9780137314942/)
 
 
-Ook [Dave Farley](https://www.davefarley.net/) biedt een hoogover blik van wat het betekent softwareontwikkelaar te zijn -- of zoals hij het liever noemt: *software engineer*. Zijn pleidooi voor het gebruik van wetenschappelijke rationaliteit is een aanrader voor junior én senior. Voor de niet-lezers onder ons: zijn [YouTubekanaal](https://www.youtube.com/@ContinuousDelivery "Continuous Delivery @ YouTube") is ook een aanrader.
+Ook [Dave Farley](https://www.davefarley.net/) biedt een hoogover blik van wat het betekent softwareontwikkelaar te zijn -- of zoals hij het liever noemt: *software engineer*. Het werk van een softwareontwikkelaar valt volgens Farley ruwweg in twee delen uiteen: optimaliseren voor leren, en het binnen de perken houden van complexiteit. Zijn pleidooi voor het gebruik van wetenschappelijke rationaliteit is een aanrader voor junior én senior. 
+
+
+Voor de niet-lezers onder ons: zijn [YouTubekanaal](https://www.youtube.com/@ContinuousDelivery "Continuous Delivery @ YouTube") is ook niet te versmaden.
 
 
 ### 3. Frederick P. Brooks, Jr. - [*The Mythical Man-Month: Essays on Software Engineering (Anniversary Edition, 2nd Edition)*](https://www.oreilly.com/library/view/mythical-man-month-the/0201835959/)
 
 
-Ik zal je eerlijk zeggen: het was voor mij een worsteling om door Fred Brooks' klassieke essaybundel over het managen van softwareprojecten heen te komen. Maar dat werd meer dan goed gemaakt door het fantastische essay [*No Silver Bullet*](https://en.wikipedia.org/wiki/No_Silver_Bullet "'No Silver Bullet', Wikipedia"), waarin de schrijver voorspelt dat alle nieuwe technische ontwikkelingen in programmeerland er niet in zullen slagen een verbetering van 10× te bewerkstelligen (in Brooks' tijd: objectgeoriënteerd programmeren, onder andere; in de onze: AI). 
+Ik zal je eerlijk zeggen: het was voor mij een worsteling om door [Fred Brooks](https://en.wikipedia.org/wiki/Fred_Brooks "'Fred Brooks', Wikipedia")' klassieke essaybundel over het managen van softwareprojecten heen te komen. Maar dat werd meer dan goed gemaakt door het fantastische essay [*No Silver Bullet*](https://en.wikipedia.org/wiki/No_Silver_Bullet "'No Silver Bullet', Wikipedia"), waarin de schrijver voorspelt dat alle nieuwe technische ontwikkelingen in programmeerland er niet in zullen slagen een verbetering van 10× te bewerkstelligen. (Het is grappig om te zien dat de hypes uit Brooks' tijd hun belofte nog altijd niet hebben waargemaakt: zijn essay uit 1986 (!) heeft het onder andere over [kunstmatige intelligentie](/tags/kunstmatige-intelligentie/ "Blogs met de tag 'kunstmatige intelligentie'") en [*low code* oplossingen](/tags/low-code-development/ "Blogs met de tag 'low code development'")). 
 
 
 Want die ontwikkelingen richten zich op de *accidentele* complexiteit in softwareontwikkeling. Een verbetering van 10× zou zich moeten richten op de *essentiële* complexiteit: erachter komen wat er überhaupt gemaakt moet worden. Met andere woorden: de essentie van softwareontwikkelen is niet *building the thing right*, het is *building the right thing*. 
 
 
-### 4. Scott Wlaschin - [*Domain Modeling Made Functional: Domain-Driven Design and F#*](https://pragprog.com/titles/swdddf/domain-modeling-made-functional/)
+### 4. Cary Milsap - [*How to Make Things Faster: Lessons in Performance From Technology & Everyday Life*](https://www.oreilly.com/library/view/how-to-make/9781098147051/)
 
 
-[Scott Wlaschin](https://scottwlaschin.com/) is gek van [F#](https://fsharpforfunandprofit.com/ "F# for Fun and Profit") en van [Domain-Driven Design](/tags/domain-driven-design/ "Blogs met de tag 'domain-driven design'"). Het resultaat is het bewijs dat DDD niet voorbehouden is aan [objectgeoriënteerde](/tags/objectgeoriënteerd-programmeren/ "Blogs met de tag 'objectgeoriënteerd programmeren'") talen. -- Ik schreef verschillende keren over Wlaschin: [hier](/blog/24/09/bind-map-en-match/ "'Bind, Map en Match'"), [hier](/blog/24/07/imperatieve-options/ "'Imperatieve Options?'") en [hier](/blog/24/09/semantische-bugs/ "'Semantische bugs'"). Hij is oké.
+De kern van [Cary Milsaps](https://method-r.com/) boek over performanceverbetering is even eenvoudig als waarachtig: zorg dat je de bron van het probleem te pakken hebt *voordat* je het probleem probeert op te lossen. Hij illustreert dit gegeven aan de hand van tal van anekdotes -- sommige technische, andere persoonlijk, maar altijd vlot en met humor geschreven. *Die hard* techneuten zullen met *How to Make Things Faster* niet aan hun trekken komen, maar als inleiding in performanceoptimalisatie is deze absoluut een aanrader.
 
 
 ### 5. Nicole Forsgren, Jez Humble, Gene Kim - [*Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations*](https://itrevolution.com/product/accelerate/)
@@ -50,13 +53,13 @@ Want die ontwikkelingen richten zich op de *accidentele* complexiteit in softwar
 De inhoud van *Accelerate* was al via verschillende conferentiepraatjes tot me gekomen. (Farley haalt het onderzoek ook aan in *Modern Software Engineering*.) Ik ben dus *late to the party*, maar toch is het de moeite waard om naar de bevindingen van [Forsgren](https://nicolefv.com/), [Humble](https://www.linkedin.com/in/jez-humble/) en [Kim](http://www.realgenekim.me/) te kijken -- het is immers het resultaat van hoogwaardig empirisch onderzoek. (Daar is Farley weer met zijn wetenschappelijke rationaliteit!)
 
 
-Wijzen naar de bevindingen alleen is helaas nog niet genoeg gebleken om mijn team ervan te overtuigen [*trunk based development*](/tags/trunk-based-development/ "Blogs met de tag 'trunk-based development'") te proberen.
+*Accelerate* biedt de lezer genoeg handvaten om zijn proces van softwareontwikkeling te verbeteren. Het boek zit vol verwijzingen naar concrete praktijken die je morgen kunt implementeren om sneller hoogwaardige software op te leveren. -- Helaas is wijzen naar de bevindingen alleen nog niet genoeg gebleken om mijn team ervan te overtuigen [*trunk based development*](/tags/trunk-based-development/ "Blogs met de tag 'trunk-based development'") te proberen.
 
 
 ## Top 6 - 10
 
 6. Wouter Groeneveld - [*The Creative Programmer*](https://www.manning.com/books/the-creative-programmer)
-7. Cary Milsap - [*How to Make Things Faster: Lessons in Performance From Technology & Everyday Life*](https://www.oreilly.com/library/view/how-to-make/9781098147051/)
+7. Scott Wlaschin - [*Domain Modeling Made Functional: Domain-Driven Design and F#*](https://pragprog.com/titles/swdddf/domain-modeling-made-functional/)
 8. Jim Highsmith - [*Wild West to Agile: Adventurs in Software Development Evolution and Revolution*](https://jimhighsmith.com/)
 9. Anna Skoulikari - [*Learning Git: A Hands-On and Visual Guide to the Basics of Git*](https://www.oreilly.com/library/view/learning-git/9781098133900/)
 10. Simon J. Painter - [*Functional Programming with C#: Create More Supportable, Robust and Testable Code*](https://www.oreilly.com/library/view/functional-programming-with/9781492097068/)
@@ -68,4 +71,10 @@ Wijzen naar de bevindingen alleen is helaas nog niet genoeg gebleken om mijn tea
 ### 11. Hannah Arendt - [*The Human Condition (Second Edition)*](https://en.wikipedia.org/wiki/The_Human_Condition_(Arendt_book))
 
 
-Het is *melig* om [Hannah Arendt](https://plato.stanford.edu/entries/arendt/ "'Hannah Arendt', Stanford Encyclopedia of Philosophy") op je tiplijst van *softwareboeken* te zetten. Maar Arendts fenomenologische analyse van het actieve leven leerde me daadwerkelijk iets over sommige aspecten van mijn werk. (-- O God, dat klinkt *nog* meliger.) Ik schreef er [hier](/blog/24/09/refactoring-en-hannah-arendt/ "'Refactoring en Hannah Arendt'") en [hier](MEER_REFACTORING_EN_HANNAH_ARENDT) over -- maar onder ons: dit boek is ook een aanrader als je *geen* softwreontwikkelaar bent.
+Misschien is het *melig* om [Hannah Arendt](https://plato.stanford.edu/entries/arendt/ "'Hannah Arendt', Stanford Encyclopedia of Philosophy") op je tiplijst van *softwareboeken* te zetten -- dat weet ik niet. Maar: Arendts fenomenologische analyse van het actieve leven leerde me daadwerkelijk iets over sommige aspecten van mijn werk. (-- O God, dat klinkt *nog* meliger.)
+
+
+Sommige zaken in ons leven zijn doelgericht, ze hebben een begin en een eind. Het ontwikkelen van een nieuwe feature of het fixen van een bug valt in die categorie. Andere zaken zijn daarentegen circulair, het is een steeds terugkerende bezigheid die nu eenmaal hoort bij de menselijke (of in dit geval: softwareontwikkelende) conditie. Refactoren valt in die categorie. 
+
+
+De les is dan ook: wee degene die refactoring in die doelgerichte mal probeert te drukken! Ik schreef er [hier](/blog/24/09/refactoring-en-hannah-arendt/ "'Refactoring en Hannah Arendt'") en [hier](MEER_REFACTORING_EN_HANNAH_ARENDT) over -- maar onder ons: dit boek is ook een aanrader als je *geen* softwreontwikkelaar bent.

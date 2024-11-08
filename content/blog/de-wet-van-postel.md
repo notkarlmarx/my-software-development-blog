@@ -16,7 +16,7 @@ In [*Software Design for Flexibility*](https://mitpress.mit.edu/9780262045490/so
 > In software engineering this principle is enshrined as "[Postel's Law](https://en.wikipedia.org/wiki/Robustness_principle "'Robustness principle', Wikipedia")" in honor of internet pioneer [John Postel](https://en.wikipedia.org/wiki/Jon_Postel "'John Postel', Wikipedia"). In [RFC760](https://www.rfc-editor.org/rfc/rfc760), describing the internet protocal, he wrote: "The implementation of a protocol must be robust. Each implementation must expect to interoperate with others created by different individuals. While the goal of this specification is to be explicit about the protocol there is the possibility of differing interpretations. In general, an implementation should be conservative in its sending behavior, and liberal in its receiving behavior." This is usually summarized as "Be conservative in what you do, be liberal in what you accept from others."
 
 
-Ik vond het een uitdagend idee, omdat het conflicteert met de notie van [eerlijke functies](/blog/22/07/wat-zijn-eerlijke-functies/ "'Wat zijn eerlijke functies?'"), een notie die ik de afgelopen jaren heb geïnternaliseerd in de code die ik schrijf.
+Ik vond het een uitdagend idee, omdat het op het eerste gezicht lijkt te conflicteren met de notie van [eerlijke functies](/blog/22/07/wat-zijn-eerlijke-functies/ "'Wat zijn eerlijke functies?'"), een notie die ik de afgelopen jaren heb geïnternaliseerd in de code die ik schrijf.
 
 
 ## Context

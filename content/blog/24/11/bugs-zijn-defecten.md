@@ -1,8 +1,8 @@
 ---
 title: "Bugs zijn defecten"
 author: "Karl van Heijster"
-date: 2024-08-31T20:00:58+02:00
-draft: true
+date: 2024-11-08T08:08:31+01:00
+draft: false
 comments: true
 tags: ["bugs", "software ontwikkelaar (rol)", "teamcultuur", "verantwoordelijkheid"]
 summary: "Een softwareontwikkelaar is: iemand die defecten fixt die hij zelf heeft geïntroduceerd."

@@ -1,8 +1,8 @@
 ---
 title: "De wet van Postel"
 author: "Karl van Heijster"
-date: 2024-09-06T10:05:39+02:00
-draft: true
+date: 2024-11-15T08:09:28+01:00
+draft: false
 comments: true
 tags: ["eerlijke functies", "functies", "intentie van code", "leermoment", "proof of concept", "software ontwikkelen"]
 summary: "Het is niet de verantwoordelijkheid van de aanroepende partij om de input van een functie te schiften opdat er valide waarden worden meegegeven. Een functie moet zo eerlijk mogelijk zijn in wat het accepteert -- maar daar waar er speelruimte bestaat is het de verantwoordelijkheid *van de functie zelf* om de inputs te valideren."
@@ -37,7 +37,7 @@ En toch kwam ik laatst in een situatie terecht waarvan ik dacht: had ik maar van
 Maar eerst: wat achtergrond. Mijn team ontwikkelt, ter vervanging van een [*legacy*](/tags/legacy-code/ "Blogs met de tag 'legacy code'") applicatie, een systeem om toetsen mee te construeren. Het uitgangspunt van de *legacy* applicatie was: stel de gebruiker in staat om het eindproduct, de toets, in te voeren. Het uitgangspunt van het nieuwe systeem is: ondersteun de gebruiker in het productieproces, en genereer dan aan het eind van dat proces op basis van de werkdocumenten het eindproduct, de toets.
 
 
-Om gebruikers de kracht van dat idee te demonstreren, hadden we als *proof of concept* (POC) een uitgeklede versie van die toetsgenerator ingebouwd. De code kon maar met één soort toetsvragen omgaan, toetsvragen waarin er een vraag werd gesteld over een tekstuele bron. Uiteindelijk zou het systeem ook om moeten kunnen gaan met audio- en videobronnen, maar dat viel buiten de scope van de POC.
+Om gebruikers de kracht van dat idee te demonstreren, hadden we als [*proof of concept*](/tags/proof-of-concept/ "Blogs met de tag 'proof of concept'") (POC) een uitgeklede versie van die toetsgenerator ingebouwd. De code kon maar met één soort toetsvragen omgaan, toetsvragen waarin er een vraag werd gesteld over een tekstuele bron. Uiteindelijk zou het systeem ook om moeten kunnen gaan met audio- en videobronnen, maar dat viel buiten de scope van de POC.
 
 
 Eindgebruikers waren enthousiast over het idee, de POC was geslaagd. Daarna deed de werkelijkheid zijn ding, verschoven prioriteiten en verzamelde de functionaliteit een dikke laag stof.

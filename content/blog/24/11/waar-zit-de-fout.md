@@ -1,11 +1,11 @@
 ---
 title: "Waar zit de fout?"
 author: "Karl van Heijster"
-date: 2024-09-20T09:54:53+02:00
-draft: true
+date: 2024-11-22T07:55:22+01:00
+draft: false
 comments: true
 tags: ["bugs", "datamigratie", "leermoment", "software ontwikkelen", "test-driven development", "testen", "unit tests"]
-summary: "Mijn collega bracht een argument in dat vaak wordt genoemd als ik mensen vertel over testen via de voordeur: maar door de code direct aan te roepen, geven mijn tests onmiddellijk feedback over *waar* de fout zit. Als de tests van *deze* migratie beginnen te falen, dan weet ik zeker dat *daar* de fout zit. En dat scheelt tijd in het debuggen van de code. -- Maar dat laat de volgende vraag onverlet: is een unittest (waarbij \"unit\" wordt opgevat als \"eenheid van code\") het beste middel om erachter te komen waar de fout zit?"
+summary: "Mijn collega bracht een argument in dat vaak wordt genoemd als ik mensen vertel over testen via de voordeur: maar door de code direct aan te roepen, geven mijn tests onmiddellijk feedback over *waar* de fout zit. Als *deze* tests beginnen te falen, dan weet ik zeker dat *daar* de fout zit. En dat scheelt tijd in het debuggen van de code. -- Maar dat laat de volgende vraag onverlet: is een unittest (waarbij \"unit\" wordt opgevat als \"eenheid van code\") het beste middel om erachter te komen waar de fout zit?"
 ---
 
 Mijn team gebruikt [Migrations.Json.Net](https://github.com/Weingartner/Migrations.Json.Net "'WeinGartner/Migrations.Json.Net', GitHub") om de modelwijzigingen in onze [NoSQL-database](https://nl.wikipedia.org/wiki/NoSQL "'NoSQL', Wikipedia") [stapje voor stapje te kunnen migreren](/blog/21/09/stapje-voor-stapje-data-migreren/ "'Stapje voor stapje data migreren'") -- al een hele tijd, getuige ook de vele migraties die we in de loop van de tijd hebben geschreven.
@@ -38,7 +38,7 @@ De les hier is natuurlijk: kopieer geen code -- *in godsnaam*, kopieer geen code
 De vraag die ik na een episode als deze graag mag stellen is: hoe hadden we dit issue kunnen voorkomen? Antwoord: door een test te schrijven. -- Alleen: we hadden tests geschreven. We hadden tests voor de door mij gedebugde migratiecode, en we hadden tests voor de migratie die erop volgde. Als iemand ons had gevraagd: "Werkt de migratiecode correct?", dan hadden we geantwoord: "Jazeker, kijk maar: *hier* zie je dat *deze* migratie de JSON *zus* transformeert (correct), en *daar* zie je dat *die* migratie de JSON *zo* transformeert (eveneens correct)."
 
 
-Maar: we hadden geen tests geschreven voor de *interactie* tussen beide migraties. Want de correct output van de ene, bleek de incorrecte input van de volgende te zijn. De fout zat 'm niet in één van beide componenten, maar de manier waarop ze met elkaar samenwerken -- dat was waar onze blinde vlek zat. En pas als we die in beeld krijgen, kunnen we deze fouten in de toekomst voorkomen.
+Maar: we hadden geen tests geschreven voor de *interactie* tussen beide migraties. Want de correcte output van de ene, bleek de incorrecte input van de volgende te zijn. De fout zat 'm niet in één van beide componenten, maar de manier waarop ze met elkaar samenwerken -- dat was waar onze blinde vlek zat. En pas als we die in beeld krijgen, kunnen we deze fouten in de toekomst voorkomen.
 
 
 ## Voordeur
@@ -59,10 +59,10 @@ Maar dat is maar een implementatiedetail, een tussenresultaat. Het opleveren van
 Maar daar was mijn collega het niet mee eens. Hij bracht een argument in dat vaak wordt genoemd als ik mensen vertel over testen via de voordeur: maar door de code direct aan te roepen, geven mijn tests onmiddellijk feedback over *waar* de fout zit. Als de tests van *deze* migratie beginnen te falen, dan weet ik zeker dat *daar* de fout zit. En dat scheelt tijd in het debuggen van de code.
 
 
-Deze manier van denken houdt nauw verband met het idee dat de *unit* in unittest verwijst naar een eenheid van code (zie [deze blog](/blog/22/11/wat-is-een-unit/ "'Wat is een unit?'")). Maar dat is een problematische notie. Door elke eenheid code direct te testen, maak je het praktisch onmogelijk om te kunnen refactoren -- althans, niet zonder constant je tests ook te moeten herschrijven. Daarnaast is een implicatie van dit idee dat een refactorslag waarbij je een class in tweeën splitst, er op magische wijze voor zorgt dat alle unittests van die class van het ene op het andere moment in integratietests zijn veranderd -- en wat betekent het dan nog om over unit- en integratietests te spreken?
+Deze manier van denken houdt nauw verband met het idee dat de *unit* in unittest verwijst naar een eenheid van code (zie [deze blog](/blog/22/11/wat-is-een-unit/ "'Wat is een unit?'")). Maar dat is een problematische notie. Door elke eenheid code direct te testen, maak je het praktisch onmogelijk om te kunnen refactoren -- althans, niet zonder constant je tests ook te moeten herschrijven. Daarnaast is een implicatie van dit idee dat een refactorslag waarbij je een class in tweeën splitst, er op magische wijze voor zorgt dat alle unittests van die class van het ene op het andere moment in integratietests zijn veranderd. Wat betekent het dan nog om over unit- en integratietests te spreken?
 
 
-Maar dat laat de volgende vraag onverlet: is een unittest (waarbij "unit" wordt opgevat als "eenheid van code") het beste middel om erachter te komen waar de fout zit? En het antwoord daarop is, volgens mij: nee. Want om unittests die functie te laten spelen, moeten we ze op zo'n manier schrijven dat de tests sterk worden gekoppeld met de code, met alle nadelen van dien.
+Maar dat laat de volgende vraag onverlet: is een unittest (waarbij "unit" wordt opgevat als "eenheid van code") het beste middel om erachter te komen waar de fout zit? En het antwoord daarop is, volgens mij: nee. Want om unittests die functie te laten spelen, moeten we ze op zo'n manier schrijven dat de tests sterk worden gekoppeld aan de structuur van de code, met alle nadelen van dien.
 
 
 ## Daar zit de fout

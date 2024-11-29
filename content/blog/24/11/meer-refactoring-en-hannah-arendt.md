@@ -1,8 +1,8 @@
 ---
 title: "Meer refactoring en Hannah Arendt"
 author: "Karl van Heijster"
-date: 2024-09-27T10:19:38+02:00
-draft: true
+date: 2024-11-29T08:06:50+01:00
+draft: false
 comments: true
 tags: ["filosofie", "refactoren", "technische schuld"]
 summary: "Wanneer ontwikkelaars refactortaken apart inplannen of refactoren nalaten omdat ze er geen toestemming voor hebben, dan is dat een teken dat ze de activiteit van het refactoren fundamenteel verkeerd begrijpen. Helaas is dat misbegrip stevig verankerd in de wereld van de softwareontwikkeling dankzij de metafoor van technische schuld."
@@ -44,7 +44,7 @@ Wat verklaart de populariteit van het idee van technische schuld, als dit zo'n s
 Daar zit een kern van waarheid in -- en, vermoed ik, een diepere dan Lam zich zelf realiseert. Arendt stelt in [*The Human Condition*](https://en.wikipedia.org/wiki/The_Human_Condition "'The Human Condition', Wikipedia") dat de categorie van arbeid überhaupt over het hoofd is gezien door vrijwel alle grote denkers in de Westerse filosofiegeschiedenis. En de weinige denkers die het thema wel aanstipten, hadden ze de neiging het fenomeen te willen reduceren tot werk.
 
 
-Waar komt die neiging vandaan? Ik denk (lees: speculeer) dat het tekenend is voor de wens om problemen op te willen lossen -- of liever: *definitief* op te willen lossen. En daar waar een definitieve oplossing is, is er sprake van een einddoel. En een einddoel is een aansprekend vooruitzicht -- in elk geval voor filosofen en softwareontwikkelaars. (Omgekeerd geldt ook: de afwezigheid van een definitief einddoel is *niet* aansprekend, en dat is waarom arbeid als categorie van menselijke activiteit zo vaak over het hoofd is gezien.)
+Waar komt die neiging vandaan? Ik denk (lees: speculeer) dat het tekenend is voor de wens om problemen op te willen lossen -- of liever: *definitief* op te willen lossen. En daar waar een definitieve oplossing is, is er sprake van een einddoel. En een einddoel is een aansprekend vooruitzicht -- in elk geval voor filosofen en softwareontwikkelaars. Omgekeerd geldt ook: de afwezigheid van een definitief einddoel is *niet* aansprekend, en dat is waarom arbeid als categorie van menselijke activiteit zo vaak over het hoofd is gezien.
 
 
 Wanneer er sprake is van een einddoel, bevinden we ons in de sfeer van werk. "Oplossingen" in de sfeer van arbeid zijn daarentegen altijd voorlopig: hoe goed ik ook mijn tanden poets, ze zullen altijd weer smerig worden. 

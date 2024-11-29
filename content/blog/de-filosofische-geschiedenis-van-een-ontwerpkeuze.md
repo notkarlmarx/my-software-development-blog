@@ -133,7 +133,10 @@ Hij plaatst daar een ander idee tegenover: *betekenis is gebruik*. De vraag die 
 Wanneer we dat in kaart brengen, zullen we zien dat ze een heel andere functie hebben. Een "geverifieerd e-mailadres" heeft als rol bepaalde functionaliteit te ontsluiten. Het is als het ware de speciale pas waarmee een gebruiker toegang wordt gegeven tot verborgen delen van de applicatie. Een "e-mailadres" is daarentegen slechts datgene wat diegene heeft ingevuld in een aanmeldformulier. 
 
 
-Je zou het verschil als volgt kunnen karakteriseren. De Platoonse ontwikkelaar ontwerpt een statische taxonomie van objecten in het domein. De Wittgensteiniaan probeert daarentegen recht te doen aan de rol(len) die woorden spelen in het dynamisch verloop van een "levend" businessproces -- dat is immers de plek waar ze thuishoren.
+Je zou het verschil als volgt kunnen karakteriseren. Er is een chaotische werkelijkheid, met verschillende soorten e-mailadressen. (Twee, in dit geval.) De Platoonse ontwikkelaar probeert met die complexiteit om te gaan door te abstraheren, door het aantal elementen in de werkelijkheid terug te brengen tot één: het ideale <span style="font-variant:small-caps;">e-mailadres</span>. 
+
+
+De Wittgensteiniaan neemt een andere route. Deze ontwikkelaar erkent dat de werkelijkheid chaotisch is en probeert daar recht aan te doen. Hij meent: we kunnen alleen aan die complexiteit omgaan door te erkennen dat er verschillen bestaan tussen de verschillende soorten e-mailadres. Het is onze taak om erachter te komen hoe ze zich tot elkaar verhouden, en ze te plaatsen in hun juiste context.
 
 
 {{< asterisk >}}

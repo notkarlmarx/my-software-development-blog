@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2024-08-02T08:10:32+02:00
 draft: false
 comments: true
-tags: ["software ontwikkelaar (rol)", "vakmanschap", "verantwoordelijkheid", "waarde"]
+tags: ["boekenclub", "software ontwikkelaar (rol)", "vakmanschap", "verantwoordelijkheid", "waarde"]
 summary: "Een softwareontwikkelaar is niet *iemand die code schrijft*. Iemand die slechts dat doet, kan, ondanks al zijn inspanningen, van geen enkele toegevoegde waarde zijn. Want uiteindelijk gaat het niet om de code. Het gaat niet om de code, zelfs niet als die code precies doet wat er gevraagd wordt. -- Software ontwikkelen gaat om het oplossen van problemen."
 ---
 

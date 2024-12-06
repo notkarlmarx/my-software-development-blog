@@ -4,7 +4,7 @@ author: "Karl van Heijster"
 date: 2024-12-06T08:15:24+01:00
 draft: true
 comments: true
-tags: []
+tags: ["aannames", "boekenclub", "verandering"]
 summary: "Het Agile manifest belooft betere manieren van softwareontwikkeling mogelijk te maken door de nadruk te leggen op \"*individuals and interactions*\" boven \"*processes and tools*\". Maar wat is Agile ontwikkeling verworden, ruim twintig jaar na het schrijven van dat manifest? -- Scrum + Jira. Oftewel: een *process* en een *tool*."
 ---
 

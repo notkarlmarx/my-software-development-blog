@@ -1,14 +1,17 @@
 ---
 title: "De filosofische geschiedenis van een ontwerpkeuze"
 author: "Karl van Heijster"
-date: 2024-10-11T10:38:52+02:00
-draft: true
+date: 2024-12-13T08:16:52+01:00
+draft: false
 comments: true
 tags: ["domain-driven design", "domeinmodel", "filosofie", "properties", "Wittgenstein, Ludwig"]
 summary: "Softwareontwikkelaars schrijven niet slechts code, ze scheppen een model van de werkelijkheid. Wat dat betreft staan ze in een lange filosofische traditie. Oftewel: wat kunnen Plato en Wittgenstein ons leren over het modelleren van een (on)geverifieerd e-mailadres?"
 ---
 
 > "*Philosophy is a battle against the bewitchment of our intelligence by means of language.*" --- Ludwig Wittgenstein, *Philosophical Investigations*
+
+
+<br>
 
 
 Softwareontwikkelaars schrijven niet slechts code, ze scheppen een model van de werkelijkheid. Wat dat betreft staan ze in een lange filosofische traditie. Oftewel: wat kunnen Plato en Wittgenstein ons leren over het modelleren van een (on)geverifieerd e-mailadres?[^1]
@@ -20,7 +23,7 @@ Softwareontwikkelaars schrijven niet slechts code, ze scheppen een model van de 
 ## Een zeer, zeer, zeer korte geschiedenis van de filosofie
 
 
-427 v.Chr.: [Plato](https://plato.stanford.edu/entries/plato/ "'Plato', Stanford Encyclopedia of Philosophy") wordt geboren in Athene, Griekenland. Hij zal beroemd worden om zijn [Ideeënleer](https://en.wikipedia.org/wiki/Theory_of_forms "'Theory of forms', Wikipedia"), die stelt dat de zichtbare werkelijkheid slechts een afspiegeling is van eeuwige, universele Ideeën. Hij sterft in 347 v.Chr..
+427 v.Chr.: [Plato](https://plato.stanford.edu/entries/plato/ "'Plato', Stanford Encyclopedia of Philosophy") wordt geboren in Athene, Griekenland. Hij zal beroemd worden om zijn [Ideeënleer](https://en.wikipedia.org/wiki/Theory_of_forms "'Theory of forms', Wikipedia"), die stelt dat de zichtbare werkelijkheid slechts een afschaduwing is van eeuwige, universele Ideeën. Hij sterft in 347 v.Chr..
 
 
 [Alfred North Whitehead](https://plato.stanford.edu/entries/whitehead/ "'Alfred North Whitehead', Stanford Encyclopedia of Philosophy") zei ooit: "*The safest general characterization of the European philosophical tradition is that it consists in a series of footnotes to Plato.*" Die traditie nemen we nu daarom maar even voor lief.
@@ -35,10 +38,10 @@ Softwareontwikkelaars schrijven niet slechts code, ze scheppen een model van de 
 ## Een geverifieerd e-mailadres (1/2)
 
 
-2024, het heden. Een ontwikkelaar ontwerpt de inlogfeature voor een website.[^2] De flow: een gebruiker vult zijn gegevens in, krijgt een e-mail toegestuurd, drukt op de daarin aanwezige bevestigingsknop -- en mag de applicatie gebruiken. 
+2024, het heden. Een softwareontwikkelaar ontwerpt de inlogfeature voor een website.[^2] Hij gaat in gesprek met de business. Ze beschrijven hem de gewenste flow: een gebruiker vult zijn gegevens in, krijgt een e-mail toegestuurd, drukt op de daarin aanwezige bevestigingsknop. Vanaf dat moment is zijn emailadres geverifieerd en heeft de gebruiker toegang tot bepaalde delen van de applicatie. 
 
 
-Hij redeneert: ik moet dus een object `EmailAddress` creëren, en dat `EmailAddress` kan bevestigd of geverifieerd zijn, of niet. De vraag: hoe ziet dat object eruit? 
+Onze ontwikkelaar redeneert: ik moet dus een object `EmailAddress` creëren, en dat `EmailAddress` kan geverifieerd zijn, of niet. De vraag: hoe ziet dat object eruit? 
 
 
 Een voor de hand liggende oplossing is deze:
@@ -55,7 +58,8 @@ public class EmailAddress
 
 En inderdaad: dat werkt. Maar: 
 
-1. Deze oplossing noodzaakt de ontwikkelaar checks in te bouwen in delen van de code om na te gaan of er sprake is van een geverifieerd e-mailadres. Om na te gaan dat de code werkt zoals bedoeld, zal hij [unittests](/tags/unit-tests/ "Blogs met de tag 'unit tests'") moeten schrijven. 
+
+1. Deze oplossing noodzaakt de ontwikkelaar code te schrijven in zijn methods die checkt of het emailadres geverifieerd is of niet. Dat introduceert de mogelijkheid tot bugs. Om na te gaan dat de code werkt zoals bedoeld, zal hij [unittests](/tags/unit-tests/ "Blogs met de tag 'unit tests'") moeten schrijven. 
 
 2. Een functie die een geverifieerd e-mailadres nodig heeft, en daarvoor gebruik maakt van een `EmailAddress` met de property `IsVerified` op `true`, is niet [*eerlijk*](/blog/22/07/wat-zijn-eerlijke-functies/ "'Wat zijn eerlijke functies?'"). De functiesignatuur zegt een `EmailAddress` te verwachten, maar verwacht eigenlijk maar een subset daarvan. 
 
@@ -76,7 +80,6 @@ public class EmailAddress
 
 public class VerifiedEmailAddress : EmailAddress 
 { 
-    // Properties... 
 }
 ```
 
@@ -84,7 +87,7 @@ public class VerifiedEmailAddress : EmailAddress
 Immers:
 
 
-1. De ontwikkelaar hoeft bij deze oplossing geen checks in te bouwen: de compiler geeft een foutmelding wanneer iemand een `EmailAddress` probeert te gebruiken op een plek waar een `VerifiedEmailAddress` verwacht wordt. Tests zijn daarom niet nodig.
+1. De ontwikkelaar hoeft bij deze oplossing geen checks in te bouwen: de compiler geeft een foutmelding wanneer iemand een `EmailAddress` probeert te gebruiken op een plek waar een `VerifiedEmailAddress` verwacht wordt. Deze subset van bugs is onmogelijk gemaakt, en tests zijn daarom niet nodig.
 
 2. De code is eerlijk. Een functie die een geverifieerd e-mailadres verwacht, signaleert die informatie in zijn functiesignatuur.
 
@@ -112,7 +115,7 @@ Kunnen we ons voorstellen dat Socrates een ezel was? Nee: als Socrates een ezel 
 Net zo werkt het bij een e-mailadres. Wat is er essentieel aan een e-mailadres, zeg `socrates@akademeia.gr`? Je zou kunnen zeggen: dat het een lokaal deel bevat (`socrates`), een apenstaartje (`@`) en een domein (`akademeia.gr`). Haal één van deze onderdelen weg, en je houdt geen e-mailadres meer over. Dat is waarom de [*regular expression*](https://en.wikipedia.org/wiki/Regular_expression "'Regular expression', Wikipedia") om te valideren dat je met een e-mailadres te maken hebt, er als volgt uitziet: `^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$`.
 
 
-Of het e-maildres geverifieerd is of niet, dat is -- vanuit het standpunt van de eeuwigheid bezien -- slechts accidenteel. Het e-mailadres houdt niet op een e-mailadres te zijn als de gebruiker wel of niet op de knop in onze bevestigingsmail drukt. 
+Of het e-maildres geverifieerd is of niet, dat is -- let op: vanuit het standpunt van de eeuwigheid bezien! -- slechts accidenteel. Het e-mailadres houdt niet op een e-mailadres te zijn als de gebruiker wel of niet op de knop in onze bevestigingsmail drukt. 
 
 
 ## De filosofische geschiedenis van een ontwerpkeuze (2/2)
@@ -121,16 +124,16 @@ Of het e-maildres geverifieerd is of niet, dat is -- vanuit het standpunt van de
 Maar: is het de taak van de ontwikkelaar om de metafysische kwaliteiten van een e-mailadres in code vast te leggen? Nee: de ontwikkelaar zou zich moeten bekommeren om het probleemdomein.
 
 
-Wat heeft hem op dit pad gebracht? Wittgensteins zou waarschijnlijk zeggen: de taal zette hem op het verkeerde spoor. De ontwikkelaar hoort de domeinexperts spreken van een "e-mailadres" en een "geverifieerd e-mailadres" en concludeert dat het om één entiteit gaat die al dan niet gekwalificeerd wordt. Het woord "e-mailadres" staat in voor het ding *e-mailadres*, of die nu de eigenschap heeft geverifieerd te zijn of niet.
+Wat heeft hem op dit pad gebracht? Wittgensteins zou waarschijnlijk zeggen: de taal zette hem op het verkeerde spoor. De ontwikkelaar hoort de domeinexperts spreken van een "(ongeverifieerd) e-mailadres" en een "geverifieerd e-mailadres" en concludeert dat het om één entiteit gaat die al dan niet gekwalificeerd wordt. Het woord "e-mailadres" staat in voor het ding *e-mailadres*, of die nu de eigenschap heeft geverifieerd te zijn of niet.
 
 
-Dat is een uitdrukking van het idee: *de betekenis van een woord is het ding waar het voor staat*. Het is een centraal idee in de Europese filosofische traditie -- en, volgens Wittgenstein, een misvatting.[^3]
+Dat is een uitdrukking van het idee: *de betekenis van een woord is het ding waar het voor staat*. Het is een centraal idee in de Europese filosofische traditie -- en, volgens Wittgenstein, een misvatting.[^3] Het is een beeld van hoe taal functioneert dat werkt in enkele paradigmatische gevallen, maar hopeloos tekortschiet als algemene theorie van betekenis.
 
 
 Hij plaatst daar een ander idee tegenover: *betekenis is gebruik*. De vraag die we ons zouden moeten stellen is welke rol de begrippen "e-mailadres" en "geverifieerd e-mailadres" spelen in het [taalspel](https://en.wikipedia.org/wiki/Language_game_(philosophy) "'Language game (philosophy)', Wikipedia") van de domeinexperts.
 
 
-Wanneer we dat in kaart brengen, zullen we zien dat ze een heel andere functie hebben. Een "geverifieerd e-mailadres" heeft als rol bepaalde functionaliteit te ontsluiten. Het is als het ware de speciale pas waarmee een gebruiker toegang wordt gegeven tot verborgen delen van de applicatie. Een "e-mailadres" is daarentegen slechts datgene wat diegene heeft ingevuld in een aanmeldformulier. 
+Wanneer we dat in kaart brengen, zullen we zien dat ze een heel andere functie hebben. Een "geverifieerd e-mailadres" heeft als rol bepaalde functionaliteit te ontsluiten. Het is als het ware de sleutel waarmee een gebruiker toegang wordt gegeven tot verborgen delen van de applicatie. Een "(ongeverifieerd) e-mailadres" is daarentegen slechts datgene wat diegene heeft ingevuld in een aanmeldformulier. 
 
 
 Je zou het verschil als volgt kunnen karakteriseren. Er is een chaotische werkelijkheid, met verschillende soorten e-mailadressen. (Twee, in dit geval.) De Platoonse ontwikkelaar probeert met die complexiteit om te gaan door te abstraheren, door het aantal elementen in de werkelijkheid terug te brengen tot één: het ideale <span style="font-variant:small-caps;">e-mailadres</span>. 

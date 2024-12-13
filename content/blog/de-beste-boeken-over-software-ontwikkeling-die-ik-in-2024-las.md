@@ -77,4 +77,4 @@ Misschien is het *melig* om [Hannah Arendt](https://plato.stanford.edu/entries/a
 Sommige zaken in ons leven zijn doelgericht, ze hebben een begin en een eind. Het ontwikkelen van een nieuwe feature of het fixen van een bug valt in die categorie. Andere zaken zijn daarentegen circulair, het is een steeds terugkerende bezigheid die nu eenmaal hoort bij de menselijke (of in dit geval: softwareontwikkelende) conditie. Refactoren valt in die categorie. 
 
 
-De les is dan ook: wee degene die refactoring in die doelgerichte mal probeert te drukken! Ik schreef er [hier](/blog/24/09/refactoring-en-hannah-arendt/ "'Refactoring en Hannah Arendt'") en [hier](MEER_REFACTORING_EN_HANNAH_ARENDT) over -- maar onder ons: dit boek is ook een aanrader als je *geen* softwreontwikkelaar bent.
+De les is dan ook: wee degene die refactoring in die doelgerichte mal probeert te drukken! Ik schreef er [hier](/blog/24/09/refactoring-en-hannah-arendt/ "'Refactoring en Hannah Arendt'") en [hier](/blog/24/11/meer-refactoring-en-hannah-arendt/ "'Meer refactoring en Hannah Arendt'") over -- maar onder ons: dit boek is ook een aanrader als je *geen* softwreontwikkelaar bent.

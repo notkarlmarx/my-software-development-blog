@@ -1,8 +1,8 @@
 ---
 title: "Is TDD alleen nuttig als iedereen het doet?"
 author: "Karl van Heijster"
-date: 2024-10-18T10:04:07+02:00
-draft: true
+date: 2024-12-20T08:28:02+01:00
+draft: false
 comments: true
 tags: ["test-driven development", "verandering"]
 summary: "Het is geen geheim dat ik een liefhebber ben van Test-Driven Development. Ik schrijf er regelmatig over op dit blog, probeer mijn collega's de kneepjes van de praktijk eigen te maken, en laat het onderwerp graag ter sprake komen wanneer ik vakgenoten spreek op gebruikersgroepen of conferenties. -- Vaak krijg ik de repliek: \"Allemaal leuk en wel, dat TDD, maar dat heeft eigenlijk alleen maar zin als iedereen in het team het doet.\" Daarmee implicerend: en dat is waarom *ik* het niet doe."
@@ -59,4 +59,4 @@ Waarom nemen zoveel mensen genoegen met zo'n overduidelijke redeneerfout? Mijn v
 Misschien omdat ze hun programmeergewoonten niet willen aanpassen. Ze zijn tevreden met de manier waarop ze nu software ontwikkelen, en vechten ervoor die status quo te behouden. -- Misschien omdat ze slechte ervaringen hebben met TDD. Misschien hebben ze het een tijdje geprobeerd en lukte het niet en zijn ze er toen mee opgehouden. -- Of misschien hebben ze teveel overenthousiaste verhalen gehoord van mensen zoals ik. Misschien hebben dogmatici (zoals ik?) hen zodanig de lust om te TDD'en ontnomen, dat ze de hakken in het zand hebben gezet. 
 
 
-En tóch geloof ik dat TDD een betere manier is om software te ontwikkelen dan testen-achteraf. Ook wanneer niet het hele team het doet.
+En tóch geloof ik dat TDD een betere manier is om software te ontwikkelen dan testen-achteraf. Ook wanneer niet het hele team het doet. En dat zal ik blijven bepleiten, liever te vaak dan te weinig.

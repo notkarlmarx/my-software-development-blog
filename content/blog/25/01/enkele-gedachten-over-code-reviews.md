@@ -1,8 +1,8 @@
 ---
 title: "Enkele gedachten over code reviews"
 author: "Karl van Heijster"
-date: 2024-11-01T10:14:03+01:00
-draft: true
+date: 2025-01-03T08:27:02+01:00
+draft: false
 comments: true
 tags: ["code reviews", "pair programming", "pull requests"]
 summary: "De praktijk van *pull requests* is een *vertragingstactiek*. Dat is een teken dat er niet op vertrouwd kan worden dat de kwaliteit van nieuwe code structureel aan de gewenste kwaliteitsstandaarden voldoet. Zo bezien, zijn PR's een pleister op een wond die veel intensievere behandeling behoeft. "
@@ -29,7 +29,7 @@ De reviewers zijn poortwachters. Zij besluiten of de codewijziging voldoet aan d
 Natuurlijk is de formele code review niet het enige moment waarop we broncode inspecteren. Sterker nog, een groot deel van het werk van een programmeur bestaat uit het inspecteren van code. 
 
 
-Code wordt vaker gelezen dan geschreven. En wanneer een programmeur code leest, vormt hij of zij daar een oordeel over. Soms is dat oordeel: goed. Meestal is het oordeel: slecht. 
+Code wordt vaker gelezen dan geschreven. En wanneer een programmeur code leest, vormt hij of zij daar een oordeel over. Soms is dat oordeel: goed. Vaak is het oordeel: slecht. 
 
 
 Dat is geen steek naar de oorspronkelijke schrijver van de code -- niet per se. Meestal als programmeurs code lezen, doen ze dat met de bedoeling die te wijzigen. Vaak is de code niet voorbereid op zo'n wijziging. 
@@ -95,7 +95,7 @@ Maar: wie is "het team" hier? Het team als geheel? -- Nee, ik heb nog nooit gezi
 Klaarblijkelijk is er een afgevaardigde die voor het hele team kan spreken. -- Wie?
 
 
-Is het soms: degene die het meest vertrouwd is met het deel van de code dat zal wijzigen? -- Maar dat zou erop kunnen wijzen dat er geen sprake is van gedeeld eigenaarschap over de code. De reviewer is dan heer en meester over *zijn* deel, de (hopelijk verlichte) dictator die bepaalt welke soorten code er onder zijn bewind mag bestaan.
+Is het soms: degene die het meest vertrouwd is met het deel van de code dat zal wijzigen? -- Maar dat zou erop kunnen wijzen dat er geen sprake is van gedeeld eigenaarschap over de code. De reviewer is dan heer en meester over *zijn* deel, de (hopelijk verlichte) dictator die bepaalt welke soorten code er onder zijn bewind mogen bestaan.
 
 
 Soms is het antwoord: de *lead developer* of senior ontwikkelaar(s). Maar dat veronderstelt dat code reviews voornamelijk bestaan om junioren ervan te weerhouden fouten te maken.

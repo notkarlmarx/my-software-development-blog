@@ -1,8 +1,8 @@
 ---
 title: "Wat betekent het tests te schrijven?"
 author: "Karl van Heijster"
-date: 2024-11-08T08:47:13+01:00
-draft: true
+date: 2025-01-10T08:11:15+01:00
+draft: false
 comments: true
 tags: ["software ontwikkelaar (rol)", "sprint retrospective", "testen", "verantwoordelijkheid"]
 summary: "Het is een terugkerend thema in onze Retrospectives: testcapaciteit -- en dan natuurlijk vooral het gebrek eraan. Het komt regelmatig voor dat verschillende *pull requests* een tijd lang open blijven staan, wachtend op iemand die de testautomatiseringsscripts aan de codewijziging toevoegt."
